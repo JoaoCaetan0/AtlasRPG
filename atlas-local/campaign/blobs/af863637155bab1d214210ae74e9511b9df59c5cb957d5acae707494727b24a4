@@ -1,0 +1,1268 @@
+# Projeto dos 50 mapas de encontros — Estigma do Caos
+
+Plano de produção preservado antes das gerações. O cenário 01 aproveita o mapa já aprovado; serão 49 novas imagens para completar 50 encontros. Os 32 mapas geográficos anteriores permanecem preservados.
+
+## Organização
+
+Mapas / Mapas de Transição / Ótimo, Bom, Médio, Ruim ou Péssimo / Bioma - Horário - Cena.png
+
+As categorias descrevem a situação encontrada, não uma dificuldade de combate calculada. Cada categoria reúne dez projetos. Notas, projetos e segredos ficam em _Material do Mestre. Nenhum arquivo de imagem vazio representará um mapa pendente.
+
+## Continuidade e retomada
+
+O guia dos 50 cenários acompanha este plano com a pesquisa de mundo, personagens e fontes. O JSON contém cada briefing integral, caminho esperado e critérios de revisão. O andamento registra separadamente geração e revisão; só marcar concluído após inspecionar a imagem. Ao retomar, ler os projetos e o andamento, gerar apenas os pendentes e preservar os aprovados. Não usar a imagem anterior como novo cenário só para atingir a contagem.
+
+Caos não é Calamidade. Não antecipar a queda da Hydra ou a membrana; não definir criadores de Thanatos, destino do irmão de Soren, poderes novos de Darmos, magia na garrafa de Berenice ou parentes de Azhara. NPCs novos e acontecimentos são propostas, não cânone retroativo. Nenhuma edição do Canva é autorizada.
+
+Geração pela ferramenta de imagens integrada, uma imagem por cenário. Horários são direção artística, não restrição para uso na mesa. Poucos objetos úteis, chão legível, aproximação adaptada à cena e luz com direção consistente são obrigatórios. Não incluir inimigos ocultos ou soluções na arte entregue aos jogadores.
+
+## 01. Carruagem tombada — Ruim
+
+**Arquivo:** Mapas/Mapas de Transição/Ruim/Campo e bosque - Manhã 08h00 - Carruagem tombada.png
+
+**Bioma e horário:** Campo e bosque; Manhã 08h00. **Enquadramento aproximado:** 50 x 35 m.
+
+**Composição:** Estrada diagonal atravessa bosque compacto, carruagem tombada no centro, barranco à esquerda e contorno à direita.
+
+**Iluminação:** Sol dourado alto à direita; copas densas concentradas, chão central legível.
+
+**Interações:** Vasculhar o baú; subir no casco; examinar o eixo; usar o barranco como cobertura ou a valeta como flanco. Pegadas desviam da bagagem para as árvores.
+
+**Escolha e consequência:** Investigar à distância permite perceber a emboscada antes de entrar. Aproximar-se sem cuidado favorece os assaltantes, mas negociar, contornar e recuar continuam possíveis.
+
+**Continuidade:** Mapa gerado nesta entrega; cenário proposto a partir do pedido.
+
+**Revisão:** Objeto central e 2–4 pontos úteis presentes e distinguíveis; Entradas, saídas e rota de retirada coerentes; Escala e estrutura física plausíveis; Horário, fonte de luz e direção das sombras coerentes; Sem excesso de plantas, objetos repetidos ou multidões; Nenhum segredo do mestre exposto ou história pessoal inventada.
+
+**Prompt integral:**
+
+```text
+Create ONE landscape 3:2 tabletop RPG encounter map, Estigma do Caos, beautifully hand-painted with fine ink, believable textures, subtle Gothic/steam-age fantasy craftsmanship. Elevated bird's-eye approximately 65–75 degrees, very mild isometric depth, no horizon, readable walkable surfaces and natural object scale. Match the quality of a close Stalla scene map, NOT a regional atlas. Quality over quantity: 2–4 intentional interaction anchors, open negative space and coherent entrance/exit paths, no filler crowds, decorative barrels, random plants or excess buildings. Trees grouped along edges unless specifically important. Physically plausible ropes, supports, axles, doors, water and mechanisms; inhabitants only doing a useful task, no player-character portraits. No hidden bandits revealed, no secret labels, no icons, grid, arrows or GM annotations. Subtle thin dark cartographic border and a small restrained Portuguese title cartouche with the scene title only. Highest clarity, rich local colors, controlled detail. A single coherent directional light plus specified practical lamps; realistic shadows, fog never hides the playing space. Night scenes remain legible without resembling daylight. Each generated asset is ONE distinct map, never a collage.
+SCENE TITLE: Carruagem tombada. BIOME: Campo e bosque. TIME: Manhã 08h00. Rough scene footprint: 50 x 35 m, NOT a measured grid. COMPOSITION: Estrada diagonal atravessa bosque compacto, carruagem tombada no centro, barranco à esquerda e contorno à direita. LIGHTING (authoritative): Sol dourado alto à direita; copas densas concentradas, chão central legível. PURPOSE OF OBJECTS: Vasculhar o baú; subir no casco; examinar o eixo; usar o barranco como cobertura ou a valeta como flanco. Pegadas desviam da bagagem para as árvores. CONTINUITY: Mapa gerado nesta entrega; cenário proposto a partir do pedido. Do not reveal narrative solutions or add visual lore not explicitly specified. Do not print time, difficulty, biome or character names within the picture. Slight angle variations only; closer framing for simple interactions, wider for emergencies.
+```
+
+## 02. Mesa depois da colheita — Ótimo
+
+**Arquivo:** Mapas/Mapas de Transição/Ótimo/Campo cultivado - Meio-dia 12h00 - Mesa depois da colheita.png
+
+**Bioma e horário:** Campo cultivado; Meio-dia 12h00. **Enquadramento aproximado:** 22 x 16 m.
+
+**Composição:** Mesa de refeição ao centro; forno de barro à esquerda; marco da estrada na margem; dois lavradores servem comida. Caminho livre ao lado da mesa.
+
+**Iluminação:** Sol claro de cima à esquerda, sombra curta sob mesa e toldo parcial, cerâmica e pão nítidos.
+
+**Interações:** Comer, repor água e perguntar sobre a estrada; ajudar a retirar o pão; conferir um desvio desenhado com carvão numa tábua.
+
+**Escolha e consequência:** Aceitar a hospitalidade dá descanso e informação confiável. A família não arma traição nem exige missão escondida como pagamento.
+
+**Continuidade:** Cotidiano rural e preparação de viagem do Ebook; NPCs novos.
+
+**Revisão:** Objeto central e 2–4 pontos úteis presentes e distinguíveis; Entradas, saídas e rota de retirada coerentes; Escala e estrutura física plausíveis; Horário, fonte de luz e direção das sombras coerentes; Sem excesso de plantas, objetos repetidos ou multidões; Nenhum segredo do mestre exposto ou história pessoal inventada.
+
+**Prompt integral:**
+
+```text
+Create ONE landscape 3:2 tabletop RPG encounter map, Estigma do Caos, beautifully hand-painted with fine ink, believable textures, subtle Gothic/steam-age fantasy craftsmanship. Elevated bird's-eye approximately 65–75 degrees, very mild isometric depth, no horizon, readable walkable surfaces and natural object scale. Match the quality of a close Stalla scene map, NOT a regional atlas. Quality over quantity: 2–4 intentional interaction anchors, open negative space and coherent entrance/exit paths, no filler crowds, decorative barrels, random plants or excess buildings. Trees grouped along edges unless specifically important. Physically plausible ropes, supports, axles, doors, water and mechanisms; inhabitants only doing a useful task, no player-character portraits. No hidden bandits revealed, no secret labels, no icons, grid, arrows or GM annotations. Subtle thin dark cartographic border and a small restrained Portuguese title cartouche with the scene title only. Highest clarity, rich local colors, controlled detail. A single coherent directional light plus specified practical lamps; realistic shadows, fog never hides the playing space. Night scenes remain legible without resembling daylight. Each generated asset is ONE distinct map, never a collage.
+SCENE TITLE: Mesa depois da colheita. BIOME: Campo cultivado. TIME: Meio-dia 12h00. Rough scene footprint: 22 x 16 m, NOT a measured grid. COMPOSITION: Mesa de refeição ao centro; forno de barro à esquerda; marco da estrada na margem; dois lavradores servem comida. Caminho livre ao lado da mesa. LIGHTING (authoritative): Sol claro de cima à esquerda, sombra curta sob mesa e toldo parcial, cerâmica e pão nítidos. PURPOSE OF OBJECTS: Comer, repor água e perguntar sobre a estrada; ajudar a retirar o pão; conferir um desvio desenhado com carvão numa tábua. CONTINUITY: Cotidiano rural e preparação de viagem do Ebook; NPCs novos. Do not reveal narrative solutions or add visual lore not explicitly specified. Do not print time, difficulty, biome or character names within the picture. Slight angle variations only; closer framing for simple interactions, wider for emergencies.
+```
+
+## 03. Oficina sob a lona — Bom
+
+**Arquivo:** Mapas/Mapas de Transição/Bom/Campo de estrada - Fim de tarde 17h00 - Oficina sob a lona.png
+
+**Bioma e horário:** Campo de estrada; Fim de tarde 17h00. **Enquadramento aproximado:** 20 x 16 m.
+
+**Composição:** Carroça suspensa sobre um macaco sólido, bancada à direita e lona sustentada por quatro postes; anão ajusta roda, humana segura ferramenta.
+
+**Iluminação:** Sol âmbar da esquerda, tecido filtra luz suave; roda e pontos de apoio sem sombras fechadas.
+
+**Interações:** Consertar uma roda, trocar sucata por serviço ou aprender a identificar um eixo sabotado; a bancada pode servir de plataforma.
+
+**Escolha e consequência:** Trocar ajuda por reparo economiza recursos. Recusar apenas mantém a viagem como estava; os artesãos não escondem uma maldição.
+
+**Continuidade:** Engenharia anã, sucata e ferramentas do Ebook.
+
+**Revisão:** Objeto central e 2–4 pontos úteis presentes e distinguíveis; Entradas, saídas e rota de retirada coerentes; Escala e estrutura física plausíveis; Horário, fonte de luz e direção das sombras coerentes; Sem excesso de plantas, objetos repetidos ou multidões; Nenhum segredo do mestre exposto ou história pessoal inventada.
+
+**Prompt integral:**
+
+```text
+Create ONE landscape 3:2 tabletop RPG encounter map, Estigma do Caos, beautifully hand-painted with fine ink, believable textures, subtle Gothic/steam-age fantasy craftsmanship. Elevated bird's-eye approximately 65–75 degrees, very mild isometric depth, no horizon, readable walkable surfaces and natural object scale. Match the quality of a close Stalla scene map, NOT a regional atlas. Quality over quantity: 2–4 intentional interaction anchors, open negative space and coherent entrance/exit paths, no filler crowds, decorative barrels, random plants or excess buildings. Trees grouped along edges unless specifically important. Physically plausible ropes, supports, axles, doors, water and mechanisms; inhabitants only doing a useful task, no player-character portraits. No hidden bandits revealed, no secret labels, no icons, grid, arrows or GM annotations. Subtle thin dark cartographic border and a small restrained Portuguese title cartouche with the scene title only. Highest clarity, rich local colors, controlled detail. A single coherent directional light plus specified practical lamps; realistic shadows, fog never hides the playing space. Night scenes remain legible without resembling daylight. Each generated asset is ONE distinct map, never a collage.
+SCENE TITLE: Oficina sob a lona. BIOME: Campo de estrada. TIME: Fim de tarde 17h00. Rough scene footprint: 20 x 16 m, NOT a measured grid. COMPOSITION: Carroça suspensa sobre um macaco sólido, bancada à direita e lona sustentada por quatro postes; anão ajusta roda, humana segura ferramenta. LIGHTING (authoritative): Sol âmbar da esquerda, tecido filtra luz suave; roda e pontos de apoio sem sombras fechadas. PURPOSE OF OBJECTS: Consertar uma roda, trocar sucata por serviço ou aprender a identificar um eixo sabotado; a bancada pode servir de plataforma. CONTINUITY: Engenharia anã, sucata e ferramentas do Ebook. Do not reveal narrative solutions or add visual lore not explicitly specified. Do not print time, difficulty, biome or character names within the picture. Slight angle variations only; closer framing for simple interactions, wider for emergencies.
+```
+
+## 04. Porteira disputada — Médio
+
+**Arquivo:** Mapas/Mapas de Transição/Médio/Campo agrícola - Manhã 09h00 - Porteira disputada.png
+
+**Bioma e horário:** Campo agrícola; Manhã 09h00. **Enquadramento aproximado:** 35 x 24 m.
+
+**Composição:** Duas carroças frente a frente em lados opostos de porteira estreita; monte de feno fora da passagem e vala rasa paralela à cerca.
+
+**Iluminação:** Luz matinal lateral, verde lavado, madeira e tranca legíveis.
+
+**Interações:** Mediar a passagem, levantar a tranca, mover o feno ou atravessar pela borda do campo sem estragar a plantação.
+
+**Escolha e consequência:** Resolver o impasse custa tempo, mas pode render contatos. Forçar a passagem danifica a cerca e cria uma dívida comum, sem virar conflito épico.
+
+**Continuidade:** Diplomacia, Atletismo e Direção; cotidiano proposto.
+
+**Revisão:** Objeto central e 2–4 pontos úteis presentes e distinguíveis; Entradas, saídas e rota de retirada coerentes; Escala e estrutura física plausíveis; Horário, fonte de luz e direção das sombras coerentes; Sem excesso de plantas, objetos repetidos ou multidões; Nenhum segredo do mestre exposto ou história pessoal inventada.
+
+**Prompt integral:**
+
+```text
+Create ONE landscape 3:2 tabletop RPG encounter map, Estigma do Caos, beautifully hand-painted with fine ink, believable textures, subtle Gothic/steam-age fantasy craftsmanship. Elevated bird's-eye approximately 65–75 degrees, very mild isometric depth, no horizon, readable walkable surfaces and natural object scale. Match the quality of a close Stalla scene map, NOT a regional atlas. Quality over quantity: 2–4 intentional interaction anchors, open negative space and coherent entrance/exit paths, no filler crowds, decorative barrels, random plants or excess buildings. Trees grouped along edges unless specifically important. Physically plausible ropes, supports, axles, doors, water and mechanisms; inhabitants only doing a useful task, no player-character portraits. No hidden bandits revealed, no secret labels, no icons, grid, arrows or GM annotations. Subtle thin dark cartographic border and a small restrained Portuguese title cartouche with the scene title only. Highest clarity, rich local colors, controlled detail. A single coherent directional light plus specified practical lamps; realistic shadows, fog never hides the playing space. Night scenes remain legible without resembling daylight. Each generated asset is ONE distinct map, never a collage.
+SCENE TITLE: Porteira disputada. BIOME: Campo agrícola. TIME: Manhã 09h00. Rough scene footprint: 35 x 24 m, NOT a measured grid. COMPOSITION: Duas carroças frente a frente em lados opostos de porteira estreita; monte de feno fora da passagem e vala rasa paralela à cerca. LIGHTING (authoritative): Luz matinal lateral, verde lavado, madeira e tranca legíveis. PURPOSE OF OBJECTS: Mediar a passagem, levantar a tranca, mover o feno ou atravessar pela borda do campo sem estragar a plantação. CONTINUITY: Diplomacia, Atletismo e Direção; cotidiano proposto. Do not reveal narrative solutions or add visual lore not explicitly specified. Do not print time, difficulty, biome or character names within the picture. Slight angle variations only; closer framing for simple interactions, wider for emergencies.
+```
+
+## 05. Fogo no capinzal — Péssimo
+
+**Arquivo:** Mapas/Mapas de Transição/Péssimo/Campo seco - Crepúsculo 18h30 - Fogo no capinzal.png
+
+**Bioma e horário:** Campo seco; Crepúsculo 18h30. **Enquadramento aproximado:** 65 x 45 m.
+
+**Composição:** Faixa de incêndio avança de uma lateral, não de todas; estrada com carroça d'água no meio, portão travado e vala de terra nua conectada à saída segura.
+
+**Iluminação:** Céu violeta, fogo laranja localizado, cinza de fumaça longe da rota de fuga; evitar tela toda vermelha.
+
+**Interações:** Abrir o portão, conduzir animais, molhar panos ou alcançar a vala; observar o vento revela qual saída permanece utilizável.
+
+**Escolha e consequência:** Salvar toda a carga é mais perigoso que soltar o engate e fugir. A fumaça anuncia o risco antes da área crítica; sempre existe uma rota de retirada.
+
+**Continuidade:** Darmos pode associar o incêndio a Forjafundo; não repetir nem explicar seu poder excepcional.
+
+**Revisão:** Objeto central e 2–4 pontos úteis presentes e distinguíveis; Entradas, saídas e rota de retirada coerentes; Escala e estrutura física plausíveis; Horário, fonte de luz e direção das sombras coerentes; Sem excesso de plantas, objetos repetidos ou multidões; Nenhum segredo do mestre exposto ou história pessoal inventada.
+
+**Prompt integral:**
+
+```text
+Create ONE landscape 3:2 tabletop RPG encounter map, Estigma do Caos, beautifully hand-painted with fine ink, believable textures, subtle Gothic/steam-age fantasy craftsmanship. Elevated bird's-eye approximately 65–75 degrees, very mild isometric depth, no horizon, readable walkable surfaces and natural object scale. Match the quality of a close Stalla scene map, NOT a regional atlas. Quality over quantity: 2–4 intentional interaction anchors, open negative space and coherent entrance/exit paths, no filler crowds, decorative barrels, random plants or excess buildings. Trees grouped along edges unless specifically important. Physically plausible ropes, supports, axles, doors, water and mechanisms; inhabitants only doing a useful task, no player-character portraits. No hidden bandits revealed, no secret labels, no icons, grid, arrows or GM annotations. Subtle thin dark cartographic border and a small restrained Portuguese title cartouche with the scene title only. Highest clarity, rich local colors, controlled detail. A single coherent directional light plus specified practical lamps; realistic shadows, fog never hides the playing space. Night scenes remain legible without resembling daylight. Each generated asset is ONE distinct map, never a collage.
+SCENE TITLE: Fogo no capinzal. BIOME: Campo seco. TIME: Crepúsculo 18h30. Rough scene footprint: 65 x 45 m, NOT a measured grid. COMPOSITION: Faixa de incêndio avança de uma lateral, não de todas; estrada com carroça d'água no meio, portão travado e vala de terra nua conectada à saída segura. LIGHTING (authoritative): Céu violeta, fogo laranja localizado, cinza de fumaça longe da rota de fuga; evitar tela toda vermelha. PURPOSE OF OBJECTS: Abrir o portão, conduzir animais, molhar panos ou alcançar a vala; observar o vento revela qual saída permanece utilizável. CONTINUITY: Darmos pode associar o incêndio a Forjafundo; não repetir nem explicar seu poder excepcional. Do not reveal narrative solutions or add visual lore not explicitly specified. Do not print time, difficulty, biome or character names within the picture. Slight angle variations only; closer framing for simple interactions, wider for emergencies.
+```
+
+## 06. Trilha dos guardiões — Ótimo
+
+**Arquivo:** Mapas/Mapas de Transição/Ótimo/Floresta temperada - Amanhecer 06h30 - Trilha dos guardiões.png
+
+**Bioma e horário:** Floresta temperada; Amanhecer 06h30. **Enquadramento aproximado:** 28 x 22 m.
+
+**Composição:** Trilha seca em curva atravessa raízes entre massas de árvores; guia silvano mostra marca em tronco; abrigo de lona ocupa recuo lateral.
+
+**Iluminação:** Feixes de sol baixo por trás das copas, sombra azul, névoa fina só no fundo.
+
+**Interações:** Aprender a ler as marcas, observar pegadas e combinar passagem respeitosa pelo território.
+
+**Escolha e consequência:** Seguir o guia evita um trecho alagado e conserva suprimentos. As marcas funcionam; não inverter a recompensa com uma armadilha surpresa.
+
+**Continuidade:** Silvanos e Sobrevivência do Ebook; Sylvar aparece nos mapas.
+
+**Revisão:** Objeto central e 2–4 pontos úteis presentes e distinguíveis; Entradas, saídas e rota de retirada coerentes; Escala e estrutura física plausíveis; Horário, fonte de luz e direção das sombras coerentes; Sem excesso de plantas, objetos repetidos ou multidões; Nenhum segredo do mestre exposto ou história pessoal inventada.
+
+**Prompt integral:**
+
+```text
+Create ONE landscape 3:2 tabletop RPG encounter map, Estigma do Caos, beautifully hand-painted with fine ink, believable textures, subtle Gothic/steam-age fantasy craftsmanship. Elevated bird's-eye approximately 65–75 degrees, very mild isometric depth, no horizon, readable walkable surfaces and natural object scale. Match the quality of a close Stalla scene map, NOT a regional atlas. Quality over quantity: 2–4 intentional interaction anchors, open negative space and coherent entrance/exit paths, no filler crowds, decorative barrels, random plants or excess buildings. Trees grouped along edges unless specifically important. Physically plausible ropes, supports, axles, doors, water and mechanisms; inhabitants only doing a useful task, no player-character portraits. No hidden bandits revealed, no secret labels, no icons, grid, arrows or GM annotations. Subtle thin dark cartographic border and a small restrained Portuguese title cartouche with the scene title only. Highest clarity, rich local colors, controlled detail. A single coherent directional light plus specified practical lamps; realistic shadows, fog never hides the playing space. Night scenes remain legible without resembling daylight. Each generated asset is ONE distinct map, never a collage.
+SCENE TITLE: Trilha dos guardiões. BIOME: Floresta temperada. TIME: Amanhecer 06h30. Rough scene footprint: 28 x 22 m, NOT a measured grid. COMPOSITION: Trilha seca em curva atravessa raízes entre massas de árvores; guia silvano mostra marca em tronco; abrigo de lona ocupa recuo lateral. LIGHTING (authoritative): Feixes de sol baixo por trás das copas, sombra azul, névoa fina só no fundo. PURPOSE OF OBJECTS: Aprender a ler as marcas, observar pegadas e combinar passagem respeitosa pelo território. CONTINUITY: Silvanos e Sobrevivência do Ebook; Sylvar aparece nos mapas. Do not reveal narrative solutions or add visual lore not explicitly specified. Do not print time, difficulty, biome or character names within the picture. Slight angle variations only; closer framing for simple interactions, wider for emergencies.
+```
+
+## 07. Lenhador de outra função — Bom
+
+**Arquivo:** Mapas/Mapas de Transição/Bom/Bosque temperado - Tarde 15h00 - Lenhador de outra função.png
+
+**Bioma e horário:** Bosque temperado; Tarde 15h00. **Enquadramento aproximado:** 24 x 18 m.
+
+**Composição:** Golem lenhador sustenta tronco inclinado apoiado no solo; companheira humana solta machado; cunhas e toco de trabalho ao lado; escape livre atrás.
+
+**Iluminação:** Luz macia de tarde, reflexos em juntas de metal e textura de madeira; floresta concentrada no perímetro.
+
+**Interações:** Calçar o tronco, serrar a raiz ou conversar sobre trabalho e escolha; uma ferramenta recuperada pode ser emprestada.
+
+**Escolha e consequência:** A ajuda rende passagem limpa e um aliado local. O golem pode ter uma relação satisfatória com sua função: não precisa ser outra vítima secreta.
+
+**Continuidade:** Contraponto para Thanatos; diversidade de propósitos dos golens no Ebook.
+
+**Revisão:** Objeto central e 2–4 pontos úteis presentes e distinguíveis; Entradas, saídas e rota de retirada coerentes; Escala e estrutura física plausíveis; Horário, fonte de luz e direção das sombras coerentes; Sem excesso de plantas, objetos repetidos ou multidões; Nenhum segredo do mestre exposto ou história pessoal inventada.
+
+**Prompt integral:**
+
+```text
+Create ONE landscape 3:2 tabletop RPG encounter map, Estigma do Caos, beautifully hand-painted with fine ink, believable textures, subtle Gothic/steam-age fantasy craftsmanship. Elevated bird's-eye approximately 65–75 degrees, very mild isometric depth, no horizon, readable walkable surfaces and natural object scale. Match the quality of a close Stalla scene map, NOT a regional atlas. Quality over quantity: 2–4 intentional interaction anchors, open negative space and coherent entrance/exit paths, no filler crowds, decorative barrels, random plants or excess buildings. Trees grouped along edges unless specifically important. Physically plausible ropes, supports, axles, doors, water and mechanisms; inhabitants only doing a useful task, no player-character portraits. No hidden bandits revealed, no secret labels, no icons, grid, arrows or GM annotations. Subtle thin dark cartographic border and a small restrained Portuguese title cartouche with the scene title only. Highest clarity, rich local colors, controlled detail. A single coherent directional light plus specified practical lamps; realistic shadows, fog never hides the playing space. Night scenes remain legible without resembling daylight. Each generated asset is ONE distinct map, never a collage.
+SCENE TITLE: Lenhador de outra função. BIOME: Bosque temperado. TIME: Tarde 15h00. Rough scene footprint: 24 x 18 m, NOT a measured grid. COMPOSITION: Golem lenhador sustenta tronco inclinado apoiado no solo; companheira humana solta machado; cunhas e toco de trabalho ao lado; escape livre atrás. LIGHTING (authoritative): Luz macia de tarde, reflexos em juntas de metal e textura de madeira; floresta concentrada no perímetro. PURPOSE OF OBJECTS: Calçar o tronco, serrar a raiz ou conversar sobre trabalho e escolha; uma ferramenta recuperada pode ser emprestada. CONTINUITY: Contraponto para Thanatos; diversidade de propósitos dos golens no Ebook. Do not reveal narrative solutions or add visual lore not explicitly specified. Do not print time, difficulty, biome or character names within the picture. Slight angle variations only; closer framing for simple interactions, wider for emergencies.
+```
+
+## 08. Pomar sem proprietário — Médio
+
+**Arquivo:** Mapas/Mapas de Transição/Médio/Pomar temperado - Fim de tarde 17h30 - Pomar sem proprietário.png
+
+**Bioma e horário:** Pomar temperado; Fim de tarde 17h30. **Enquadramento aproximado:** 24 x 20 m.
+
+**Composição:** Exatamente três árvores frutíferas dentro de muro baixo quebrado; cesto vazio e portão caído; espaço livre entre árvores, sem NPCs.
+
+**Iluminação:** Contraluz quente baixo, frutos destacados apenas nos ramos iluminados, chão em sombra suave.
+
+**Interações:** Distinguir fruta boa de estragada, subir na árvore e ler um aviso de colheita comunitária; observar marcas de uso recente.
+
+**Escolha e consequência:** Colher leva tempo e repõe comida. Levar o cesto inteiro deixa outros viajantes sem recipiente; nenhuma fruta é magicamente amaldiçoada.
+
+**Continuidade:** Recursos de jornada; cenário sem mistério sobrenatural.
+
+**Revisão:** Objeto central e 2–4 pontos úteis presentes e distinguíveis; Entradas, saídas e rota de retirada coerentes; Escala e estrutura física plausíveis; Horário, fonte de luz e direção das sombras coerentes; Sem excesso de plantas, objetos repetidos ou multidões; Nenhum segredo do mestre exposto ou história pessoal inventada.
+
+**Prompt integral:**
+
+```text
+Create ONE landscape 3:2 tabletop RPG encounter map, Estigma do Caos, beautifully hand-painted with fine ink, believable textures, subtle Gothic/steam-age fantasy craftsmanship. Elevated bird's-eye approximately 65–75 degrees, very mild isometric depth, no horizon, readable walkable surfaces and natural object scale. Match the quality of a close Stalla scene map, NOT a regional atlas. Quality over quantity: 2–4 intentional interaction anchors, open negative space and coherent entrance/exit paths, no filler crowds, decorative barrels, random plants or excess buildings. Trees grouped along edges unless specifically important. Physically plausible ropes, supports, axles, doors, water and mechanisms; inhabitants only doing a useful task, no player-character portraits. No hidden bandits revealed, no secret labels, no icons, grid, arrows or GM annotations. Subtle thin dark cartographic border and a small restrained Portuguese title cartouche with the scene title only. Highest clarity, rich local colors, controlled detail. A single coherent directional light plus specified practical lamps; realistic shadows, fog never hides the playing space. Night scenes remain legible without resembling daylight. Each generated asset is ONE distinct map, never a collage.
+SCENE TITLE: Pomar sem proprietário. BIOME: Pomar temperado. TIME: Fim de tarde 17h30. Rough scene footprint: 24 x 20 m, NOT a measured grid. COMPOSITION: Exatamente três árvores frutíferas dentro de muro baixo quebrado; cesto vazio e portão caído; espaço livre entre árvores, sem NPCs. LIGHTING (authoritative): Contraluz quente baixo, frutos destacados apenas nos ramos iluminados, chão em sombra suave. PURPOSE OF OBJECTS: Distinguir fruta boa de estragada, subir na árvore e ler um aviso de colheita comunitária; observar marcas de uso recente. CONTINUITY: Recursos de jornada; cenário sem mistério sobrenatural. Do not reveal narrative solutions or add visual lore not explicitly specified. Do not print time, difficulty, biome or character names within the picture. Slight angle variations only; closer framing for simple interactions, wider for emergencies.
+```
+
+## 09. O reflexo entre raízes — Ruim
+
+**Arquivo:** Mapas/Mapas de Transição/Ruim/Floresta úmida - Noite 21h00 - O reflexo entre raízes.png
+
+**Bioma e horário:** Floresta úmida; Noite 21h00. **Enquadramento aproximado:** 18 x 16 m.
+
+**Composição:** Espelho pequeno quebrado encostado na raiz ao lado de poça rasa e lona presa; trilha livre atravessa a cena; nenhum monstro ou reflexo humano literal.
+
+**Iluminação:** Luar azulado passando por clareira, prata na água, pouca luz suficiente para ler objetos; nenhum brilho mágico no espelho.
+
+**Interações:** Cobrir o espelho, estudar pegadas ou seguir um sobrevivente assustado escondido adiante. O reflexo parece estranho por causa do ângulo e da água.
+
+**Escolha e consequência:** A ansiedade pode desviar o grupo da pista concreta. Ajudar o sobrevivente rende um relato verificável de viajantes armados, não uma revelação automática sobre a organização.
+
+**Continuidade:** Soren teme reflexos e escuridão; identidade dos responsáveis e relação com seu irmão permanecem abertas.
+
+**Revisão:** Objeto central e 2–4 pontos úteis presentes e distinguíveis; Entradas, saídas e rota de retirada coerentes; Escala e estrutura física plausíveis; Horário, fonte de luz e direção das sombras coerentes; Sem excesso de plantas, objetos repetidos ou multidões; Nenhum segredo do mestre exposto ou história pessoal inventada.
+
+**Prompt integral:**
+
+```text
+Create ONE landscape 3:2 tabletop RPG encounter map, Estigma do Caos, beautifully hand-painted with fine ink, believable textures, subtle Gothic/steam-age fantasy craftsmanship. Elevated bird's-eye approximately 65–75 degrees, very mild isometric depth, no horizon, readable walkable surfaces and natural object scale. Match the quality of a close Stalla scene map, NOT a regional atlas. Quality over quantity: 2–4 intentional interaction anchors, open negative space and coherent entrance/exit paths, no filler crowds, decorative barrels, random plants or excess buildings. Trees grouped along edges unless specifically important. Physically plausible ropes, supports, axles, doors, water and mechanisms; inhabitants only doing a useful task, no player-character portraits. No hidden bandits revealed, no secret labels, no icons, grid, arrows or GM annotations. Subtle thin dark cartographic border and a small restrained Portuguese title cartouche with the scene title only. Highest clarity, rich local colors, controlled detail. A single coherent directional light plus specified practical lamps; realistic shadows, fog never hides the playing space. Night scenes remain legible without resembling daylight. Each generated asset is ONE distinct map, never a collage.
+SCENE TITLE: O reflexo entre raízes. BIOME: Floresta úmida. TIME: Noite 21h00. Rough scene footprint: 18 x 16 m, NOT a measured grid. COMPOSITION: Espelho pequeno quebrado encostado na raiz ao lado de poça rasa e lona presa; trilha livre atravessa a cena; nenhum monstro ou reflexo humano literal. LIGHTING (authoritative): Luar azulado passando por clareira, prata na água, pouca luz suficiente para ler objetos; nenhum brilho mágico no espelho. PURPOSE OF OBJECTS: Cobrir o espelho, estudar pegadas ou seguir um sobrevivente assustado escondido adiante. O reflexo parece estranho por causa do ângulo e da água. CONTINUITY: Soren teme reflexos e escuridão; identidade dos responsáveis e relação com seu irmão permanecem abertas. Do not reveal narrative solutions or add visual lore not explicitly specified. Do not print time, difficulty, biome or character names within the picture. Slight angle variations only; closer framing for simple interactions, wider for emergencies.
+```
+
+## 10. Árvores sobre a passagem — Péssimo
+
+**Arquivo:** Mapas/Mapas de Transição/Péssimo/Floresta após temporal - Manhã nublada 10h00 - Árvores sobre a passagem.png
+
+**Bioma e horário:** Floresta após temporal; Manhã nublada 10h00. **Enquadramento aproximado:** 42 x 30 m.
+
+**Composição:** Duas árvores caídas bloqueiam partes distintas da trilha; uma terceira inclinada; viajante preso por galho lateral, barranco baixo permite retorno.
+
+**Iluminação:** Luz fria pós-chuva com uma abertura solar, casca molhada e sombras suaves; queda dos troncos fisicamente convincente.
+
+**Interações:** Escorar um tronco, cortar galhos para libertar uma pessoa ou sair por um barranco baixo; estalos anunciam novo desabamento.
+
+**Escolha e consequência:** Resgatar alguém exige abandonar equipamento pesado ou dividir tarefas. Magia pode ajudar, mas o desastre não é automaticamente uma manifestação da Calamidade.
+
+**Continuidade:** Mata Retorcida no mapa; Engenharia, Atletismo e leitura de risco.
+
+**Revisão:** Objeto central e 2–4 pontos úteis presentes e distinguíveis; Entradas, saídas e rota de retirada coerentes; Escala e estrutura física plausíveis; Horário, fonte de luz e direção das sombras coerentes; Sem excesso de plantas, objetos repetidos ou multidões; Nenhum segredo do mestre exposto ou história pessoal inventada.
+
+**Prompt integral:**
+
+```text
+Create ONE landscape 3:2 tabletop RPG encounter map, Estigma do Caos, beautifully hand-painted with fine ink, believable textures, subtle Gothic/steam-age fantasy craftsmanship. Elevated bird's-eye approximately 65–75 degrees, very mild isometric depth, no horizon, readable walkable surfaces and natural object scale. Match the quality of a close Stalla scene map, NOT a regional atlas. Quality over quantity: 2–4 intentional interaction anchors, open negative space and coherent entrance/exit paths, no filler crowds, decorative barrels, random plants or excess buildings. Trees grouped along edges unless specifically important. Physically plausible ropes, supports, axles, doors, water and mechanisms; inhabitants only doing a useful task, no player-character portraits. No hidden bandits revealed, no secret labels, no icons, grid, arrows or GM annotations. Subtle thin dark cartographic border and a small restrained Portuguese title cartouche with the scene title only. Highest clarity, rich local colors, controlled detail. A single coherent directional light plus specified practical lamps; realistic shadows, fog never hides the playing space. Night scenes remain legible without resembling daylight. Each generated asset is ONE distinct map, never a collage.
+SCENE TITLE: Árvores sobre a passagem. BIOME: Floresta após temporal. TIME: Manhã nublada 10h00. Rough scene footprint: 42 x 30 m, NOT a measured grid. COMPOSITION: Duas árvores caídas bloqueiam partes distintas da trilha; uma terceira inclinada; viajante preso por galho lateral, barranco baixo permite retorno. LIGHTING (authoritative): Luz fria pós-chuva com uma abertura solar, casca molhada e sombras suaves; queda dos troncos fisicamente convincente. PURPOSE OF OBJECTS: Escorar um tronco, cortar galhos para libertar uma pessoa ou sair por um barranco baixo; estalos anunciam novo desabamento. CONTINUITY: Mata Retorcida no mapa; Engenharia, Atletismo e leitura de risco. Do not reveal narrative solutions or add visual lore not explicitly specified. Do not print time, difficulty, biome or character names within the picture. Slight angle variations only; closer framing for simple interactions, wider for emergencies.
+```
+
+## 11. Nascente preservada — Ótimo
+
+**Arquivo:** Mapas/Mapas de Transição/Ótimo/Nascente rochosa - Manhã 07h30 - Nascente preservada.png
+
+**Bioma e horário:** Nascente rochosa; Manhã 07h30. **Enquadramento aproximado:** 20 x 16 m.
+
+**Composição:** Água sai de fenda na rocha e enche tanque raso; banco seco e pescador tritão cuidando de recipiente; acesso simples em dois lados.
+
+**Iluminação:** Reflexos transparentes de manhã, gotas e borda do tanque bem visíveis, sem névoa cobrindo água.
+
+**Interações:** Reabastecer recipientes, lavar equipamento e ouvir a melhor hora de travessia; a pedra oferece assento seco.
+
+**Escolha e consequência:** Há água segura e repouso real. Berenice pode compartilhar seu hábito de conservar a última água da garrafa sem que isso receba explicação mágica.
+
+**Continuidade:** Hidratação tritã do Ebook e vínculo afetivo da garrafa de Berenice.
+
+**Revisão:** Objeto central e 2–4 pontos úteis presentes e distinguíveis; Entradas, saídas e rota de retirada coerentes; Escala e estrutura física plausíveis; Horário, fonte de luz e direção das sombras coerentes; Sem excesso de plantas, objetos repetidos ou multidões; Nenhum segredo do mestre exposto ou história pessoal inventada.
+
+**Prompt integral:**
+
+```text
+Create ONE landscape 3:2 tabletop RPG encounter map, Estigma do Caos, beautifully hand-painted with fine ink, believable textures, subtle Gothic/steam-age fantasy craftsmanship. Elevated bird's-eye approximately 65–75 degrees, very mild isometric depth, no horizon, readable walkable surfaces and natural object scale. Match the quality of a close Stalla scene map, NOT a regional atlas. Quality over quantity: 2–4 intentional interaction anchors, open negative space and coherent entrance/exit paths, no filler crowds, decorative barrels, random plants or excess buildings. Trees grouped along edges unless specifically important. Physically plausible ropes, supports, axles, doors, water and mechanisms; inhabitants only doing a useful task, no player-character portraits. No hidden bandits revealed, no secret labels, no icons, grid, arrows or GM annotations. Subtle thin dark cartographic border and a small restrained Portuguese title cartouche with the scene title only. Highest clarity, rich local colors, controlled detail. A single coherent directional light plus specified practical lamps; realistic shadows, fog never hides the playing space. Night scenes remain legible without resembling daylight. Each generated asset is ONE distinct map, never a collage.
+SCENE TITLE: Nascente preservada. BIOME: Nascente rochosa. TIME: Manhã 07h30. Rough scene footprint: 20 x 16 m, NOT a measured grid. COMPOSITION: Água sai de fenda na rocha e enche tanque raso; banco seco e pescador tritão cuidando de recipiente; acesso simples em dois lados. LIGHTING (authoritative): Reflexos transparentes de manhã, gotas e borda do tanque bem visíveis, sem névoa cobrindo água. PURPOSE OF OBJECTS: Reabastecer recipientes, lavar equipamento e ouvir a melhor hora de travessia; a pedra oferece assento seco. CONTINUITY: Hidratação tritã do Ebook e vínculo afetivo da garrafa de Berenice. Do not reveal narrative solutions or add visual lore not explicitly specified. Do not print time, difficulty, biome or character names within the picture. Slight angle variations only; closer framing for simple interactions, wider for emergencies.
+```
+
+## 12. Balsa puxada à mão — Bom
+
+**Arquivo:** Mapas/Mapas de Transição/Bom/Rio de planície - Tarde 16h00 - Balsa puxada à mão.png
+
+**Bioma e horário:** Rio de planície; Tarde 16h00. **Enquadramento aproximado:** 38 x 28 m.
+
+**Composição:** Balsa plana entre duas plataformas opostas, cabo contínuo bem ancorado às duas margens e manivela; humana e tritã operam.
+
+**Iluminação:** Sol inclinado refletindo na corrente sem ocultar cabo; sombra da balsa coerente.
+
+**Interações:** Operar a manivela, acomodar o peso e perguntar pela corrente; a corda permite retorno manual se a engrenagem travar.
+
+**Escolha e consequência:** Ajudar na travessia reduz o preço ou garante transporte de carga. É um serviço honesto e uma oportunidade de conversa.
+
+**Continuidade:** Engenharia, Direção e sociedades aquáticas; nenhum rio novo fixado ao atlas.
+
+**Revisão:** Objeto central e 2–4 pontos úteis presentes e distinguíveis; Entradas, saídas e rota de retirada coerentes; Escala e estrutura física plausíveis; Horário, fonte de luz e direção das sombras coerentes; Sem excesso de plantas, objetos repetidos ou multidões; Nenhum segredo do mestre exposto ou história pessoal inventada.
+
+**Prompt integral:**
+
+```text
+Create ONE landscape 3:2 tabletop RPG encounter map, Estigma do Caos, beautifully hand-painted with fine ink, believable textures, subtle Gothic/steam-age fantasy craftsmanship. Elevated bird's-eye approximately 65–75 degrees, very mild isometric depth, no horizon, readable walkable surfaces and natural object scale. Match the quality of a close Stalla scene map, NOT a regional atlas. Quality over quantity: 2–4 intentional interaction anchors, open negative space and coherent entrance/exit paths, no filler crowds, decorative barrels, random plants or excess buildings. Trees grouped along edges unless specifically important. Physically plausible ropes, supports, axles, doors, water and mechanisms; inhabitants only doing a useful task, no player-character portraits. No hidden bandits revealed, no secret labels, no icons, grid, arrows or GM annotations. Subtle thin dark cartographic border and a small restrained Portuguese title cartouche with the scene title only. Highest clarity, rich local colors, controlled detail. A single coherent directional light plus specified practical lamps; realistic shadows, fog never hides the playing space. Night scenes remain legible without resembling daylight. Each generated asset is ONE distinct map, never a collage.
+SCENE TITLE: Balsa puxada à mão. BIOME: Rio de planície. TIME: Tarde 16h00. Rough scene footprint: 38 x 28 m, NOT a measured grid. COMPOSITION: Balsa plana entre duas plataformas opostas, cabo contínuo bem ancorado às duas margens e manivela; humana e tritã operam. LIGHTING (authoritative): Sol inclinado refletindo na corrente sem ocultar cabo; sombra da balsa coerente. PURPOSE OF OBJECTS: Operar a manivela, acomodar o peso e perguntar pela corrente; a corda permite retorno manual se a engrenagem travar. CONTINUITY: Engenharia, Direção e sociedades aquáticas; nenhum rio novo fixado ao atlas. Do not reveal narrative solutions or add visual lore not explicitly specified. Do not print time, difficulty, biome or character names within the picture. Slight angle variations only; closer framing for simple interactions, wider for emergencies.
+```
+
+## 13. Pedras escorregadias — Médio
+
+**Arquivo:** Mapas/Mapas de Transição/Médio/Riacho pedregoso - Manhã nublada 09h30 - Pedras escorregadias.png
+
+**Bioma e horário:** Riacho pedregoso; Manhã nublada 09h30. **Enquadramento aproximado:** 28 x 22 m.
+
+**Composição:** Riacho atravessa lateralmente; caminho continua em ambas as margens; cinco pedras de travessia, vara apoiada e tronco preso na borda.
+
+**Iluminação:** Luz difusa deixa ver fundo, limo e profundidade; sem árvores decorativas no centro.
+
+**Interações:** Testar o fundo, montar uma corda-guia e atravessar em ordem; a água permite ver onde o terreno afunda.
+
+**Escolha e consequência:** Falhar pode molhar provisões ou atrasar a marcha, não precisa iniciar combate. Preparar a travessia evita que uma única rolagem decida tudo.
+
+**Continuidade:** Vau das Pedras já mapeado; condição Molhado apenas quando aplicável.
+
+**Revisão:** Objeto central e 2–4 pontos úteis presentes e distinguíveis; Entradas, saídas e rota de retirada coerentes; Escala e estrutura física plausíveis; Horário, fonte de luz e direção das sombras coerentes; Sem excesso de plantas, objetos repetidos ou multidões; Nenhum segredo do mestre exposto ou história pessoal inventada.
+
+**Prompt integral:**
+
+```text
+Create ONE landscape 3:2 tabletop RPG encounter map, Estigma do Caos, beautifully hand-painted with fine ink, believable textures, subtle Gothic/steam-age fantasy craftsmanship. Elevated bird's-eye approximately 65–75 degrees, very mild isometric depth, no horizon, readable walkable surfaces and natural object scale. Match the quality of a close Stalla scene map, NOT a regional atlas. Quality over quantity: 2–4 intentional interaction anchors, open negative space and coherent entrance/exit paths, no filler crowds, decorative barrels, random plants or excess buildings. Trees grouped along edges unless specifically important. Physically plausible ropes, supports, axles, doors, water and mechanisms; inhabitants only doing a useful task, no player-character portraits. No hidden bandits revealed, no secret labels, no icons, grid, arrows or GM annotations. Subtle thin dark cartographic border and a small restrained Portuguese title cartouche with the scene title only. Highest clarity, rich local colors, controlled detail. A single coherent directional light plus specified practical lamps; realistic shadows, fog never hides the playing space. Night scenes remain legible without resembling daylight. Each generated asset is ONE distinct map, never a collage.
+SCENE TITLE: Pedras escorregadias. BIOME: Riacho pedregoso. TIME: Manhã nublada 09h30. Rough scene footprint: 28 x 22 m, NOT a measured grid. COMPOSITION: Riacho atravessa lateralmente; caminho continua em ambas as margens; cinco pedras de travessia, vara apoiada e tronco preso na borda. LIGHTING (authoritative): Luz difusa deixa ver fundo, limo e profundidade; sem árvores decorativas no centro. PURPOSE OF OBJECTS: Testar o fundo, montar uma corda-guia e atravessar em ordem; a água permite ver onde o terreno afunda. CONTINUITY: Vau das Pedras já mapeado; condição Molhado apenas quando aplicável. Do not reveal narrative solutions or add visual lore not explicitly specified. Do not print time, difficulty, biome or character names within the picture. Slight angle variations only; closer framing for simple interactions, wider for emergencies.
+```
+
+## 14. A bomba e o barril — Ruim
+
+**Arquivo:** Mapas/Mapas de Transição/Ruim/Açude em campo seco - Meio-dia 13h00 - A bomba e o barril.png
+
+**Bioma e horário:** Açude em campo seco; Meio-dia 13h00. **Enquadramento aproximado:** 24 x 18 m.
+
+**Composição:** Bomba manual conectada ao reservatório por tubulação curta visível; tampa de inspeção, único barril à sombra e viajante tritão aguardando.
+
+**Iluminação:** Sol forte, sombra estreita de toldo, água distante brilha; contraste controlado para ler válvula.
+
+**Interações:** Abrir a tampa de inspeção, localizar a válvula presa ou baixar um recipiente com corda; o barril pode ser dividido.
+
+**Escolha e consequência:** Reparar a bomba custa tempo, mas atende todos. Disputar a última reserva cria conflito evitável; não remover arbitrariamente a água de Berenice para forçar o drama.
+
+**Continuidade:** Hidratação do Ebook e amizade de Berenice com Darmos iniciada por um gesto de ajuda.
+
+**Revisão:** Objeto central e 2–4 pontos úteis presentes e distinguíveis; Entradas, saídas e rota de retirada coerentes; Escala e estrutura física plausíveis; Horário, fonte de luz e direção das sombras coerentes; Sem excesso de plantas, objetos repetidos ou multidões; Nenhum segredo do mestre exposto ou história pessoal inventada.
+
+**Prompt integral:**
+
+```text
+Create ONE landscape 3:2 tabletop RPG encounter map, Estigma do Caos, beautifully hand-painted with fine ink, believable textures, subtle Gothic/steam-age fantasy craftsmanship. Elevated bird's-eye approximately 65–75 degrees, very mild isometric depth, no horizon, readable walkable surfaces and natural object scale. Match the quality of a close Stalla scene map, NOT a regional atlas. Quality over quantity: 2–4 intentional interaction anchors, open negative space and coherent entrance/exit paths, no filler crowds, decorative barrels, random plants or excess buildings. Trees grouped along edges unless specifically important. Physically plausible ropes, supports, axles, doors, water and mechanisms; inhabitants only doing a useful task, no player-character portraits. No hidden bandits revealed, no secret labels, no icons, grid, arrows or GM annotations. Subtle thin dark cartographic border and a small restrained Portuguese title cartouche with the scene title only. Highest clarity, rich local colors, controlled detail. A single coherent directional light plus specified practical lamps; realistic shadows, fog never hides the playing space. Night scenes remain legible without resembling daylight. Each generated asset is ONE distinct map, never a collage.
+SCENE TITLE: A bomba e o barril. BIOME: Açude em campo seco. TIME: Meio-dia 13h00. Rough scene footprint: 24 x 18 m, NOT a measured grid. COMPOSITION: Bomba manual conectada ao reservatório por tubulação curta visível; tampa de inspeção, único barril à sombra e viajante tritão aguardando. LIGHTING (authoritative): Sol forte, sombra estreita de toldo, água distante brilha; contraste controlado para ler válvula. PURPOSE OF OBJECTS: Abrir a tampa de inspeção, localizar a válvula presa ou baixar um recipiente com corda; o barril pode ser dividido. CONTINUITY: Hidratação do Ebook e amizade de Berenice com Darmos iniciada por um gesto de ajuda. Do not reveal narrative solutions or add visual lore not explicitly specified. Do not print time, difficulty, biome or character names within the picture. Slight angle variations only; closer framing for simple interactions, wider for emergencies.
+```
+
+## 15. Cheia na ponte baixa — Péssimo
+
+**Arquivo:** Mapas/Mapas de Transição/Péssimo/Rio em cheia - Crepúsculo chuvoso 18h00 - Cheia na ponte baixa.png
+
+**Bioma e horário:** Rio em cheia; Crepúsculo chuvoso 18h00. **Enquadramento aproximado:** 45 x 32 m.
+
+**Composição:** Ponte de madeira baixa entre duas margens, carrinho preso no meio, poste firme para amarrar corda e uma margem elevada acessível.
+
+**Iluminação:** Céu azul-chumbo, água marrom refletindo luz fria e uma lanterna âmbar no poste; destino seguro visível.
+
+**Interações:** Soltar a carga, lançar corda, auxiliar quem não nada e subir para a margem; destroços anunciam a força da corrente.
+
+**Escolha e consequência:** Escolher entre salvar mercadoria e preservar pessoas. A retirada é possível antes da ponte romper; não confundir habilidade aquática com imunidade a destroços.
+
+**Continuidade:** Berenice tem oportunidade de protagonismo sem resolver toda a cena sozinha.
+
+**Revisão:** Objeto central e 2–4 pontos úteis presentes e distinguíveis; Entradas, saídas e rota de retirada coerentes; Escala e estrutura física plausíveis; Horário, fonte de luz e direção das sombras coerentes; Sem excesso de plantas, objetos repetidos ou multidões; Nenhum segredo do mestre exposto ou história pessoal inventada.
+
+**Prompt integral:**
+
+```text
+Create ONE landscape 3:2 tabletop RPG encounter map, Estigma do Caos, beautifully hand-painted with fine ink, believable textures, subtle Gothic/steam-age fantasy craftsmanship. Elevated bird's-eye approximately 65–75 degrees, very mild isometric depth, no horizon, readable walkable surfaces and natural object scale. Match the quality of a close Stalla scene map, NOT a regional atlas. Quality over quantity: 2–4 intentional interaction anchors, open negative space and coherent entrance/exit paths, no filler crowds, decorative barrels, random plants or excess buildings. Trees grouped along edges unless specifically important. Physically plausible ropes, supports, axles, doors, water and mechanisms; inhabitants only doing a useful task, no player-character portraits. No hidden bandits revealed, no secret labels, no icons, grid, arrows or GM annotations. Subtle thin dark cartographic border and a small restrained Portuguese title cartouche with the scene title only. Highest clarity, rich local colors, controlled detail. A single coherent directional light plus specified practical lamps; realistic shadows, fog never hides the playing space. Night scenes remain legible without resembling daylight. Each generated asset is ONE distinct map, never a collage.
+SCENE TITLE: Cheia na ponte baixa. BIOME: Rio em cheia. TIME: Crepúsculo chuvoso 18h00. Rough scene footprint: 45 x 32 m, NOT a measured grid. COMPOSITION: Ponte de madeira baixa entre duas margens, carrinho preso no meio, poste firme para amarrar corda e uma margem elevada acessível. LIGHTING (authoritative): Céu azul-chumbo, água marrom refletindo luz fria e uma lanterna âmbar no poste; destino seguro visível. PURPOSE OF OBJECTS: Soltar a carga, lançar corda, auxiliar quem não nada e subir para a margem; destroços anunciam a força da corrente. CONTINUITY: Berenice tem oportunidade de protagonismo sem resolver toda a cena sozinha. Do not reveal narrative solutions or add visual lore not explicitly specified. Do not print time, difficulty, biome or character names within the picture. Slight angle variations only; closer framing for simple interactions, wider for emergencies.
+```
+
+## 16. Abrigo dos ferroviários — Ótimo
+
+**Arquivo:** Mapas/Mapas de Transição/Ótimo/Corredor ferroviário frio - Noite 22h00 - Abrigo dos ferroviários.png
+
+**Bioma e horário:** Corredor ferroviário frio; Noite 22h00. **Enquadramento aproximado:** 26 x 20 m.
+
+**Composição:** Abrigo de manutenção em corte parcial de telhado, mesa e fogão visíveis; via férrea reta do lado de fora e semáforo mecânico; dois funcionários.
+
+**Iluminação:** Janela e fogão âmbar acolhedores contra noite azul; trilho iluminado pela lua, interior sem labaredas exageradas.
+
+**Interações:** Secar roupas, consultar horários e ajudar num pequeno ajuste; funcionários de duas raças oferecem notícias da linha.
+
+**Escolha e consequência:** O grupo ganha descanso protegido e uma informação útil de transporte. A refeição e a segurança não escondem cobrança posterior.
+
+**Continuidade:** Ferrovia estabelecida nos mapas; contraste acolhedor com o gótico industrial.
+
+**Revisão:** Objeto central e 2–4 pontos úteis presentes e distinguíveis; Entradas, saídas e rota de retirada coerentes; Escala e estrutura física plausíveis; Horário, fonte de luz e direção das sombras coerentes; Sem excesso de plantas, objetos repetidos ou multidões; Nenhum segredo do mestre exposto ou história pessoal inventada.
+
+**Prompt integral:**
+
+```text
+Create ONE landscape 3:2 tabletop RPG encounter map, Estigma do Caos, beautifully hand-painted with fine ink, believable textures, subtle Gothic/steam-age fantasy craftsmanship. Elevated bird's-eye approximately 65–75 degrees, very mild isometric depth, no horizon, readable walkable surfaces and natural object scale. Match the quality of a close Stalla scene map, NOT a regional atlas. Quality over quantity: 2–4 intentional interaction anchors, open negative space and coherent entrance/exit paths, no filler crowds, decorative barrels, random plants or excess buildings. Trees grouped along edges unless specifically important. Physically plausible ropes, supports, axles, doors, water and mechanisms; inhabitants only doing a useful task, no player-character portraits. No hidden bandits revealed, no secret labels, no icons, grid, arrows or GM annotations. Subtle thin dark cartographic border and a small restrained Portuguese title cartouche with the scene title only. Highest clarity, rich local colors, controlled detail. A single coherent directional light plus specified practical lamps; realistic shadows, fog never hides the playing space. Night scenes remain legible without resembling daylight. Each generated asset is ONE distinct map, never a collage.
+SCENE TITLE: Abrigo dos ferroviários. BIOME: Corredor ferroviário frio. TIME: Noite 22h00. Rough scene footprint: 26 x 20 m, NOT a measured grid. COMPOSITION: Abrigo de manutenção em corte parcial de telhado, mesa e fogão visíveis; via férrea reta do lado de fora e semáforo mecânico; dois funcionários. LIGHTING (authoritative): Janela e fogão âmbar acolhedores contra noite azul; trilho iluminado pela lua, interior sem labaredas exageradas. PURPOSE OF OBJECTS: Secar roupas, consultar horários e ajudar num pequeno ajuste; funcionários de duas raças oferecem notícias da linha. CONTINUITY: Ferrovia estabelecida nos mapas; contraste acolhedor com o gótico industrial. Do not reveal narrative solutions or add visual lore not explicitly specified. Do not print time, difficulty, biome or character names within the picture. Slight angle variations only; closer framing for simple interactions, wider for emergencies.
+```
+
+## 17. Guincho de carga — Bom
+
+**Arquivo:** Mapas/Mapas de Transição/Bom/Pátio ferroviário - Manhã 08h30 - Guincho de carga.png
+
+**Bioma e horário:** Pátio ferroviário; Manhã 08h30. **Enquadramento aproximado:** 30 x 24 m.
+
+**Composição:** Guincho com base sólida, cabo esticado, contrapeso e caixa suspensa logo acima da plataforma; operador humano e técnico anão.
+
+**Iluminação:** Sol lateral, aço fosco com highlights discretos, sombra da carga mostra distância do piso.
+
+**Interações:** Calçar o contrapeso, orientar o operador ou usar ferramentas; examinar a caixa apenas com motivo narrativo ou consentimento.
+
+**Escolha e consequência:** A solução rende pagamento em sucata ou uma carona. Darmos pode se aproximar de inventores sem que todos sejam Estudiosos de sua família.
+
+**Continuidade:** Engenharia do Ebook; Darmos e sua herança como ligação opcional.
+
+**Revisão:** Objeto central e 2–4 pontos úteis presentes e distinguíveis; Entradas, saídas e rota de retirada coerentes; Escala e estrutura física plausíveis; Horário, fonte de luz e direção das sombras coerentes; Sem excesso de plantas, objetos repetidos ou multidões; Nenhum segredo do mestre exposto ou história pessoal inventada.
+
+**Prompt integral:**
+
+```text
+Create ONE landscape 3:2 tabletop RPG encounter map, Estigma do Caos, beautifully hand-painted with fine ink, believable textures, subtle Gothic/steam-age fantasy craftsmanship. Elevated bird's-eye approximately 65–75 degrees, very mild isometric depth, no horizon, readable walkable surfaces and natural object scale. Match the quality of a close Stalla scene map, NOT a regional atlas. Quality over quantity: 2–4 intentional interaction anchors, open negative space and coherent entrance/exit paths, no filler crowds, decorative barrels, random plants or excess buildings. Trees grouped along edges unless specifically important. Physically plausible ropes, supports, axles, doors, water and mechanisms; inhabitants only doing a useful task, no player-character portraits. No hidden bandits revealed, no secret labels, no icons, grid, arrows or GM annotations. Subtle thin dark cartographic border and a small restrained Portuguese title cartouche with the scene title only. Highest clarity, rich local colors, controlled detail. A single coherent directional light plus specified practical lamps; realistic shadows, fog never hides the playing space. Night scenes remain legible without resembling daylight. Each generated asset is ONE distinct map, never a collage.
+SCENE TITLE: Guincho de carga. BIOME: Pátio ferroviário. TIME: Manhã 08h30. Rough scene footprint: 30 x 24 m, NOT a measured grid. COMPOSITION: Guincho com base sólida, cabo esticado, contrapeso e caixa suspensa logo acima da plataforma; operador humano e técnico anão. LIGHTING (authoritative): Sol lateral, aço fosco com highlights discretos, sombra da carga mostra distância do piso. PURPOSE OF OBJECTS: Calçar o contrapeso, orientar o operador ou usar ferramentas; examinar a caixa apenas com motivo narrativo ou consentimento. CONTINUITY: Engenharia do Ebook; Darmos e sua herança como ligação opcional. Do not reveal narrative solutions or add visual lore not explicitly specified. Do not print time, difficulty, biome or character names within the picture. Slight angle variations only; closer framing for simple interactions, wider for emergencies.
+```
+
+## 18. Manifestos trocados — Médio
+
+**Arquivo:** Mapas/Mapas de Transição/Médio/Entreposto ferroviário - Meio-dia nublado 12h30 - Manifestos trocados.png
+
+**Bioma e horário:** Entreposto ferroviário; Meio-dia nublado 12h30. **Enquadramento aproximado:** 22 x 18 m.
+
+**Composição:** Duas pequenas pilhas de caixas separadas por balança, funcionário com manifesto numa mesa e acesso a vagão aberto; etiquetas sem texto legível.
+
+**Iluminação:** Luz uniforme para leitura das mercadorias, sem névoa ou dramatização de contrabando.
+
+**Interações:** Conferir pesos, ler marcas e localizar a troca; pode haver material comum para a Estalagem do Lampião, como óleo ou roupa de cama.
+
+**Escolha e consequência:** Ajudar esclarece o atraso e rende um favor modesto. Roubar uma caixa produz uma falta rastreável; não é necessário que a carga seja ilegal.
+
+**Continuidade:** Bruna é recepcionista da estalagem; não atribuir a ela compras ou segredos como fatos estabelecidos.
+
+**Revisão:** Objeto central e 2–4 pontos úteis presentes e distinguíveis; Entradas, saídas e rota de retirada coerentes; Escala e estrutura física plausíveis; Horário, fonte de luz e direção das sombras coerentes; Sem excesso de plantas, objetos repetidos ou multidões; Nenhum segredo do mestre exposto ou história pessoal inventada.
+
+**Prompt integral:**
+
+```text
+Create ONE landscape 3:2 tabletop RPG encounter map, Estigma do Caos, beautifully hand-painted with fine ink, believable textures, subtle Gothic/steam-age fantasy craftsmanship. Elevated bird's-eye approximately 65–75 degrees, very mild isometric depth, no horizon, readable walkable surfaces and natural object scale. Match the quality of a close Stalla scene map, NOT a regional atlas. Quality over quantity: 2–4 intentional interaction anchors, open negative space and coherent entrance/exit paths, no filler crowds, decorative barrels, random plants or excess buildings. Trees grouped along edges unless specifically important. Physically plausible ropes, supports, axles, doors, water and mechanisms; inhabitants only doing a useful task, no player-character portraits. No hidden bandits revealed, no secret labels, no icons, grid, arrows or GM annotations. Subtle thin dark cartographic border and a small restrained Portuguese title cartouche with the scene title only. Highest clarity, rich local colors, controlled detail. A single coherent directional light plus specified practical lamps; realistic shadows, fog never hides the playing space. Night scenes remain legible without resembling daylight. Each generated asset is ONE distinct map, never a collage.
+SCENE TITLE: Manifestos trocados. BIOME: Entreposto ferroviário. TIME: Meio-dia nublado 12h30. Rough scene footprint: 22 x 18 m, NOT a measured grid. COMPOSITION: Duas pequenas pilhas de caixas separadas por balança, funcionário com manifesto numa mesa e acesso a vagão aberto; etiquetas sem texto legível. LIGHTING (authoritative): Luz uniforme para leitura das mercadorias, sem névoa ou dramatização de contrabando. PURPOSE OF OBJECTS: Conferir pesos, ler marcas e localizar a troca; pode haver material comum para a Estalagem do Lampião, como óleo ou roupa de cama. CONTINUITY: Bruna é recepcionista da estalagem; não atribuir a ela compras ou segredos como fatos estabelecidos. Do not reveal narrative solutions or add visual lore not explicitly specified. Do not print time, difficulty, biome or character names within the picture. Slight angle variations only; closer framing for simple interactions, wider for emergencies.
+```
+
+## 19. O recrutador no desvio — Ruim
+
+**Arquivo:** Mapas/Mapas de Transição/Ruim/Parada ferroviária - Fim de tarde 17h15 - O recrutador no desvio.png
+
+**Bioma e horário:** Parada ferroviária; Fim de tarde 17h15. **Enquadramento aproximado:** 24 x 18 m.
+
+**Composição:** Mesa sob toldo com apenas duas propostas lacradas, enviado e testemunha, vagão de passageiros em segundo plano e saída desimpedida.
+
+**Iluminação:** Faixa de sol quente corta diagonalmente a sombra do toldo, rostos discretos sem retratar personagens dos jogadores.
+
+**Interações:** Ler os termos, confrontar promessas e verificar se há liberdade de recusa; uma testemunha pode registrar a conversa.
+
+**Escolha e consequência:** Darmos pode rejeitar a disputa entre Apóstolos e Estudiosos, negociar ou ganhar tempo. O enviado e a oferta são novos; não definir alinhamento de parentes ausentes.
+
+**Continuidade:** Facções Ironwake recuperadas das conversas; não afirmar que o enviado sabe toda a história de Darmos.
+
+**Revisão:** Objeto central e 2–4 pontos úteis presentes e distinguíveis; Entradas, saídas e rota de retirada coerentes; Escala e estrutura física plausíveis; Horário, fonte de luz e direção das sombras coerentes; Sem excesso de plantas, objetos repetidos ou multidões; Nenhum segredo do mestre exposto ou história pessoal inventada.
+
+**Prompt integral:**
+
+```text
+Create ONE landscape 3:2 tabletop RPG encounter map, Estigma do Caos, beautifully hand-painted with fine ink, believable textures, subtle Gothic/steam-age fantasy craftsmanship. Elevated bird's-eye approximately 65–75 degrees, very mild isometric depth, no horizon, readable walkable surfaces and natural object scale. Match the quality of a close Stalla scene map, NOT a regional atlas. Quality over quantity: 2–4 intentional interaction anchors, open negative space and coherent entrance/exit paths, no filler crowds, decorative barrels, random plants or excess buildings. Trees grouped along edges unless specifically important. Physically plausible ropes, supports, axles, doors, water and mechanisms; inhabitants only doing a useful task, no player-character portraits. No hidden bandits revealed, no secret labels, no icons, grid, arrows or GM annotations. Subtle thin dark cartographic border and a small restrained Portuguese title cartouche with the scene title only. Highest clarity, rich local colors, controlled detail. A single coherent directional light plus specified practical lamps; realistic shadows, fog never hides the playing space. Night scenes remain legible without resembling daylight. Each generated asset is ONE distinct map, never a collage.
+SCENE TITLE: O recrutador no desvio. BIOME: Parada ferroviária. TIME: Fim de tarde 17h15. Rough scene footprint: 24 x 18 m, NOT a measured grid. COMPOSITION: Mesa sob toldo com apenas duas propostas lacradas, enviado e testemunha, vagão de passageiros em segundo plano e saída desimpedida. LIGHTING (authoritative): Faixa de sol quente corta diagonalmente a sombra do toldo, rostos discretos sem retratar personagens dos jogadores. PURPOSE OF OBJECTS: Ler os termos, confrontar promessas e verificar se há liberdade de recusa; uma testemunha pode registrar a conversa. CONTINUITY: Facções Ironwake recuperadas das conversas; não afirmar que o enviado sabe toda a história de Darmos. Do not reveal narrative solutions or add visual lore not explicitly specified. Do not print time, difficulty, biome or character names within the picture. Slight angle variations only; closer framing for simple interactions, wider for emergencies.
+```
+
+## 20. Vagão sem freio — Péssimo
+
+**Arquivo:** Mapas/Mapas de Transição/Péssimo/Ramal ferroviário - Amanhecer 06h00 - Vagão sem freio.png
+
+**Bioma e horário:** Ramal ferroviário; Amanhecer 06h00. **Enquadramento aproximado:** 60 x 40 m.
+
+**Composição:** Vagão único numa rampa conduz a bifurcação mecânica funcional; alavanca ligada ao desvio, área de brita de escape e dois trabalhadores fora dos trilhos.
+
+**Iluminação:** Luz fria nascente com bordas douradas no metal; nenhuma longa locomotiva ou cidade extra.
+
+**Interações:** Acionar o desvio, usar o freio auxiliar ou evacuar trabalhadores; o ruído metálico dá aviso antes da chegada.
+
+**Escolha e consequência:** Desviar salva as pessoas, mas pode destruir a carga. Não exigir que Darmos manifeste novamente seu poder de Forjafundo; soluções comuns e coletivas funcionam.
+
+**Continuidade:** Tecnologia ferroviária dos mapas e agência dos personagens.
+
+**Revisão:** Objeto central e 2–4 pontos úteis presentes e distinguíveis; Entradas, saídas e rota de retirada coerentes; Escala e estrutura física plausíveis; Horário, fonte de luz e direção das sombras coerentes; Sem excesso de plantas, objetos repetidos ou multidões; Nenhum segredo do mestre exposto ou história pessoal inventada.
+
+**Prompt integral:**
+
+```text
+Create ONE landscape 3:2 tabletop RPG encounter map, Estigma do Caos, beautifully hand-painted with fine ink, believable textures, subtle Gothic/steam-age fantasy craftsmanship. Elevated bird's-eye approximately 65–75 degrees, very mild isometric depth, no horizon, readable walkable surfaces and natural object scale. Match the quality of a close Stalla scene map, NOT a regional atlas. Quality over quantity: 2–4 intentional interaction anchors, open negative space and coherent entrance/exit paths, no filler crowds, decorative barrels, random plants or excess buildings. Trees grouped along edges unless specifically important. Physically plausible ropes, supports, axles, doors, water and mechanisms; inhabitants only doing a useful task, no player-character portraits. No hidden bandits revealed, no secret labels, no icons, grid, arrows or GM annotations. Subtle thin dark cartographic border and a small restrained Portuguese title cartouche with the scene title only. Highest clarity, rich local colors, controlled detail. A single coherent directional light plus specified practical lamps; realistic shadows, fog never hides the playing space. Night scenes remain legible without resembling daylight. Each generated asset is ONE distinct map, never a collage.
+SCENE TITLE: Vagão sem freio. BIOME: Ramal ferroviário. TIME: Amanhecer 06h00. Rough scene footprint: 60 x 40 m, NOT a measured grid. COMPOSITION: Vagão único numa rampa conduz a bifurcação mecânica funcional; alavanca ligada ao desvio, área de brita de escape e dois trabalhadores fora dos trilhos. LIGHTING (authoritative): Luz fria nascente com bordas douradas no metal; nenhuma longa locomotiva ou cidade extra. PURPOSE OF OBJECTS: Acionar o desvio, usar o freio auxiliar ou evacuar trabalhadores; o ruído metálico dá aviso antes da chegada. CONTINUITY: Tecnologia ferroviária dos mapas e agência dos personagens. Do not reveal narrative solutions or add visual lore not explicitly specified. Do not print time, difficulty, biome or character names within the picture. Slight angle variations only; closer framing for simple interactions, wider for emergencies.
+```
+
+## 21. Refúgio sob o sino — Ótimo
+
+**Arquivo:** Mapas/Mapas de Transição/Ótimo/Montanha nevada - Noite 23h00 - Refúgio sob o sino.png
+
+**Bioma e horário:** Montanha nevada; Noite 23h00. **Enquadramento aproximado:** 28 x 22 m.
+
+**Composição:** Abrigo de pedra com corte parcial de telhado mostra lareira e banco; sino fixo à entrada; trilha nevada chega e sai pelas laterais.
+
+**Iluminação:** Neve azul sob luar e fogo quente contido no abrigo; noite legível sem transformar em dia.
+
+**Interações:** Acender o fogo, secar botas e conferir marcas de avalanches registradas numa tábua.
+
+**Escolha e consequência:** O descanso evita exposição e o registro aponta passagem segura. O sino orienta viajantes; não invoca monstros.
+
+**Continuidade:** Serra dos Sinos no mapa de Veldora; arquitetura sóbria e útil.
+
+**Revisão:** Objeto central e 2–4 pontos úteis presentes e distinguíveis; Entradas, saídas e rota de retirada coerentes; Escala e estrutura física plausíveis; Horário, fonte de luz e direção das sombras coerentes; Sem excesso de plantas, objetos repetidos ou multidões; Nenhum segredo do mestre exposto ou história pessoal inventada.
+
+**Prompt integral:**
+
+```text
+Create ONE landscape 3:2 tabletop RPG encounter map, Estigma do Caos, beautifully hand-painted with fine ink, believable textures, subtle Gothic/steam-age fantasy craftsmanship. Elevated bird's-eye approximately 65–75 degrees, very mild isometric depth, no horizon, readable walkable surfaces and natural object scale. Match the quality of a close Stalla scene map, NOT a regional atlas. Quality over quantity: 2–4 intentional interaction anchors, open negative space and coherent entrance/exit paths, no filler crowds, decorative barrels, random plants or excess buildings. Trees grouped along edges unless specifically important. Physically plausible ropes, supports, axles, doors, water and mechanisms; inhabitants only doing a useful task, no player-character portraits. No hidden bandits revealed, no secret labels, no icons, grid, arrows or GM annotations. Subtle thin dark cartographic border and a small restrained Portuguese title cartouche with the scene title only. Highest clarity, rich local colors, controlled detail. A single coherent directional light plus specified practical lamps; realistic shadows, fog never hides the playing space. Night scenes remain legible without resembling daylight. Each generated asset is ONE distinct map, never a collage.
+SCENE TITLE: Refúgio sob o sino. BIOME: Montanha nevada. TIME: Noite 23h00. Rough scene footprint: 28 x 22 m, NOT a measured grid. COMPOSITION: Abrigo de pedra com corte parcial de telhado mostra lareira e banco; sino fixo à entrada; trilha nevada chega e sai pelas laterais. LIGHTING (authoritative): Neve azul sob luar e fogo quente contido no abrigo; noite legível sem transformar em dia. PURPOSE OF OBJECTS: Acender o fogo, secar botas e conferir marcas de avalanches registradas numa tábua. CONTINUITY: Serra dos Sinos no mapa de Veldora; arquitetura sóbria e útil. Do not reveal narrative solutions or add visual lore not explicitly specified. Do not print time, difficulty, biome or character names within the picture. Slight angle variations only; closer framing for simple interactions, wider for emergencies.
+```
+
+## 22. Corrimão de corda — Bom
+
+**Arquivo:** Mapas/Mapas de Transição/Bom/Desfiladeiro rochoso - Manhã 10h00 - Corrimão de corda.png
+
+**Bioma e horário:** Desfiladeiro rochoso; Manhã 10h00. **Enquadramento aproximado:** 40 x 28 m.
+
+**Composição:** Cornija caminhável ao longo da rocha, corrimão passa por três argolas sólidas; montanhista anã ajusta último nó; recuo para mochilas.
+
+**Iluminação:** Sol matinal rasante ressalta relevo e ancoragens, penhasco em sombra com profundidade legível.
+
+**Interações:** Testar as ancoragens, ajudar a finalizar a linha e içar mochilas; um recuo oferece lugar para esperar.
+
+**Escolha e consequência:** O trabalho coletivo abre travessia mais segura e poupa esforço. Cordas inspecionadas não se rompem arbitrariamente para anular o benefício.
+
+**Continuidade:** Artesanato, Atletismo e auxílio mútuo.
+
+**Revisão:** Objeto central e 2–4 pontos úteis presentes e distinguíveis; Entradas, saídas e rota de retirada coerentes; Escala e estrutura física plausíveis; Horário, fonte de luz e direção das sombras coerentes; Sem excesso de plantas, objetos repetidos ou multidões; Nenhum segredo do mestre exposto ou história pessoal inventada.
+
+**Prompt integral:**
+
+```text
+Create ONE landscape 3:2 tabletop RPG encounter map, Estigma do Caos, beautifully hand-painted with fine ink, believable textures, subtle Gothic/steam-age fantasy craftsmanship. Elevated bird's-eye approximately 65–75 degrees, very mild isometric depth, no horizon, readable walkable surfaces and natural object scale. Match the quality of a close Stalla scene map, NOT a regional atlas. Quality over quantity: 2–4 intentional interaction anchors, open negative space and coherent entrance/exit paths, no filler crowds, decorative barrels, random plants or excess buildings. Trees grouped along edges unless specifically important. Physically plausible ropes, supports, axles, doors, water and mechanisms; inhabitants only doing a useful task, no player-character portraits. No hidden bandits revealed, no secret labels, no icons, grid, arrows or GM annotations. Subtle thin dark cartographic border and a small restrained Portuguese title cartouche with the scene title only. Highest clarity, rich local colors, controlled detail. A single coherent directional light plus specified practical lamps; realistic shadows, fog never hides the playing space. Night scenes remain legible without resembling daylight. Each generated asset is ONE distinct map, never a collage.
+SCENE TITLE: Corrimão de corda. BIOME: Desfiladeiro rochoso. TIME: Manhã 10h00. Rough scene footprint: 40 x 28 m, NOT a measured grid. COMPOSITION: Cornija caminhável ao longo da rocha, corrimão passa por três argolas sólidas; montanhista anã ajusta último nó; recuo para mochilas. LIGHTING (authoritative): Sol matinal rasante ressalta relevo e ancoragens, penhasco em sombra com profundidade legível. PURPOSE OF OBJECTS: Testar as ancoragens, ajudar a finalizar a linha e içar mochilas; um recuo oferece lugar para esperar. CONTINUITY: Artesanato, Atletismo e auxílio mútuo. Do not reveal narrative solutions or add visual lore not explicitly specified. Do not print time, difficulty, biome or character names within the picture. Slight angle variations only; closer framing for simple interactions, wider for emergencies.
+```
+
+## 23. Divisa coberta de neve — Médio
+
+**Arquivo:** Mapas/Mapas de Transição/Médio/Passo nevado - Tarde nublada 14h00 - Divisa coberta de neve.png
+
+**Bioma e horário:** Passo nevado; Tarde nublada 14h00. **Enquadramento aproximado:** 38 x 28 m.
+
+**Composição:** Dois marcos baixos parcialmente cobertos, abrigo de vento na rocha e mapa rasgado preso sob pedra; dois caminhos plausíveis.
+
+**Iluminação:** Branco frio difuso e contraste em pedra escura, pegadas discretas, nenhum ícone de fronteira inventado.
+
+**Interações:** Remover neve, comparar o relevo e reconstruir o desenho; é possível esperar a visibilidade melhorar.
+
+**Escolha e consequência:** Uma escolha incerta custa tempo ou leva a um retorno curto. Não inventar fronteiras oficiais ou guerra entre reinos a partir do marco.
+
+**Continuidade:** Nórvea como encaixe de bioma; topologia local reutilizável.
+
+**Revisão:** Objeto central e 2–4 pontos úteis presentes e distinguíveis; Entradas, saídas e rota de retirada coerentes; Escala e estrutura física plausíveis; Horário, fonte de luz e direção das sombras coerentes; Sem excesso de plantas, objetos repetidos ou multidões; Nenhum segredo do mestre exposto ou história pessoal inventada.
+
+**Prompt integral:**
+
+```text
+Create ONE landscape 3:2 tabletop RPG encounter map, Estigma do Caos, beautifully hand-painted with fine ink, believable textures, subtle Gothic/steam-age fantasy craftsmanship. Elevated bird's-eye approximately 65–75 degrees, very mild isometric depth, no horizon, readable walkable surfaces and natural object scale. Match the quality of a close Stalla scene map, NOT a regional atlas. Quality over quantity: 2–4 intentional interaction anchors, open negative space and coherent entrance/exit paths, no filler crowds, decorative barrels, random plants or excess buildings. Trees grouped along edges unless specifically important. Physically plausible ropes, supports, axles, doors, water and mechanisms; inhabitants only doing a useful task, no player-character portraits. No hidden bandits revealed, no secret labels, no icons, grid, arrows or GM annotations. Subtle thin dark cartographic border and a small restrained Portuguese title cartouche with the scene title only. Highest clarity, rich local colors, controlled detail. A single coherent directional light plus specified practical lamps; realistic shadows, fog never hides the playing space. Night scenes remain legible without resembling daylight. Each generated asset is ONE distinct map, never a collage.
+SCENE TITLE: Divisa coberta de neve. BIOME: Passo nevado. TIME: Tarde nublada 14h00. Rough scene footprint: 38 x 28 m, NOT a measured grid. COMPOSITION: Dois marcos baixos parcialmente cobertos, abrigo de vento na rocha e mapa rasgado preso sob pedra; dois caminhos plausíveis. LIGHTING (authoritative): Branco frio difuso e contraste em pedra escura, pegadas discretas, nenhum ícone de fronteira inventado. PURPOSE OF OBJECTS: Remover neve, comparar o relevo e reconstruir o desenho; é possível esperar a visibilidade melhorar. CONTINUITY: Nórvea como encaixe de bioma; topologia local reutilizável. Do not reveal narrative solutions or add visual lore not explicitly specified. Do not print time, difficulty, biome or character names within the picture. Slight angle variations only; closer framing for simple interactions, wider for emergencies.
+```
+
+## 24. O sentinela do desfiladeiro — Ruim
+
+**Arquivo:** Mapas/Mapas de Transição/Ruim/Desfiladeiro de montanha - Crepúsculo 18h15 - O sentinela do desfiladeiro.png
+
+**Bioma e horário:** Desfiladeiro de montanha; Crepúsculo 18h15. **Enquadramento aproximado:** 38 x 28 m.
+
+**Composição:** Golem sentinela junto a portão de ponte antiga; placa de ordens sem texto e nicho de manutenção; trilha lateral contorna por patamar baixo.
+
+**Iluminação:** Última luz quente na ponte e sombra azul da montanha, olho do golem sem holofote neon.
+
+**Interações:** Ler a ordem literal, conversar com o sentinela ou liberar um travamento mecânico; existe contorno a pé mais demorado.
+
+**Escolha e consequência:** Convencer ou reparar evita combate. Thanatos pode questionar obediência, mas o sentinela não reconhece seus criadores nem controla seu corpo por conveniência do mestre.
+
+**Continuidade:** Propósito passado dos golens e tema de autonomia de Thanatos.
+
+**Revisão:** Objeto central e 2–4 pontos úteis presentes e distinguíveis; Entradas, saídas e rota de retirada coerentes; Escala e estrutura física plausíveis; Horário, fonte de luz e direção das sombras coerentes; Sem excesso de plantas, objetos repetidos ou multidões; Nenhum segredo do mestre exposto ou história pessoal inventada.
+
+**Prompt integral:**
+
+```text
+Create ONE landscape 3:2 tabletop RPG encounter map, Estigma do Caos, beautifully hand-painted with fine ink, believable textures, subtle Gothic/steam-age fantasy craftsmanship. Elevated bird's-eye approximately 65–75 degrees, very mild isometric depth, no horizon, readable walkable surfaces and natural object scale. Match the quality of a close Stalla scene map, NOT a regional atlas. Quality over quantity: 2–4 intentional interaction anchors, open negative space and coherent entrance/exit paths, no filler crowds, decorative barrels, random plants or excess buildings. Trees grouped along edges unless specifically important. Physically plausible ropes, supports, axles, doors, water and mechanisms; inhabitants only doing a useful task, no player-character portraits. No hidden bandits revealed, no secret labels, no icons, grid, arrows or GM annotations. Subtle thin dark cartographic border and a small restrained Portuguese title cartouche with the scene title only. Highest clarity, rich local colors, controlled detail. A single coherent directional light plus specified practical lamps; realistic shadows, fog never hides the playing space. Night scenes remain legible without resembling daylight. Each generated asset is ONE distinct map, never a collage.
+SCENE TITLE: O sentinela do desfiladeiro. BIOME: Desfiladeiro de montanha. TIME: Crepúsculo 18h15. Rough scene footprint: 38 x 28 m, NOT a measured grid. COMPOSITION: Golem sentinela junto a portão de ponte antiga; placa de ordens sem texto e nicho de manutenção; trilha lateral contorna por patamar baixo. LIGHTING (authoritative): Última luz quente na ponte e sombra azul da montanha, olho do golem sem holofote neon. PURPOSE OF OBJECTS: Ler a ordem literal, conversar com o sentinela ou liberar um travamento mecânico; existe contorno a pé mais demorado. CONTINUITY: Propósito passado dos golens e tema de autonomia de Thanatos. Do not reveal narrative solutions or add visual lore not explicitly specified. Do not print time, difficulty, biome or character names within the picture. Slight angle variations only; closer framing for simple interactions, wider for emergencies.
+```
+
+## 25. Avalanche e sinos mudos — Péssimo
+
+**Arquivo:** Mapas/Mapas de Transição/Péssimo/Encosta nevada - Amanhecer nublado 07h00 - Avalanche e sinos mudos.png
+
+**Bioma e horário:** Encosta nevada; Amanhecer nublado 07h00. **Enquadramento aproximado:** 55 x 40 m.
+
+**Composição:** Faixa de neve caída termina na entrada soterrada de abrigo; ponta de sino, corda e mochila emergem; saliência segura lateral.
+
+**Iluminação:** Luz pálida e azulada, diferenças de volume visíveis, nada de cadáveres ou letras marcando vítimas.
+
+**Interações:** Ouvir através da neve, sondar com haste, cavar em equipe e vigiar a encosta que ainda estala.
+
+**Escolha e consequência:** O grupo decide quanto arriscar antes de recuar para uma saliência. O perigo é anunciado; resgates não dependem de uma única perícia nem de resistir parado ao desastre.
+
+**Continuidade:** Cena de resgate; não exigir equipamento que nunca houve chance de adquirir.
+
+**Revisão:** Objeto central e 2–4 pontos úteis presentes e distinguíveis; Entradas, saídas e rota de retirada coerentes; Escala e estrutura física plausíveis; Horário, fonte de luz e direção das sombras coerentes; Sem excesso de plantas, objetos repetidos ou multidões; Nenhum segredo do mestre exposto ou história pessoal inventada.
+
+**Prompt integral:**
+
+```text
+Create ONE landscape 3:2 tabletop RPG encounter map, Estigma do Caos, beautifully hand-painted with fine ink, believable textures, subtle Gothic/steam-age fantasy craftsmanship. Elevated bird's-eye approximately 65–75 degrees, very mild isometric depth, no horizon, readable walkable surfaces and natural object scale. Match the quality of a close Stalla scene map, NOT a regional atlas. Quality over quantity: 2–4 intentional interaction anchors, open negative space and coherent entrance/exit paths, no filler crowds, decorative barrels, random plants or excess buildings. Trees grouped along edges unless specifically important. Physically plausible ropes, supports, axles, doors, water and mechanisms; inhabitants only doing a useful task, no player-character portraits. No hidden bandits revealed, no secret labels, no icons, grid, arrows or GM annotations. Subtle thin dark cartographic border and a small restrained Portuguese title cartouche with the scene title only. Highest clarity, rich local colors, controlled detail. A single coherent directional light plus specified practical lamps; realistic shadows, fog never hides the playing space. Night scenes remain legible without resembling daylight. Each generated asset is ONE distinct map, never a collage.
+SCENE TITLE: Avalanche e sinos mudos. BIOME: Encosta nevada. TIME: Amanhecer nublado 07h00. Rough scene footprint: 55 x 40 m, NOT a measured grid. COMPOSITION: Faixa de neve caída termina na entrada soterrada de abrigo; ponta de sino, corda e mochila emergem; saliência segura lateral. LIGHTING (authoritative): Luz pálida e azulada, diferenças de volume visíveis, nada de cadáveres ou letras marcando vítimas. PURPOSE OF OBJECTS: Ouvir através da neve, sondar com haste, cavar em equipe e vigiar a encosta que ainda estala. CONTINUITY: Cena de resgate; não exigir equipamento que nunca houve chance de adquirir. Do not reveal narrative solutions or add visual lore not explicitly specified. Do not print time, difficulty, biome or character names within the picture. Slight angle variations only; closer framing for simple interactions, wider for emergencies.
+```
+
+## 26. Passarela dos moradores — Ótimo
+
+**Arquivo:** Mapas/Mapas de Transição/Ótimo/Brejo - Fim de tarde 17h00 - Passarela dos moradores.png
+
+**Bioma e horário:** Brejo; Fim de tarde 17h00. **Enquadramento aproximado:** 34 x 26 m.
+
+**Composição:** Passarela contínua elevada sobre brejo liga duas saídas e plataforma seca com coletor de chuva e fogareiro; dois moradores ocupados.
+
+**Iluminação:** Âmbar do poente nas tábuas, reflexos verdes escuros na água, bruma leve fora da passarela.
+
+**Interações:** Consultar os moradores, repor água tratada e descobrir quais tábuas levam ao caminho firme.
+
+**Escolha e consequência:** Uma travessia segura e descanso são a recompensa. O nome sombrio do brejo não torna toda hospitalidade uma ameaça.
+
+**Continuidade:** Brejo dos Lamentos no mapa; NPCs locais novos.
+
+**Revisão:** Objeto central e 2–4 pontos úteis presentes e distinguíveis; Entradas, saídas e rota de retirada coerentes; Escala e estrutura física plausíveis; Horário, fonte de luz e direção das sombras coerentes; Sem excesso de plantas, objetos repetidos ou multidões; Nenhum segredo do mestre exposto ou história pessoal inventada.
+
+**Prompt integral:**
+
+```text
+Create ONE landscape 3:2 tabletop RPG encounter map, Estigma do Caos, beautifully hand-painted with fine ink, believable textures, subtle Gothic/steam-age fantasy craftsmanship. Elevated bird's-eye approximately 65–75 degrees, very mild isometric depth, no horizon, readable walkable surfaces and natural object scale. Match the quality of a close Stalla scene map, NOT a regional atlas. Quality over quantity: 2–4 intentional interaction anchors, open negative space and coherent entrance/exit paths, no filler crowds, decorative barrels, random plants or excess buildings. Trees grouped along edges unless specifically important. Physically plausible ropes, supports, axles, doors, water and mechanisms; inhabitants only doing a useful task, no player-character portraits. No hidden bandits revealed, no secret labels, no icons, grid, arrows or GM annotations. Subtle thin dark cartographic border and a small restrained Portuguese title cartouche with the scene title only. Highest clarity, rich local colors, controlled detail. A single coherent directional light plus specified practical lamps; realistic shadows, fog never hides the playing space. Night scenes remain legible without resembling daylight. Each generated asset is ONE distinct map, never a collage.
+SCENE TITLE: Passarela dos moradores. BIOME: Brejo. TIME: Fim de tarde 17h00. Rough scene footprint: 34 x 26 m, NOT a measured grid. COMPOSITION: Passarela contínua elevada sobre brejo liga duas saídas e plataforma seca com coletor de chuva e fogareiro; dois moradores ocupados. LIGHTING (authoritative): Âmbar do poente nas tábuas, reflexos verdes escuros na água, bruma leve fora da passarela. PURPOSE OF OBJECTS: Consultar os moradores, repor água tratada e descobrir quais tábuas levam ao caminho firme. CONTINUITY: Brejo dos Lamentos no mapa; NPCs locais novos. Do not reveal narrative solutions or add visual lore not explicitly specified. Do not print time, difficulty, biome or character names within the picture. Slight angle variations only; closer framing for simple interactions, wider for emergencies.
+```
+
+## 27. Herbário no muro — Bom
+
+**Arquivo:** Mapas/Mapas de Transição/Bom/Ruína em brejo - Manhã 09h00 - Herbário no muro.png
+
+**Bioma e horário:** Ruína em brejo; Manhã 09h00. **Enquadramento aproximado:** 20 x 16 m.
+
+**Composição:** Muro antigo com plantas secando, pequeno alambique e caixa de amostras; pesquisadora elfa com bancada ordenada.
+
+**Iluminação:** Luz verde refletida na água e raio quente na mesa; variedade de três amostras, não floresta de frascos.
+
+**Interações:** Identificar plantas, trocar informação ou ajudar a recolher amostras antes da chuva; a caixa tem uso claro.
+
+**Escolha e consequência:** A ajuda rende um consumível comum adequado à campanha ou orientação de Medicina. Nenhuma erva recebe cura milagrosa sem regra definida.
+
+**Continuidade:** Longevidade e conhecimento élfico, Medicina e Artesanato.
+
+**Revisão:** Objeto central e 2–4 pontos úteis presentes e distinguíveis; Entradas, saídas e rota de retirada coerentes; Escala e estrutura física plausíveis; Horário, fonte de luz e direção das sombras coerentes; Sem excesso de plantas, objetos repetidos ou multidões; Nenhum segredo do mestre exposto ou história pessoal inventada.
+
+**Prompt integral:**
+
+```text
+Create ONE landscape 3:2 tabletop RPG encounter map, Estigma do Caos, beautifully hand-painted with fine ink, believable textures, subtle Gothic/steam-age fantasy craftsmanship. Elevated bird's-eye approximately 65–75 degrees, very mild isometric depth, no horizon, readable walkable surfaces and natural object scale. Match the quality of a close Stalla scene map, NOT a regional atlas. Quality over quantity: 2–4 intentional interaction anchors, open negative space and coherent entrance/exit paths, no filler crowds, decorative barrels, random plants or excess buildings. Trees grouped along edges unless specifically important. Physically plausible ropes, supports, axles, doors, water and mechanisms; inhabitants only doing a useful task, no player-character portraits. No hidden bandits revealed, no secret labels, no icons, grid, arrows or GM annotations. Subtle thin dark cartographic border and a small restrained Portuguese title cartouche with the scene title only. Highest clarity, rich local colors, controlled detail. A single coherent directional light plus specified practical lamps; realistic shadows, fog never hides the playing space. Night scenes remain legible without resembling daylight. Each generated asset is ONE distinct map, never a collage.
+SCENE TITLE: Herbário no muro. BIOME: Ruína em brejo. TIME: Manhã 09h00. Rough scene footprint: 20 x 16 m, NOT a measured grid. COMPOSITION: Muro antigo com plantas secando, pequeno alambique e caixa de amostras; pesquisadora elfa com bancada ordenada. LIGHTING (authoritative): Luz verde refletida na água e raio quente na mesa; variedade de três amostras, não floresta de frascos. PURPOSE OF OBJECTS: Identificar plantas, trocar informação ou ajudar a recolher amostras antes da chuva; a caixa tem uso claro. CONTINUITY: Longevidade e conhecimento élfico, Medicina e Artesanato. Do not reveal narrative solutions or add visual lore not explicitly specified. Do not print time, difficulty, biome or character names within the picture. Slight angle variations only; closer framing for simple interactions, wider for emergencies.
+```
+
+## 28. Moinho sem roda — Médio
+
+**Arquivo:** Mapas/Mapas de Transição/Médio/Várzea - Tarde 15h30 - Moinho sem roda.png
+
+**Bioma e horário:** Várzea; Tarde 15h30. **Enquadramento aproximado:** 32 x 24 m.
+
+**Composição:** Base de moinho sem roda junto a canal raso contínuo; engrenagem solta recuperável e escada curta para plataforma de observação.
+
+**Iluminação:** Sol passa pelo telhado quebrado desenhando faixas claras, água pouco turva sem magia.
+
+**Interações:** Subir na base para orientar-se, recuperar peça útil ou verificar o canal como desvio.
+
+**Escolha e consequência:** Vasculhar troca tempo por sucata. O ruído da água explica o som estranho: a cena pode terminar sem segredo adicional.
+
+**Continuidade:** Vila das Azenhas no atlas; recursos e exploração mundana.
+
+**Revisão:** Objeto central e 2–4 pontos úteis presentes e distinguíveis; Entradas, saídas e rota de retirada coerentes; Escala e estrutura física plausíveis; Horário, fonte de luz e direção das sombras coerentes; Sem excesso de plantas, objetos repetidos ou multidões; Nenhum segredo do mestre exposto ou história pessoal inventada.
+
+**Prompt integral:**
+
+```text
+Create ONE landscape 3:2 tabletop RPG encounter map, Estigma do Caos, beautifully hand-painted with fine ink, believable textures, subtle Gothic/steam-age fantasy craftsmanship. Elevated bird's-eye approximately 65–75 degrees, very mild isometric depth, no horizon, readable walkable surfaces and natural object scale. Match the quality of a close Stalla scene map, NOT a regional atlas. Quality over quantity: 2–4 intentional interaction anchors, open negative space and coherent entrance/exit paths, no filler crowds, decorative barrels, random plants or excess buildings. Trees grouped along edges unless specifically important. Physically plausible ropes, supports, axles, doors, water and mechanisms; inhabitants only doing a useful task, no player-character portraits. No hidden bandits revealed, no secret labels, no icons, grid, arrows or GM annotations. Subtle thin dark cartographic border and a small restrained Portuguese title cartouche with the scene title only. Highest clarity, rich local colors, controlled detail. A single coherent directional light plus specified practical lamps; realistic shadows, fog never hides the playing space. Night scenes remain legible without resembling daylight. Each generated asset is ONE distinct map, never a collage.
+SCENE TITLE: Moinho sem roda. BIOME: Várzea. TIME: Tarde 15h30. Rough scene footprint: 32 x 24 m, NOT a measured grid. COMPOSITION: Base de moinho sem roda junto a canal raso contínuo; engrenagem solta recuperável e escada curta para plataforma de observação. LIGHTING (authoritative): Sol passa pelo telhado quebrado desenhando faixas claras, água pouco turva sem magia. PURPOSE OF OBJECTS: Subir na base para orientar-se, recuperar peça útil ou verificar o canal como desvio. CONTINUITY: Vila das Azenhas no atlas; recursos e exploração mundana. Do not reveal narrative solutions or add visual lore not explicitly specified. Do not print time, difficulty, biome or character names within the picture. Slight angle variations only; closer framing for simple interactions, wider for emergencies.
+```
+
+## 29. O amuleto na lama — Ruim
+
+**Arquivo:** Mapas/Mapas de Transição/Ruim/Brejo lamacento - Crepúsculo 18h45 - O amuleto na lama.png
+
+**Bioma e horário:** Brejo lamacento; Crepúsculo 18h45. **Enquadramento aproximado:** 24 x 18 m.
+
+**Composição:** Passagem sobre lama, Qareen sentado em raiz seca com tatuagens discretas, vara de busca e corrente metálica parcialmente enterrada perto da margem.
+
+**Iluminação:** Luz fria de fim de dia, lampião pequeno permite ver lama e amuleto sem revelar brilho sobrenatural exagerado.
+
+**Interações:** Estabilizar o viajante, sondar a lama e negociar com quem achou o amuleto; identificar o objeto antes de tratá-lo como saque.
+
+**Escolha e consequência:** Recuperar o catalisador protege uma vida. Não iniciar uma contagem letal arbitrária: sua condição deve seguir a situação e as regras raciais escolhidas.
+
+**Continuidade:** Dependência mágica dos Qareens no Ebook; dilema para Azhara sem impor ação à jogadora.
+
+**Revisão:** Objeto central e 2–4 pontos úteis presentes e distinguíveis; Entradas, saídas e rota de retirada coerentes; Escala e estrutura física plausíveis; Horário, fonte de luz e direção das sombras coerentes; Sem excesso de plantas, objetos repetidos ou multidões; Nenhum segredo do mestre exposto ou história pessoal inventada.
+
+**Prompt integral:**
+
+```text
+Create ONE landscape 3:2 tabletop RPG encounter map, Estigma do Caos, beautifully hand-painted with fine ink, believable textures, subtle Gothic/steam-age fantasy craftsmanship. Elevated bird's-eye approximately 65–75 degrees, very mild isometric depth, no horizon, readable walkable surfaces and natural object scale. Match the quality of a close Stalla scene map, NOT a regional atlas. Quality over quantity: 2–4 intentional interaction anchors, open negative space and coherent entrance/exit paths, no filler crowds, decorative barrels, random plants or excess buildings. Trees grouped along edges unless specifically important. Physically plausible ropes, supports, axles, doors, water and mechanisms; inhabitants only doing a useful task, no player-character portraits. No hidden bandits revealed, no secret labels, no icons, grid, arrows or GM annotations. Subtle thin dark cartographic border and a small restrained Portuguese title cartouche with the scene title only. Highest clarity, rich local colors, controlled detail. A single coherent directional light plus specified practical lamps; realistic shadows, fog never hides the playing space. Night scenes remain legible without resembling daylight. Each generated asset is ONE distinct map, never a collage.
+SCENE TITLE: O amuleto na lama. BIOME: Brejo lamacento. TIME: Crepúsculo 18h45. Rough scene footprint: 24 x 18 m, NOT a measured grid. COMPOSITION: Passagem sobre lama, Qareen sentado em raiz seca com tatuagens discretas, vara de busca e corrente metálica parcialmente enterrada perto da margem. LIGHTING (authoritative): Luz fria de fim de dia, lampião pequeno permite ver lama e amuleto sem revelar brilho sobrenatural exagerado. PURPOSE OF OBJECTS: Estabilizar o viajante, sondar a lama e negociar com quem achou o amuleto; identificar o objeto antes de tratá-lo como saque. CONTINUITY: Dependência mágica dos Qareens no Ebook; dilema para Azhara sem impor ação à jogadora. Do not reveal narrative solutions or add visual lore not explicitly specified. Do not print time, difficulty, biome or character names within the picture. Slight angle variations only; closer framing for simple interactions, wider for emergencies.
+```
+
+## 30. Piso que afunda — Péssimo
+
+**Arquivo:** Mapas/Mapas de Transição/Péssimo/Ruína alagada - Noite 20h30 - Piso que afunda.png
+
+**Bioma e horário:** Ruína alagada; Noite 20h30. **Enquadramento aproximado:** 30 x 24 m.
+
+**Composição:** Corte superior de salão arruinado mostra lajes caindo na cisterna, pilar íntegro com espaço para corda, viga e escada rumo à saída; dois viajantes.
+
+**Iluminação:** Luar pela abertura do teto e única lanterna âmbar; pilares estruturais coerentes e patamar seguro reconhecível.
+
+**Interações:** Distribuir peso, prender corda ao pilar, abandonar carga e abrir a saída superior.
+
+**Escolha e consequência:** Salvar os presos compete com recuperar os pertences. Um objeto abandonado pode ser recuperado depois; não converter toda perda em destruição definitiva.
+
+**Continuidade:** Engenharia, Atletismo e uso estratégico de inventário.
+
+**Revisão:** Objeto central e 2–4 pontos úteis presentes e distinguíveis; Entradas, saídas e rota de retirada coerentes; Escala e estrutura física plausíveis; Horário, fonte de luz e direção das sombras coerentes; Sem excesso de plantas, objetos repetidos ou multidões; Nenhum segredo do mestre exposto ou história pessoal inventada.
+
+**Prompt integral:**
+
+```text
+Create ONE landscape 3:2 tabletop RPG encounter map, Estigma do Caos, beautifully hand-painted with fine ink, believable textures, subtle Gothic/steam-age fantasy craftsmanship. Elevated bird's-eye approximately 65–75 degrees, very mild isometric depth, no horizon, readable walkable surfaces and natural object scale. Match the quality of a close Stalla scene map, NOT a regional atlas. Quality over quantity: 2–4 intentional interaction anchors, open negative space and coherent entrance/exit paths, no filler crowds, decorative barrels, random plants or excess buildings. Trees grouped along edges unless specifically important. Physically plausible ropes, supports, axles, doors, water and mechanisms; inhabitants only doing a useful task, no player-character portraits. No hidden bandits revealed, no secret labels, no icons, grid, arrows or GM annotations. Subtle thin dark cartographic border and a small restrained Portuguese title cartouche with the scene title only. Highest clarity, rich local colors, controlled detail. A single coherent directional light plus specified practical lamps; realistic shadows, fog never hides the playing space. Night scenes remain legible without resembling daylight. Each generated asset is ONE distinct map, never a collage.
+SCENE TITLE: Piso que afunda. BIOME: Ruína alagada. TIME: Noite 20h30. Rough scene footprint: 30 x 24 m, NOT a measured grid. COMPOSITION: Corte superior de salão arruinado mostra lajes caindo na cisterna, pilar íntegro com espaço para corda, viga e escada rumo à saída; dois viajantes. LIGHTING (authoritative): Luar pela abertura do teto e única lanterna âmbar; pilares estruturais coerentes e patamar seguro reconhecível. PURPOSE OF OBJECTS: Distribuir peso, prender corda ao pilar, abandonar carga e abrir a saída superior. CONTINUITY: Engenharia, Atletismo e uso estratégico de inventário. Do not reveal narrative solutions or add visual lore not explicitly specified. Do not print time, difficulty, biome or character names within the picture. Slight angle variations only; closer framing for simple interactions, wider for emergencies.
+```
+
+## 31. Pátio de sombra — Ótimo
+
+**Arquivo:** Mapas/Mapas de Transição/Ótimo/Oásis desértico - Meio-dia 12h00 - Pátio de sombra.png
+
+**Bioma e horário:** Oásis desértico; Meio-dia 12h00. **Enquadramento aproximado:** 24 x 20 m.
+
+**Composição:** Pátio pequeno com cisterna, toldos e bancos; bacia de lavagem num canto; anfitrião Qareen e viajante com recipiente.
+
+**Iluminação:** Exterior branco quente e interior azul fresco, tecido translúcido, água nítida; poucas plantas apenas onde irrigadas.
+
+**Interações:** Repor água, proteger catalisadores do calor e combinar viagem noturna com outros viajantes.
+
+**Escolha e consequência:** Descanso e abastecimento são garantidos pelo anfitrião. O foco é convivência entre necessidades diferentes, sem exotizar Qareens.
+
+**Continuidade:** Qadira no mapa; água, preparação e povos mágicos do Ebook.
+
+**Revisão:** Objeto central e 2–4 pontos úteis presentes e distinguíveis; Entradas, saídas e rota de retirada coerentes; Escala e estrutura física plausíveis; Horário, fonte de luz e direção das sombras coerentes; Sem excesso de plantas, objetos repetidos ou multidões; Nenhum segredo do mestre exposto ou história pessoal inventada.
+
+**Prompt integral:**
+
+```text
+Create ONE landscape 3:2 tabletop RPG encounter map, Estigma do Caos, beautifully hand-painted with fine ink, believable textures, subtle Gothic/steam-age fantasy craftsmanship. Elevated bird's-eye approximately 65–75 degrees, very mild isometric depth, no horizon, readable walkable surfaces and natural object scale. Match the quality of a close Stalla scene map, NOT a regional atlas. Quality over quantity: 2–4 intentional interaction anchors, open negative space and coherent entrance/exit paths, no filler crowds, decorative barrels, random plants or excess buildings. Trees grouped along edges unless specifically important. Physically plausible ropes, supports, axles, doors, water and mechanisms; inhabitants only doing a useful task, no player-character portraits. No hidden bandits revealed, no secret labels, no icons, grid, arrows or GM annotations. Subtle thin dark cartographic border and a small restrained Portuguese title cartouche with the scene title only. Highest clarity, rich local colors, controlled detail. A single coherent directional light plus specified practical lamps; realistic shadows, fog never hides the playing space. Night scenes remain legible without resembling daylight. Each generated asset is ONE distinct map, never a collage.
+SCENE TITLE: Pátio de sombra. BIOME: Oásis desértico. TIME: Meio-dia 12h00. Rough scene footprint: 24 x 20 m, NOT a measured grid. COMPOSITION: Pátio pequeno com cisterna, toldos e bancos; bacia de lavagem num canto; anfitrião Qareen e viajante com recipiente. LIGHTING (authoritative): Exterior branco quente e interior azul fresco, tecido translúcido, água nítida; poucas plantas apenas onde irrigadas. PURPOSE OF OBJECTS: Repor água, proteger catalisadores do calor e combinar viagem noturna com outros viajantes. CONTINUITY: Qadira no mapa; água, preparação e povos mágicos do Ebook. Do not reveal narrative solutions or add visual lore not explicitly specified. Do not print time, difficulty, biome or character names within the picture. Slight angle variations only; closer framing for simple interactions, wider for emergencies.
+```
+
+## 32. Caravana das peças usadas — Bom
+
+**Arquivo:** Mapas/Mapas de Transição/Bom/Deserto pedregoso - Amanhecer 06h15 - Caravana das peças usadas.png
+
+**Bioma e horário:** Deserto pedregoso; Amanhecer 06h15. **Enquadramento aproximado:** 24 x 18 m.
+
+**Composição:** Uma carroça comercial, lona baixa, balança e três conjuntos de peças distintas; comerciante draconato e humana mostram material.
+
+**Iluminação:** Sol baixo rosado, sombras longas frias, latão fosco; não espalhar mercadoria fora da lona.
+
+**Interações:** Barganhar, testar qualidade e trocar sucata; Azhara pode adquirir algo de valor de modo legítimo.
+
+**Escolha e consequência:** Uma boa negociação garante material útil ou reparo. Sua compulsão racial não precisa ser representada sempre por roubo nem por punição automática.
+
+**Continuidade:** Acumulação dracônica e história de Azhara; mercadores novos.
+
+**Revisão:** Objeto central e 2–4 pontos úteis presentes e distinguíveis; Entradas, saídas e rota de retirada coerentes; Escala e estrutura física plausíveis; Horário, fonte de luz e direção das sombras coerentes; Sem excesso de plantas, objetos repetidos ou multidões; Nenhum segredo do mestre exposto ou história pessoal inventada.
+
+**Prompt integral:**
+
+```text
+Create ONE landscape 3:2 tabletop RPG encounter map, Estigma do Caos, beautifully hand-painted with fine ink, believable textures, subtle Gothic/steam-age fantasy craftsmanship. Elevated bird's-eye approximately 65–75 degrees, very mild isometric depth, no horizon, readable walkable surfaces and natural object scale. Match the quality of a close Stalla scene map, NOT a regional atlas. Quality over quantity: 2–4 intentional interaction anchors, open negative space and coherent entrance/exit paths, no filler crowds, decorative barrels, random plants or excess buildings. Trees grouped along edges unless specifically important. Physically plausible ropes, supports, axles, doors, water and mechanisms; inhabitants only doing a useful task, no player-character portraits. No hidden bandits revealed, no secret labels, no icons, grid, arrows or GM annotations. Subtle thin dark cartographic border and a small restrained Portuguese title cartouche with the scene title only. Highest clarity, rich local colors, controlled detail. A single coherent directional light plus specified practical lamps; realistic shadows, fog never hides the playing space. Night scenes remain legible without resembling daylight. Each generated asset is ONE distinct map, never a collage.
+SCENE TITLE: Caravana das peças usadas. BIOME: Deserto pedregoso. TIME: Amanhecer 06h15. Rough scene footprint: 24 x 18 m, NOT a measured grid. COMPOSITION: Uma carroça comercial, lona baixa, balança e três conjuntos de peças distintas; comerciante draconato e humana mostram material. LIGHTING (authoritative): Sol baixo rosado, sombras longas frias, latão fosco; não espalhar mercadoria fora da lona. PURPOSE OF OBJECTS: Barganhar, testar qualidade e trocar sucata; Azhara pode adquirir algo de valor de modo legítimo. CONTINUITY: Acumulação dracônica e história de Azhara; mercadores novos. Do not reveal narrative solutions or add visual lore not explicitly specified. Do not print time, difficulty, biome or character names within the picture. Slight angle variations only; closer framing for simple interactions, wider for emergencies.
+```
+
+## 33. Poço de uso alternado — Médio
+
+**Arquivo:** Mapas/Mapas de Transição/Médio/Deserto - Noite 21h30 - Poço de uso alternado.png
+
+**Bioma e horário:** Deserto; Noite 21h30. **Enquadramento aproximado:** 26 x 20 m.
+
+**Composição:** Poço de pedra com roldana operacional, duas talhas e quadro de ordem sem letras; dois viajantes e um animal de carga aguardam.
+
+**Iluminação:** Luar claro e lanterna presa à estrutura do poço, ampla sombra calma, corda contínua visível.
+
+**Interações:** Organizar a fila, consertar a roldana ou negociar prioridade para alguém desidratado.
+
+**Escolha e consequência:** A solução redistribui espera e trabalho. Água suficiente existe, mas exige cooperação; não fabricar uma escassez total após a escolha do grupo.
+
+**Continuidade:** Diplomacia e necessidades fisiológicas distintas.
+
+**Revisão:** Objeto central e 2–4 pontos úteis presentes e distinguíveis; Entradas, saídas e rota de retirada coerentes; Escala e estrutura física plausíveis; Horário, fonte de luz e direção das sombras coerentes; Sem excesso de plantas, objetos repetidos ou multidões; Nenhum segredo do mestre exposto ou história pessoal inventada.
+
+**Prompt integral:**
+
+```text
+Create ONE landscape 3:2 tabletop RPG encounter map, Estigma do Caos, beautifully hand-painted with fine ink, believable textures, subtle Gothic/steam-age fantasy craftsmanship. Elevated bird's-eye approximately 65–75 degrees, very mild isometric depth, no horizon, readable walkable surfaces and natural object scale. Match the quality of a close Stalla scene map, NOT a regional atlas. Quality over quantity: 2–4 intentional interaction anchors, open negative space and coherent entrance/exit paths, no filler crowds, decorative barrels, random plants or excess buildings. Trees grouped along edges unless specifically important. Physically plausible ropes, supports, axles, doors, water and mechanisms; inhabitants only doing a useful task, no player-character portraits. No hidden bandits revealed, no secret labels, no icons, grid, arrows or GM annotations. Subtle thin dark cartographic border and a small restrained Portuguese title cartouche with the scene title only. Highest clarity, rich local colors, controlled detail. A single coherent directional light plus specified practical lamps; realistic shadows, fog never hides the playing space. Night scenes remain legible without resembling daylight. Each generated asset is ONE distinct map, never a collage.
+SCENE TITLE: Poço de uso alternado. BIOME: Deserto. TIME: Noite 21h30. Rough scene footprint: 26 x 20 m, NOT a measured grid. COMPOSITION: Poço de pedra com roldana operacional, duas talhas e quadro de ordem sem letras; dois viajantes e um animal de carga aguardam. LIGHTING (authoritative): Luar claro e lanterna presa à estrutura do poço, ampla sombra calma, corda contínua visível. PURPOSE OF OBJECTS: Organizar a fila, consertar a roldana ou negociar prioridade para alguém desidratado. CONTINUITY: Diplomacia e necessidades fisiológicas distintas. Do not reveal narrative solutions or add visual lore not explicitly specified. Do not print time, difficulty, biome or character names within the picture. Slight angle variations only; closer framing for simple interactions, wider for emergencies.
+```
+
+## 34. Leilão sob o toldo — Ruim
+
+**Arquivo:** Mapas/Mapas de Transição/Ruim/Entreposto desértico - Fim de tarde 17h45 - Leilão sob o toldo.png
+
+**Bioma e horário:** Entreposto desértico; Fim de tarde 17h45. **Enquadramento aproximado:** 20 x 16 m.
+
+**Composição:** Um toldo abriga mesa com estojo de joias e livro de registro; vendedor e uma compradora; corredor amplo dos dois lados.
+
+**Iluminação:** Sol dourado corta a lona, pequenas facetas de joias sem brilhos mágicos; nada de brasões inventados.
+
+**Interações:** Examinar marcas, investigar a origem ou confrontar o leiloeiro; um estilo familiar pode evocar a criação abastada de Azhara.
+
+**Escolha e consequência:** Comprar sem verificar pode financiar um furto. O objeto não pertence automaticamente à família de Azhara: essa conexão só entra se o mestre decidir desenvolvê-la.
+
+**Continuidade:** História de Azhara como inspiração, sem criar brasão ou parentes canônicos.
+
+**Revisão:** Objeto central e 2–4 pontos úteis presentes e distinguíveis; Entradas, saídas e rota de retirada coerentes; Escala e estrutura física plausíveis; Horário, fonte de luz e direção das sombras coerentes; Sem excesso de plantas, objetos repetidos ou multidões; Nenhum segredo do mestre exposto ou história pessoal inventada.
+
+**Prompt integral:**
+
+```text
+Create ONE landscape 3:2 tabletop RPG encounter map, Estigma do Caos, beautifully hand-painted with fine ink, believable textures, subtle Gothic/steam-age fantasy craftsmanship. Elevated bird's-eye approximately 65–75 degrees, very mild isometric depth, no horizon, readable walkable surfaces and natural object scale. Match the quality of a close Stalla scene map, NOT a regional atlas. Quality over quantity: 2–4 intentional interaction anchors, open negative space and coherent entrance/exit paths, no filler crowds, decorative barrels, random plants or excess buildings. Trees grouped along edges unless specifically important. Physically plausible ropes, supports, axles, doors, water and mechanisms; inhabitants only doing a useful task, no player-character portraits. No hidden bandits revealed, no secret labels, no icons, grid, arrows or GM annotations. Subtle thin dark cartographic border and a small restrained Portuguese title cartouche with the scene title only. Highest clarity, rich local colors, controlled detail. A single coherent directional light plus specified practical lamps; realistic shadows, fog never hides the playing space. Night scenes remain legible without resembling daylight. Each generated asset is ONE distinct map, never a collage.
+SCENE TITLE: Leilão sob o toldo. BIOME: Entreposto desértico. TIME: Fim de tarde 17h45. Rough scene footprint: 20 x 16 m, NOT a measured grid. COMPOSITION: Um toldo abriga mesa com estojo de joias e livro de registro; vendedor e uma compradora; corredor amplo dos dois lados. LIGHTING (authoritative): Sol dourado corta a lona, pequenas facetas de joias sem brilhos mágicos; nada de brasões inventados. PURPOSE OF OBJECTS: Examinar marcas, investigar a origem ou confrontar o leiloeiro; um estilo familiar pode evocar a criação abastada de Azhara. CONTINUITY: História de Azhara como inspiração, sem criar brasão ou parentes canônicos. Do not reveal narrative solutions or add visual lore not explicitly specified. Do not print time, difficulty, biome or character names within the picture. Slight angle variations only; closer framing for simple interactions, wider for emergencies.
+```
+
+## 35. Tempestade e catalisador rachado — Péssimo
+
+**Arquivo:** Mapas/Mapas de Transição/Péssimo/Deserto em tempestade - Tarde 16h30 - Tempestade e catalisador rachado.png
+
+**Bioma e horário:** Deserto em tempestade; Tarde 16h30. **Enquadramento aproximado:** 44 x 32 m.
+
+**Composição:** Carroça junto a afloramento que oferece abrigo, lona ancorada, caixa acolchoada e Qareen protegendo pequeno amuleto; corredor seguro a sotavento.
+
+**Iluminação:** Sol âmbar difuso na areia e sombra fria atrás da pedra; poeira periférica não oculta mãos ou recursos.
+
+**Interações:** Ancorar a lona, transportar a pessoa e imobilizar o objeto sem testar magia destrutiva sobre ele.
+
+**Escolha e consequência:** Escolher abrigo próximo preserva vidas, mas atrasa a jornada. O risco ao catalisador é explícito; solução improvisada estabiliza, não cura definitivamente sem fundamento.
+
+**Continuidade:** Vulnerabilidade dos Qareens; propostas mecânicas sujeitas às regras do mestre.
+
+**Revisão:** Objeto central e 2–4 pontos úteis presentes e distinguíveis; Entradas, saídas e rota de retirada coerentes; Escala e estrutura física plausíveis; Horário, fonte de luz e direção das sombras coerentes; Sem excesso de plantas, objetos repetidos ou multidões; Nenhum segredo do mestre exposto ou história pessoal inventada.
+
+**Prompt integral:**
+
+```text
+Create ONE landscape 3:2 tabletop RPG encounter map, Estigma do Caos, beautifully hand-painted with fine ink, believable textures, subtle Gothic/steam-age fantasy craftsmanship. Elevated bird's-eye approximately 65–75 degrees, very mild isometric depth, no horizon, readable walkable surfaces and natural object scale. Match the quality of a close Stalla scene map, NOT a regional atlas. Quality over quantity: 2–4 intentional interaction anchors, open negative space and coherent entrance/exit paths, no filler crowds, decorative barrels, random plants or excess buildings. Trees grouped along edges unless specifically important. Physically plausible ropes, supports, axles, doors, water and mechanisms; inhabitants only doing a useful task, no player-character portraits. No hidden bandits revealed, no secret labels, no icons, grid, arrows or GM annotations. Subtle thin dark cartographic border and a small restrained Portuguese title cartouche with the scene title only. Highest clarity, rich local colors, controlled detail. A single coherent directional light plus specified practical lamps; realistic shadows, fog never hides the playing space. Night scenes remain legible without resembling daylight. Each generated asset is ONE distinct map, never a collage.
+SCENE TITLE: Tempestade e catalisador rachado. BIOME: Deserto em tempestade. TIME: Tarde 16h30. Rough scene footprint: 44 x 32 m, NOT a measured grid. COMPOSITION: Carroça junto a afloramento que oferece abrigo, lona ancorada, caixa acolchoada e Qareen protegendo pequeno amuleto; corredor seguro a sotavento. LIGHTING (authoritative): Sol âmbar difuso na areia e sombra fria atrás da pedra; poeira periférica não oculta mãos ou recursos. PURPOSE OF OBJECTS: Ancorar a lona, transportar a pessoa e imobilizar o objeto sem testar magia destrutiva sobre ele. CONTINUITY: Vulnerabilidade dos Qareens; propostas mecânicas sujeitas às regras do mestre. Do not reveal narrative solutions or add visual lore not explicitly specified. Do not print time, difficulty, biome or character names within the picture. Slight angle variations only; closer framing for simple interactions, wider for emergencies.
+```
+
+## 36. Maré que abre caminho — Ótimo
+
+**Arquivo:** Mapas/Mapas de Transição/Ótimo/Costa de maré - Amanhecer 06h45 - Maré que abre caminho.png
+
+**Bioma e horário:** Costa de maré; Amanhecer 06h45. **Enquadramento aproximado:** 42 x 30 m.
+
+**Composição:** Faixa de areia firme conecta duas margens rochosas expostas; tritã pescadora aponta percurso, duas marcas naturais de maré e cesta.
+
+**Iluminação:** Prata e pêssego do amanhecer na água rasa, fundo visível, sem ondas enormes sobre a passagem.
+
+**Interações:** Consultar marcas de maré, recolher provisão permitida e atravessar sem barco.
+
+**Escolha e consequência:** A observação poupa tempo e oferece um pequeno achado útil. A passagem não fecha antes do prazo informado só para frustrar a recompensa.
+
+**Continuidade:** Neramar no mapa; conhecimento local e Sobrevivência.
+
+**Revisão:** Objeto central e 2–4 pontos úteis presentes e distinguíveis; Entradas, saídas e rota de retirada coerentes; Escala e estrutura física plausíveis; Horário, fonte de luz e direção das sombras coerentes; Sem excesso de plantas, objetos repetidos ou multidões; Nenhum segredo do mestre exposto ou história pessoal inventada.
+
+**Prompt integral:**
+
+```text
+Create ONE landscape 3:2 tabletop RPG encounter map, Estigma do Caos, beautifully hand-painted with fine ink, believable textures, subtle Gothic/steam-age fantasy craftsmanship. Elevated bird's-eye approximately 65–75 degrees, very mild isometric depth, no horizon, readable walkable surfaces and natural object scale. Match the quality of a close Stalla scene map, NOT a regional atlas. Quality over quantity: 2–4 intentional interaction anchors, open negative space and coherent entrance/exit paths, no filler crowds, decorative barrels, random plants or excess buildings. Trees grouped along edges unless specifically important. Physically plausible ropes, supports, axles, doors, water and mechanisms; inhabitants only doing a useful task, no player-character portraits. No hidden bandits revealed, no secret labels, no icons, grid, arrows or GM annotations. Subtle thin dark cartographic border and a small restrained Portuguese title cartouche with the scene title only. Highest clarity, rich local colors, controlled detail. A single coherent directional light plus specified practical lamps; realistic shadows, fog never hides the playing space. Night scenes remain legible without resembling daylight. Each generated asset is ONE distinct map, never a collage.
+SCENE TITLE: Maré que abre caminho. BIOME: Costa de maré. TIME: Amanhecer 06h45. Rough scene footprint: 42 x 30 m, NOT a measured grid. COMPOSITION: Faixa de areia firme conecta duas margens rochosas expostas; tritã pescadora aponta percurso, duas marcas naturais de maré e cesta. LIGHTING (authoritative): Prata e pêssego do amanhecer na água rasa, fundo visível, sem ondas enormes sobre a passagem. PURPOSE OF OBJECTS: Consultar marcas de maré, recolher provisão permitida e atravessar sem barco. CONTINUITY: Neramar no mapa; conhecimento local e Sobrevivência. Do not reveal narrative solutions or add visual lore not explicitly specified. Do not print time, difficulty, biome or character names within the picture. Slight angle variations only; closer framing for simple interactions, wider for emergencies.
+```
+
+## 37. Canção no cais — Bom
+
+**Arquivo:** Mapas/Mapas de Transição/Bom/Cais costeiro - Noite 20h00 - Canção no cais.png
+
+**Bioma e horário:** Cais costeiro; Noite 20h00. **Enquadramento aproximado:** 28 x 22 m.
+
+**Composição:** Pequeno barco firmemente amarrado a dois postes de cais, mesa e banco de reparo; dois marinheiros trabalham e um músico local toca.
+
+**Iluminação:** Duas lanternas âmbar refletem na água azul, visibilidade limpa do convés; sem representar Berenice como NPC fixo.
+
+**Interações:** Berenice pode tocar, ouvir versões da canção ou ajudar na rotina; o cais permite pesca e embarque.
+
+**Escolha e consequência:** Cooperar rende passagem curta ou alimento. O encontro valoriza liberdade e amizade, sem transformar todo marinheiro em agente do pai dela.
+
+**Continuidade:** Berenice barda e viajante; vínculos familiares não resolvidos.
+
+**Revisão:** Objeto central e 2–4 pontos úteis presentes e distinguíveis; Entradas, saídas e rota de retirada coerentes; Escala e estrutura física plausíveis; Horário, fonte de luz e direção das sombras coerentes; Sem excesso de plantas, objetos repetidos ou multidões; Nenhum segredo do mestre exposto ou história pessoal inventada.
+
+**Prompt integral:**
+
+```text
+Create ONE landscape 3:2 tabletop RPG encounter map, Estigma do Caos, beautifully hand-painted with fine ink, believable textures, subtle Gothic/steam-age fantasy craftsmanship. Elevated bird's-eye approximately 65–75 degrees, very mild isometric depth, no horizon, readable walkable surfaces and natural object scale. Match the quality of a close Stalla scene map, NOT a regional atlas. Quality over quantity: 2–4 intentional interaction anchors, open negative space and coherent entrance/exit paths, no filler crowds, decorative barrels, random plants or excess buildings. Trees grouped along edges unless specifically important. Physically plausible ropes, supports, axles, doors, water and mechanisms; inhabitants only doing a useful task, no player-character portraits. No hidden bandits revealed, no secret labels, no icons, grid, arrows or GM annotations. Subtle thin dark cartographic border and a small restrained Portuguese title cartouche with the scene title only. Highest clarity, rich local colors, controlled detail. A single coherent directional light plus specified practical lamps; realistic shadows, fog never hides the playing space. Night scenes remain legible without resembling daylight. Each generated asset is ONE distinct map, never a collage.
+SCENE TITLE: Canção no cais. BIOME: Cais costeiro. TIME: Noite 20h00. Rough scene footprint: 28 x 22 m, NOT a measured grid. COMPOSITION: Pequeno barco firmemente amarrado a dois postes de cais, mesa e banco de reparo; dois marinheiros trabalham e um músico local toca. LIGHTING (authoritative): Duas lanternas âmbar refletem na água azul, visibilidade limpa do convés; sem representar Berenice como NPC fixo. PURPOSE OF OBJECTS: Berenice pode tocar, ouvir versões da canção ou ajudar na rotina; o cais permite pesca e embarque. CONTINUITY: Berenice barda e viajante; vínculos familiares não resolvidos. Do not reveal narrative solutions or add visual lore not explicitly specified. Do not print time, difficulty, biome or character names within the picture. Slight angle variations only; closer framing for simple interactions, wider for emergencies.
+```
+
+## 38. Carga à deriva — Médio
+
+**Arquivo:** Mapas/Mapas de Transição/Médio/Enseada - Meio-dia 12h45 - Carga à deriva.png
+
+**Bioma e horário:** Enseada; Meio-dia 12h45. **Enquadramento aproximado:** 35 x 26 m.
+
+**Composição:** Caixa vedada boia perto de recife baixo, corda rompida e boia; praia acessível à direita e água transparente mostrando caminho de retorno.
+
+**Iluminação:** Sol claro, cáusticas discretas, caixa não parece apoiada em terra, nenhum tesouro revelado.
+
+**Interações:** Recuperar a caixa, ler a identificação e decidir procurar seu dono; a corrente é visível antes do mergulho.
+
+**Escolha e consequência:** Devolver rende confiança; ficar com a carga pode gerar cobrança posterior. O conteúdo pode ser ferramenta ou tecido, sem precisar ser relíquia.
+
+**Continuidade:** Azhara e decisões de posse; nenhuma ação compulsória além das regras acordadas.
+
+**Revisão:** Objeto central e 2–4 pontos úteis presentes e distinguíveis; Entradas, saídas e rota de retirada coerentes; Escala e estrutura física plausíveis; Horário, fonte de luz e direção das sombras coerentes; Sem excesso de plantas, objetos repetidos ou multidões; Nenhum segredo do mestre exposto ou história pessoal inventada.
+
+**Prompt integral:**
+
+```text
+Create ONE landscape 3:2 tabletop RPG encounter map, Estigma do Caos, beautifully hand-painted with fine ink, believable textures, subtle Gothic/steam-age fantasy craftsmanship. Elevated bird's-eye approximately 65–75 degrees, very mild isometric depth, no horizon, readable walkable surfaces and natural object scale. Match the quality of a close Stalla scene map, NOT a regional atlas. Quality over quantity: 2–4 intentional interaction anchors, open negative space and coherent entrance/exit paths, no filler crowds, decorative barrels, random plants or excess buildings. Trees grouped along edges unless specifically important. Physically plausible ropes, supports, axles, doors, water and mechanisms; inhabitants only doing a useful task, no player-character portraits. No hidden bandits revealed, no secret labels, no icons, grid, arrows or GM annotations. Subtle thin dark cartographic border and a small restrained Portuguese title cartouche with the scene title only. Highest clarity, rich local colors, controlled detail. A single coherent directional light plus specified practical lamps; realistic shadows, fog never hides the playing space. Night scenes remain legible without resembling daylight. Each generated asset is ONE distinct map, never a collage.
+SCENE TITLE: Carga à deriva. BIOME: Enseada. TIME: Meio-dia 12h45. Rough scene footprint: 35 x 26 m, NOT a measured grid. COMPOSITION: Caixa vedada boia perto de recife baixo, corda rompida e boia; praia acessível à direita e água transparente mostrando caminho de retorno. LIGHTING (authoritative): Sol claro, cáusticas discretas, caixa não parece apoiada em terra, nenhum tesouro revelado. PURPOSE OF OBJECTS: Recuperar a caixa, ler a identificação e decidir procurar seu dono; a corrente é visível antes do mergulho. CONTINUITY: Azhara e decisões de posse; nenhuma ação compulsória além das regras acordadas. Do not reveal narrative solutions or add visual lore not explicitly specified. Do not print time, difficulty, biome or character names within the picture. Slight angle variations only; closer framing for simple interactions, wider for emergencies.
+```
+
+## 39. Falso legado de Gideon — Ruim
+
+**Arquivo:** Mapas/Mapas de Transição/Ruim/Cais portuário - Manhã nublada 10h30 - Falso legado de Gideon.png
+
+**Bioma e horário:** Cais portuário; Manhã nublada 10h30. **Enquadramento aproximado:** 20 x 16 m.
+
+**Composição:** Bancada sob toldo exibe único mecanismo aberto, recibo e estojo; negociante e compradora; pequena doca de madeira ao fundo.
+
+**Iluminação:** Luz difusa realça peças e papel sem letras; gótico marítimo sutil, sem brasão falso de Gideon.
+
+**Interações:** Darmos pode examinar a fabricação, comparar a alegação com fatos conhecidos e conversar com uma antiga compradora enganada.
+
+**Escolha e consequência:** Desmascarar a fraude protege outros e gera pista comercial real. A peça falsa não vira prova sobre o poder de Darmos nem altera a história de Gideon.
+
+**Continuidade:** Gideon, pirata engenheiro e ancestral de Darmos; golpe novo proposto.
+
+**Revisão:** Objeto central e 2–4 pontos úteis presentes e distinguíveis; Entradas, saídas e rota de retirada coerentes; Escala e estrutura física plausíveis; Horário, fonte de luz e direção das sombras coerentes; Sem excesso de plantas, objetos repetidos ou multidões; Nenhum segredo do mestre exposto ou história pessoal inventada.
+
+**Prompt integral:**
+
+```text
+Create ONE landscape 3:2 tabletop RPG encounter map, Estigma do Caos, beautifully hand-painted with fine ink, believable textures, subtle Gothic/steam-age fantasy craftsmanship. Elevated bird's-eye approximately 65–75 degrees, very mild isometric depth, no horizon, readable walkable surfaces and natural object scale. Match the quality of a close Stalla scene map, NOT a regional atlas. Quality over quantity: 2–4 intentional interaction anchors, open negative space and coherent entrance/exit paths, no filler crowds, decorative barrels, random plants or excess buildings. Trees grouped along edges unless specifically important. Physically plausible ropes, supports, axles, doors, water and mechanisms; inhabitants only doing a useful task, no player-character portraits. No hidden bandits revealed, no secret labels, no icons, grid, arrows or GM annotations. Subtle thin dark cartographic border and a small restrained Portuguese title cartouche with the scene title only. Highest clarity, rich local colors, controlled detail. A single coherent directional light plus specified practical lamps; realistic shadows, fog never hides the playing space. Night scenes remain legible without resembling daylight. Each generated asset is ONE distinct map, never a collage.
+SCENE TITLE: Falso legado de Gideon. BIOME: Cais portuário. TIME: Manhã nublada 10h30. Rough scene footprint: 20 x 16 m, NOT a measured grid. COMPOSITION: Bancada sob toldo exibe único mecanismo aberto, recibo e estojo; negociante e compradora; pequena doca de madeira ao fundo. LIGHTING (authoritative): Luz difusa realça peças e papel sem letras; gótico marítimo sutil, sem brasão falso de Gideon. PURPOSE OF OBJECTS: Darmos pode examinar a fabricação, comparar a alegação com fatos conhecidos e conversar com uma antiga compradora enganada. CONTINUITY: Gideon, pirata engenheiro e ancestral de Darmos; golpe novo proposto. Do not reveal narrative solutions or add visual lore not explicitly specified. Do not print time, difficulty, biome or character names within the picture. Slight angle variations only; closer framing for simple interactions, wider for emergencies.
+```
+
+## 40. Convés sob arrebentação — Péssimo
+
+**Arquivo:** Mapas/Mapas de Transição/Péssimo/Costa rochosa - Noite de tempestade 23h30 - Convés sob arrebentação.png
+
+**Bioma e horário:** Costa rochosa; Noite de tempestade 23h30. **Enquadramento aproximado:** 48 x 34 m.
+
+**Composição:** Barco pequeno preso transversalmente nas rochas, mastro baixo, linha de segurança até patamar de terra e alçapão de carga; dois tripulantes.
+
+**Iluminação:** Luz fria de tempestade e uma lanterna quente protegida; intervalo entre ondas deixa ver caminho de resgate, sem mar cobrindo toda a cena.
+
+**Interações:** Fixar uma linha até terra, soltar peso ou buscar tripulantes presos; Berenice pode orientar a parte aquática.
+
+**Escolha e consequência:** A escolha central é evacuar ou tentar salvar a embarcação. Ondas têm intervalos legíveis; oferecer ações entre elas, não dano inevitável contínuo.
+
+**Continuidade:** Tritões, recursos de resgate e atmosfera marítima do atlas.
+
+**Revisão:** Objeto central e 2–4 pontos úteis presentes e distinguíveis; Entradas, saídas e rota de retirada coerentes; Escala e estrutura física plausíveis; Horário, fonte de luz e direção das sombras coerentes; Sem excesso de plantas, objetos repetidos ou multidões; Nenhum segredo do mestre exposto ou história pessoal inventada.
+
+**Prompt integral:**
+
+```text
+Create ONE landscape 3:2 tabletop RPG encounter map, Estigma do Caos, beautifully hand-painted with fine ink, believable textures, subtle Gothic/steam-age fantasy craftsmanship. Elevated bird's-eye approximately 65–75 degrees, very mild isometric depth, no horizon, readable walkable surfaces and natural object scale. Match the quality of a close Stalla scene map, NOT a regional atlas. Quality over quantity: 2–4 intentional interaction anchors, open negative space and coherent entrance/exit paths, no filler crowds, decorative barrels, random plants or excess buildings. Trees grouped along edges unless specifically important. Physically plausible ropes, supports, axles, doors, water and mechanisms; inhabitants only doing a useful task, no player-character portraits. No hidden bandits revealed, no secret labels, no icons, grid, arrows or GM annotations. Subtle thin dark cartographic border and a small restrained Portuguese title cartouche with the scene title only. Highest clarity, rich local colors, controlled detail. A single coherent directional light plus specified practical lamps; realistic shadows, fog never hides the playing space. Night scenes remain legible without resembling daylight. Each generated asset is ONE distinct map, never a collage.
+SCENE TITLE: Convés sob arrebentação. BIOME: Costa rochosa. TIME: Noite de tempestade 23h30. Rough scene footprint: 48 x 34 m, NOT a measured grid. COMPOSITION: Barco pequeno preso transversalmente nas rochas, mastro baixo, linha de segurança até patamar de terra e alçapão de carga; dois tripulantes. LIGHTING (authoritative): Luz fria de tempestade e uma lanterna quente protegida; intervalo entre ondas deixa ver caminho de resgate, sem mar cobrindo toda a cena. PURPOSE OF OBJECTS: Fixar uma linha até terra, soltar peso ou buscar tripulantes presos; Berenice pode orientar a parte aquática. CONTINUITY: Tritões, recursos de resgate e atmosfera marítima do atlas. Do not reveal narrative solutions or add visual lore not explicitly specified. Do not print time, difficulty, biome or character names within the picture. Slight angle variations only; closer framing for simple interactions, wider for emergencies.
+```
+
+## 41. Pernoite recomendado — Ótimo
+
+**Arquivo:** Mapas/Mapas de Transição/Ótimo/Arredores urbanos - Crepúsculo 18h30 - Pernoite recomendado.png
+
+**Bioma e horário:** Arredores urbanos; Crepúsculo 18h30. **Enquadramento aproximado:** 28 x 22 m.
+
+**Composição:** Abrigo de viajantes com pátio pequeno, bebedouro e quarto em corte parcial mostrando armário de mantas; anfitriã abre porta.
+
+**Iluminação:** Luz quente da porta e janelas contra pedras azuladas; acolhimento, não mansão sinistra.
+
+**Interações:** Apresentar uma recomendação obtida em cena com Ben ou Bruna, conversar e organizar carga.
+
+**Escolha e consequência:** Receber uma noite tranquila e informação útil. A recomendação é um gancho proposto; não presumir que esses NPCs já prometeram algo na campanha.
+
+**Continuidade:** Ben é recepcionista da guilda; Bruna é recepcionista da Estalagem do Lampião.
+
+**Revisão:** Objeto central e 2–4 pontos úteis presentes e distinguíveis; Entradas, saídas e rota de retirada coerentes; Escala e estrutura física plausíveis; Horário, fonte de luz e direção das sombras coerentes; Sem excesso de plantas, objetos repetidos ou multidões; Nenhum segredo do mestre exposto ou história pessoal inventada.
+
+**Prompt integral:**
+
+```text
+Create ONE landscape 3:2 tabletop RPG encounter map, Estigma do Caos, beautifully hand-painted with fine ink, believable textures, subtle Gothic/steam-age fantasy craftsmanship. Elevated bird's-eye approximately 65–75 degrees, very mild isometric depth, no horizon, readable walkable surfaces and natural object scale. Match the quality of a close Stalla scene map, NOT a regional atlas. Quality over quantity: 2–4 intentional interaction anchors, open negative space and coherent entrance/exit paths, no filler crowds, decorative barrels, random plants or excess buildings. Trees grouped along edges unless specifically important. Physically plausible ropes, supports, axles, doors, water and mechanisms; inhabitants only doing a useful task, no player-character portraits. No hidden bandits revealed, no secret labels, no icons, grid, arrows or GM annotations. Subtle thin dark cartographic border and a small restrained Portuguese title cartouche with the scene title only. Highest clarity, rich local colors, controlled detail. A single coherent directional light plus specified practical lamps; realistic shadows, fog never hides the playing space. Night scenes remain legible without resembling daylight. Each generated asset is ONE distinct map, never a collage.
+SCENE TITLE: Pernoite recomendado. BIOME: Arredores urbanos. TIME: Crepúsculo 18h30. Rough scene footprint: 28 x 22 m, NOT a measured grid. COMPOSITION: Abrigo de viajantes com pátio pequeno, bebedouro e quarto em corte parcial mostrando armário de mantas; anfitriã abre porta. LIGHTING (authoritative): Luz quente da porta e janelas contra pedras azuladas; acolhimento, não mansão sinistra. PURPOSE OF OBJECTS: Apresentar uma recomendação obtida em cena com Ben ou Bruna, conversar e organizar carga. CONTINUITY: Ben é recepcionista da guilda; Bruna é recepcionista da Estalagem do Lampião. Do not reveal narrative solutions or add visual lore not explicitly specified. Do not print time, difficulty, biome or character names within the picture. Slight angle variations only; closer framing for simple interactions, wider for emergencies.
+```
+
+## 42. Feira de ferramentas — Bom
+
+**Arquivo:** Mapas/Mapas de Transição/Bom/Pátio urbano - Manhã 09h00 - Feira de ferramentas.png
+
+**Bioma e horário:** Pátio urbano; Manhã 09h00. **Enquadramento aproximado:** 26 x 20 m.
+
+**Composição:** Três bancadas de reparos, cordas e mecanismos sob arcos góticos de pedra; três artesãos distintos trabalhando, centro desimpedido.
+
+**Iluminação:** Sol raso da direita ressalta pedra cinza e cobre, sombra de arco define espaço sem escurecer produtos.
+
+**Interações:** Comprar algo específico, recuperar equipamento ou trocar uma notícia de estrada por desconto.
+
+**Escolha e consequência:** Preparar-se melhora a próxima jornada sem exigir combate. O mapa oferece objetos que os jogadores realmente podem adquirir e usar.
+
+**Continuidade:** Arquitetura gótica contida de Stalla e equipamentos do Ebook.
+
+**Revisão:** Objeto central e 2–4 pontos úteis presentes e distinguíveis; Entradas, saídas e rota de retirada coerentes; Escala e estrutura física plausíveis; Horário, fonte de luz e direção das sombras coerentes; Sem excesso de plantas, objetos repetidos ou multidões; Nenhum segredo do mestre exposto ou história pessoal inventada.
+
+**Prompt integral:**
+
+```text
+Create ONE landscape 3:2 tabletop RPG encounter map, Estigma do Caos, beautifully hand-painted with fine ink, believable textures, subtle Gothic/steam-age fantasy craftsmanship. Elevated bird's-eye approximately 65–75 degrees, very mild isometric depth, no horizon, readable walkable surfaces and natural object scale. Match the quality of a close Stalla scene map, NOT a regional atlas. Quality over quantity: 2–4 intentional interaction anchors, open negative space and coherent entrance/exit paths, no filler crowds, decorative barrels, random plants or excess buildings. Trees grouped along edges unless specifically important. Physically plausible ropes, supports, axles, doors, water and mechanisms; inhabitants only doing a useful task, no player-character portraits. No hidden bandits revealed, no secret labels, no icons, grid, arrows or GM annotations. Subtle thin dark cartographic border and a small restrained Portuguese title cartouche with the scene title only. Highest clarity, rich local colors, controlled detail. A single coherent directional light plus specified practical lamps; realistic shadows, fog never hides the playing space. Night scenes remain legible without resembling daylight. Each generated asset is ONE distinct map, never a collage.
+SCENE TITLE: Feira de ferramentas. BIOME: Pátio urbano. TIME: Manhã 09h00. Rough scene footprint: 26 x 20 m, NOT a measured grid. COMPOSITION: Três bancadas de reparos, cordas e mecanismos sob arcos góticos de pedra; três artesãos distintos trabalhando, centro desimpedido. LIGHTING (authoritative): Sol raso da direita ressalta pedra cinza e cobre, sombra de arco define espaço sem escurecer produtos. PURPOSE OF OBJECTS: Comprar algo específico, recuperar equipamento ou trocar uma notícia de estrada por desconto. CONTINUITY: Arquitetura gótica contida de Stalla e equipamentos do Ebook. Do not reveal narrative solutions or add visual lore not explicitly specified. Do not print time, difficulty, biome or character names within the picture. Slight angle variations only; closer framing for simple interactions, wider for emergencies.
+```
+
+## 43. Fila do portão — Médio
+
+**Arquivo:** Mapas/Mapas de Transição/Médio/Portão urbano - Tarde 14h30 - Fila do portão.png
+
+**Bioma e horário:** Portão urbano; Tarde 14h30. **Enquadramento aproximado:** 36 x 28 m.
+
+**Composição:** Arco gótico com balança e banco de inspeção ao lado, três viajantes em fila curta e um guarda; faixa central de passagem livre.
+
+**Iluminação:** Sol claro no pátio e sombra fresca sob arco; objetos verificáveis, sem cercas ou multidão extras.
+
+**Interações:** Declarar carga, explicar equipamento incomum e observar tratamento desigual sem presumir toda guarda corrupta.
+
+**Escolha e consequência:** Cooperar custa tempo; negociar pode reduzir espera. A situação oferece espaço para defender dignidade de golens e draconatos sem obrigar conflito racial.
+
+**Continuidade:** Estigmas sociais do Ebook; procedimentos de inspeção novos, sem virar lei canônica.
+
+**Revisão:** Objeto central e 2–4 pontos úteis presentes e distinguíveis; Entradas, saídas e rota de retirada coerentes; Escala e estrutura física plausíveis; Horário, fonte de luz e direção das sombras coerentes; Sem excesso de plantas, objetos repetidos ou multidões; Nenhum segredo do mestre exposto ou história pessoal inventada.
+
+**Prompt integral:**
+
+```text
+Create ONE landscape 3:2 tabletop RPG encounter map, Estigma do Caos, beautifully hand-painted with fine ink, believable textures, subtle Gothic/steam-age fantasy craftsmanship. Elevated bird's-eye approximately 65–75 degrees, very mild isometric depth, no horizon, readable walkable surfaces and natural object scale. Match the quality of a close Stalla scene map, NOT a regional atlas. Quality over quantity: 2–4 intentional interaction anchors, open negative space and coherent entrance/exit paths, no filler crowds, decorative barrels, random plants or excess buildings. Trees grouped along edges unless specifically important. Physically plausible ropes, supports, axles, doors, water and mechanisms; inhabitants only doing a useful task, no player-character portraits. No hidden bandits revealed, no secret labels, no icons, grid, arrows or GM annotations. Subtle thin dark cartographic border and a small restrained Portuguese title cartouche with the scene title only. Highest clarity, rich local colors, controlled detail. A single coherent directional light plus specified practical lamps; realistic shadows, fog never hides the playing space. Night scenes remain legible without resembling daylight. Each generated asset is ONE distinct map, never a collage.
+SCENE TITLE: Fila do portão. BIOME: Portão urbano. TIME: Tarde 14h30. Rough scene footprint: 36 x 28 m, NOT a measured grid. COMPOSITION: Arco gótico com balança e banco de inspeção ao lado, três viajantes em fila curta e um guarda; faixa central de passagem livre. LIGHTING (authoritative): Sol claro no pátio e sombra fresca sob arco; objetos verificáveis, sem cercas ou multidão extras. PURPOSE OF OBJECTS: Declarar carga, explicar equipamento incomum e observar tratamento desigual sem presumir toda guarda corrupta. CONTINUITY: Estigmas sociais do Ebook; procedimentos de inspeção novos, sem virar lei canônica. Do not reveal narrative solutions or add visual lore not explicitly specified. Do not print time, difficulty, biome or character names within the picture. Slight angle variations only; closer framing for simple interactions, wider for emergencies.
+```
+
+## 44. Entrega que não chegou — Ruim
+
+**Arquivo:** Mapas/Mapas de Transição/Ruim/Viela urbana - Amanhecer 06h30 - Entrega que não chegou.png
+
+**Bioma e horário:** Viela urbana; Amanhecer 06h30. **Enquadramento aproximado:** 22 x 16 m.
+
+**Composição:** Carrinho junto a caixa rompida, poucos mantimentos e entrada de drenagem acessível; entregador preocupado e saída para rua maior.
+
+**Iluminação:** Luz azul de amanhecer e pequeno raio dourado na caixa, pedra molhada e trilha de grãos discreta.
+
+**Interações:** Seguir o rastro, perguntar a testemunhas e recuperar remédios comuns ou mantimentos; uma ligação com Jeremias só surge por conversa.
+
+**Escolha e consequência:** Recuperar a carga ajuda o estabelecimento. A aparência pálida de Jeremias não prova doença específica, maldição, crime ou parentesco secreto.
+
+**Continuidade:** Jeremias é funcionário de aparência pálida/doentia; causa permanece indefinida.
+
+**Revisão:** Objeto central e 2–4 pontos úteis presentes e distinguíveis; Entradas, saídas e rota de retirada coerentes; Escala e estrutura física plausíveis; Horário, fonte de luz e direção das sombras coerentes; Sem excesso de plantas, objetos repetidos ou multidões; Nenhum segredo do mestre exposto ou história pessoal inventada.
+
+**Prompt integral:**
+
+```text
+Create ONE landscape 3:2 tabletop RPG encounter map, Estigma do Caos, beautifully hand-painted with fine ink, believable textures, subtle Gothic/steam-age fantasy craftsmanship. Elevated bird's-eye approximately 65–75 degrees, very mild isometric depth, no horizon, readable walkable surfaces and natural object scale. Match the quality of a close Stalla scene map, NOT a regional atlas. Quality over quantity: 2–4 intentional interaction anchors, open negative space and coherent entrance/exit paths, no filler crowds, decorative barrels, random plants or excess buildings. Trees grouped along edges unless specifically important. Physically plausible ropes, supports, axles, doors, water and mechanisms; inhabitants only doing a useful task, no player-character portraits. No hidden bandits revealed, no secret labels, no icons, grid, arrows or GM annotations. Subtle thin dark cartographic border and a small restrained Portuguese title cartouche with the scene title only. Highest clarity, rich local colors, controlled detail. A single coherent directional light plus specified practical lamps; realistic shadows, fog never hides the playing space. Night scenes remain legible without resembling daylight. Each generated asset is ONE distinct map, never a collage.
+SCENE TITLE: Entrega que não chegou. BIOME: Viela urbana. TIME: Amanhecer 06h30. Rough scene footprint: 22 x 16 m, NOT a measured grid. COMPOSITION: Carrinho junto a caixa rompida, poucos mantimentos e entrada de drenagem acessível; entregador preocupado e saída para rua maior. LIGHTING (authoritative): Luz azul de amanhecer e pequeno raio dourado na caixa, pedra molhada e trilha de grãos discreta. PURPOSE OF OBJECTS: Seguir o rastro, perguntar a testemunhas e recuperar remédios comuns ou mantimentos; uma ligação com Jeremias só surge por conversa. CONTINUITY: Jeremias é funcionário de aparência pálida/doentia; causa permanece indefinida. Do not reveal narrative solutions or add visual lore not explicitly specified. Do not print time, difficulty, biome or character names within the picture. Slight angle variations only; closer framing for simple interactions, wider for emergencies.
+```
+
+## 45. Caldeira no acesso — Péssimo
+
+**Arquivo:** Mapas/Mapas de Transição/Péssimo/Via industrial - Noite 22h30 - Caldeira no acesso.png
+
+**Bioma e horário:** Via industrial; Noite 22h30. **Enquadramento aproximado:** 42 x 30 m.
+
+**Composição:** Tubo de vapor rompido atravessa uma faixa da via, registro conectado ao tubo acessível por passagem lateral, muro sólido e carroça bloqueada.
+
+**Iluminação:** Lanternas quentes no registro e luar azul no pátio; vapor iluminado numa faixa estreita, saídas e mãos legíveis.
+
+**Interações:** Fechar o registro por uma rota lateral, retirar passageiros e aliviar pressão com conhecimento apropriado.
+
+**Escolha e consequência:** Evacuar custa a carga, reparar sob pressão oferece risco maior. O som e a condensação tornam o perigo visível; não usar uma explosão sem aviso.
+
+**Continuidade:** Tecnologia a vapor e Engenharia; sem intervenção divina obrigatória.
+
+**Revisão:** Objeto central e 2–4 pontos úteis presentes e distinguíveis; Entradas, saídas e rota de retirada coerentes; Escala e estrutura física plausíveis; Horário, fonte de luz e direção das sombras coerentes; Sem excesso de plantas, objetos repetidos ou multidões; Nenhum segredo do mestre exposto ou história pessoal inventada.
+
+**Prompt integral:**
+
+```text
+Create ONE landscape 3:2 tabletop RPG encounter map, Estigma do Caos, beautifully hand-painted with fine ink, believable textures, subtle Gothic/steam-age fantasy craftsmanship. Elevated bird's-eye approximately 65–75 degrees, very mild isometric depth, no horizon, readable walkable surfaces and natural object scale. Match the quality of a close Stalla scene map, NOT a regional atlas. Quality over quantity: 2–4 intentional interaction anchors, open negative space and coherent entrance/exit paths, no filler crowds, decorative barrels, random plants or excess buildings. Trees grouped along edges unless specifically important. Physically plausible ropes, supports, axles, doors, water and mechanisms; inhabitants only doing a useful task, no player-character portraits. No hidden bandits revealed, no secret labels, no icons, grid, arrows or GM annotations. Subtle thin dark cartographic border and a small restrained Portuguese title cartouche with the scene title only. Highest clarity, rich local colors, controlled detail. A single coherent directional light plus specified practical lamps; realistic shadows, fog never hides the playing space. Night scenes remain legible without resembling daylight. Each generated asset is ONE distinct map, never a collage.
+SCENE TITLE: Caldeira no acesso. BIOME: Via industrial. TIME: Noite 22h30. Rough scene footprint: 42 x 30 m, NOT a measured grid. COMPOSITION: Tubo de vapor rompido atravessa uma faixa da via, registro conectado ao tubo acessível por passagem lateral, muro sólido e carroça bloqueada. LIGHTING (authoritative): Lanternas quentes no registro e luar azul no pátio; vapor iluminado numa faixa estreita, saídas e mãos legíveis. PURPOSE OF OBJECTS: Fechar o registro por uma rota lateral, retirar passageiros e aliviar pressão com conhecimento apropriado. CONTINUITY: Tecnologia a vapor e Engenharia; sem intervenção divina obrigatória. Do not reveal narrative solutions or add visual lore not explicitly specified. Do not print time, difficulty, biome or character names within the picture. Slight angle variations only; closer framing for simple interactions, wider for emergencies.
+```
+
+## 46. Pouso de manutenção — Ótimo
+
+**Arquivo:** Mapas/Mapas de Transição/Ótimo/Ilha flutuante - Manhã 08h00 - Pouso de manutenção.png
+
+**Bioma e horário:** Ilha flutuante; Manhã 08h00. **Enquadramento aproximado:** 36 x 28 m.
+
+**Composição:** Plataforma de manutenção sobre rocha suspensa, cabo com ancoragem física, abrigo e dois técnicos; pequeno veículo de acesso atracado, sem cidade.
+
+**Iluminação:** Sol morno e nuvens abaixo, chão seguro legível; profundidade sutil, sem perspectiva vertiginosa.
+
+**Interações:** Reparar um encaixe simples, observar o trajeto de nuvens e negociar transporte de volta.
+
+**Escolha e consequência:** O grupo obtém vista útil e apoio seguro. Não criar uma rota terrestre impossível nem permitir chegada automática à ilha.
+
+**Continuidade:** Ilha flutuante estabelecida no mapa; plataforma e acesso são propostas.
+
+**Revisão:** Objeto central e 2–4 pontos úteis presentes e distinguíveis; Entradas, saídas e rota de retirada coerentes; Escala e estrutura física plausíveis; Horário, fonte de luz e direção das sombras coerentes; Sem excesso de plantas, objetos repetidos ou multidões; Nenhum segredo do mestre exposto ou história pessoal inventada.
+
+**Prompt integral:**
+
+```text
+Create ONE landscape 3:2 tabletop RPG encounter map, Estigma do Caos, beautifully hand-painted with fine ink, believable textures, subtle Gothic/steam-age fantasy craftsmanship. Elevated bird's-eye approximately 65–75 degrees, very mild isometric depth, no horizon, readable walkable surfaces and natural object scale. Match the quality of a close Stalla scene map, NOT a regional atlas. Quality over quantity: 2–4 intentional interaction anchors, open negative space and coherent entrance/exit paths, no filler crowds, decorative barrels, random plants or excess buildings. Trees grouped along edges unless specifically important. Physically plausible ropes, supports, axles, doors, water and mechanisms; inhabitants only doing a useful task, no player-character portraits. No hidden bandits revealed, no secret labels, no icons, grid, arrows or GM annotations. Subtle thin dark cartographic border and a small restrained Portuguese title cartouche with the scene title only. Highest clarity, rich local colors, controlled detail. A single coherent directional light plus specified practical lamps; realistic shadows, fog never hides the playing space. Night scenes remain legible without resembling daylight. Each generated asset is ONE distinct map, never a collage.
+SCENE TITLE: Pouso de manutenção. BIOME: Ilha flutuante. TIME: Manhã 08h00. Rough scene footprint: 36 x 28 m, NOT a measured grid. COMPOSITION: Plataforma de manutenção sobre rocha suspensa, cabo com ancoragem física, abrigo e dois técnicos; pequeno veículo de acesso atracado, sem cidade. LIGHTING (authoritative): Sol morno e nuvens abaixo, chão seguro legível; profundidade sutil, sem perspectiva vertiginosa. PURPOSE OF OBJECTS: Reparar um encaixe simples, observar o trajeto de nuvens e negociar transporte de volta. CONTINUITY: Ilha flutuante estabelecida no mapa; plataforma e acesso são propostas. Do not reveal narrative solutions or add visual lore not explicitly specified. Do not print time, difficulty, biome or character names within the picture. Slight angle variations only; closer framing for simple interactions, wider for emergencies.
+```
+
+## 47. Restauro de um oratório — Bom
+
+**Arquivo:** Mapas/Mapas de Transição/Bom/Campo com oratório - Fim de tarde 17h30 - Restauro de um oratório.png
+
+**Bioma e horário:** Campo com oratório; Fim de tarde 17h30. **Enquadramento aproximado:** 20 x 16 m.
+
+**Composição:** Pequeno oratório de pedra com nicho e relevo de hydra discreto sem símbolo oficial inventado; pedra solta e caixa de ferramentas; peregrino trabalhando.
+
+**Iluminação:** Sol âmbar tangencia a pedra, interior do nicho em sombra suave, sem magia visível ou igreja monumental.
+
+**Interações:** Restaurar o nicho, conversar com um peregrino e deixar um registro de passagem.
+
+**Escolha e consequência:** O trabalho rende acolhimento ou informação humana. Não conceder bênção mecânica nova nem estabelecer dogma, símbolo oficial ou igreja numerada sem definição.
+
+**Continuidade:** Hydra venerada na Era do Caos; oratório proposto, sem explicar aos jogadores eventos futuros do Ebook.
+
+**Revisão:** Objeto central e 2–4 pontos úteis presentes e distinguíveis; Entradas, saídas e rota de retirada coerentes; Escala e estrutura física plausíveis; Horário, fonte de luz e direção das sombras coerentes; Sem excesso de plantas, objetos repetidos ou multidões; Nenhum segredo do mestre exposto ou história pessoal inventada.
+
+**Prompt integral:**
+
+```text
+Create ONE landscape 3:2 tabletop RPG encounter map, Estigma do Caos, beautifully hand-painted with fine ink, believable textures, subtle Gothic/steam-age fantasy craftsmanship. Elevated bird's-eye approximately 65–75 degrees, very mild isometric depth, no horizon, readable walkable surfaces and natural object scale. Match the quality of a close Stalla scene map, NOT a regional atlas. Quality over quantity: 2–4 intentional interaction anchors, open negative space and coherent entrance/exit paths, no filler crowds, decorative barrels, random plants or excess buildings. Trees grouped along edges unless specifically important. Physically plausible ropes, supports, axles, doors, water and mechanisms; inhabitants only doing a useful task, no player-character portraits. No hidden bandits revealed, no secret labels, no icons, grid, arrows or GM annotations. Subtle thin dark cartographic border and a small restrained Portuguese title cartouche with the scene title only. Highest clarity, rich local colors, controlled detail. A single coherent directional light plus specified practical lamps; realistic shadows, fog never hides the playing space. Night scenes remain legible without resembling daylight. Each generated asset is ONE distinct map, never a collage.
+SCENE TITLE: Restauro de um oratório. BIOME: Campo com oratório. TIME: Fim de tarde 17h30. Rough scene footprint: 20 x 16 m, NOT a measured grid. COMPOSITION: Pequeno oratório de pedra com nicho e relevo de hydra discreto sem símbolo oficial inventado; pedra solta e caixa de ferramentas; peregrino trabalhando. LIGHTING (authoritative): Sol âmbar tangencia a pedra, interior do nicho em sombra suave, sem magia visível ou igreja monumental. PURPOSE OF OBJECTS: Restaurar o nicho, conversar com um peregrino e deixar um registro de passagem. CONTINUITY: Hydra venerada na Era do Caos; oratório proposto, sem explicar aos jogadores eventos futuros do Ebook. Do not reveal narrative solutions or add visual lore not explicitly specified. Do not print time, difficulty, biome or character names within the picture. Slight angle variations only; closer framing for simple interactions, wider for emergencies.
+```
+
+## 48. Pêndulo fora de ritmo — Médio
+
+**Arquivo:** Mapas/Mapas de Transição/Médio/Terreno de fenda - Tarde nublada 15h00 - Pêndulo fora de ritmo.png
+
+**Bioma e horário:** Terreno de fenda; Tarde nublada 15h00. **Enquadramento aproximado:** 30 x 24 m.
+
+**Composição:** Marco de observação em terreno firme junto a pequena fratura, tripé com pêndulo e caderno preso à mesa; limite da anomalia localizado.
+
+**Iluminação:** Luz fria difusa, reflexo lilás muito discreto só dentro da fratura; nenhum vórtice ou explosão de partículas.
+
+**Interações:** Registrar medições, comparar distâncias e escolher um desvio; o fenômeno afeta apenas a pequena área descrita.
+
+**Escolha e consequência:** Investigar consome tempo e rende uma pista técnica. Não transformar uma anomalia localizada em alteração irrestrita de todas as regras do mundo.
+
+**Continuidade:** Fenda Instável no mapa e distinção entre Caos e Vontade.
+
+**Revisão:** Objeto central e 2–4 pontos úteis presentes e distinguíveis; Entradas, saídas e rota de retirada coerentes; Escala e estrutura física plausíveis; Horário, fonte de luz e direção das sombras coerentes; Sem excesso de plantas, objetos repetidos ou multidões; Nenhum segredo do mestre exposto ou história pessoal inventada.
+
+**Prompt integral:**
+
+```text
+Create ONE landscape 3:2 tabletop RPG encounter map, Estigma do Caos, beautifully hand-painted with fine ink, believable textures, subtle Gothic/steam-age fantasy craftsmanship. Elevated bird's-eye approximately 65–75 degrees, very mild isometric depth, no horizon, readable walkable surfaces and natural object scale. Match the quality of a close Stalla scene map, NOT a regional atlas. Quality over quantity: 2–4 intentional interaction anchors, open negative space and coherent entrance/exit paths, no filler crowds, decorative barrels, random plants or excess buildings. Trees grouped along edges unless specifically important. Physically plausible ropes, supports, axles, doors, water and mechanisms; inhabitants only doing a useful task, no player-character portraits. No hidden bandits revealed, no secret labels, no icons, grid, arrows or GM annotations. Subtle thin dark cartographic border and a small restrained Portuguese title cartouche with the scene title only. Highest clarity, rich local colors, controlled detail. A single coherent directional light plus specified practical lamps; realistic shadows, fog never hides the playing space. Night scenes remain legible without resembling daylight. Each generated asset is ONE distinct map, never a collage.
+SCENE TITLE: Pêndulo fora de ritmo. BIOME: Terreno de fenda. TIME: Tarde nublada 15h00. Rough scene footprint: 30 x 24 m, NOT a measured grid. COMPOSITION: Marco de observação em terreno firme junto a pequena fratura, tripé com pêndulo e caderno preso à mesa; limite da anomalia localizado. LIGHTING (authoritative): Luz fria difusa, reflexo lilás muito discreto só dentro da fratura; nenhum vórtice ou explosão de partículas. PURPOSE OF OBJECTS: Registrar medições, comparar distâncias e escolher um desvio; o fenômeno afeta apenas a pequena área descrita. CONTINUITY: Fenda Instável no mapa e distinção entre Caos e Vontade. Do not reveal narrative solutions or add visual lore not explicitly specified. Do not print time, difficulty, biome or character names within the picture. Slight angle variations only; closer framing for simple interactions, wider for emergencies.
+```
+
+## 49. O selo que parece familiar — Ruim
+
+**Arquivo:** Mapas/Mapas de Transição/Ruim/Ruína florestal - Noite 00h30 - O selo que parece familiar.png
+
+**Bioma e horário:** Ruína florestal; Noite 00h30. **Enquadramento aproximado:** 24 x 18 m.
+
+**Composição:** Porta de pedra bloqueada, marca ritual incompleta sem texto e caixa de manutenção; raízes ao perímetro e caminho de retorno visível.
+
+**Iluminação:** Luar oblíquo e lanterna deixada sobre pedra destacam riscos; símbolo não brilha e não identifica organização ou patrono.
+
+**Interações:** Soren pode comparar a marca com o que conhece; Thanatos pode reconhecer a função de um confinamento sem reconhecer seus autores.
+
+**Escolha e consequência:** Investigar oferece uma pista material ou abre uma rota arriscada. Só vincular o selo à organização de Soren ou aos criadores de Thanatos com decisão explícita do mestre.
+
+**Continuidade:** Pacto com Arch, irmão sequestrado e aprisionamento de Thanatos; conexões novas são opcionais.
+
+**Revisão:** Objeto central e 2–4 pontos úteis presentes e distinguíveis; Entradas, saídas e rota de retirada coerentes; Escala e estrutura física plausíveis; Horário, fonte de luz e direção das sombras coerentes; Sem excesso de plantas, objetos repetidos ou multidões; Nenhum segredo do mestre exposto ou história pessoal inventada.
+
+**Prompt integral:**
+
+```text
+Create ONE landscape 3:2 tabletop RPG encounter map, Estigma do Caos, beautifully hand-painted with fine ink, believable textures, subtle Gothic/steam-age fantasy craftsmanship. Elevated bird's-eye approximately 65–75 degrees, very mild isometric depth, no horizon, readable walkable surfaces and natural object scale. Match the quality of a close Stalla scene map, NOT a regional atlas. Quality over quantity: 2–4 intentional interaction anchors, open negative space and coherent entrance/exit paths, no filler crowds, decorative barrels, random plants or excess buildings. Trees grouped along edges unless specifically important. Physically plausible ropes, supports, axles, doors, water and mechanisms; inhabitants only doing a useful task, no player-character portraits. No hidden bandits revealed, no secret labels, no icons, grid, arrows or GM annotations. Subtle thin dark cartographic border and a small restrained Portuguese title cartouche with the scene title only. Highest clarity, rich local colors, controlled detail. A single coherent directional light plus specified practical lamps; realistic shadows, fog never hides the playing space. Night scenes remain legible without resembling daylight. Each generated asset is ONE distinct map, never a collage.
+SCENE TITLE: O selo que parece familiar. BIOME: Ruína florestal. TIME: Noite 00h30. Rough scene footprint: 24 x 18 m, NOT a measured grid. COMPOSITION: Porta de pedra bloqueada, marca ritual incompleta sem texto e caixa de manutenção; raízes ao perímetro e caminho de retorno visível. LIGHTING (authoritative): Luar oblíquo e lanterna deixada sobre pedra destacam riscos; símbolo não brilha e não identifica organização ou patrono. PURPOSE OF OBJECTS: Soren pode comparar a marca com o que conhece; Thanatos pode reconhecer a função de um confinamento sem reconhecer seus autores. CONTINUITY: Pacto com Arch, irmão sequestrado e aprisionamento de Thanatos; conexões novas são opcionais. Do not reveal narrative solutions or add visual lore not explicitly specified. Do not print time, difficulty, biome or character names within the picture. Slight angle variations only; closer framing for simple interactions, wider for emergencies.
+```
+
+## 50. Passagem que se desfaz — Péssimo
+
+**Arquivo:** Mapas/Mapas de Transição/Péssimo/Ruína suspensa - Crepúsculo 18h00 - Passagem que se desfaz.png
+
+**Bioma e horário:** Ruína suspensa; Crepúsculo 18h00. **Enquadramento aproximado:** 48 x 34 m.
+
+**Composição:** Passarela partida sobre vazio moderado, blocos deslocados com apoios ainda existentes, duas ancoragens de corda e patamar seguro conectado à entrada.
+
+**Iluminação:** Céu azul-chumbo com borda rosa e leve luminosidade da fratura; contraste preserva pedra e rota de recuo, sem confundir Caos com Calamidade.
+
+**Interações:** Prender linha de segurança, retirar pessoas de um bloco móvel e marcar um trajeto de recuo antes de investigar.
+
+**Escolha e consequência:** Escapar preserva vidas e pode custar equipamento; enfrentar o fenômeno não é obrigatório. Tratar como instabilidade localizada do Caos, nunca como Calamidade por simples efeito visual.
+
+**Continuidade:** Cosmologia do Ebook; não antecipar Qaelid, queda da Hydra ou criação da membrana.
+
+**Revisão:** Objeto central e 2–4 pontos úteis presentes e distinguíveis; Entradas, saídas e rota de retirada coerentes; Escala e estrutura física plausíveis; Horário, fonte de luz e direção das sombras coerentes; Sem excesso de plantas, objetos repetidos ou multidões; Nenhum segredo do mestre exposto ou história pessoal inventada.
+
+**Prompt integral:**
+
+```text
+Create ONE landscape 3:2 tabletop RPG encounter map, Estigma do Caos, beautifully hand-painted with fine ink, believable textures, subtle Gothic/steam-age fantasy craftsmanship. Elevated bird's-eye approximately 65–75 degrees, very mild isometric depth, no horizon, readable walkable surfaces and natural object scale. Match the quality of a close Stalla scene map, NOT a regional atlas. Quality over quantity: 2–4 intentional interaction anchors, open negative space and coherent entrance/exit paths, no filler crowds, decorative barrels, random plants or excess buildings. Trees grouped along edges unless specifically important. Physically plausible ropes, supports, axles, doors, water and mechanisms; inhabitants only doing a useful task, no player-character portraits. No hidden bandits revealed, no secret labels, no icons, grid, arrows or GM annotations. Subtle thin dark cartographic border and a small restrained Portuguese title cartouche with the scene title only. Highest clarity, rich local colors, controlled detail. A single coherent directional light plus specified practical lamps; realistic shadows, fog never hides the playing space. Night scenes remain legible without resembling daylight. Each generated asset is ONE distinct map, never a collage.
+SCENE TITLE: Passagem que se desfaz. BIOME: Ruína suspensa. TIME: Crepúsculo 18h00. Rough scene footprint: 48 x 34 m, NOT a measured grid. COMPOSITION: Passarela partida sobre vazio moderado, blocos deslocados com apoios ainda existentes, duas ancoragens de corda e patamar seguro conectado à entrada. LIGHTING (authoritative): Céu azul-chumbo com borda rosa e leve luminosidade da fratura; contraste preserva pedra e rota de recuo, sem confundir Caos com Calamidade. PURPOSE OF OBJECTS: Prender linha de segurança, retirar pessoas de um bloco móvel e marcar um trajeto de recuo antes de investigar. CONTINUITY: Cosmologia do Ebook; não antecipar Qaelid, queda da Hydra ou criação da membrana. Do not reveal narrative solutions or add visual lore not explicitly specified. Do not print time, difficulty, biome or character names within the picture. Slight angle variations only; closer framing for simple interactions, wider for emergencies.
+```
+

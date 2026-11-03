@@ -1,0 +1,82 @@
+[
+  {
+    "id": "bandido-espada",
+    "bytes": 929357,
+    "sha256": "0d82763235326c6a5dabf13a56d78a696a84d4da9a344f3e5e3ba31d81dd39f3",
+    "size": [
+      1254,
+      1254
+    ],
+    "transparent": true
+  },
+  {
+    "id": "bandido-arco",
+    "bytes": 1032736,
+    "sha256": "1289a9c828e0c1cd31f0fff7b5e41bd0f91239ba4272f8340ffd55d2bbd0a9c5",
+    "size": [
+      1254,
+      1254
+    ],
+    "transparent": true
+  },
+  {
+    "id": "goblin",
+    "bytes": 1013914,
+    "sha256": "55c5fcd17e7d68d60afe9b7c6fa278e67aab91f41670e2e5d312185687dee523",
+    "size": [
+      1254,
+      1254
+    ],
+    "transparent": true
+  },
+  {
+    "id": "slime",
+    "bytes": 875751,
+    "sha256": "c8e7e07dec6c27db6709968bf3acc3e394e4150253e47c77a357fa2ccef9a6b8",
+    "size": [
+      1254,
+      1254
+    ],
+    "transparent": true
+  },
+  {
+    "id": "lobo",
+    "bytes": 1201564,
+    "sha256": "42201fa205120b4b3cb412a5460fb342d20f0f2d573d18ab9114f887f705d4c1",
+    "size": [
+      1254,
+      1254
+    ],
+    "transparent": true
+  },
+  {
+    "id": "urso",
+    "bytes": 1065665,
+    "sha256": "f5273b0700d5558a38d9f96013e1c42689cc91bc59f016e2eede31a433f67d4d",
+    "size": [
+      1254,
+      1254
+    ],
+    "transparent": true
+  },
+  {
+    "id": "aliado",
+    "bytes": 865115,
+    "sha256": "1ab55bd2550343f0710956cd4059b3436f6383ece232451a769f5a235c245d1a",
+    "size": [
+      1254,
+      1254
+    ],
+    "transparent": true
+  },
+  {
+    "id": "armadilha",
+    "bytes": 961504,
+    "sha256": "a8ac5eea255d1ad76c4697615fadd5ce675c3f97e6823c219a4a24efeb88ab8b",
+    "size": [
+      1254,
+      1254
+    ],
+    "transparent": true
+  }
+]

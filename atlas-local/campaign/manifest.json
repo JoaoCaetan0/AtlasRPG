@@ -1,0 +1,4164 @@
+{
+  "schema": 1,
+  "assets": [
+    {
+      "source": "Mapas/Veldora/Vila do Freixo/Vila do Freixo - Mapa Geral/Vila do Freixo - Mapa Geral - Regional - Manhã.png",
+      "name": "Vila do Freixo - Mapa Geral - Regional - Manhã.png",
+      "mime": "image/png",
+      "digest": "233b25e3605878c7e047e9d6e9ac0f85b0a9f6c960c83823a0474154225666c5",
+      "size": 4400513,
+      "folder": "Mapas/Veldora/Vila do Freixo/Vila do Freixo - Mapa Geral"
+    },
+    {
+      "source": "Mapas/Veldora/Valenca do Trilho/Armazem Abandonado/Valença do Trilho - Armazém Abandonado/Valença do Trilho - Armazém Abandonado - Vale ferroviário - Manhã.png",
+      "name": "Valença do Trilho - Armazém Abandonado - Vale ferroviário - Manhã.png",
+      "mime": "image/png",
+      "digest": "c6b001d80311244c68e79efb4cee40731b05df0cc68de41ad8e643bca1707409",
+      "size": 4250366,
+      "folder": "Mapas/Veldora/Valenca do Trilho/Armazem Abandonado/Valença do Trilho - Armazém Abandonado"
+    },
+    {
+      "source": "Mapas/Veldora/Stalla/Sao Lazaro e Arrabaldes/Stalla - São Lázaro e Arredores/Stalla - São Lázaro e Arredores - Urbano gótico - Manhã.png",
+      "name": "Stalla - São Lázaro e Arredores - Urbano gótico - Manhã.png",
+      "mime": "image/png",
+      "digest": "f2b4b795edc52ed96dbbb3b4fea15e40ecd80f554541e1ec9b0f61b4589d9d3e",
+      "size": 4239922,
+      "folder": "Mapas/Veldora/Stalla/Sao Lazaro e Arrabaldes/Stalla - São Lázaro e Arredores"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Ruim/Campo e bosque - Manhã 08h00 - Carruagem tombada.png",
+      "name": "Campo e bosque - Manhã 08h00 - Carruagem tombada.png",
+      "mime": "image/png",
+      "digest": "665a8d16690fc65a577b4288fa06dcb2cd7c598229f596dcc6204f2c79c2829c",
+      "size": 4218910,
+      "folder": "Mapas/Mapas de Transição/Ruim"
+    },
+    {
+      "source": "Mapas/Veldora/Stalla/Baixada das Cinzas/Carvoarias/Stalla - Carvoarias/Stalla - Carvoarias - Urbano gótico - Manhã.png",
+      "name": "Stalla - Carvoarias - Urbano gótico - Manhã.png",
+      "mime": "image/png",
+      "digest": "64da1188e2369b19bf0e8398933609b4ea9b38ee941a9e4d335b5b9f79a96b41",
+      "size": 4196359,
+      "folder": "Mapas/Veldora/Stalla/Baixada das Cinzas/Carvoarias/Stalla - Carvoarias"
+    },
+    {
+      "source": "Mapas/Veldora/Floresta do Vale/Mata do Silencio/Mata do Silêncio - Entrada do Laboratório de Valdren/Mata do Silêncio - Entrada do Laboratório de Valdren - Floresta temperada - Manhã.png",
+      "name": "Mata do Silêncio - Entrada do Laboratório de Valdren - Floresta temperada - Manhã.png",
+      "mime": "image/png",
+      "digest": "a5604f75254d71ee0aa0876db676ea1acea890cf9a448105411fea098bf6da76",
+      "size": 4162049,
+      "folder": "Mapas/Veldora/Floresta do Vale/Mata do Silencio/Mata do Silêncio - Entrada do Laboratório de Valdren"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Médio/Campo agrícola - Manhã 09h00 - Porteira disputada.png",
+      "name": "Campo agrícola - Manhã 09h00 - Porteira disputada.png",
+      "mime": "image/png",
+      "digest": "ef061b9628dbbbef1b3dbb4df9e2ef6e95538e62151fcd28ceeeb49fceffdb22",
+      "size": 4145894,
+      "folder": "Mapas/Mapas de Transição/Médio"
+    },
+    {
+      "source": "Mapas/Veldora/Stalla/Arredores da Guilda/Stalla - Arredores da Guilda/Stalla - Arredores da Guilda - Urbano gótico - Manhã.png",
+      "name": "Stalla - Arredores da Guilda - Urbano gótico - Manhã.png",
+      "mime": "image/png",
+      "digest": "43c6cb04e44ae7e39850bcdf37c08c18e4de00568a7466f7d1191c9d8968449d",
+      "size": 4135611,
+      "folder": "Mapas/Veldora/Stalla/Arredores da Guilda/Stalla - Arredores da Guilda"
+    },
+    {
+      "source": "Mapas/Veldora/Stalla/Praca do Mercado/Stalla - Praça do Mercado/Stalla - Praça do Mercado - Urbano gótico - Manhã.png",
+      "name": "Stalla - Praça do Mercado - Urbano gótico - Manhã.png",
+      "mime": "image/png",
+      "digest": "3f4489c5e695c84c2cf85e6b054ab0495f8bedd173d91d87a7d6953e064f3626",
+      "size": 4100422,
+      "folder": "Mapas/Veldora/Stalla/Praca do Mercado/Stalla - Praça do Mercado"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Médio/Moinho sem roda/Moinho sem roda - Várzea - Manhã.png",
+      "name": "Moinho sem roda - Várzea - Manhã.png",
+      "mime": "image/png",
+      "digest": "b0802e7d3b4c6dab1306d4c4b7bcce6d568ed7c233548b66b1624f375c3915f6",
+      "size": 4087828,
+      "folder": "Mapas/Mapas de Transição/Médio/Moinho sem roda"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Ótimo/Abrigo dos ferroviários/Abrigo dos ferroviários - Corredor ferroviário frio - Manhã.png",
+      "name": "Abrigo dos ferroviários - Corredor ferroviário frio - Manhã.png",
+      "mime": "image/png",
+      "digest": "4d923aece06528ead20835b88938bed517b307132e89b137df7232a8cb362be9",
+      "size": 4052833,
+      "folder": "Mapas/Mapas de Transição/Ótimo/Abrigo dos ferroviários"
+    },
+    {
+      "source": "Mapas/Veldora/Vila do Freixo/Vila do Freixo - Mapa Geral/Vila do Freixo - Mapa Geral - Regional - Tarde.png",
+      "name": "Vila do Freixo - Mapa Geral - Regional - Tarde.png",
+      "mime": "image/png",
+      "digest": "e78584e6b97752f0d8e241e1120552556256144687748edae758d41499819181",
+      "size": 4048173,
+      "folder": "Mapas/Veldora/Vila do Freixo/Vila do Freixo - Mapa Geral"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Péssimo/Floresta após temporal - Manhã nublada 10h00 - Árvores sobre a passagem.png",
+      "name": "Floresta após temporal - Manhã nublada 10h00 - Árvores sobre a passagem.png",
+      "mime": "image/png",
+      "digest": "27b9e5b37dd9618178da57fd803b4291214f9d963e9d0598b4de6200a8a820ac",
+      "size": 4041424,
+      "folder": "Mapas/Mapas de Transição/Péssimo"
+    },
+    {
+      "source": "Mapas/Veldora/Stalla/Distrito Academico/Stalla - Distrito Acadêmico/Stalla - Distrito Acadêmico - Urbano gótico - Manhã.png",
+      "name": "Stalla - Distrito Acadêmico - Urbano gótico - Manhã.png",
+      "mime": "image/png",
+      "digest": "4095134be1dd90fbf341842b8facc692111c53cfdd6c090f727f3342b08e71d5",
+      "size": 4018918,
+      "folder": "Mapas/Veldora/Stalla/Distrito Academico/Stalla - Distrito Acadêmico"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Ruim/O selo que parece familiar/O selo que parece familiar - Ruína florestal - Manhã.png",
+      "name": "O selo que parece familiar - Ruína florestal - Manhã.png",
+      "mime": "image/png",
+      "digest": "1750105a7b2d70ff2db13cf7f3c2201ce755f773b70ea7ed1d92248f1280c659",
+      "size": 4011318,
+      "folder": "Mapas/Mapas de Transição/Ruim/O selo que parece familiar"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Ruim/Carruagem tombada/Carruagem tombada - Campo e bosque - Tarde.png",
+      "name": "Carruagem tombada - Campo e bosque - Tarde.png",
+      "mime": "image/png",
+      "digest": "54e94685e14ef7ab08b5a9661ec1d64c3151ae9dfbe95bde4f9a541c4a45e99e",
+      "size": 3992060,
+      "folder": "Mapas/Mapas de Transição/Ruim/Carruagem tombada"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Bom/Canção no cais/Canção no cais - Cais costeiro - Manhã.png",
+      "name": "Canção no cais - Cais costeiro - Manhã.png",
+      "mime": "image/png",
+      "digest": "0370dd11a0e3b04eed6afc3b782058a8fca192a6951ebc587f7e1a3a56318431",
+      "size": 3981357,
+      "folder": "Mapas/Mapas de Transição/Bom/Canção no cais"
+    },
+    {
+      "source": "Mapas/Veldora/Floresta do Vale/Mata do Silencio/Laboratorio de Valdren/Mata do Silêncio - Laboratório de Valdren - Interior.png",
+      "name": "Mata do Silêncio - Laboratório de Valdren - Interior.png",
+      "mime": "image/png",
+      "digest": "8ddd5696094376548147d6299c5e0c599628103ef373f5bb2522c2486b806f8c",
+      "size": 3965405,
+      "folder": "Mapas/Veldora/Floresta do Vale/Mata do Silencio/Laboratorio de Valdren"
+    },
+    {
+      "source": "Mapas/Veldora/Valenca do Trilho/Armazem Abandonado/Valença do Trilho - Armazém Abandonado/Valença do Trilho - Armazém Abandonado - Vale ferroviário - Tarde.png",
+      "name": "Valença do Trilho - Armazém Abandonado - Vale ferroviário - Tarde.png",
+      "mime": "image/png",
+      "digest": "2c27250741787c4f7caf30956ee1b7e1e59c38b6c20a692736a9d1cb83bb9284",
+      "size": 3958003,
+      "folder": "Mapas/Veldora/Valenca do Trilho/Armazem Abandonado/Valença do Trilho - Armazém Abandonado"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Péssimo/Caldeira no acesso/Caldeira no acesso - Via industrial - Tarde.png",
+      "name": "Caldeira no acesso - Via industrial - Tarde.png",
+      "mime": "image/png",
+      "digest": "4f82b51c2fa7a1d3d8653ad61ae007ee025d0b2266585933e78497656997e691",
+      "size": 3947884,
+      "folder": "Mapas/Mapas de Transição/Péssimo/Caldeira no acesso"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Péssimo/Fogo no capinzal/Fogo no capinzal - Campo seco - Manhã.png",
+      "name": "Fogo no capinzal - Campo seco - Manhã.png",
+      "mime": "image/png",
+      "digest": "44ef89e9ad8cf37a026e86ba09238203940aae7590c5470c3743739746f58814",
+      "size": 3930569,
+      "folder": "Mapas/Mapas de Transição/Péssimo/Fogo no capinzal"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Bom/Restauro de um oratório/Restauro de um oratório - Campo com oratório - Manhã.png",
+      "name": "Restauro de um oratório - Campo com oratório - Manhã.png",
+      "mime": "image/png",
+      "digest": "28c761e4acce57865f1f5fb9ecdd053118f308dca9ff71274df074c2a580442c",
+      "size": 3926976,
+      "folder": "Mapas/Mapas de Transição/Bom/Restauro de um oratório"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Ótimo/Costa de maré - Amanhecer 06h45 - Maré que abre caminho.png",
+      "name": "Costa de maré - Amanhecer 06h45 - Maré que abre caminho.png",
+      "mime": "image/png",
+      "digest": "d59ccbeed97fbbb1456ee72c6972aabc5ad20b7fe41221e3364a34a413fd6835",
+      "size": 3910691,
+      "folder": "Mapas/Mapas de Transição/Ótimo"
+    },
+    {
+      "source": "Mapas/Estigma do Caos - Mapa do Mundo.png",
+      "name": "Estigma do Caos - Mapa do Mundo.png",
+      "mime": "image/png",
+      "digest": "5c6e0f90b06eddafa39c948b03b0f2da551d334bd6a62de62352896214035ff5",
+      "size": 3910641,
+      "folder": "Mapas"
+    },
+    {
+      "source": "Mapas/Veldora/Stalla/Grandes Docas/Stalla - Grandes Docas/Stalla - Grandes Docas - Urbano gótico - Manhã.png",
+      "name": "Stalla - Grandes Docas - Urbano gótico - Manhã.png",
+      "mime": "image/png",
+      "digest": "ac0e3a364653ebbf477e653e797d030b0b09fce5b458f77de873180107e4b0ba",
+      "size": 3897481,
+      "folder": "Mapas/Veldora/Stalla/Grandes Docas/Stalla - Grandes Docas"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Ótimo/Floresta temperada - Amanhecer 06h30 - Trilha dos guardiões.png",
+      "name": "Floresta temperada - Amanhecer 06h30 - Trilha dos guardiões.png",
+      "mime": "image/png",
+      "digest": "8f9f180cda7ae05a3b65cb8f0858453f520ef4793e8d60f6f6f15cc68195b9e5",
+      "size": 3882397,
+      "folder": "Mapas/Mapas de Transição/Ótimo"
+    },
+    {
+      "source": "Mapas/Veldora/Stalla/Cidadela Real/Palacio e Bairro da Coroa/Stalla - Palácio e Bairro da Coroa/Stalla - Palácio e Bairro da Coroa - Urbano gótico - Manhã.png",
+      "name": "Stalla - Palácio e Bairro da Coroa - Urbano gótico - Manhã.png",
+      "mime": "image/png",
+      "digest": "53af39b007e29e50aa9dc602655e037498cb6b04ac980216bdeb729b7cd5b9ca",
+      "size": 3875431,
+      "folder": "Mapas/Veldora/Stalla/Cidadela Real/Palacio e Bairro da Coroa/Stalla - Palácio e Bairro da Coroa"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Ruim/O reflexo entre raízes/O reflexo entre raízes - Floresta úmida - Manhã.png",
+      "name": "O reflexo entre raízes - Floresta úmida - Manhã.png",
+      "mime": "image/png",
+      "digest": "3971ba8eb6c5e4e47e153f88edc2dc73fb705c88d3c1ad6a9a2728d1ce5a8436",
+      "size": 3871244,
+      "folder": "Mapas/Mapas de Transição/Ruim/O reflexo entre raízes"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Médio/Poço de uso alternado/Poço de uso alternado - Deserto - Manhã.png",
+      "name": "Poço de uso alternado - Deserto - Manhã.png",
+      "mime": "image/png",
+      "digest": "3246227a1bb579450db82e5946d37ff509c7c39899c3d7f392ed78c3dcba9812",
+      "size": 3865927,
+      "folder": "Mapas/Mapas de Transição/Médio/Poço de uso alternado"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Péssimo/Fogo no capinzal/Fogo no capinzal - Campo seco - Tarde.png",
+      "name": "Fogo no capinzal - Campo seco - Tarde.png",
+      "mime": "image/png",
+      "digest": "eea901aee5be4dedcde8373c260b89b504005fb79ccabfd96d02e88c8d4fe600",
+      "size": 3863277,
+      "folder": "Mapas/Mapas de Transição/Péssimo/Fogo no capinzal"
+    },
+    {
+      "source": "Mapas/Veldora/Stalla/Distrito das Oficinas/Stalla - Distrito das Oficinas/Stalla - Distrito das Oficinas - Urbano gótico - Manhã.png",
+      "name": "Stalla - Distrito das Oficinas - Urbano gótico - Manhã.png",
+      "mime": "image/png",
+      "digest": "e9a52fde1d1224d6fd06abf2aaf5c08038fef6bd5a8543193153b86395be725c",
+      "size": 3855908,
+      "folder": "Mapas/Veldora/Stalla/Distrito das Oficinas/Stalla - Distrito das Oficinas"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Bom/Ruína em brejo - Manhã 09h00 - Herbário no muro.png",
+      "name": "Ruína em brejo - Manhã 09h00 - Herbário no muro.png",
+      "mime": "image/png",
+      "digest": "a1b8d21c35481ab41b379ce72cb9a2d7ac0d70b540aa9aaef8b9d141d731cc87",
+      "size": 3846281,
+      "folder": "Mapas/Mapas de Transição/Bom"
+    },
+    {
+      "source": "Mapas/Veldora/Floresta do Vale/Posto Esquecido/Floresta do Vale - Posto Esquecido e Ponte/Floresta do Vale - Posto Esquecido e Ponte - Floresta temperada - Tarde.png",
+      "name": "Floresta do Vale - Posto Esquecido e Ponte - Floresta temperada - Tarde.png",
+      "mime": "image/png",
+      "digest": "1d21d4da6b74476ae99ce7f33db98d3f6e0cd0a3a33799b29dfd7b0fab06f265",
+      "size": 3844019,
+      "folder": "Mapas/Veldora/Floresta do Vale/Posto Esquecido/Floresta do Vale - Posto Esquecido e Ponte"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Médio/Pomar sem proprietário/Pomar sem proprietário - Pomar temperado - Manhã.png",
+      "name": "Pomar sem proprietário - Pomar temperado - Manhã.png",
+      "mime": "image/png",
+      "digest": "f4e0607b434f27a0315615b9df4931630e6f808d20464f7a78e68d79c2aedce0",
+      "size": 3821215,
+      "folder": "Mapas/Mapas de Transição/Médio/Pomar sem proprietário"
+    },
+    {
+      "source": "Mapas/Veldora/Stalla/Lago do Espelho/Stalla - Lago do Espelho/Stalla - Lago do Espelho - Urbano gótico - Manhã.png",
+      "name": "Stalla - Lago do Espelho - Urbano gótico - Manhã.png",
+      "mime": "image/png",
+      "digest": "29841106dfb012365e471de90d38584aea0c0d9ee356b8bdceb61d47a2344be9",
+      "size": 3820745,
+      "folder": "Mapas/Veldora/Stalla/Lago do Espelho/Stalla - Lago do Espelho"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Ótimo/Abrigo dos ferroviários/Abrigo dos ferroviários - Corredor ferroviário frio - Tarde.png",
+      "name": "Abrigo dos ferroviários - Corredor ferroviário frio - Tarde.png",
+      "mime": "image/png",
+      "digest": "49adfe04106db12d6422705fcde2a637a60398215e6754d7d42fbb6b8c64093a",
+      "size": 3813844,
+      "folder": "Mapas/Mapas de Transição/Ótimo/Abrigo dos ferroviários"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Médio/Enseada - Meio-dia 12h45 - Carga à deriva.png",
+      "name": "Enseada - Meio-dia 12h45 - Carga à deriva.png",
+      "mime": "image/png",
+      "digest": "592ca0b47252ba9e256787627ccc74a63e0aa611bffcb396b983599ebf01e087",
+      "size": 3806918,
+      "folder": "Mapas/Mapas de Transição/Médio"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Bom/Rio de planície - Tarde 16h00 - Balsa puxada à mão.png",
+      "name": "Rio de planície - Tarde 16h00 - Balsa puxada à mão.png",
+      "mime": "image/png",
+      "digest": "64070453f931123feb2bf13234544a648fb4bb9b7598fe7e0958f6ccedc5691e",
+      "size": 3797589,
+      "folder": "Mapas/Mapas de Transição/Bom"
+    },
+    {
+      "source": "Mapas/Veldora/Floresta do Vale/Bosque Esquecido/Floresta do Vale - Bosque Esquecido/Floresta do Vale - Bosque Esquecido - Floresta temperada - Tarde.png",
+      "name": "Floresta do Vale - Bosque Esquecido - Floresta temperada - Tarde.png",
+      "mime": "image/png",
+      "digest": "2fa616df98d62d769df5ec6dd2c9982a81fccf4bb89431dd37774804cfe1a4c9",
+      "size": 3788400,
+      "folder": "Mapas/Veldora/Floresta do Vale/Bosque Esquecido/Floresta do Vale - Bosque Esquecido"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Ruim/O selo que parece familiar/O selo que parece familiar - Ruína florestal - Tarde.png",
+      "name": "O selo que parece familiar - Ruína florestal - Tarde.png",
+      "mime": "image/png",
+      "digest": "e4afdb85b2f615543e8767ca755bef9dfedba892f3bb23839d15115a2797967e",
+      "size": 3786724,
+      "folder": "Mapas/Mapas de Transição/Ruim/O selo que parece familiar"
+    },
+    {
+      "source": "Mapas/Veldora/Stalla/Baixada das Cinzas/Carvoarias/Stalla - Carvoarias/Stalla - Carvoarias - Urbano gótico - Tarde.png",
+      "name": "Stalla - Carvoarias - Urbano gótico - Tarde.png",
+      "mime": "image/png",
+      "digest": "3f5f41c657a0b71dd1e5fb2d39d1005157ecdd9b99326163269e6aa73fcc5e34",
+      "size": 3773913,
+      "folder": "Mapas/Veldora/Stalla/Baixada das Cinzas/Carvoarias/Stalla - Carvoarias"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Médio/Poço de uso alternado/Poço de uso alternado - Deserto - Tarde.png",
+      "name": "Poço de uso alternado - Deserto - Tarde.png",
+      "mime": "image/png",
+      "digest": "b846b3d82fb6982161cafb012a12185fff20c13587cbdf737e8463a745eea13d",
+      "size": 3767379,
+      "folder": "Mapas/Mapas de Transição/Médio/Poço de uso alternado"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Ótimo/Maré que abre caminho/Maré que abre caminho - Costa de maré - Tarde.png",
+      "name": "Maré que abre caminho - Costa de maré - Tarde.png",
+      "mime": "image/png",
+      "digest": "50171a2c6302e41efd2ea7adc84a2dfd22d797fc6c6b2ce1f3b63597884b9858",
+      "size": 3761894,
+      "folder": "Mapas/Mapas de Transição/Ótimo/Maré que abre caminho"
+    },
+    {
+      "source": "Mapas/Veldora/Stalla/Sao Lazaro e Arrabaldes/Stalla - São Lázaro e Arredores/Stalla - São Lázaro e Arredores - Urbano gótico - Noite.png",
+      "name": "Stalla - São Lázaro e Arredores - Urbano gótico - Noite.png",
+      "mime": "image/png",
+      "digest": "3c1083514e5009a5311a104a9ac4ca17b004a9c35a9e46e1e837335df389b8c2",
+      "size": 3746672,
+      "folder": "Mapas/Veldora/Stalla/Sao Lazaro e Arrabaldes/Stalla - São Lázaro e Arredores"
+    },
+    {
+      "source": "Mapas/Veldora/Stalla/Praca do Mercado/Stalla - Praça do Mercado/Stalla - Praça do Mercado - Urbano gótico - Noite.png",
+      "name": "Stalla - Praça do Mercado - Urbano gótico - Noite.png",
+      "mime": "image/png",
+      "digest": "23a8f0dbaff41444c31e621cb4ef7ac9444f0056fe2aefd89ebd5e1670e030fb",
+      "size": 3743976,
+      "folder": "Mapas/Veldora/Stalla/Praca do Mercado/Stalla - Praça do Mercado"
+    },
+    {
+      "source": "Mapas/Veldora/Stalla/Praca do Mercado/Stalla - Praça do Mercado/Stalla - Praça do Mercado - Urbano gótico - Tarde.png",
+      "name": "Stalla - Praça do Mercado - Urbano gótico - Tarde.png",
+      "mime": "image/png",
+      "digest": "f2ad2754a14122cdab79bc201332eb5e4eb1432473f6cdb7886398da16773cf5",
+      "size": 3739497,
+      "folder": "Mapas/Veldora/Stalla/Praca do Mercado/Stalla - Praça do Mercado"
+    },
+    {
+      "source": "Mapas/Veldora/Floresta do Vale/Mata do Silencio/Mata do Silêncio - Entrada do Laboratório de Valdren/Mata do Silêncio - Entrada do Laboratório de Valdren - Floresta temperada - Tarde.png",
+      "name": "Mata do Silêncio - Entrada do Laboratório de Valdren - Floresta temperada - Tarde.png",
+      "mime": "image/png",
+      "digest": "ce7114da0700aa1e12a6b1574797a44a5ea7fbe7af7ea5daeb19772ebfc2944d",
+      "size": 3736486,
+      "folder": "Mapas/Veldora/Floresta do Vale/Mata do Silencio/Mata do Silêncio - Entrada do Laboratório de Valdren"
+    },
+    {
+      "source": "Mapas/Veldora/Stalla/Baixada das Cinzas/Beco das Trocas/Stalla - Beco das Trocas/Stalla - Beco das Trocas - Urbano gótico - Tarde.png",
+      "name": "Stalla - Beco das Trocas - Urbano gótico - Tarde.png",
+      "mime": "image/png",
+      "digest": "dd24e7f6f290cde1db9329d8a5d3482ce402aebe2606d0f7befbe67cc13c07ac",
+      "size": 3721750,
+      "folder": "Mapas/Veldora/Stalla/Baixada das Cinzas/Beco das Trocas/Stalla - Beco das Trocas"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Médio/Manifestos trocados/Manifestos trocados - Entreposto ferroviário - Manhã.png",
+      "name": "Manifestos trocados - Entreposto ferroviário - Manhã.png",
+      "mime": "image/png",
+      "digest": "a43f07cae4b1ac207001e7900a8064c035cd32722307a5e15864abacbc7d2472",
+      "size": 3720795,
+      "folder": "Mapas/Mapas de Transição/Médio/Manifestos trocados"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Péssimo/Cheia na ponte baixa/Cheia na ponte baixa - Rio em cheia - Tarde.png",
+      "name": "Cheia na ponte baixa - Rio em cheia - Tarde.png",
+      "mime": "image/png",
+      "digest": "08a3b53a3229e2c6a64bca82b950686e2480e3a31ac6929bc35d270174e1208e",
+      "size": 3703277,
+      "folder": "Mapas/Mapas de Transição/Péssimo/Cheia na ponte baixa"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Ótimo/Trilha dos guardiões/Trilha dos guardiões - Floresta temperada - Tarde.png",
+      "name": "Trilha dos guardiões - Floresta temperada - Tarde.png",
+      "mime": "image/png",
+      "digest": "3423c17810b2bd2cdb1cdd8cb5b59b92e5ef6de843c82e3ff9d5ed95047eb7e1",
+      "size": 3699593,
+      "folder": "Mapas/Mapas de Transição/Ótimo/Trilha dos guardiões"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Bom/Herbário no muro/Herbário no muro - Ruína em brejo - Tarde.png",
+      "name": "Herbário no muro - Ruína em brejo - Tarde.png",
+      "mime": "image/png",
+      "digest": "853561b0bbb600fbd31ca86c463bc372c8ebd452378a1c589a274c2070ceef84",
+      "size": 3683939,
+      "folder": "Mapas/Mapas de Transição/Bom/Herbário no muro"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Bom/Balsa puxada à mão/Balsa puxada à mão - Rio de planície - Manhã.png",
+      "name": "Balsa puxada à mão - Rio de planície - Manhã.png",
+      "mime": "image/png",
+      "digest": "fb5933b062a2676344e606fb1142dd33a17d29e60443ccfb4b164753e1f68800",
+      "size": 3680886,
+      "folder": "Mapas/Mapas de Transição/Bom/Balsa puxada à mão"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Médio/Divisa coberta de neve/Divisa coberta de neve - Passo nevado - Manhã.png",
+      "name": "Divisa coberta de neve - Passo nevado - Manhã.png",
+      "mime": "image/png",
+      "digest": "aed09d2edd10613ae008fba5f8705e3a525df871384214679226c579a72b9e8d",
+      "size": 3679777,
+      "folder": "Mapas/Mapas de Transição/Médio/Divisa coberta de neve"
+    },
+    {
+      "source": "Mapas/Veldora/Stalla/Baixada das Cinzas/Beco das Trocas/Stalla - Beco das Trocas/Stalla - Beco das Trocas - Urbano gótico - Noite.png",
+      "name": "Stalla - Beco das Trocas - Urbano gótico - Noite.png",
+      "mime": "image/png",
+      "digest": "9136627921b73ff4999dd244498b4afac384dc3f4701ff1e2d873c08d3bde34a",
+      "size": 3669194,
+      "folder": "Mapas/Veldora/Stalla/Baixada das Cinzas/Beco das Trocas/Stalla - Beco das Trocas"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Ruim/A bomba e o barril/A bomba e o barril - Açude em campo seco - Manhã.png",
+      "name": "A bomba e o barril - Açude em campo seco - Manhã.png",
+      "mime": "image/png",
+      "digest": "b8aca43a55c2802425cc95c2bc786cdbc3efb10f371191a72a2ed22b143cdc91",
+      "size": 3659016,
+      "folder": "Mapas/Mapas de Transição/Ruim/A bomba e o barril"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Bom/Desfiladeiro rochoso - Manhã 10h00 - Corrimão de corda.png",
+      "name": "Desfiladeiro rochoso - Manhã 10h00 - Corrimão de corda.png",
+      "mime": "image/png",
+      "digest": "ebfcae1cb2ea4660ddf01af25d2a45346107c6243cd18115cd313dffad511eed",
+      "size": 3657774,
+      "folder": "Mapas/Mapas de Transição/Bom"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Ruim/O sentinela do desfiladeiro/O sentinela do desfiladeiro - Desfiladeiro de montanha - Manhã.png",
+      "name": "O sentinela do desfiladeiro - Desfiladeiro de montanha - Manhã.png",
+      "mime": "image/png",
+      "digest": "378b0aac4944f928185c2578c2956eaa6c387ef2c3a59596a91f0353a4ad0678",
+      "size": 3641520,
+      "folder": "Mapas/Mapas de Transição/Ruim/O sentinela do desfiladeiro"
+    },
+    {
+      "source": "Mapas/Veldora/Stalla/Fontes e Portao do Vale/Stalla - Fontes e Portão do Vale/Stalla - Fontes e Portão do Vale - Urbano gótico - Noite.png",
+      "name": "Stalla - Fontes e Portão do Vale - Urbano gótico - Noite.png",
+      "mime": "image/png",
+      "digest": "690ab4476e411453a57c4d9df4788f1d2949485d4d442d596f96cf986dc585f0",
+      "size": 3627282,
+      "folder": "Mapas/Veldora/Stalla/Fontes e Portao do Vale/Stalla - Fontes e Portão do Vale"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Péssimo/Piso que afunda/Piso que afunda - Ruína alagada - Manhã.png",
+      "name": "Piso que afunda - Ruína alagada - Manhã.png",
+      "mime": "image/png",
+      "digest": "25b6c6453b0246edb1ff7d83128c4c20fd9db71163345d94e775966f216b0cd4",
+      "size": 3620114,
+      "folder": "Mapas/Mapas de Transição/Péssimo/Piso que afunda"
+    },
+    {
+      "source": "Mapas/Veldora/Stalla/Baixada das Cinzas/Laboratorio Antigo/Stalla - Laboratório Antigo - Exterior/Stalla - Laboratório Antigo - Exterior - Urbano gótico - Tarde.png",
+      "name": "Stalla - Laboratório Antigo - Exterior - Urbano gótico - Tarde.png",
+      "mime": "image/png",
+      "digest": "268ba46bb6a225d00ef7285b333927105f16efde1c40df0e9d73bb4c68f3dd62",
+      "size": 3599452,
+      "folder": "Mapas/Veldora/Stalla/Baixada das Cinzas/Laboratorio Antigo/Stalla - Laboratório Antigo - Exterior"
+    },
+    {
+      "source": "Mapas/Veldora/Stalla/Distrito Academico/Stalla - Distrito Acadêmico/Stalla - Distrito Acadêmico - Urbano gótico - Noite.png",
+      "name": "Stalla - Distrito Acadêmico - Urbano gótico - Noite.png",
+      "mime": "image/png",
+      "digest": "c37c9b436e706f2bbe5dfce12cdc15992bb799808a3e2a64b00f7448de3ebb3a",
+      "size": 3592964,
+      "folder": "Mapas/Veldora/Stalla/Distrito Academico/Stalla - Distrito Acadêmico"
+    },
+    {
+      "source": "Mapas/Veldora/Stalla/Grandes Docas/Stalla - Grandes Docas/Stalla - Grandes Docas - Urbano gótico - Tarde.png",
+      "name": "Stalla - Grandes Docas - Urbano gótico - Tarde.png",
+      "mime": "image/png",
+      "digest": "75bd750b96b298d8b7956069ee88ea952e6dd28da1e9c02e7b0402a152eab88c",
+      "size": 3590962,
+      "folder": "Mapas/Veldora/Stalla/Grandes Docas/Stalla - Grandes Docas"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Ótimo/Ilha flutuante - Manhã 08h00 - Pouso de manutenção.png",
+      "name": "Ilha flutuante - Manhã 08h00 - Pouso de manutenção.png",
+      "mime": "image/png",
+      "digest": "c3508f363e56ddf6b2f64bdc78ec43f42f3d29a27e3df9bf4428bdb01628aee3",
+      "size": 3565354,
+      "folder": "Mapas/Mapas de Transição/Ótimo"
+    },
+    {
+      "source": "Mapas/Veldora/Stalla/Cidadela Real/Catedral e Paco Civil/Stalla - Catedral e Paço Civil/Stalla - Catedral e Paço Civil - Urbano gótico - Noite.png",
+      "name": "Stalla - Catedral e Paço Civil - Urbano gótico - Noite.png",
+      "mime": "image/png",
+      "digest": "72393409ec2b041c4e1fc0b729fa83907190d84761d8915fce1a265fee9a6ff7",
+      "size": 3560152,
+      "folder": "Mapas/Veldora/Stalla/Cidadela Real/Catedral e Paco Civil/Stalla - Catedral e Paço Civil"
+    },
+    {
+      "source": "Mapas/Veldora/Stalla/Distrito das Oficinas/Stalla - Distrito das Oficinas/Stalla - Distrito das Oficinas - Urbano gótico - Tarde.png",
+      "name": "Stalla - Distrito das Oficinas - Urbano gótico - Tarde.png",
+      "mime": "image/png",
+      "digest": "d1230bc1a6a14be975ff17be22432e2dc37d3d1c1734c55fc3df3e99a1c6c059",
+      "size": 3542824,
+      "folder": "Mapas/Veldora/Stalla/Distrito das Oficinas/Stalla - Distrito das Oficinas"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Ruim/O reflexo entre raízes/O reflexo entre raízes - Floresta úmida - Tarde.png",
+      "name": "O reflexo entre raízes - Floresta úmida - Tarde.png",
+      "mime": "image/png",
+      "digest": "aaf76f05f6bd6cee75cc24e21ff2110ee4a11a1df095cb035fc1f3bff007c99c",
+      "size": 3537817,
+      "folder": "Mapas/Mapas de Transição/Ruim/O reflexo entre raízes"
+    },
+    {
+      "source": "Mapas/Veldora/Valenca do Trilho/Armazem Abandonado/Valença do Trilho - Armazém Abandonado/Valença do Trilho - Armazém Abandonado - Vale ferroviário - Noite.png",
+      "name": "Valença do Trilho - Armazém Abandonado - Vale ferroviário - Noite.png",
+      "mime": "image/png",
+      "digest": "838f1c1cf21df2581f6fa7412aeed9bb8786e513f972c7a2bb9e91dacc7eb055",
+      "size": 3530129,
+      "folder": "Mapas/Veldora/Valenca do Trilho/Armazem Abandonado/Valença do Trilho - Armazém Abandonado"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Ótimo/Refúgio sob o sino/Refúgio sob o sino - Montanha nevada - Tarde.png",
+      "name": "Refúgio sob o sino - Montanha nevada - Tarde.png",
+      "mime": "image/png",
+      "digest": "4f0eae80e330783a1c8d1bc1aa714f2b74c5cd79e9b44b8069a66ecca20388f8",
+      "size": 3518645,
+      "folder": "Mapas/Mapas de Transição/Ótimo/Refúgio sob o sino"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Bom/Oficina sob a lona/Oficina sob a lona - Campo de estrada - Noite.png",
+      "name": "Oficina sob a lona - Campo de estrada - Noite.png",
+      "mime": "image/png",
+      "digest": "cbf08e7fc1c2edbfda87242dc5e0edeff2ce90613280d20792b4be0ee18f70de",
+      "size": 3511961,
+      "folder": "Mapas/Mapas de Transição/Bom/Oficina sob a lona"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Ótimo/Oásis desértico - Meio-dia 12h00 - Pátio de sombra.png",
+      "name": "Oásis desértico - Meio-dia 12h00 - Pátio de sombra.png",
+      "mime": "image/png",
+      "digest": "f4de2a0b7adfe01aae4ba1f97da26997cfe09fec17a80febdfe946394266c68c",
+      "size": 3508943,
+      "folder": "Mapas/Mapas de Transição/Ótimo"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Ruim/Ruína florestal - Noite 00h30 - O selo que parece familiar.png",
+      "name": "Ruína florestal - Noite 00h30 - O selo que parece familiar.png",
+      "mime": "image/png",
+      "digest": "3a74940d363d2dde20a38b5c98147022653c11b1057d666db4a4c5824d4fdd50",
+      "size": 3487236,
+      "folder": "Mapas/Mapas de Transição/Ruim"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Péssimo/Cheia na ponte baixa/Cheia na ponte baixa - Rio em cheia - Noite.png",
+      "name": "Cheia na ponte baixa - Rio em cheia - Noite.png",
+      "mime": "image/png",
+      "digest": "49fbb0b9c4be753ed6c6bcb2d27b85a9f08f00573c9a5dc3efc043dea90d8ce9",
+      "size": 3483062,
+      "folder": "Mapas/Mapas de Transição/Péssimo/Cheia na ponte baixa"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Péssimo/Costa rochosa - Noite de tempestade 23h30 - Convés sob arrebentação.png",
+      "name": "Costa rochosa - Noite de tempestade 23h30 - Convés sob arrebentação.png",
+      "mime": "image/png",
+      "digest": "19f98edd4da9a32e4a98b54341c91075c590fc23bbb49af6bc44ec4777eafae5",
+      "size": 3475371,
+      "folder": "Mapas/Mapas de Transição/Péssimo"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Péssimo/Encosta nevada - Amanhecer nublado 07h00 - Avalanche e sinos mudos.png",
+      "name": "Encosta nevada - Amanhecer nublado 07h00 - Avalanche e sinos mudos.png",
+      "mime": "image/png",
+      "digest": "c6333d09d7df0739d654502bf753b5ae72b95f6fe42b680feca74a495bb6c225",
+      "size": 3456009,
+      "folder": "Mapas/Mapas de Transição/Péssimo"
+    },
+    {
+      "source": "Mapas/Veldora/Stalla/Grandes Docas/Stalla - Grandes Docas/Stalla - Grandes Docas - Urbano gótico - Noite.png",
+      "name": "Stalla - Grandes Docas - Urbano gótico - Noite.png",
+      "mime": "image/png",
+      "digest": "92d2213af2281b9043c8dd1d2c08c7a13fec37339b5103590e1f39c2b580f07b",
+      "size": 3444131,
+      "folder": "Mapas/Veldora/Stalla/Grandes Docas/Stalla - Grandes Docas"
+    },
+    {
+      "source": "Mapas/Veldora/Stalla/Lago do Espelho/Stalla - Lago do Espelho/Stalla - Lago do Espelho - Urbano gótico - Noite.png",
+      "name": "Stalla - Lago do Espelho - Urbano gótico - Noite.png",
+      "mime": "image/png",
+      "digest": "4f241d4809e93cc0fdf6a861e089dc6e758ec407f1e4593830ed692b8600768d",
+      "size": 3434005,
+      "folder": "Mapas/Veldora/Stalla/Lago do Espelho/Stalla - Lago do Espelho"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Ótimo/Nascente preservada/Nascente preservada - Nascente rochosa - Noite.png",
+      "name": "Nascente preservada - Nascente rochosa - Noite.png",
+      "mime": "image/png",
+      "digest": "402ab4f33debd4f41c20ff355a252e2ecb06e29c068a160a3a1b99bcf10c527e",
+      "size": 3411327,
+      "folder": "Mapas/Mapas de Transição/Ótimo/Nascente preservada"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Ótimo/Pernoite recomendado/Pernoite recomendado - Arredores urbanos - Noite.png",
+      "name": "Pernoite recomendado - Arredores urbanos - Noite.png",
+      "mime": "image/png",
+      "digest": "32f51a5c8782141c009177715376d0de59449ca4c1db86efc4897dec6c1a34f0",
+      "size": 3406871,
+      "folder": "Mapas/Mapas de Transição/Ótimo/Pernoite recomendado"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Péssimo/Passagem que se desfaz/Passagem que se desfaz - Ruína suspensa - Manhã.png",
+      "name": "Passagem que se desfaz - Ruína suspensa - Manhã.png",
+      "mime": "image/png",
+      "digest": "4b6ee57a623472a2bd7a6dafc0eca1e754ce7b9547f2e8a184f2bf12fe607042",
+      "size": 3395878,
+      "folder": "Mapas/Mapas de Transição/Péssimo/Passagem que se desfaz"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Péssimo/Árvores sobre a passagem/Árvores sobre a passagem - Floresta após temporal - Noite.png",
+      "name": "Árvores sobre a passagem - Floresta após temporal - Noite.png",
+      "mime": "image/png",
+      "digest": "11682813c030541398633760923b8b007789066735ffb653d5efd6ed41f7785b",
+      "size": 3395506,
+      "folder": "Mapas/Mapas de Transição/Péssimo/Árvores sobre a passagem"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Ótimo/Brejo - Fim de tarde 17h00 - Passarela dos moradores.png",
+      "name": "Brejo - Fim de tarde 17h00 - Passarela dos moradores.png",
+      "mime": "image/png",
+      "digest": "b8183817fac1f023adfc8e376fd80bf765434b9e63f06943b92512d09eea46b7",
+      "size": 3378768,
+      "folder": "Mapas/Mapas de Transição/Ótimo"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Ruim/O sentinela do desfiladeiro/O sentinela do desfiladeiro - Desfiladeiro de montanha - Tarde.png",
+      "name": "O sentinela do desfiladeiro - Desfiladeiro de montanha - Tarde.png",
+      "mime": "image/png",
+      "digest": "4c326bf093d00e0ed01d6ead233e8d4646541334fbcb9a3c7b3aaa4e6e218a45",
+      "size": 3370329,
+      "folder": "Mapas/Mapas de Transição/Ruim/O sentinela do desfiladeiro"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Ótimo/Corredor ferroviário frio - Noite 22h00 - Abrigo dos ferroviários.png",
+      "name": "Corredor ferroviário frio - Noite 22h00 - Abrigo dos ferroviários.png",
+      "mime": "image/png",
+      "digest": "b3d54a38c8cd4d2c18ef824d4c63d334569b2861ec79e812f50b81eeef542f7f",
+      "size": 3366345,
+      "folder": "Mapas/Mapas de Transição/Ótimo"
+    },
+    {
+      "source": "Mapas/Veldora/Stalla/Estacao Central/Stalla - Estação Central/Stalla - Estação Central - Urbano gótico - Manhã.png",
+      "name": "Stalla - Estação Central - Urbano gótico - Manhã.png",
+      "mime": "image/png",
+      "digest": "af9022ad05f9671d8c65b8440c802a264489ca9380e981dc576c9858618eaa70",
+      "size": 3354842,
+      "folder": "Mapas/Veldora/Stalla/Estacao Central/Stalla - Estação Central"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Ótimo/Montanha nevada - Noite 23h00 - Refúgio sob o sino.png",
+      "name": "Montanha nevada - Noite 23h00 - Refúgio sob o sino.png",
+      "mime": "image/png",
+      "digest": "be8a40371e527df2fe5f16b671014e539efd9c3b835ef50236c3628300957398",
+      "size": 3350296,
+      "folder": "Mapas/Mapas de Transição/Ótimo"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Ótimo/Mesa depois da colheita/Mesa depois da colheita - Campo cultivado - Noite.png",
+      "name": "Mesa depois da colheita - Campo cultivado - Noite.png",
+      "mime": "image/png",
+      "digest": "f1bf411249e1159cc0f161afa72b7a67585b1b2f34b7488b5107f585d9f7a54d",
+      "size": 3343167,
+      "folder": "Mapas/Mapas de Transição/Ótimo/Mesa depois da colheita"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Péssimo/Via industrial - Noite 22h30 - Caldeira no acesso.png",
+      "name": "Via industrial - Noite 22h30 - Caldeira no acesso.png",
+      "mime": "image/png",
+      "digest": "5d8f060fcb5e05b364ba779bb9e4230409bd3856b9927868c3467719413b4854",
+      "size": 3335095,
+      "folder": "Mapas/Mapas de Transição/Péssimo"
+    },
+    {
+      "source": "Mapas/Veldora/Floresta do Vale/Bosque Esquecido/Floresta do Vale - Bosque Esquecido/Floresta do Vale - Bosque Esquecido - Floresta temperada - Noite.png",
+      "name": "Floresta do Vale - Bosque Esquecido - Floresta temperada - Noite.png",
+      "mime": "image/png",
+      "digest": "51eab386d4bbc4422104fbfb762466c5a0c765da81cdf2ca457c812200da1c1c",
+      "size": 3333851,
+      "folder": "Mapas/Veldora/Floresta do Vale/Bosque Esquecido/Floresta do Vale - Bosque Esquecido"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Médio/Porteira disputada/Porteira disputada - Campo agrícola - Noite.png",
+      "name": "Porteira disputada - Campo agrícola - Noite.png",
+      "mime": "image/png",
+      "digest": "537d20a22df08b682bb41f903b037b19d3a47c5aed2e0cc88a9dbdaba77aba75",
+      "size": 3303731,
+      "folder": "Mapas/Mapas de Transição/Médio/Porteira disputada"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Ótimo/Trilha dos guardiões/Trilha dos guardiões - Floresta temperada - Noite.png",
+      "name": "Trilha dos guardiões - Floresta temperada - Noite.png",
+      "mime": "image/png",
+      "digest": "aa4bdc744762ba37ffb310a395dd578bf983c7b23d7dfabc8037132f5e5b1123",
+      "size": 3297675,
+      "folder": "Mapas/Mapas de Transição/Ótimo/Trilha dos guardiões"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Ótimo/Pouso de manutenção/Pouso de manutenção - Ilha flutuante - Tarde.png",
+      "name": "Pouso de manutenção - Ilha flutuante - Tarde.png",
+      "mime": "image/png",
+      "digest": "74ffc7c463bebb23467ec4608f0889f9249a8829fea1e45846030d2ec6e77cc1",
+      "size": 3283849,
+      "folder": "Mapas/Mapas de Transição/Ótimo/Pouso de manutenção"
+    },
+    {
+      "source": "Mapas/Veldora/Stalla/Baixada das Cinzas/Laboratorio Antigo/Stalla - Laboratório Antigo - Exterior/Stalla - Laboratório Antigo - Exterior - Urbano gótico - Noite.png",
+      "name": "Stalla - Laboratório Antigo - Exterior - Urbano gótico - Noite.png",
+      "mime": "image/png",
+      "digest": "005c9a3e170b8349d4be552d8911fa1b23becae281b3d921f13eae57a3476e0b",
+      "size": 3283447,
+      "folder": "Mapas/Veldora/Stalla/Baixada das Cinzas/Laboratorio Antigo/Stalla - Laboratório Antigo - Exterior"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Ruim/Floresta úmida - Noite 21h00 - O reflexo entre raízes.png",
+      "name": "Floresta úmida - Noite 21h00 - O reflexo entre raízes.png",
+      "mime": "image/png",
+      "digest": "13183fa1086555fd6514e7c7e783f1ebafae5154ea86362a7a2a1c5b72f63517",
+      "size": 3281072,
+      "folder": "Mapas/Mapas de Transição/Ruim"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Médio/Divisa coberta de neve/Divisa coberta de neve - Passo nevado - Noite.png",
+      "name": "Divisa coberta de neve - Passo nevado - Noite.png",
+      "mime": "image/png",
+      "digest": "df79cdd7840ced43a5da0b01c5db235b8e952676a80cdd527ef6c50c3f573cdd",
+      "size": 3276153,
+      "folder": "Mapas/Mapas de Transição/Médio/Divisa coberta de neve"
+    },
+    {
+      "source": "Mapas/Veldora/Floresta do Vale/Posto Esquecido/Floresta do Vale - Posto Esquecido e Ponte/Floresta do Vale - Posto Esquecido e Ponte - Floresta temperada - Noite.png",
+      "name": "Floresta do Vale - Posto Esquecido e Ponte - Floresta temperada - Noite.png",
+      "mime": "image/png",
+      "digest": "48ed0ddac47a2f0a12e1d6635c6a9412a01e579a4cf9c5b2001606e0372a0f16",
+      "size": 3262050,
+      "folder": "Mapas/Veldora/Floresta do Vale/Posto Esquecido/Floresta do Vale - Posto Esquecido e Ponte"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Péssimo/Fogo no capinzal/Fogo no capinzal - Campo seco - Noite.png",
+      "name": "Fogo no capinzal - Campo seco - Noite.png",
+      "mime": "image/png",
+      "digest": "ce1199e291896732a2cdde1d669d18ddd37aa54a977c5b11e0e8045d3130d995",
+      "size": 3243602,
+      "folder": "Mapas/Mapas de Transição/Péssimo/Fogo no capinzal"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Médio/Pêndulo fora de ritmo/Pêndulo fora de ritmo - Terreno de fenda - Noite.png",
+      "name": "Pêndulo fora de ritmo - Terreno de fenda - Noite.png",
+      "mime": "image/png",
+      "digest": "2ef21f650e789bf4504fff0e0ee9b51be8a2cbbf5ab1fe625e5053726f4b8178",
+      "size": 3219750,
+      "folder": "Mapas/Mapas de Transição/Médio/Pêndulo fora de ritmo"
+    },
+    {
+      "source": "Mapas/Veldora/Stalla/Cidadela Real/Palacio e Bairro da Coroa/Stalla - Palácio e Bairro da Coroa/Stalla - Palácio e Bairro da Coroa - Urbano gótico - Noite.png",
+      "name": "Stalla - Palácio e Bairro da Coroa - Urbano gótico - Noite.png",
+      "mime": "image/png",
+      "digest": "17536b09f4e40cc3c733e40973fde4ab276d02cd90896b8723335ffd77c09bd3",
+      "size": 3209589,
+      "folder": "Mapas/Veldora/Stalla/Cidadela Real/Palacio e Bairro da Coroa/Stalla - Palácio e Bairro da Coroa"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Ruim/A bomba e o barril/A bomba e o barril - Açude em campo seco - Noite.png",
+      "name": "A bomba e o barril - Açude em campo seco - Noite.png",
+      "mime": "image/png",
+      "digest": "c4d7f7dbe6fd44c2adb851498ce976d4832411a1825438cb508e6c2ca75a7da8",
+      "size": 3202320,
+      "folder": "Mapas/Mapas de Transição/Ruim/A bomba e o barril"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Médio/Moinho sem roda/Moinho sem roda - Várzea - Noite.png",
+      "name": "Moinho sem roda - Várzea - Noite.png",
+      "mime": "image/png",
+      "digest": "785f5e1ce0d9ef1dbc442cbf6e6deb0b02b9e0ca1ceb6c5549ad70223f5444c2",
+      "size": 3198647,
+      "folder": "Mapas/Mapas de Transição/Médio/Moinho sem roda"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Bom/Herbário no muro/Herbário no muro - Ruína em brejo - Noite.png",
+      "name": "Herbário no muro - Ruína em brejo - Noite.png",
+      "mime": "image/png",
+      "digest": "618c55c2cff0f20c1e7a23b0ce9353518e9db8b0aab3acef9766b02c42080c32",
+      "size": 3173982,
+      "folder": "Mapas/Mapas de Transição/Bom/Herbário no muro"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Ótimo/Pátio de sombra/Pátio de sombra - Oásis desértico - Noite.png",
+      "name": "Pátio de sombra - Oásis desértico - Noite.png",
+      "mime": "image/png",
+      "digest": "bb5032879d6ed0169353bd633c61f37f66ae2f766c48eb2842f48f90aa47cc8b",
+      "size": 3117667,
+      "folder": "Mapas/Mapas de Transição/Ótimo/Pátio de sombra"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Péssimo/Avalanche e sinos mudos/Avalanche e sinos mudos - Encosta nevada - Noite.png",
+      "name": "Avalanche e sinos mudos - Encosta nevada - Noite.png",
+      "mime": "image/png",
+      "digest": "6d79b2fd872272dea01c92da1268897c9a70d7684bc0a957f4b1a67d938e18ff",
+      "size": 3110113,
+      "folder": "Mapas/Mapas de Transição/Péssimo/Avalanche e sinos mudos"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Bom/Balsa puxada à mão/Balsa puxada à mão - Rio de planície - Noite.png",
+      "name": "Balsa puxada à mão - Rio de planície - Noite.png",
+      "mime": "image/png",
+      "digest": "e127c938197813d1899ebdaf13100a62fd371345bb84dce3951ca2a1f8c625d2",
+      "size": 3102639,
+      "folder": "Mapas/Mapas de Transição/Bom/Balsa puxada à mão"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Bom/Corrimão de corda/Corrimão de corda - Desfiladeiro rochoso - Noite.png",
+      "name": "Corrimão de corda - Desfiladeiro rochoso - Noite.png",
+      "mime": "image/png",
+      "digest": "428b2aaf79735040692f76db6b7c45126cf77981212ed5bf492b1b8d44220934",
+      "size": 3050312,
+      "folder": "Mapas/Mapas de Transição/Bom/Corrimão de corda"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Péssimo/Deserto em tempestade - Tarde 16h30 - Tempestade e catalisador rachado.png",
+      "name": "Deserto em tempestade - Tarde 16h30 - Tempestade e catalisador rachado.png",
+      "mime": "image/png",
+      "digest": "57db74825757c2eb8677d1558f55bed1df2d36ba72d14656b45c477763e7759c",
+      "size": 3043315,
+      "folder": "Mapas/Mapas de Transição/Péssimo"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Médio/Carga à deriva/Carga à deriva - Enseada - Noite.png",
+      "name": "Carga à deriva - Enseada - Noite.png",
+      "mime": "image/png",
+      "digest": "d796b57b3664616dc48ba44f5840b258e01a22f2d96fa957d68cc764aae9e702",
+      "size": 2994490,
+      "folder": "Mapas/Mapas de Transição/Médio/Carga à deriva"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Bom/Feira de ferramentas/Feira de ferramentas - Pátio urbano - Noite.png",
+      "name": "Feira de ferramentas - Pátio urbano - Noite.png",
+      "mime": "image/png",
+      "digest": "4e48aaca5f1f683237e7477e100d1639b9710986ffa485373c0033a60dbba787",
+      "size": 2943452,
+      "folder": "Mapas/Mapas de Transição/Bom/Feira de ferramentas"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Ruim/Leilão sob o toldo/Leilão sob o toldo - Entreposto desértico - Noite.png",
+      "name": "Leilão sob o toldo - Entreposto desértico - Noite.png",
+      "mime": "image/png",
+      "digest": "f09ce9aca960e0ab0b89b3926add5ab1e15dfd355d0f3956f7374e4145e5f00d",
+      "size": 2796022,
+      "folder": "Mapas/Mapas de Transição/Ruim/Leilão sob o toldo"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Péssimo/Tempestade e catalisador rachado/Tempestade e catalisador rachado - Deserto em tempestade - Noite.png",
+      "name": "Tempestade e catalisador rachado - Deserto em tempestade - Noite.png",
+      "mime": "image/png",
+      "digest": "ffd9c403b7bffecd21e40bffd8de7bc287dff58474636fdbac6a1042d35e6131",
+      "size": 2576523,
+      "folder": "Mapas/Mapas de Transição/Péssimo/Tempestade e catalisador rachado"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/_Material do Mestre/Projetos dos 50 Mapas.md",
+      "name": "Projetos dos 50 Mapas.md",
+      "mime": "text/plain",
+      "digest": "af863637155bab1d214210ae74e9511b9df59c5cb957d5acae707494727b24a4",
+      "size": 175097,
+      "folder": "Mapas/Mapas de Transição/_Material do Mestre"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/_Material do Mestre/50 Cenários de Transição.md",
+      "name": "50 Cenários de Transição.md",
+      "mime": "text/plain",
+      "digest": "277038ab688ccd3fe0f808b85bc949c4d53bd9eecfa19a41b2e25802ab78596b",
+      "size": 40966,
+      "folder": "Mapas/Mapas de Transição/_Material do Mestre"
+    },
+    {
+      "source": "Mapas/INDICE.txt",
+      "name": "INDICE.txt",
+      "mime": "text/plain",
+      "digest": "8bbd7677c0e1658802d093d718ecd1cba7007cad8b91d261be4699fd1d832494",
+      "size": 25974,
+      "folder": "Mapas"
+    },
+    {
+      "source": "Mapas/PADRAO_DE_CRIACAO_DOS_MAPAS.md",
+      "name": "PADRAO_DE_CRIACAO_DOS_MAPAS.md",
+      "mime": "text/plain",
+      "digest": "843660dd060697eccdbe889a6e6a0924a87dc9dae1e5a1866cb2968b3f39cbd6",
+      "size": 18953,
+      "folder": "Mapas"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/_Material do Mestre/Andamento.txt",
+      "name": "Andamento.txt",
+      "mime": "text/plain",
+      "digest": "0967330555e4cf040355b50ed3f678573a2c3553eafcfe40c68d5e540a3f7db4",
+      "size": 15610,
+      "folder": "Mapas/Mapas de Transição/_Material do Mestre"
+    },
+    {
+      "source": "Projeto e Progresso/PROMPT_MESTRE.md",
+      "name": "PROMPT_MESTRE.md",
+      "mime": "text/plain",
+      "digest": "697b808fbfdb76cf97fbda2d21860cac88325b76edd4e682f7f4bf6fcdce0cf7",
+      "size": 10703,
+      "folder": "Projeto e Progresso"
+    },
+    {
+      "source": "Projeto e Progresso/CONEXOES_REGIONAIS.md",
+      "name": "CONEXOES_REGIONAIS.md",
+      "mime": "text/plain",
+      "digest": "422877be1af366ff17eee239fd5e6884f1eaab9975b166395f0c9c758c782db1",
+      "size": 4205,
+      "folder": "Projeto e Progresso"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/_Material do Mestre/Carruagem Tombada - Guia do Mestre.txt",
+      "name": "Carruagem Tombada - Guia do Mestre.txt",
+      "mime": "text/plain",
+      "digest": "1bea2b3cbd31ae34c48571b070097791ef5deab102bd9df0ddf5943a1e7fd03e",
+      "size": 3936,
+      "folder": "Mapas/Mapas de Transição/_Material do Mestre"
+    },
+    {
+      "source": "COMO_DESENHAR.txt",
+      "name": "COMO_DESENHAR.txt",
+      "mime": "text/plain",
+      "digest": "377ba44e53b9f4d5cbeb9f380d20b408872602be693719e9ee3608eb72d1fc6b",
+      "size": 2118,
+      "folder": "."
+    },
+    {
+      "source": "Projeto e Progresso/Prompts Executados/Feira/PROMPT_FEIRA_NOITE.txt",
+      "name": "PROMPT_FEIRA_NOITE.txt",
+      "mime": "text/plain",
+      "digest": "2f0611dbf568a81614167ea639d446255185b3176e23387ac73c350d6bb8fc78",
+      "size": 1593,
+      "folder": "Projeto e Progresso/Prompts Executados/Feira"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts Executados/Feira/PROMPT_FEIRA_TARDE.txt",
+      "name": "PROMPT_FEIRA_TARDE.txt",
+      "mime": "text/plain",
+      "digest": "7c12124c9266d6d7fc030865a124796d802e69d2b21a6fad8a11a133c642cee6",
+      "size": 1213,
+      "folder": "Projeto e Progresso/Prompts Executados/Feira"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L041-0.txt",
+      "name": "L041-0.txt",
+      "mime": "text/plain",
+      "digest": "a52d54ae6948be2f846eeb761e5537bb65fa39b22dd355fc930c8dc2b9a880cb",
+      "size": 1140,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L012-1.txt",
+      "name": "L012-1.txt",
+      "mime": "text/plain",
+      "digest": "9409b816ab52b24e5a3ac512ab5d42f70b693979f68941e78bc474997791337a",
+      "size": 1006,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L014-2.txt",
+      "name": "L014-2.txt",
+      "mime": "text/plain",
+      "digest": "f5d1b75e4b338a27d977e26c915a0c598c9c323b25d53a6ac58fecef470416b7",
+      "size": 989,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L035-0.txt",
+      "name": "L035-0.txt",
+      "mime": "text/plain",
+      "digest": "ddbe2b7e90aedec4f248e9db1a91004bf1b2b53f91f04d84680e22efd052140a",
+      "size": 986,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L035-2.txt",
+      "name": "L035-2.txt",
+      "mime": "text/plain",
+      "digest": "6cb7ba630720b5b66e9f1971862829dae670fd5cf477d7a262f40d85fc7219b7",
+      "size": 979,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L033-0.txt",
+      "name": "L033-0.txt",
+      "mime": "text/plain",
+      "digest": "ad6a5b23656aeadd157b3f21797ff6a04eaf8b26a6f0b32089519cf028ed2bb9",
+      "size": 978,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L033-2.txt",
+      "name": "L033-2.txt",
+      "mime": "text/plain",
+      "digest": "cba8fea9cd9410eeaa36c2596e852f6b96f48fecada3a2207d79fe8e73687678",
+      "size": 971,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L014-0.txt",
+      "name": "L014-0.txt",
+      "mime": "text/plain",
+      "digest": "0e18dc9404f77ed80cb7ee966ded89568ed9913a0793c2eb0097b4a4036d4531",
+      "size": 965,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L035-1.txt",
+      "name": "L035-1.txt",
+      "mime": "text/plain",
+      "digest": "20054edaad78aeb580c0cf5652e0e1c145b05683a0d73720b3bd8c25d8533734",
+      "size": 965,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L033-1.txt",
+      "name": "L033-1.txt",
+      "mime": "text/plain",
+      "digest": "c5f6a15eed999605503e3e9b7c8e7d11a3b15234e4edcacc306601b27349df01",
+      "size": 957,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L047-2.txt",
+      "name": "L047-2.txt",
+      "mime": "text/plain",
+      "digest": "e6d69790233c52634fe84983e241a1c2cac71ac7711a7d828fe1875b4b844825",
+      "size": 950,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L047-1.txt",
+      "name": "L047-1.txt",
+      "mime": "text/plain",
+      "digest": "063e2c8dc851ffa43bb0a544f6cdcb4a016d719ddbcbb82b9fc112ccd36c443a",
+      "size": 936,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L052-0.txt",
+      "name": "L052-0.txt",
+      "mime": "text/plain",
+      "digest": "e5ba1daca385dbc0319d89626fac5d6eac092fdf1b2e19254bf458f2668c259b",
+      "size": 930,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L038-0.txt",
+      "name": "L038-0.txt",
+      "mime": "text/plain",
+      "digest": "9b56494d48a16de3d7498088516fdbb4d9ce685c079fb644f99e8d7721dc8cac",
+      "size": 917,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L042-0.txt",
+      "name": "L042-0.txt",
+      "mime": "text/plain",
+      "digest": "7955769c9e514944e48e93d79403b762ff92fd3854b8e8878be1ec36c49e8f96",
+      "size": 917,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L017-2.txt",
+      "name": "L017-2.txt",
+      "mime": "text/plain",
+      "digest": "3bfa4a08941d0a36026c572b410f63cb6e643b05565291f6f3e27c98439ac178",
+      "size": 916,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L032-0.txt",
+      "name": "L032-0.txt",
+      "mime": "text/plain",
+      "digest": "6ae38ba6ff0920c9817097a3b5db33cdb495c5b51eaa28634a85445c671b1cc1",
+      "size": 913,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L044-0.txt",
+      "name": "L044-0.txt",
+      "mime": "text/plain",
+      "digest": "89400a97eec022d5b825d909d75dd0a15e78a5cbcd2183eff5f1722b4bc9b244",
+      "size": 913,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L038-2.txt",
+      "name": "L038-2.txt",
+      "mime": "text/plain",
+      "digest": "6104c7c90cc6fabddf81345120c30f0c099f9e2db4bfd9f223576a259a0563c6",
+      "size": 910,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L042-2.txt",
+      "name": "L042-2.txt",
+      "mime": "text/plain",
+      "digest": "46ae6a64b6c12afd95d6106d2fd210542391dbdf7a345f7e29b6818107cd6a18",
+      "size": 910,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L019-0.txt",
+      "name": "L019-0.txt",
+      "mime": "text/plain",
+      "digest": "2407eef7d45038ba0b53f66fc505c23999d03b6f91713889ec611d259f28e625",
+      "size": 907,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L032-2.txt",
+      "name": "L032-2.txt",
+      "mime": "text/plain",
+      "digest": "e55508f4ff7bd003de53c29b92d46f68f7caed31523d1e9cdfb2418b0298ab5a",
+      "size": 906,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L030-1.txt",
+      "name": "L030-1.txt",
+      "mime": "text/plain",
+      "digest": "3b55472e5a72d47ac03a420d07b60abcb033857b10b1a5f7ee05f3a900f8191a",
+      "size": 902,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L030-0.txt",
+      "name": "L030-0.txt",
+      "mime": "text/plain",
+      "digest": "e738271e59c0ce892f7d49734aa2c314e88f3755f8627e93ccb334773be0d619",
+      "size": 900,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L037-0.txt",
+      "name": "L037-0.txt",
+      "mime": "text/plain",
+      "digest": "d661d6c8c97786d987e13339dcf7c02f0905f934420f4e7248e76d2b45e9e0a4",
+      "size": 898,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L039-0.txt",
+      "name": "L039-0.txt",
+      "mime": "text/plain",
+      "digest": "800e4e698153257a917e9e7b1455c00bde950894052bfa203aa66f95bf97bce2",
+      "size": 897,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L023-2.txt",
+      "name": "L023-2.txt",
+      "mime": "text/plain",
+      "digest": "d4644d02fe9b9ad4dbb64a82f0a45254a126d7544d009aa812a4ae2add2b95f6",
+      "size": 893,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L032-1.txt",
+      "name": "L032-1.txt",
+      "mime": "text/plain",
+      "digest": "a30ce2cbeeea90ac2de378fc59519979375093d42df4cc409bd7f5ee1fc673b1",
+      "size": 892,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L044-1.txt",
+      "name": "L044-1.txt",
+      "mime": "text/plain",
+      "digest": "482d1ef5c1d7f952a399c2971476ed81bd0c7a7503e790b6e68e5ba048bbed0f",
+      "size": 892,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L029-1.txt",
+      "name": "L029-1.txt",
+      "mime": "text/plain",
+      "digest": "b28710760ca026c5b04cbc99df1daf75d7fae2a7a4880afdb83711bd6790e5d6",
+      "size": 889,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L050-0.txt",
+      "name": "L050-0.txt",
+      "mime": "text/plain",
+      "digest": "67552800b606bd5813ad985ba401e45200f091bb50703795e5fccf6b85638197",
+      "size": 889,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L031-0.txt",
+      "name": "L031-0.txt",
+      "mime": "text/plain",
+      "digest": "40c8b9e5b2c7ee608c99892a72ca0bdf9ed50415b97ff4b801ce4e9c04570e1a",
+      "size": 888,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L048-0.txt",
+      "name": "L048-0.txt",
+      "mime": "text/plain",
+      "digest": "bef8c56cf79a5b10bf7ec00bbb34f1b9eb55dd1c232a47b8214c0d2fde3121d3",
+      "size": 888,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L020-2.txt",
+      "name": "L020-2.txt",
+      "mime": "text/plain",
+      "digest": "d4237c5f1b3226be81d8b920cec4f424921b33f06194f1c2ceb6a5fada3eb741",
+      "size": 887,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L029-0.txt",
+      "name": "L029-0.txt",
+      "mime": "text/plain",
+      "digest": "fe18c5646c95dcf58dd9781e0937dc4fb479868f801d6aa5a5bb24272e0e9dc1",
+      "size": 887,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L013-2.txt",
+      "name": "L013-2.txt",
+      "mime": "text/plain",
+      "digest": "a0b57e10ef7ada3c987c57e61b5cc471313d426b70ff28425079e9806a86100a",
+      "size": 886,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L027-1.txt",
+      "name": "L027-1.txt",
+      "mime": "text/plain",
+      "digest": "8365b0b95436a1c35087688ded8af1916726278f1222c1da94dac2ce03cdffef",
+      "size": 886,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L029-2.txt",
+      "name": "L029-2.txt",
+      "mime": "text/plain",
+      "digest": "5f2cc70ee4b85e62b64e6eaa09ca5dc12ee11874d5e9ff4987beffa2c20b60b0",
+      "size": 885,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L027-0.txt",
+      "name": "L027-0.txt",
+      "mime": "text/plain",
+      "digest": "78ad4cbec180fe3b35fbac1cce754604afe0cfd79f0bfbf8cb71c475660bd0fb",
+      "size": 884,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L028-1.txt",
+      "name": "L028-1.txt",
+      "mime": "text/plain",
+      "digest": "81bbc6daff7319e1c158ccb96a7a772ba486d240b1717aa152ace003e402bb45",
+      "size": 884,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L025-2.txt",
+      "name": "L025-2.txt",
+      "mime": "text/plain",
+      "digest": "74cb2858441d0614643e4315446664ee8085c224a82e33ab9cf279fd45da21ed",
+      "size": 883,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L027-2.txt",
+      "name": "L027-2.txt",
+      "mime": "text/plain",
+      "digest": "a847d1de4d96f75aab34c2624b78361e4935ff5d9e295afd8de6efba1dbbaa22",
+      "size": 882,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L028-0.txt",
+      "name": "L028-0.txt",
+      "mime": "text/plain",
+      "digest": "3157d1ef295377ec85b8418fc36a5a2aba7a02edbb777b64d7db83beaa617646",
+      "size": 882,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L050-2.txt",
+      "name": "L050-2.txt",
+      "mime": "text/plain",
+      "digest": "fbff6f0661deaba30db8fe49ac0d7d74b510e1babe6559fbc12247a87441aa41",
+      "size": 882,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L031-2.txt",
+      "name": "L031-2.txt",
+      "mime": "text/plain",
+      "digest": "eb137f89e348f2e3b6655e09135efaa73b84be178a3047c260ac0798d18f1590",
+      "size": 881,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L037-1.txt",
+      "name": "L037-1.txt",
+      "mime": "text/plain",
+      "digest": "5bbc8aee5930d913e66f3653a57f8f2bfac65d1bf6da15a2c3a7674400cfeee0",
+      "size": 877,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L034-2.txt",
+      "name": "L034-2.txt",
+      "mime": "text/plain",
+      "digest": "8545c7bba2a538b36f1db23907aef6838bc2ef884b14087aeb80694e2602a002",
+      "size": 876,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L039-1.txt",
+      "name": "L039-1.txt",
+      "mime": "text/plain",
+      "digest": "de8c7667bfe92b3272986ef9781304e6371f1dda5bac41f90608b6ea687a4dc1",
+      "size": 876,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L036-0.txt",
+      "name": "L036-0.txt",
+      "mime": "text/plain",
+      "digest": "f90a2e08bb60f1f8d357ea9485ebf9f254288d7c405401f81a5c45adac79d5b2",
+      "size": 875,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L040-2.txt",
+      "name": "L040-2.txt",
+      "mime": "text/plain",
+      "digest": "63bdb5c0aea8fd9a4810a23878d515a01cc3a296e9cdae787eb50be89be0abea",
+      "size": 875,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L046-2.txt",
+      "name": "L046-2.txt",
+      "mime": "text/plain",
+      "digest": "954f610405c200434e729ec6574ad2221b7904b3ccdcf1b88521768e5ab173e1",
+      "size": 875,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L026-2.txt",
+      "name": "L026-2.txt",
+      "mime": "text/plain",
+      "digest": "35f04ffbe9269a38b47550decac4b1f9c6b1c2a23ead62eb7acad968a0b84e8c",
+      "size": 874,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L049-2.txt",
+      "name": "L049-2.txt",
+      "mime": "text/plain",
+      "digest": "4f70b30b498163701408301f563b43ac74fe2d49732c9bdc8d300baea336bcad",
+      "size": 874,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L020-0.txt",
+      "name": "L020-0.txt",
+      "mime": "text/plain",
+      "digest": "3694cffc7438f66b12106b011489835568db6b6cdc828f91adab2ad7b2348147",
+      "size": 873,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L025-1.txt",
+      "name": "L025-1.txt",
+      "mime": "text/plain",
+      "digest": "b64c55c390d38652b677d896529f29b2ab202aba10b9f565973d2c8959405875",
+      "size": 870,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L079-0.txt",
+      "name": "L079-0.txt",
+      "mime": "text/plain",
+      "digest": "f15b0a9e446c35238cdfe7ab5a01b1bd78cf5af66e0bbdb90ee8e62f3c4a70b3",
+      "size": 869,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L036-2.txt",
+      "name": "L036-2.txt",
+      "mime": "text/plain",
+      "digest": "4143d7b06144fe07ec6cd5dd018506c14f600be3c04676fa95b98ad3443a62e1",
+      "size": 868,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L048-1.txt",
+      "name": "L048-1.txt",
+      "mime": "text/plain",
+      "digest": "fd447df97a8085f035d2f8bbc0a7799dc3c825b3a403112ca80aa482029bb128",
+      "size": 867,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L023-0.txt",
+      "name": "L023-0.txt",
+      "mime": "text/plain",
+      "digest": "e036c6f4612969987b0b7235d48ccecf6f67e6af8adb82d16b0cd3c7bf7e0f51",
+      "size": 862,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L034-1.txt",
+      "name": "L034-1.txt",
+      "mime": "text/plain",
+      "digest": "ed9bc1d6a4522afed81ee2cb8831f84e52ad1bf295268ef71bf30c5dd50f25d6",
+      "size": 862,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L040-1.txt",
+      "name": "L040-1.txt",
+      "mime": "text/plain",
+      "digest": "0f5e9e186710abb26b451a6fb7279aa969389f650e3ec5dfd5e1c14d0acbb7bb",
+      "size": 861,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L046-1.txt",
+      "name": "L046-1.txt",
+      "mime": "text/plain",
+      "digest": "c272bba3c5d1caf45400a5bd60e35ddcfcfc10854ff0279177dde7a635900fb0",
+      "size": 861,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L049-1.txt",
+      "name": "L049-1.txt",
+      "mime": "text/plain",
+      "digest": "07be92b019d478ddb40731bcef70d69aa62b6a3317df61b9bf4df8b956e9d461",
+      "size": 860,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L024-2.txt",
+      "name": "L024-2.txt",
+      "mime": "text/plain",
+      "digest": "5142b1c39f30d13ed7e16e2f645e61ef1d95f0ca1df4ac443c43066ae988ac59",
+      "size": 858,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L045-2.txt",
+      "name": "L045-2.txt",
+      "mime": "text/plain",
+      "digest": "1a1adf66a34789202ec7f02152a7b7d3b6c6ec648f94ab89b547ede9569dfd89",
+      "size": 858,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L019-2.txt",
+      "name": "L019-2.txt",
+      "mime": "text/plain",
+      "digest": "3c8c8026d572e321dee35f268eeefa1c9eeb05eae6296b7750c342799fe090b0",
+      "size": 856,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L021-0.txt",
+      "name": "L021-0.txt",
+      "mime": "text/plain",
+      "digest": "976b89e7a7476ee198f8428ddc7a0a728402f9ff0c972c9334c57279c22850d6",
+      "size": 854,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L045-1.txt",
+      "name": "L045-1.txt",
+      "mime": "text/plain",
+      "digest": "ecbb605a8ebcaf4d2259fe4138f4b65982ebaff4c59260602c57e814ff3a1d78",
+      "size": 844,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L043-0.txt",
+      "name": "L043-0.txt",
+      "mime": "text/plain",
+      "digest": "ee5a194860db5149ccccaa6f96e9689788ecf1f97569c4df329c051e331b3627",
+      "size": 840,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L026-1.txt",
+      "name": "L026-1.txt",
+      "mime": "text/plain",
+      "digest": "458d74928b210f67614f6c87c4533504f710da31aa3114985284d0b2924b5eee",
+      "size": 838,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L022-0.txt",
+      "name": "L022-0.txt",
+      "mime": "text/plain",
+      "digest": "4a6c79c7baa3a39afd9f9efcaeeb1540ff8f45819e64d4d2d39c276e7608c625",
+      "size": 834,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L024-1.txt",
+      "name": "L024-1.txt",
+      "mime": "text/plain",
+      "digest": "3efb71bdd14d49087f8ffd4fcaa547e713c85fa79cecc846c66eceef1f8c2dc3",
+      "size": 833,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L043-2.txt",
+      "name": "L043-2.txt",
+      "mime": "text/plain",
+      "digest": "c29369d357b0622ecceb315bee047002cce38a2e19ef1118c1b60042bdd61dc2",
+      "size": 833,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L067-1.txt",
+      "name": "L067-1.txt",
+      "mime": "text/plain",
+      "digest": "70785586ad68d53217478138b9bc2fd70bbda3a305863169831c4e69387f4351",
+      "size": 826,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L018-1.txt",
+      "name": "L018-1.txt",
+      "mime": "text/plain",
+      "digest": "8bbd952b2ba6df4ca4d2ffa417acab951a04fc1805e7483f0cca86912795e24a",
+      "size": 825,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L018-2.txt",
+      "name": "L018-2.txt",
+      "mime": "text/plain",
+      "digest": "a9d66756b50abe49b0a0b9bd94afd5cc53d7edc4fa156df52252b9022d90cc7f",
+      "size": 825,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L081-2.txt",
+      "name": "L081-2.txt",
+      "mime": "text/plain",
+      "digest": "36e92f097a09d8ee3de73c7733ddd69887ee63e6f4f3155ac1fe48e497580b4a",
+      "size": 820,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L022-1.txt",
+      "name": "L022-1.txt",
+      "mime": "text/plain",
+      "digest": "a1290d4d01b49f9fdfe105fe5c129056de4ae560ed3b9b2195a4907052a48ba4",
+      "size": 815,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L021-2.txt",
+      "name": "L021-2.txt",
+      "mime": "text/plain",
+      "digest": "89340f8a423d38f6d5650703622c96a8df1c4f678017cd7929d706e26dce4ebd",
+      "size": 805,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L073-2.txt",
+      "name": "L073-2.txt",
+      "mime": "text/plain",
+      "digest": "0fc6cbe60389589672344db4a96904f9ed7cb6260924b6aa45e48bd5594e35bc",
+      "size": 803,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L067-2.txt",
+      "name": "L067-2.txt",
+      "mime": "text/plain",
+      "digest": "bedcb2f088db802bf918638a194e0492c3e6e4f76731c35535a9178bf6e3f0ba",
+      "size": 800,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L072-2.txt",
+      "name": "L072-2.txt",
+      "mime": "text/plain",
+      "digest": "059bbadd8385d4feb1b41fc627c3bc0b4ec5edee29759f6583f58c2b6708522e",
+      "size": 800,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L057-0-correcao-final.txt",
+      "name": "L057-0-correcao-final.txt",
+      "mime": "text/plain",
+      "digest": "0d2fcede123b2b8a9cde8d34bc6c65313eab9bf87affdc0fb3155cb44f177294",
+      "size": 797,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L081-1.txt",
+      "name": "L081-1.txt",
+      "mime": "text/plain",
+      "digest": "443af5053771c92893fbd0511db5dfb7f93c823b3c43dcc67b3720868e4c9c06",
+      "size": 797,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L021-1.txt",
+      "name": "L021-1.txt",
+      "mime": "text/plain",
+      "digest": "f634422b8c286fc3295272502717ddbc6ca05ff364f43a80cc3bba29671b9895",
+      "size": 796,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L015-2.txt",
+      "name": "L015-2.txt",
+      "mime": "text/plain",
+      "digest": "86d8ed77690010812e887e2fa3d0052cf53c76cdc7a40786ddeae2f54f66f5d9",
+      "size": 789,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L017-0.txt",
+      "name": "L017-0.txt",
+      "mime": "text/plain",
+      "digest": "caafae6b2774726fd37bc4ac04e571f1d93775470c782b825fcdd299904ee516",
+      "size": 789,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L016-0.txt",
+      "name": "L016-0.txt",
+      "mime": "text/plain",
+      "digest": "88ac418b51faf2d66c77f6d46351bdbd6bc2bf222af62ea317182dfe9a847001",
+      "size": 786,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L065-2.txt",
+      "name": "L065-2.txt",
+      "mime": "text/plain",
+      "digest": "17bbbfc17d7613a1410da2668c995d28424a7e333b4af5d7ca57ea9e13210a9e",
+      "size": 786,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L073-1.txt",
+      "name": "L073-1.txt",
+      "mime": "text/plain",
+      "digest": "257969a60d761747fbafe82e7811db1652ec6904018c0b7366d6b47babf861ac",
+      "size": 783,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L015-0.txt",
+      "name": "L015-0.txt",
+      "mime": "text/plain",
+      "digest": "7a89c6c1f89f10c6fffba99cbfb9597d1cd16288cdc1706d4452726de0d7768f",
+      "size": 777,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L066-2.txt",
+      "name": "L066-2.txt",
+      "mime": "text/plain",
+      "digest": "080a1835b1a0f8819f0b24c8b5db001ded2cfa920b555c8ecc3fb03bde46c3f1",
+      "size": 774,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L071-0.txt",
+      "name": "L071-0.txt",
+      "mime": "text/plain",
+      "digest": "81c6e70e52d78366bf9c9b689ea1b47b65a627ba953104fad5e3f36e2dcbd4de",
+      "size": 766,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L066-1.txt",
+      "name": "L066-1.txt",
+      "mime": "text/plain",
+      "digest": "1e97978b83d75e49995e2c2562a7c652a4a27998a13c3cd09795f8cbe8d643f7",
+      "size": 764,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L016-2.txt",
+      "name": "L016-2.txt",
+      "mime": "text/plain",
+      "digest": "418b366ef99361a850132775505349babe07618af6ebd99dc0e101b63e453323",
+      "size": 763,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/VALIDACAO_FINAL.md",
+      "name": "VALIDACAO_FINAL.md",
+      "mime": "text/plain",
+      "digest": "6d8ccb3db265f1a64b7f66f7e4bfedd6d5d3333eb5c3f0fa3ffe9e9412187598",
+      "size": 760,
+      "folder": "Projeto e Progresso"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L075-0.txt",
+      "name": "L075-0.txt",
+      "mime": "text/plain",
+      "digest": "b18fc93a60604b2b2baac262997dcc178cf72ec0f3bc2173152d0fc71e07cfcf",
+      "size": 751,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L078-0.txt",
+      "name": "L078-0.txt",
+      "mime": "text/plain",
+      "digest": "1a614c3727cb1fb3a6b5248bc3ede406f129720ff733ba154d010a443b11433b",
+      "size": 734,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "COMECE_AQUI.txt",
+      "name": "COMECE_AQUI.txt",
+      "mime": "text/plain",
+      "digest": "8944185da5ef7628d94c33c2501efbbcce48337bd1f7d0518757f296e9c070b3",
+      "size": 705,
+      "folder": "."
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L080-0.txt",
+      "name": "L080-0.txt",
+      "mime": "text/plain",
+      "digest": "7c36b1166db8b8792233d186f01a948e9f924142442ed46f0393f8dd052f0c6d",
+      "size": 692,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L000-0.txt",
+      "name": "L000-0.txt",
+      "mime": "text/plain",
+      "digest": "46e4b6a368667441c00c07e144473ba7797f07012b02844184c5b80b517c424a",
+      "size": 684,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L081-0.txt",
+      "name": "L081-0.txt",
+      "mime": "text/plain",
+      "digest": "3b696663ea140eaf2c4c301489938e05cb3430957a8743d67759639103136116",
+      "size": 647,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L069-0.txt",
+      "name": "L069-0.txt",
+      "mime": "text/plain",
+      "digest": "f70791eaa83de78c3a931565c84ae5b9ccaa57b11f23fcd47c33c2c781a12cbb",
+      "size": 632,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L064-0.txt",
+      "name": "L064-0.txt",
+      "mime": "text/plain",
+      "digest": "5804abcc793d79890937b1850bec91a86865916ad452c5abded4422ec96f0a74",
+      "size": 621,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L057-0.txt",
+      "name": "L057-0.txt",
+      "mime": "text/plain",
+      "digest": "07bd5d509cfd3575a40298a01580f7bfdbbb6076052f6f051c75e25bb64ce52f",
+      "size": 620,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L063-0.txt",
+      "name": "L063-0.txt",
+      "mime": "text/plain",
+      "digest": "5232f81083c11d0066949f08462225d8de32608211759f85f5aed48213d0da4f",
+      "size": 608,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L070-0.txt",
+      "name": "L070-0.txt",
+      "mime": "text/plain",
+      "digest": "d46f4a7761c88565a9baae2159635c5bd009e12f1999715ac255f0eac3834030",
+      "size": 604,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L073-0.txt",
+      "name": "L073-0.txt",
+      "mime": "text/plain",
+      "digest": "c6b595564a12bf6316301f49e7acc31959363c9370c8876facb8a5dbc221fbda",
+      "size": 595,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L062-0.txt",
+      "name": "L062-0.txt",
+      "mime": "text/plain",
+      "digest": "e2e8ac1432c7150b5eefbd07c0745daa2ff61725d1b85d9eb15248d9b347da6e",
+      "size": 593,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L066-0.txt",
+      "name": "L066-0.txt",
+      "mime": "text/plain",
+      "digest": "2adb637542c6dde3787ae968500d33c4aaa1d2469c32851e338e6900aa91cb86",
+      "size": 593,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L072-0.txt",
+      "name": "L072-0.txt",
+      "mime": "text/plain",
+      "digest": "f2731ce7e22fbcb07ed8d2bfeca435a888c7332f39286829b0c6af2850e5cd46",
+      "size": 593,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L074-0.txt",
+      "name": "L074-0.txt",
+      "mime": "text/plain",
+      "digest": "3cd591df7664f6b5b1a2a6168518e721a83954bddfe7d355e4b69dc5b953b3dc",
+      "size": 590,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L053-0.txt",
+      "name": "L053-0.txt",
+      "mime": "text/plain",
+      "digest": "6cc6309801c35581a77a0addf364ccc7c39b0a6cceea70702d9dabc4d4000624",
+      "size": 585,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L058-0.txt",
+      "name": "L058-0.txt",
+      "mime": "text/plain",
+      "digest": "3fb60f88448f30bd2af0685517cba126748cdaacc5efe0513cbf4b59f0c87d7b",
+      "size": 575,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L059-0.txt",
+      "name": "L059-0.txt",
+      "mime": "text/plain",
+      "digest": "3fb60f88448f30bd2af0685517cba126748cdaacc5efe0513cbf4b59f0c87d7b",
+      "size": 575,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L065-0.txt",
+      "name": "L065-0.txt",
+      "mime": "text/plain",
+      "digest": "1220976196dbefd87708e8d32179c024e4fba490d444c30e33719d864893cd6e",
+      "size": 574,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L067-0.txt",
+      "name": "L067-0.txt",
+      "mime": "text/plain",
+      "digest": "d44eaf69fc55fa17e234cc38c793d1841072812d52ec1af4364c237092848b80",
+      "size": 545,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L060-0.txt",
+      "name": "L060-0.txt",
+      "mime": "text/plain",
+      "digest": "a7108513722602d99ecb8ff993c6db5f787e83ebada39be678df80a55f7a610d",
+      "size": 538,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L061-0.txt",
+      "name": "L061-0.txt",
+      "mime": "text/plain",
+      "digest": "a7108513722602d99ecb8ff993c6db5f787e83ebada39be678df80a55f7a610d",
+      "size": 538,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L051-0.txt",
+      "name": "L051-0.txt",
+      "mime": "text/plain",
+      "digest": "d88cbc444545792b156e82d39b6f76349c0a6b71ecfc388b8068461be7568a14",
+      "size": 536,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L054-0.txt",
+      "name": "L054-0.txt",
+      "mime": "text/plain",
+      "digest": "d88cbc444545792b156e82d39b6f76349c0a6b71ecfc388b8068461be7568a14",
+      "size": 536,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L055-0.txt",
+      "name": "L055-0.txt",
+      "mime": "text/plain",
+      "digest": "d88cbc444545792b156e82d39b6f76349c0a6b71ecfc388b8068461be7568a14",
+      "size": 536,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L056-0.txt",
+      "name": "L056-0.txt",
+      "mime": "text/plain",
+      "digest": "d88cbc444545792b156e82d39b6f76349c0a6b71ecfc388b8068461be7568a14",
+      "size": 536,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L057-0-correcao.txt",
+      "name": "L057-0-correcao.txt",
+      "mime": "text/plain",
+      "digest": "fc851375527f526627336d98586f7e252f4c28b32f93f7ceb8534bc2bc51e7e3",
+      "size": 526,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L064-2.txt",
+      "name": "L064-2.txt",
+      "mime": "text/plain",
+      "digest": "b2f63644383fd61e3ad002375e33813496e996cc5076397d8588b2957c1d2b78",
+      "size": 484,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L065-1.txt",
+      "name": "L065-1.txt",
+      "mime": "text/plain",
+      "digest": "bf64c4ce9c7e1be323b0cfce51671042b4a9c0bd1288cc8d7aa23856f85b2e68",
+      "size": 464,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L071-2.txt",
+      "name": "L071-2.txt",
+      "mime": "text/plain",
+      "digest": "dac7b8411937156e9ae9ede90b1b164e466a48a7738e8c20fb0ff2a21e94ac0a",
+      "size": 451,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/LEIA-ME.txt",
+      "name": "LEIA-ME.txt",
+      "mime": "text/plain",
+      "digest": "dd729658a001a9465c6e31c26c917ea9db12c700d570ecee61c7627036d1639f",
+      "size": 448,
+      "folder": "Mapas/Mapas de Transição"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L061-2.txt",
+      "name": "L061-2.txt",
+      "mime": "text/plain",
+      "digest": "01bc374af4b64102bce7333361d381eedb1901eea411a151cba199714733bf25",
+      "size": 432,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L054-2.txt",
+      "name": "L054-2.txt",
+      "mime": "text/plain",
+      "digest": "7c346891149810225b1446a0855138c7e6e1d82f7557f757a16aaaabdc96dd48",
+      "size": 431,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L055-2.txt",
+      "name": "L055-2.txt",
+      "mime": "text/plain",
+      "digest": "7c346891149810225b1446a0855138c7e6e1d82f7557f757a16aaaabdc96dd48",
+      "size": 431,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L070-2.txt",
+      "name": "L070-2.txt",
+      "mime": "text/plain",
+      "digest": "1c5109b73221538e898fd52b13f4081de570348b52ef9029e7a1d1fc34308c8a",
+      "size": 424,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L062-2.txt",
+      "name": "L062-2.txt",
+      "mime": "text/plain",
+      "digest": "3563c3705a92e26de072296c8b949b3896c9cb08e9151f62d5cecd5109d63ead",
+      "size": 420,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/PROGRESSO.md",
+      "name": "PROGRESSO.md",
+      "mime": "text/plain",
+      "digest": "b534965835442c5dd44333ecb708678f76b32008c5cfc3d093fdfafd5783e2d9",
+      "size": 418,
+      "folder": "Projeto e Progresso"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L060-2.txt",
+      "name": "L060-2.txt",
+      "mime": "text/plain",
+      "digest": "09524a1c7215475c749bfbf7abc9a0f339aa9aae46353f08c510177ff4d58a03",
+      "size": 410,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L054-1.txt",
+      "name": "L054-1.txt",
+      "mime": "text/plain",
+      "digest": "58b294745da49bfb7804b4881834e5eaf63c7a0cf1a163ef558b4f5bf6513072",
+      "size": 409,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L055-1.txt",
+      "name": "L055-1.txt",
+      "mime": "text/plain",
+      "digest": "58b294745da49bfb7804b4881834e5eaf63c7a0cf1a163ef558b4f5bf6513072",
+      "size": 409,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L032-0-correcao.txt",
+      "name": "L032-0-correcao.txt",
+      "mime": "text/plain",
+      "digest": "af2428728608a50d4a183662a57121084a65ba71ffaa857efa84942d803b7e16",
+      "size": 408,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L032-1-correcao.txt",
+      "name": "L032-1-correcao.txt",
+      "mime": "text/plain",
+      "digest": "af2428728608a50d4a183662a57121084a65ba71ffaa857efa84942d803b7e16",
+      "size": 408,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L032-2-correcao.txt",
+      "name": "L032-2-correcao.txt",
+      "mime": "text/plain",
+      "digest": "af2428728608a50d4a183662a57121084a65ba71ffaa857efa84942d803b7e16",
+      "size": 408,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L069-2.txt",
+      "name": "L069-2.txt",
+      "mime": "text/plain",
+      "digest": "4485365fbfb98da9dc82b5b7cde289f875ecab3270171a042afefda765d320e7",
+      "size": 404,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L063-2.txt",
+      "name": "L063-2.txt",
+      "mime": "text/plain",
+      "digest": "ec5fd0c52fc9f3773508a18f4551d40a9b06d8320bafcedadb8801e46f754042",
+      "size": 402,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L051-2.txt",
+      "name": "L051-2.txt",
+      "mime": "text/plain",
+      "digest": "ffda4ed2d99594cec3cfb45c7b95ea45d717795ca4e2adffe57d8b7f0b7fed5a",
+      "size": 392,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L056-2.txt",
+      "name": "L056-2.txt",
+      "mime": "text/plain",
+      "digest": "ffda4ed2d99594cec3cfb45c7b95ea45d717795ca4e2adffe57d8b7f0b7fed5a",
+      "size": 392,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L074-2.txt",
+      "name": "L074-2.txt",
+      "mime": "text/plain",
+      "digest": "381eb3fc9f6ff754b63294762085f083bf43cb1347095d3aa7748e225699f5be",
+      "size": 387,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L063-1.txt",
+      "name": "L063-1.txt",
+      "mime": "text/plain",
+      "digest": "3e06a0efbaca894ca2bc710138f625db1505a370c0ceedbf4b0e29cf371d4dec",
+      "size": 376,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L060-1.txt",
+      "name": "L060-1.txt",
+      "mime": "text/plain",
+      "digest": "f40011af0e09268063c1a6cd74d09b4c2b0af8bc6b8d186411108c0a354abec2",
+      "size": 372,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L051-1.txt",
+      "name": "L051-1.txt",
+      "mime": "text/plain",
+      "digest": "b5914c13044c8546c88b3b464f31f2345adc4959ab2eb17ad6301e5a58b25b28",
+      "size": 370,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L056-1.txt",
+      "name": "L056-1.txt",
+      "mime": "text/plain",
+      "digest": "b5914c13044c8546c88b3b464f31f2345adc4959ab2eb17ad6301e5a58b25b28",
+      "size": 370,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L064-1.txt",
+      "name": "L064-1.txt",
+      "mime": "text/plain",
+      "digest": "db7a37167605924322b2cdfc5c9470329fb4fb2d63ef39dc667f987f49a4bd5d",
+      "size": 365,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L061-1.txt",
+      "name": "L061-1.txt",
+      "mime": "text/plain",
+      "digest": "12b6787ef2af5063c6159afa3c7af7c3eee42be8956746c5c22fe0bf67a6f437",
+      "size": 362,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L027-0-correcao.txt",
+      "name": "L027-0-correcao.txt",
+      "mime": "text/plain",
+      "digest": "e8af220367a4498c9d30f051e9af98aa17df8c9d042aac267dec5856a275c79c",
+      "size": 353,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L069-1.txt",
+      "name": "L069-1.txt",
+      "mime": "text/plain",
+      "digest": "0c0b2e7959f6f67aee0239390d833733219a3d43ba5095e1b1526cd65dfedeff",
+      "size": 352,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L071-1.txt",
+      "name": "L071-1.txt",
+      "mime": "text/plain",
+      "digest": "fa3077d8e17a284ba98fb5f7d69bc0a156e8617350a2135a065cae485c4f3708",
+      "size": 352,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L062-1.txt",
+      "name": "L062-1.txt",
+      "mime": "text/plain",
+      "digest": "0087a8ec285c2bc313b0b8bc69452197539b62c189f7293ffb7f83037eb9dd33",
+      "size": 347,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L072-1.txt",
+      "name": "L072-1.txt",
+      "mime": "text/plain",
+      "digest": "237803b59e0a576179c070222f178b0c3f2bbdf16dae57abfbc117b6e5467c5f",
+      "size": 337,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L070-1.txt",
+      "name": "L070-1.txt",
+      "mime": "text/plain",
+      "digest": "0d7cac1901286fc4889e3589074c193046cfa594be4aa2758ae674e39014965e",
+      "size": 335,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L055-2-correcao.txt",
+      "name": "L055-2-correcao.txt",
+      "mime": "text/plain",
+      "digest": "e744dd0d7365b834a656a0537e50112e83ef81c01df88f466d933a1b28960891",
+      "size": 330,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L074-1.txt",
+      "name": "L074-1.txt",
+      "mime": "text/plain",
+      "digest": "d234ed5b0fa0c0e9f54327ecc8cace9eac98ff9b27736c4205bd0efa7697714d",
+      "size": 315,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L051-2-correcao.txt",
+      "name": "L051-2-correcao.txt",
+      "mime": "text/plain",
+      "digest": "7117d8a5f1fe1b5be432e8fe8901639ecfe320010c4210dae0273fd247c3cd70",
+      "size": 301,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Mapas Editados/LEIA-ME.txt",
+      "name": "LEIA-ME.txt",
+      "mime": "text/plain",
+      "digest": "b815ee7484699e2672a3cc49739a782d89f45a401775f39cecd6d9781b61202b",
+      "size": 295,
+      "folder": "Mapas Editados"
+    },
+    {
+      "source": "Projeto e Progresso/Prompts_Executados/L056-2-correcao.txt",
+      "name": "L056-2-correcao.txt",
+      "mime": "text/plain",
+      "digest": "f3603d3dcc9d813196e0734019a2df4ced334b266aab7fb503b267ee8c15de79",
+      "size": 280,
+      "folder": "Projeto e Progresso/Prompts_Executados"
+    },
+    {
+      "source": "Mapas/LEIA-ME - Padrao de Organizacao.txt",
+      "name": "LEIA-ME - Padrao de Organizacao.txt",
+      "mime": "text/plain",
+      "digest": "bfe46f50cbcdcc30dc4bb0bd48e0a42ed431f8d1303661ee33e0616984cb0460",
+      "size": 277,
+      "folder": "Mapas"
+    },
+    {
+      "source": "Projeto e Progresso/RETOMAR.md",
+      "name": "RETOMAR.md",
+      "mime": "text/plain",
+      "digest": "47ae07f51fd6a35dd4cf9bd6dffd59bd32857afe5cf703adf0e7a86e8fd936fa",
+      "size": 202,
+      "folder": "Projeto e Progresso"
+    },
+    {
+      "source": "Mapas/Aurelis/LEIA-ME.txt",
+      "name": "LEIA-ME.txt",
+      "mime": "text/plain",
+      "digest": "fe620478ff4cfd10f16a9cdfffefa056c6ad18b0aa64a98981c7e49a444181f0",
+      "size": 177,
+      "folder": "Mapas/Aurelis"
+    },
+    {
+      "source": "Mapas/Meridia/LEIA-ME.txt",
+      "name": "LEIA-ME.txt",
+      "mime": "text/plain",
+      "digest": "fe620478ff4cfd10f16a9cdfffefa056c6ad18b0aa64a98981c7e49a444181f0",
+      "size": 177,
+      "folder": "Mapas/Meridia"
+    },
+    {
+      "source": "Mapas/Norvea/LEIA-ME.txt",
+      "name": "LEIA-ME.txt",
+      "mime": "text/plain",
+      "digest": "fe620478ff4cfd10f16a9cdfffefa056c6ad18b0aa64a98981c7e49a444181f0",
+      "size": 177,
+      "folder": "Mapas/Norvea"
+    },
+    {
+      "source": "Projeto e Progresso/ATUALIZACAO_2026-10-15.md",
+      "name": "ATUALIZACAO_2026-10-15.md",
+      "mime": "text/plain",
+      "digest": "3251593d9e9c05ee7396d4c3c001aa15e19190cdc8efa95b151144b629499c39",
+      "size": 144,
+      "folder": "Projeto e Progresso"
+    },
+    {
+      "source": "Mapas/Veldora/Floresta do Vale/Posto Esquecido/Floresta do Vale - Posto Esquecido e Ponte/Floresta do Vale - Posto Esquecido e Ponte - Floresta temperada - Manhã.png",
+      "name": "Floresta do Vale - Posto Esquecido e Ponte - Floresta temperada - Manhã.png",
+      "mime": "image/png",
+      "digest": "37d696273050f88a24d54441a19074e8669c368920a864cdd4dc9f26d127305c",
+      "size": 4317626,
+      "folder": "Mapas/Veldora/Floresta do Vale/Posto Esquecido/Floresta do Vale - Posto Esquecido e Ponte"
+    },
+    {
+      "source": "Mapas/Veldora/Floresta do Vale/Bosque Esquecido/Floresta do Vale - Bosque Esquecido/Floresta do Vale - Bosque Esquecido - Floresta temperada - Manhã.png",
+      "name": "Floresta do Vale - Bosque Esquecido - Floresta temperada - Manhã.png",
+      "mime": "image/png",
+      "digest": "f232bdc72d7f756df8479267958761bc4d6f1eafa1ea7ce25ddc93b64315da1d",
+      "size": 4254476,
+      "folder": "Mapas/Veldora/Floresta do Vale/Bosque Esquecido/Floresta do Vale - Bosque Esquecido"
+    },
+    {
+      "source": "Mapas/Veldora/Floresta do Vale/Floresta do Vale - Mapa Geral.png",
+      "name": "Floresta do Vale - Mapa Geral.png",
+      "mime": "image/png",
+      "digest": "7c5b797bde9a8cab9b07608f865f25bfe5c0fcbb8b93d73af21d63b4220d3adb",
+      "size": 4249520,
+      "folder": "Mapas/Veldora/Floresta do Vale"
+    },
+    {
+      "source": "Mapas/Veldora/Stalla/Stalla - Mapa do Reino.png",
+      "name": "Stalla - Mapa do Reino.png",
+      "mime": "image/png",
+      "digest": "27fd72642a98644bdadd2230bdb9f2941cc3cc8f7a67e5f86e6d1e2ff919845b",
+      "size": 4230014,
+      "folder": "Mapas/Veldora/Stalla"
+    },
+    {
+      "source": "Mapas/Veldora/Valenca do Trilho/Valença do Trilho - Ferrovia e Arredores.png",
+      "name": "Valença do Trilho - Ferrovia e Arredores.png",
+      "mime": "image/png",
+      "digest": "2ad23e5867d37c2a1cb9742254cebf509e852ea847d328b13b24005c764984da",
+      "size": 4201630,
+      "folder": "Mapas/Veldora/Valenca do Trilho"
+    },
+    {
+      "source": "Mapas/Veldora/Stalla/Fontes e Portao do Vale/Stalla - Fontes e Portão do Vale/Stalla - Fontes e Portão do Vale - Urbano gótico - Manhã.png",
+      "name": "Stalla - Fontes e Portão do Vale - Urbano gótico - Manhã.png",
+      "mime": "image/png",
+      "digest": "4bc89fa6c4a5f728e127843db5cfd23d8a5183ce4a557c8c0765a0588f91c9d3",
+      "size": 4167295,
+      "folder": "Mapas/Veldora/Stalla/Fontes e Portao do Vale/Stalla - Fontes e Portão do Vale"
+    },
+    {
+      "source": "Mapas/Veldora/Floresta do Vale/Vau das Pedras/Floresta do Vale - Vau das Pedras - Travessia do Riacho/Floresta do Vale - Vau das Pedras - Travessia do Riacho - Floresta temperada - Manhã.png",
+      "name": "Floresta do Vale - Vau das Pedras - Travessia do Riacho - Floresta temperada - Manhã.png",
+      "mime": "image/png",
+      "digest": "8f24a542a991ad11a9a523c6ca39b6f20315e390be4829e4d6876344958de5e7",
+      "size": 4148866,
+      "folder": "Mapas/Veldora/Floresta do Vale/Vau das Pedras/Floresta do Vale - Vau das Pedras - Travessia do Riacho"
+    },
+    {
+      "source": "Mapas/Veldora/Valenca do Trilho/Capela dos Viajantes/Valença do Trilho - Capela dos Viajantes/Valença do Trilho - Capela dos Viajantes - Vale ferroviário - Manhã.png",
+      "name": "Valença do Trilho - Capela dos Viajantes - Vale ferroviário - Manhã.png",
+      "mime": "image/png",
+      "digest": "f3a5f29ce22b1965a2d476d5c90e0a8ee38da397efa0322962328594b3ae6763",
+      "size": 4141363,
+      "folder": "Mapas/Veldora/Valenca do Trilho/Capela dos Viajantes/Valença do Trilho - Capela dos Viajantes"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Ótimo/Nascente rochosa - Manhã 07h30 - Nascente preservada.png",
+      "name": "Nascente rochosa - Manhã 07h30 - Nascente preservada.png",
+      "mime": "image/png",
+      "digest": "426b6a2b191de93575e1a174f6055391982f9a8d86d515d9385ab79429eac2e6",
+      "size": 4102725,
+      "folder": "Mapas/Mapas de Transição/Ótimo"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Bom/Bosque temperado - Tarde 15h00 - Lenhador de outra função.png",
+      "name": "Bosque temperado - Tarde 15h00 - Lenhador de outra função.png",
+      "mime": "image/png",
+      "digest": "954aa5bdb4d65a33d2bae0ae071645f804e8afb4ba46c9e13491b4dbfcfc0e42",
+      "size": 4095245,
+      "folder": "Mapas/Mapas de Transição/Bom"
+    },
+    {
+      "source": "Mapas/Veldora/Stalla/Baixada das Cinzas/Beco das Trocas/Stalla - Beco das Trocas/Stalla - Beco das Trocas - Urbano gótico - Manhã.png",
+      "name": "Stalla - Beco das Trocas - Urbano gótico - Manhã.png",
+      "mime": "image/png",
+      "digest": "686ef2d829a92e2d0385a028e0446484be4a0f2ff11536cd06bb5f20bf457aa1",
+      "size": 4071228,
+      "folder": "Mapas/Veldora/Stalla/Baixada das Cinzas/Beco das Trocas/Stalla - Beco das Trocas"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Médio/Várzea - Tarde 15h30 - Moinho sem roda.png",
+      "name": "Várzea - Tarde 15h30 - Moinho sem roda.png",
+      "mime": "image/png",
+      "digest": "567521dd2efbc686d949d5f827f387536e7107bb2f0e3199be78e10eb5edb39f",
+      "size": 4050397,
+      "folder": "Mapas/Mapas de Transição/Médio"
+    },
+    {
+      "source": "Mapas/Veldora/Veldora - Mapa do Continente.png",
+      "name": "Veldora - Mapa do Continente.png",
+      "mime": "image/png",
+      "digest": "443be96d03192ecbb24e5c57f9a252b765dd7da0db1ed7d096d2ea03399d0fe9",
+      "size": 4041814,
+      "folder": "Mapas/Veldora"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Ótimo/Campo cultivado - Meio-dia 12h00 - Mesa depois da colheita.png",
+      "name": "Campo cultivado - Meio-dia 12h00 - Mesa depois da colheita.png",
+      "mime": "image/png",
+      "digest": "de30525c7a9a4a96eaae60e5addfcfc28d7319d9ee0c784c73308cf008c3ccc6",
+      "size": 4029935,
+      "folder": "Mapas/Mapas de Transição/Ótimo"
+    },
+    {
+      "source": "Mapas/Veldora/Stalla/Cidadela Real/Catedral e Paco Civil/Stalla - Catedral e Paço Civil/Stalla - Catedral e Paço Civil - Urbano gótico - Manhã.png",
+      "name": "Stalla - Catedral e Paço Civil - Urbano gótico - Manhã.png",
+      "mime": "image/png",
+      "digest": "3ade1340ddb341812706a833bfbd72f68663dcbcf6d24c62343a15021d7c1782",
+      "size": 4004338,
+      "folder": "Mapas/Veldora/Stalla/Cidadela Real/Catedral e Paco Civil/Stalla - Catedral e Paço Civil"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Bom/Lenhador de outra função/Lenhador de outra função - Bosque temperado - Manhã.png",
+      "name": "Lenhador de outra função - Bosque temperado - Manhã.png",
+      "mime": "image/png",
+      "digest": "c6176775358d93b5902a6d28a4b4414ddcdaa4a5914143fe43c0d12e4aca1b67",
+      "size": 3996273,
+      "folder": "Mapas/Mapas de Transição/Bom/Lenhador de outra função"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Ótimo/Pernoite recomendado/Pernoite recomendado - Arredores urbanos - Manhã.png",
+      "name": "Pernoite recomendado - Arredores urbanos - Manhã.png",
+      "mime": "image/png",
+      "digest": "0fabbf537fa3b4b60dd8f16f352b0acb6d4deba1ae771d27187dbb8ecc0efdc5",
+      "size": 3976170,
+      "folder": "Mapas/Mapas de Transição/Ótimo/Pernoite recomendado"
+    },
+    {
+      "source": "Mapas/Veldora/Stalla/Baixada das Cinzas/Laboratorio Antigo/Stalla - Laboratório Antigo - Exterior/Stalla - Laboratório Antigo - Exterior - Urbano gótico - Manhã.png",
+      "name": "Stalla - Laboratório Antigo - Exterior - Urbano gótico - Manhã.png",
+      "mime": "image/png",
+      "digest": "aec60648c6f072b1aae88d8d5eafbc34d48890e74e0b81533676b0357ef81ba7",
+      "size": 3970391,
+      "folder": "Mapas/Veldora/Stalla/Baixada das Cinzas/Laboratorio Antigo/Stalla - Laboratório Antigo - Exterior"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Bom/Canção no cais/Canção no cais - Cais costeiro - Tarde.png",
+      "name": "Canção no cais - Cais costeiro - Tarde.png",
+      "mime": "image/png",
+      "digest": "1b4dd0cb33a2cffdc658f8b8ff763907f96ed004bf9d0a89d90ca169650072fd",
+      "size": 3959182,
+      "folder": "Mapas/Mapas de Transição/Bom/Canção no cais"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Bom/Pátio ferroviário - Manhã 08h30 - Guincho de carga.png",
+      "name": "Pátio ferroviário - Manhã 08h30 - Guincho de carga.png",
+      "mime": "image/png",
+      "digest": "646ab521a3dc71f4bff24b84e6cb1ca4b5bacc0d331b45820de2b60cc3fcc9a5",
+      "size": 3941685,
+      "folder": "Mapas/Mapas de Transição/Bom"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Médio/Pedras escorregadias/Pedras escorregadias - Riacho pedregoso - Tarde.png",
+      "name": "Pedras escorregadias - Riacho pedregoso - Tarde.png",
+      "mime": "image/png",
+      "digest": "c93491de6147a9735c64fbfd30e4fa1f4d753a6db0e1183bc0723a2e402effde",
+      "size": 3938762,
+      "folder": "Mapas/Mapas de Transição/Médio/Pedras escorregadias"
+    },
+    {
+      "source": "Mapas/Veldora/Stalla/Portao Norte e Divisoria/Stalla - Portão Norte e Divisória/Stalla - Portão Norte e Divisória - Urbano gótico - Manhã.png",
+      "name": "Stalla - Portão Norte e Divisória - Urbano gótico - Manhã.png",
+      "mime": "image/png",
+      "digest": "8422eea22cd208f01f6011b1d2ef9168029ee86ea62e34c1bddbfa19643c806e",
+      "size": 3921125,
+      "folder": "Mapas/Veldora/Stalla/Portao Norte e Divisoria/Stalla - Portão Norte e Divisória"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Péssimo/Caldeira no acesso/Caldeira no acesso - Via industrial - Manhã.png",
+      "name": "Caldeira no acesso - Via industrial - Manhã.png",
+      "mime": "image/png",
+      "digest": "18262d443a703a39cd483a4542097e3eb7faa4b7226aeebd1a7240b6ce1250aa",
+      "size": 3913887,
+      "folder": "Mapas/Mapas de Transição/Péssimo/Caldeira no acesso"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Médio/Porteira disputada/Porteira disputada - Campo agrícola - Tarde.png",
+      "name": "Porteira disputada - Campo agrícola - Tarde.png",
+      "mime": "image/png",
+      "digest": "0beaa016e775aeef9b94bc376e08962726252f6721fede253a4ee5347157f38b",
+      "size": 3909621,
+      "folder": "Mapas/Mapas de Transição/Médio/Porteira disputada"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Médio/Riacho pedregoso - Manhã nublada 09h30 - Pedras escorregadias.png",
+      "name": "Riacho pedregoso - Manhã nublada 09h30 - Pedras escorregadias.png",
+      "mime": "image/png",
+      "digest": "3ec6bdee6757bfa60e04a0aae108f7f945c2a499216651307bd105483240f969",
+      "size": 3906349,
+      "folder": "Mapas/Mapas de Transição/Médio"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Péssimo/Ramal ferroviário - Amanhecer 06h00 - Vagão sem freio.png",
+      "name": "Ramal ferroviário - Amanhecer 06h00 - Vagão sem freio.png",
+      "mime": "image/png",
+      "digest": "f5ec7fb5a0b2437fdf6d80c48e3f161810b8384bbf2d83b1769bd975bd19f89b",
+      "size": 3881215,
+      "folder": "Mapas/Mapas de Transição/Péssimo"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Médio/Pêndulo fora de ritmo/Pêndulo fora de ritmo - Terreno de fenda - Manhã.png",
+      "name": "Pêndulo fora de ritmo - Terreno de fenda - Manhã.png",
+      "mime": "image/png",
+      "digest": "568c675956e69a3d206d9f37297fca22819d83f190ee9b7b80de4d084432661e",
+      "size": 3872805,
+      "folder": "Mapas/Mapas de Transição/Médio/Pêndulo fora de ritmo"
+    },
+    {
+      "source": "Mapas/Veldora/Stalla/Sao Lazaro e Arrabaldes/Stalla - São Lázaro e Arredores/Stalla - São Lázaro e Arredores - Urbano gótico - Tarde.png",
+      "name": "Stalla - São Lázaro e Arredores - Urbano gótico - Tarde.png",
+      "mime": "image/png",
+      "digest": "872b997dd363aff35aa182741bc0f2c261279b71d19cbfa69eae80ebc090b906",
+      "size": 3868854,
+      "folder": "Mapas/Veldora/Stalla/Sao Lazaro e Arrabaldes/Stalla - São Lázaro e Arredores"
+    },
+    {
+      "source": "Mapas/Veldora/Stalla/Arredores da Guilda/Guilda dos Caminhantes/Stalla - Guilda dos Caminhantes - Térreo.png",
+      "name": "Stalla - Guilda dos Caminhantes - Térreo.png",
+      "mime": "image/png",
+      "digest": "2336bab4da211eb570af0e02e81038152e9a34da5d21329fe3b0c5e3300e2215",
+      "size": 3865409,
+      "folder": "Mapas/Veldora/Stalla/Arredores da Guilda/Guilda dos Caminhantes"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Ótimo/Mesa depois da colheita/Mesa depois da colheita - Campo cultivado - Manhã.png",
+      "name": "Mesa depois da colheita - Campo cultivado - Manhã.png",
+      "mime": "image/png",
+      "digest": "cccf0f31fd58f682a327b21cdb7875d5909f6ad4edfa13c1abc6a8b932f65559",
+      "size": 3859792,
+      "folder": "Mapas/Mapas de Transição/Ótimo/Mesa depois da colheita"
+    },
+    {
+      "source": "Mapas/Veldora/Stalla/Arredores da Guilda/Stalla - Arredores da Guilda/Stalla - Arredores da Guilda - Urbano gótico - Tarde.png",
+      "name": "Stalla - Arredores da Guilda - Urbano gótico - Tarde.png",
+      "mime": "image/png",
+      "digest": "74f023f9cc964aa5378ea407b6b0f01f2b5b300db1edbff1494f11902c56b821",
+      "size": 3857232,
+      "folder": "Mapas/Veldora/Stalla/Arredores da Guilda/Stalla - Arredores da Guilda"
+    },
+    {
+      "source": "Mapas/Veldora/Floresta do Vale/Vau das Pedras/Floresta do Vale - Vau das Pedras - Travessia do Riacho/Floresta do Vale - Vau das Pedras - Travessia do Riacho - Floresta temperada - Tarde.png",
+      "name": "Floresta do Vale - Vau das Pedras - Travessia do Riacho - Floresta temperada - Tarde.png",
+      "mime": "image/png",
+      "digest": "aa27e96b980e8422f287c50cea7a256d4a53aa9bbe2e1963f902f2039f147d4f",
+      "size": 3853729,
+      "folder": "Mapas/Veldora/Floresta do Vale/Vau das Pedras/Floresta do Vale - Vau das Pedras - Travessia do Riacho"
+    },
+    {
+      "source": "Mapas/Veldora/Stalla/Fontes e Portao do Vale/Stalla - Fontes e Portão do Vale/Stalla - Fontes e Portão do Vale - Urbano gótico - Tarde.png",
+      "name": "Stalla - Fontes e Portão do Vale - Urbano gótico - Tarde.png",
+      "mime": "image/png",
+      "digest": "4c402bf0dec1de97ba6610744c404b02ad50f380f604ce42422117c78ef3ba31",
+      "size": 3833272,
+      "folder": "Mapas/Veldora/Stalla/Fontes e Portao do Vale/Stalla - Fontes e Portão do Vale"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Péssimo/Árvores sobre a passagem/Árvores sobre a passagem - Floresta após temporal - Tarde.png",
+      "name": "Árvores sobre a passagem - Floresta após temporal - Tarde.png",
+      "mime": "image/png",
+      "digest": "efcc500136a9ae72aa889ad30466806bd9480a910ed6d62750f1a301b77f5716",
+      "size": 3831742,
+      "folder": "Mapas/Mapas de Transição/Péssimo/Árvores sobre a passagem"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Ruim/Falso legado de Gideon/Falso legado de Gideon - Cais portuário - Manhã.png",
+      "name": "Falso legado de Gideon - Cais portuário - Manhã.png",
+      "mime": "image/png",
+      "digest": "8ef9f6fe90152a32c379d5ae847a82b84c26b9510ddc3cd967df4adeec07a92d",
+      "size": 3815796,
+      "folder": "Mapas/Mapas de Transição/Ruim/Falso legado de Gideon"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Bom/Deserto pedregoso - Amanhecer 06h15 - Caravana das peças usadas.png",
+      "name": "Deserto pedregoso - Amanhecer 06h15 - Caravana das peças usadas.png",
+      "mime": "image/png",
+      "digest": "eaf609ede9f6af8cfe196e3cf678e94466f8aaddb4a43aeb10d3596497df076e",
+      "size": 3810201,
+      "folder": "Mapas/Mapas de Transição/Bom"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Médio/Terreno de fenda - Tarde nublada 15h00 - Pêndulo fora de ritmo.png",
+      "name": "Terreno de fenda - Tarde nublada 15h00 - Pêndulo fora de ritmo.png",
+      "mime": "image/png",
+      "digest": "8d2f5795441b28b01dee7dbccf3b81263fd0cfedddab15c48132fc6fcd2a5b09",
+      "size": 3807367,
+      "folder": "Mapas/Mapas de Transição/Médio"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Ruim/Açude em campo seco - Meio-dia 13h00 - A bomba e o barril.png",
+      "name": "Açude em campo seco - Meio-dia 13h00 - A bomba e o barril.png",
+      "mime": "image/png",
+      "digest": "e13ba0df7c6bd1b33253cd3ca7c56877961f3ab312bdda99037d781e123eaed9",
+      "size": 3805513,
+      "folder": "Mapas/Mapas de Transição/Ruim"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Ótimo/Passarela dos moradores/Passarela dos moradores - Brejo - Manhã.png",
+      "name": "Passarela dos moradores - Brejo - Manhã.png",
+      "mime": "image/png",
+      "digest": "8d38e04693f33f455c879b06e8136af72efaeb03487321502d4ed708208dcaf6",
+      "size": 3787563,
+      "folder": "Mapas/Mapas de Transição/Ótimo/Passarela dos moradores"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Bom/Campo com oratório - Fim de tarde 17h30 - Restauro de um oratório.png",
+      "name": "Campo com oratório - Fim de tarde 17h30 - Restauro de um oratório.png",
+      "mime": "image/png",
+      "digest": "bcf92a9cbe659ee7f384f500ff7409d30b462b84cc69d69390f3a23837b22f51",
+      "size": 3780309,
+      "folder": "Mapas/Mapas de Transição/Bom"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Médio/Passo nevado - Tarde nublada 14h00 - Divisa coberta de neve.png",
+      "name": "Passo nevado - Tarde nublada 14h00 - Divisa coberta de neve.png",
+      "mime": "image/png",
+      "digest": "b7587b186ec126655ff0fe2e47616f76e3e59875fdfec629119fcf0ec94b3092",
+      "size": 3778633,
+      "folder": "Mapas/Mapas de Transição/Médio"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Péssimo/Convés sob arrebentação/Convés sob arrebentação - Costa rochosa - Manhã.png",
+      "name": "Convés sob arrebentação - Costa rochosa - Manhã.png",
+      "mime": "image/png",
+      "digest": "68a4cf8bd018413734da3b01faec1e97f92ed4ae7d919483a3c4d016b106b9e5",
+      "size": 3765941,
+      "folder": "Mapas/Mapas de Transição/Péssimo/Convés sob arrebentação"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Péssimo/Vagão sem freio/Vagão sem freio - Ramal ferroviário - Tarde.png",
+      "name": "Vagão sem freio - Ramal ferroviário - Tarde.png",
+      "mime": "image/png",
+      "digest": "22ff441ba94506be2296fb06cd0c0a8e30e68fa16419980c3cb1902059ea3dbf",
+      "size": 3758611,
+      "folder": "Mapas/Mapas de Transição/Péssimo/Vagão sem freio"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Bom/Campo de estrada - Fim de tarde 17h00 - Oficina sob a lona.png",
+      "name": "Campo de estrada - Fim de tarde 17h00 - Oficina sob a lona.png",
+      "mime": "image/png",
+      "digest": "72fc6f55f021151c5d109522a8a43d50ff71fbe1c81cda4ed146121eb7506f0f",
+      "size": 3747808,
+      "folder": "Mapas/Mapas de Transição/Bom"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Ótimo/Nascente preservada/Nascente preservada - Nascente rochosa - Tarde.png",
+      "name": "Nascente preservada - Nascente rochosa - Tarde.png",
+      "mime": "image/png",
+      "digest": "cde6a342d2a1397e49255fc73cc6348d0a73ac6cb11720a35350dc0e9fb35b6b",
+      "size": 3742058,
+      "folder": "Mapas/Mapas de Transição/Ótimo/Nascente preservada"
+    },
+    {
+      "source": "Mapas/Veldora/Stalla/Arredores da Guilda/Stalla - Arredores da Guilda/Stalla - Arredores da Guilda - Urbano gótico - Noite.png",
+      "name": "Stalla - Arredores da Guilda - Urbano gótico - Noite.png",
+      "mime": "image/png",
+      "digest": "5d471ac1bbb1b15c532f48cf67c6411490e6e3353a97d00f35ca7d5d50f0ece0",
+      "size": 3741081,
+      "folder": "Mapas/Veldora/Stalla/Arredores da Guilda/Stalla - Arredores da Guilda"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Péssimo/Convés sob arrebentação/Convés sob arrebentação - Costa rochosa - Tarde.png",
+      "name": "Convés sob arrebentação - Costa rochosa - Tarde.png",
+      "mime": "image/png",
+      "digest": "95adb7c1fa3031f1541a47e098b073ba1b520e2e5fcfcf0b1085ac78dd74c7c4",
+      "size": 3736490,
+      "folder": "Mapas/Mapas de Transição/Péssimo/Convés sob arrebentação"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Bom/Oficina sob a lona/Oficina sob a lona - Campo de estrada - Manhã.png",
+      "name": "Oficina sob a lona - Campo de estrada - Manhã.png",
+      "mime": "image/png",
+      "digest": "42e33afea4c9d5382f2d5139e14eda95dfcd7aa02e5ae70f3137768f185e688b",
+      "size": 3722143,
+      "folder": "Mapas/Mapas de Transição/Bom/Oficina sob a lona"
+    },
+    {
+      "source": "Mapas/Veldora/Valenca do Trilho/Capela dos Viajantes/Valença do Trilho - Capela dos Viajantes/Valença do Trilho - Capela dos Viajantes - Vale ferroviário - Tarde.png",
+      "name": "Valença do Trilho - Capela dos Viajantes - Vale ferroviário - Tarde.png",
+      "mime": "image/png",
+      "digest": "37ae44bd3ddc2fa24a4a3eaefa9a3e9ffef5552f95e5216f3ece08b0ff948d27",
+      "size": 3718966,
+      "folder": "Mapas/Veldora/Valenca do Trilho/Capela dos Viajantes/Valença do Trilho - Capela dos Viajantes"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Médio/Entreposto ferroviário - Meio-dia nublado 12h30 - Manifestos trocados.png",
+      "name": "Entreposto ferroviário - Meio-dia nublado 12h30 - Manifestos trocados.png",
+      "mime": "image/png",
+      "digest": "f72ca7de7ef555d8152febff39ad1330be43982b760909f8a4dcfd95b17b77bb",
+      "size": 3706022,
+      "folder": "Mapas/Mapas de Transição/Médio"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Ótimo/Pernoite recomendado/Pernoite recomendado - Arredores urbanos - Tarde.png",
+      "name": "Pernoite recomendado - Arredores urbanos - Tarde.png",
+      "mime": "image/png",
+      "digest": "2747a3660923e58e25fe43f059861f1e7cf90dc7de96e43e714feb96ed4eae50",
+      "size": 3693995,
+      "folder": "Mapas/Mapas de Transição/Ótimo/Pernoite recomendado"
+    },
+    {
+      "source": "Mapas/Veldora/Stalla/Distrito Academico/Stalla - Distrito Acadêmico/Stalla - Distrito Acadêmico - Urbano gótico - Tarde.png",
+      "name": "Stalla - Distrito Acadêmico - Urbano gótico - Tarde.png",
+      "mime": "image/png",
+      "digest": "de138c0ec198a515706396cd3d7f917d70e47abddddf34f100537dbca98ac3f0",
+      "size": 3686674,
+      "folder": "Mapas/Veldora/Stalla/Distrito Academico/Stalla - Distrito Acadêmico"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Médio/Portão urbano - Tarde 14h30 - Fila do portão.png",
+      "name": "Portão urbano - Tarde 14h30 - Fila do portão.png",
+      "mime": "image/png",
+      "digest": "3eba00eb9dae0efacd041dd677dd8db1173ae91247df080b52f1234db65c049c",
+      "size": 3682856,
+      "folder": "Mapas/Mapas de Transição/Médio"
+    },
+    {
+      "source": "Mapas/Veldora/Stalla/Cidadela Real/Catedral e Paco Civil/Stalla - Catedral e Paço Civil/Stalla - Catedral e Paço Civil - Urbano gótico - Tarde.png",
+      "name": "Stalla - Catedral e Paço Civil - Urbano gótico - Tarde.png",
+      "mime": "image/png",
+      "digest": "54e2b167f7f38ff7639cc3ca1093df0365176b64c1e0e773ee3057a233bebaa9",
+      "size": 3675388,
+      "folder": "Mapas/Veldora/Stalla/Cidadela Real/Catedral e Paco Civil/Stalla - Catedral e Paço Civil"
+    },
+    {
+      "source": "Mapas/Veldora/Stalla/Baixada das Cinzas/Carvoarias/Stalla - Carvoarias/Stalla - Carvoarias - Urbano gótico - Noite.png",
+      "name": "Stalla - Carvoarias - Urbano gótico - Noite.png",
+      "mime": "image/png",
+      "digest": "c6af9029eb18ae5a279ac3a76d1807a88b38bf73d4ff592216234ececd4abb5e",
+      "size": 3673098,
+      "folder": "Mapas/Veldora/Stalla/Baixada das Cinzas/Carvoarias/Stalla - Carvoarias"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Médio/Carga à deriva/Carga à deriva - Enseada - Manhã.png",
+      "name": "Carga à deriva - Enseada - Manhã.png",
+      "mime": "image/png",
+      "digest": "8be7ebc45ae1a1587f2bf891f675fff81289a99e75624a4c3a3fd57b48f6a22e",
+      "size": 3662586,
+      "folder": "Mapas/Mapas de Transição/Médio/Carga à deriva"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Bom/Pátio urbano - Manhã 09h00 - Feira de ferramentas.png",
+      "name": "Pátio urbano - Manhã 09h00 - Feira de ferramentas.png",
+      "mime": "image/png",
+      "digest": "5fd43d2de98dd8a706dd351a049a9da32bfbcaae40326522f35bc3ceb5d0c9db",
+      "size": 3651657,
+      "folder": "Mapas/Mapas de Transição/Bom"
+    },
+    {
+      "source": "Mapas/Veldora/Stalla/Lago do Espelho/Stalla - Lago do Espelho/Stalla - Lago do Espelho - Urbano gótico - Tarde.png",
+      "name": "Stalla - Lago do Espelho - Urbano gótico - Tarde.png",
+      "mime": "image/png",
+      "digest": "9876737cd6f1ccdaa1baf4d0b72094cceea1a31df4dc27fb121d965236436170",
+      "size": 3644097,
+      "folder": "Mapas/Veldora/Stalla/Lago do Espelho/Stalla - Lago do Espelho"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Péssimo/Piso que afunda/Piso que afunda - Ruína alagada - Tarde.png",
+      "name": "Piso que afunda - Ruína alagada - Tarde.png",
+      "mime": "image/png",
+      "digest": "a5ec4e82abed60663d3b825299ab6e407385c6ac62c131128ade937a136a21b8",
+      "size": 3629171,
+      "folder": "Mapas/Mapas de Transição/Péssimo/Piso que afunda"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Ruim/O recrutador no desvio/O recrutador no desvio - Parada ferroviária - Manhã.png",
+      "name": "O recrutador no desvio - Parada ferroviária - Manhã.png",
+      "mime": "image/png",
+      "digest": "089544c597e09de2be0abdba1252940fc385fdb14c52217a0d58053821ef757a",
+      "size": 3602713,
+      "folder": "Mapas/Mapas de Transição/Ruim/O recrutador no desvio"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Ruim/Falso legado de Gideon/Falso legado de Gideon - Cais portuário - Tarde.png",
+      "name": "Falso legado de Gideon - Cais portuário - Tarde.png",
+      "mime": "image/png",
+      "digest": "9a889b4b4b5da8055126d6afee85c5bea1eca161854493dd5031c4dd11c93240",
+      "size": 3601292,
+      "folder": "Mapas/Mapas de Transição/Ruim/Falso legado de Gideon"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Péssimo/Cheia na ponte baixa/Cheia na ponte baixa - Rio em cheia - Manhã.png",
+      "name": "Cheia na ponte baixa - Rio em cheia - Manhã.png",
+      "mime": "image/png",
+      "digest": "6c101ca149308c523296ef692a83c1e5cbf0c4fd6996ff02f597b3763ce34b95",
+      "size": 3598591,
+      "folder": "Mapas/Mapas de Transição/Péssimo/Cheia na ponte baixa"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Ótimo/Refúgio sob o sino/Refúgio sob o sino - Montanha nevada - Manhã.png",
+      "name": "Refúgio sob o sino - Montanha nevada - Manhã.png",
+      "mime": "image/png",
+      "digest": "57087b1c4c4f02270b019befbf59ff2e1393e9f43a907fb23048a26759a15566",
+      "size": 3592575,
+      "folder": "Mapas/Mapas de Transição/Ótimo/Refúgio sob o sino"
+    },
+    {
+      "source": "Mapas/Veldora/Stalla/Portao Norte e Divisoria/Stalla - Portão Norte e Divisória/Stalla - Portão Norte e Divisória - Urbano gótico - Tarde.png",
+      "name": "Stalla - Portão Norte e Divisória - Urbano gótico - Tarde.png",
+      "mime": "image/png",
+      "digest": "bdff28e40a9750e781c9d49979f2d7f55d3dccc786df28c1dc6324501ec392b0",
+      "size": 3568152,
+      "folder": "Mapas/Veldora/Stalla/Portao Norte e Divisoria/Stalla - Portão Norte e Divisória"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Bom/Guincho de carga/Guincho de carga - Pátio ferroviário - Tarde.png",
+      "name": "Guincho de carga - Pátio ferroviário - Tarde.png",
+      "mime": "image/png",
+      "digest": "7699f14b4ea3dee51666c0c066ea176928d98daf5bb8cbda2a97cced7c0fc750",
+      "size": 3561116,
+      "folder": "Mapas/Mapas de Transição/Bom/Guincho de carga"
+    },
+    {
+      "source": "Mapas/Veldora/Vila do Freixo/Vila do Freixo - Mapa Geral/Vila do Freixo - Mapa Geral - Regional - Noite.png",
+      "name": "Vila do Freixo - Mapa Geral - Regional - Noite.png",
+      "mime": "image/png",
+      "digest": "2a262708d2ad17be015d2608f37c1db861549ffa16be362657c978a929859d55",
+      "size": 3549480,
+      "folder": "Mapas/Veldora/Vila do Freixo/Vila do Freixo - Mapa Geral"
+    },
+    {
+      "source": "Mapas/Veldora/Stalla/Cidadela Real/Palacio e Bairro da Coroa/Stalla - Palácio e Bairro da Coroa/Stalla - Palácio e Bairro da Coroa - Urbano gótico - Tarde.png",
+      "name": "Stalla - Palácio e Bairro da Coroa - Urbano gótico - Tarde.png",
+      "mime": "image/png",
+      "digest": "6a5c10e77c4364a377e618ac78f87e53ce42d907ca8e772c8f47d752b63c8b8d",
+      "size": 3534682,
+      "folder": "Mapas/Veldora/Stalla/Cidadela Real/Palacio e Bairro da Coroa/Stalla - Palácio e Bairro da Coroa"
+    },
+    {
+      "source": "Mapas/Veldora/Stalla/Distrito das Oficinas/Stalla - Distrito das Oficinas/Stalla - Distrito das Oficinas - Urbano gótico - Noite.png",
+      "name": "Stalla - Distrito das Oficinas - Urbano gótico - Noite.png",
+      "mime": "image/png",
+      "digest": "687de9a4de6ddb7b0351b7f0dae3fd1849331feeed127457d060a6e5e0ebbefb",
+      "size": 3523931,
+      "folder": "Mapas/Veldora/Stalla/Distrito das Oficinas/Stalla - Distrito das Oficinas"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Médio/Pomar temperado - Fim de tarde 17h30 - Pomar sem proprietário.png",
+      "name": "Pomar temperado - Fim de tarde 17h30 - Pomar sem proprietário.png",
+      "mime": "image/png",
+      "digest": "9b240c9e48457cd4c106806254cc241800c59c695cd1c077a569c3a137a1c476",
+      "size": 3519402,
+      "folder": "Mapas/Mapas de Transição/Médio"
+    },
+    {
+      "source": "Mapas/Veldora/Stalla/Estacao Central/Stalla - Estação Central/Stalla - Estação Central - Urbano gótico - Tarde.png",
+      "name": "Stalla - Estação Central - Urbano gótico - Tarde.png",
+      "mime": "image/png",
+      "digest": "5c2fa43083a944962c7cb619b9d85ef43047f438aec62465a42ab333366f452d",
+      "size": 3512529,
+      "folder": "Mapas/Veldora/Stalla/Estacao Central/Stalla - Estação Central"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Médio/Fila do portão/Fila do portão - Portão urbano - Manhã.png",
+      "name": "Fila do portão - Portão urbano - Manhã.png",
+      "mime": "image/png",
+      "digest": "378c51cbd7b38b22530581001becd10aaf8a463a83ae7dc9b498d89353f1dfd5",
+      "size": 3509244,
+      "folder": "Mapas/Mapas de Transição/Médio/Fila do portão"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Bom/Caravana das peças usadas/Caravana das peças usadas - Deserto pedregoso - Tarde.png",
+      "name": "Caravana das peças usadas - Deserto pedregoso - Tarde.png",
+      "mime": "image/png",
+      "digest": "9075495b20e27b1b2f15264819cc43d86c6005beb59d8c3e8f9debf7b23cec7a",
+      "size": 3498644,
+      "folder": "Mapas/Mapas de Transição/Bom/Caravana das peças usadas"
+    },
+    {
+      "source": "Mapas/Veldora/Stalla/Portao Norte e Divisoria/Stalla - Portão Norte e Divisória/Stalla - Portão Norte e Divisória - Urbano gótico - Noite.png",
+      "name": "Stalla - Portão Norte e Divisória - Urbano gótico - Noite.png",
+      "mime": "image/png",
+      "digest": "9d52dc532f71df51a8ee6caa4a09c742594bf65ffbb3b8c4b38f571a8530ef84",
+      "size": 3478324,
+      "folder": "Mapas/Veldora/Stalla/Portao Norte e Divisoria/Stalla - Portão Norte e Divisória"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Ruim/Carruagem tombada/Carruagem tombada - Campo e bosque - Noite.png",
+      "name": "Carruagem tombada - Campo e bosque - Noite.png",
+      "mime": "image/png",
+      "digest": "6ee8e7d85fffd825e8d3cbd274e818f1aede3fe76ca53c527ec978bac064997b",
+      "size": 3474529,
+      "folder": "Mapas/Mapas de Transição/Ruim/Carruagem tombada"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Péssimo/Passagem que se desfaz/Passagem que se desfaz - Ruína suspensa - Tarde.png",
+      "name": "Passagem que se desfaz - Ruína suspensa - Tarde.png",
+      "mime": "image/png",
+      "digest": "78c2d7c278e6bcbf1ba5a89472778acf08a080e2336c147010044ef4929813aa",
+      "size": 3452114,
+      "folder": "Mapas/Mapas de Transição/Péssimo/Passagem que se desfaz"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Ruim/Parada ferroviária - Fim de tarde 17h15 - O recrutador no desvio.png",
+      "name": "Parada ferroviária - Fim de tarde 17h15 - O recrutador no desvio.png",
+      "mime": "image/png",
+      "digest": "e6f9279fe22c7a50d81ee0784809605909f430b3c18b9b8afeaa513bd2559b73",
+      "size": 3449788,
+      "folder": "Mapas/Mapas de Transição/Ruim"
+    },
+    {
+      "source": "Mapas/Veldora/Floresta do Vale/Vau das Pedras/Floresta do Vale - Vau das Pedras - Travessia do Riacho/Floresta do Vale - Vau das Pedras - Travessia do Riacho - Floresta temperada - Noite.png",
+      "name": "Floresta do Vale - Vau das Pedras - Travessia do Riacho - Floresta temperada - Noite.png",
+      "mime": "image/png",
+      "digest": "4ff830152ccc87dde6c1a1dfd0645054d77f643b89e3df6edb7aa963cc1494b9",
+      "size": 3417015,
+      "folder": "Mapas/Veldora/Floresta do Vale/Vau das Pedras/Floresta do Vale - Vau das Pedras - Travessia do Riacho"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Bom/Guincho de carga/Guincho de carga - Pátio ferroviário - Noite.png",
+      "name": "Guincho de carga - Pátio ferroviário - Noite.png",
+      "mime": "image/png",
+      "digest": "05291723d0fda725327d0a6299ac786a0458bf1e03bd15e8f12b177e10416062",
+      "size": 3416698,
+      "folder": "Mapas/Mapas de Transição/Bom/Guincho de carga"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Bom/Feira de ferramentas/Feira de ferramentas - Pátio urbano - Tarde.png",
+      "name": "Feira de ferramentas - Pátio urbano - Tarde.png",
+      "mime": "image/png",
+      "digest": "50188afa270c4bfbec209a085eb746367d589c35fcf27bb1e8f142c80c9bf812",
+      "size": 3410886,
+      "folder": "Mapas/Mapas de Transição/Bom/Feira de ferramentas"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Médio/Pedras escorregadias/Pedras escorregadias - Riacho pedregoso - Noite.png",
+      "name": "Pedras escorregadias - Riacho pedregoso - Noite.png",
+      "mime": "image/png",
+      "digest": "8a9b4df8d5060599ee4c0e91d8e68ad2b314d66251386f245fc523d450a3a717",
+      "size": 3399965,
+      "folder": "Mapas/Mapas de Transição/Médio/Pedras escorregadias"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Péssimo/Vagão sem freio/Vagão sem freio - Ramal ferroviário - Noite.png",
+      "name": "Vagão sem freio - Ramal ferroviário - Noite.png",
+      "mime": "image/png",
+      "digest": "b6b28e7ab99cfa5cd08106af69c0e4b9625d38ae7d67337377f26ad109f92713",
+      "size": 3391837,
+      "folder": "Mapas/Mapas de Transição/Péssimo/Vagão sem freio"
+    },
+    {
+      "source": "Mapas/Veldora/Stalla/Estacao Central/Stalla - Estação Central/Stalla - Estação Central - Urbano gótico - Noite.png",
+      "name": "Stalla - Estação Central - Urbano gótico - Noite.png",
+      "mime": "image/png",
+      "digest": "b02122591235731c468a138aaea073e7eb4a64381d77fd91a4f43ac47e96db88",
+      "size": 3391618,
+      "folder": "Mapas/Veldora/Stalla/Estacao Central/Stalla - Estação Central"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Ruim/Entrega que não chegou/Entrega que não chegou - Viela urbana - Tarde.png",
+      "name": "Entrega que não chegou - Viela urbana - Tarde.png",
+      "mime": "image/png",
+      "digest": "507b90386a87cc12a9691cf493383d76586f04e71e105b49eb821063e68de9d4",
+      "size": 3368817,
+      "folder": "Mapas/Mapas de Transição/Ruim/Entrega que não chegou"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Bom/Lenhador de outra função/Lenhador de outra função - Bosque temperado - Noite.png",
+      "name": "Lenhador de outra função - Bosque temperado - Noite.png",
+      "mime": "image/png",
+      "digest": "1c13cee4ec64676a470d19285932135e62e62189123c4a569c245d7cdf0570aa",
+      "size": 3366121,
+      "folder": "Mapas/Mapas de Transição/Bom/Lenhador de outra função"
+    },
+    {
+      "source": "Mapas/Veldora/Floresta do Vale/Mata do Silencio/Mata do Silêncio - Entrada do Laboratório de Valdren/Mata do Silêncio - Entrada do Laboratório de Valdren - Floresta temperada - Noite.png",
+      "name": "Mata do Silêncio - Entrada do Laboratório de Valdren - Floresta temperada - Noite.png",
+      "mime": "image/png",
+      "digest": "26133784bc88fa6208f1ea50642e37e3024eba144cc16c8411a59fc73eec9a3a",
+      "size": 3353480,
+      "folder": "Mapas/Veldora/Floresta do Vale/Mata do Silencio/Mata do Silêncio - Entrada do Laboratório de Valdren"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Médio/Manifestos trocados/Manifestos trocados - Entreposto ferroviário - Noite.png",
+      "name": "Manifestos trocados - Entreposto ferroviário - Noite.png",
+      "mime": "image/png",
+      "digest": "397a6cb12e25711c98ea6eacceb301b48385ba94df41c35e2ed117da63d3d2d2",
+      "size": 3343707,
+      "folder": "Mapas/Mapas de Transição/Médio/Manifestos trocados"
+    },
+    {
+      "source": "Mapas/Veldora/Stalla/Arredores da Guilda/Guilda dos Caminhantes/Stalla - Guilda dos Caminhantes - Oficina Subterrânea.png",
+      "name": "Stalla - Guilda dos Caminhantes - Oficina Subterrânea.png",
+      "mime": "image/png",
+      "digest": "f279c3e33359b186f4a77f262dd5d8ffe25714818ac0d4aa0308b3e5b2506c4e",
+      "size": 3343675,
+      "folder": "Mapas/Veldora/Stalla/Arredores da Guilda/Guilda dos Caminhantes"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Ruim/O amuleto na lama/O amuleto na lama - Brejo lamacento - Manhã.png",
+      "name": "O amuleto na lama - Brejo lamacento - Manhã.png",
+      "mime": "image/png",
+      "digest": "1977d1392bfb85b853a11f3611cac48977c7f002e076061abf51b5f381614114",
+      "size": 3334861,
+      "folder": "Mapas/Mapas de Transição/Ruim/O amuleto na lama"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Médio/Deserto - Noite 21h30 - Poço de uso alternado.png",
+      "name": "Deserto - Noite 21h30 - Poço de uso alternado.png",
+      "mime": "image/png",
+      "digest": "94846805e2b980bdf7264a1bbf359f1c2b0c06bbfe6f07497281a247a6e97873",
+      "size": 3323279,
+      "folder": "Mapas/Mapas de Transição/Médio"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Bom/Restauro de um oratório/Restauro de um oratório - Campo com oratório - Noite.png",
+      "name": "Restauro de um oratório - Campo com oratório - Noite.png",
+      "mime": "image/png",
+      "digest": "3208f71b79de16627bd8f4d3bf0b200ea13771d6c7ff47b63749af20a2d71594",
+      "size": 3312034,
+      "folder": "Mapas/Mapas de Transição/Bom/Restauro de um oratório"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Ótimo/Maré que abre caminho/Maré que abre caminho - Costa de maré - Noite.png",
+      "name": "Maré que abre caminho - Costa de maré - Noite.png",
+      "mime": "image/png",
+      "digest": "e654a1944e3e42aef2d63f7a95daee3b8bef0d15504df0f0399228da17ba8339",
+      "size": 3299803,
+      "folder": "Mapas/Mapas de Transição/Ótimo/Maré que abre caminho"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Ruim/Falso legado de Gideon/Falso legado de Gideon - Cais portuário - Noite.png",
+      "name": "Falso legado de Gideon - Cais portuário - Noite.png",
+      "mime": "image/png",
+      "digest": "c4af89cfdb4a915c36ecbb48c2d0e01c16d0510024bc05a83449ab331a6e5360",
+      "size": 3294102,
+      "folder": "Mapas/Mapas de Transição/Ruim/Falso legado de Gideon"
+    },
+    {
+      "source": "Mapas/Veldora/Valenca do Trilho/Capela dos Viajantes/Valença do Trilho - Capela dos Viajantes/Valença do Trilho - Capela dos Viajantes - Vale ferroviário - Noite.png",
+      "name": "Valença do Trilho - Capela dos Viajantes - Vale ferroviário - Noite.png",
+      "mime": "image/png",
+      "digest": "19de7dc62b5e8bac84dae5d9fcd16f7d996b9ce33e8492275940b4ac1b08f37b",
+      "size": 3281087,
+      "folder": "Mapas/Veldora/Valenca do Trilho/Capela dos Viajantes/Valença do Trilho - Capela dos Viajantes"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Bom/Caravana das peças usadas/Caravana das peças usadas - Deserto pedregoso - Noite.png",
+      "name": "Caravana das peças usadas - Deserto pedregoso - Noite.png",
+      "mime": "image/png",
+      "digest": "2111c0c46f0f4074fc0b57c9fc1ef32d8dbcb1892e14a316d2477881b97c6ff4",
+      "size": 3278730,
+      "folder": "Mapas/Mapas de Transição/Bom/Caravana das peças usadas"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Ruim/Viela urbana - Amanhecer 06h30 - Entrega que não chegou.png",
+      "name": "Viela urbana - Amanhecer 06h30 - Entrega que não chegou.png",
+      "mime": "image/png",
+      "digest": "5b96123456e396ea60171b0b83a5eb3dbd5a5468f815fd7c960c7c3ec5700220",
+      "size": 3271683,
+      "folder": "Mapas/Mapas de Transição/Ruim"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Ótimo/Pátio de sombra/Pátio de sombra - Oásis desértico - Manhã.png",
+      "name": "Pátio de sombra - Oásis desértico - Manhã.png",
+      "mime": "image/png",
+      "digest": "6decdb32e8eaa1367ea84300fb55084b60e420bef55e7fac053c8778edbe9287",
+      "size": 3261727,
+      "folder": "Mapas/Mapas de Transição/Ótimo/Pátio de sombra"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Médio/Pomar sem proprietário/Pomar sem proprietário - Pomar temperado - Noite.png",
+      "name": "Pomar sem proprietário - Pomar temperado - Noite.png",
+      "mime": "image/png",
+      "digest": "c3bdd1e26bfd32014a1ff67da57716cba38012e78f2612c1064eff84b3ea8040",
+      "size": 3242156,
+      "folder": "Mapas/Mapas de Transição/Médio/Pomar sem proprietário"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Bom/Corrimão de corda/Corrimão de corda - Desfiladeiro rochoso - Tarde.png",
+      "name": "Corrimão de corda - Desfiladeiro rochoso - Tarde.png",
+      "mime": "image/png",
+      "digest": "90f37d03cef08f05bb0f1d43b5add01d2c02c580a10073ee9820be1be2fd3f33",
+      "size": 3224795,
+      "folder": "Mapas/Mapas de Transição/Bom/Corrimão de corda"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Bom/Cais costeiro - Noite 20h00 - Canção no cais.png",
+      "name": "Cais costeiro - Noite 20h00 - Canção no cais.png",
+      "mime": "image/png",
+      "digest": "aaf0fbb8c054579163f6e09322d881e2a61d8d914936ee66732c7e8b98541be9",
+      "size": 3206673,
+      "folder": "Mapas/Mapas de Transição/Bom"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Ruim/Entreposto desértico - Fim de tarde 17h45 - Leilão sob o toldo.png",
+      "name": "Entreposto desértico - Fim de tarde 17h45 - Leilão sob o toldo.png",
+      "mime": "image/png",
+      "digest": "5ded4556830cf63feba9ebd33197389c2b70eb0dc4ca0423fe977a655fdd092f",
+      "size": 3201321,
+      "folder": "Mapas/Mapas de Transição/Ruim"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Péssimo/Ruína alagada - Noite 20h30 - Piso que afunda.png",
+      "name": "Ruína alagada - Noite 20h30 - Piso que afunda.png",
+      "mime": "image/png",
+      "digest": "4f968af5e79c20320deb877434471cc4ae2c94a0ad0645b77298462223c12ec7",
+      "size": 3196103,
+      "folder": "Mapas/Mapas de Transição/Péssimo"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Péssimo/Avalanche e sinos mudos/Avalanche e sinos mudos - Encosta nevada - Tarde.png",
+      "name": "Avalanche e sinos mudos - Encosta nevada - Tarde.png",
+      "mime": "image/png",
+      "digest": "8bd3533775da817fc2f7a2c26855a7f0a082c4a2a60c42c6e7bee20e9277529c",
+      "size": 3190536,
+      "folder": "Mapas/Mapas de Transição/Péssimo/Avalanche e sinos mudos"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Ótimo/Pouso de manutenção/Pouso de manutenção - Ilha flutuante - Noite.png",
+      "name": "Pouso de manutenção - Ilha flutuante - Noite.png",
+      "mime": "image/png",
+      "digest": "fe6136422663d1558b7fb2b6a64c02b7d1f79f4d6987ae137dcbce4fe7515816",
+      "size": 3128296,
+      "folder": "Mapas/Mapas de Transição/Ótimo/Pouso de manutenção"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Ruim/Leilão sob o toldo/Leilão sob o toldo - Entreposto desértico - Manhã.png",
+      "name": "Leilão sob o toldo - Entreposto desértico - Manhã.png",
+      "mime": "image/png",
+      "digest": "5fafb876afddea9fd529dc9cda959d6567b4d7fec30850895ee0ce30ba261e3f",
+      "size": 3124229,
+      "folder": "Mapas/Mapas de Transição/Ruim/Leilão sob o toldo"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Ruim/O recrutador no desvio/O recrutador no desvio - Parada ferroviária - Noite.png",
+      "name": "O recrutador no desvio - Parada ferroviária - Noite.png",
+      "mime": "image/png",
+      "digest": "271b90771f35e79a379e6bdf0b714b46747f1f13f8d596285372c6b0e5e97bf8",
+      "size": 3105072,
+      "folder": "Mapas/Mapas de Transição/Ruim/O recrutador no desvio"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Ruim/O amuleto na lama/O amuleto na lama - Brejo lamacento - Tarde.png",
+      "name": "O amuleto na lama - Brejo lamacento - Tarde.png",
+      "mime": "image/png",
+      "digest": "24574d5edf7c3a565a2bfe4d9582bf158f47c451a1da8847fb61fb217fcf7272",
+      "size": 3103314,
+      "folder": "Mapas/Mapas de Transição/Ruim/O amuleto na lama"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Ruim/O sentinela do desfiladeiro/O sentinela do desfiladeiro - Desfiladeiro de montanha - Noite.png",
+      "name": "O sentinela do desfiladeiro - Desfiladeiro de montanha - Noite.png",
+      "mime": "image/png",
+      "digest": "c359528eb7292d4b2d878c13aeede62fe7251b2d49355044374305bd7164e288",
+      "size": 3060643,
+      "folder": "Mapas/Mapas de Transição/Ruim/O sentinela do desfiladeiro"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Ruim/Entrega que não chegou/Entrega que não chegou - Viela urbana - Noite.png",
+      "name": "Entrega que não chegou - Viela urbana - Noite.png",
+      "mime": "image/png",
+      "digest": "3ed9ffc80b5f1a2f380e0f717a746e9d4a8ef5f0f52a303f4788ca479fa3ff50",
+      "size": 3003609,
+      "folder": "Mapas/Mapas de Transição/Ruim/Entrega que não chegou"
+    },
+    {
+      "source": "Mapas/Veldora/Valenca do Trilho/Posto da Guarda/Valença do Trilho - Posto da Guarda - Térreo e Andar Superior.png",
+      "name": "Valença do Trilho - Posto da Guarda - Térreo e Andar Superior.png",
+      "mime": "image/png",
+      "digest": "b1260a5f9508b90e2dd8f8357cf865cc13913766f94b02219368abc9cc3f559c",
+      "size": 2997282,
+      "folder": "Mapas/Veldora/Valenca do Trilho/Posto da Guarda"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Ótimo/Passarela dos moradores/Passarela dos moradores - Brejo - Noite.png",
+      "name": "Passarela dos moradores - Brejo - Noite.png",
+      "mime": "image/png",
+      "digest": "5c9e2c5c8229149717ff36b3c9409ad13e6fa378bceaa9e3ad849286a9df5f97",
+      "size": 2987370,
+      "folder": "Mapas/Mapas de Transição/Ótimo/Passarela dos moradores"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Médio/Fila do portão/Fila do portão - Portão urbano - Noite.png",
+      "name": "Fila do portão - Portão urbano - Noite.png",
+      "mime": "image/png",
+      "digest": "a25b85b0e3f9f80e67ebe92a2debd965ccc0d8480fa612f9c487bbf8bca68fb7",
+      "size": 2854890,
+      "folder": "Mapas/Mapas de Transição/Médio/Fila do portão"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Péssimo/Passagem que se desfaz/Passagem que se desfaz - Ruína suspensa - Noite.png",
+      "name": "Passagem que se desfaz - Ruína suspensa - Noite.png",
+      "mime": "image/png",
+      "digest": "cf36205691ef0e1fd3408a7321a43df26efabb2d7aa530b85630844e4379b12c",
+      "size": 2818970,
+      "folder": "Mapas/Mapas de Transição/Péssimo/Passagem que se desfaz"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Péssimo/Tempestade e catalisador rachado/Tempestade e catalisador rachado - Deserto em tempestade - Manhã.png",
+      "name": "Tempestade e catalisador rachado - Deserto em tempestade - Manhã.png",
+      "mime": "image/png",
+      "digest": "c6b3876bfb1a823cfe682821af942508ba3da958aec5872cff8863d67d6dd6a7",
+      "size": 2620220,
+      "folder": "Mapas/Mapas de Transição/Péssimo/Tempestade e catalisador rachado"
+    },
+    {
+      "source": "Mapas/Mapas de Transição/Ruim/O amuleto na lama/O amuleto na lama - Brejo lamacento - Noite.png",
+      "name": "O amuleto na lama - Brejo lamacento - Noite.png",
+      "mime": "image/png",
+      "digest": "474d8b8c48a659f5d63c754e8a223d56b084b1f0faf7c6062d92988fa030bbad",
+      "size": 2486120,
+      "folder": "Mapas/Mapas de Transição/Ruim/O amuleto na lama"
+    },
+    {
+      "source": "Mapas/Veldora/Stalla/Arredores da Guilda/Estalagem do Lampiao/Stalla - Estalagem do Lampião - Térreo e Andar Superior.png",
+      "name": "Stalla - Estalagem do Lampião - Térreo e Andar Superior.png",
+      "mime": "image/png",
+      "digest": "f39ec80475b5a6cac17d9e51230af4dd551e46db507cb9c6ae2a1ea53c97b0f0",
+      "size": 2460776,
+      "folder": "Mapas/Veldora/Stalla/Arredores da Guilda/Estalagem do Lampiao"
+    },
+    {
+      "source": "A_Ferida_que_Caminha_Materiais/ABRIR_MATERIAIS.html.txt",
+      "name": "ABRIR_MATERIAIS.html.txt",
+      "mime": "text/plain",
+      "digest": "24b60383042b7c2669162ccc22d8d9689d0d7b904e9275bc93f240b1bab7ad93",
+      "size": 3327,
+      "folder": "A_Ferida_que_Caminha_Materiais"
+    },
+    {
+      "source": "A_Ferida_que_Caminha_Materiais/Documentos_em_Imagem/Documento_01.png",
+      "name": "Documento_01.png",
+      "mime": "image/png",
+      "digest": "799f322b14b06761cee48a25eb07b9b33b95dae873bb6ee3fe91ea9eeebf256c",
+      "size": 3143531,
+      "folder": "Fazenda — entregar na contratação",
+      "title": "Ordem de serviço.png"
+    },
+    {
+      "source": "A_Ferida_que_Caminha_Materiais/Documentos_em_Imagem/Documento_02.png",
+      "name": "Documento_02.png",
+      "mime": "image/png",
+      "digest": "5aa7eb574c349f425f104d9824ec60d1aaace8a626acb85a42214cd2288c81a8",
+      "size": 3150214,
+      "folder": "Fazenda — caderno sobre a mesa",
+      "title": "Registro de ocorrências.png"
+    },
+    {
+      "source": "A_Ferida_que_Caminha_Materiais/Documentos_em_Imagem/Documento_03.png",
+      "name": "Documento_03.png",
+      "mime": "image/png",
+      "digest": "95081fa3327c78040033ef348eefe472af8253dbf32fc575a884edf169fa99f6",
+      "size": 3385397,
+      "folder": "Fazenda — investigação: sucesso grande",
+      "title": "Marcas no barro.png"
+    },
+    {
+      "source": "A_Ferida_que_Caminha_Materiais/Documentos_em_Imagem/Documento_04.png",
+      "name": "Documento_04.png",
+      "mime": "image/png",
+      "digest": "bb71cc2e3ec0188dddec20884dd89be26b0f434492bb6d22a95ea76753583587",
+      "size": 2998201,
+      "folder": "Fazenda — investigação: sucesso simples",
+      "title": "Passagem pelo celeiro.png"
+    },
+    {
+      "source": "A_Ferida_que_Caminha_Materiais/Documentos_em_Imagem/Documento_05.png",
+      "name": "Documento_05.png",
+      "mime": "image/png",
+      "digest": "41850b6a39cf3da030843e3355f37bf98894b114a275dd9151f7d95fb7edb80b",
+      "size": 2973373,
+      "folder": "Fazenda — investigação: fracasso",
+      "title": "Palha revolvida.png"
+    },
+    {
+      "source": "A_Ferida_que_Caminha_Materiais/Documentos_em_Imagem/Documento_06.png",
+      "name": "Documento_06.png",
+      "mime": "image/png",
+      "digest": "0a560ded02f46a3ef9661976552273ec58ca157284098b1ea860abed1bad207e",
+      "size": 3388461,
+      "folder": "Clareira — Nobreza: sucesso grande",
+      "title": "Fragmento interpretado.png"
+    },
+    {
+      "source": "A_Ferida_que_Caminha_Materiais/Documentos_em_Imagem/Documento_07.png",
+      "name": "Documento_07.png",
+      "mime": "image/png",
+      "digest": "2fd3a7096ebf38460890b78837eac00ff0d8199245bd00d807b08e4f626817b0",
+      "size": 3009348,
+      "folder": "Clareira — Nobreza: sucesso simples",
+      "title": "Fragmento interpretado.png"
+    },
+    {
+      "source": "A_Ferida_que_Caminha_Materiais/Documentos_em_Imagem/Documento_08.png",
+      "name": "Documento_08.png",
+      "mime": "image/png",
+      "digest": "229a93feb7113af6c5d6d07d1d0c35b20d79f9b992a19953098c72a91d90dd2b",
+      "size": 3072078,
+      "folder": "Clareira — Nobreza: fracasso",
+      "title": "Fragmento interpretado.png"
+    },
+    {
+      "source": "A_Ferida_que_Caminha_Materiais/Documentos_em_Imagem/Documento_09.png",
+      "name": "Documento_09.png",
+      "mime": "image/png",
+      "digest": "57b6e72192c552e7e7b35cfdf09eec06b23957b7641ba3f4b601a8b1493c2b84",
+      "size": 3896403,
+      "folder": "Clareira — fragmento junto às ruínas",
+      "title": "Marco de delimitação.png"
+    },
+    {
+      "source": "A_Ferida_que_Caminha_Materiais/Documentos_em_Imagem/Documento_10.png",
+      "name": "Documento_10.png",
+      "mime": "image/png",
+      "digest": "ba3f9dffaeb9810cba90403727b8d158daaca63e218e8ca625318bbadc861deb",
+      "size": 3023458,
+      "folder": "Caverna — placa antiga",
+      "title": "Inscrição na entrada.png"
+    },
+    {
+      "source": "A_Ferida_que_Caminha_Materiais/Documentos_em_Imagem/Documento_11.png",
+      "name": "Documento_11.png",
+      "mime": "image/png",
+      "digest": "acbf5abed81d39e985486f892f534400a26d71cc9c460a43fdffe06bacd7e8ff",
+      "size": 3190171,
+      "folder": "Recepção — visível sem teste",
+      "title": "Aviso de interdição.png"
+    },
+    {
+      "source": "A_Ferida_que_Caminha_Materiais/Documentos_em_Imagem/Documento_12.png",
+      "name": "Documento_12.png",
+      "mime": "image/png",
+      "digest": "7b3946a15472c6f9dd6530ac37f53da650091d00f99958b81673af69d47dd106",
+      "size": 2980602,
+      "folder": "Recepção — armário de ferramentas",
+      "title": "Registro de manutenção.png"
+    },
+    {
+      "source": "A_Ferida_que_Caminha_Materiais/Documentos_em_Imagem/Documento_13.png",
+      "name": "Documento_13.png",
+      "mime": "image/png",
+      "digest": "eb18d8968bf357f5d1c4f3f0e30cbf9743c203e053ef7e4c6e81d372519594ef",
+      "size": 3096234,
+      "folder": "Recepção — quadro de serviço",
+      "title": "Esquema de circulação.png"
+    },
+    {
+      "source": "A_Ferida_que_Caminha_Materiais/Documentos_em_Imagem/Documento_14.png",
+      "name": "Documento_14.png",
+      "mime": "image/png",
+      "digest": "416f0fc50a673bad9f7e162d73cb26bd36c924c66b50c3d41266af98beae9f41",
+      "size": 3306872,
+      "folder": "Central — arquivo técnico; cópia na pasta de vistoria",
+      "title": "Parecer de engenharia.png"
+    },
+    {
+      "source": "A_Ferida_que_Caminha_Materiais/Documentos_em_Imagem/Documento_15.png",
+      "name": "Documento_15.png",
+      "mime": "image/png",
+      "digest": "62b6abd3648af1078ad4f98044221e32332b54a50b3dcf9f1f9556e080407f94",
+      "size": 2973192,
+      "folder": "Recepção — gaveta administrativa",
+      "title": "Despacho de retirada.png"
+    },
+    {
+      "source": "A_Ferida_que_Caminha_Materiais/Documentos_em_Imagem/Documento_16.png",
+      "name": "Documento_16.png",
+      "mime": "image/png",
+      "digest": "c0c58b88b10063cb00efdca1b76fb7e9d74376f1f6733911868806ac48c537c8",
+      "size": 3317231,
+      "folder": "Central — pasta de correspondência retida",
+      "title": "Comprovante de petição.png"
+    },
+    {
+      "source": "A_Ferida_que_Caminha_Materiais/Documentos_em_Imagem/Documento_17.png",
+      "name": "Documento_17.png",
+      "mime": "image/png",
+      "digest": "55b6c5ce07edfa870be9af838782ec6bb153e6e968bd1c0419854eb3a80eea39",
+      "size": 2911567,
+      "folder": "Central — livro de pagamentos",
+      "title": "Movimento de caixa.png"
+    },
+    {
+      "source": "A_Ferida_que_Caminha_Materiais/Documentos_em_Imagem/Documento_18.png",
+      "name": "Documento_18.png",
+      "mime": "image/png",
+      "digest": "3f52e959127680e9d157abf058b5a7a623cadbf81960c32cc8f85fc3ba7173b7",
+      "size": 2847874,
+      "folder": "Central — envelope com documentos societários",
+      "title": "Declaração de participação.png"
+    },
+    {
+      "source": "A_Ferida_que_Caminha_Materiais/Documentos_em_Imagem/Documento_19.png",
+      "name": "Documento_19.png",
+      "mime": "image/png",
+      "digest": "e66ede21a766adc1cc47f069144877522484ecda195c24f1d272d3a652a3d3bc",
+      "size": 3125524,
+      "folder": "Central — cópia carbonada junto ao expediente",
+      "title": "Certidão de tramitação.png"
+    },
+    {
+      "source": "A_Ferida_que_Caminha_Materiais/Documentos_em_Imagem/Documento_20.png",
+      "name": "Documento_20.png",
+      "mime": "image/png",
+      "digest": "b8163567020551f71e7fbe01f9726c61dfc1bd9fef0a0d3fc73b5aa6c76e0a82",
+      "size": 3282309,
+      "folder": "Pátio — pasta de vistoria esquecida",
+      "title": "Bilhete de encaminhamento.png"
+    },
+    {
+      "source": "A_Ferida_que_Caminha_Materiais/Documentos_em_Imagem/Documento_21.png",
+      "name": "Documento_21.png",
+      "mime": "image/png",
+      "digest": "ade71d79024d5d43c59a0880ade21f74a3f06ac1245b86972a8dfc6ad1436c7f",
+      "size": 4047598,
+      "folder": "Ancoradouro — baixo-relevo de uso",
+      "title": "Instruções da pedra.png"
+    },
+    {
+      "source": "A_Ferida_que_Caminha_Materiais/Documentos_em_Imagem/Documento_22.png",
+      "name": "Documento_22.png",
+      "mime": "image/png",
+      "digest": "423c97a994abe126a724e487d133f2a5d428c098bb5b2d1a97254e60b902fe21",
+      "size": 3369104,
+      "folder": "Vila — entregue após conversa",
+      "title": "Relato de Maíra.png"
+    },
+    {
+      "source": "A_Ferida_que_Caminha_Materiais/Documentos_em_Imagem/Documento_23.png",
+      "name": "Documento_23.png",
+      "mime": "image/png",
+      "digest": "6e7c01ab66d5b5a8d900c953406cabccff874cf85509f29a66d1d986843f9cf9",
+      "size": 3027585,
+      "folder": "Vila — caderno comunitário",
+      "title": "Registro das moradas.png"
+    },
+    {
+      "source": "A_Ferida_que_Caminha_Materiais/Documentos_em_Imagem/Documento_24.png",
+      "name": "Documento_24.png",
+      "mime": "image/png",
+      "digest": "0375257ce37780ad8ce72510c6d18009e3e0d7195be4c0c22712892dba7c37dd",
+      "size": 3426925,
+      "folder": "Casa das Raízes — revelação da maldição",
+      "title": "Registro da escuta.png"
+    },
+    {
+      "source": "A_Ferida_que_Caminha_Materiais/Documentos_em_Imagem/Documento_25.png",
+      "name": "Documento_25.png",
+      "mime": "image/png",
+      "digest": "e2788aeac35cf67c124842fc0d99079b38b8e2a005f90cd1f40253ac478a037c",
+      "size": 3040055,
+      "folder": "Casa das Raízes — após confiança inicial",
+      "title": "Fragmento do vínculo.png"
+    },
+    {
+      "source": "A_Ferida_que_Caminha_Materiais/Documentos_em_Imagem/Documento_26.png",
+      "name": "Documento_26.png",
+      "mime": "image/png",
+      "digest": "1a955035e0647e3e77308b45bbadcf8cbf173024c011bd6958ccf73fd9eb1281",
+      "size": 3027472,
+      "folder": "Casa das Raízes — caderno de Iara",
+      "title": "Memória divergente.png"
+    },
+    {
+      "source": "A_Ferida_que_Caminha_Materiais/Documentos_em_Imagem/Documento_27.png",
+      "name": "Documento_27.png",
+      "mime": "image/png",
+      "digest": "01d89530b32f0acc25fb11b36f267d107550594a71b66bc34cab9690f1fdbe06",
+      "size": 2913204,
+      "folder": "Casa das Raízes — preencher na negociação",
+      "title": "Termo de compromisso.png"
+    },
+    {
+      "source": "A_Ferida_que_Caminha_Materiais/Documentos_em_Imagem/Documento_28.png",
+      "name": "Documento_28.png",
+      "mime": "image/png",
+      "digest": "a4032b6b421cf90d3843c4d46142e3c8a349c2a8ef37ba09c1b7c9bd6ffe0896",
+      "size": 3114191,
+      "folder": "Casa das Raízes — declaração apenas após acordo",
+      "title": "Retirada da sentença.png"
+    },
+    {
+      "source": "A_Ferida_que_Caminha_Materiais/Documentos_em_Imagem/Documento_29.png",
+      "name": "Documento_29.png",
+      "mime": "image/png",
+      "digest": "4bcfb04f5a1979a68b9e650e7614b2ad3bc64db024047d4ba727d5daad8f4bee",
+      "size": 3157295,
+      "folder": "Clareira — objeto cotidiano",
+      "title": "Achado entre as raízes.png"
+    },
+    {
+      "source": "A_Ferida_que_Caminha_Materiais/Imagens/01_Celeiro_fracasso.png",
+      "name": "01_Celeiro_fracasso.png",
+      "mime": "image/png",
+      "digest": "54face8066fa16b7fe8a4eb64181c53d8d7358a5740ec01d61d2c8e4c24e5b98",
+      "size": 3170636,
+      "folder": "A_Ferida_que_Caminha_Materiais/Imagens"
+    },
+    {
+      "source": "A_Ferida_que_Caminha_Materiais/Imagens/02_Celeiro_sucesso_simples.png",
+      "name": "02_Celeiro_sucesso_simples.png",
+      "mime": "image/png",
+      "digest": "91a0a64dbcec64b25867d4128000fcbb786976ba9b23ee39f13e234be34cc9fe",
+      "size": 3075135,
+      "folder": "A_Ferida_que_Caminha_Materiais/Imagens"
+    },
+    {
+      "source": "A_Ferida_que_Caminha_Materiais/Imagens/03_Celeiro_sucesso_grande.png",
+      "name": "03_Celeiro_sucesso_grande.png",
+      "mime": "image/png",
+      "digest": "f84ca38a9bd708a84d9a8e9efaaf9274c55bd19ee6e046f346461b845364f107",
+      "size": 3023203,
+      "folder": "A_Ferida_que_Caminha_Materiais/Imagens"
+    },
+    {
+      "source": "A_Ferida_que_Caminha_Materiais/Imagens/04_Floresta_fracasso.png",
+      "name": "04_Floresta_fracasso.png",
+      "mime": "image/png",
+      "digest": "c90644d47f35e579d0246a63c3d55bc75ea1bd62606227ad0bccccc7d5d2d802",
+      "size": 2088454,
+      "folder": "A_Ferida_que_Caminha_Materiais/Imagens"
+    },
+    {
+      "source": "A_Ferida_que_Caminha_Materiais/Imagens/05_Floresta_sucesso_simples.png",
+      "name": "05_Floresta_sucesso_simples.png",
+      "mime": "image/png",
+      "digest": "fb19e1a02c28442cd575c2d47f60445bc7079e252bdcc584dcfde1f8339dce18",
+      "size": 1855653,
+      "folder": "A_Ferida_que_Caminha_Materiais/Imagens"
+    },
+    {
+      "source": "A_Ferida_que_Caminha_Materiais/Imagens/06_Floresta_sucesso_grande.png",
+      "name": "06_Floresta_sucesso_grande.png",
+      "mime": "image/png",
+      "digest": "0e7c9e6752bb69afe0ddbb346824031fe53eaa8e24c2f1ea5af6c88ac09fe425",
+      "size": 2041071,
+      "folder": "A_Ferida_que_Caminha_Materiais/Imagens"
+    },
+    {
+      "source": "A_Ferida_que_Caminha_Materiais/Imagens/07_Marca.png",
+      "name": "07_Marca.png",
+      "mime": "image/png",
+      "digest": "e0e3f91a9c3554b139a8117c5d592b63bd7d5b5276b857af6addbe6187e6d720",
+      "size": 2416258,
+      "folder": "A_Ferida_que_Caminha_Materiais/Imagens"
+    },
+    {
+      "source": "A_Ferida_que_Caminha_Materiais/Imagens/08_Estacao_objetos.png",
+      "name": "08_Estacao_objetos.png",
+      "mime": "image/png",
+      "digest": "3beefc0d2e5cd3eea5b55547d90d2b224551fb12f00be5afca7ead59587646bc",
+      "size": 3200494,
+      "folder": "A_Ferida_que_Caminha_Materiais/Imagens"
+    },
+    {
+      "source": "A_Ferida_que_Caminha_Materiais/Imagens/09_Subida.png",
+      "name": "09_Subida.png",
+      "mime": "image/png",
+      "digest": "96f0658388e773b24da7c7f35bc58491b26cfc2eca7fba496ccb03f6bbfea7a9",
+      "size": 2597294,
+      "folder": "A_Ferida_que_Caminha_Materiais/Imagens"
+    },
+    {
+      "source": "A_Ferida_que_Caminha_Materiais/Imagens/10_Teaser.png",
+      "name": "10_Teaser.png",
+      "mime": "image/png",
+      "digest": "93b4504cc2f112553547afcc433f0b88a1f1f2ea4a5346aaaf6042d1ed7713c2",
+      "size": 1913036,
+      "folder": "A_Ferida_que_Caminha_Materiais/Imagens"
+    },
+    {
+      "source": "A_Ferida_que_Caminha_Materiais/Jogadores/Documento_01.html.txt",
+      "name": "Documento_01.html.txt",
+      "mime": "text/plain",
+      "digest": "a3fef2fe3caee51dff410bf986d3fa0bca46d9064c18363b1963033df7faf16b",
+      "size": 570,
+      "folder": "Fazenda — entregar na contratação",
+      "title": "Ordem de serviço.txt"
+    },
+    {
+      "source": "A_Ferida_que_Caminha_Materiais/Jogadores/Documento_01.txt",
+      "name": "Documento_01.txt",
+      "mime": "text/plain",
+      "digest": "21cc9309d1330c6f4f2e2bda04076667ed8fa3f77fa9b9b7b416b6b966836cda",
+      "size": 522,
+      "folder": "Fazenda — entregar na contratação",
+      "title": "Ordem de serviço.txt"
+    },
+    {
+      "source": "A_Ferida_que_Caminha_Materiais/Jogadores/Documento_02.html.txt",
+      "name": "Documento_02.html.txt",
+      "mime": "text/plain",
+      "digest": "f45b8eef690a4f12ecb7210f547a7ae833cd78b2da06a4750bd7df2c220fcf71",
+      "size": 471,
+      "folder": "Fazenda — caderno sobre a mesa",
+      "title": "Registro de ocorrências.txt"
+    },
+    {
+      "source": "A_Ferida_que_Caminha_Materiais/Jogadores/Documento_02.txt",
+      "name": "Documento_02.txt",
+      "mime": "text/plain",
+      "digest": "2e9b2ef68b9ec8aed08ec5577d32a7bcfbcd12e79e74a02e11d033ec338f4921",
+      "size": 416,
+      "folder": "Fazenda — caderno sobre a mesa",
+      "title": "Registro de ocorrências.txt"
+    },
+    {
+      "source": "A_Ferida_que_Caminha_Materiais/Jogadores/Documento_03.html.txt",
+      "name": "Documento_03.html.txt",
+      "mime": "text/plain",
+      "digest": "2fa352c4e2c8359adff1ea7c31c5540d512d731f3e4361acf3e09384c2dcbb15",
+      "size": 312,
+      "folder": "Fazenda — investigação: sucesso grande",
+      "title": "Marcas no barro.txt"
+    },
+    {
+      "source": "A_Ferida_que_Caminha_Materiais/Jogadores/Documento_03.txt",
+      "name": "Documento_03.txt",
+      "mime": "text/plain",
+      "digest": "b9e672e90021cea151cf584dbdad87ba270cdb3f3f7ec9b034a7f57c50981ff7",
+      "size": 266,
+      "folder": "Fazenda — investigação: sucesso grande",
+      "title": "Marcas no barro.txt"
+    },
+    {
+      "source": "A_Ferida_que_Caminha_Materiais/Jogadores/Documento_04.html.txt",
+      "name": "Documento_04.html.txt",
+      "mime": "text/plain",
+      "digest": "0858e058f3ad43c2cd0a5a1abaa2e7e3f3f21d2b7630f3eabf4bfa8c18b8e038",
+      "size": 216,
+      "folder": "Fazenda — investigação: sucesso simples",
+      "title": "Passagem pelo celeiro.txt"
+    },
+    {
+      "source": "A_Ferida_que_Caminha_Materiais/Jogadores/Documento_04.txt",
+      "name": "Documento_04.txt",
+      "mime": "text/plain",
+      "digest": "7d56818ca2cfa8ced1e8aa4f82faa59cea743cdb09ffe1aceae84138e036fb9d",
+      "size": 164,
+      "folder": "Fazenda — investigação: sucesso simples",
+      "title": "Passagem pelo celeiro.txt"
+    },
+    {
+      "source": "A_Ferida_que_Caminha_Materiais/Jogadores/Documento_05.html.txt",
+      "name": "Documento_05.html.txt",
+      "mime": "text/plain",
+      "digest": "092988ee2b163270c261b187c0dfe3edc1b8e8ff2c659184fa2a59cd63dd4697",
+      "size": 166,
+      "folder": "Fazenda — investigação: fracasso",
+      "title": "Palha revolvida.txt"
+    },
+    {
+      "source": "A_Ferida_que_Caminha_Materiais/Jogadores/Documento_05.txt",
+      "name": "Documento_05.txt",
+      "mime": "text/plain",
+      "digest": "a6edec9e6e44fc0dba0be86c078f648a176255687dd945cd0f6eee3f954f7263",
+      "size": 120,
+      "folder": "Fazenda — investigação: fracasso",
+      "title": "Palha revolvida.txt"
+    },
+    {
+      "source": "A_Ferida_que_Caminha_Materiais/Jogadores/Documento_06.html.txt",
+      "name": "Documento_06.html.txt",
+      "mime": "text/plain",
+      "digest": "cfcb1c1f7d5119e1354db7bba78e5687e3fc952fb6d4c0a7bfdbeb8d56d6eb5a",
+      "size": 247,
+      "folder": "Clareira — Nobreza: sucesso grande",
+      "title": "Fragmento interpretado.txt"
+    },
+    {
+      "source": "A_Ferida_que_Caminha_Materiais/Jogadores/Documento_06.txt",
+      "name": "Documento_06.txt",
+      "mime": "text/plain",
+      "digest": "d59265bc18760b2bf2e83197f34e5cdb7dd1e85a70d05854a5b74c609fca5537",
+      "size": 194,
+      "folder": "Clareira — Nobreza: sucesso grande",
+      "title": "Fragmento interpretado.txt"
+    },
+    {
+      "source": "A_Ferida_que_Caminha_Materiais/Jogadores/Documento_07.html.txt",
+      "name": "Documento_07.html.txt",
+      "mime": "text/plain",
+      "digest": "7ab81507a2c0847d80bb6e19d8bc8ac1ab729fad5ce91ba51de3da87a02d14ed",
+      "size": 119,
+      "folder": "Clareira — Nobreza: sucesso simples",
+      "title": "Fragmento interpretado.txt"
+    },
+    {
+      "source": "A_Ferida_que_Caminha_Materiais/Jogadores/Documento_07.txt",
+      "name": "Documento_07.txt",
+      "mime": "text/plain",
+      "digest": "14d0135eaba773084eadf0f38ed25ec23676488f07898c38424f8a1d8329e219",
+      "size": 66,
+      "folder": "Clareira — Nobreza: sucesso simples",
+      "title": "Fragmento interpretado.txt"
+    },
+    {
+      "source": "A_Ferida_que_Caminha_Materiais/Jogadores/Documento_08.html.txt",
+      "name": "Documento_08.html.txt",
+      "mime": "text/plain",
+      "digest": "2d23a56bb428d6a2249889f3a58838cc1b1d0023f1628a0fdc0984368567686c",
+      "size": 84,
+      "folder": "Clareira — Nobreza: fracasso",
+      "title": "Fragmento interpretado.txt"
+    },
+    {
+      "source": "A_Ferida_que_Caminha_Materiais/Jogadores/Documento_08.txt",
+      "name": "Documento_08.txt",
+      "mime": "text/plain",
+      "digest": "1f770ae351153517c4487dc6bc93e832341e079b701aab02d37648f3db59b597",
+      "size": 31,
+      "folder": "Clareira — Nobreza: fracasso",
+      "title": "Fragmento interpretado.txt"
+    },
+    {
+      "source": "A_Ferida_que_Caminha_Materiais/Jogadores/Documento_09.html.txt",
+      "name": "Documento_09.html.txt",
+      "mime": "text/plain",
+      "digest": "a29cf954f45fa6900972063f02e4e332fbe06b92a4463e8a5e277d787faa1d50",
+      "size": 284,
+      "folder": "Clareira — fragmento junto às ruínas",
+      "title": "Marco de delimitação.txt"
+    },
+    {
+      "source": "A_Ferida_que_Caminha_Materiais/Jogadores/Documento_09.txt",
+      "name": "Documento_09.txt",
+      "mime": "text/plain",
+      "digest": "659eede555cb6de6c4c601832080e551ceca24a55a9b1ce9e2f3b03cc704bb65",
+      "size": 231,
+      "folder": "Clareira — fragmento junto às ruínas",
+      "title": "Marco de delimitação.txt"
+    },
+    {
+      "source": "A_Ferida_que_Caminha_Materiais/Jogadores/Documento_10.html.txt",
+      "name": "Documento_10.html.txt",
+      "mime": "text/plain",
+      "digest": "75086dbe6f9f3022469c9a3e385478ac91f6ea5a90620efa3499f4112ff48ca8",
+      "size": 206,
+      "folder": "Caverna — placa antiga",
+      "title": "Inscrição na entrada.txt"
+    },
+    {
+      "source": "A_Ferida_que_Caminha_Materiais/Jogadores/Documento_10.txt",
+      "name": "Documento_10.txt",
+      "mime": "text/plain",
+      "digest": "8ebff2f26f36b6af194a34c0a55e4fbbd3db2a69299e6ccc29d656de7bb20ab9",
+      "size": 153,
+      "folder": "Caverna — placa antiga",
+      "title": "Inscrição na entrada.txt"
+    },
+    {
+      "source": "A_Ferida_que_Caminha_Materiais/Jogadores/Documento_11.html.txt",
+      "name": "Documento_11.html.txt",
+      "mime": "text/plain",
+      "digest": "632892697f4e3f28e1011db5bc43a5e2873ea141fbc0e5ab3692b3c2ef8aac94",
+      "size": 541,
+      "folder": "Recepção — visível sem teste",
+      "title": "Aviso de interdição.txt"
+    },
+    {
+      "source": "A_Ferida_que_Caminha_Materiais/Jogadores/Documento_11.txt",
+      "name": "Documento_11.txt",
+      "mime": "text/plain",
+      "digest": "baf90826ad47f357f6ebceb610569d77f4d99391183471562552132ca2349c04",
+      "size": 489,
+      "folder": "Recepção — visível sem teste",
+      "title": "Aviso de interdição.txt"
+    },
+    {
+      "source": "A_Ferida_que_Caminha_Materiais/Jogadores/Documento_12.html.txt",
+      "name": "Documento_12.html.txt",
+      "mime": "text/plain",
+      "digest": "613adb8d693fea8e6d87ef9ec63268102644d882e99b26fe3bf303420f309459",
+      "size": 496,
+      "folder": "Recepção — armário de ferramentas",
+      "title": "Registro de manutenção.txt"
+    },
+    {
+      "source": "A_Ferida_que_Caminha_Materiais/Jogadores/Documento_12.txt",
+      "name": "Documento_12.txt",
+      "mime": "text/plain",
+      "digest": "875cb71a8b1d25d9fca05f10b14dc354db1949536a1c5007c206ac1bd7877c0f",
+      "size": 441,
+      "folder": "Recepção — armário de ferramentas",
+      "title": "Registro de manutenção.txt"
+    },
+    {
+      "source": "A_Ferida_que_Caminha_Materiais/Jogadores/Documento_13.html.txt",
+      "name": "Documento_13.html.txt",
+      "mime": "text/plain",
+      "digest": "2acfde67026996b994141f955af4883ea6239573311667422545222744a6fefb",
+      "size": 405,
+      "folder": "Recepção — quadro de serviço",
+      "title": "Esquema de circulação.txt"
+    },
+    {
+      "source": "A_Ferida_que_Caminha_Materiais/Jogadores/Documento_13.txt",
+      "name": "Documento_13.txt",
+      "mime": "text/plain",
+      "digest": "e77cc748b792a9e5b1831cabeeace743cb128ba571688bac7a1fef581410da7b",
+      "size": 351,
+      "folder": "Recepção — quadro de serviço",
+      "title": "Esquema de circulação.txt"
+    },
+    {
+      "source": "A_Ferida_que_Caminha_Materiais/Jogadores/Documento_14.html.txt",
+      "name": "Documento_14.html.txt",
+      "mime": "text/plain",
+      "digest": "926ba8b51879c28b2d1b4569ee3cda13e7121d280285d4b2c98673e95c3cf6f1",
+      "size": 584,
+      "folder": "Central — arquivo técnico; cópia na pasta de vistoria",
+      "title": "Parecer de engenharia.txt"
+    },
+    {
+      "source": "A_Ferida_que_Caminha_Materiais/Jogadores/Documento_14.txt",
+      "name": "Documento_14.txt",
+      "mime": "text/plain",
+      "digest": "9288497a02d1dbcee643f37bdce587680130895a2c61def4498861148ead97f8",
+      "size": 532,
+      "folder": "Central — arquivo técnico; cópia na pasta de vistoria",
+      "title": "Parecer de engenharia.txt"
+    },
+    {
+      "source": "A_Ferida_que_Caminha_Materiais/Jogadores/Documento_15.html.txt",
+      "name": "Documento_15.html.txt",
+      "mime": "text/plain",
+      "digest": "95c04e4010e120a5d38bc28b601f8ed8c1cfcca46c3d2ca3397c981b719628c4",
+      "size": 553,
+      "folder": "Recepção — gaveta administrativa",
+      "title": "Despacho de retirada.txt"
+    },
+    {
+      "source": "A_Ferida_que_Caminha_Materiais/Jogadores/Documento_15.txt",
+      "name": "Documento_15.txt",
+      "mime": "text/plain",
+      "digest": "0fccb12b82183a389d687845356f6bd3adaecec3bb276c4faaaed1b7d9110e8e",
+      "size": 502,
+      "folder": "Recepção — gaveta administrativa",
+      "title": "Despacho de retirada.txt"
+    },
+    {
+      "source": "A_Ferida_que_Caminha_Materiais/Jogadores/Documento_16.html.txt",
+      "name": "Documento_16.html.txt",
+      "mime": "text/plain",
+      "digest": "2a79ab600e34601998818f74675d3984ffc353fce0a1d4370df6bad28da15b8c",
+      "size": 522,
+      "folder": "Central — pasta de correspondência retida",
+      "title": "Comprovante de petição.txt"
+    },
+    {
+      "source": "A_Ferida_que_Caminha_Materiais/Jogadores/Documento_16.txt",
+      "name": "Documento_16.txt",
+      "mime": "text/plain",
+      "digest": "28d0a9992e329d4e7edd0a912f4a4ebe9358cbce504cab56319c905a61a13239",
+      "size": 467,
+      "folder": "Central — pasta de correspondência retida",
+      "title": "Comprovante de petição.txt"
+    },
+    {
+      "source": "A_Ferida_que_Caminha_Materiais/Jogadores/Documento_17.html.txt",
+      "name": "Documento_17.html.txt",
+      "mime": "text/plain",
+      "digest": "4748a1d168b2d3abac73f7a275509165a7a6a5716a3c8744c15df6f16976a04e",
+      "size": 443,
+      "folder": "Central — livro de pagamentos",
+      "title": "Movimento de caixa.txt"
+    },
+    {
+      "source": "A_Ferida_que_Caminha_Materiais/Jogadores/Documento_17.txt",
+      "name": "Documento_17.txt",
+      "mime": "text/plain",
+      "digest": "923b0436eabe5bff687fdde44221dea1e874e62656b9b3c0f8c672da56845c18",
+      "size": 394,
+      "folder": "Central — livro de pagamentos",
+      "title": "Movimento de caixa.txt"
+    },
+    {
+      "source": "A_Ferida_que_Caminha_Materiais/Jogadores/Documento_18.html.txt",
+      "name": "Documento_18.html.txt",
+      "mime": "text/plain",
+      "digest": "fb58d8a8ccf24bc6b3fbfd6de7246174f7cfb04a45658708c1267f26d536dff5",
+      "size": 424,
+      "folder": "Central — envelope com documentos societários",
+      "title": "Declaração de participação.txt"
+    },
+    {
+      "source": "A_Ferida_que_Caminha_Materiais/Jogadores/Documento_18.txt",
+      "name": "Documento_18.txt",
+      "mime": "text/plain",
+      "digest": "0be172d3b0beeffdee0c8f73d207c661214f8c1374fce078420944fbadf881b3",
+      "size": 363,
+      "folder": "Central — envelope com documentos societários",
+      "title": "Declaração de participação.txt"
+    },
+    {
+      "source": "A_Ferida_que_Caminha_Materiais/Jogadores/Documento_19.html.txt",
+      "name": "Documento_19.html.txt",
+      "mime": "text/plain",
+      "digest": "51ee8c10235823e65ca886d50fdf8d5c1efcc7512a49fb48357366142cbb3acd",
+      "size": 530,
+      "folder": "Central — cópia carbonada junto ao expediente",
+      "title": "Certidão de tramitação.txt"
+    },
+    {
+      "source": "A_Ferida_que_Caminha_Materiais/Jogadores/Documento_19.txt",
+      "name": "Documento_19.txt",
+      "mime": "text/plain",
+      "digest": "72e9ec6c95b8c47fd659fdbf0613f549c7b8548d2396e81854147baaa099858a",
+      "size": 474,
+      "folder": "Central — cópia carbonada junto ao expediente",
+      "title": "Certidão de tramitação.txt"
+    },
+    {
+      "source": "A_Ferida_que_Caminha_Materiais/Jogadores/Documento_20.html.txt",
+      "name": "Documento_20.html.txt",
+      "mime": "text/plain",
+      "digest": "80cda39044091663f9d23f91bb1e74415f85a045f18856c449536ab7ced0396b",
+      "size": 369,
+      "folder": "Pátio — pasta de vistoria esquecida",
+      "title": "Bilhete de encaminhamento.txt"
+    },
+    {
+      "source": "A_Ferida_que_Caminha_Materiais/Jogadores/Documento_20.txt",
+      "name": "Documento_20.txt",
+      "mime": "text/plain",
+      "digest": "29ab636f68a6eafdc09fb2c587148fc324891048201aba6fe0e8cea687d3d2ec",
+      "size": 313,
+      "folder": "Pátio — pasta de vistoria esquecida",
+      "title": "Bilhete de encaminhamento.txt"
+    },
+    {
+      "source": "A_Ferida_que_Caminha_Materiais/Jogadores/Documento_21.html.txt",
+      "name": "Documento_21.html.txt",
+      "mime": "text/plain",
+      "digest": "c28ec64ea9e12bed0948e0c27f97b2d2a7a34244d1f011df44517e77a13aacb5",
+      "size": 228,
+      "folder": "Ancoradouro — baixo-relevo de uso",
+      "title": "Instruções da pedra.txt"
+    },
+    {
+      "source": "A_Ferida_que_Caminha_Materiais/Jogadores/Documento_21.txt",
+      "name": "Documento_21.txt",
+      "mime": "text/plain",
+      "digest": "f12cd145cce40140d466a0a9a39ba93548bb661ee2149895876c1c611c301cdc",
+      "size": 176,
+      "folder": "Ancoradouro — baixo-relevo de uso",
+      "title": "Instruções da pedra.txt"
+    },
+    {
+      "source": "A_Ferida_que_Caminha_Materiais/Jogadores/Documento_22.html.txt",
+      "name": "Documento_22.html.txt",
+      "mime": "text/plain",
+      "digest": "e66e71f01524255b8c3e1744006e169048d4603dfb650cb1b4ef13428382898e",
+      "size": 396,
+      "folder": "Vila — entregue após conversa",
+      "title": "Relato de Maíra.txt"
+    },
+    {
+      "source": "A_Ferida_que_Caminha_Materiais/Jogadores/Documento_22.txt",
+      "name": "Documento_22.txt",
+      "mime": "text/plain",
+      "digest": "45840eb5ae08f1b06670baebb162c64749a059ed9469f346a1e4cae672a6010e",
+      "size": 349,
+      "folder": "Vila — entregue após conversa",
+      "title": "Relato de Maíra.txt"
+    },
+    {
+      "source": "A_Ferida_que_Caminha_Materiais/Jogadores/Documento_23.html.txt",
+      "name": "Documento_23.html.txt",
+      "mime": "text/plain",
+      "digest": "d78cb75206aac5cd790b8cacf6edbb2bd338525ee449ee10f40414f8270f31e2",
+      "size": 470,
+      "folder": "Vila — caderno comunitário",
+      "title": "Registro das moradas.txt"
+    },
+    {
+      "source": "A_Ferida_que_Caminha_Materiais/Jogadores/Documento_23.txt",
+      "name": "Documento_23.txt",
+      "mime": "text/plain",
+      "digest": "b359bfa546e50be1b41fd2425cc63267a14b665c2dd7321605a1afe1c86f1e82",
+      "size": 419,
+      "folder": "Vila — caderno comunitário",
+      "title": "Registro das moradas.txt"
+    },
+    {
+      "source": "A_Ferida_que_Caminha_Materiais/Jogadores/Documento_24.html.txt",
+      "name": "Documento_24.html.txt",
+      "mime": "text/plain",
+      "digest": "6be8770a491412b7add65d84c79052a79c0d5f7bc2dc223d690bf533e0208193",
+      "size": 342,
+      "folder": "Casa das Raízes — revelação da maldição",
+      "title": "Registro da escuta.txt"
+    },
+    {
+      "source": "A_Ferida_que_Caminha_Materiais/Jogadores/Documento_24.txt",
+      "name": "Documento_24.txt",
+      "mime": "text/plain",
+      "digest": "c00c60a4ccf121f0d8ebc7cc224bc51929c8d80fcf800dd487c134d2dc0c2a60",
+      "size": 293,
+      "folder": "Casa das Raízes — revelação da maldição",
+      "title": "Registro da escuta.txt"
+    },
+    {
+      "source": "A_Ferida_que_Caminha_Materiais/Jogadores/Documento_25.html.txt",
+      "name": "Documento_25.html.txt",
+      "mime": "text/plain",
+      "digest": "6e94bdcbbbe8b717d372a5dab37301cb385cc3c3ccb9a1aa77c6a2c0a8bf43f0",
+      "size": 346,
+      "folder": "Casa das Raízes — após confiança inicial",
+      "title": "Fragmento do vínculo.txt"
+    },
+    {
+      "source": "A_Ferida_que_Caminha_Materiais/Jogadores/Documento_25.txt",
+      "name": "Documento_25.txt",
+      "mime": "text/plain",
+      "digest": "9559de592b60e675f93348e96cfe73cca63b64449699e6d3639b085e711502a4",
+      "size": 294,
+      "folder": "Casa das Raízes — após confiança inicial",
+      "title": "Fragmento do vínculo.txt"
+    },
+    {
+      "source": "A_Ferida_que_Caminha_Materiais/Jogadores/Documento_26.html.txt",
+      "name": "Documento_26.html.txt",
+      "mime": "text/plain",
+      "digest": "4bec7a2d2a21d6167e94de37a43c33f7bddd0f86622993f2d653355324df6e13",
+      "size": 372,
+      "folder": "Casa das Raízes — caderno de Iara",
+      "title": "Memória divergente.txt"
+    },
+    {
+      "source": "A_Ferida_que_Caminha_Materiais/Jogadores/Documento_26.txt",
+      "name": "Documento_26.txt",
+      "mime": "text/plain",
+      "digest": "dabf98e6a1ae73244f37c22f3cc8afd735c0af3905423ed7d943203ea61299f0",
+      "size": 322,
+      "folder": "Casa das Raízes — caderno de Iara",
+      "title": "Memória divergente.txt"
+    },
+    {
+      "source": "A_Ferida_que_Caminha_Materiais/Jogadores/Documento_27.html.txt",
+      "name": "Documento_27.html.txt",
+      "mime": "text/plain",
+      "digest": "5a86e424e9e20afc636d94a0d968ee144bf39081a20cbf6092fa41d65bba2470",
+      "size": 685,
+      "folder": "Casa das Raízes — preencher na negociação",
+      "title": "Termo de compromisso.txt"
+    },
+    {
+      "source": "A_Ferida_que_Caminha_Materiais/Jogadores/Documento_27.txt",
+      "name": "Documento_27.txt",
+      "mime": "text/plain",
+      "digest": "d5b6bf6c4dff256b2e7c4020491d0e376157b632874301ecbe6b367a3e763028",
+      "size": 634,
+      "folder": "Casa das Raízes — preencher na negociação",
+      "title": "Termo de compromisso.txt"
+    },
+    {
+      "source": "A_Ferida_que_Caminha_Materiais/Jogadores/Documento_28.html.txt",
+      "name": "Documento_28.html.txt",
+      "mime": "text/plain",
+      "digest": "4f692f8f793c97b03ef6e45c13a00a948f4c8f2838ceb8274556823ec85d0c80",
+      "size": 326,
+      "folder": "Casa das Raízes — declaração apenas após acordo",
+      "title": "Retirada da sentença.txt"
+    },
+    {
+      "source": "A_Ferida_que_Caminha_Materiais/Jogadores/Documento_28.txt",
+      "name": "Documento_28.txt",
+      "mime": "text/plain",
+      "digest": "f3e2ce45e1d1afa5d98200499e4d4a7c7e00aa830923b5b058ba2634a3510d2b",
+      "size": 274,
+      "folder": "Casa das Raízes — declaração apenas após acordo",
+      "title": "Retirada da sentença.txt"
+    },
+    {
+      "source": "A_Ferida_que_Caminha_Materiais/Jogadores/Documento_29.html.txt",
+      "name": "Documento_29.html.txt",
+      "mime": "text/plain",
+      "digest": "34384ff6f56b7109b8804af2e4f5f66eeeb23c4bd4936746401af3527c2970cb",
+      "size": 220,
+      "folder": "Clareira — objeto cotidiano",
+      "title": "Achado entre as raízes.txt"
+    },
+    {
+      "source": "A_Ferida_que_Caminha_Materiais/Jogadores/Documento_29.txt",
+      "name": "Documento_29.txt",
+      "mime": "text/plain",
+      "digest": "325fce547f609bb70a65c56bf6f3971b1c4f9648277d7a7a245de9b2e982eb1c",
+      "size": 166,
+      "folder": "Clareira — objeto cotidiano",
+      "title": "Achado entre as raízes.txt"
+    },
+    {
+      "source": "A_Ferida_que_Caminha_Materiais/LEIA_ME.txt",
+      "name": "LEIA_ME.txt",
+      "mime": "text/plain",
+      "digest": "dc6136dc0f12d6c45bd17fcd612e6bc1e15f22158d2718661f257a253514f6c0",
+      "size": 1138,
+      "folder": "A_Ferida_que_Caminha_Materiais"
+    },
+    {
+      "source": "A_Ferida_que_Caminha_Materiais/Mestre/Cartoes_de_controle.html.txt",
+      "name": "Cartoes_de_controle.html.txt",
+      "mime": "text/plain",
+      "digest": "1c7ca493705df11b8ca6ce63f4f5a02e6fc7c40e9515c0cc985866338a40199b",
+      "size": 1371,
+      "folder": "A_Ferida_que_Caminha_Materiais/Mestre"
+    },
+    {
+      "source": "A_Ferida_que_Caminha_Materiais/Mestre/Guia_do_Mestre.html.txt",
+      "name": "Guia_do_Mestre.html.txt",
+      "mime": "text/plain",
+      "digest": "fecd54854ae942b43d8a24dcc5691e37ace2f74299c9948483665c26dbfdede4",
+      "size": 22519,
+      "folder": "A_Ferida_que_Caminha_Materiais/Mestre"
+    },
+    {
+      "source": "A_Ferida_que_Caminha_Materiais/Mestre/Guia_do_Mestre.md",
+      "name": "Guia_do_Mestre.md",
+      "mime": "text/plain",
+      "digest": "f88323ae840d470cd061d36efb71ef02486363342b8ef04fd7eb32ec9986b7a5",
+      "size": 22962,
+      "folder": "A_Ferida_que_Caminha_Materiais/Mestre"
+    },
+    {
+      "source": "A_Ferida_que_Caminha_Materiais/Mestre/Todos_os_documentos.html.txt",
+      "name": "Todos_os_documentos.html.txt",
+      "mime": "text/plain",
+      "digest": "8eacc6040caeaf78a1d653285489b56eb266693c4e1cbf002aa44cd63512e898",
+      "size": 9756,
+      "folder": "A_Ferida_que_Caminha_Materiais/Mestre"
+    },
+    {
+      "source": "Estigma_do_Caos_Ficha_Editavel_corrigida.pdf",
+      "name": "Estigma_do_Caos_Ficha_Editavel_corrigida.pdf",
+      "mime": "application/pdf",
+      "digest": "ac077d9e3b50680ec80397bf099836cbde82c005360478959f75fbe001ba082c",
+      "size": 1030333,
+      "folder": "."
+    }
+  ]
+}

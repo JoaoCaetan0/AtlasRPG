@@ -1,0 +1,259 @@
+[
+  {
+    "id": "acuado",
+    "name": "Acuado",
+    "icon": "⚑",
+    "color": "#ad86dc",
+    "description": "O instinto desperta diante de uma ameaça que parece impossível de enfrentar. A criatura se sente cercada e busca desesperadamente uma saída.\n\nEfeito: -1d20 (Desvantagem) em todo teste de ataque, seu dano reduz em dois passos e você recebe -5 em testes de Vontade. Entretanto, ganha +1d20 (Vantagem) em testes de fuga, manobra ou Reflexos e passa a somar sua FOR na defesa.",
+    "page": 65,
+    "source": "Canva · Estigma do Caos - Ebook · Condições"
+  },
+  {
+    "id": "assustado",
+    "name": "Assustado",
+    "icon": "!",
+    "color": "#b490d1",
+    "description": "O medo toma conta do corpo e da mente, fazendo até mesmo os mais corajosos hesitarem diante do perigo.\n\nEfeito: -5 em testes de Vontade, -1 em CAR e FOR. Em combate, -3 em testes de luta. Duração variável",
+    "page": 65,
+    "source": "Canva · Estigma do Caos - Ebook · Condições"
+  },
+  {
+    "id": "atordoado",
+    "name": "Atordoado",
+    "icon": "↯",
+    "color": "#e3a154",
+    "description": "Um impacto, fenômeno ou choque violento perturba seus sentidos e dificulta sua capacidade de reagir.\n\nEfeito: Fortitude (CD 15) todo turno. Se falhar, perde sua ação padrão. Falhar duas vezes seguidas causa Derrubado. Duração = 1d6 turnos.",
+    "page": 65,
+    "source": "Canva · Estigma do Caos - Ebook · Condições"
+  },
+  {
+    "id": "confuso",
+    "name": "Confuso",
+    "icon": "?",
+    "color": "#b49bd7",
+    "description": "Seus pensamentos se embaralham e sua percepção da realidade deixa de acompanhar o que acontece ao seu redor.\n\nEfeito: -1 em INT e CAR por 1d6 turnos.",
+    "page": 65,
+    "source": "Canva · Estigma do Caos - Ebook · Condições"
+  },
+  {
+    "id": "congelamento",
+    "name": "Congelamento",
+    "icon": "❄",
+    "color": "#72bedc",
+    "description": "O frio sobrenatural toma seu corpo, endurecendo músculos e movimentos enquanto o gelo se espalha por sua superfície.\n\nEfeito: Fica incapaz de agir por 1d4 turnos e toma um dado adicional em todos os danos que sofrer.",
+    "page": 65,
+    "source": "Canva · Estigma do Caos - Ebook · Condições"
+  },
+  {
+    "id": "corrosao",
+    "name": "Corrosão",
+    "icon": "☣",
+    "color": "#9fbc58",
+    "description": "A matéria que compõe seu corpo ou equipamento começa a se degradar por uma força corrosiva.\n\nEfeito: A defesa da sua armadura é reduzida pela metade e você recebe 2d6 + 2 de dano todo turno enquanto usar a armadura. Remover e limpar é o único jeito de parar a corrosão sem perder seu equipamento.",
+    "page": 65,
+    "source": "Canva · Estigma do Caos - Ebook · Condições"
+  },
+  {
+    "id": "danificado",
+    "name": "Danificado",
+    "icon": "⚒",
+    "color": "#aa9b82",
+    "description": "Sua estrutura foi comprometida. Máquinas, autômatos e outros mecanismos passam a funcionar de maneira limitada ou instável.\n\nEfeito: Teste de Engenharia (CD 18) para usar o equipamento danificado. Se falhar, ele quebra.",
+    "page": 65,
+    "source": "Canva · Estigma do Caos - Ebook · Condições"
+  },
+  {
+    "id": "debilitado",
+    "name": "Debilitado",
+    "icon": "−",
+    "color": "#dba775",
+    "description": "Ferimentos ou efeitos persistentes reduziram sua capacidade de lutar, deixando seu corpo aquém de suas condições normais.\n\nEfeito: Esta condição acumula estágios: I: -1 em FOR, DES e CON; II: todos os problemas anteriores e perde uma ação; III: -2 em FOR, CON e DES, e Sangramento.",
+    "page": 65,
+    "source": "Canva · Estigma do Caos - Ebook · Condições",
+    "maxStage": 3
+  },
+  {
+    "id": "derrubado",
+    "name": "Derrubado",
+    "icon": "↘",
+    "color": "#af9683",
+    "description": "Você perdeu o equilíbrio ou foi lançado ao chão, ficando vulnerável enquanto tenta recuperar sua posição.\n\nEfeito: Perde uma ação de movimento para se levantar. Enquanto estiver caído, recebe -5 na defesa e não pode reagir.",
+    "page": 65,
+    "source": "Canva · Estigma do Caos - Ebook · Condições"
+  },
+  {
+    "id": "distraido",
+    "name": "Distraído",
+    "icon": "◎",
+    "color": "#9ab4d0",
+    "description": "Sua atenção foi desviada por algum acontecimento, ameaça ou estímulo, dificultando a percepção do que realmente importa.\n\nEfeito: -1 em INT e DES. Perde sua reação.",
+    "page": 65,
+    "source": "Canva · Estigma do Caos - Ebook · Condições"
+  },
+  {
+    "id": "eletrificado",
+    "name": "Eletrificado",
+    "icon": "⚡",
+    "color": "#e3d260",
+    "description": "Energia elétrica percorre seu corpo em descargas irregulares, afetando seus movimentos e sentidos.\n\nEfeito: Solta o item da sua mão e um item aleatório no seu inventário e receba -1 em DES e FOR por 1d4 turnos. Se estiver Molhado, o efeito se propaga para quem estiver em alcance curto de você, causando 1d8 de dano adicional por propagação.",
+    "page": 66,
+    "source": "Canva · Estigma do Caos - Ebook · Condições"
+  },
+  {
+    "id": "envenenado",
+    "name": "Envenenado",
+    "icon": "☠",
+    "color": "#8cb867",
+    "description": "Uma substância nociva percorre seu organismo, causando efeitos que podem se intensificar com o tempo.\n\nEfeito: Acumula estágios: I: 1d4 de dano por 2d6 +2 turnos; II: dano passa para 2d8 + 3 com duração permanente até ser curado e -1 em CON; III: dano passa para 2d10 + 5 e fica Confuso (Deus te proteja disso).",
+    "page": 66,
+    "source": "Canva · Estigma do Caos - Ebook · Condições",
+    "maxStage": 3
+  },
+  {
+    "id": "exausto",
+    "name": "Exausto",
+    "icon": "⌛",
+    "color": "#9f9cad",
+    "description": "Seu corpo e sua mente foram levados além de seus limites. Cada movimento exige um esforço que antes seria desnecessário.\n\nEfeito: -1 em todos os atributos. Seu gasto de PD fica limitado a CAR + CON por turno. Perde 1 ação todo turno. Duração: Cena.",
+    "page": 66,
+    "source": "Canva · Estigma do Caos - Ebook · Condições"
+  },
+  {
+    "id": "fragilizado",
+    "name": "Fragilizado",
+    "icon": "◇",
+    "color": "#df9898",
+    "description": "Sua resistência foi comprometida e seu corpo se tornou mais suscetível a sofrer consequências de novos ataques.\n\nEfeito: -1 em CON e receba + 2 dados de dano em todo golpe que sofrer.",
+    "page": 66,
+    "source": "Canva · Estigma do Caos - Ebook · Condições"
+  },
+  {
+    "id": "imobilizado",
+    "name": "Imobilizado",
+    "icon": "⛓",
+    "color": "#a2a9b9",
+    "description": "Alguma força impede completamente ou dificulta severamente seus movimentos, mantendo-o preso ao lugar.\n\nEfeito: Custa uma ação completa para tentar se soltar. Teste variável.",
+    "page": 66,
+    "source": "Canva · Estigma do Caos - Ebook · Condições"
+  },
+  {
+    "id": "instabilidade",
+    "name": "Instabilidade",
+    "icon": "≋",
+    "color": "#bb7ed1",
+    "description": "A influência do Caos atravessa sua existência de forma irregular. Algo em você deixou de obedecer completamente às regras que deveria seguir.\n\nEfeito: -1 em todos os atributos. Passa a exigir 1 de PD para toda ação que não custe nada e aumenta em 2 o custo de todas as ações que normalmente usem PD.",
+    "page": 66,
+    "source": "Canva · Estigma do Caos - Ebook · Condições"
+  },
+  {
+    "id": "lesao",
+    "name": "Lesão",
+    "icon": "✖",
+    "color": "#d27676",
+    "description": "Um ferimento significativo comprometeu uma parte específica do seu corpo, deixando uma marca que pode afetar suas capacidades.\n\nEfeito: Acumula estágios: I: Perde a funcionalidade do membro atingido pela Cena II: Dano irreparável no seu membro causa Sangramento; III:  -2 em CON e DES.",
+    "page": 66,
+    "source": "Canva · Estigma do Caos - Ebook · Condições",
+    "maxStage": 3
+  },
+  {
+    "id": "mavontade",
+    "name": "Má-Vontade",
+    "icon": "⊘",
+    "color": "#a893bf",
+    "description": "Uma frustração, ofensa ou acontecimento desagradável desperta uma forte resistência em você. Sua disposição para agir foi profundamente afetada.\n\nEfeito: -1 em CAR e -5 em testes de perícia.",
+    "page": 66,
+    "source": "Canva · Estigma do Caos - Ebook · Condições"
+  },
+  {
+    "id": "molhado",
+    "name": "Molhado",
+    "icon": "≈",
+    "color": "#6faed5",
+    "description": "Seu corpo ou equipamento está encharcado, seja por água ou outro líquido, alterando a forma como interage com o ambiente.\n\nEfeito: -3 em testes de Acrobacia e Atletismo. Interage com Eletrificado.",
+    "page": 66,
+    "source": "Canva · Estigma do Caos - Ebook · Condições"
+  },
+  {
+    "id": "moral",
+    "name": "Moral",
+    "icon": "⚐",
+    "color": "#c7a582",
+    "description": "Sua disposição emocional foi alterada por acontecimentos capazes de fortalecer ou abalar seu espírito.\n\nEfeito: -1 em CAR, INT e -2 em testes de perícia.",
+    "page": 66,
+    "source": "Canva · Estigma do Caos - Ebook · Condições"
+  },
+  {
+    "id": "pasmo",
+    "name": "Pasmo",
+    "icon": "◌",
+    "color": "#d7c475",
+    "description": "Por um instante, sua mente parece parar. O choque ou a surpresa interrompem sua capacidade de reagir normalmente.\n\nEfeito: Defesa zerada e sem ação por 1 turno.",
+    "page": 66,
+    "source": "Canva · Estigma do Caos - Ebook · Condições"
+  },
+  {
+    "id": "queimadura",
+    "name": "Queimadura",
+    "icon": "♨",
+    "color": "#ee8049",
+    "description": "Calor intenso ou energia agressiva danificou seu corpo, deixando uma ferida que continua ardendo após o impacto inicial.\n\nEfeito: Acumula estágios: I: 2d6 de dano por 1d6 turnos; II: 3d8 de dano por 1d6 + 2 turnos. III: 4d10 de dano por 1d6 + 3 turnos e não pode ser apagado.",
+    "page": 66,
+    "source": "Canva · Estigma do Caos - Ebook · Condições",
+    "maxStage": 3
+  },
+  {
+    "id": "sangramento",
+    "name": "Sangramento",
+    "icon": "♦",
+    "color": "#e15a69",
+    "description": "Um ferimento aberto continua perdendo sangue, fazendo a lesão se agravar enquanto não for tratada.\n\nEfeito: Acumula estágios: I: 1d4 de dano; II: 1d8 de dano. III: 2d10 de dano e -2 em CON.",
+    "page": 66,
+    "source": "Canva · Estigma do Caos - Ebook · Condições",
+    "maxStage": 3
+  },
+  {
+    "id": "seduzido",
+    "name": "Seduzido",
+    "icon": "♥",
+    "color": "#e28fa8",
+    "description": "Seu interesse e sua atenção foram profundamente influenciados por outra criatura, tornando difícil agir contra aquilo que despertou seu fascínio.\n\nEfeito: Atacar quem te seduziu causa -2d20 (Desvantagem). Desobedecer exige Vontade CD (16 + CAR do alvo) com desvantagem. Obedecer, por outra mão, concede sempre +1d20 (Vantagem) e +1d4 (inspiração).",
+    "page": 66,
+    "source": "Canva · Estigma do Caos - Ebook · Condições"
+  },
+  {
+    "id": "sono",
+    "name": "Sono",
+    "icon": "☾",
+    "color": "#8e99d0",
+    "description": "Seu corpo e sua mente foram tomados pelo cansaço, mergulhando-o em um estado de inconsciência ou torpor.\n\nEfeito: Dorme indefeso por 1d6 turnos. Se apanhar, acorda imediatamente.",
+    "page": 66,
+    "source": "Canva · Estigma do Caos - Ebook · Condições"
+  },
+  {
+    "id": "vulneravel",
+    "name": "Vulnerável",
+    "icon": "◈",
+    "color": "#d6ac6d",
+    "description": "Uma brecha foi encontrada em sua defesa. Durante esse momento, seus inimigos conseguem explorar sua fragilidade com muito mais facilidade. -5 em DEF.",
+    "page": 66,
+    "source": "Canva · Estigma do Caos - Ebook · Condições"
+  },
+  {
+    "id": "louco",
+    "name": "Louco",
+    "icon": "✺",
+    "color": "#b995d8",
+    "description": "Seu Ego perdeu a estabilidade necessária para interpretar a realidade de maneira coerente. Pensamentos, emoções e percepções podem escapar do controle.\n\nEfeito: Ataca o mais próximo. A cada turno, faça Percepção (CD 16 + CAR); se falhar, ataca a si mesmo.",
+    "page": 66,
+    "source": "Canva · Estigma do Caos - Ebook · Condições"
+  },
+  {
+    "id": "predador",
+    "name": "Predador",
+    "icon": "✦",
+    "color": "#e27c63",
+    "page": 20,
+    "source": "Canva · Estigma do Caos - Ebook · Silvanos",
+    "description": "Instinto de Predador (Silvanos). Perceber uma vulnerabilidade em um alvo concede Predador durante a cena. Dano aumenta em um passo e recebe +1 de Margem de Ameaça. Com Arma Corporal, realiza dois ataques sem gasto de PD. Não pode alterar voluntariamente seu alvo. A habilidade também concede +1 nível em Furtividade."
+  }
+]

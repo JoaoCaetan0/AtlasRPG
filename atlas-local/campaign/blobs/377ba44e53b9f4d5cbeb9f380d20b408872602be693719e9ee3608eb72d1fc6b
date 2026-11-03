@@ -1,0 +1,20 @@
+EDITOR V2 — GUIA RÁPIDO
+
+Abra ABRIR_CATALOGO_V2.html após extrair o ZIP.
+Gerenciar acervo > Conectar pasta do acervo: selecione a pasta que contém o HTML e Mapas.
+Abra um mapa. Se disponíveis, escolha Manhã, Tarde ou Noite na faixa superior.
+Na barra vertical esquerda:
+- Mover mapa: arraste para navegar. Espaço + arrastar também move.
+- Desenho livre: abre Pincel, Marca-texto e Borracha.
+- Formas e linhas: Retângulo, Quadrado, Triângulo, Elipse, Círculo, Hexágono, Linha e Seta, cada um com seu ícone. Clique e arraste.
+- Texto: digite no painel Propriedades e clique no mapa.
+- Desfazer / Refazer: também Ctrl+Z e Ctrl+Shift+Z.
+- Propriedades: cor, espessura, opacidade, texto e mostrar/ocultar desenhos.
+- Versões e arquivos: nomeie e salve, crie outra versão ou abra Importar e exportar.
+
+Salvar edição grava PNG + .estigma.json em Mapas Editados. Com a pasta conectada, as próximas mudanças são salvas automaticamente. Aguarde a confirmação na barra inferior. Somente essa pasta recebe escrita; os mapas-base nunca são alterados pelo editor.
+Cada horário usa seu próprio mapa-base e suas próprias anotações. Trocar horário pede salvar/descartar alterações pendentes quando necessário. Use Gerenciar acervo > Mapas editados para retomar uma edição já salva.
+Para exportar sem acesso direto à pasta: Importar e exportar > Carregar imagem original; selecione a imagem do horário aberto; depois Baixar edição em ZIP. Extraia o ZIP na pasta do acervo. Mantenha PNG e .estigma.json juntos.
+A gravação direta requer navegador com acesso a pastas, normalmente Chrome/Edge de computador. Sem suporte, use a exportação por ZIP. A pasta deve ser reconectada quando o catálogo for reaberto.
+Apresentar oculta ferramentas e identificação do mapa, sem abrir outra guia. Tela cheia e zoom ficam acessíveis. Ocultar desenhos é temporário; exportações incluem as anotações.
+Ao atualizar o pacote, preserve sua pasta Mapas Editados e catalogo-dados.js personalizado; renomear mapas pode exigir reconciliar os caminhos das anotações. Faça backup antes da substituição.

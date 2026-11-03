@@ -1,0 +1,7 @@
+# Verificação final
+
+226 PNGs válidos com hashes distintos; 82 cartões, 72 trios e 10 versões únicas. Caminhos e horários conferidos. Arquivos ZIP verificados por CRC.
+
+Na sessão anterior, o catálogo foi testado em navegador com servidor local: abertura, troca de horário, desenho de quadrado, exportação ZIP e reimportação JSON passaram sem erros JavaScript. Exportação contém PNG e JSON em Mapas Editados; bases permanecem separadas. O seletor direto de pasta não foi automatizado e depende do navegador.
+
+As dez variantes finais foram reconstruídas após perda dos arquivos temporários da sessão interrompida, usando as bases aprovadas e novos prompts registrados. As limitações de fontes e conexões estão em CONEXOES_REGIONAIS.md.

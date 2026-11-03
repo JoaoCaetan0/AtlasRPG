@@ -1,0 +1,82 @@
+[
+  {
+    "id": "bandido-espada",
+    "name": "Bandido com espada",
+    "category": "Bandidos",
+    "color": "#8860ba",
+    "tags": "bandido guerreiro inimigo espada",
+    "budget": 10,
+    "hidden": false,
+    "image": "/tokens/bandido-espada.png"
+  },
+  {
+    "id": "bandido-arco",
+    "name": "Bandido arqueiro",
+    "category": "Bandidos",
+    "color": "#258b8d",
+    "tags": "bandido arqueiro arco inimigo",
+    "budget": 10,
+    "hidden": false,
+    "image": "/tokens/bandido-arco.png"
+  },
+  {
+    "id": "goblin",
+    "name": "Goblin",
+    "category": "Monstros",
+    "color": "#a3bd34",
+    "tags": "monstro goblin criatura inimigo",
+    "budget": 10,
+    "hidden": false,
+    "image": "/tokens/goblin.png"
+  },
+  {
+    "id": "slime",
+    "name": "Slime",
+    "category": "Monstros",
+    "color": "#23c9db",
+    "tags": "monstro slime geleia criatura",
+    "budget": 10,
+    "hidden": false,
+    "image": "/tokens/slime.png"
+  },
+  {
+    "id": "lobo",
+    "name": "Lobo",
+    "category": "Animais",
+    "color": "#6c90b9",
+    "tags": "animal lobo canino fera",
+    "budget": 10,
+    "hidden": false,
+    "image": "/tokens/lobo.png"
+  },
+  {
+    "id": "urso",
+    "name": "Urso",
+    "category": "Animais",
+    "color": "#cb813a",
+    "tags": "animal urso fera",
+    "budget": 10,
+    "hidden": false,
+    "image": "/tokens/urso.png"
+  },
+  {
+    "id": "aliado",
+    "name": "NPC aliado",
+    "category": "Aliados",
+    "color": "#459e71",
+    "tags": "npc aliado aventureiro guarda pessoa",
+    "budget": 10,
+    "hidden": false,
+    "image": "/tokens/aliado.png"
+  },
+  {
+    "id": "armadilha",
+    "name": "Armadilha",
+    "category": "Armadilhas",
+    "color": "#a473dc",
+    "tags": "armadilha objeto perigo mecanismo",
+    "budget": 0,
+    "hidden": true,
+    "image": "/tokens/armadilha.png"
+  }
+]

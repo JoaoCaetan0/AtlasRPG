@@ -1,0 +1,23 @@
+const {chromium}=require('playwright');
+const fs=require('fs'),path=require('path'),assert=require('assert');
+let server,browser;
+(async()=>{
+ const output='/tmp/atlas-bootstrap';fs.mkdirSync(output,{recursive:true});
+ server=require('child_process').spawn('python',[path.join(__dirname,'ui_fixture.py')],{env:{...process.env,ATLAS_UI_OUTPUT:output}});
+ await new Promise((ok,no)=>{server.stdout.once('data',ok);server.once('error',no);server.once('exit',c=>no(Error('fixture '+c)));});
+ browser=await chromium.launch({executablePath:process.env.ATLAS_BROWSER,args:['--no-sandbox','--disable-dev-shm-usage','--no-proxy-server']});
+ const page=await browser.newPage(),errors=[];page.on('pageerror',e=>errors.push(e.message));
+ let attempts=0;
+ await page.route('**/workspace.js?*',route=>++attempts===1?route.fulfill({status:404,body:'missing'}):route.continue());
+ await page.goto('http://127.0.0.1:8766');await page.locator('#auth').waitFor();
+ assert.equal(attempts,2);assert.deepEqual(errors,[]);
+ const broken=await browser.newPage();
+ await broken.route('**/workspace.js?*',route=>route.fulfill({status:404,body:'missing'}));
+ await broken.goto('http://127.0.0.1:8766');
+ await broken.getByRole('button',{name:'Tentar carregar novamente'}).waitFor();
+ assert((await broken.locator('#notice').textContent()).includes('workspace.js'));
+ assert.equal(await broken.locator('#auth').count(),0);
+ await broken.unroute('**/workspace.js?*');
+ await broken.getByRole('button',{name:'Tentar carregar novamente'}).click();await broken.locator('#auth').waitFor();
+ console.log('PASS: script download retry, persistent missing dependency diagnostic, blocked partial startup, recovery by reload.');
+})().catch(e=>{console.error(e);process.exitCode=1;}).finally(async()=>{await browser?.close();server?.kill();});

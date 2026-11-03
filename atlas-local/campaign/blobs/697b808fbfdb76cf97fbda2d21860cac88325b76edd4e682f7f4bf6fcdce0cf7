@@ -1,0 +1,74 @@
+# Prompt mestre integrado — 14/10/2026
+
+Usar com o protocolo completo e a ficha do local, nunca isoladamente.
+
+Use case: lighting-weather / style-transfer quando houver refinamento.
+Asset type: mapa jogável de Estigma do Caos, uma imagem única.
+ENTRADAS: referência do próprio local = geometria e identidade; encontro aprovado = acabamento visual.
+OBJETIVO: produzir a versão especificada, preservando elementos reconhecíveis. Ilustração de fantasia refinada, pintura com traço fino e materiais críveis, atmosfera gótica suave. Mapa de cena horizontal 3:2, vista aérea elevada com leve profundidade isométrica; em cartografia ampla manter escala e convenções da referência.
+ESTRUTURA FIXA: não mover nem espelhar edifícios, caminhos, rios, pontes, portas, escadas ou pontos de referência; câmera e enquadramento constantes no trio. Não inventar geografia ou conexões.
+PERGUNTAS: Onde estão? O que faz sentido existir aqui e por quê? Quem usa, protege e transporta cada objeto? Como entra, circula, sobe e sai? Como cada elemento oferece interação ou orientação? Há alternativa útil sem poluir? O acesso confere com o mapa maior?
+COMPOSIÇÃO: foco claro, normalmente 2–4 interações relevantes, circulação livre, copas nas bordas sem esconder áreas jogáveis; poucos habitantes em atividades legíveis. Toda construção utilizável tem acesso funcional; plataformas e pavimentos têm escadas ou alçapões visíveis e contínuos.
+LUZ: horário real, fontes motivadas, sombras coerentes; noite escura mas jogável, sem filtro azulado de dia. Só alterar rotina, iluminação e detalhes móveis previstos.
+SEGREDOS: mostrar apenas indícios discretos especificados; nunca revelar soluções, bandidos ocultos ou segredos pessoais. Caos não é automaticamente Calamidade. Nenhuma nova mitologia por improviso.
+EVITAR: objetos decorativos repetidos, multidões, acessos impossíveis, baús vulneráveis sem função, fumaça opaca, mecanismos desconectados, mudanças de geometria, grade ou anotações do mestre. Título português neutro, moldura discreta.
+REVISÃO OBRIGATÓRIA APÓS GERAR: inspecionar imagem, percorrer acessos, conferir escala/mecanismos/objetos, luz, informações ocultas e identidade; comparar referências e trio; corrigir defeitos concretos antes de aprovar.
+
+## Bloco variável obrigatório
+Local; escala; bioma; situação; imagem-base; mapa-pai; conexões; estrutura fixa; foco; elementos e funções; horário; atividade de cada ocupante; mudanças permitidas; segredo e indício; iluminação; nome/destino; critérios específicos de aceitação.
+
+## Contrato de produção — versão integrada 2026-10-14
+
+Este bloco aplica o padrão recebido ao pedido de expansão. O prompt de imagem deve ser montado com as decisões concretas da ficha; não enviar campos vazios ou instruções genéricas no lugar de decisões. Ler também Mapas/PADRAO_DE_CRIACAO_DOS_MAPAS.md. Nenhuma aprovação de imagem equivale automaticamente à aprovação de suas conexões regionais ou do trio.
+
+### 1. Preparar antes de gerar
+
+Inventariar todos os locais, distinguir os anteriores à leva de 50 e justificar as exceções de horário. Salvar o projeto de cada local, referências exatas, fontes, conexões, prompts e fila antes da geração massiva. Antes de executar cada item, inspecionar a referência e completar detalhes específicos ainda pendentes; não declarar que conexões foram verificadas apenas porque constam no projeto.
+
+Externos de encontros e cenas locais: Manhã, Tarde e Noite. Interiores e cartografia de mundo, continente, reino ou grandes extensões: versão única. Em mapas mistos, avaliar o exterior relevante; pátio de armazém e cemitério de capela justificam trio. Preservar a escala cartográfica de mapas amplos.
+
+Refazer os mapas anteriores à leva de 50 usando seus próprios elementos como referência de identidade e os encontros aprovados como referência de acabamento. Estação, depósito e outros locais precisam continuar reconhecíveis. Uma imagem já aprovada da leva de 50 pode ser reutilizada no horário que realmente representa, após inspeção; registrar reutilização separadamente de nova geração. Crepúsculo não equivale automaticamente a noite.
+
+### 2. Projetar a cena e conferir sua lógica
+
+Responder: onde estão os personagens, qual a situação, por que os elementos existem e quais ações permitem? Em cenas simples, escolher aproximadamente dois a quatro pontos relevantes, sem impor cota a ambientes maiores. Vegetação, caixas e habitantes precisam ter propósito; preservar espaço para circulação e leitura.
+
+Percorrer visualmente a entrada, cada cômodo utilizável, pavimentos, postos elevados e saídas. Mostrar portas, escadas, patamares ou alçapões com continuidade. Uma descrição de acesso não corrige sua ausência na imagem. Se a câmera ocultar uma ligação essencial, usar corte discreto ou ajustar a base antes de produzir o trio. Conferir abertura de portas, sustentação, operação e manutenção de mecanismos.
+
+Para cada objeto importante, registrar usuário, finalidade, proteção, alcance e transporte. Valores não ficam expostos sem justificativa; ferramentas ficam próximas do trabalho; cargas têm rota plausível. Baú em torre requer acesso ou içamento compatível. Evitar corrigir um problema criando outro.
+
+Avaliar uma ou poucas alternativas úteis: aproximação lateral, escalada, serviço, negociação ou abrigo de revezamento. Cada opção deve mudar exposição, esforço, recurso ou interação. Nem todo lugar precisa de segredo. Poços só viram rotas quando água, profundidade, conexão e saída forem plausíveis.
+
+### 3. Fixar continuidade e variar o horário
+
+Aprovar uma base por local e usá-la nas variantes: mesma câmera, recorte, orientação, proporção, terreno, estruturas e acessos. Correções estruturais justificadas precisam valer para todo o trio. Variar câmera apenas entre locais diferentes. Não transportar correções pendentes para as outras versões.
+
+Projetar uma pequena tabela Manhã/Tarde/Noite com luz, ocupantes, abertura dos estabelecimentos, vigilância, objetos móveis, obstáculos e indícios. Horários padrão de produção: 08h, 16h e 22h; preservar horários reais de referências reutilizadas. Considerar orientação da cena ao posicionar sol e sombras; esquerda da imagem não significa automaticamente leste. Relógios visíveis devem corresponder ao horário escolhido.
+
+A mudança deve ir além de filtros, mas não exige alterar tudo. Rotinas se adaptam ao local; estabelecimentos podem fechar, pessoas trocar de atividade e cargas mudar de lugar. Portas e passagens mantêm sua existência física: podem abrir, fechar, ficar menos vigiadas ou se tornar perceptíveis. Documentar mecanismos de aberturas condicionais. Não fazer portas aparecerem sem explicação.
+
+Noite legível, com fontes luminosas identificáveis. Efeitos atmosféricos não podem esconder áreas úteis. Desastres podem ser versões alternativas do mesmo encontro em horários distintos, sem pressupor uma crise de 24 horas. Não vincular automaticamente marés ao período do dia.
+
+### 4. Conectar escalas e proteger informações
+
+Para cada acesso principal de um local fixo, registrar origem, destino, orientação observada, referência e estado de verificação. Comparar mapa menor, mapa maior e vizinhos. O mapa maior deve conter os acessos confirmados em escala adequada. Corrigir omissões no refinamento; não inventar coordenadas nem aprovar relações sem evidência. Encontros reutilizáveis registram terrenos e entradas compatíveis, sem localização fixa inventada.
+
+Usar Ebook como fonte principal quando disponível e houver divergência. Distinguir fato canônico, proposta e desconhecido. Respeitar Caos/Calamidade, cronologia e informações dos personagens. Não editar Canva ou livros. No mapa dos jogadores, usar títulos neutros e somente indícios visuais; explicações, soluções, ganchos e segredos ficam no material do mestre.
+
+Para cada segredo proposto: indício observável, condição de descoberta, acesso físico, interação ou consequência e variação por horário. Evitar repetir tesouros, túneis e efeitos mágicos. Um detalhe cotidiano bem resolvido pode substituir um segredo.
+
+### 5. Revisar e registrar
+
+Inspecionar a imagem real antes de aprovar. Conferir foco, circulação, acessos, fluxo cotidiano, escala, posição/proteção/transporte dos objetos, cordas e mecanismos, água e terreno, iluminação, escrita, identidade e ausência de revelações indevidas. Comparar os três horários lado a lado e as conexões entre escalas. Registrar defeitos concretos e corrigir de forma direcionada.
+
+Responder obrigatoriamente: consigo percorrer os acessos? O local funciona para seus ocupantes? Os objetos fazem sentido onde estão? As opções são suficientes e coerentes? A geometria permanece igual no trio? Os acessos batem com o mapa maior? Qualidade visual não compensa falha funcional.
+
+Guardar por imagem: ID, referência, prompt efetivamente enviado, saída, horário, destino, estado, revisão, correções e limitações. Estados: planejado → em geração → gerado aguardando revisão → corrigir ou aprovado. Registrar comparação do trio e conexões separadamente. Manter arquivos gerados ainda não revisados identificados para não repetir geração após interrupção. Atualizar progresso distinguindo novas imagens, reutilizações e locais completos.
+
+### 6. Integrar ao catálogo e entregar
+
+Somente catálogo V2. Um cartão por local; escolha Manhã/Tarde/Noite dentro do próprio visualizador, sem abrir outra guia. Painéis dedicados para navegação, desenho livre, formas, texto e arquivos; ícones individuais para quadrado, retângulo, triângulo, círculo e elipse, com propriedades agrupadas. Inspirar-se na organização de ferramentas do Roll20.
+
+Agrupar variantes na pasta do local. Desenhos do usuário devem ser salvos em Mapas Editados, separados dos mapas-base, com identificação do local e horário e dados editáveis junto da imagem exportada. Nunca sobrescrever a base pelo editor. O refinamento artístico cria um substituto revisável; remover a referência obsoleta do ZIP somente depois de aprovar o substituto, conforme a limpeza solicitada.
+
+Antes da entrega final, verificar caminhos, nomes, contagens, abertura do catálogo, troca de horário, salvar/reabrir desenhos e integridade do ZIP. Remover catálogo antigo e documentos contraditórios; conservar protocolo, projetos, progresso e conteúdo útil do mestre. Pacotes intermediários devem informar explicitamente o que ainda está pendente.

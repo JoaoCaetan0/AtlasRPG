@@ -1,0 +1,1253 @@
+1
+INTRODUÇÃO
+“ESTIGMA DO CAOS” é um sistema de RPG autoral que foi criado com o objetivo de aprimorar as ferramentas de investigação e mistério presentes em ORDEM PARANORMAL, ao mesmo tempo que mistura elementos funcionais de combate de Tormenta20, D&D e simplificações player-side de ROLL FOR SHOES. É um sistema que utiliza fundamentos sólidos e funcionais, preservando a profundidade de qualquer sistema de RPG, mas, também trazendo ferramentas que simplificam a criação de personagem, investigação e desenvolvimento de mistérios, combate e dinamismo geral do jogo. O sistema vem sendo desenvolvido ao longo de anos de campanhas com refinamento contínuo de cada um de seus elementos.   
+Adendo importante: Apesar de estar bastante sólido, o sistema ainda apresenta carências como: Falta de uma lista pronta de magias e equipamentos, dificuldade em lidar com o combate nos níveis mais altos (18, 19, 20) e falta de uma delimitação clara de suas nuances narrativas. Fica a critério do mestre com seus jogadores como cada uma dessas coisas serão resolvidas e a sugestão que o sistema dá é: Mantenha bases justas e favoráveis aos seus jogadores. No fim, se eles não se divertirem, nada disso fará sentido.  
+Estigma do Caos
+O universo de ESTIGMA DO CAOS é amplo. Seu mundo se construiu ao longo de milênios, cada um com seus problemas e soluções. Existem 3 principais eras na sua história que podem ser exploradas nos mais diversos cenários:Era primordial: Era uma vez, um universo vazio, frio e puro. Imaculado pela própria vontade. Intocado pelo caos. Belo. Simplesmente perfeito. A mais magnífica obra da criação. Um universo pulsante em potencial, mas completamente inabitado. Nada ali existia. Até que, após longos éons, uma existência que apenas “era”. O próprio verbo. Um ser composto apenas pelo Ego amalgamo de infinitos futuros, infinitas curiosidades ardentes, amores dolorosos, vontades e necessidades primitivas. Um ser que, apesar de ser, não era nada. Sua própria existência era causa e consequência de todos os futuros que já ocorreram. Todas as vidas que ainda não nasceram, o colocaram nessa posição. 
+INTRODUÇÃO
+Refém, das amarras que jamais colocaria em si mesmo. Ele ainda não era nada. E apesar de ser tudo, já carregava consigo um estigma. Um estigma ressoante do futuro infinitamente distante. Dos infindáveis ciclos da existência. O primeiro e verdadeiro estigma. O primeiro e único propósito. A razão imparável que propele o próprio tempo. Que dá sentido, energia, valor. O seu estigma? O próprio Caos.A entidade etérea - portadora do estigma do Caos - trouxe consigo a desordem inicial que maculou o universo perfeitamente organizado, limpo e gelado. Trouxe a matéria do futuro de volta ao passado. Realocou os pilares do tempo. Atou cada nó de cada destino. Criando algo novo como se já tivesse feito isso antes. “A Entidade era o único nome que soubera. Fez do pó dos céus, das cinzas das guerras, do calor dos corpos, do frio das geleiras e do pulsar do tempo, tudo que existirá. A luz para conhecer o que já sabia. A dor para poder perdoar a quem não conhecia.” - Ego
+Contextualização
+2
+3
+INTRODUÇÃO
+Contextualização
+ Este período foi marcado pelos primeiros grandes conflitos. As divisões históricas de territórios, as primeiras segregações por crenças em diversas divindades. Boa parte delas, muito presente e ativamente interferindo no dia-a-dia de todos. Dentre as diversas espécies que residiam nesse mundo - cada uma com seu estabelecido propósito - duas delas se destacavam das demais. Seja pelo poder imensamente maior, pela capacidade inerente de interferir na realidade ou meramente pelo seu estilo de vida único, os Anjos e Demônios carregavam um propósito muito claro. Eles eram responsáveis por estabelecer o equilíbrio do Caos e da Vontade. Os Anjos possuíam uma vontade tão intensa que se extendia além dos domínios do próprio Ego. Para eles, o próprio mundo era uma ferramenta ao seu alcance. Os Anjos mais poderosos externavam sua Vontade para todos os seres vivos próximos com um fardo inconsciente chamado de Mandamento. Uma habilidade que altera as leis da própria realidade. Os anjos governam a Vontade.
+Na era primordial, criaturas místicas, bestas, humanos, deuses, anjos, demônios, dragões e tudo aquilo que a fantasia clássica foi capaz de sonhar, existiu junto em um período de 300 mil anos. Nessa época, o poder do Caos e da Vontade estavam em equilíbrio, permitindo a existência da magia de forma quase irrestrita. Diversas civilizações cresceram e desenvolveram suas tecnologias baseadas no comportamento instável da magia. Por essa razão, apesar de lâmpadas, veículos e máquinas de processamento geral existirem, computadores não eram viáveis. A matéria se comportava de maneira imprevisível demais para o rigor que essas máquinas requerem. Durante 300 mil anos, a civilização inteligente se desenvolveu com o convívio rotineiro com a magia. O mana era extremamente abundante. Grandes criações místicas, castelos, tecnologias e equipamentos lendários foram forjados nesse período. Catalisando o denso mana que transbordava no ar. 
+INTRODUÇÃO
+Contextualização
+A dinâmica dessas duas espécies foi fundamental para a manutenção do mundo primordial. Porém, por conta dos estigmas associados com ambos, seus descendentes se odiavam e viviam em guerras.Com altos e baixos, esse período durou muito tempo. Mas, um conflito gerado pelos descendentes da Vontade e do Caos, trouxe fim a um equilíbrio milenar. A guerra santa terminou selando ambas as espécies. Desequilibrando o cosmos ao longo dos próximos milhares de anos. Por fim, a marca final do colapso da própria realidade, que desestruturou por completo seu funcionamento fundamental. Impossibilitando a vida de existir. Causando danos irreparáveis em todas as sociedades que ali viviam. Um Caos sem precedentes. Hostil. Violento e completamente devastador tomou conta de toda a terra. Não havia outra opção, até que um grupo de guerreiros lendários encontrou um caminho.
+Já, para os Demônios, a situação era diametralmente oposta. Seus corpos absorvem o Caos da natureza. Fazendo com que eles sirvam de reguladores naturais dos níveis de entropia. Demônios são dotados da capacidade de misturar poder caótico com todas suas habilidades básicas. O fluxo de Caos em seus corpos é tão violento, que um mero pensamento intrusivo pode virar uma tragédia. Justamente pela natureza imprevisível do Caos, eles são temidos e marginalizados. Os mais poderosos manifestam uma condição específica e devastadora. Ao longo de milênios de exposição ao Caos, eventualmente, são tomados por ele. A impulsividade caótica penetra através de uma fragilidade do seu Ego e manifesta uma habilidade única chamada de Pecado. Essa habilidade transforma a vulnerabilidade de sua alma num fluxo destrutivo e incontrolável de Caos que afeta tudo ao seu redor. Sua espécie vive isolado. Distante de todos que amam. É a única forma de protegê-los deles mesmos.
+4
+INTRODUÇÃO
+Contextualização
+Assim, depois de uma viagem dimensional em busca de informações, os guerreiros conseguiram encontrar a besta. Precisaram derrotar o seu criador - O ganancioso Elfo Emerson - que dominava a Hydra e até a própria vontade com uma técnica perdida dos anjos. Eles venceram uma batalha gloriosa, domaram a besta fera e inseriram nela os 4 fragmentos do estigma do caos. Dando fim a Era Primordial e  salvando o mundo todo para sempre. “Ou, ao menos, foi o que eles pensaram...” - Ego
+Em uma jornada marcada por perdas, apostas, desejo, vontade sem igual e fragmentos do estigma originário, os guerreiros recolheram  e cultivaram nas próprias almas vestígios ressoantes ao espaço-tempo, que os colocaram na posição ideal de casulos do Caos. Entretanto, nenhum deles possuía capacidade física, mental ou mesmo espiritual de portar tanta energia. Por isso, precisaram de um ser decrepto. Uma besta - feita de um amalgama de corpos, memórias, tempo, vontades e completamente irracional - uma força imparável rejeitada pela própria natureza. Os guerreiros apostaram tudo na crença de que a Hydra Falsa seria capaz de conter toda aquela energia. 
+5
+INTRODUÇÃO
+Contextualização
+Era do caos: A Era do Caos é uma era de mudança. Desde o surgimento da Hydra do Caos, até um revés completo na balança de poder mundial, as coisas mudaram e se complicaram rapidamente. Com o surgimento da Hydra, o Caos que rasgava a realidade foi absorvido e contido. A mera existência dessa criatura tornou-se suficiente para limitar o crescimento da energia caótica no mundo todo, e a deixou nos níveis mais baixos desde a Era Primordial. Como consequência disso, a magia enfraqueceu. A espontaneidade, imprevisibilidade e aleatoriedade que faziam partes da estrutura dela, foram extremamente limitadas. Com isso, a Vontade determinística e precisa se intensificou rapidamente, fazendo com que o uso de feitiços passasse a requerer muito mais precisão e clareza. Passou a ser necessário ter uma intenção muito forte para lançar mesmo as magias mais simples. 
+Por essa razão, rituais, círculos mágicos e encantamentos orais tornaram-se a principal forma de interagir com a magia, de modo a favorecer grandemente raças que outrora não possuíam acesso a basicamente nenhum feitiço.A partir do enfraquecimento mágico geral, seres essencialmente mágicos como os Qareens, Tritões, Golens e até mesmo outros que, apesar de não dependerem fisiologicamente da magia, usavam ela amplamente nas suas relações sociais e aspectos culturais, foram afetados negativamente. As espécies mágicas do mundo passaram a sofrer de forma interminável. Tiveram suas vidas amarradas a catalisadores capazes de preservá-las. Elfos, antigos detentores quase absolutos da magia, agora perderam seu domínio. E, pela primeira vez, Humanos, Anões, Ogros e outras raças não-mágicas, estabeleceram dominância sobre a Terra.
+6
+INTRODUÇÃO
+Contextualização
+"Como a história ensina, não existe transferência pacífica de posse de poder. Guerras, conflitos por territórios e insegurança generalizada mancharam a história. Suas consequências - a princípio - limitadas e previsíveis, vieram anos depois em uma intensidade inimaginável. Os anos de incessantes desentendimentos mudaram a percepção das pessoas umas das outras. Passaram a enojar uns aos outros. Passaram a querer distância. Todos abriam os olhos em busca de um inimigo... De um culpado. Mas desviavam o olhar frente ao próprio reflexo. Corromperam sua própria Vontade. Abdicaram de sua sabedoria, do seu amor e deram lugar a um ódio sem igual. Uma repulsa nauseante, alimentada pelo preconceito, pela falta de respeito ao próximo, deram lugar para uma forma maculada do querer. Uma forma medonha de suas intenções. Que do verbo virou carne... Estendeu-se como ferramenta do próprio ser. Do próprio desejo. Do próprio... Medo." - Ego.
+Assim, começou o período mais sombrio da história de ESTIGMA DO CAOS. Nascido do inferno mais profundo... Escondido no coração de cada cidadão desta terra. Uma Calamidade inigualável pintou de vermelho a superfície do planeta. Contaminou. Sujou. Enraizou-se. E, assim, se espalhou. De poça em poça. De árvore em árvore. De animal em animal. De coração em coração. Um só desejo. Uma só Vontade. Um Mandamento. Justificado na visão turva de quem julgou o próximo como sujo. De quem acusou por aparências. De quem se permitiu enviesar. Decrepto. Malígno. Sarcástico. Exigiu pureza. Mas o que é puro? Quem julgará quem é puro ou não? O Deus do Medo irá dizer. 
+7
+Foram longos séculos de guerra contra essa nova divindade. Sua forma - jamais vista, mas sempre sentida - acabou sendo reconhecida pela sua presença tortuosa. E disso, o nome “Deus do Medo, Qaelid” disseminou-se nos 4 cantos do planeta. Em uma tentativa desesperada de impedir o avanço da Calamidade. Encurralados. Sem tempo. Sem energia. Sem saber o que fazer. Somente com seu sangue em sua posse, os representantes das mais poderosas espécies mágicas e seus governos, tomaram uma decisão que mudaria o rumo da história para sempre. A Hydra do Caos - criatura responsável por conter e equilibrar todo caos e desordem do planeta. O único ser que Qaelid jamais tentou se aproximar - precisaria morrer. O caos precisava ser solto. Precisava dissipar a Calamidade e abrir espaço para um único confronto. Então assim, os sábios, os guerreiros, os poetas e os feiticeiros se juntaram para destruir a criatura que, uma vez, salvou este mundo.
+INTRODUÇÃO
+Contextualização
+ Ao fim de uma batalha desastrosa  sanguinária e com muitas vítimas, a Besta do Caos cedeu. Junto dela, por uma última vez, toda a magia foi reestabelecida no mundo. A Calamidade recuou e Qaelid ficou exposto pela primeira vez. Com isso, um novo sacrifício foi feito. Os poucos seres mágicos que restaram, agora, possuiram poderes quase ilimitados. E, através deles, fizeram uma ofensiva ao Deus do Medo. Eles travaram a batalha mais longa de toda a existência. Uma luta que ocorreu num plano onde o tempo não existia. A energia de seus ataques era incapaz sequer de ecoar pra fora deste domínio. Não há vestígio de conhecimento do que aconteceu lá dentro. Os guerreiros, com seus corpos servindo de avatares para os próprios deuses, despejaram seu sangue.
+8
+ No fim, nenhum retornou. Mas a Calamidade voltou a crescer, mesmo com Qaelid fora de alcance. Então, um último sacrifício. Tudo. O próprio corpo. O próprio tempo. A própria razão. A própria história. O próprio amor. A própria dor. O próprio Ego. O próprio... Medo.Todos os seres que possuíam mana em seu corpo, que conduziam e formulavam magia com suas mãos, que modelavam a realidade de acordo com sua vontade, sacrificaram seu Ego no mesmo ritual que selou anjos e demônios para formar uma barreira. Uma membrana etérea, eterna, invisível, onipresente e impenetrável, que fosse capaz de separar todo o horror da Calamidade no Outro Lado. Um suicídio altruísta. Que permitiria que a vida no planeta florescesse outra vez. Sem magia. Sem Medo. Dando fim a era do Caos e início ao novo período dessa história.
+INTRODUÇÃO
+Contextualização
+Era Moderna: A era moderna começa no novo mundo criado após o sacrifício jamais conhecido pela membrana. O mundo, agora sem magia ou criaturas místicas se desenvolveu de forma extremamente parecida com o nosso. A espécie humana, por não possuir magia, foi a única que permaneceu. a históra foi escrita por cima dos corpos dessa terra devastada; e tudo ocorreu bem. Até que, por acaso, um certo alguém descobriu vestígios desse mundo perdido. Os rituais, aos poucos, foram reaparecendo. Muito mais voláteis do que antes. Muito mais custosos também. Seu custo? A própria estabilidade da membrana.Os humanos, sem saber, aos poucos, foram consumindo por sua própria ganância o mundo que vivem. Sua sede por poder os levou a perturbar A Ordem. O ano atual é 2026. Role iniciativa...
+9
+Construção de Personagem
+10
+Intelecto (Int):
+Inteligência lógico-matemática e científica ou mística, precisão, paciência, memória, raciocínio e poder mágico transformativo. Inteligência é usada para magias que constroem transformações complexas da realidade, materialização elaborada ou misticismo altamente modificado.
+Atributos básicos
+Atributos são as características fundamentais do seu personagem. Podem ser oriundos de treino, adaptação, mutação, genética ou de osmose do próprio ambiente onde ele foi criado.
+Criação de Personagem
+Força (For):
+Força física, capacidade muscular, presença e potência dos sensores corporais e outros órgãos (Audição, Visão, Olfato, Asas, Cauda etc.)
+Destreza (Des):
+Agilidade, velocidade, movimentação geral, coordenação motora, furtividade e ajustes finos.
+Constituição (Con):
+Saúde, resistência a doenças e efeitos fisiológicos ou patológicos, Resistência a dano, vitalidade e presença.
+Carisma (Car):
+Presença, vontade, conversação, sabedoria intuitiva, intuição, poder mágico reativo ou elemental imediato. Carisma é usado em magias que dependem do poder de vontade do usuário, da sua familiaridade com o fluxo de mana, da capacidade imediata de expelir um fluxo mágico, jato, projétil ou explosão instantânea.
+11
+Criação de Personagem
+Raças
+As raças de ESTIGMA DO CAOS representam os diferentes povos, linhagens e formas de vida que habitam o mundo. Algumas surgiram naturalmente ao longo de eras de evolução; outras são heranças vivas de um período em que a magia fazia parte da própria estrutura da realidade. Ser de uma determinada raça não define quem um personagem é, mas oferece uma origem, uma perspectiva e características que podem influenciar sua jornada. Durante a Era Primordial, a abundância de mana permitiu que criaturas de naturezas extraordinariamente distintas coexistissem. Muitas espécies nasceram ou prosperaram graças à presença constante da magia, enquanto outras desenvolveram formas próprias de interagir com ela. Com o enfraquecimento do mana e o colapso da antiga ordem, algumas dessas raças precisaram se adaptar a uma realidade que já não lhes era favorável. Para certas criaturas, como Qareen e Golens, essa mudança representou uma ameaça à própria existência; para outras, tornou-se uma oportunidade de desenvolver novas culturas, tecnologias e formas de sobrevivência. As diferenças entre as raças podem carregar séculos de história, crenças, preconceitos, conflitos e adaptações. Um elfo pode carregar a memória de uma civilização que já não existe; um Golem pode questionar o propósito para o qual foi criado; um Qareen pode precisar de um catalisador para preservar sua própria natureza; um Dragonato pode enxergar sua herança dracônica como motivo de orgulho ou como um fardo.  No fim, cada raça representa uma maneira diferente de existir em um mundo marcado pelo Caos e pela Vontade. Algumas nasceram da magia, outras sobreviveram à sua ausência, e outras ainda carregam em seus corpos as consequências de eras que já deveriam ter terminado. Escolher uma raça é escolher de onde seu personagem veio - suas características, suas possíveis heranças e o mundo que o formou. O que ele fará com aquilo que recebeu, entretanto, é uma escolha exclusivamente sua.
+12
+Criação de Personagem
+Raças - Humanos
+Os humanos são a raça mais numerosa e adaptável em Estigma do Caos. Diferentemente de muitas espécies antigas, não dependem diretamente da magia para existir, o que lhes permitiu sobreviver às grandes transformações do mundo.Na Era Primordial, construíram civilizações ao lado de dragões, deuses, anjos e demônios. Hoje, vivem entre as ruínas desse passado, cercados por conhecimentos esquecidos e vestígios de uma era em que a magia fazia parte do cotidiano.Humanos não possuem a longevidade dos Elfos, a natureza mágica dos Qareen ou a resistência dos Golens. Em compensação, aprendem, adaptam-se e podem seguir qualquer caminho.Para os humanos, o mundo não é uma herança imutável. É algo a ser conquistado.
+Espírito Indomável(Passiva) - O indomável espírito humano permite que você mantenha uma ação de Movimento ou Padrão enquanto estiver em estado de morte. Na primeira vez que entrar nesse estado durante um combate, sua duração é aumentada em 1d4+1 turnos.
+Versátil(Passiva) -  Receba +3 ponto de perícia (PP) para cada ponto de INT e CAR que  possuir e ganhe 2PP por cada falha em teste (Ao invés de um).
+Hiperfoco(1PD) - Você ignora distrações e foca inteiramente no combate. +1 de DES, imunidade a efeitos morais e psicológicos (Pasmo, atordoado, assustado) e margem de ameaça aumentada em +FOR com duração (1d4).  Fora de combate, serve para testes gerais com DES e INT aumentado em +FOR.
+Habilidades de Raça
+Atributos - +4PV, +4PD
+13
+Inspirador(Passiva) -  Esse mundo não é para os fracos de coração. Seu berço não lhe concedeu poder algum, mas aqui você está. Sua presença no grupo aumenta em +1 os testes de acerto no combate. Alternativamente, pague 1PD para inspirar ações fora de combate em +2. Entretanto, sua queda e morte prejudicam o grupo em -1 e -2, respectivamente, em todos os testes da cena.
+Criação de Personagem
+Raças - Elfos
+Os elfos são uma das raças mais antigas do mundo, descendentes de uma era em que a magia permeava naturalmente toda a realidade. Sua longevidade permitiu que testemunhassem o nascimento e a queda de civilizações inteiras, tornando-os guardiões de conhecimentos que o restante do mundo conhece apenas como lenda.Na Era do Caos, muitos elfos carregam o peso desse período. A magia que antes era abundante tornou-se instável, e aquilo que estruturava sua cultura, hoje já não se mantém de pé.Dotados de sentidos aguçados, disciplina e profunda afinidade com a magia, os elfos são conhecidos por sua precisão e domínio da natureza. Eles não apenas lembram o passado. Eles são parte.
+Habilidades de Raça
+Rúnica nata (Passiva) - A linguagem mágica é sua língua materna. Custo -1PD para todas as MAGIAS que você utilizar.
+Progresso cultural (Passiva) - Sua cultura rica influenciou seu desenvolvimento. Aprimore 1 nível de Pontaria e receba +1 NP(Nível de perícia) para cada 2 pontos somados entre INT e CAR. Entretanto, escolha uma restrição para seu personagem (não comer carne, mentir, etc.). Quebrar sua restrição concede Penalidade Moral até o final do dia.
+Benção natural (2PD) - Seu histórico cultural e proximidade com a natureza se traduziram em uma benção racial. Enquanto não estiver com penalidade Moral, você pode conjurar um reforço místico para suas ações. Símbolos dourados cobrem seu corpo e reforçam suas ações. Some seu INT ou CAR no ataque e testes de misticismo. Além disso, o dano de disparos de projéteis e magias são ampliados em 1 dado por 1d4 turnos.
+Atributos - +2PV, +6PD
+14
+Raça Nobre (Passiva) - A Receba + 1 nível em Nobreza ou Diplomacia
+Criação de Personagem
+Raças - Qareens
+Os Qareens são descendentes dos antigos gênios, seres cuja existência está profundamente ligada à magia. Durante a Era Primordial, sua natureza mágica permitia que vivessem em harmonia com o mana abundante que permeava o mundo.Na Era do Caos, porém, a magia tornou-se instável e escassa. Muitos Qareens passaram a depender de catalisadores, joias, rituais e artefatos para preservar sua própria integridade, tornando sua existência um lembrete vivo de um mundo que já não existe.Dotados de uma afinidade natural com a magia e de uma essência incomum, os Qareens carregam dentro de si fragmentos de um poder ancestral e a capacidade cobiçada de realizar desejos.
+Habilidades de Raça
+Tatuagem rúnica: (3PD) - Aforma da magia se rasga em sua pele. Escolha uma de suas magias para lançar aprimorada até o fim do dia ou até renascer. O efeito da aprimoração deve ser definido com o Mestre e não pode alterar a natureza fundamental da magia.
+Desejo (Passiva) -  Uma vez a cada três cenas (ou descanso), você pode realizar um desejo. O desejo funciona de forma análoga aos desejos dos gênios, mas seu potencial é limitado ao círculo de magia pelo seu atributo mágico (INT ou CAR). O Mestre determina a magia ou efeito mais próximo capaz de atender ao desejo, respeitando esse limite. O uso do desejo não possui custo e não depende de ser uma magia conhecida pelo usuário.
+Herança dos gênios (Passiva) - PD são matéria de sua própria existência. Caso seus PV cheguem a zero, vc é reduzido a um objeto mágico (Lâmpada, amuleto, etc) e ficará nessa forma perdendo 3PD por turno (Durante 3 turnos). Ao final dos 3 turnos, vc recupera metade de seu PV total. Entretanto, se seus PD chegarem a zero, ou seu catalisador quebrar, você morre instantaneamente. Receba + 1 nível em Misticismo.
+Atributos - +8PD
+15
+Cuidado com as palavras (Passiva) -  Palavras possuem poder para aqueles que carregam o sangue dos gênios. Qareens aprendem desde cedo que uma frase mal formulada pode ter consequências imprevisíveis. Receba +1 nível em Persuasão.
+Criação de Personagem
+Raças - Golens
+Golens são criaturas artificiais criadas para cumprir propósitos específicos. Diferentemente das demais raças, sua existência não surgiu naturalmente: cada Golem foi concebido para uma função. Guarda, combate, segurança, intimidação, cuidado, limpeza, construção e incontáveis outras tarefas moldaram corpos completamente diferentes entre si. Sua aparência é determinada pela finalidade para a qual foram criados, fazendo dos Golens uma das raças mais diversas do mundo.Durante a Era Primordial, muitos eram tratados como ferramentas, propriedades de seus criadores e instrumentos de trabalho. Com o fim daquele mundo, a maioria foi destruída ou abandonada. Os que sobreviveram carregam em seus corpos e memórias fragmentos de uma civilização que já não existe.
+Habilidades de Raça
+Resiliência de um colosso (Passiva) - Seu corpo ultra resistente te fornece +1 de negação de dano para cada ponto de constituição. Receba +1 de Fortitude.
+Mudança de marcha(2PD) - Reconfigure temporariamente sua estrutura corporal. Receba +2 DES e +2 FOR, reduzindo sua CON em 3 pela cena. Ao término, você fica Exausto. Alternativamente, sacrifique 2 DES e 2 FOR para compactar sua estrutura, aumentando sua CON em 3 pela cena. 
+Artifício caótico (Passiva) - Você é um ponto flutuante entre existir e não existir. Seu corpo é um amálgama. Sua identidade foi projetada antes mesmo da sua consciência. Por isso, escolha uma habilidade de outra raça na qual sua identidade foi inspirada.
+Atributos - +8PV
+16
+Propósito passado (Passiva) - Você foi criado para cumprir um propósito. Qual era mesmo? Escolha uma função que defina sua criação e receba +2 NP coerentes com ela. Quando uma situação exigir diretamente o cumprimento de seu propósito original, você não pode recusar. Independente da sua vontade atual ou de quem fez o pedido, seu propósito deve ser cumprido. Recusar requer um teste de sanidade com CD (16 + CON).
+Criação de Personagem
+Raças - Anões
+Anões são conhecidos por sua força, engenhosidade e domínio sobre a criação. Grandes ferreiros, inventores e engenheiros, foram responsáveis por alguns dos equipamentos mais lendários já produzidos. Suas obras combinam conhecimento ancestral, técnica e, quando possível, o poder do mana, tornando suas criações cobiçadas por povos de todo o mundo.Sua influência, porém, não se limita às forjas. Guildas, famílias e grandes cidades anãs participam ativamente da política mundial, controlando recursos, tecnologias e conhecimentos que podem decidir o destino de reinos inteiros. Para um anão, criar algo grandioso é também deixar sua marca na história.“Só está pronto quando não pode ser melhorado”.
+Habilidades de Raça
+Maestria de casa (Passiva) - Sua história foi marcada forja. Por isso, sua arma recebe um aumento de um dado de dano e um efeito da sua escolha. Caso troque, deverá gastar 1 recurso + 3PD para aprimorá-la.
+Engenharia anã (2PD) - Você pode improvisar um equipamento ou aprimoramento com duração cena em qualquer situação. Ferramentas de uso único não exigem gasto de PD. Seja criativo, mas o custo de sucata continua existindo. Caso queira algo com durabilidade normal, o custo passa a ser 4PD. Receba +1 nível de engenharia.
+Longevidade milenar (Passiva) - Sua raça possui longevidade excepcional, permitindo que seus membros acumulem décadas ou séculos de experiência. Você possui Imortalidade durante os primeiros 1d4 turnos após sofrer dano em combate. Sua vida chegará até 1 PV, mas você não entrará em estado de morte. Entretanto, isso não o protege dos debuffs causados por danos adicionais. Além disso, receba 1 nível em Diplomacia, Persuasão ou Nobreza.
+Atributos - +6PV + 2PD
+17
+Criterioso (Passiva) - Você não aceita nada meia-boca e não engole seco. Equipamentos danificados ou inadequados devem ser reparados antes do uso, gastando 1 turno + 1PD e, se necessário, sucata. Equipamentos em perfeitas condições concedem +1 em seus testes de uso e + INT em dano. Caso receba uma tarefa ou ordem que considere injustificada, fique com Má-vontade.
+Criação de Personagem
+Raças - Tritões
+A raça dos Tritões é uma das mais isoladas dentre todas as de ESTIGMA DO CAOS. Seus membros costumam viver dentro ou extremamente próximos de grandes corpos de água para manutenção da sua hidratação. Na Era Primordial, o mana abundante abastecia um órgão capaz de produzir água que possuíam. Porém, com o início da Era do Caos, sua produção autossuficiente de água foi cortada. Assim, passaram a ficar mais dependentes ainda de fontes constantes de água. Suas habilidades de combate e manipulação elemental são inigualáveis. Podem gerar ferramentas e equipamentos de pura água. São guerreiros formidáveis e a única coisa maior que sua sede por água é sua sede por conquista.
+Habilidades de Raça
+Treinado para guerra (Passiva) - Sua espécie vive para guerrear. Seu propósito é esse. Receba 2 níveis em Luta, Guerra ou Pontaria. 
+Hidro-cinese (2PH) - Sua raça consegue manipular fontes d’agua ou gastar da própria hidratação para construir armas, armaduras e equipamentos feitos inteiramente de água. Eles não são nada duráveis. São todos feitos para uso único. Porém, são extremamente eficazes, principalmente em combate. Conjure: Arma aquática, Tentáculo marinho, Hidrobomba ou Armadura d’água.
+Desidratado (Passiva) - Sua necessidade constante por água não é suprida sozinha. Você possui PH (Pontos de Hidratação), que vão de 0 a 30. Eles podem ser usados para conjurar suas habilidades aquáticas. Beber água, tomar banho, estar em ambientes úmidos são formas de recuperar. Se chegar em 0, você morre. Cada PH pode virar dois PV conforme você desejar.
+Atributos - +3PV + 5PD
+Sede Incessante (Passiva) - A desidratação cresce constantemente. Você perde 3 PH por cena e 1 PH por turno de combate. Porém, seu corpo esguio e treinado concede +1 de defesa para cada ponto de DES.
+18
+19
+Criação de Personagem
+Raças - Draconatos
+Draconatos são os herdeiros dos lendários dragões, carregando em seus corpos e espíritos os vestígios de criaturas que um dia dominaram o mundo. Cada indivíduo possui uma afinidade elemental determinada por sua linhagem, herdando características dos dragões.Sua aparência ameaçadora e herança ancestral fizeram dos draconatos uma raça frequentemente temida e estigmatizada. Apesar disso, carregam consigo uma natureza orgulhosa e naturalmente inclinada à conquista e à acumulação de riquezas. Todo draconato sente a necessidade de adquirir ou acumular algum tipo de riqueza diariamente; ignorar esse impulso por tempo demais pode trazer consequências para seu corpo e sua mente.
+Habilidades de Raça
+Baforada Dracônica (2PD) - A habilidade clássica dos dragões pode ser usada uma vez por cena. Escolha uma cor para representar sua herança e elemento: Vermelho (Fogo/Queimadura), Branco (Gelo/Congelamento), Azul (Energia/Eletrificado), Amarelo (Vento/Derrubada), Verde (Ácido/Corrosão), Preto (Caos), Dourado (Vontade). Cada elemento modifica o efeito secundário. Cause: 2d10 + 4  de dano + efeito elemental correspondente. Reflexos (CD 20 + FOR ou CON)  reduz metade e anula efeito secundário. Pode pagar + 1PD para aumentar o dano em 1d10 + 2.
+Acumulador Compulsivo (Passiva) - Sua tendência instintiva a acumular e obter cada vez mais riquezas. Sejam itens valiosos, armas, dinheiro, metais ou qualquer objeto de valor definido previamente, você precisa acumular cada vez mais. Caso passe mais de 3 cenas sem acumular nada, receberá punição Moral. Receba + 1 slot de inventário para cada ponto de FOR e CON.
+Atributos - +5PV + 3PD
+Escamas Reptilianas (Passiva) - Seu corpo é coberto por escamas que te protegem de ferimentos. Você soma sua CON na Defesa (DEF) e recebe 1 nível em Fortitude.
+Aparência Hostil (Passiva) - Draconatos carregam o estigma de serem perigosos e impulsivos. Receba + 1 nível em intimidação e -3 em testes de Diplomacia.
+Sentidos aguçados(2PD) - Detecte a posição de criaturas não escondidas num raio de 100m e force um teste de furtividade nas outras (CD 15 + [3 por nível de Percepção]). Se a distância for inferior a 10m, sucesso automático. Armadilhas e rastros podem ser detectados. Usá-la uma vez garante +3 de percepção na cena inteira. Caso a habilidade seja utilizada em um inimigo já detectado (Alcance visual), sua margem de ameaça aumenta em +1 contra ele. 
+20
+Criação de Personagem
+Raças - Silvanos
+Silvanos são criaturas moldadas pela natureza e pelos instintos que regem a vida selvagem. Seus corpos carregam traços animais, sentidos aguçados e uma conexão mística com o mundo natural. Para eles, a natureza não é apenas um lar, mas uma força viva que deve ser compreendida e respeitada.Sua existência é guiada pela eterna dinâmica entre Predador e Presa. Um Silvano sabe quando caçar, quando fugir e quando transformar-se de caça em caçador. Seus instintos permitem que percebam perigos antes mesmo que sejam compreendidos, tornando-os excelentes rastreadores, sobreviventes e guerreiros.
+Habilidades de Raça
+Instinto de Presa (Passiva) - Seus instintos te pressionam em situações de risco. Ser surpreendido, assustado ou não resistir à intimidação, causa a condição Acuado durante a cena. Com isso, você passa a ter -1d20 (Desvantagem) em todo teste de ataque e seu dano reduz em um passo. Entretanto, ganha +1d20 (Vantagem) em testes de fuga, manobra ou Reflexos e passa a somar sua FOR na defesa. Receba + 1 nível em Reflexos.
+Atributos - +1PV + 7PD
+Instinto de Predador(Passiva) - Perceber uma vulnerabilidade em um alvo (Não detectado, caído, fragilizado...) intensifica sua hostilidade e concede a condição Predador durante a cena. Seu dano aumenta em um passo e recebe +1 de Margem de Ameaça. Caso utilize sua Arma Corporal, realize dois ataques sem gasto de PD. Entretanto, enquanto estiver nesse estado, você não pode alterar voluntariamente seu alvo. Receba +1 nível em Furtividade.
+Arma corporal (Passiva) - Seu corpo possui armas naturais. Seu dano desarmado passa a ser 2d4 + 2. Vc pode pagar + 2PD para ampliar suas características de fera, fazendo seu dano subir 1d4 + 1 (Podendo acrescentar +1PD e somar mais dados) e aplicando o efeito Sangramento até o fim da cena. Fortitude (CD 15 + FOR) anula.
+Criação de Personagem
+Raças - Orcs
+Robustos, intensos e difíceis de ignorar, os Orcs vivem em busca de emoções fortes. Amam confrontos gloriosos, desafios insanos e situações capazes de levar seus corpos ao limite. Para eles, o perigo raramente é motivo suficiente para recuar.Repudiados pelas outras raças por sua aparência, cheiro e comportamento, os Orcs carregam um estigma que os acompanha desde o nascimento. Ainda assim, por trás de sua brutalidade existe um coração igualmente intenso: são ferozmente leais, apaixonados e capazes de criar vínculos profundos. Um Orc dificilmente sente algo pela metade.
+Habilidades de Raça
+Imprudente, Indisciplinado, Inconsequente, Idi... (Passiva) - Você possui uma tendência natural a assumir riscos. Seu coração clama por adrenalina. Você anseia pela glória eterna e imutável. Por isso, você não recua de um desafio que aceitou, mesmo que as chances estejam contra você. Enquanto enfrentar voluntariamente um perigo superior às suas capacidades, receba +1d20 (Vantagem) em todos os testes relacionados ao confronto. Caso recue, desista ou volte atrás, você ficará humilhado com Má-vontade até o fim do dia. Falhar no desafio não causa efeito negativo. Desistir sem conclusão, sim. Receba +1 nível em Vontade.
+Atributos - +7PV + 1PD
+Feroz (Passiva) - Confrontos despertam algo dentro de você. Para cada inimigo que derrotar, seu dano aumenta em 1 passo até o fim da cena. Receba +1 nível em Luta.
+Socialmente Debilitado (Passiva) - Situações sociais são estranhas... Você não entende bem o motivo de te olharem torto, não rirem de suas piadas desajeitadas ou reclamarem do seu cheiro de guerra. Mas, isso é normal, não é? Não? Ah... Você tem -3 em testes de Persuasão, Diplomacia e Lábia. Porém, +3 em Intimidação, Adestramento e Vontade. Receba +1 nível em Intimidação. 
+Esmagar (1PD) - Uma fúria incontrolável queima dentro de você. Cause (1d8 + FOR + CON) de dano concussivo ao alvo. Se acertar, ele fica Derrubado, resitencia com Fortitude (CD 15 + FOR).  Caso use Esmagar consecutivamente, o custo passa a ser 2PD e cada acerto consecutivo aumenta o dano em +1d8. Um erro encerra a sequência.
+21
+Criação de Personagem
+Classes
+
+ As classes representam os diferentes caminhos que um personagem pode seguir dentro do mundo do RPG. Elas definem suas principais aptidões, conhecimentos e formas de enfrentar os perigos encontrados durante a aventura. Cada classe possui uma identidade própria, refletindo não apenas aquilo que o personagem sabe fazer, mas também sua maneira de lidar com combate, magia, exploração e outros desafios. Escolher uma classe é uma das decisões mais importantes durante a criação de personagem, pois ela estabelece a base de sua progressão. Cada classe possui habilidades, características e recursos exclusivos, que se desenvolvem conforme o personagem evolui. Algumas são voltadas para o combate físico e a resistência, enquanto outras dependem de magia, estratégia, velocidade, conhecimento ou habilidades de suporte. Entretanto, a classe não determina completamente quem é o personagem. Dois personagens da mesma classe podem possuir personalidades e motivações completamente diferentes. Um guerreiro pode ser um soldado disciplinado, um mercenário ou um nobre treinado desde a infância; da mesma forma, um usuário de magia pode buscar conhecimento, poder, ou simplesmente compreender as forças que existem além do mundo conhecido. As classes também influenciam o papel do personagem dentro do grupo. Alguns são capazes de suportar grandes quantidades de dano e proteger, enquanto outros se destacam causando dano, controlando o campo de batalha, explorando fraquezas ou auxiliando seus aliados. Nenhuma função é necessariamente superior às demais: a força de um grupo está na combinação de diferentes capacidades. Ao longo da campanha, novas habilidades podem ser adquiridas e diferentes caminhos de especialização escolhidos, permitindo que personagens da mesma classe desenvolvam estilos de jogo completamente distintos. Suas escolhas, experiências e consequências definirão o restante de sua trajetória.
+22
+Mas distância não significa segurança. Um Atirador que erra seu momento pode descobrir que nenhuma mira é precisa o bastante para compensar um inimigo que conseguiu se aproximar. Entre a paciência de um caçador e a velocidade de um combatente, o Atirador vive buscando a posição perfeita — longe o bastante para não ser alcançado e perto o bastante para nunca errar.
+23
+Criação de Personagem
+Classes - Atirador
+Atiradores são especialistas em transformar distância em vantagem. Treinados para dominar arcos, armas de fogo ou qualquer instrumento capaz de atingir um inimigo antes que ele possa reagir, eles fazem da precisão uma forma de combate. Enquanto outros avançam para o confronto, o Atirador escolhe o momento certo para puxar o gatilho.
+Sua força não está apenas na pontaria, mas na capacidade de observar o campo de batalha e compreender suas possibilidades. Altura, cobertura, distância e posicionamento podem transformar um disparo comum em um golpe decisivo. Por isso, Atiradores costumam desenvolver paciência e percepção, aprendendo a esperar pelo instante em que um único projétil pode decidir o destino.
+No mundo de ESTIGMA DO CAOS, existem Atiradores de todos os tipos. Alguns são caçadores acostumados às florestas e regiões selvagens; outros servem exércitos ou trabalham como mercenários. Há também aqueles que transformaram a própria arma em uma extensão de sua identidade, utilizando técnicas incomuns, munições especiais ou equipamentos para superar suas limitações.
++1
++2
++1
++2
+-1
+Criação de Personagem
+Classes - Atirador
+Atributos: Você pode editar 2 pontos da sua Lótus de Atributos. 
+Características de classe
+Perícias: Você recebe as perícias: Pontaria (1), Reflexos (1) e Percepção (1).
+Poderes de Classe
+Disparo Teleguiado (1PD): Você realiza um disparo preciso capaz de ignorar cobertura parcial. A menos que seja impossível atingir o inimigo (Cobertura completa), você conseguirá. Recebe +DES no teste de Pontaria. Por +2PD o alvo atravessa outro inimigo.
+Oportunista (Passiva): Como atirador, você sempre busca a oportunidade perfeita para disparar. Se o inimigo estiver Vulnerável; Não notou você; está Fragilizado; Imobilizado; ou Distraído; sua margem de ameaça aumenta em +2, você recebe +INT no teste de acerto e seu dano aumenta em [Nível de Pontaria] passos. 
+Carga especial (3PD): Você carrega energia mágica no seu disparo através de um  ritual projetado na sua linha de tiro. Escolha entre: Flamejante: +INTd8 de dano e Queimadura; Congelante: +INTd4 de dano e Congelamento; Eletrizado: +INTd6 de dano e Eletrificado. Fortitude CD 16 + INT anula o efeito, mas não o dano.
+Equipamento inicial:
+Armadura leve/média, Arma Branca (1°Estágio), Escudo leve, Poção/Item de suporte, Arma de longo alcance  (1° e 2° Estágio) e 3 pacotes de munição.
+24
+Plano de caça (Passiva): Todo início de turno, você usa uma ação livre de Percepção para buscar nas redondezas pontos vantajosos para o seu disparo. Se houver, ir até lá ou não é uma escolha sua. Posições vantajosas podem trazer benefícios distintos e situacionais (Ex: Margem de ameaça maior, chance de acerto maior, dano ligeiramente aumentado, etc.). Falhar nesse teste não confere PP (Pontos de perícia).  Alternativamente, use:Caça avançada (4PD): Você se move atirando com precisão equivalente ao Oportunista. Se mova [Nível de Acrobacia] vezes e dispare uma vez em cada movimento.
+25
+Mas a verdadeira força de um Bárbaro não está apenas naquilo que consegue destruir. Está naquilo que consegue suportar. Quando a dor chega, ele permanece. Quando o medo surge, ele avança. E quando seu corpo finalmente exige que pare, sua fúria encontra mais um motivo para continuar.
+Criação de Personagem
+Classes - Bárbaro
+Os Bárbaros são guerreiros que transformaram a própria força em uma forma de sobrevivência. Onde outros dependem de disciplina, técnica ou conhecimento, eles confiam no corpo, nos instintos e na capacidade de suportar aquilo que deveria derrubar qualquer homem. Sua presença no campo de batalha é marcada pela brutalidade e intensidade.
+Para um Bárbaro, a fúria não representa simplesmente perda de controle. Ela é uma força que pode ser despertada, direcionada e transformada em poder. Alguns lutam movidos por raiva, outros por orgulho, vingança, sobrevivência ou pelo simples prazer do confronto. Cada um encontra sua própria razão para liberar aquilo que mantém contido.
+Em um mundo transformado pelo Caos, existem poucos lugares onde a força bruta deixou de ter valor. Bárbaros podem surgir de tribos, exércitos, regiões selvagens ou mesmo das ruínas das antigas civilizações. Alguns são vistos como selvagens e perigosos; outros são guerreiros respeitados, cuja resistência os tornou indispensáveis diante de ameaças que armas comuns não conseguem enfrentar.
++2
++2
+0
+-1
++2
+Criação de Personagem
+Classes - Bárbaro
+Atributos: Você pode editar 2 pontos da sua Lótus de Atributos. 
+Características de classe
+Perícias: Você recebe as perícias: Luta (1), Intimidação (1) e Reflexos (1).
+Poderes de Classe
+Contra-ataque Brutal (1PD): Aceite o ataque de um inimigo sem se defender ou reagir. Se sofrer o dano, responda imediatamente com um ataque brutal contra ele, com +[Nível de Fortitude] passos de dano, +1 dado. Se acertar, causa Sangramento. O alvo deve fazer Fortitude (CD 16 + FOR) para resistir.
+Equipamento inicial:
+Armadura leve/média/Pesada, 1 a 2 Arma Branca (1° e 2°Estágio), Escudo leve, Poção/Item de suporte.
+26
+Musculatura Saudável (Passiva): Você recebe +2PV para cada ponto de FOR que possuir. Além disso, pode pagar 1PD para exibir seus músculos durante uma conversa e somar FOR aos testes de Diplomacia, Persuasão, Intimidação e Sedução.
+Fúria (1PD): Uma fúria incontrolável assume o controle do seu corpo. Enquanto estiver nesse estado, você falha automaticamente em testes de perícias mentais, mas recebe +1d20 (Vantagem) nos testes de combate (Luta, Reflexos, Fortitude), soma FOR ao dano causado. Se quiser ir além, pague +1PD para incendiar seu próprio corpo. Até o fim da cena de combate, você sofre 1d4 de dano por turno, seus ataques causam Queimadura e seu dano aumenta em 1 passo.
+Banho de Sangue (Passiva): Sempre que derrotar um inimigo, você recebe uma ação extra de movimento para avançar até o próximo. Isso não altera ordem dos turnos ou a ação dos seus aliados, mas está aberto para golpes de oportunidade no trajeto. Além disso, toda vez que for ferido, você recebe +1 em testes de luta (Max = FOR + CON). Por 1PD avance com um ataque de arma para o inimigo mais próximo.
+27
+Em um mundo marcado pelo Caos, aquilo que as pessoas acreditam pode ser tão importante quanto aquilo que realmente aconteceu. Por isso, Bardos não são apenas artistas: são aqueles que escolhem quais histórias serão lembradas, quais heróis serão celebrados e quais verdades continuarão sendo contadas quando todos os outros já tiverem sido esquecidos.
+Criação de Personagem
+Classes - Bardo
+Bardos são artistas que aprenderam que palavras, melodias e histórias podem possuir tanto poder quanto uma lâmina. Músicos, poetas, contadores de histórias e performers, eles percorrem o mundo transformando sua arte em uma ferramenta capaz de inspirar aliados, desestabilizar inimigos e alterar o curso de uma situação.
+No universo de ESTIGMA DO CAOS, a arte carrega memórias de um mundo que já mudou inúmeras vezes. Bardos preservam lendas, registram guerras, espalham rumores e mantêm vivas histórias que poderiam desaparecer com seus protagonistas. Alguns servem às cortes e grandes cidades; outros viajam entre tavernas, campos de batalha e estradas, levando consigo histórias que pertencem a povos inteiros.
+Sua influência, porém, vai além daquilo que conseguem cantar ou contar. Um Bardo sabe ler pessoas, compreender emoções e encontrar as palavras capazes de despertar coragem, medo, esperança ou dúvida. Sua presença pode transformar um grupo desorganizado em uma força determinada ou fazer uma multidão inteira enxergar um acontecimento sob uma nova perspectiva.
++2
++1
++3
+0
+-1
+Criação de Personagem
+Classes - Bardo
+Atributos: Você pode editar 2 pontos da sua Lótus de Atributos. 
+Características de classe
+Perícias: Você recebe as perícias: Diplomacia (1), Misticismo (1) e Sedução (1).
+Poderes de Classe
+Inspiração (1PD): Escolha um aliado para inspirá-lo em sua ação. O Mestre avalia seu discurso: Ruim: +2; Médio: +1d20 (Vantagem); Bom: +2d20 (Vantagem). Além disso, pague +4PD para inspirar a si mesmo e o grupo todo.
+Equipamento inicial:
+Armadura leve/média/Pesada, Arma Branca (1° Estágio), Instrumento, Escudo leve, Poção/Item de suporte.
+28
+Performático até demais(Passiva): Para Sedução, Lábia, Persuasão ou Diplomacia, some seu CAR aos testes. Se quiser, pague 1PD para tocar seu instrumento durante o teste e receber +[Nível da Perícia Usada]d6.
+Solo no Improviso  (2PD): Toque uma melodia mágica que afeta uma área de alcance médio (15m). Escolha um efeito, que dura 1d4 + CAR turnos. Os alvos fazem Fortitude (CD 16 + CAR) para resistir ao efeito inicial. Aliados podem resistir usando uma CD reduzida em CAR. Escolha: Atordoado: Fortitude (CD 16 + CAR) todo turno. Se falhar, perde sua ação padrão. Falhar duas vezes seguidas causa Derrubado; Louco: deve atacar a criatura mais próxima. A cada turno, faça Percepção (CD 16 + CAR); se falhar, ataca a si mesmo. Sono: recebe -[Nível de Misticismo] na Defesa. A cada turno, faça Vontade (CD 16 + CAR); se falhar, adormece.
+Nota errada (2PD): Um estrondo sonoro causa [Nível de Diplomacia]d8 + CAR de dano e derruba automaticamente inimigos em alcance curto. Em alcance médio, exige Fortitude (CD 15 + CAR) e causa -1 dado de dano. Cada uso adicional na mesma cena exige um teste de DES com CD crescente (6, 8, 10...). Se falhar, seu instrumento fica Danificado.
+29
+Mas todo poder exige um preço. Um Bruxo não recebe seus dons gratuitamente; ele os conquista, negocia ou rouba. E quanto mais fundo mergulha nas forças que o alimentam, mais difícil se torna saber onde termina sua própria vontade e onde começa a influência daquele que está do outro lado do pacto.
+Criação de Personagem
+Classes - Bruxo
+Os Bruxos são aqueles que escolheram caminhos que outros magos preferiram não percorrer. Sua magia nasce de pactos, conhecimentos proibidos e forças que não deveriam ser tocadas levianamente. Em vez de apenas compreender o sobrenatural, o Bruxo estabelece uma relação com ele — e aceita pagar o preço necessário para obter poder.
+No universo de ESTIGMA DO CAOS, onde a realidade foi profundamente marcada por forças além da compreensão mortal, existem inúmeras fontes capazes de alimentar um Bruxo. Entidades antigas, espíritos, criaturas sobrenaturais e manifestações do próprio Caos podem conceder poder àqueles dispostos a negociar. Cada pacto deixa sua marca, tornando impossível separar completamente o Bruxo do que escolheu.
+Por isso, Bruxos são frequentemente vistos com desconfiança. Seus métodos desafiam os limites considerados aceitáveis pela sociedade e suas motivações raramente são completamente compreendidas. Alguns buscam conhecimento, outros poder, vingança ou simplesmente uma forma de sobreviver em um mundo onde forças maiores disputam o destino de todos.
++2
+0
++2
++2
+-1
+Criação de Personagem
+Classes - Bruxo
+Atributos: Você pode editar 2 pontos da sua Lótus de Atributos. 
+Características de classe
+Perícias: Você recebe as perícias: Misticismo (1), Lábia (1) e Vontade (1).
+Poderes de Classe
+Pacto Profano (Passiva): Todas suas magias são derivadas dos seres com os quais fez pactos, roubou ou prestou concessões. Enquanto seguir os comandos ou a vontade dessa entidade, receba +1 nível em Misticismo e (+CAR +INT) em testes para seguir comandos diretos dela. Se desobedecer, receba punição Moral e perca os bônus.
+Equipamento inicial:
+Armadura leve/média, 1 Arma Branca (1°Estágio), Escudo Leve, Canalizador mágico, Grimório, Bolsa de Componentes.
+30
+O Abismo olha pra você (Passiva): Após tanto tempo lidando com criaturas e seres de outro plano, sua mera presença virou porta por onde eles entram. A frequência com que seres mágicos aparecem na sua presença é maior. Além disso, você tem +1d20 (Vantagem) para perícias contra seres místicos e pode usar Investigação para analisar fraquezas e características deles. Por 3PD, conjure um Olhar da Penitência (Alcance pessoal) que queima a sanidade e a vida do alvo. Cause [Nível de Misticismo]d4 de dano na sanidade e Queimadura. Teste Vontade (CD 15 + CAR), se o alvo falhar, fica Pasmo.
+Maldição (2PD): Apartir da sua Vontade, imponha uma restrição sobrenatural em um alvo (Alcance visual). Escolha (1d4 + CAR turnos): Morte destinada: O alvo não pode mais se curar; Pensamentos Intrusivos: O alvo desconfia de si mesmo e recebe a condição Louco; Tempo desgastado: O alvo perde uma ação todo turno; Fragilizado: O dano do alvo cai em [Nível de Vontade] passos.  Vontade CD (16 + CAR) anula.
+Pagar o Preço (1PD): Com seu próprio sangue, reivindique mais poder. Receba 1d6 de dano para +1 dado de dano nas suas ações por 1d4 + CAR turnos. Acumule quanto dano quiser. Alternativamente, sacrifique um de seus feitiços + 2PD até o fim do dia para ressuscitar um corpo e usá-lo como marionete. Teste Misticismo (CD variável). Para cada falha, tente novamente sem consumir feitiços, mas consumindo o mesmo PD.
+31
+Criação de Personagem
+Classes - Cavaleiro
+Em um mundo marcado por guerras, criaturas ancestrais, deuses e forças além da compreensão mortal, os Cavaleiros representam uma das formas mais antigas de resistência. Entre homens e monstros, magia e aço, permanecem na fronteira entre aquilo que deve ser protegido e aquilo que ameaça destruir tudo.
+Guerreiros forjados em aço, disciplina e juramentos antigos, os Cavaleiros dedicam sua vida ao domínio das armas e à arte da guerra. Sua armadura é mais que proteção: é uma extensão de sua identidade. Treinados para suportar aquilo que derrubaria outros combatentes, avançam contra o perigo com técnica e determinação.
+No campo de batalha, o Cavaleiro protege seus aliados, enfrenta os inimigos mais perigosos e permanece de pé quando outros já caíram. Sua presença pode mudar o rumo de um confronto, seja pela ameaça de sua lâmina ou pela segurança que oferece aos companheiros.
+Fora da batalha, cada Cavaleiro é definido pelos princípios que escolheu carregar. Alguns seguem códigos de honra, servem a famílias e reinos ou juram fidelidade a uma causa. Outros abandonaram antigos senhores e transformaram seus juramentos em algo próprio. Ser Cavaleiro não significa necessariamente ser justo; significa possuir algo pelo qual está disposto a lutar.
++3
++1
++1
+-1
++1
+Criação de Personagem
+Classes - Cavaleiro
+Atributos: Você pode editar 2 pontos da sua Lótus de Atributos. 
+Características de classe
+Perícias: Você recebe as perícias: Luta (1), Fortitude (1) e Vontade (1).
+Poderes de Classe
+Vitalidade Fantasma (1PD): Você possui um propósito pelo qual luta. Esse propósito lhe dá força para resistir além. Role [Nível de Fortitude]d6 + CON e receba esse valor em PV temporários até o fim da cena. Não acumula, mas pode substituir PV temporários anteriores.
+Enquanto eu estiver aqui (Passiva): Sua presença no grupo carrega responsabilidades. No fundo, você sabe que será o primeiro a morrer. Sua vida é a primeira peça de um dominó enfileirado. Por isso, ela precisa valer. Receba uma reação adicional de Bloqueio com seu escudo, podendo Bloquear duas vezes consecutivas, sem aumentar suas reações gerais. Além disso, pague 1PD para Bloquear um ataque contra um aliado em alcance curto. Você se torna o alvo e sofre todos os efeitos do ataque. Depois disso, pode somar CON aos testes de Luta e FOR à sua Negação de Dano por 1d4 turnos.
+Vingador (1PD): Quando um aliado for atacado por um inimigo em alcance curto, você pode imediatamente realizar um ataque contra o inimigo, com o dano aumentado [Nível de Luta] passo. Se acertar, o inimigo deve fazer Vontade (CD 16 + CON). Caso falhe, deve atacar você no próximo turno, com -DES nos testes de ataque (mínimo de -1).
+Golpe Voraz (1PD): Canalize a força de sua arma em um ataque devastador. Ao acertar, aplique um efeito conforme seu tipo de dano: Cortante: Sangrando; Perfurante: Debilitado; Impacto: Derrubado. Seu dano aumenta em +FOR.
+Equipamento inicial:
+Armadura leve/média/pesada, Arma Branca (1°Estágio), Escudo leve/médio/pesado, Poção/Item de suporte, Arma de longo alcance  (1°Estágio).
+32
+33
+Criação de Personagem
+Classes - Clérigo
+Mas fé verdadeira exige convicção. Quando tudo ao redor parece condenado ao Caos, o Clérigo permanece de pé porque acredita que existe algo pelo qual vale a pena lutar. E enquanto sua crença não vacilar, sua presença pode ser suficiente para fazer outros encontrarem forças para continuar.
+Clérigos são aqueles que dedicaram sua existência a algo maior do que si mesmos. Sua força nasce da fé, da devoção e da certeza de que existe um propósito capaz de justificar seus sacrifícios. Alguns servem divindades, outros seguem entidades, ideais ou forças que consideram dignas de sua devoção.
+Em ESTIGMA DO CAOS, a fé ganhou novos significados após o mundo ser transformado. Deuses, entidades e forças sobrenaturais disputam a crença dos mortais, enquanto aqueles que os seguem carregam consigo fragmentos de seus poderes. Um Clérigo pode ser um sacerdote devoto, um fanático, um peregrino ou simplesmente alguém que encontrou na fé uma razão para continuar.
+Sua devoção também molda a maneira como enfrentam o mundo. Alguns erguem suas armas em nome de seus princípios; outros protegem os necessitados, condenam aqueles que consideram profanos ou oferecem esperança em lugares onde ela parece ter desaparecido. Para um Clérigo, cada batalha pode ser uma prova de fé e cada escolha, uma oportunidade de reafirmar aquilo em que acredita.
++1
++1
++2
++2
+-1
+Criação de Personagem
+Classes - Clérigo
+Atributos: Você pode editar 2 pontos da sua Lótus de Atributos. 
+Características de classe
+Perícias: Você recebe as perícias: Religião (1), Misticismo (1) e Diplomacia (1).
+Poderes de Classe
+Pacto de Devoção (Passiva): Sirva fielmente sua divindade e honre seus ensinamentos para receber sua graça. Receba +1PD para cada ponto de CAR e INT e +CAR em testes de  Diplomacia e Religião. Ao quebrar seus preceitos, receba punição Moral, entre em Pecado e perca estes benefícios até se reconciliar com seu deus.
+Equipamento inicial:
+Armadura leve/média/pesada, Arma Branca (1°Estágio), Escudo leve/médio/pesado, Poção/Item de suporte, Canalizador mágico, Grimório, Bolsa de Componentes.
+34
+Benção (2PD): Redirecione o poder cedido por seu deus e conduza um irmão ao caminho virtuoso. Se estiver em Pecado, faça Religião (CD 24 - CAR). Escolha um aliado em alcance visual e conceda uma bênção: Proteção Divina: Recebe [Nível de Religião]d4 PV temporários, aumentado em um passo para cada ponto de CAR; Sorte Maravilhosa: Soma CAR em todos os testes por 1d4 + CAR turnos ou pode rolar novamente um fracasso; Carne Sacra: Recupera [Nível de Religião]d2 PV por turno, aumentado em um passo para cada ponto de CAR, durante 1d4 turnos. Se não estiver em Pecado, pague +1PD e faça Religião (CD 22 - CAR) para usar a bênção em si mesmo.
+Promessa (Passiva): Ao início de cada dia, faça uma promessa à sua divindade em troca de uma bênção. Escolha uma restrição, jejum ou sacrifício; quanto maior o sacrifício, maior bênção concedida. Ela dura até o fim do dia ou até que a promessa seja quebrada. Se quebrá-la, não poderá fazer outra promessa por 1 dia.
+Condenação (1PD): Condene um alvo. Se ele quebrou as leis de seu deus, o custo cai em 1PD; caso contrário, faça Religião (CD 16 - CAR). Se passar, o alvo sofre [Nível de Religião]d2, aumentado em 1 passo para cada ponto de CAR, de dano adicional ao ser atacado.
+35
+Criação de Personagem
+Classes - Engenheiro
+No entanto, toda invenção nasce da experimentação. Engenheiros investigam, desmontam, adaptam e testam até compreender o funcionamento de algo — e, quando necessário, forçam suas criações além dos limites projetados. Em meio ao caos, eles não esperam que o mundo lhes ofereça uma resposta: eles constroem uma.
+O Engenheiro é aquele que transforma a curiosidade em criação. Em um mundo onde o caos tornou a realidade imprevisível, ele busca compreender aquilo que os outros não conseguem explicar, estudando máquinas, mecanismos, mana e fenômenos desconhecidos. Para ele, todo problema possui uma solução — basta descobrir como construí-la.
+Cada Engenheiro possui um autômato, uma criação própria que o acompanha e reflete sua maneira de pensar. Leves, médios ou pesados, esses autômatos podem assumir diferentes funções e receber habilidades desenvolvidas por seus próprios criadores. Mais do que ferramentas, são obras únicas construídas para superar os limites de seus mestres.
+Através de suas engenhocas, o Engenheiro reproduz efeitos que muitos julgariam exclusivos da magia. Seus dispositivos exigem recursos e planejamento para serem construídos, mas podem oferecer soluções práticas e econômicas quando utilizados repetidamente. Além disso, sua mente inventiva permite desenvolver projetos, ferramentas e mecanismos capazes de resolver problemas que sequer possuíam uma solução conhecida.
++2
++1
+0
++3
+-1
+Criação de Personagem
+Classes - Engenheiro
+Atributos: Você pode editar 2 pontos da sua Lótus de Atributos. 
+Características de classe
+Perícias: Você recebe as perícias: Engenharia (1), Investigação (1) e Artesanato (1).
+Poderes de Classe
+Autômato (Passiva): Você tem uma criação capaz de agir sozinha (Ação padrão + movimento). Ela age conforme o ritmo da cena, próxima ao seu turno. Leve: Possui (INT×3 + [Engenharia]) PV, recebe (3 + [Engenharia]) Habilidades e pode ser equipável. Sua Defesa é igual à sua + seu nível de Engenharia. Ao atingir metade dos PV, a CD dos testes para uso de suas Habilidades aumenta em +2.Médio: Possui (INT×4 + [Engenharia]×2) PV e (2 + [Engenharia]) Habilidades. Sua Defesa é igual à sua − 1.Pesado: Possui (INT×6 + [Engenharia]×3) PV e (1 + [Engenharia]) Habilidades. Sua Defesa é igual à sua − 5. Possui Negação de Dano igual a INT + Engenharia. É possível embarcar nos autômatos pesados. Deve escolher entre ação de movimento OU padrão.Efeitos que causam dano recorrente têm sua duração reduzida a 1 turno. Suas Habilidades podem modificar essas características.Ao chegar a 0PV, o autômato é desativado e seu núcleo fica exposto. O Engenheiro deve recuperá-lo para reconstruí-lo: Leve: 1 Sucata + 1PD; Médio: 2 Sucatas + 2PD; Pesado: 3 Sucatas + 3PD. O núcleo possui 1PV (Leve), 15PV (Médio) ou 30PV (Pesado). Se o núcleo chegar a 0PV, você perde o autômato.
+Equipamento inicial:
+Armadura leve/média/pesada, Arma Branca (1°Estágio), Escudo leve/médio/pesado, Poção/Item de suporte, Arma de longo alcance  (1°Estágio), Bolsa de Sucata.
+36
+Gambiarra (1PD): Quando uma de suas criações falhar ou ficar Danificada, faça uma solução improvisada para fazê-la funcionar por 1d4 turnos. Alternativamente, repare seu autômato, recuperando INTd4 PV. Se usar 1 Sucata, recupere (INTd8 + INT) PV.
+37
+Criação de Personagem
+Classes - Espadachim
+Para o Espadachim, cada batalha é uma oportunidade de aperfeiçoar sua arte. Em meio à violência e à imprevisibilidade da Era do Caos, ele busca transformar força e técnica em algo maior: um movimento perfeito, capaz de decidir uma luta antes mesmo que o inimigo perceba que ela começou.
+O Espadachim dedica sua vida ao domínio das armas brancas. Para ele, cada lâmina possui um peso, um ritmo e uma maneira própria de ser empunhada. Seu treinamento transforma movimentos precisos em reflexos naturais, permitindo que enfrente seus inimigos com velocidade, técnica e força.
+Em um mundo moldado pelo caos, a habilidade de um guerreiro não depende apenas de sua força física. Espadachins aprendem a conduzir energia através de seus movimentos, combinando técnicas marciais com manifestações mágicas. Um golpe pode carregar energia sobrenatural, uma defesa pode se tornar quase impossível de atravessar e um simples passo pode decidir o destino de um combate.
+Sua especialização permite que dominem diferentes armas e estilos de combate, adaptando-se às circunstâncias sem abandonar sua precisão. Alguns preferem a elegância de uma espada, outros a brutalidade de armas pesadas ou a velocidade de duas lâminas. O importante não é a arma escolhida, mas a maestria alcançada sobre ela.
++1
++2
+-1
++1
++2
+Criação de Personagem
+Classes - Espadachim
+Atributos: Você pode editar 2 pontos da sua Lótus de Atributos. 
+Características de classe
+Perícias: Você recebe as perícias: Luta (1), Reflexos (1) e Vontade (1).
+Poderes de Classe
+Ponto Zero (1PD): Após ver seu alvo lutando, você observa falhas em sua postura, ou brechas em sua defesa. Com isso, até o fim do combate, ataque que com + DES no seu teste de luta e, após ser atacado por ele, passe a somar + DES na sua defesa. Por + 1PD (Em cada uso), causa + FOR + DES em seus ataques que atravessam negação de dano.
+Equipamento inicial:
+Armadura leve/média/pesada, Arma Branca (2°Estágio), Escudo leve/médio/pesado, Poção/Item de suporte.
+38
+Corte Lótus(XPD): Você assume uma postura de foco absoluto e concentra sua técnica em cortar diretamente a Lótus da Vida do alvo. Faça um ataque normal. Se acertar, escolha um dos seguintes cortes: Vermelho (1PD): Corte a carne. O alvo realiza Fortitude (CD 15 + FOR); se falhar, sofre Sangramento. Azul (1PD): Corte o fluxo de Mana. Por 1d4 + INT turnos, sempre que o alvo gastar PD, realiza Misticismo (CD 15 + FOR); se falhar, perde o PD sem efeito. Amarelo (3PD): Corte o canal da Vontade. O alvo realiza Vontade (CD 15 + FOR); se falhar, fica Pasmo, por 1 turno. Verde (4PD): Corte o Ego. O alvo realiza Vontade (CD 15 + FOR) duas vezes e, para cada falha, perde uma Habilidade aleatória por 1d4 turnos. Roxo (3PD): Corte a ligação com o Caos. O alvo realiza Fortitude (CD 15 + FOR); se falhar, sofre Instabilidade.
+Intenção Assassina (Passiva): No início de cada combate, escolha um alvo como sua prioridade. Seus ataques contra ele causam +1d4 aumentado em um passo para cada ponto de FOR. Por 1PD, você também pode realizar um teste de Percepção para detectar intenções assassinas ou intimidação com + FOR ou DES.
+Técnica notória (Passiva): Um Espadachim busca constantemente superar seus limites. Sempre que vencer um oponente com FOR ou DES superior à sua, recupere [FOR]PD e [DES]PV.
+39
+Entretanto, existem limites que não podem ser transgredidos. Quando alguém ameaça aquilo que jurou proteger ou ultrapassa os limites que estabeleceu, o Guerreiro não recua. Enquanto houver forças para lutar, nada será capaz de fazê-lo abandonar seu propósito
+Criação de Personagem
+Classes - Guerreiro
+O Guerreiro é aquele que transformou o combate em disciplina. Sua força e resistência são acompanhadas por técnica, precisão e experiência, tornando-o capaz de enfrentar ameaças que poucos ousariam encarar. Diferente daqueles que lutam pelo prazer da violência, ele entende que cada confronto deve ter um propósito.
+Sua presença também se estende além da própria lâmina. Guerreiros sabem que uma batalha não é vencida apenas por quem golpeia mais forte, mas por aqueles que permanecem firmes quando todos os outros vacilam. Sua determinação inspira seus companheiros e mantém o grupo unido mesmo diante do medo e da adversidade.
+Todo Guerreiro carrega consigo um propósito maior. Pode ser uma pessoa, uma causa, uma promessa ou um ideal, mas aquilo que escolheu proteger está acima de sua própria glória. Por isso, evita conflitos desnecessários e não busca reconhecimento por suas vitórias. Uma batalha carrega sempre um custo grande demais para pagar atoa.
+Criação de Personagem
+Classes - Guerreiro
+Atributos: Você pode editar 2 pontos da sua Lótus de Atributos. 
+Características de classe
+Perícias: Você recebe as perícias: Luta (1), Fortitude (1) e Atletismo (1).
+Poderes de Classe
+Técnica Letal(2PD): Você desfere um golpe devastador que atinge uma área de 10m de raio, causando FORd6 + CON de dano. Todos os alvos realizam Reflexos (CD 15 + FOR para inimigos ou CD 15 − FOR para aliados). Quem for atingido sofre o dano completo e  fica Derrubado. Quem não for atingido sofre metade do dano e não sofre outros efeitos. Aliados previamente alertados realizam o teste de Reflexos com -2 na CD.
+Equipamento inicial:
+Armadura leve/média/pesada, Arma Branca (1°ou 2°Estágio), Escudo leve/médio/pesado, Poção/Item de suporte.
+40
++2
++1
+0
+-1
++3
+Grito de Guerra (0PD): Do fundo do peito, solte um urro que inspira seus aliados. Uma vez por cena, você e todos os aliados recebem [FOR]PD temporários. Além disso, você pode pagar 1PD para que seus companheiros causem +[Nível de Atletismo]d4 de dano por 1d4 + CON turnos.
+Domine a Arte da Paz (Passiva): Resolver impasses sem recorrer a violência, apesar de não ser sua especialidade, é um objetivo constante. Sempre que impedir um conflito, recupere [FOR]PD e receba uma Inspiração. Além disso, passe a somar sua FOR em testes de Diplomacia. Por 1PD, use FOR como base dos testes de diplomacia.
+Sem volta (Passiva): Defina um alvo. Ou você ou ele. Alguém morre hoje. O alvo escolhido por você recebe uma proposta de entrar em um confronto sem interrupções até a morte Vontade (CD 15 + FOR). Nenhum teste de ataque. Apenas dano trocado com +1d10. Enquanto estiver nesse contrato, sua negação de dano  soma [FOR + CON].
+41
+Criação de Personagem
+Classes - Ladino
+Nas sombras, um Ladino raramente deixa rastros. Ele não precisa ser o mais forte ou o mais resistente, apenas precisa estar no lugar certo, no instante certo. Afinal, quando todos percebem o que aconteceu, normalmente já é tarde demais.
+O Ladino conhece os caminhos que ninguém vê. Mestre do roubo, da furtividade e da enganação, prefere entrar onde não foi convidado e sair antes que percebam sua presença. Sua agilidade permite atravessar lugares perigosos, contornar obstáculos e transformar qualquer descuido em uma oportunidade. Nas ruas e nas sombras, poucos conhecem seus verdadeiros passos.
+Para ele, o combate também é uma questão de oportunidade. Ladinos observam, esperam e atacam onde a defesa é mais fraca. Flancos, distrações e brechas são tão importantes quanto a própria arma, permitindo que um único movimento preciso seja mais perigoso que uma sequência de golpes. Quando o inimigo percebe sua presença, muitas vezes o confronto já está decidido.
+Mas o caos ensinou aos Ladinos que nem toda oportunidade precisa ser encontrada. Algumas podem ser criadas. Através da Vontade e das forças imprevisíveis que permeiam o mundo, eles aprendem a distorcer pequenas possibilidades, escapar do improvável e fazer com que aquilo que parecia impossível aconteça no momento certo.
++1
++3
++1
++1
+-1
+Criação de Personagem
+Classes - Ladino
+Atributos: Você pode editar 2 pontos da sua Lótus de Atributos. 
+Características de classe
+Perícias: Você recebe as perícias: Ladinagem(1), Furtividade(1) e Lábia(1).
+Poderes de Classe
+Golpe Furtivo (Passiva): Uma única oportunidade é tudo o que você precisa. Enquanto não for detectado pelo alvo ou ele estiver vulnerável, seus ataques causam +1d4 de dano por Nível de Furtividade. Se quiser ir além: Golpe Letal (2PD): faça um ataque normal, sujeito a crítico. O bônus do Golpe Furtivo aumenta em 1 passo por DES. O alvo testa Reflexos (CD 15 + DES); se falhar, você recebe uma ação de movimento para desaparecer de sua vista. Assassinato (3PD): uma vez por campo de batalha, aproxime-se de um alvo sem que o grupo seja percebido e faça um ataque normal, sujeito a crítico. Se sua DES superar a CON do alvo, um acerto o mata instantaneamente; caso contrário, causa o dano do Golpe Letal duas vezes. A margem de ameaça aumenta em +1 até o fim da cena.
+Equipamento inicial:
+Armadura leve, Arma Branca (1°Estágio), Escudo leve/médio, Poção/Item de suporte, Arma de longo alcance  (1°Estágio).
+42
+Mãos Caóticas (1PD): O Caos faz suas mãos vibrarem além da matéria, permitindo alcançar e roubar coisas inacessíveis, exceto sob proteção mágica. Faça um teste de Ladinagem + DES; falhar não revela automaticamente sua presença, mas as condições da falha podem fazer isso. Por 6PD, vibre o corpo inteiro e evite o dano de um ataque. O primeiro no dia é seguro; nos seguintes, Vontade + CAR (CD 8, 16...). Se falhar, perde o controle e sofre uma consequência determinada pelo Mestre.
+Suprimir Presença (2PD): Sua vontade de não ser percebido distorce a luz ao seu redor. Se ninguém estiver prestando atenção em você, fique Furtivo.
+Cara de Pau (Passiva): Quando alguém questionar sua mentira, faça um teste de Lábia/Enganação + CAR para convencê-lo do contrário. Se passar, ele acredita na mentira até que obtenha uma prova concreta e irrefutável. Por 1PD, some + DES no teste.
+Esse poder, porém, cobra seu preço. Magos podem transformar o campo de batalha com um único feitiço, mas raramente possuem a resistência necessária para suportar aquilo que provocam. Por isso, dependem de distância, preparação e inteligência para sobreviver. Quando conseguem espaço para agir, tornam-se capazes de feitos extraordinários; quando são encurralados, descobrem rapidamente o preço de brincar com forças maiores que o próprio corpo.
+43
+Criação de Personagem
+Classes - Mago
+O Mago é alguém que busca compreender as regras que regem o mundo para descobrir como contorná-las. Por meio do estudo, da observação e da prática, aprende a superar as limitações de sua própria natureza e ampliar a influência de seu Ego sobre a realidade. Para ele, o impossível não é uma barreira, mas apenas algo que ainda não foi compreendido.
+Seja através da Vontade ou do Caos, os Magos encontram caminhos para fazer sua intenção alcançar aquilo que a realidade deveria impedir. Encantamentos, rituais e transformações são diferentes formas de manipular essas forças e produzir efeitos que parecem impossíveis aos olhos daqueles que não conhecem suas regras.
+Todo Mago carrega um catalisador capaz de ressoar na frequência da realidade e traduzir seus conhecimentos em magia. Grimórios, símbolos e fórmulas auxiliam na preparação e memorização de encantamentos cada vez mais complexos, algo especialmente necessário na Era do Caos, onde até mesmo as leis que sustentam a magia se tornaram mais instáveis.
+Criação de Personagem
+Classes - Mago
+Características de classe
+Aluno Exemplar (Passiva): Seu estudo das forças místicas permite aprender além dos limites comuns. Receba 1 Slot de Magia por Nível de Misticismo. Além disso, pode usar Transcrição Impossível (2PD): ao testemunhar uma Magia desconhecida, se houver espaço no grimório, registre-a para recriá-la posteriormente. O tempo e os requisitos dependem do grimório, Misticismo, INT ou CAR e da própria Magia. Magias transcritas só podem ser usadas com o grimório em mãos; para aprendê-las definitivamente, atenda aos requisitos do Mestre e possua um Slot livre.
+Equipamento inicial:
+Armadura leve/média, Arma Branca (1°Estágio), Escudo leve, Poção/Item de suporte, Canalizador mágico, Grimório, Bolsa de Componentes.
+44
++1
++1
++1
++3
+-1
+Atributos: Você pode editar 2 pontos da sua Lótus de Atributos. 
+Perícias: Você recebe as perícias: Misticismo(1), Persuasão(1) e Vontade(1).
+Poderes de Classe
+Ecos do Além (Passiva): Heranças da Era Primordial perpassam seu Ego e se canalizam através de suas mãos. Uma vez por cena, lance uma Magia sem gastar PD, com custo limitado a (2×Misticismo + INT ou CAR). Ela pode ser Sobrecarregada e Elaborada uma vez. Falhar no teste de Misticismo consome o uso. A cada uso, algo se desenvolve em você.
+Ritualista (3PD): Crie um círculo ritualístico para uma Magia, investindo 1 Componente por círculo. A preparação exige 1 turno por Componente. Ao concluir, crie uma Magia Verdadeira, conjurada sem erro e causando +[Componentes] dados de efeito. O círculo permanece por uma cena, inclusive em objetos, e pode ser ativado por qualquer criatura por 3PD por Componente. Teste Artesanato (CD 12 + Nº de Componentes) para cada Componente usado; cada falha o consome. Para torná-lo permanente, dobre os Componentes e aumente a preparação e ativação para 4PD por Componente. O círculo permanece até ser danificado e não recupera Componentes.
+Aura mística (Passiva): Seu poder mágico transborda em uma aura sobrenatural. Some +INT em testes de Persuasão e Intimidação e recebe +INT em Negação de Dano. Além disso, por 3PD Sobrecarrega todas as suas magias que forem lançadas sem custo adicional até o fim da cena.
+45
+Criação de Personagem
+Classes - Paladino
+Na Era do Caos, onde crenças, forças sobrenaturais e vontades colidem constantemente, a fé de um Paladino é também uma forma de resistência. Enquanto sua divindade permanecer ao seu lado, ele continuará avançando, curando suas próprias feridas e protegendo seus companheiros. Para um Paladino, cair pode ser inevitável; permanecer caído, jamais.
+O Paladino é um guerreiro guiado pela fé. Sua força não vem apenas do treinamento ou das armas, mas do vínculo com uma divindade que lhe concede propósito e poder. Ao contrário daqueles que dedicam sua devoção a amparar os outros, o Paladino volta essa bênção para si, transformando seu próprio corpo em instrumento de sua vontade divina.
+Sua fé se manifesta como força, proteção e resistência. Paladinos reforçam seus corpos, recuperam suas feridas e permanecem de pé quando outros já teriam caído. Cada bênção recebida os torna mais difíceis de deter, permitindo que avancem pelo campo de batalha como uma muralha viva entre seus inimigos e aqueles que juraram proteger.
+Mas a devoção exige respeito. Um Paladino não serve a uma divindade apenas para receber seus dons: ele também carrega seus princípios e não tolera aquilo que os profana. Quando alguém desrespeita sua fé ou transgride os preceitos de seu deus, sua espada e sua vontade tornam-se instrumentos de punição, aplicando uma condenação coerente com aquilo que foi violado.
+Criação de Personagem
+Classes - Paladino
+Características de classe
+Voto Sagrado (Passiva): Um voto de fé e um código inquebrável moldam seu ser e lhe conferem uma graça. Receba +1 Defesa por ponto de CAR e some +CAR em Diplomacia e Religião. Ao quebrar seus preceitos, receba punição Moral, entre em Pecado e perca estes benefícios até se reconciliar com seu Deus. Por 2PD, some seu nível de Fortitude e Religião à Defesa.
+Equipamento inicial:
+Armadura leve/média/pesada, Arma Branca (2°Estágio), Escudo leve/médio/pesado, Poção/Item de suporte.
+46
++2
++0
++2
+-1
++2
+Atributos: Você pode editar 2 pontos da sua Lótus de Atributos. 
+Perícias: Você recebe as perícias: Religião(1), Luta(1) e Fortitude(1).
+Poderes de Classe
+Punição Divina (2PD): Nenhuma heresia passa impune diante de sua presença. Após um ataque, reforce-o com poder divino, causando +[Nível de Religião]d2 de dano, aumentado em 1 passo por ponto de CAR. Se o alvo estiver explicitamente pecando contra seu Deus, o custo cai para 1PD. Em Pecado, teste Religião (CD 22 − CAR). Por 3PD, uma vez por campo de batalha, use Lança de Raios: convoque do céu uma lança de energia divina. Cause CARd6, aumentado em 1 passo por [Nível de Vontade], e aplique Eletrificado. O alvo principal testa Reflexos (CD 18 + CAR) para reduzir o dano à metade e anular o efeito. Se atingido, outros inimigos no campo sofrem CARd4 de dano colateral.
+Escudo Da Fé (3PD): Conjure uma barreira semicircular de 10m que protege quem estiver atrás dela e queima quem a tocar. Faça Religião (CD 18). A barreira tem ([Nível de Religião]×10 + CAR×3) PV. Quem a tocar testa Fortitude (CD 15 + CAR); se falhar, sofre Queimadura; se passar, sofre apenas 1d4 de dano.
+Cura(3PD): Em Pecado, faça Religião (CD 23 − CAR). Recupere [Nível de Religião]d6 PV, aumentado em 1 passo por ponto de CAR. Por +1PD, cure uma condição adversa. Sem estar em Pecado, pague +1PD e teste Religião (CD 22 − CAR) para usar a bênção em um aliado.
+47
+ATRIBUTOS
+48
+Criação de Personagem
+Atributos base
+Pontos de Vida(PV)
+Pontos de Vida (PV) epresentam sua energia vital e a integridade de seu corpo. Ao chegar a 0PV, você fica Caído e recebe 3 Turnos de Morte. Durante esse período, um aliado pode tentar reanimá-lo com um teste de Medicina (CD 15). A CD aumenta em +5 a cada nova queda no mesmo combate.Seus PV iniciais são calculados pela fórmula: (FOR e DES são no mínimo 0)
+1 + [Atributos de raça] + [Bônus de Classe] + CONx4 +(FOR + DES)x1
+Pontos de Determinação(PD)
+Pontos de Determinação (PD) representam sua força de vontade e a capacidade de executar tarefas, estruturar seu Ego, manipular Mana e ultrapassar seus limites. Seus PD são recuperados ao se alimentar e descansar. Raríssimas poções conseguem recuperá-los. Ao chegar a 0PD, a consequência depende daquilo que o levou a esse estado:Esforço ao Limite (0PD): Você levou seu corpo e sua mente ao extremo para realizar uma ação, feitiço ou manobra impossível. O cansaço é imensurável. Você desmaia onde estiver e dorme por 24 horas.Sanidade (0PD): Metade do seu PD total é contabilizada como Sanidade. Sempre que perder 1PD de Sanidade, reduza seu PD máximo em 2 até recuperá-lo. Ao chegar a 0 de Sanidade, algo drenou completamente sua mente. Seus ideais e sua razão de viver deixam de importar, e seu personagem enlouquece completamente. Os traumas são permanentes. Após 24 horas de insanidade, se ainda estiver vivo, recupere 1PD e desenvolva traumas relacionados ao que o levou a esse estado.Sem Vontade (0PD): Você simplesmente desistiu. Durante 24 horas, perde completamente o interesse em qualquer coisa, não reage nem se move por vontade própria e mal consegue falar. Ao fim desse período, se estiver vivo, recupere 1PD.Seus PD iniciais são calculados pela fórmula: (CAR e INT são no mínimo 0)
+1 + [Atributos de raça] + [Bônus de Classe] + CONx2 + (CAR + INT)x3
+49
+Criação de Personagem
+Atributos base
+Defesa (DEF)
+Defesa (DEF) representa sua capacidade de evitar ou resistir a ataques. Ela é determinada por seus atributos, habilidades de Classe e Raça, Equipamentos e efeitos mágicos ou encantamentos ativos.A Defesa é dada pela Fórmula:
+10 + [Bônus da raça] + [Bônus de Classe] + DESx2 + [Equipamentos]
+Pontos de Perícia(PP)
+Pontos de Perícia (PP) são utilizados para a compra e aprimoramento das suas perícias. É de responsabilidade integral do jogador contabilizar seus pontos e acompanhar todos os gastos que fará. Os PP são obtidos principalmente ao falhar em testes. Qualquer falha em qualquer teste te concede +1PP. Eles podem ser acumulados sem limite, não possuem prazo de validade e nem podem ser subtraídos de você. São, essencialmente, a principal forma de aprimorar as perícias do seu personagem.Os PP obtidos pela Fórmula: (CAR, INT, FOR e DES tem, no mínimo, 0)
+2 + [Bônus da raça] + [Bônus de Classe] + (INT + FOR + CAR + DES)*2 
+Slots de Magia
+Slots de Magia são peça fundamental para todas as classes mágicas. Na prática, você recebe 1 Slot a cada dois Níveis de misticismo. Além disso, cada classe traz um benefício extra:Bruxo: + 2 Slots e um Grimório Temático (II)Bardo: +1 SlotsClérigo: + 2 Slots e um Grimório Temático (II)Espadachin: + 1 SlotMago: + 2 Slots e um Grimório Genérico (II)Paladino: + 1 Slot e um Grimório Temático(I)
+50
+EQUIPAMENTOS
+51
+Equipamentos
+Todo Aventureiro da Era do Caos começa sua jornada com um conjunto de equipamentos básicos, definido por sua Classe. Ao longo da aventura, cada item carregado ocupa espaço em seu inventário, representado por Slots. Para simplificar a administração de peso e volume, cada item ocupa 1 Slot, independentemente de seu tamanho ou peso, salvo quando possuir alguma regra que permita seu acúmulo. Exemplos:
+2 + FOR + CON + [Bônus de Classe] + [Bônus de Raça] + [Nível de Atletismo]
+ Espada: -1 Slot 100 Moedas em uma bolsa: -1 Slot 20 Munições em uma bolsa: -1 Slot Garrafa de água: -1 Slot Barril de água: -1 Slot Grimório: -1 Slot
+Esse sistema não busca reproduzir o peso real de cada objeto, mas transformar o inventário em uma decisão estratégica. Em uma jornada, cada espaço pode representar uma ferramenta, um recurso ou uma oportunidade. Escolher o que carregar também significa escolher o que estará preparado para enfrentar.Armaduras e equipamentos vestidos não ocupam Slots de Inventário. Seu espaço disponível é determinado pela fórmula:
+Mochila(I): +2 SlotsAnel de dimensão de bolso(I): +3 SlotsBolsa para Sucata(I): +3 Slots para SucataPoção de Carga(I): +2 Slot por duração CenaGrimório Genérico(II): +2 Slots para Magias
+Armaduras e Escudos
+Armaduras e escudos possuem categorias de tamanho que determinam sua mobilidade e proteção. Equipamentos Pequenos/Leves não impõem penalidades. Equipamentos Médios causam -3 em testes de movimentação geral. Equipamentos Grandes/Pesados causam -1d20 em mov., -3 em ações precisas e -5m de movimentação. Armaduras:
+Armadura Leve: +3 Defesa;Armadura Média: +5 Defesa e -1 de dano;Armadura Pesada: +7 Defesa e -3 de dano;
+Escudo Leve: +1 Defesa;Escudo Média: +2 Defesa e -1 de dano;Escudo Pesada: +4 Defesa e -2 de dano. Receba a habilidade exclusiva Bloqueio Impenetrável.
+Bloqueio Impenetrável (3PD): Posicione seu escudo no chão como uma torre. Sua Defesa natural aumenta em +2 e sua Negação de Dano em +4, tornando-o um alvo prioritário. Vontade (CD 15 + CON) Enquanto permanecer assim, você não pode realizar ações padrão ou de movimento. Manter o efeito custa 1PD por turno.
+Equipamentos
+Na Era do Caos, uma arma é mais do que uma ferramenta de combate. É uma extensão de quem a empunha. Lâminas, martelos, lanças e armas de fogo carregam diferentes formas de violência, e cada uma encontra seu próprio caminho através do Caos que permeia o mundo.Toda arma possui um Dano, um Tipo de Dano, uma Margem de Ameaça e um Multiplicador de Crítico. Para acertá-la, realize um Teste de Perícia adequado.Ao atacar, faça um teste de Luta para armas de combate corpo a corpo ou Pontaria para armas à distância. O resultado deve atingir ou superar a Defesa (DEF) do alvo. (FOR/INT/DES)d20 + Perícia + [Bônus]Se o resultado atingir a Defesa, o ataque acerta e causa o dano da arma. Resultados dentro da Margem de Ameaça podem gerar um Acerto Crítico.Margem de Ameaça Padrão: +0 → 20, +1 → 19, +2 → 18...O dano de uma arma é determinado por um ou mais dados. Sempre que uma habilidade aumentar o dano em 1 passo, avance o tamanho de cada dado na seguinte sequência:d2 → d4 → d6 → d8 → d10 → d12O número de dados permanece o mesmo. Assim: 3d6 → 3d8 → 3d10 → 3d12Aumentar o número de dados e aumentar seu tamanho são efeitos diferentes. +1d6, por exemplo, transforma 2d6 em 3d6, enquanto +1 passo transforma 2d6 em 2d8.
+Armas e Dano
+Tipos de Dano
+Concussivo: causado por impacto, esmagamento e força bruta. É comum em martelos, maças e outras armas de impacto.Cortante: causado por lâminas capazes de romper a carne. Espadas, machados e outras armas afiadas são exemplos.Perfurante: causado por ataques concentrados em um ponto, capazes de atravessar tecidos e proteções. Lanças, flechas e armas semelhantes utilizam esse tipo.O Tipo de Dano pode interagir com Negação de Dano, Resistências, Vulnerabilidades e efeitos de outras regras.Um Acerto Crítico representa um golpe excepcionalmente preciso ou devastador. Quando um ataque obtém um resultado crítico, seu dano é multiplicado pelo Multiplicador de Crítico da arma.×2: dobra o dano, ×3: triplica o dano, ×4: quadruplica o dano.Assim, uma arma que cause 2d8 ×2 em um Acerto Crítico rola normalmente 2d8 e multiplica o resultado final por 2.
+52
+Equipamentos
+Lista de Armas básicas Estágio (I)
+53
+
+Nome
+Dano
+Margem
+Crítico
+Tipo
++3
+d6
+Adaga
+x3
+Perfurante
+0
+Cortante
+x3
+d8
+Machado
+0
+0
+d10
+Espada Bastarda
+x2
+Cortante
+0
+Concussivo
+x2
+d10
+Maça
+0
++1
+d8
+Martelo
+x2
+Concussivo
++1
+Perfurante
+x2
+d8
+Rapieira
++2
+d8
+Espada
+x2
+Cortante
++2
+Concussivo
+x3
+d6
+Porrete
+0
+d8
+Lança
+x3
+Perfurante
+
+Perfurante
+x2
+d8
+Arco*
++1
+0
+d10
+Arco Longo*
+x2
+Perfurante
+
+Concussivo
+x3
+d6
+Estilingue*
++2
++2
+d10
+Bumerangue*
+x2
+Concussivo
+
+Concussivo
+x3
+2d4
+Soqueira
++1
++2
+2d4
+Serra#
+x2
+Cortante
+
+Perfurante
+x3
+d6
+Adaga Arrem.*
++2
++1
+d12
+Espada Longa#
+x2
+Cortante
+
+Concussivo
+x3
+d12
+Marreta#
+0
++1
+d12
+Lança Longa#
+x2
+Perfurante
+
+Concussivo
+x3
+d6
+Cajado@
++2
++1
+d8
+Cajado Pontudo@
+x2
+Perfurante
+Legenda: Arma* = Longo alcance, Arma# = Duas mãos; Arma@ = Mágico.
+Equipamentos
+Lista de Armas básicas Estágio (II)
+
+Nome
+Dano
+Margem
+Crítico
+Tipo
++3
+d10
+Adaga Voraz
+x3
+Perfurante
++2
+Perfurante
+x2
+d10 + d4
+Katar
+0
+Concussivo
+x3
+2d8
+Martelo Imenso#
++1
+2d8
+Tridente
+x2
+Perfurante
+
+Cortante
+x2
+2d8
+Katana
++1
++1
+d10 + d4
+Espadão#
+x2
+Cortante
+
+Concussivo
+x2
+d10 + d4
+Maça Estrela
++1
++2
+2d6
+Mangual
+x2
+Concussivo
++2
+2d6
+Cimitarra
+x2
+Cortante
+
+Perfurante
+x2
+2d8
+Arco Composto*
++1
++1
+2d6 + 2d4
+Besta*
+x2
+Perfurante
+
+Concussivo
+x3
+2d6
+Funda*
++2
+0
+4d4
+Canhão Portátil*
+x2
+Concussivo
+
+Concussivo
+x3
+2d6
+Manoplas
++2
++1
+2d10
+Foice#
+x2
+Cortante
+
+Cortante
+x2
+2d6 + 2d4
+Carabina Precisa*
++1
++3
+3d6
+Fuzil de Precisão*
+x3
+Perfurante
+
+Concussivo
+x3
+4d4 + d6
+Escopeta*
+0
+-1
+5d4
+Lança Agulhas
+x2
+Perfurante
+
+Concussivo
+x3
+2d6
+Cetro@
++2
++1
+2d8
+Espada de Cristal@
+x2
+Cortante
+Legenda: Arma* = Longo alcance, Arma# = Duas mãos; Arma@ = Mágico.
+54
+55
+Equipamentos
+Nem toda ferramenta de um Aventureiro precisa carregar magia para importar. Itens Mundanos são objetos comuns, ferramentas e consumíveis encontrados nas jornadas, cada um capaz de cumprir uma função específica no momento certo. Mochilas, cordas, lanternas, garrafas de água, poções e tantos outros recursos podem ser decisivos para atravessar uma ruína, sobreviver a uma viagem ou encontrar uma solução inesperada.Na Era do Caos, preparação é tão importante quanto força. Uma corda pode alcançar um lugar impossível, uma lanterna pode revelar aquilo que a escuridão esconde e uma simples poção pode manter alguém de pé quando nenhuma outra alternativa resta. Cabe aos Aventureiros decidir o que carregar, pois cada recurso ocupa espaço e pode representar a diferença entre estar preparado ou ser pego desprevenido.Grimórios Simples e grimórios de Categoria (I) também estão disponíveis entre os Itens Mundanos. Embora alguns possam conter conhecimentos valiosos, continuam sendo objetos que qualquer Aventureiro pode adquirir.
+Itens Mundanos
+Grimórios
+Alguns objetos da Era do Caos foram feitos para conduzir forças que um corpo sozinho não seria capaz de suportar. Equipamentos Mágicos são itens imbuídos de propriedades sobrenaturais que ampliam, modificam ou facilitam as capacidades de seus portadores. Entre eles, os Grimórios ocupam um lugar especial, reunindo conhecimento mágico em formas que podem ser carregadas, estudadas e utilizadas.Grimórios são livros especiais que possuem espaços próprios para armazenar Magias. Alguns já vêm preenchidos, enquanto outros permitem que novas sejam registradas. Qualquer criatura capaz de lançar o círculo da Magia pode utilizá-la enquanto ela estiver escrita em um grimório. Além disso, grimórios permitem a Tradução de atributos: Uma Magia que exige CAR, por exemplo, pode ser lançada usando INT, aumentando em +1 a CD de execução por círculo da Magia.Existem dois tipos principais de Grimórios: Genéricos e Temáticos. Grimórios Genéricos podem armazenar qualquer Magia, mas não oferecem benefícios adicionais. Já os Grimórios Temáticos são destinados a um princípio específico, como Chamas, Maldições, Cura ou Movimentação, e só podem armazenar Magias relacionadas. Em troca dessa limitação, oferecem bônus que aprimoram o uso ou os efeitos dessas Magias.Quando uma Magia que você já conhece está armazenada em um grimório, seu custo em PD é reduzido em 1 para cada Nível do Grimório. O Nível do Grimório determina quantas Magias ele pode armazenar e, em alguns casos, também a potência de seus benefícios.
+Equipamentos
+Lista de Equipamentos Gerais
+
+Nome
+Dano
+Margem
+Crítico
+Tipo
++3
+d6
+Adaga
+x3
+Perfurante
+0
+Cortante
+x3
+d8
+Machado
+0
+0
+d10
+Espada Bastarda
+x2
+Cortante
+0
+Concussivo
+x2
+d10
+Maça
+0
++1
+d8
+Martelo
+x2
+Concussivo
++1
+Perfurante
+x2
+d8
+Rapieira
++2
+d6
+Espada
+x2
+Cortante
++2
+Concussivo
+x3
+d6
+Porrete
+0
+d8
+Lança
+x3
+Perfurante
+
+Perfurante
+x2
+d8
+Arco*
++1
++1
+d10
+Arco Longo*
+x2
+Perfurante
+
+Concussivo
+x3
+d6
+Estilingue*
++2
++2
+d10
+Bumerangue*
+x2
+Concussivo
+
+Concussivo
+x3
+2d4
+Soqueira
++1
++2
+2d4
+Serra#
+x2
+Cortante
+
+Perfurante
+x3
+d6
+Adaga Arrem.*
++2
+0
+d12
+Espada Longa#
+x2
+Cortante
+
+Concussivo
+x3
+d12
+Marreta#
+0
++1
+d12
+Lança Longa#
+x2
+Perfurante
+
+Concussivo
+x3
+d6
+Cajado@
++2
++1
+d8
+Cajado Pontudo@
+x2
+Perfurante
+Legenda: Arma* = Longo alcance, Arma# = Duas mãos; Arma@ = Mágico.
+56
+COMBATE
+57
+COMBATE
+Em ESTIGMA DO CAOS, o combate é uma disputa de vontade, técnica e oportunidade. Cada golpe, disparo ou feitiço pode alterar o rumo de uma batalha, e conhecer os próprios limites é tão importante quanto conhecer os de seu inimigo. As regras a seguir determinam como ataques são realizados, como habilidades podem ser levadas além de seus limites e como um Aventureiro reage quando sua vez ainda não chegou.
+Ataques
+Ataques Corpo a Corpo: Golpes físicos utilizam a Perícia Luta, que pode ser realizada com FOR, INT ou DES. O atributo escolhido determina a forma como você combate:FOR: seu dano aumenta em +1 dado do tipo principal da arma, e sua FOR é somada ao dano causado.DES : sua DES é somada ao Teste de Acerto.INT: Prepare um ataque antecipando o comportamento do oponente. Todos os testes de reação dele terão -INT para funcionar.Assim, dois personagens usando a mesma arma podem empregá-la de maneiras completamente diferentes: um pode confiar na força do golpe, outro na precisão e outro na capacidade de encontrar a abertura perfeita.Ataques à Distância: Disparos utilizam a Perícia Pontaria. Atributos diferentes alteram o funcionamento dos disparos:DES: some sua DES ao Teste de Acerto.INT: Some sua INT no dano de cada disparo.MÚLTIPLOS ATAQUESÉ possível realizar até 3 ataques no mesmo turno. Para cada ataque adicional, aplica-se -1d20 ao Teste de Acerto. O número de ataques deve ser declarado no início do turno. Caso um dos ataques realizados dessa forma erre, metade do PD gasto nessa sequência é recuperado, arredondado para cima.Além disso, ataques adicionais exigem Determinação crescente:1°Ataque adicional: Custo: 1PD, Penalidade: -1d202°Ataque adicional: Custo: 2PD, Penalidade: -2d20
+58
+59
+COMBATE
+Emperrada: Uma arma emperrada exige uma ação completa para ser reparada.A partir do Nível 3 de Pontaria, desemperrar consome apenas uma ação, Padrão ou de Movimento.
+MÚLTIPLOS DISPAROSArmas não-automáticas também podem realizar múltiplos disparos no mesmo turno, mas o excesso pode fazer a arma Emperrar.1°Tiro Adicional: Custo: 1PD, Teste: Pontaria CD (16 - DES), Penalidade: -1d202°Tiro Adicional: Custo: 2PD, Teste: Pontaria CD (19 - DES), Penalidade: -2d20E assim suscessivamente. A CD aumenta em +3 para cada tiro adicional. Ao falhar, sua arma fica Emperrada. Armas automáticas ou de rajada possuem regra individual própria. Se forem “Bolt-Action” (Arma que precisa ser recarregada a cada disparo), não podem ser disparadas mais de uma vez.
+Magia e Poderes
+A magia não é simplesmente pronunciada: ela precisa traduzir a Vontade do conjurador e encontrar seu caminho pela realidade. Por isso, toda Magia exige domínio suficiente para ser executada.Para conjurar uma Magia, realize um teste de Misticismo contra:CD = 12 + PD utilizadosA CD considera o custo total da conjuração, incluindo suas modificações.Caso falhe, metade do PD utilizado é recuperada, arredondada para cima.Algumas Magias permitem ao alvo realizar um teste para resistir ao seu efeito. Você pode aumentar essa dificuldade através de Elaborar.Elaborar (1PD): aumente em +2 a dificuldade do teste de resistência do alvo.É possível utilizar Elaborar várias vezes no mesmo teste, acumulando seus efeitos. Cada uso adicional também aumenta a CD do seu Teste de Misticismo.Sobrecarga (1PD): aumente o dano da Magia em +1 dado correspondente ao seu dano atual. É possível aplicar várias Sobrecargas à mesma Magia. Cada uma delas aumenta a dificuldade do Teste de Misticismo.
+COMBATE
+MÚLTIPLAS CONJURAÇÕESÉ possível lançar a mesma Magia várias vezes no mesmo turno, reduzindo parte de seu custo, mas cada repetição torna sua execução mais difícil.1°Conjuração Adicional: Custo: -1PD, Penalidade: +32°Conjuração Adicional: Custo: -2PD, Penalidade: +63°Conjuração Adicional: Custo: -2PD, Penalidade: +9A redução de PD para de crescer na 2°Conjuração Adicional.Protocolo Final para Uso de MagiaAo utilizar uma Magia, siga esta ordem:1° Verifique o custo base. Exemplo: Bola de Fogo, 6PD.2° Escolha suas modificações. Exemplo: 1 Sobrecarga(1PD), 1 Elaborar(1PD)3° Some todos os PD utilizados: 6 + 1 + 1 = 8PD4°Realize o Teste de Misticismo: Misticismo (CD 12 + 8 = 20). Se falhar, recupere 4PD.5° Se for usar outra magia consecutiva, execute esse mesmo processo aplicando as variações indicadas (Ex, -2PD, porém, +6 no teste final)
+Reações
+Cada rodada concede a cada jogador 2 Reações, não podendo repetir entre Contra-ataque, Esquiva e Bloqueio. A partir do Nível 4 da Perícia correspondente, é possível utilizar o mesmo tipo de Reação duas vezes na mesma rodada.Contra-ataque: A Perícia base é Luta. Ao ser atacado, faça um teste de Luta contra o teste do adversário. Seu resultado deve ser maior que o dele. Se vencer, reduza o dano sofrido pelo valor obtido em seus dados de Luta e receba o direito de realizar um ataque imediato contra o adversário. Se estiver usando Armadura Pesada, realize o teste com -1d20.Esquiva: A Perícia base é Reflexos. Role todos os dados de Reflexos e some o resultado à sua Defesa contra o ataque. Se estiver usando Armadura Pesada, reduza 1 dado de seu total de Reflexos.Bloqueio: A Perícia base é Fortitude. Role seus dados de Fortitude e subtraia o resultado do dano sofrido. Se estiver usando um Escudo, some também sua Negação de Dano ao valor reduzido pelo Bloqueio.
+60
+61
+Perícias e Condições
+62
+PERÍCIAS
+Em ESTIGMA DO CAOS, as Perícias representam aquilo que seu Aventureiro aprendeu a fazer, seja por treinamento, experiência ou puro instinto. 
+Acrobacia: Realizar movimentos rápidos e precisos, como saltos, giros, equilíbrio e manobras corporais.Adestramento: Compreender, controlar e treinar animais e outras criaturas suscetíveis à domesticação.Artesanato: Criar, reparar e trabalhar manualmente com materiais, produzindo objetos, ferramentas, estruturas e outros itens.Atletismo: Empregar força e condicionamento físico para correr, saltar, escalar, nadar e superar obstáculos.Diplomacia: Negociar, mediar conflitos, estabelecer acordos e construir relações baseadas em confiança.Direção: Conduzir veículos e mecanismos de transporte, controlando-os em condições comuns ou adversas.Enganação/Lábia: Mentir, blefar, disfarçar intenções e fazer uma falsidade parecer verdadeira.Engenharia: Compreender, construir, reparar e modificar máquinas, mecanismos e dispositivos tecnológicos ou movidos a Mana.Fortitude: Suportar ferimentos, dor, doenças, venenos e esforços físicos extremos.Furtividade: Mover-se sem ser percebido, esconder sua presença e aproveitar sombras, cobertura e distrações.Guerra: Conhecer estratégias, táticas, formações, armamentos e o funcionamento de conflitos e batalhas.Intimidação: Influenciar alguém por meio de medo, ameaça, pressão ou demonstração de força.Intuição: Perceber intenções, emoções, comportamentos e situações sem depender de informações explícitas.
+Investigação: Encontrar pistas, conectar informações, analisar evidências e descobrir aquilo que está oculto.Ladinagem: Abrir fechaduras, desarmar armadilhas, furtar objetos e realizar ações que exigem mãos rápidas e precisas.Luta: Combater com armas de curta distância, golpes desarmados e técnicas de combate corpo a corpo.Medicina: Diagnosticar ferimentos e doenças, tratar criaturas e realizar procedimentos para preservar ou recuperar a vida.Misticismo: Compreender e manipular fenômenos mágicos, Mana, Caos, rituais e outras forças sobrenaturais.Nobreza: Conhecer hierarquias, costumes, etiqueta, tradições e protocolos de nobres e instituições de poder.Percepção: Notar detalhes, movimentos, sons, presenças, perigos e alterações no ambiente.Persuasão: Convencer alguém através de argumentos, carisma e habilidade de conduzir uma conversa.Pontaria: Utilizar armas à distância com precisão, controlando disparos e outros projéteis.Reflexos: Reagir rapidamente a ameaças, evitar ataques e responder a situações que exigem velocidade.Religião: Conhecer divindades, cultos, dogmas, símbolos, rituais e manifestações de poder divino.Sedução: Despertar interesse e atração, utilizando presença, charme e leitura das intenções do outro.Sobrevivência: Encontrar recursos, orientar-se, rastrear criaturas e enfrentar ambientes hostis.Vontade: Manter sua determinação, resistir a influências mentais e impor seu Ego diante de situações extremas.
+PERÍCIAS
+Uso geral das Perícias
+Ao realizar um teste de Perícia, role todos os dados disponíveis na sua Perícia e some os modificadores determinados pela situação, Classe, Raça ou outras fontes. O resultado é comparado à CD (Classe de Dificuldade) definida pelo Mestre.Cada Perícia possui um Nível e um Estágio, representados desta forma:1(I), 1(II), 1(III), 2(I), 2(II), 2(III)...O Nível determina quantos dados você rola, enquanto o Estágio determina o tamanho desses dados.1(I) = +1d4; 1(II) = +1d6; 1(III) = +1d8;2(I) = +2d4; 2(II) = +2d6; 2(III) = +2d8;Assm para todas as perícias. Toda Perícia deve ser testada com base em algum atributo. Exemplo:Persuasão 2(I): Persuasão é uma perícia comumente usada com CAR. Poranto, se o jogador possui 3 pontos em CARISMA e Persuasão 2(I) [Nível dois, estágio um], cada ponto de atributo positivo se converte em uma vantagem (+1d20), e ele deve rodar:3d20 (Escolher o melhor) + 2d4 (Perícia)APRIMORANDO PERÍCIASAo adquirir uma Perícia, você começa em 0. Seus Pontos de Perícia (PP) podem ser usados para comprar novos Níveis e avançar seus Estágios. O custo de cada aprimoramento é determinado por: Custo = [Nível da Perícia]× 5Os avanços de Estágio possuem o mesmo custo do próximo Nível:0 → 1(I): 5 PP → 1d4; 1(I) → 1(II): 5 PP → 1d6; 1(II) → 1(III): 5 PP → 1d81(III) → 2(I): 10 PP → 2d4; 2(I) → 2(II): 10 PP → 2d6; 2(II) → 2(III): 10 PP → 2d82(III) → 3(I): 15 PP → 3d4Esse padrão continua conforme a Perícia aumenta.NÍVEL DE PERÍCIAS (NP)Também é possível adquirir um upgrade de Nível de Perícia (NP) para aumentar imediatamente o número de dados. Ao fazer isso, o Estágio é reiniciado para I.1(III) + NP → 2(I); 3(II) + NP → 4(I); 1(III) + NP → 2(I)O NP permite avançar rapidamente a quantidade de dados, enquanto os aprimoramentos de Estágio permitem aperfeiçoar os dados que você já possui.
+63
+CONDIÇÕES
+Na Era do Caos, o corpo, a mente e o próprio Ego podem ser afetados de inúmeras formas. Ferimentos, emoções, magia e fenômenos sobrenaturais são capazes de alterar temporariamente aquilo que um Aventureiro é capaz de fazer. Essas alterações são representadas por Condições e Status.Algumas condições surgem de ataques e habilidades, enquanto outras podem ser causadas pelo ambiente, por doenças, pelo uso excessivo de poderes ou pelas forças que permeiam o mundo. Seus efeitos podem alterar testes, limitar ações, modificar atributos ou impor consequências específicas.Uma mesma criatura pode estar sob várias Condições ao mesmo tempo. Quando isso acontecer, seus efeitos são aplicados normalmente, salvo quando uma regra determinar o contrário. A duração de cada Condição deve sempre ser observada, pois alguns efeitos desaparecem após poucos turnos, enquanto outros exigem uma ação ou tratamento específico.
+Acuado: O instinto desperta diante de uma ameaça que parece impossível de enfrentar. A criatura se sente cercada e busca desesperadamente uma saída.Efeito: -1d20 (Desvantagem) em todo teste de ataque, seu dano reduz em dois passos e vc recebe -5 em testes de Vontade. Entretanto, ganha +1d20 (Vantagem) em testes de fuga, manobra ou Reflexos e passa a somar sua FOR na defesa.Assustado: O medo toma conta do corpo e da mente, fazendo até mesmo os mais corajosos hesitarem diante do perigo.Efeito: -5 em testes de Vontade, -1 em CAR e FOR. Em combate, -3 em testes de luta. Duração variávelAtordoado: Um impacto, fenômeno ou choque violento perturba seus sentidos e dificulta sua capacidade de reagir.Efeito: Fortitude (CD 15) todo turno. Se falhar, perde sua ação padrão. Falhar duas vezes seguidas causa Derrubado. Duração = 1d6 turnos.Confuso: Seus pensamentos se embaralham e sua percepção da realidade deixa de acompanhar o que acontece ao seu redor.Efeito: -1 em INT e CAR por 1d6 turnos.Congelamento: O frio sobrenatural toma seu corpo, endurecendo músculos e movimentos enquanto o gelo se espalha por sua superfície.Efeito: Fica incapaz de agir por 1d4 turnos e toma um dado adicional em todos os danos que sofrer.
+Corrosão: A matéria que compõe seu corpo ou equipamento começa a se degradar por uma força corrosiva.Efeito: A defesa da sua armadura é reduzida pela metade e você recebe 2d6 + 2 de dano todo turno enquanto usar a armadura. Remover e limpar é o único jeito de parar a corrosão sem perder seu equipamento.Danificado: Sua estrutura foi comprometida. Máquinas, autômatos e outros mecanismos passam a funcionar de maneira limitada ou instável.Efeito: Teste de Engenharia (CD 18) para usar o equipamento danificado. Se falhar, ele quebra. Debilitado: Ferimentos ou efeitos persistentes reduziram sua capacidade de lutar, deixando seu corpo aquém de suas condições normais.Efeito: Esta condição acumula estágios: I: -1 em FOR, DES e CON; II: todos os provlemas anteriores e perde uma ação; III: -2 em FOR, CON e DES, e Sangramento.Derrubado: Você perdeu o equilíbrio ou foi lançado ao chão, ficando vulnerável enquanto tenta recuperar sua posição.Efeito: Perde uma ação de movimento para se levantar. Enquanto estiver caído, recebe -5 na defesa e não pode reagir.Distraído: Sua atenção foi desviada por algum acontecimento, ameaça ou estímulo, dificultando a percepção do que realmente importa.Efeito: -1 em INT e DES. Perde sua reação.
+65
+CONDIÇÕES
+Eletrificado: Energia elétrica percorre seu corpo em descargas irregulares, afetando seus movimentos e sentidos.Efeito: Solta o item da sua mão e um item aleatório no seu inventário e receba -1 em DES e FOR por 1d4 turnos. Se estiver Molhado, o efeito se propaga para quem estiver em alcance curto de você, causando 1d8 de dano adicional por propagação.Envenenado: Uma substância nociva percorre seu organismo, causando efeitos que podem se intensificar com o tempo.Efeito: Acumula estágios: I: 1d4 de dano por 2d6 +2 turnos; II: dano passa para 2d8 + 3 com duração permanente até ser curado e -1 em CON; III: dano passa para 2d10 + 5 e fica Confuso (Deus te proteja disso).Exausto: Seu corpo e sua mente foram levados além de seus limites. Cada movimento exige um esforço que antes seria desnecessário.Efeito: -1 em todos os atributos. Seu gasto de PD fica limitado a CAR + CON por turno. Perde 1 ação todo turno. Duração: Cena.Fragilizado: Sua resistência foi comprometida e seu corpo se tornou mais suscetível a sofrer consequências de novos ataques.Efeito: -1 em CON e receba + 2 dados de dano em todo golpe que sofrer.Imobilizado: Alguma força impede completamente ou dificulta severamente seus movimentos, mantendo-o preso ao lugar.Efeito: Custa uma ação completa para tentar se soltar. Teste varíavel.Instabilidade: A influência do Caos atravessa sua existência de forma irregular. Algo em você deixou de obedecer completamente às regras que deveria seguir.Efeito: -1 em todos os atributos. Passa a exigir 1 de PD para toda ação que não custe nada e aumenta em 2 o custo de todas as ações que normalmente usem PD. Lesão: Um ferimento significativo comprometeu uma parte específica do seu corpo, deixando uma marca que pode afetar suas capacidades.Efeito: Acumula estágios: I: Perde a funcionalidade do membro atingido pela Cena II: Dano irreparável no seu membro causa Sangramento; III:  -2 em CON e e DES.Má-Vontade: Uma frustração, ofensa ou acontecimento desagradável desperta uma forte resistência em você. Sua disposição para agir foi profundamente afetada.Efeito: -1 em CAR e -5 em testes de perícia.
+Molhado: Seu corpo ou equipamento está encharcado, seja por água ou outro líquido, alterando a forma como interage com o ambiente.Efeito: -3 em testes de Acrobacia e Atletismo. Interage com Eletrificado.Moral: Sua disposição emocional foi alterada por acontecimentos capazes de fortalecer ou abalar seu espírito.Efeito: -1 em CAR, INT e -2 em testes de perícia.Pasmo: Por um instante, sua mente parece parar. O choque ou a surpresa interrompem sua capacidade de reagir normalmente.Efeito: Defesa zerada e sem ação por 1 turno.Queimadura: Calor intenso ou energia agressiva danificou seu corpo, deixando uma ferida que continua ardendo após o impacto inicial.Efeito: Acumula estágios: I: 2d6 de dano por 1d6 turnos; II: 3d8 de dano por 1d6 + 2 turnos. III: 4d10 de dano por 1d6 + 3 turnos e não pode ser apagado.Sangramento: Um ferimento aberto continua perdendo sangue, fazendo a lesão se agravar enquanto não for tratada.Efeito: Acumula estágios: I: 1d4 de dano; II: 1d8 de dano. III: 2d10 de dano e -2 em CON.Seduzido: Seu interesse e sua atenção foram profundamente influenciados por outra criatura, tornando difícil agir contra aquilo que despertou seu fascínio.Efeito: Atacar quem te seduziu causa -2d20 (Desvantagem). Desobedecer exige Vontade CD (16 + CAR do alvo) com desvantagem. Obedecer, por outra mão, concede sempre +1d20 (Vantagem) e +1d4 (inspiração).Sono:Seu corpo e sua mente foram tomados pelo cansaço, mergulhando-o em um estado de inconsciência ou torpor.Efeito: Dorme indefeso por 1d6 turnos. Se apanhar, acorda imediatamente.Vulnerável: Uma brecha foi encontrada em sua defesa. Durante esse momento, seus inimigos conseguem explorar sua fragilidade com muito mais facilidade. -5 em DEF.Louco: Seu Ego perdeu a estabilidade necessária para interpretar a realidade de maneira coerente. Pensamentos, emoções e percepções podem escapar do controle.Efeito: Ataca o mais próxima. A cada turno, faça Percepção (CD 16 + CAR); se falhar, ataca a si mesmo.
+66
+
+Perícia
+Nível
+Estágio
+__
+__
+__
+__
+__
+Nome:
+Moedas:
+Ficha de Personagem
+Raça:
+Classe:
+Pontos de Determinação
+Atuais
+Máximos
+
+
+
+Pontos de Vida
+
+Atuais
+Máximos
+
+
+Pontos de Perícia
+
+
+Pontos de Defesa
+
+
+Natural
+Armad.
+Escudo
+Mod.
+
+
+
+
+
+Condições ativas
+
+
+
+
+Acrobacia
+Adestramento
+Artesanato
+Atletismo
+Diplomacia
+Direção
+Enganação
+Engenharia
+Fortitude
+Furtividade
+Guerra
+Intimidação
+Investigação
+Ladinagem
+Luta
+Medicina
+Misticismo
+Nobreza
+Pontaria
+Persuasão
+Reflexos
+Religião
+Sedução
+Sobrevivência
+Vontade
+Intuição
+Percepção
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Ficha de Personagem
+
+
+Poderes/Magias
+Efeito
+Resistência
+________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+________________________________________________ _____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+________________________________________________ _____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+Descrição física e Medo
+________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+Fota
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Ficha de Personagem
+
+Item
+Efeito
+____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+________________________________________________ _________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+________________________________________________ _________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+Detalhamento
+Inventário
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Ficha de Personagem
+______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+Notas úteis
+
+__
+__
+__
+__
+__
+Nome:
+Moedas:
+
+AcrobaciaAdestramentArtesanato AtletismoDiplomaciaDireçãoEnganaçãoEngenhariaFortitudeFurtividadeGuerraIntimidaçãoIntuiçãoInvestigaçãoLadinagemLutaMedicinaMisticismoNobrezaPercepçãoPersuasãoPontariaReflexosReligiãoSeduçãoSobrevivênciaVontade
+Perícia
+Nível
+Estágio
+_____________________________________________________________________________________________________________________________________________________________________________________________
+_____________________________________________________________________________________________________________________________________________________________________________________________
+Ficha de Personagem
+Raça:
+Classe:
+Pontos de Determinação
+Atuais
+Máximos
+
+
+
+Pontos de Vida
+
+Atuais
+Máximos
+
+
+Pontos de Perícia
+
+
+Pontos de Defesa
+
+
+Natural
+Armad.
+Escudo
+Mod.
+
+
+
+
+
+Condições ativas
+
+
+
+
+Ficha de Personagem
+
+
+Poderes/Magias
+Efeito
+Resistência
+________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+________________________________________________ _____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+________________________________________________ _____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+Descrição física e Medo
+________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+Fota
+Ficha de Personagem
+
+Item
+Efeito
+Detalhamento
+____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+________________________________________________ _________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+________________________________________________ _________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+Inventário
+Ficha de Personagem
+______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+Notas úteis
+Con
+DES
+For
+INT
+car
++3
++1
++1
+-1
++2
++3
++1
++1
+-1
++2

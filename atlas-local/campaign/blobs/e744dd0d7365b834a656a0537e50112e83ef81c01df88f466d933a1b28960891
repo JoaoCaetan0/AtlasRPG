@@ -1,0 +1,1 @@
+Use case: precise-object-edit. Correct lighting only. Remove invented torches/fires on bridge, roads and ruined tower. Only the two existing lamps INSIDE the roofless outpost and faint original crystals may glow; outdoors use moonlight. Preserve exactly all geometry, text, paths, water, vegetation, borders and camera. ONE image.

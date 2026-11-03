@@ -1,0 +1,179 @@
+# Estigma do Caos — Padrão de criação dos mapas
+
+Padrão aprovado pelo usuário em 13/10/2026, a partir do conjunto de 50 mapas de encontros. Aplicar a todo novo mapa e revisão deste projeto, salvo alteração explícita do usuário. Consultar este documento, os projetos anteriores e referências visuais aprovadas antes de gerar. Preservar decisões acumuladas; não começar uma linguagem visual nova a cada pedido.
+
+## 1. Perguntas obrigatórias antes de criar
+
+- Onde os personagens estão? Qual é o bioma, a região, o horário e a situação?
+- Como deixar esta região mais interessante e mais bonita sem aumentar a poluição visual?
+- O que faz sentido existir aqui? Por que cada objeto ou pessoa está neste lugar?
+- O que os jogadores podem perguntar, investigar ou fazer neste cenário?
+- Eles podem vasculhar uma caixa, negociar, furtar, subir, mover algo, usar cobertura ou escolher outro caminho?
+- Uma passagem secreta, pista ou ponto vasculhável acrescentaria algo à cena? Ou seria um mistério desnecessário?
+- Como melhorar a presença e a leitura de cada elemento útil?
+- Os caminhos, entradas, saídas e conexões respeitam o mapa maior e os mapas vizinhos?
+- A iluminação valoriza o ambiente e mantém as áreas jogáveis legíveis?
+
+Nem todo local precisa de segredo. Um abrigo, uma ferramenta, um acesso ou uma conversa podem dar valor suficiente à cena.
+
+### Acréscimos de revisão — 13/10/2026
+- Como os ocupantes entram, circulam, sobem, trabalham, descansam e saem? As estruturas necessárias a esse fluxo existem e são compreensíveis na imagem?
+- Quem usa ou protege cada objeto importante? Sua posição faz sentido considerando valor, acesso, vigilância e exposição?
+- Há alguma alternativa de abordagem que enriqueça a cena sem dispersar seu foco? Ela é fisicamente plausível e oferece uma escolha real?
+
+## 2. Projeto antes da imagem
+
+Para cada mapa, registrar: nome, finalidade, relação com mapas existentes, bioma, horário, clima, situação, enquadramento, composição, acessos, elementos interativos, habitantes necessários, iluminação, referências do mundo e limites do que não está definido.
+
+Em conjuntos grandes, concluir e salvar os projetos de todos os mapas antes de iniciar as imagens. Manter instruções, prompts, fontes e andamento por mapa. Se houver interrupção ou limite de geração, retomar do primeiro pendente sem perder decisões nem refazer os aprovados.
+
+## 3. Identidade visual
+
+Usar os mapas aprovados como referências visuais concretas. Para mapas de cena, manter ilustração refinada de fantasia, pintura detalhada com traço fino, materiais críveis, cores locais ricas e atmosfera gótica suave. Em Stalla, valorizar arquitetura gótica e estruturas características do reino: silhuetas, arcos, alvenaria, ferragens e mecanismos coerentes com o mundo. Evitar construções genéricas ou tecnologia acrescentada sem fundamento.
+
+Preferir formato horizontal 3:2 nos mapas de cena, perspectiva elevada próxima da vista aérea com leve profundidade isométrica e solo legível. Variar suavemente o ângulo, sem transformar o mapa em uma cena cinematográfica de perspectiva baixa. Usar aproximação maior em encontros simples e enquadramento mais amplo quando a escala do problema exigir. Mapas de mundo, continente e reino seguem sua escala cartográfica própria; não impor o enquadramento de encontro a um mapa regional.
+
+Manter moldura discreta e identificação em português quando apropriadas ao padrão aprovado. Títulos visíveis aos jogadores não devem entregar fraudes, emboscadas ou soluções. Não acrescentar grade, setas, marcadores ou anotações do mestre sem solicitação.
+
+## 4. Qualidade acima de quantidade
+
+Definir um foco claro e, em cenas simples, aproximadamente dois a quatro pontos de interação relevantes. Essa faixa é uma referência, não uma obrigação para locais grandes. Deixar espaço de circulação e leitura. Evitar encher a imagem com árvores, plantas, barris, caixas ou pessoas aleatórias.
+
+Todo elemento destacado deve servir à ambientação, à navegação ou a uma possibilidade de ação. Caixas podem ser vasculhadas; estruturas podem permitir escalada; objetos podem oferecer ferramentas, cobertura, pistas ou escolhas. Não transformar todos os objetos em recompensas ou armadilhas.
+
+Incluir habitantes de diferentes raças do universo quando fizer sentido, com função e atividade reconhecíveis. Não criar multidões para preencher espaço nem inserir automaticamente os personagens dos jogadores.
+
+A densidade deve seguir o ambiente: um bosque pequeno e denso continua denso, mas suas copas não podem esconder toda a cena. Concentrar vegetação e detalhes nas áreas que sustentam a composição. Banheiros, carroças, bancas menores, becos e objetos cotidianos entram quando o local comportar e houver propósito.
+
+## 5. Luz e atmosfera
+
+Planejar horário, direção e temperatura da luz antes de gerar. Variar manhã, meio-dia, tarde, crepúsculo e noite entre encontros conforme seus projetos. Integrar lanternas, janelas, fogo e reflexos com fontes reconhecíveis. Conferir sombras e materiais molhados, metálicos ou translúcidos.
+
+A noite deve parecer noite sem tornar o mapa inutilizável. Neblina, fumaça, chuva e efeitos mágicos não devem esconder os acessos e elementos centrais. A iluminação deve orientar a atenção sem usar brilho excessivo para tornar tudo importante.
+
+## 6. Coerência geográfica e narrativa
+
+Consultar o mapa maior e os vizinhos antes de criar localidades fixas. Preservar posição de estradas, rios, pontes, entradas, limites e pontos de referência conhecidos. Não inventar precisão geográfica quando a referência estiver indisponível; registrar o que falta verificar.
+
+Mapas de transição são reutilizáveis e não têm localização fixa. Indicar terrenos e rotas compatíveis sem inventar sua posição no reino.
+
+Usar o livro Ebook como fonte principal quando houver divergência entre versões. Respeitar informações deliberadamente ocultadas na versão dos jogadores. Não editar Canva ou os livros sem novo pedido explícito.
+
+Separar fatos estabelecidos, propostas novas e informações ainda desconhecidas. Não inventar história pessoal, brasões, símbolos de facções, poderes ou identidades secretas como se fossem canônicos. Preservar a distinção entre Caos e Calamidade e a cronologia do cenário. Consultar as fontes disponíveis para ganchos de personagens; não forçar a presença deles nem revelar seus segredos visualmente.
+
+## 7. Revisão de cada imagem
+
+Antes de aprovar, conferir visualmente:
+
+- Clareza do foco, dos objetos interativos e dos espaços de circulação.
+- Caminhos contínuos, entradas e saídas plausíveis e conexões regionais corretas.
+- Escala de pessoas, portas, móveis, veículos e construções.
+- Estrutura de cordas, apoios, pontes, eixos, rodas, trilhos e mecanismos.
+- Comportamento coerente da água e do terreno.
+- Horário, direção da luz, sombras e legibilidade das áreas jogáveis.
+- Ausência de repetição decorativa, vegetação excessiva e figurantes sem função.
+- Coerência com o mundo e ausência de revelações indevidas.
+- Escrita dos títulos e compatibilidade com a identidade visual aprovada.
+
+Corrigir problemas concretos com alterações direcionadas. Não afirmar que uma revisão ocorreu sem inspecionar a imagem. Registrar a aprovação e eventuais limitações.
+
+### 7.1. Funcionamento dos ambientes construídos — obrigatório
+
+Simular mentalmente o uso cotidiano do lugar, percorrendo o caminho desde a entrada até cada área utilizável. Conferir portas externas e internas, janelas quando apropriadas à função, corredores, escadas, patamares, alçapões, passarelas e saídas. Quartos fechados precisam de acesso próprio; pavimentos e postos elevados precisam de ligação funcional com os níveis inferiores. Escadas não podem terminar contra lajes fechadas e portas não podem desembocar em paredes ou vazios sem apoio.
+
+Não basta escrever que existe um acesso: a imagem deve mostrar sua continuidade ou indicar claramente onde ele prossegue. Quando a perspectiva ocultar uma conexão essencial, ajustar o enquadramento ou usar uma abertura/corte discreto coerente com a referência visual. Não aceitar uma área inacessível apenas porque a composição ficou bonita. Isolamento deliberado precisa ter motivo de projeto e não ser um erro acidental.
+
+Conferir também espaço de abertura de portas, circulação entre móveis, sustentação das estruturas e operação/manutenção dos mecanismos. Representar somente os detalhes necessários à cena, sem transformar esta revisão em obrigação de desenhar toda a infraestrutura.
+
+### 7.2. Posição dos objetos e lógica dos ocupantes — obrigatório
+
+Revisar cada elemento importante pela função, pelo usuário, pelo valor e pelo risco. Perguntar por que foi colocado exatamente ali, quem o alcança, quem o vigia e se prejudica a circulação. Recursos valiosos devem ter proteção compatível; ferramentas de uso cotidiano devem ficar próximas ao trabalho; cargas precisam de acesso de transporte plausível. Evitar distribuir baús como recompensas arbitrárias em áreas expostas.
+
+Aplicação à torre: um baú com valores ou equipamento sob custódia faz mais sentido no topo, junto ao guarda, ou em compartimento protegido. Na base, só se justifica por outra função claramente planejada, como ferramentas de manutenção. Se ficar no topo, prever como o baú e seu conteúdo chegam lá: acesso com dimensões adequadas ou içamento plausível. Não resolver um problema criando outro.
+
+### 7.3. Alternativas de exploração com moderação — obrigatório avaliar
+
+Evitar cenas desnecessariamente lineares. Considerar poucas alternativas significativas: aproximação lateral, escalada com apoios, acesso de serviço, abrigo dos ocupantes ou rota secundária. Nem todo cenário exige passagem secreta; alternativas abertas, sociais e operacionais também contam. Em cenas simples, uma alternativa bem desenvolvida costuma valer mais que vários desvios sem propósito; não há cota obrigatória.
+
+Uma barraca ou puxadinho para guardas de revezamento pode explicar descanso, pertences e rotina, além de permitir conversa ou aproximação. Um poço só pode servir de acesso adicional se houver conexão física plausível, entrada e saída funcionais e coerência com água, profundidade e manutenção. Não transformar automaticamente todo poço em túnel secreto.
+
+Cada alternativa deve oferecer uma diferença concreta de exposição, esforço, recurso ou interação. Preservar o foco, os espaços livres e a legibilidade. Segredos e explicações ficam no material do mestre; o mapa mostra apenas os indícios apropriados.
+
+### 7.4. Critério de aprovação
+
+A revisão visual deve responder: “Consigo percorrer os acessos?”, “O local funciona para seus ocupantes?”, “Os objetos estão onde fariam sentido?” e “As opções de ação são suficientes e coerentes?”. Falhas concretas de acesso, operação ou posicionamento devem ser corrigidas antes de considerar o mapa pronto. Beleza e iluminação não substituem funcionamento. Priorizar SEMPRE qualidade, coerência e poucos elementos bem resolvidos.
+
+## 8. Organização e continuidade
+
+Manter o mapa geral na pasta da área e os detalhes em subpastas: Mapas > Continente > Região/Reino > Local > Interior. Usar nomes diretos, claros e em português.
+
+Encontros: Mapas > Mapas de Transição > Ótimo / Bom / Médio / Ruim / Péssimo.
+Nome: Bioma - Horário - Cena.png.
+As categorias descrevem a situação; não presumir que sejam uma medida numérica de dificuldade de combate.
+
+Guardar projetos, prompts, fontes, notas e segredos em _Material do Mestre. Manter o catálogo visual atualizado com miniatura, nome, localização ou bioma, horário e categoria aplicável. A visualização destinada aos jogadores deve ficar separada das notas do mestre; a separação visual não equivale a controle de acesso.
+
+Preservar as imagens originais; miniaturas são apenas prévias. Atualizar o ZIP cumulativo, sem remover mapas ou documentação anteriores por engano. Verificar arquivos, nomes, contagens, caminhos do catálogo e integridade do pacote antes de entregar.
+
+## 9. Ficha reutilizável
+
+Nome:
+Tipo: geográfico / cena fixa / encontro de transição
+Referências visuais aprovadas:
+Fontes do mundo e fatos confirmados:
+Região ou encaixe possível:
+Bioma, horário e clima:
+Situação:
+Objetivo da cena:
+Enquadramento e escala aproximada:
+Entradas, saídas e caminhos:
+Fluxo dos ocupantes e ligações entre ambientes/pavimentos:
+Elementos centrais e propósito de cada um:
+Posição dos objetos: usuário, proteção, transporte e acesso:
+Habitantes necessários e atividade:
+Possibilidades de interação:
+Alternativas de abordagem e justificativa física (quando agregarem valor):
+Segredos opcionais, registrados apenas para o mestre:
+Plano de iluminação:
+Restrições de continuidade:
+Nome e pasta de destino:
+Prompt final:
+Revisão visual, correções e estado:
+
+## 10. Integração vigente — 14/10/2026
+
+O anexo Pasted markdown.md foi lido integralmente e consolidado com o protocolo do acervo e o pedido de expansão do catálogo. As instruções abaixo complementam as anteriores; nos pontos de conflito, prevalece o pedido mais recente.
+
+### 10.1. Escopo, referências e refinamento
+
+Todos os mapas externos de encontros e cenas locais recebem Manhã, Tarde e Noite. Interiores sem exterior relevante e cartografia de mundo, continente, reino ou grandes áreas mantêm uma versão. Mapas mistos, como armazém com pátio e capela com cemitério, recebem o trio. Classificar individualmente e justificar a exceção. Os 32 mapas anteriores à leva dos encontros serão refinados com referência direta, preservando identidade, elementos, escala cartográfica e conexões. Os 50 encontros aprovados são a referência estética. Uma versão existente só integra o trio quando seu horário e qualidade realmente corresponderem; crepúsculo não será renomeado como noite.
+
+### 10.2. Estrutura fixa e variações
+
+Antes da primeira imagem de cada local, fixar enquadramento, orientação, proporção, terreno, edifícios, portas, escadas, pontes, estradas e posições dos elementos reconhecíveis. Usar a mesma imagem-base nas demais versões e comparar os três resultados lado a lado. Não espelhar, girar, acrescentar pavimentos ou mover rios e acessos entre horários. Variar ângulos somente entre locais distintos; o trio de um mesmo local mantém a câmera. Refinamentos estruturais justificados tornam-se a nova base das três versões.
+
+Manhã: luz matinal direcional, abertura e preparo. Tarde: luz mais quente e atividade própria do local. Noite: céu escuro, luar e fontes práticas motivadas, legibilidade preservada e rotina noturna. Não aplicar apenas filtros de cor: representar atividades, abertura/fechamento, vigilância, cargas móveis e pistas pertinentes. Não presumir que todos os trios narram o mesmo dia: incêndios, cheias ou avalanches são alternativas de horário para o mesmo encontro, não crises obrigatoriamente prolongadas por 24 horas. Marés têm condição própria e não dependem automaticamente de ser manhã ou noite.
+
+### 10.3. Segredos e circulação
+
+Projetar poucos segredos ou oportunidades opcionais, com indício observável, descoberta possível, uso concreto e consequência. Preferir detalhes como marcas de manutenção, luz sob uma porta, rota de serviço, passagem entre cargas ou comporta operável. Não forçar tesouros, túneis ou elementos sobrenaturais. A existência física de um acesso permanece entre horários; podem mudar sua visibilidade, estado de abertura e vigilância. Não criar portas que desaparecem sem explicação. Segredos e interpretações ficam no material do mestre.
+
+### 10.4. Conexões entre escalas
+
+Registrar cada conexão como origem, acesso, destino, orientação observada e evidência visual. Mapas maiores devem mostrar os acessos principais usados nos menores, em escala apropriada. Comparar pares antes da aprovação; se a imagem maior não trouxer uma conexão confirmada, incluí-la no refinamento do mapa maior. Não inventar coordenadas para preencher uma lacuna. Mapas reutilizáveis de transição mantêm apenas entradas e saídas compatíveis com seu terreno.
+
+### 10.5. Produção e revisão rastreáveis
+
+Salvar o projeto de todos os locais e prompts por imagem antes da geração massiva. Para cada imagem registrar: referência exata, intenção, elementos fixos, mudanças autorizadas, horário, destino, estado, revisão visual, defeitos e correções. Estados: planejado, em geração, gerado aguardando revisão, corrigir, aprovado. Uma falha bloqueia a aprovação daquele arquivo, não autoriza reduzir o critério. Conferir acessos/fluxo, proteção/transporte de objetos, mecanismos, escala, legibilidade, luz, identidade, segredos e conexões; depois comparar o trio. Retomar do primeiro trabalho realmente pendente, sem declarar geradas ou revisadas imagens que não foram inspecionadas.
+
+### 10.6. Catálogo e arquivos
+
+Manter somente ABRIR_CATALOGO_V2.html como entrada do catálogo. Ferramentas agrupadas em painéis dedicados; desenho à mão livre, formas e texto em menus separados com ícones individuais. Formas incluem quadrado, retângulo, triângulo, círculo e elipse. Um cartão por local; seleção Manhã/Tarde/Noite dentro do visualizador. Estados indisponíveis permanecem claramente identificados, nunca simulados com um filtro.
+
+Cada local fica em uma pasta e suas variantes são nomeadas Local - Bioma - Manhã/Tarde/Noite.png. Encontros mantêm a hierarquia por situação. Anotações do usuário continuam em Mapas Editados e nunca alteram as imagens-base. A anotação deve saber a qual horário pertence; compartilhar desenhos entre horários só por ação explícita.
+
+Na entrega final, remover executáveis antigos do catálogo, índices contraditórios e imagens substituídas após verificar seus sucessores. Preservar projetos, progresso, protocolo e material narrativo útil. Até a substituição estar aprovada, manter a referência antiga identificada para não perder o local. A limpeza solicitada autoriza retirar versões obsoletas do ZIP, não apagar arquivos do Canva nem cópias particulares do usuário.
+
+## Regra de aplicação
+
+Antes de futuras gerações, retomar as perguntas e condições deste documento, consultar o projeto específico e comparar referências aprovadas. Novas decisões do usuário devem ser incorporadas ao padrão, identificadas e preservadas junto das anteriores que continuarem válidas. Este arquivo é a referência durável do método; se o acervo não estiver disponível em uma conversa futura, solicitar o documento ou o ZIP em vez de afirmar que foi consultado.

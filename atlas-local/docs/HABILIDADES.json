@@ -1,0 +1,822 @@
+[
+  {
+    "id": "race-humano-espirito-indomavel",
+    "kind": "race",
+    "origin": "Humano",
+    "name": "Espírito Indomável",
+    "cost": "Passiva",
+    "description": "O indomável espírito humano permite que você mantenha uma ação de Movimento ou Padrão enquanto estiver em estado de morte. Na primeira vez que entrar nesse estado durante um combate, sua duração é aumentada em 1d4+1 turnos.",
+    "source": "Estigma do Caos · p. 13",
+    "source_line": 69
+  },
+  {
+    "id": "race-humano-versatil",
+    "kind": "race",
+    "origin": "Humano",
+    "name": "Versátil",
+    "cost": "Passiva",
+    "description": "Receba +3 ponto de perícia (PP) para cada ponto de INT e CAR que  possuir e ganhe 2PP por cada falha em teste (Ao invés de um).",
+    "source": "Estigma do Caos · p. 13",
+    "source_line": 70
+  },
+  {
+    "id": "race-humano-hiperfoco",
+    "kind": "race",
+    "origin": "Humano",
+    "name": "Hiperfoco",
+    "cost": "1PD",
+    "description": "Você ignora distrações e foca inteiramente no combate. +1 de DES, imunidade a efeitos morais e psicológicos (Pasmo, atordoado, assustado) e margem de ameaça aumentada em +FOR com duração (1d4).  Fora de combate, serve para testes gerais com DES e INT aumentado em +FOR.",
+    "source": "Estigma do Caos · p. 13",
+    "source_line": 71
+  },
+  {
+    "id": "race-humano-inspirador",
+    "kind": "race",
+    "origin": "Humano",
+    "name": "Inspirador",
+    "cost": "Passiva",
+    "description": "Esse mundo não é para os fracos de coração. Seu berço não lhe concedeu poder algum, mas aqui você está. Sua presença no grupo aumenta em +1 os testes de acerto no combate. Alternativamente, pague 1PD para inspirar ações fora de combate em +2. Entretanto, sua queda e morte prejudicam o grupo em -1 e -2, respectivamente, em todos os testes da cena.",
+    "source": "Estigma do Caos · p. 13",
+    "source_line": 75
+  },
+  {
+    "id": "race-elfo-runica-nata",
+    "kind": "race",
+    "origin": "Elfo",
+    "name": "Rúnica nata",
+    "cost": "Passiva",
+    "description": "A linguagem mágica é sua língua materna. Custo -1PD para todas as MAGIAS que você utilizar.",
+    "source": "Estigma do Caos · p. 14",
+    "source_line": 80
+  },
+  {
+    "id": "race-elfo-progresso-cultural",
+    "kind": "race",
+    "origin": "Elfo",
+    "name": "Progresso cultural",
+    "cost": "Passiva",
+    "description": "Sua cultura rica influenciou seu desenvolvimento. Aprimore 1 nível de Pontaria e receba +1 NP(Nível de perícia) para cada 2 pontos somados entre INT e CAR. Entretanto, escolha uma restrição para seu personagem (não comer carne, mentir, etc.). Quebrar sua restrição concede Penalidade Moral até o final do dia.",
+    "source": "Estigma do Caos · p. 14",
+    "source_line": 81
+  },
+  {
+    "id": "race-elfo-bencao-natural",
+    "kind": "race",
+    "origin": "Elfo",
+    "name": "Benção natural",
+    "cost": "2PD",
+    "description": "Seu histórico cultural e proximidade com a natureza se traduziram em uma benção racial. Enquanto não estiver com penalidade Moral, você pode conjurar um reforço místico para suas ações. Símbolos dourados cobrem seu corpo e reforçam suas ações. Some seu INT ou CAR no ataque e testes de misticismo. Além disso, o dano de disparos de projéteis e magias são ampliados em 1 dado por 1d4 turnos.",
+    "source": "Estigma do Caos · p. 14",
+    "source_line": 82
+  },
+  {
+    "id": "race-elfo-raca-nobre",
+    "kind": "race",
+    "origin": "Elfo",
+    "name": "Raça Nobre",
+    "cost": "Passiva",
+    "description": "A Receba + 1 nível em Nobreza ou Diplomacia",
+    "source": "Estigma do Caos · p. 14",
+    "source_line": 85
+  },
+  {
+    "id": "race-qareen-tatuagem-runica",
+    "kind": "race",
+    "origin": "Qareen",
+    "name": "Tatuagem rúnica",
+    "cost": "3PD",
+    "description": "Aforma da magia se rasga em sua pele. Escolha uma de suas magias para lançar aprimorada até o fim do dia ou até renascer. O efeito da aprimoração deve ser definido com o Mestre e não pode alterar a natureza fundamental da magia.",
+    "source": "Estigma do Caos · p. 15",
+    "source_line": 90
+  },
+  {
+    "id": "race-qareen-desejo",
+    "kind": "race",
+    "origin": "Qareen",
+    "name": "Desejo",
+    "cost": "Passiva",
+    "description": "Uma vez a cada três cenas (ou descanso), você pode realizar um desejo. O desejo funciona de forma análoga aos desejos dos gênios, mas seu potencial é limitado ao círculo de magia pelo seu atributo mágico (INT ou CAR). O Mestre determina a magia ou efeito mais próximo capaz de atender ao desejo, respeitando esse limite. O uso do desejo não possui custo e não depende de ser uma magia conhecida pelo usuário.",
+    "source": "Estigma do Caos · p. 15",
+    "source_line": 91
+  },
+  {
+    "id": "race-qareen-heranca-dos-genios",
+    "kind": "race",
+    "origin": "Qareen",
+    "name": "Herança dos gênios",
+    "cost": "Passiva",
+    "description": "PD são matéria de sua própria existência. Caso seus PV cheguem a zero, vc é reduzido a um objeto mágico (Lâmpada, amuleto, etc) e ficará nessa forma perdendo 3PD por turno (Durante 3 turnos). Ao final dos 3 turnos, vc recupera metade de seu PV total. Entretanto, se seus PD chegarem a zero, ou seu catalisador quebrar, você morre instantaneamente. Receba + 1 nível em Misticismo.",
+    "source": "Estigma do Caos · p. 15",
+    "source_line": 92
+  },
+  {
+    "id": "race-qareen-cuidado-com-as-palavras",
+    "kind": "race",
+    "origin": "Qareen",
+    "name": "Cuidado com as palavras",
+    "cost": "Passiva",
+    "description": "Palavras possuem poder para aqueles que carregam o sangue dos gênios. Qareens aprendem desde cedo que uma frase mal formulada pode ter consequências imprevisíveis. Receba +1 nível em Persuasão.",
+    "source": "Estigma do Caos · p. 15",
+    "source_line": 95
+  },
+  {
+    "id": "race-golem-resiliencia-de-um-colosso",
+    "kind": "race",
+    "origin": "Golem",
+    "name": "Resiliência de um colosso",
+    "cost": "Passiva",
+    "description": "Seu corpo ultra resistente te fornece +1 de negação de dano para cada ponto de constituição. Receba +1 de Fortitude.",
+    "source": "Estigma do Caos · p. 16",
+    "source_line": 100
+  },
+  {
+    "id": "race-golem-mudanca-de-marcha",
+    "kind": "race",
+    "origin": "Golem",
+    "name": "Mudança de marcha",
+    "cost": "2PD",
+    "description": "Reconfigure temporariamente sua estrutura corporal. Receba +2 DES e +2 FOR, reduzindo sua CON em 3 pela cena. Ao término, você fica Exausto. Alternativamente, sacrifique 2 DES e 2 FOR para compactar sua estrutura, aumentando sua CON em 3 pela cena.",
+    "source": "Estigma do Caos · p. 16",
+    "source_line": 101
+  },
+  {
+    "id": "race-golem-artificio-caotico",
+    "kind": "race",
+    "origin": "Golem",
+    "name": "Artifício caótico",
+    "cost": "Passiva",
+    "description": "Você é um ponto flutuante entre existir e não existir. Seu corpo é um amálgama. Sua identidade foi projetada antes mesmo da sua consciência. Por isso, escolha uma habilidade de outra raça na qual sua identidade foi inspirada.",
+    "source": "Estigma do Caos · p. 16",
+    "source_line": 102
+  },
+  {
+    "id": "race-golem-proposito-passado",
+    "kind": "race",
+    "origin": "Golem",
+    "name": "Propósito passado",
+    "cost": "Passiva",
+    "description": "Você foi criado para cumprir um propósito. Qual era mesmo? Escolha uma função que defina sua criação e receba +2 NP coerentes com ela. Quando uma situação exigir diretamente o cumprimento de seu propósito original, você não pode recusar. Independente da sua vontade atual ou de quem fez o pedido, seu propósito deve ser cumprido. Recusar requer um teste de sanidade com CD (16 + CON).",
+    "source": "Estigma do Caos · p. 16",
+    "source_line": 105
+  },
+  {
+    "id": "race-anao-maestria-de-casa",
+    "kind": "race",
+    "origin": "Anão",
+    "name": "Maestria de casa",
+    "cost": "Passiva",
+    "description": "Sua história foi marcada forja. Por isso, sua arma recebe um aumento de um dado de dano e um efeito da sua escolha. Caso troque, deverá gastar 1 recurso + 3PD para aprimorá-la.",
+    "source": "Estigma do Caos · p. 17",
+    "source_line": 110
+  },
+  {
+    "id": "race-anao-engenharia-ana",
+    "kind": "race",
+    "origin": "Anão",
+    "name": "Engenharia anã",
+    "cost": "2PD",
+    "description": "Você pode improvisar um equipamento ou aprimoramento com duração cena em qualquer situação. Ferramentas de uso único não exigem gasto de PD. Seja criativo, mas o custo de sucata continua existindo. Caso queira algo com durabilidade normal, o custo passa a ser 4PD. Receba +1 nível de engenharia.",
+    "source": "Estigma do Caos · p. 17",
+    "source_line": 111
+  },
+  {
+    "id": "race-anao-longevidade-milenar",
+    "kind": "race",
+    "origin": "Anão",
+    "name": "Longevidade milenar",
+    "cost": "Passiva",
+    "description": "Sua raça possui longevidade excepcional, permitindo que seus membros acumulem décadas ou séculos de experiência. Você possui Imortalidade durante os primeiros 1d4 turnos após sofrer dano em combate. Sua vida chegará até 1 PV, mas você não entrará em estado de morte. Entretanto, isso não o protege dos debuffs causados por danos adicionais. Além disso, receba 1 nível em Diplomacia, Persuasão ou Nobreza.",
+    "source": "Estigma do Caos · p. 17",
+    "source_line": 112
+  },
+  {
+    "id": "race-anao-criterioso",
+    "kind": "race",
+    "origin": "Anão",
+    "name": "Criterioso",
+    "cost": "Passiva",
+    "description": "Você não aceita nada meia-boca e não engole seco. Equipamentos danificados ou inadequados devem ser reparados antes do uso, gastando 1 turno + 1PD e, se necessário, sucata. Equipamentos em perfeitas condições concedem +1 em seus testes de uso e + INT em dano. Caso receba uma tarefa ou ordem que considere injustificada, fique com Má-vontade.",
+    "source": "Estigma do Caos · p. 17",
+    "source_line": 115
+  },
+  {
+    "id": "race-tritao-treinado-para-guerra",
+    "kind": "race",
+    "origin": "Tritão",
+    "name": "Treinado para guerra",
+    "cost": "Passiva",
+    "description": "Sua espécie vive para guerrear. Seu propósito é esse. Receba 2 níveis em Luta, Guerra ou Pontaria.",
+    "source": "Estigma do Caos · p. 18",
+    "source_line": 120
+  },
+  {
+    "id": "race-tritao-hidro-cinese",
+    "kind": "race",
+    "origin": "Tritão",
+    "name": "Hidro-cinese",
+    "cost": "2PH",
+    "description": "Sua raça consegue manipular fontes d’agua ou gastar da própria hidratação para construir armas, armaduras e equipamentos feitos inteiramente de água. Eles não são nada duráveis. São todos feitos para uso único. Porém, são extremamente eficazes, principalmente em combate. Conjure: Arma aquática, Tentáculo marinho, Hidrobomba ou Armadura d’água.",
+    "source": "Estigma do Caos · p. 18",
+    "source_line": 121
+  },
+  {
+    "id": "race-tritao-desidratado",
+    "kind": "race",
+    "origin": "Tritão",
+    "name": "Desidratado",
+    "cost": "Passiva",
+    "description": "Sua necessidade constante por água não é suprida sozinha. Você possui PH (Pontos de Hidratação), que vão de 0 a 30. Eles podem ser usados para conjurar suas habilidades aquáticas. Beber água, tomar banho, estar em ambientes úmidos são formas de recuperar. Se chegar em 0, você morre. Cada PH pode virar dois PV conforme você desejar.",
+    "source": "Estigma do Caos · p. 18",
+    "source_line": 122
+  },
+  {
+    "id": "race-tritao-sede-incessante",
+    "kind": "race",
+    "origin": "Tritão",
+    "name": "Sede Incessante",
+    "cost": "Passiva",
+    "description": "A desidratação cresce constantemente. Você perde 3 PH por cena e 1 PH por turno de combate. Porém, seu corpo esguio e treinado concede +1 de defesa para cada ponto de DES.",
+    "source": "Estigma do Caos · p. 18",
+    "source_line": 124
+  },
+  {
+    "id": "race-draconato-baforada-draconica",
+    "kind": "race",
+    "origin": "Draconato",
+    "name": "Baforada Dracônica",
+    "cost": "2PD",
+    "description": "A habilidade clássica dos dragões pode ser usada uma vez por cena. Escolha uma cor para representar sua herança e elemento: Vermelho (Fogo/Queimadura), Branco (Gelo/Congelamento), Azul (Energia/Eletrificado), Amarelo (Vento/Derrubada), Verde (Ácido/Corrosão), Preto (Caos), Dourado (Vontade). Cada elemento modifica o efeito secundário. Cause: 2d10 + 4  de dano + efeito elemental correspondente. Reflexos (CD 20 + FOR ou CON)  reduz metade e anula efeito secundário. Pode pagar + 1PD para aumentar o dano em 1d10 + 2.",
+    "source": "Estigma do Caos · p. 19",
+    "source_line": 131
+  },
+  {
+    "id": "race-draconato-acumulador-compulsivo",
+    "kind": "race",
+    "origin": "Draconato",
+    "name": "Acumulador Compulsivo",
+    "cost": "Passiva",
+    "description": "Sua tendência instintiva a acumular e obter cada vez mais riquezas. Sejam itens valiosos, armas, dinheiro, metais ou qualquer objeto de valor definido previamente, você precisa acumular cada vez mais. Caso passe mais de 3 cenas sem acumular nada, receberá punição Moral. Receba + 1 slot de inventário para cada ponto de FOR e CON.",
+    "source": "Estigma do Caos · p. 19",
+    "source_line": 132
+  },
+  {
+    "id": "race-draconato-escamas-reptilianas",
+    "kind": "race",
+    "origin": "Draconato",
+    "name": "Escamas Reptilianas",
+    "cost": "Passiva",
+    "description": "Seu corpo é coberto por escamas que te protegem de ferimentos. Você soma sua CON na Defesa (DEF) e recebe 1 nível em Fortitude.",
+    "source": "Estigma do Caos · p. 19",
+    "source_line": 134
+  },
+  {
+    "id": "race-draconato-aparencia-hostil",
+    "kind": "race",
+    "origin": "Draconato",
+    "name": "Aparência Hostil",
+    "cost": "Passiva",
+    "description": "Draconatos carregam o estigma de serem perigosos e impulsivos. Receba + 1 nível em intimidação e -3 em testes de Diplomacia.",
+    "source": "Estigma do Caos · p. 19",
+    "source_line": 135
+  },
+  {
+    "id": "race-silvano-sentidos-agucados",
+    "kind": "race",
+    "origin": "Silvano",
+    "name": "Sentidos aguçados",
+    "cost": "2PD",
+    "description": "Detecte a posição de criaturas não escondidas num raio de 100m e force um teste de furtividade nas outras (CD 15 + [3 por nível de Percepção]). Se a distância for inferior a 10m, sucesso automático. Armadilhas e rastros podem ser detectados. Usá-la uma vez garante +3 de percepção na cena inteira. Caso a habilidade seja utilizada em um inimigo já detectado (Alcance visual), sua margem de ameaça aumenta em +1 contra ele.",
+    "source": "Estigma do Caos · p. 20",
+    "source_line": 136
+  },
+  {
+    "id": "race-silvano-instinto-de-presa",
+    "kind": "race",
+    "origin": "Silvano",
+    "name": "Instinto de Presa",
+    "cost": "Passiva",
+    "description": "Seus instintos te pressionam em situações de risco. Ser surpreendido, assustado ou não resistir à intimidação, causa a condição Acuado durante a cena. Com isso, você passa a ter -1d20 (Desvantagem) em todo teste de ataque e seu dano reduz em um passo. Entretanto, ganha +1d20 (Vantagem) em testes de fuga, manobra ou Reflexos e passa a somar sua FOR na defesa. Receba + 1 nível em Reflexos.",
+    "source": "Estigma do Caos · p. 20",
+    "source_line": 142
+  },
+  {
+    "id": "race-silvano-instinto-de-predador",
+    "kind": "race",
+    "origin": "Silvano",
+    "name": "Instinto de Predador",
+    "cost": "Passiva",
+    "description": "Perceber uma vulnerabilidade em um alvo (Não detectado, caído, fragilizado...) intensifica sua hostilidade e concede a condição Predador durante a cena. Seu dano aumenta em um passo e recebe +1 de Margem de Ameaça. Caso utilize sua Arma Corporal, realize dois ataques sem gasto de PD. Entretanto, enquanto estiver nesse estado, você não pode alterar voluntariamente seu alvo. Receba +1 nível em Furtividade.",
+    "source": "Estigma do Caos · p. 20",
+    "source_line": 144
+  },
+  {
+    "id": "race-silvano-arma-corporal",
+    "kind": "race",
+    "origin": "Silvano",
+    "name": "Arma corporal",
+    "cost": "Passiva",
+    "description": "Seu corpo possui armas naturais. Seu dano desarmado passa a ser 2d4 + 2. Vc pode pagar + 2PD para ampliar suas características de fera, fazendo seu dano subir 1d4 + 1 (Podendo acrescentar +1PD e somar mais dados) e aplicando o efeito Sangramento até o fim da cena. Fortitude (CD 15 + FOR) anula.",
+    "source": "Estigma do Caos · p. 20",
+    "source_line": 145
+  },
+  {
+    "id": "race-orc-imprudente-indisciplinado-inconsequente-idi",
+    "kind": "race",
+    "origin": "Orc",
+    "name": "Imprudente, Indisciplinado, Inconsequente, Idi...",
+    "cost": "Passiva",
+    "description": "Você possui uma tendência natural a assumir riscos. Seu coração clama por adrenalina. Você anseia pela glória eterna e imutável. Por isso, você não recua de um desafio que aceitou, mesmo que as chances estejam contra você. Enquanto enfrentar voluntariamente um perigo superior às suas capacidades, receba +1d20 (Vantagem) em todos os testes relacionados ao confronto. Caso recue, desista ou volte atrás, você ficará humilhado com Má-vontade até o fim do dia. Falhar no desafio não causa efeito negativo. Desistir sem conclusão, sim. Receba +1 nível em Vontade.",
+    "source": "Estigma do Caos · p. 21",
+    "source_line": 150
+  },
+  {
+    "id": "race-orc-feroz",
+    "kind": "race",
+    "origin": "Orc",
+    "name": "Feroz",
+    "cost": "Passiva",
+    "description": "Confrontos despertam algo dentro de você. Para cada inimigo que derrotar, seu dano aumenta em 1 passo até o fim da cena. Receba +1 nível em Luta.",
+    "source": "Estigma do Caos · p. 21",
+    "source_line": 152
+  },
+  {
+    "id": "race-orc-socialmente-debilitado",
+    "kind": "race",
+    "origin": "Orc",
+    "name": "Socialmente Debilitado",
+    "cost": "Passiva",
+    "description": "Situações sociais são estranhas... Você não entende bem o motivo de te olharem torto, não rirem de suas piadas desajeitadas ou reclamarem do seu cheiro de guerra. Mas, isso é normal, não é? Não? Ah... Você tem -3 em testes de Persuasão, Diplomacia e Lábia. Porém, +3 em Intimidação, Adestramento e Vontade. Receba +1 nível em Intimidação.",
+    "source": "Estigma do Caos · p. 21",
+    "source_line": 153
+  },
+  {
+    "id": "race-orc-esmagar",
+    "kind": "race",
+    "origin": "Orc",
+    "name": "Esmagar",
+    "cost": "1PD",
+    "description": "Uma fúria incontrolável queima dentro de você. Cause (1d8 + FOR + CON) de dano concussivo ao alvo. Se acertar, ele fica Derrubado, resitencia com Fortitude (CD 15 + FOR).  Caso use Esmagar consecutivamente, o custo passa a ser 2PD e cada acerto consecutivo aumenta o dano em +1d8. Um erro encerra a sequência.",
+    "source": "Estigma do Caos · p. 21",
+    "source_line": 154
+  },
+  {
+    "id": "class-atirador-disparo-teleguiado",
+    "kind": "class",
+    "origin": "Atirador",
+    "name": "Disparo Teleguiado",
+    "cost": "1PD",
+    "description": "Você realiza um disparo preciso capaz de ignorar cobertura parcial. A menos que seja impossível atingir o inimigo (Cobertura completa), você conseguirá. Recebe +DES no teste de Pontaria. Por +2PD o alvo atravessa outro inimigo.",
+    "source": "Estigma do Caos · p. 24",
+    "source_line": 179
+  },
+  {
+    "id": "class-atirador-oportunista",
+    "kind": "class",
+    "origin": "Atirador",
+    "name": "Oportunista",
+    "cost": "Passiva",
+    "description": "Como atirador, você sempre busca a oportunidade perfeita para disparar. Se o inimigo estiver Vulnerável; Não notou você; está Fragilizado; Imobilizado; ou Distraído; sua margem de ameaça aumenta em +2, você recebe +INT no teste de acerto e seu dano aumenta em [Nível de Pontaria] passos.",
+    "source": "Estigma do Caos · p. 24",
+    "source_line": 180
+  },
+  {
+    "id": "class-atirador-carga-especial",
+    "kind": "class",
+    "origin": "Atirador",
+    "name": "Carga especial",
+    "cost": "3PD",
+    "description": "Você carrega energia mágica no seu disparo através de um  ritual projetado na sua linha de tiro. Escolha entre: Flamejante: +INTd8 de dano e Queimadura; Congelante: +INTd4 de dano e Congelamento; Eletrizado: +INTd6 de dano e Eletrificado. Fortitude CD 16 + INT anula o efeito, mas não o dano.",
+    "source": "Estigma do Caos · p. 24",
+    "source_line": 181
+  },
+  {
+    "id": "class-atirador-plano-de-caca",
+    "kind": "class",
+    "origin": "Atirador",
+    "name": "Plano de caça",
+    "cost": "Passiva",
+    "description": "Todo início de turno, você usa uma ação livre de Percepção para buscar nas redondezas pontos vantajosos para o seu disparo. Se houver, ir até lá ou não é uma escolha sua. Posições vantajosas podem trazer benefícios distintos e situacionais (Ex: Margem de ameaça maior, chance de acerto maior, dano ligeiramente aumentado, etc.). Falhar nesse teste não confere PP (Pontos de perícia).  Alternativamente, use:Caça avançada (4PD): Você se move atirando com precisão equivalente ao Oportunista. Se mova [Nível de Acrobacia] vezes e dispare uma vez em cada movimento.",
+    "source": "Estigma do Caos · p. 24",
+    "source_line": 185
+  },
+  {
+    "id": "class-barbaro-contra-ataque-brutal",
+    "kind": "class",
+    "origin": "Bárbaro",
+    "name": "Contra-ataque Brutal",
+    "cost": "1PD",
+    "description": "Aceite o ataque de um inimigo sem se defender ou reagir. Se sofrer o dano, responda imediatamente com um ataque brutal contra ele, com +[Nível de Fortitude] passos de dano, +1 dado. Se acertar, causa Sangramento. O alvo deve fazer Fortitude (CD 16 + FOR) para resistir.",
+    "source": "Estigma do Caos · p. 26",
+    "source_line": 204
+  },
+  {
+    "id": "class-barbaro-musculatura-saudavel",
+    "kind": "class",
+    "origin": "Bárbaro",
+    "name": "Musculatura Saudável",
+    "cost": "Passiva",
+    "description": "Você recebe +2PV para cada ponto de FOR que possuir. Além disso, pode pagar 1PD para exibir seus músculos durante uma conversa e somar FOR aos testes de Diplomacia, Persuasão, Intimidação e Sedução.",
+    "source": "Estigma do Caos · p. 26",
+    "source_line": 208
+  },
+  {
+    "id": "class-barbaro-furia",
+    "kind": "class",
+    "origin": "Bárbaro",
+    "name": "Fúria",
+    "cost": "1PD",
+    "description": "Uma fúria incontrolável assume o controle do seu corpo. Enquanto estiver nesse estado, você falha automaticamente em testes de perícias mentais, mas recebe +1d20 (Vantagem) nos testes de combate (Luta, Reflexos, Fortitude), soma FOR ao dano causado. Se quiser ir além, pague +1PD para incendiar seu próprio corpo. Até o fim da cena de combate, você sofre 1d4 de dano por turno, seus ataques causam Queimadura e seu dano aumenta em 1 passo.",
+    "source": "Estigma do Caos · p. 26",
+    "source_line": 209
+  },
+  {
+    "id": "class-barbaro-banho-de-sangue",
+    "kind": "class",
+    "origin": "Bárbaro",
+    "name": "Banho de Sangue",
+    "cost": "Passiva",
+    "description": "Sempre que derrotar um inimigo, você recebe uma ação extra de movimento para avançar até o próximo. Isso não altera ordem dos turnos ou a ação dos seus aliados, mas está aberto para golpes de oportunidade no trajeto. Além disso, toda vez que for ferido, você recebe +1 em testes de luta (Max = FOR + CON). Por 1PD avance com um ataque de arma para o inimigo mais próximo.",
+    "source": "Estigma do Caos · p. 26",
+    "source_line": 210
+  },
+  {
+    "id": "class-bardo-inspiracao",
+    "kind": "class",
+    "origin": "Bardo",
+    "name": "Inspiração",
+    "cost": "1PD",
+    "description": "Escolha um aliado para inspirá-lo em sua ação. O Mestre avalia seu discurso: Ruim: +2; Médio: +1d20 (Vantagem); Bom: +2d20 (Vantagem). Além disso, pague +4PD para inspirar a si mesmo e o grupo todo.",
+    "source": "Estigma do Caos · p. 28",
+    "source_line": 229
+  },
+  {
+    "id": "class-bardo-performatico-ate-demais",
+    "kind": "class",
+    "origin": "Bardo",
+    "name": "Performático até demais",
+    "cost": "Passiva",
+    "description": "Para Sedução, Lábia, Persuasão ou Diplomacia, some seu CAR aos testes. Se quiser, pague 1PD para tocar seu instrumento durante o teste e receber +[Nível da Perícia Usada]d6.",
+    "source": "Estigma do Caos · p. 28",
+    "source_line": 233
+  },
+  {
+    "id": "class-bardo-solo-no-improviso",
+    "kind": "class",
+    "origin": "Bardo",
+    "name": "Solo no Improviso",
+    "cost": "2PD",
+    "description": "Toque uma melodia mágica que afeta uma área de alcance médio (15m). Escolha um efeito, que dura 1d4 + CAR turnos. Os alvos fazem Fortitude (CD 16 + CAR) para resistir ao efeito inicial. Aliados podem resistir usando uma CD reduzida em CAR. Escolha: Atordoado: Fortitude (CD 16 + CAR) todo turno. Se falhar, perde sua ação padrão. Falhar duas vezes seguidas causa Derrubado; Louco: deve atacar a criatura mais próxima. A cada turno, faça Percepção (CD 16 + CAR); se falhar, ataca a si mesmo. Sono: recebe -[Nível de Misticismo] na Defesa. A cada turno, faça Vontade (CD 16 + CAR); se falhar, adormece.",
+    "source": "Estigma do Caos · p. 28",
+    "source_line": 234
+  },
+  {
+    "id": "class-bardo-nota-errada",
+    "kind": "class",
+    "origin": "Bardo",
+    "name": "Nota errada",
+    "cost": "2PD",
+    "description": "Um estrondo sonoro causa [Nível de Diplomacia]d8 + CAR de dano e derruba automaticamente inimigos em alcance curto. Em alcance médio, exige Fortitude (CD 15 + CAR) e causa -1 dado de dano. Cada uso adicional na mesma cena exige um teste de DES com CD crescente (6, 8, 10...). Se falhar, seu instrumento fica Danificado.",
+    "source": "Estigma do Caos · p. 28",
+    "source_line": 235
+  },
+  {
+    "id": "class-bruxo-pacto-profano",
+    "kind": "class",
+    "origin": "Bruxo",
+    "name": "Pacto Profano",
+    "cost": "Passiva",
+    "description": "Todas suas magias são derivadas dos seres com os quais fez pactos, roubou ou prestou concessões. Enquanto seguir os comandos ou a vontade dessa entidade, receba +1 nível em Misticismo e (+CAR +INT) em testes para seguir comandos diretos dela. Se desobedecer, receba punição Moral e perca os bônus.",
+    "source": "Estigma do Caos · p. 30",
+    "source_line": 254
+  },
+  {
+    "id": "class-bruxo-o-abismo-olha-pra-voce",
+    "kind": "class",
+    "origin": "Bruxo",
+    "name": "O Abismo olha pra você",
+    "cost": "Passiva",
+    "description": "Após tanto tempo lidando com criaturas e seres de outro plano, sua mera presença virou porta por onde eles entram. A frequência com que seres mágicos aparecem na sua presença é maior. Além disso, você tem +1d20 (Vantagem) para perícias contra seres místicos e pode usar Investigação para analisar fraquezas e características deles. Por 3PD, conjure um Olhar da Penitência (Alcance pessoal) que queima a sanidade e a vida do alvo. Cause [Nível de Misticismo]d4 de dano na sanidade e Queimadura. Teste Vontade (CD 15 + CAR), se o alvo falhar, fica Pasmo.",
+    "source": "Estigma do Caos · p. 30",
+    "source_line": 258
+  },
+  {
+    "id": "class-bruxo-maldicao",
+    "kind": "class",
+    "origin": "Bruxo",
+    "name": "Maldição",
+    "cost": "2PD",
+    "description": "Apartir da sua Vontade, imponha uma restrição sobrenatural em um alvo (Alcance visual). Escolha (1d4 + CAR turnos): Morte destinada: O alvo não pode mais se curar; Pensamentos Intrusivos: O alvo desconfia de si mesmo e recebe a condição Louco; Tempo desgastado: O alvo perde uma ação todo turno; Fragilizado: O dano do alvo cai em [Nível de Vontade] passos.  Vontade CD (16 + CAR) anula.",
+    "source": "Estigma do Caos · p. 30",
+    "source_line": 259
+  },
+  {
+    "id": "class-bruxo-pagar-o-preco",
+    "kind": "class",
+    "origin": "Bruxo",
+    "name": "Pagar o Preço",
+    "cost": "1PD",
+    "description": "Com seu próprio sangue, reivindique mais poder. Receba 1d6 de dano para +1 dado de dano nas suas ações por 1d4 + CAR turnos. Acumule quanto dano quiser. Alternativamente, sacrifique um de seus feitiços + 2PD até o fim do dia para ressuscitar um corpo e usá-lo como marionete. Teste Misticismo (CD variável). Para cada falha, tente novamente sem consumir feitiços, mas consumindo o mesmo PD.",
+    "source": "Estigma do Caos · p. 30",
+    "source_line": 260
+  },
+  {
+    "id": "class-cavaleiro-vitalidade-fantasma",
+    "kind": "class",
+    "origin": "Cavaleiro",
+    "name": "Vitalidade Fantasma",
+    "cost": "1PD",
+    "description": "Você possui um propósito pelo qual luta. Esse propósito lhe dá força para resistir além. Role [Nível de Fortitude]d6 + CON e receba esse valor em PV temporários até o fim da cena. Não acumula, mas pode substituir PV temporários anteriores.",
+    "source": "Estigma do Caos · p. 32",
+    "source_line": 279
+  },
+  {
+    "id": "class-cavaleiro-enquanto-eu-estiver-aqui",
+    "kind": "class",
+    "origin": "Cavaleiro",
+    "name": "Enquanto eu estiver aqui",
+    "cost": "Passiva",
+    "description": "Sua presença no grupo carrega responsabilidades. No fundo, você sabe que será o primeiro a morrer. Sua vida é a primeira peça de um dominó enfileirado. Por isso, ela precisa valer. Receba uma reação adicional de Bloqueio com seu escudo, podendo Bloquear duas vezes consecutivas, sem aumentar suas reações gerais. Além disso, pague 1PD para Bloquear um ataque contra um aliado em alcance curto. Você se torna o alvo e sofre todos os efeitos do ataque. Depois disso, pode somar CON aos testes de Luta e FOR à sua Negação de Dano por 1d4 turnos.",
+    "source": "Estigma do Caos · p. 32",
+    "source_line": 280
+  },
+  {
+    "id": "class-cavaleiro-vingador",
+    "kind": "class",
+    "origin": "Cavaleiro",
+    "name": "Vingador",
+    "cost": "1PD",
+    "description": "Quando um aliado for atacado por um inimigo em alcance curto, você pode imediatamente realizar um ataque contra o inimigo, com o dano aumentado [Nível de Luta] passo. Se acertar, o inimigo deve fazer Vontade (CD 16 + CON). Caso falhe, deve atacar você no próximo turno, com -DES nos testes de ataque (mínimo de -1).",
+    "source": "Estigma do Caos · p. 32",
+    "source_line": 281
+  },
+  {
+    "id": "class-cavaleiro-golpe-voraz",
+    "kind": "class",
+    "origin": "Cavaleiro",
+    "name": "Golpe Voraz",
+    "cost": "1PD",
+    "description": "Canalize a força de sua arma em um ataque devastador. Ao acertar, aplique um efeito conforme seu tipo de dano: Cortante: Sangrando; Perfurante: Debilitado; Impacto: Derrubado. Seu dano aumenta em +FOR.",
+    "source": "Estigma do Caos · p. 32",
+    "source_line": 282
+  },
+  {
+    "id": "class-clerigo-pacto-de-devocao",
+    "kind": "class",
+    "origin": "Clérigo",
+    "name": "Pacto de Devoção",
+    "cost": "Passiva",
+    "description": "Sirva fielmente sua divindade e honre seus ensinamentos para receber sua graça. Receba +1PD para cada ponto de CAR e INT e +CAR em testes de  Diplomacia e Religião. Ao quebrar seus preceitos, receba punição Moral, entre em Pecado e perca estes benefícios até se reconciliar com seu deus.",
+    "source": "Estigma do Caos · p. 34",
+    "source_line": 304
+  },
+  {
+    "id": "class-clerigo-bencao",
+    "kind": "class",
+    "origin": "Clérigo",
+    "name": "Benção",
+    "cost": "2PD",
+    "description": "Redirecione o poder cedido por seu deus e conduza um irmão ao caminho virtuoso. Se estiver em Pecado, faça Religião (CD 24 - CAR). Escolha um aliado em alcance visual e conceda uma bênção: Proteção Divina: Recebe [Nível de Religião]d4 PV temporários, aumentado em um passo para cada ponto de CAR; Sorte Maravilhosa: Soma CAR em todos os testes por 1d4 + CAR turnos ou pode rolar novamente um fracasso; Carne Sacra: Recupera [Nível de Religião]d2 PV por turno, aumentado em um passo para cada ponto de CAR, durante 1d4 turnos. Se não estiver em Pecado, pague +1PD e faça Religião (CD 22 - CAR) para usar a bênção em si mesmo.",
+    "source": "Estigma do Caos · p. 34",
+    "source_line": 308
+  },
+  {
+    "id": "class-clerigo-promessa",
+    "kind": "class",
+    "origin": "Clérigo",
+    "name": "Promessa",
+    "cost": "Passiva",
+    "description": "Ao início de cada dia, faça uma promessa à sua divindade em troca de uma bênção. Escolha uma restrição, jejum ou sacrifício; quanto maior o sacrifício, maior bênção concedida. Ela dura até o fim do dia ou até que a promessa seja quebrada. Se quebrá-la, não poderá fazer outra promessa por 1 dia.",
+    "source": "Estigma do Caos · p. 34",
+    "source_line": 309
+  },
+  {
+    "id": "class-clerigo-condenacao",
+    "kind": "class",
+    "origin": "Clérigo",
+    "name": "Condenação",
+    "cost": "1PD",
+    "description": "Condene um alvo. Se ele quebrou as leis de seu deus, o custo cai em 1PD; caso contrário, faça Religião (CD 16 - CAR). Se passar, o alvo sofre [Nível de Religião]d2, aumentado em 1 passo para cada ponto de CAR, de dano adicional ao ser atacado.",
+    "source": "Estigma do Caos · p. 34",
+    "source_line": 310
+  },
+  {
+    "id": "class-engenheiro-automato",
+    "kind": "class",
+    "origin": "Engenheiro",
+    "name": "Autômato",
+    "cost": "Passiva",
+    "description": "Você tem uma criação capaz de agir sozinha (Ação padrão + movimento). Ela age conforme o ritmo da cena, próxima ao seu turno. Leve: Possui (INT×3 + [Engenharia]) PV, recebe (3 + [Engenharia]) Habilidades e pode ser equipável. Sua Defesa é igual à sua + seu nível de Engenharia. Ao atingir metade dos PV, a CD dos testes para uso de suas Habilidades aumenta em +2.Médio: Possui (INT×4 + [Engenharia]×2) PV e (2 + [Engenharia]) Habilidades. Sua Defesa é igual à sua − 1.Pesado: Possui (INT×6 + [Engenharia]×3) PV e (1 + [Engenharia]) Habilidades. Sua Defesa é igual à sua − 5. Possui Negação de Dano igual a INT + Engenharia. É possível embarcar nos autômatos pesados. Deve escolher entre ação de movimento OU padrão.Efeitos que causam dano recorrente têm sua duração reduzida a 1 turno. Suas Habilidades podem modificar essas características.Ao chegar a 0PV, o autômato é desativado e seu núcleo fica exposto. O Engenheiro deve recuperá-lo para reconstruí-lo: Leve: 1 Sucata + 1PD; Médio: 2 Sucatas + 2PD; Pesado: 3 Sucatas + 3PD. O núcleo possui 1PV (Leve), 15PV (Médio) ou 30PV (Pesado). Se o núcleo chegar a 0PV, você perde o autômato.",
+    "source": "Estigma do Caos · p. 36",
+    "source_line": 329
+  },
+  {
+    "id": "class-engenheiro-gambiarra",
+    "kind": "class",
+    "origin": "Engenheiro",
+    "name": "Gambiarra",
+    "cost": "1PD",
+    "description": "Quando uma de suas criações falhar ou ficar Danificada, faça uma solução improvisada para fazê-la funcionar por 1d4 turnos. Alternativamente, repare seu autômato, recuperando INTd4 PV. Se usar 1 Sucata, recupere (INTd8 + INT) PV.",
+    "source": "Estigma do Caos · p. 36",
+    "source_line": 333
+  },
+  {
+    "id": "class-espadachim-ponto-zero",
+    "kind": "class",
+    "origin": "Espadachim",
+    "name": "Ponto Zero",
+    "cost": "1PD",
+    "description": "Após ver seu alvo lutando, você observa falhas em sua postura, ou brechas em sua defesa. Com isso, até o fim do combate, ataque que com + DES no seu teste de luta e, após ser atacado por ele, passe a somar + DES na sua defesa. Por + 1PD (Em cada uso), causa + FOR + DES em seus ataques que atravessam negação de dano.",
+    "source": "Estigma do Caos · p. 38",
+    "source_line": 352
+  },
+  {
+    "id": "class-espadachim-corte-lotus",
+    "kind": "class",
+    "origin": "Espadachim",
+    "name": "Corte Lótus",
+    "cost": "XPD",
+    "description": "Você assume uma postura de foco absoluto e concentra sua técnica em cortar diretamente a Lótus da Vida do alvo. Faça um ataque normal. Se acertar, escolha um dos seguintes cortes: Vermelho (1PD): Corte a carne. O alvo realiza Fortitude (CD 15 + FOR); se falhar, sofre Sangramento. Azul (1PD): Corte o fluxo de Mana. Por 1d4 + INT turnos, sempre que o alvo gastar PD, realiza Misticismo (CD 15 + FOR); se falhar, perde o PD sem efeito. Amarelo (3PD): Corte o canal da Vontade. O alvo realiza Vontade (CD 15 + FOR); se falhar, fica Pasmo, por 1 turno. Verde (4PD): Corte o Ego. O alvo realiza Vontade (CD 15 + FOR) duas vezes e, para cada falha, perde uma Habilidade aleatória por 1d4 turnos. Roxo (3PD): Corte a ligação com o Caos. O alvo realiza Fortitude (CD 15 + FOR); se falhar, sofre Instabilidade.",
+    "source": "Estigma do Caos · p. 38",
+    "source_line": 356
+  },
+  {
+    "id": "class-espadachim-intencao-assassina",
+    "kind": "class",
+    "origin": "Espadachim",
+    "name": "Intenção Assassina",
+    "cost": "Passiva",
+    "description": "No início de cada combate, escolha um alvo como sua prioridade. Seus ataques contra ele causam +1d4 aumentado em um passo para cada ponto de FOR. Por 1PD, você também pode realizar um teste de Percepção para detectar intenções assassinas ou intimidação com + FOR ou DES.",
+    "source": "Estigma do Caos · p. 38",
+    "source_line": 357
+  },
+  {
+    "id": "class-espadachim-tecnica-notoria",
+    "kind": "class",
+    "origin": "Espadachim",
+    "name": "Técnica notória",
+    "cost": "Passiva",
+    "description": "Um Espadachim busca constantemente superar seus limites. Sempre que vencer um oponente com FOR ou DES superior à sua, recupere [FOR]PD e [DES]PV.",
+    "source": "Estigma do Caos · p. 38",
+    "source_line": 358
+  },
+  {
+    "id": "class-guerreiro-tecnica-letal",
+    "kind": "class",
+    "origin": "Guerreiro",
+    "name": "Técnica Letal",
+    "cost": "2PD",
+    "description": "Você desfere um golpe devastador que atinge uma área de 10m de raio, causando FORd6 + CON de dano. Todos os alvos realizam Reflexos (CD 15 + FOR para inimigos ou CD 15 − FOR para aliados). Quem for atingido sofre o dano completo e  fica Derrubado. Quem não for atingido sofre metade do dano e não sofre outros efeitos. Aliados previamente alertados realizam o teste de Reflexos com -2 na CD.",
+    "source": "Estigma do Caos · p. 40",
+    "source_line": 372
+  },
+  {
+    "id": "class-guerreiro-grito-de-guerra",
+    "kind": "class",
+    "origin": "Guerreiro",
+    "name": "Grito de Guerra",
+    "cost": "0PD",
+    "description": "Do fundo do peito, solte um urro que inspira seus aliados. Uma vez por cena, você e todos os aliados recebem [FOR]PD temporários. Além disso, você pode pagar 1PD para que seus companheiros causem +[Nível de Atletismo]d4 de dano por 1d4 + CON turnos.",
+    "source": "Estigma do Caos · p. 40",
+    "source_line": 381
+  },
+  {
+    "id": "class-guerreiro-domine-a-arte-da-paz",
+    "kind": "class",
+    "origin": "Guerreiro",
+    "name": "Domine a Arte da Paz",
+    "cost": "Passiva",
+    "description": "Resolver impasses sem recorrer a violência, apesar de não ser sua especialidade, é um objetivo constante. Sempre que impedir um conflito, recupere [FOR]PD e receba uma Inspiração. Além disso, passe a somar sua FOR em testes de Diplomacia. Por 1PD, use FOR como base dos testes de diplomacia.",
+    "source": "Estigma do Caos · p. 40",
+    "source_line": 382
+  },
+  {
+    "id": "class-guerreiro-sem-volta",
+    "kind": "class",
+    "origin": "Guerreiro",
+    "name": "Sem volta",
+    "cost": "Passiva",
+    "description": "Defina um alvo. Ou você ou ele. Alguém morre hoje. O alvo escolhido por você recebe uma proposta de entrar em um confronto sem interrupções até a morte Vontade (CD 15 + FOR). Nenhum teste de ataque. Apenas dano trocado com +1d10. Enquanto estiver nesse contrato, sua negação de dano  soma [FOR + CON].",
+    "source": "Estigma do Caos · p. 40",
+    "source_line": 383
+  },
+  {
+    "id": "class-ladino-golpe-furtivo",
+    "kind": "class",
+    "origin": "Ladino",
+    "name": "Golpe Furtivo",
+    "cost": "Passiva",
+    "description": "Uma única oportunidade é tudo o que você precisa. Enquanto não for detectado pelo alvo ou ele estiver vulnerável, seus ataques causam +1d4 de dano por Nível de Furtividade. Se quiser ir além: Golpe Letal (2PD): faça um ataque normal, sujeito a crítico. O bônus do Golpe Furtivo aumenta em 1 passo por DES. O alvo testa Reflexos (CD 15 + DES); se falhar, você recebe uma ação de movimento para desaparecer de sua vista. Assassinato (3PD): uma vez por campo de batalha, aproxime-se de um alvo sem que o grupo seja percebido e faça um ataque normal, sujeito a crítico. Se sua DES superar a CON do alvo, um acerto o mata instantaneamente; caso contrário, causa o dano do Golpe Letal duas vezes. A margem de ameaça aumenta em +1 até o fim da cena.",
+    "source": "Estigma do Caos · p. 42",
+    "source_line": 402
+  },
+  {
+    "id": "class-ladino-maos-caoticas",
+    "kind": "class",
+    "origin": "Ladino",
+    "name": "Mãos Caóticas",
+    "cost": "1PD",
+    "description": "O Caos faz suas mãos vibrarem além da matéria, permitindo alcançar e roubar coisas inacessíveis, exceto sob proteção mágica. Faça um teste de Ladinagem + DES; falhar não revela automaticamente sua presença, mas as condições da falha podem fazer isso. Por 6PD, vibre o corpo inteiro e evite o dano de um ataque. O primeiro no dia é seguro; nos seguintes, Vontade + CAR (CD 8, 16...). Se falhar, perde o controle e sofre uma consequência determinada pelo Mestre.",
+    "source": "Estigma do Caos · p. 42",
+    "source_line": 406
+  },
+  {
+    "id": "class-ladino-suprimir-presenca",
+    "kind": "class",
+    "origin": "Ladino",
+    "name": "Suprimir Presença",
+    "cost": "2PD",
+    "description": "Sua vontade de não ser percebido distorce a luz ao seu redor. Se ninguém estiver prestando atenção em você, fique Furtivo.",
+    "source": "Estigma do Caos · p. 42",
+    "source_line": 407
+  },
+  {
+    "id": "class-ladino-cara-de-pau",
+    "kind": "class",
+    "origin": "Ladino",
+    "name": "Cara de Pau",
+    "cost": "Passiva",
+    "description": "Quando alguém questionar sua mentira, faça um teste de Lábia/Enganação + CAR para convencê-lo do contrário. Se passar, ele acredita na mentira até que obtenha uma prova concreta e irrefutável. Por 1PD, some + DES no teste.",
+    "source": "Estigma do Caos · p. 42",
+    "source_line": 408
+  },
+  {
+    "id": "class-mago-aluno-exemplar",
+    "kind": "class",
+    "origin": "Mago",
+    "name": "Aluno Exemplar",
+    "cost": "Passiva",
+    "description": "Seu estudo das forças místicas permite aprender além dos limites comuns. Receba 1 Slot de Magia por Nível de Misticismo. Além disso, pode usar Transcrição Impossível (2PD): ao testemunhar uma Magia desconhecida, se houver espaço no grimório, registre-a para recriá-la posteriormente. O tempo e os requisitos dependem do grimório, Misticismo, INT ou CAR e da própria Magia. Magias transcritas só podem ser usadas com o grimório em mãos; para aprendê-las definitivamente, atenda aos requisitos do Mestre e possua um Slot livre.",
+    "source": "Estigma do Caos · p. 44",
+    "source_line": 419
+  },
+  {
+    "id": "class-mago-ecos-do-alem",
+    "kind": "class",
+    "origin": "Mago",
+    "name": "Ecos do Além",
+    "cost": "Passiva",
+    "description": "Heranças da Era Primordial perpassam seu Ego e se canalizam através de suas mãos. Uma vez por cena, lance uma Magia sem gastar PD, com custo limitado a (2×Misticismo + INT ou CAR). Ela pode ser Sobrecarregada e Elaborada uma vez. Falhar no teste de Misticismo consome o uso. A cada uso, algo se desenvolve em você.",
+    "source": "Estigma do Caos · p. 44",
+    "source_line": 431
+  },
+  {
+    "id": "class-mago-ritualista",
+    "kind": "class",
+    "origin": "Mago",
+    "name": "Ritualista",
+    "cost": "3PD",
+    "description": "Crie um círculo ritualístico para uma Magia, investindo 1 Componente por círculo. A preparação exige 1 turno por Componente. Ao concluir, crie uma Magia Verdadeira, conjurada sem erro e causando +[Componentes] dados de efeito. O círculo permanece por uma cena, inclusive em objetos, e pode ser ativado por qualquer criatura por 3PD por Componente. Teste Artesanato (CD 12 + Nº de Componentes) para cada Componente usado; cada falha o consome. Para torná-lo permanente, dobre os Componentes e aumente a preparação e ativação para 4PD por Componente. O círculo permanece até ser danificado e não recupera Componentes.",
+    "source": "Estigma do Caos · p. 44",
+    "source_line": 432
+  },
+  {
+    "id": "class-mago-aura-mistica",
+    "kind": "class",
+    "origin": "Mago",
+    "name": "Aura mística",
+    "cost": "Passiva",
+    "description": "Seu poder mágico transborda em uma aura sobrenatural. Some +INT em testes de Persuasão e Intimidação e recebe +INT em Negação de Dano. Além disso, por 3PD Sobrecarrega todas as suas magias que forem lançadas sem custo adicional até o fim da cena.",
+    "source": "Estigma do Caos · p. 44",
+    "source_line": 433
+  },
+  {
+    "id": "class-paladino-voto-sagrado",
+    "kind": "class",
+    "origin": "Paladino",
+    "name": "Voto Sagrado",
+    "cost": "Passiva",
+    "description": "Um voto de fé e um código inquebrável moldam seu ser e lhe conferem uma graça. Receba +1 Defesa por ponto de CAR e some +CAR em Diplomacia e Religião. Ao quebrar seus preceitos, receba punição Moral, entre em Pecado e perca estes benefícios até se reconciliar com seu Deus. Por 2PD, some seu nível de Fortitude e Religião à Defesa.",
+    "source": "Estigma do Caos · p. 46",
+    "source_line": 444
+  },
+  {
+    "id": "class-paladino-punicao-divina",
+    "kind": "class",
+    "origin": "Paladino",
+    "name": "Punição Divina",
+    "cost": "2PD",
+    "description": "Nenhuma heresia passa impune diante de sua presença. Após um ataque, reforce-o com poder divino, causando +[Nível de Religião]d2 de dano, aumentado em 1 passo por ponto de CAR. Se o alvo estiver explicitamente pecando contra seu Deus, o custo cai para 1PD. Em Pecado, teste Religião (CD 22 − CAR). Por 3PD, uma vez por campo de batalha, use Lança de Raios: convoque do céu uma lança de energia divina. Cause CARd6, aumentado em 1 passo por [Nível de Vontade], e aplique Eletrificado. O alvo principal testa Reflexos (CD 18 + CAR) para reduzir o dano à metade e anular o efeito. Se atingido, outros inimigos no campo sofrem CARd4 de dano colateral.",
+    "source": "Estigma do Caos · p. 46",
+    "source_line": 456
+  },
+  {
+    "id": "class-paladino-escudo-da-fe",
+    "kind": "class",
+    "origin": "Paladino",
+    "name": "Escudo Da Fé",
+    "cost": "3PD",
+    "description": "Conjure uma barreira semicircular de 10m que protege quem estiver atrás dela e queima quem a tocar. Faça Religião (CD 18). A barreira tem ([Nível de Religião]×10 + CAR×3) PV. Quem a tocar testa Fortitude (CD 15 + CAR); se falhar, sofre Queimadura; se passar, sofre apenas 1d4 de dano.",
+    "source": "Estigma do Caos · p. 46",
+    "source_line": 457
+  },
+  {
+    "id": "class-paladino-cura",
+    "kind": "class",
+    "origin": "Paladino",
+    "name": "Cura",
+    "cost": "3PD",
+    "description": "Em Pecado, faça Religião (CD 23 − CAR). Recupere [Nível de Religião]d6 PV, aumentado em 1 passo por ponto de CAR. Por +1PD, cure uma condição adversa. Sem estar em Pecado, pague +1PD e teste Religião (CD 22 − CAR) para usar a bênção em um aliado.",
+    "source": "Estigma do Caos · p. 46",
+    "source_line": 458
+  }
+]

@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="pt-BR">
+  <meta charset="utf-8" /><meta
+    name="viewport"
+    content="width=device-width,initial-scale=1"
+  /><title>Atlas • Mesas</title>
+  <link rel="stylesheet" href="/style.css" />
+  <header>
+    <strong>◈ ATLAS <small> / servidor local</small></strong
+    ><span id="identity">Estigma do Caos</span>
+  </header>
+  <main>
+    <div id="notice" role="status"></div>
+    <div id="app"></div>
+  </main>
+  <script>
+    // Load dependencies in order, with a single retry for a failed download.
+    // Do not start a partially loaded application.
+    (async function bootAtlas() {
+      const message = document.querySelector("#notice");
+      const modules = [
+        ["session.js", "mountDice"], ["admin.js", "adminView"],
+        ["files.js", "mapView"], ["participants.js", "memberView"],
+        ["characters.js", "characterView"], ["navigation.js", "navigateMap"],
+        ["combat.js", "combatView"], ["workspace.js", "renderWorkspace"],
+        ["app.js", "start"]
+      ];
+      message.textContent = "Carregando Atlas V15-CP4b…";
+      let current = "";
+      try {
+        for (const [file, expected] of modules) {
+          current = file;
+          for (let attempt = 0; attempt < 2; attempt++) {
+            try {
+              await new Promise((resolve, reject) => {
+                const script = document.createElement("script");
+                script.src = "/" + file + "?v=15-CP4b&attempt=" + attempt;
+                script.onload = resolve;
+                script.onerror = () => {script.remove(); reject(Error("download"));};
+                document.body.append(script);
+              });
+              break;
+            } catch (error) { if (attempt === 1) throw error; }
+          }
+          if (typeof window[expected] !== "function") throw Error("execução");
+        }
+        message.textContent = "";
+        await window.start();
+      } catch (error) {
+        message.textContent = "Não foi possível carregar " + current +
+          ". Encerre o servidor, extraia a correção V15-CP4b na pasta do Atlas substituindo os arquivos do programa, reinicie e pressione Ctrl+F5. Preserve a pasta data/.";
+        const retry = document.createElement("button");
+        retry.textContent = "Tentar carregar novamente";
+        retry.onclick = () => location.reload();
+        document.querySelector("#app").replaceChildren(retry);
+      }
+    })();
+  </script>
+</html>

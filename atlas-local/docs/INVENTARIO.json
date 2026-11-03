@@ -1,0 +1,29 @@
+{
+  "source": "Atualizacao_Gestao_Atlas_Portavel.zip",
+  "library_file_id": "libfile_a660a31dff288191868cafcea40d51b5",
+  "sha256": "7dc204923ae31a83961bdeb51782c92013d3a648a77a22bd1889539e859b3811",
+  "legacy_matches_package": true,
+  "entries": [
+    {
+      "path": "ABRIR_CATALOGO_V2.html",
+      "bytes": 834986
+    },
+    {
+      "path": "COMO_NAVEGAR.txt",
+      "bytes": 2324
+    },
+    {
+      "path": "COMO_USAR_COMBATE.txt",
+      "bytes": 4026
+    },
+    {
+      "path": "CONDICOES_DO_LIVRO.txt",
+      "bytes": 7521
+    },
+    {
+      "path": "LEIA_PRIMEIRO.txt",
+      "bytes": 7614
+    }
+  ],
+  "migration_status": "Fonte HTML preservada; imagens e demais pacotes ainda não inventariados nem importados."
+}
