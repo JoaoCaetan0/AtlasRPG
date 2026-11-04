@@ -53,9 +53,8 @@ function renderWorkspace(t) {
   sidebarLoading = false;
   document.body.classList.add("in-workspace");
   const panels = [
-    "scene",
     "chat",
-    ...(isMaster() ? ["drawings", "fog", "history"] : []),
+    ...(isMaster() ? ["drawings", "fog"] : []),
     "maps",
     "files",
     "characters",
@@ -64,7 +63,9 @@ function renderWorkspace(t) {
     ...(isMaster() ? ["admin"] : []),
   ];
   const topPanels=["combat",...(isMaster()?["grid","assets","conditions"]:[]),"initiative","dice"];
-  app.innerHTML = `<div class="workspace-heading"><button id="back" class="secondary" title="Voltar às mesas">← Mesas</button><h1>${esc(t.name)}</h1><span id="room-synopsis" title="${esc(t.synopsis)}">${esc(t.system)}</span></div><nav class="battle-tabs" aria-label="Ferramentas de combate">${topPanels.map(key=>`<button data-tab="${key}" aria-label="${panelNames[key]}" aria-expanded="false" aria-controls="workspace-drawer">${workspaceIcon(key)}<span>${panelNames[key]}</span></button>`).join("")}</nav><div id="pane"></div><nav class="workspace-rail" aria-label="Ferramentas da mesa">${panels.map((key) => `<button data-tab="${key}" aria-label="${panelNames[key]}" title="${panelNames[key]}" aria-expanded="false" aria-controls="workspace-drawer">${workspaceIcon(key)}<span class="rail-tooltip" aria-hidden="true">${panelNames[key]}</span></button>`).join("")}</nav><aside id="workspace-drawer" hidden aria-labelledby="workspace-title"><div class="drawer-heading"><h2 id="workspace-title"></h2><button id="drawer-close" class="secondary" aria-label="Recolher painel" title="Recolher painel (Esc)">×</button></div><div class="drawer-scroll"><div id="combat-slot" hidden></div><div id="drawings-slot" hidden></div><div id="grid-slot" hidden></div><div id="conditions-slot" hidden></div><div id="initiative-slot" hidden></div><div id="assets-slot" hidden></div><div id="fog-slot" hidden></div><div id="history-slot" hidden></div><div id="chat-slot" hidden></div><div id="dice-slot" hidden></div><div id="workspace-content" hidden></div></div></aside><dialog id="dialog"><div class="row"><h2 id="dialog-title"></h2><button id="close-dialog" class="secondary">Fechar</button></div><div id="dialog-body"></div></dialog>`;
+  app.innerHTML = `<div class="workspace-heading"><button id="back" class="secondary" title="Voltar às mesas">← Mesas</button><h1>${esc(t.name)}</h1><span id="room-synopsis" title="${esc(t.synopsis)}">${esc(t.system)}</span></div><nav class="battle-tabs" aria-label="Ferramentas de combate"><button id="scene-pointer" title="Voltar ao mapa" aria-label="Voltar ao mapa">${workspaceIcon("scene")}</button>${isMaster()?'<button id="quick-undo" disabled aria-label="Desfazer">↶</button><button id="quick-redo" disabled aria-label="Refazer">↷</button>':""}${topPanels.map(key=>`<button data-tab="${key}" aria-label="${panelNames[key]}" aria-expanded="false" aria-controls="workspace-drawer">${workspaceIcon(key)}<span>${panelNames[key]}</span></button>`).join("")}</nav><div id="pane"></div><nav class="workspace-rail" aria-label="Ferramentas da mesa">${panels.map((key) => `<button data-tab="${key}" aria-label="${panelNames[key]}" title="${panelNames[key]}" aria-expanded="false" aria-controls="workspace-drawer">${workspaceIcon(key)}<span class="rail-tooltip" aria-hidden="true">${panelNames[key]}</span></button>`).join("")}</nav><aside id="workspace-drawer" hidden aria-labelledby="workspace-title"><div class="drawer-heading"><h2 id="workspace-title"></h2><button id="drawer-close" class="secondary" aria-label="Recolher painel" title="Recolher painel (Esc)">×</button></div><div class="drawer-scroll"><div id="combat-slot" hidden></div><div id="drawings-slot" hidden></div><div id="grid-slot" hidden></div><div id="conditions-slot" hidden></div><div id="initiative-slot" hidden></div><div id="assets-slot" hidden></div><div id="fog-slot" hidden></div><div id="history-slot" hidden></div><div id="chat-slot" hidden></div><div id="dice-slot" hidden></div><div id="workspace-content" hidden></div></div></aside><dialog id="dialog"><div class="row"><h2 id="dialog-title"></h2><button id="close-dialog" class="secondary">Fechar</button></div><div id="dialog-body"></div></dialog>`;
+  $("#scene-pointer").onclick=()=>{if(!sidebarLoading)setSidebar(null); sceneActions.pointer?.();};
+  for(const dir of ["undo","redo"]) if($("#quick-"+dir)) $("#quick-"+dir).onclick=()=>$("#combat-"+dir)?.click();
   $("#back").onclick = () =>
     act(async () => {
       if (!sidebarLoading && canLeave()) await home();
@@ -106,6 +107,7 @@ function renderWorkspace(t) {
 function setSidebar(name, focus = true) {
   if (!$("#workspace-drawer")) return;
   const previous = currentPanel;
+  $("#workspace-drawer").classList.toggle("admin-drawer",name==="admin");
   currentPanel = name;
   $("#workspace-drawer").classList.toggle("conditions-drawer",name==="conditions");
   $("#workspace-drawer").classList.toggle("battle-drawer",["combat","grid","assets","conditions","initiative","dice"].includes(name));
@@ -128,7 +130,7 @@ function setSidebar(name, focus = true) {
     if (name) $("#drawer-close").focus({ preventScroll: true });
     else
       document
-        .querySelector(`[data-tab="${previous || "scene"}"]`)
+        .querySelector(previous ? `[data-tab="${previous}"]` : "#scene-pointer")
         ?.focus({ preventScroll: true });
   }
 }

@@ -1,4 +1,4 @@
-async function adminView() {
+async function adminView(section = "0") {
   if (!isMaster()) throw Error("Apenas mestres podem administrar a mesa.");
   const [settings, maps, assets] = await Promise.all([
     api("admin-settings?table_id=" + active.id),
@@ -8,7 +8,7 @@ async function adminView() {
   let revision = settings.revision,
     config = cloneState(settings.config);
   $("#workspace-content").innerHTML =
-    `<div class="section-heading"><h2>Administração da mesa</h2><p>Cadastre conteúdo e escolha os padrões dos próximos combates.</p></div><div class="admin-layout"><section><form id="table-settings" class="card"><h3>Identidade da mesa</h3><label>Nome<input name="name" maxlength="120" required value="${esc(settings.name)}"></label><label>Sistema de RPG<input name="system" maxlength="120" required value="${esc(settings.system)}"></label><label>Sinopse<textarea name="synopsis" maxlength="3000">${esc(settings.synopsis)}</textarea></label><details><summary>Padrão da grade</summary><p>Aplica-se a mapas sem combate salvo. Combates existentes mantêm suas configurações.</p><div class="compact-grid"><label>Raio do hexágono<input name="size" type="number" min="15" max="100" value="${config.grid.size}" required></label><label>Distância por hexágono<input name="scale" type="number" min=".1" max="100" step=".1" value="${config.grid.scale}" required></label><label>Unidade<input name="unit" maxlength="12" value="${esc(config.grid.unit)}" required></label></div><label><input name="enabled" type="checkbox" ${config.grid.enabled ? "checked" : ""}> Mostrar grid ao ativar combate</label></details><details><summary>Condições do sistema</summary><p>Cores, ícones e regras para novos combates. Editar aqui não altera efeitos de combates já salvos.</p><label>Buscar condição<input id="condition-search" type="search" placeholder="Ex.: Sangramento"></label><div id="admin-conditions"></div><button type="button" id="add-condition" class="secondary">Adicionar condição</button></details><div class="sheet-actions"><button>Salvar configurações</button><span id="admin-status">Sem alterações</span></div></form></section><section class="card"><div class="row"><h3>Mapas e versões</h3><button id="admin-new-map">Adicionar mapa</button></div><p>Use imagens da Biblioteca ou envie um arquivo durante o cadastro.</p><label>Buscar mapa<input id="admin-map-search" type="search" placeholder="Nome ou região"></label><div id="admin-map-list"></div></section></div>`;
+    `<div class="section-heading"><h2>Administração da mesa</h2><p>Cadastre conteúdo e escolha os padrões dos próximos combates.</p></div><div class="admin-layout"><section><form id="table-settings" class="card"><h3>Identidade da mesa</h3><label>Nome<input name="name" maxlength="120" required value="${esc(settings.name)}"></label><label>Sistema de RPG<input name="system" maxlength="120" required value="${esc(settings.system)}"></label><label>Sinopse<textarea name="synopsis" maxlength="3000">${esc(settings.synopsis)}</textarea></label><details><summary>Padrão da grade</summary><p>Aplica-se a mapas sem combate salvo. Combates existentes mantêm suas configurações.</p><div class="compact-grid"><label>Raio do hexágono<input name="size" type="number" min="15" max="100" value="${config.grid.size}" required></label><label>Distância por hexágono<input name="scale" type="number" min=".1" max="100" step=".1" value="${config.grid.scale}" required></label><label>Unidade<input name="unit" maxlength="12" value="${esc(config.grid.unit)}" required></label></div><label><input name="enabled" type="checkbox" ${config.grid.enabled ? "checked" : ""}> Mostrar grid ao ativar combate</label></details><details><summary>Condições do sistema</summary><p>Cores, ícones e regras para novos combates. Editar aqui não altera efeitos de combates já salvos.</p><label>Buscar condição<input id="condition-search" type="search" placeholder="Ex.: Sangramento"></label><div id="admin-conditions"></div><button type="button" id="add-condition" class="secondary">Adicionar condição</button></details><div class="sheet-actions"><button>Salvar configurações</button><span id="admin-status">Sem alterações</span></div></form></section><section class="card"><div class="row"><h3>Mapas e versões</h3><button id="admin-new-map">Adicionar mapa</button></div><p>Use imagens da Biblioteca ou envie um arquivo durante o cadastro.</p><label>Buscar mapa<input id="admin-map-search" type="search" placeholder="Nome ou região"></label><label>Tipo<select id="admin-map-kind"><option value="all">Todos os mapas</option><option value="regional">Regionais</option><option value="encounter">Encontros</option><option value="unclassified">Não classificados</option></select></label><div id="admin-map-list"></div></section></div>`;
   const form = $("#table-settings");
   form.oninput = (e) => {
     if (e.target.id === "condition-search") return;
@@ -92,23 +92,23 @@ async function adminView() {
         system: r.system,
       });
       $("#app h1").textContent = r.name;
-      if ($("#room-synopsis")) $("#room-synopsis").textContent = r.synopsis;
-      dirty = false;
+      if ($("#room-synopsis")) $("#room-synopsis").textContent = r.system;
+      dirty = $("#profile-form")?.dataset.dirty === "true";
       $("#admin-status").textContent = "Configuração salva";
+      if($("#conditions-save-status"))$("#conditions-save-status").textContent="Condições e padrões salvos para novos combates.";
     });
   };
   function mapList() {
-    const q = $("#admin-map-search").value.toLocaleLowerCase();
+    const normalize=s=>s.normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLocaleLowerCase();
+    const q = normalize($("#admin-map-search").value);
     $("#admin-map-list").innerHTML =
       maps
         .filter((m) =>
-          (m.title + " " + (m.metadata.region || ""))
-            .toLocaleLowerCase()
-            .includes(q),
+          (($("#admin-map-kind").value==="all")||($("#admin-map-kind").value===(m.metadata.kind||"unclassified"))) && normalize(m.title + " " + (m.metadata.region || "")+" "+(m.metadata.tags||[]).join(" ")).includes(q),
         )
         .map(
           (m) =>
-            `<div class="admin-map-row"><div><strong>${esc(m.title)}</strong><small>${m.images.length} versões · ${m.visible ? "Disponível no catálogo" : "Oculto no catálogo"}</small></div><button class="secondary" data-admin-map="${esc(m.legacy_id)}">Editar</button></div>`,
+            `<article class="admin-map-row map-prep-card">${m.images[0]?`<img loading="lazy" src="${assetUrl(m.images[0].asset_id)}" alt="">`:""}<div><strong>${esc(m.title)}</strong><small>${m.images.length} versões · ${m.visible ? "Disponível no catálogo" : "Oculto no catálogo"}</small></div><button class="secondary" data-admin-map="${esc(m.legacy_id)}">Editar</button><button type="button" class="secondary" data-admin-access="${esc(m.legacy_id)}">Acessos</button></article>`,
         )
         .join("") || "<p>Nenhum mapa. Cadastre o primeiro.</p>";
     document.querySelectorAll("[data-admin-map]").forEach(
@@ -123,12 +123,18 @@ async function adminView() {
           })),
     );
   }
+  $('#admin-map-list').addEventListener('click',e=>{
+    const b=e.target.closest('[data-admin-access]');if(!b)return;
+    act(async()=>{if(!canLeave())return;const mid=b.dataset.adminAccess,m=maps.find(x=>x.legacy_id===mid);if(!m?.images.length)throw Error('Cadastre uma imagem primeiro.');const links=await api('navigation?table_id='+active.id+'&map_id='+encodeURIComponent(mid));accessEditor(mid,m.images[0].asset_id,maps.map(x=>({...x,id:x.legacy_id})),links);if(!$('#dialog').open)$('#dialog').showModal();});
+  });
   $("#admin-map-search").oninput = mapList;
+  $("#admin-map-kind").onchange = mapList;
   $("#admin-new-map").onclick = () =>
     act(async () => {
       if (canLeave()) await mapEditor(null, assets);
     });
   mapList();
+  await mountAdminSections(section);
 }
 async function mapEditor(map, allAssets) {
   let assets = allAssets.filter((a) => a.mime.startsWith("image/")),
@@ -185,7 +191,7 @@ async function mapEditor(map, allAssets) {
   render();
   $("#back-admin").onclick = () =>
     act(async () => {
-      if (canLeave()) await adminView();
+      if (canLeave()) await adminView("2");
     });
   $("#map-image-upload").onchange = () =>
     act(async () => {
@@ -236,9 +242,9 @@ async function mapEditor(map, allAssets) {
         images: versions,
       });
       dirty = false;
-      await adminView();
+      await adminView("2");
       notice.textContent =
-        "Mapa salvo. Os acessos podem ser configurados em Mapas → Prévia → Editar acessos.";
+        "Mapa salvo. Use Acessos no card para conectar este mapa a outros.";
     });
   };
 }
@@ -252,7 +258,7 @@ function accessEditor(mid, aid, maps, initial) {
   const dialog = $("#dialog");
   $("#dialog-title").textContent = "Editar acessos do mapa";
   $("#dialog-body").innerHTML =
-    `<div class="access-editor"><section><div class="row"><button id="access-draw" class="secondary" aria-pressed="false">+ Desenhar acesso</button><span id="access-hint">Clique em um acesso para editar. Arraste para reposicionar.</span></div><div id="access-canvas"><img src="${assetUrl(aid)}" alt="Mapa para posicionar acessos" draggable="false"><div id="access-overlay"></div></div></section><aside class="card"><h3>Acessos</h3><select id="access-pick" aria-label="Selecionar acesso"></select><form id="access-properties"><label>Nome do acesso<input id="access-label" maxlength="100" required></label><label>Destinos<select id="access-targets" multiple size="7" aria-describedby="access-target-help">${maps.map((m) => `<option value="${esc(m.id)}">${esc(m.title)}</option>`).join("")}</select></label><small id="access-target-help">Ctrl ou ⌘ permite selecionar mais de um destino.</small><details><summary>Ajustar posição e tamanho</summary><div class="compact-grid">${["X", "Y", "Largura", "Altura"].map((l, i) => `<label>${l} (%)<input id="access-coordinate-${i}" type="number" min="0" max="100" step=".1"></label>`).join("")}</div><button id="access-apply" type="submit" class="secondary">Aplicar medidas</button></details><button type="button" id="access-delete" class="danger">Excluir acesso selecionado</button></form><div class="sheet-actions"><button id="access-commit">Salvar acessos</button><span id="access-status" role="status">Sem alterações</span></div></aside></div>`;
+    `<div class="access-editor"><section><div class="row"><button id="access-draw" class="secondary" aria-pressed="false">+ Desenhar acesso</button><span id="access-hint">Clique em um acesso para editar. Arraste para reposicionar.</span></div><div id="access-canvas"><img src="${assetUrl(aid)}" alt="Mapa para posicionar acessos" draggable="false"><div id="access-overlay"></div></div></section><aside class="card"><h3>Acessos</h3><select id="access-pick" aria-label="Selecionar acesso"></select><form id="access-properties"><label>Nome do acesso<input id="access-label" maxlength="100" required></label><label>Buscar destino<input type="search" id="access-target-search" placeholder="Nome do mapa"></label><label>Destinos<select id="access-targets" multiple size="7" aria-describedby="access-target-help">${maps.map((m) => `<option value="${esc(m.id)}">${esc(m.title)}</option>`).join("")}</select></label><small id="access-target-help">Ctrl ou ⌘ permite selecionar mais de um destino.</small><details><summary>Ajustar posição e tamanho</summary><div class="compact-grid">${["X", "Y", "Largura", "Altura"].map((l, i) => `<label>${l} (%)<input id="access-coordinate-${i}" type="number" min="0" max="100" step=".1"></label>`).join("")}</div><button id="access-apply" type="submit" class="secondary">Aplicar medidas</button></details><button type="button" id="access-delete" class="danger">Excluir acesso selecionado</button></form><div class="sheet-actions"><button id="access-commit">Salvar acessos</button><span id="access-status" role="status">Sem alterações</span></div></aside></div>`;
   const canvas = $("#access-canvas");
   let drawing = false;
   const mark = () => {
@@ -382,6 +388,7 @@ function accessEditor(mid, aid, maps, initial) {
     mark();
     draw();
   };
+  $('#access-target-search').oninput=e=>{const q=e.target.value.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();[...$('#access-targets').options].forEach(o=>o.hidden=!o.textContent.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().includes(q));};
   $("#access-targets").onchange = (e) => {
     draft[selected].targets = [...e.target.selectedOptions].map((o) => o.value);
     mark();
@@ -466,3 +473,4 @@ function accessEditor(mid, aid, maps, initial) {
     });
   select();
 }
+

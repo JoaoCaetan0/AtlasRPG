@@ -31,12 +31,34 @@ def handle(c,data,path,d,user,tid,master,require,Binary):
  if ep=='/api/characters' and d:
   require(master);target=d.get('user_id');require(c.execute('SELECT 1 FROM members WHERE table_id=? AND user_id=?',(tid,target)).fetchone(),400,'Escolha um participante.')
   name=d.get('name','');require(isinstance(name,str) and 1<=len(name.strip())<=120,400,'Nome inválido.')
+  from system_profiles import read
+  profile,_=read(c,tid)
+  if profile['engine']=='generic' and not d.get('template_id'):
+   cid=secrets.token_hex(16)
+   c.execute('INSERT INTO characters(id,table_id,user_id,name,template_id,fields,build) VALUES(?,?,?,?,?,?,?)',(cid,tid,target,name.strip(),None,json.dumps({'nome':name.strip()},ensure_ascii=False),json.dumps({'engine':'generic','profile':profile,'overrides':[]},ensure_ascii=False)))
+   return {'id':cid}
   schema(c,data,tid,d['template_id']);cid=secrets.token_hex(16)
-  c.execute('INSERT INTO characters(id,table_id,user_id,name,template_id) VALUES(?,?,?,?,?)',(cid,tid,target,name.strip(),d['template_id']));return {'id':cid}
+  c.execute('INSERT INTO characters(id,table_id,user_id,name,template_id) VALUES(?,?,?,?,?)',(cid,tid,target,name.strip(),d['template_id']));
+  if profile['engine']=='generic':c.execute('UPDATE characters SET build=? WHERE id=?',(json.dumps({'engine':'pdf-generic'}),cid))
+  return {'id':cid}
  if ep in ['/api/character','/api/character-pdf']:
   cid=d.get('id') if d else q.get('id',[''])[0]
   ch=c.execute('SELECT * FROM characters WHERE id=? AND table_id=?',(cid,tid)).fetchone();require(ch and (master or ch['user_id']==user),404,'Personagem indisponível.')
-  reader,defs=schema(c,data,tid,ch['template_id']);fields=json.loads(ch['fields']);build=json.loads(ch['build'])
+  fields=json.loads(ch['fields']);build=json.loads(ch['build'])
+  if build.get('engine')=='generic':
+   from system_profiles import calculate as generic_calculate
+   require(ep!='/api/character-pdf',400,'Esta ficha usa campos do Atlas, sem modelo PDF vinculado.')
+   profile=build['profile']
+   if 'fields' in d:
+    require(d.get('revision')==ch['revision'],409,'A ficha mudou. Reabra antes de salvar.')
+    overrides=d.get('overrides',build.get('overrides',[]))
+    incoming=d['fields'];require(isinstance(incoming,dict) and set(incoming)<=set(fields)|{f['id'] for f in profile['fields']},400,'Campo não pertence a esta ficha.')
+    try:values=generic_calculate(profile,{**fields,**incoming},overrides)
+    except ValueError as error:require(False,400,str(error))
+    build['overrides']=overrides
+    c.execute('UPDATE characters SET fields=?,build=?,revision=revision+1 WHERE id=?',(json.dumps(values,ensure_ascii=False),json.dumps(build,ensure_ascii=False),cid));fields=values
+   return {'id':cid,'name':ch['name'],'engine':'generic','profile':profile,'build':build,'fields':fields,'revision':ch['revision']+(1 if 'fields' in d else 0)}
+  reader,defs=schema(c,data,tid,ch['template_id'])
   if ep=='/api/character-pdf':
    _,Writer=pdf_api();writer=Writer();writer.clone_document_from_reader(reader)
    # O modelo original reutiliza appearance streams entre widgets. Regerar
@@ -56,7 +78,7 @@ def handle(c,data,path,d,user,tid,master,require,Binary):
    values={f['key']:str((reader.get_fields() or {})[f['key']].get('/V','')) for f in defs}
    values.update(fields)
    writer.update_page_form_field_values(None,values,auto_regenerate=False)
-   abilities.append_pdf(writer,fields,ch['name'])
+   if build.get('engine')!='pdf-generic':abilities.append_pdf(writer,fields,ch['name'])
    folder=data/'exports';folder.mkdir(exist_ok=True);out=folder/(cid+'-'+str(ch['revision'])+'.pdf')
    writer.write(out);return Binary(out,'application/pdf')
   if 'fields' in d:
@@ -65,10 +87,11 @@ def handle(c,data,path,d,user,tid,master,require,Binary):
    require(d.get('revision')==ch['revision'],409,'A ficha foi atualizada. Reabra antes de salvar; o rascunho permanece no editor.')
    build=d.get('build',build)
    require(isinstance(build,dict) and len(json.dumps(build))<10000 and type(build.get('auto',False))==bool,400,'Configuração inválida.')
-   if build.get('auto'):
+   require(build.get('engine')==json.loads(ch['build']).get('engine'),400,'O tipo da ficha não pode ser alterado.')
+   if build.get('auto') and build.get('engine')!='pdf-generic':
     computed=calculate(values,build)
     for k,v in computed['fields'].items():
      if k in allowed:values[k]=v
    c.execute('UPDATE characters SET fields=?,build=?,revision=revision+1 WHERE id=?',(json.dumps(values,ensure_ascii=False),json.dumps(build,ensure_ascii=False),cid));fields=values
-  return {'id':cid,'name':ch['name'],'build':build,'fields':fields,'definitions':defs,'abilities':abilities.selected(fields),'revision':ch['revision']+(1 if 'fields' in d else 0)}
+  return {'id':cid,'name':ch['name'],'build':build,'fields':fields,'definitions':defs,'abilities':abilities.selected(fields) if build.get('engine')!='pdf-generic' else [],'revision':ch['revision']+(1 if 'fields' in d else 0)}
  return NotImplemented

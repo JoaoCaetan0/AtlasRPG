@@ -1,0 +1,3 @@
+Atlas V16 CP2 — atualização leve sobre sua instalação existente.
+Encerre o servidor e faça backup de data/. Extraia mesclando atlas-local e substitua os arquivos do programa. Preserve data/, campaign/, imagens e PDFs.
+Leia atlas-local/docs/ATUALIZACAO_V16_CP2.md. Reinicie e use Ctrl+F5.

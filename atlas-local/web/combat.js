@@ -8,6 +8,7 @@ async function combatView() {
   clearInterval(mapPoll);
   const generation = ++tabletopGeneration;
   sceneActions = {};
+  for(const dir of ["undo","redo"]) if($("#quick-"+dir)) $("#quick-"+dir).disabled=true;
   for (const id of ["combat-slot", "grid-slot", "conditions-slot", "initiative-slot", "assets-slot", "history-slot", "fog-slot"])
     $("#" + id).innerHTML =
       "<p>Compartilhe um mapa para acessar estas ferramentas.</p>";
@@ -450,7 +451,7 @@ async function combatView() {
     host.hidden = !sheet;
     if (sheet) {
       const f = sheet.resources;
-      host.innerHTML = `<button id="open-token-sheet" class="secondary">Abrir ficha</button><span><strong>${esc(sheet.name)}</strong> · PV ${esc(f.pv_atual || "—")}/${esc(f.pv_maximo || "—")} · PD ${esc(f.pd_atual || "—")}/${esc(f.pd_maximo || "—")} · Defesa natural ${esc(f.def_natural || "—")}</span>`;
+      host.innerHTML = `<button id="open-token-sheet" class="secondary">Abrir ficha</button><span><strong>${esc(sheet.name)}</strong>${sheet.generic ? " · Ficha configurável" : ` · PV ${esc(f.pv_atual || "—")}/${esc(f.pv_maximo || "—")} · PD ${esc(f.pd_atual || "—")}/${esc(f.pd_maximo || "—")} · Defesa natural ${esc(f.def_natural || "—")}`}</span>`;
       $("#open-token-sheet").onclick = () => act(() => openTokenCharacter(sheet.id));
     } else host.replaceChildren();
     $("#movement-info").textContent = !enabled
@@ -466,6 +467,8 @@ async function combatView() {
       const button = $("#combat-" + direction),
         action = history[direction];
       button.disabled = busy || !action;
+      const quick=$("#quick-"+direction);
+      if(quick){quick.disabled=button.disabled;quick.title=action ? `${direction==="undo"?"Desfazer":"Refazer"}: ${action.label}` : "Nenhuma ação disponível";}
       button.title = action
         ? `${action.label} · ${action.author}`
         : "Nenhuma ação disponível";
@@ -941,11 +944,13 @@ async function combatView() {
     panel.prepend($("#quick-token"));
     $("#assets-slot").replaceChildren($("#asset-library-host"));
     $("#history-slot").replaceChildren($("#combat-history"));
+    const historyButton=document.createElement("button");historyButton.className="secondary";historyButton.textContent="Histórico";historyButton.onclick=()=>openWorkspacePanel("history",true);panel.append(historyButton);
   }
   for(const id of ["combat-toggle","initiative-toggle","scene-dice"])$("#"+id).hidden=true;
   modernPanels=mountCombatPanels({get:()=>({state,selected}),change,master:isMaster(),key:"atlas-initiative:"+me.id+":"+active.id,edit:turnEditor,uid});
   tabletopModernPanels=modernPanels;
   drawingEditor=mountDrawings({svg:$("#battle"),host:$("#drawings-slot"),master:isMaster(),get:()=>state,change,uid,prepare:()=>{fogEditor.stop();measuring=false;pendingAsset=null;mode="move";}});
+  sceneActions.pointer=()=>{drawingEditor?.stop();fogEditor?.stop();measuring=false;measureStart=null;pendingAsset=null;mode="move";$("#ruler-toggle").setAttribute("aria-pressed","false");$("#ruler-layer")?.remove();};
   setSidebar(currentPanel, false);
   async function synchronize() {
     if (

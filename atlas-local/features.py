@@ -18,7 +18,8 @@ def route(c,data,path,d,user,tid,master,require):
  if result is not NotImplemented:return result
  from dice import handle as dice_handle
  from admin import handle as admin_handle
- for handler in (dice_handle,admin_handle):
+ from system_profiles import handle as profile_handle
+ for handler in (dice_handle,admin_handle,profile_handle):
   result=handler(c,path,d,user,tid,master,require)
   if result is not NotImplemented:return result
  result=fog.handle(c,data,path,d,user,tid,master,require)

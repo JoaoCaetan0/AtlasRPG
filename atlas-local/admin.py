@@ -26,6 +26,8 @@ def handle(c,path,d,user,tid,master,require):
    config=d.get('config');require(isinstance(config,dict) and set(config)=={'grid','conditions'},400,'Configuração inválida.')
    from combat import fresh,validate
    sample=fresh();sample.update(config);validate(sample,c,tid,require)
+   stored=c.execute('SELECT profile FROM system_profiles WHERE table_id=?',(tid,)).fetchone()
+   if stored:system=json.loads(stored[0])['name']
    c.execute('UPDATE tables SET name=?,synopsis=?,system=? WHERE id=?',(name.strip(),synopsis,system.strip(),tid))
    c.execute('INSERT INTO table_settings VALUES(?,?,?) ON CONFLICT(table_id) DO UPDATE SET config=excluded.config,revision=excluded.revision',(tid,json.dumps(config),revision+1));revision+=1
   table=c.execute('SELECT name,synopsis,system FROM tables WHERE id=?',(tid,)).fetchone()

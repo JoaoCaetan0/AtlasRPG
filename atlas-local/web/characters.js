@@ -7,13 +7,14 @@ async function openTokenCharacter(id) {
 
 async function characterView() {
   const rows = await api("characters?table_id=" + active.id);
+  const profile = (await api("system-profile?table_id="+active.id)).profile;
   let templates = [];
   if (isMaster())
     templates = (await api("assets?table_id=" + active.id)).filter(
       (a) => a.mime === "application/pdf",
     );
   $("#workspace-content").innerHTML =
-    `<h2>Personagens</h2><p>Fichas individuais. Salve no editor antes de exportar o PDF.</p><div class="grid">${rows.map((r) => `<article class="card"><h3>${esc(r.name)}</h3><button data-character="${r.id}">Abrir ficha</button></article>`).join("")}</div>${isMaster() ? `<form id="new-character" class="card"><h3>Criar personagem</h3><label>Nome<input name="name" required maxlength="120"></label><label>Jogador responsável<select name="user_id">${members.map((m) => `<option value="${m.id}">${esc(m.name)}</option>`).join("")}</select></label><label>Modelo PDF<select name="template_id">${templates.map((t) => `<option value="${t.id}">${esc(t.name)}</option>`).join("")}</select></label><button ${templates.length ? "" : "disabled"}>Criar ficha</button><p>Envie modelos preenchíveis pela Biblioteca. A ficha de Estigma acompanha o acervo completo.</p></form>` : ""}`;
+    `<h2>Personagens</h2><p>Fichas individuais. Salve no editor antes de exportar o PDF.</p><div class="grid">${rows.map((r) => `<article class="card"><h3>${esc(r.name)}</h3><button data-character="${r.id}">Abrir ficha</button></article>`).join("")}</div>${isMaster() ? `<form id="new-character" class="card"><h3>Criar personagem</h3><label>Nome<input name="name" required maxlength="120"></label><label>Jogador responsável<select name="user_id">${members.map((m) => `<option value="${m.id}">${esc(m.name)}</option>`).join("")}</select></label><label>Modelo PDF<select name="template_id">${profile.engine === "generic" ? '<option value="">Ficha configurável do Atlas</option>' : ""}${templates.map((t) => `<option value="${t.id}">${esc(t.name)}</option>`).join("")}</select></label><button ${templates.length || profile.engine === "generic" ? "" : "disabled"}>Criar ficha</button><p>Envie modelos preenchíveis pela Biblioteca. A ficha de Estigma acompanha o acervo completo.</p></form>` : ""}`;
   document
     .querySelectorAll("[data-character]")
     .forEach(
@@ -33,13 +34,14 @@ async function characterView() {
     };
 }
 async function characterEditor(id) {
-  const c = await api("character", { table_id: active.id, id }),
-    rules = await api("character-rules?table_id=" + active.id);
+  const c = await api("character", { table_id: active.id, id });
+  if(c.engine === "generic") return genericCharacterEditor(c);
+  const rules = await api("character-rules?table_id=" + active.id);
   let rev = c.revision,
     calc = null,
     request = 0,
     timer;
-  const compatible = ["atributo_CON", "pv_maximo", "raca", "classe"].every(
+  const compatible = c.build?.engine !== "pdf-generic" && ["atributo_CON", "pv_maximo", "raca", "classe"].every(
     (k) => c.definitions.some((f) => f.key === k),
   );
   const values = { ...c.fields };

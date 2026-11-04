@@ -28,5 +28,6 @@ def summaries(state,rows,user,master):
   if not master and ch['user_id']!=user:
    token.pop('character_id',None);continue
   fields=json.loads(ch['fields'])
-  result[cid]={'id':cid,'name':str(fields.get('nome') or ch['name']),'revision':ch['revision'],'resources':{k:fields.get(k,'') for k in RESOURCE_KEYS}}
+  generic=json.loads(ch['build']).get('engine')=='generic'
+  result[cid]={'generic':generic,'id':cid,'name':str(fields.get('nome') or ch['name']),'revision':ch['revision'],'resources':{k:fields.get(k,'') for k in RESOURCE_KEYS}}
  return result

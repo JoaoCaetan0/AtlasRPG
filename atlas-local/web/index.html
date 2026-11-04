@@ -19,13 +19,13 @@
     (async function bootAtlas() {
       const message = document.querySelector("#notice");
       const modules = [
-        ["session.js", "mountDice"], ["admin.js", "adminView"],
+        ["session.js", "mountDice"], ["system-profiles.js", "mountAdminSections"], ["admin.js", "adminView"],
         ["files.js", "mapView"], ["participants.js", "memberView"],
         ["characters.js", "characterView"], ["navigation.js", "navigateMap"],
         ["combat.js", "combatView"], ["workspace.js", "renderWorkspace"],
         ["app.js", "start"]
       ];
-      message.textContent = "Carregando Atlas V15-CP4b…";
+      message.textContent = "Carregando Atlas V16-CP2…";
       let current = "";
       try {
         for (const [file, expected] of modules) {
@@ -34,7 +34,7 @@
             try {
               await new Promise((resolve, reject) => {
                 const script = document.createElement("script");
-                script.src = "/" + file + "?v=15-CP4b&attempt=" + attempt;
+                script.src = "/" + file + "?v=16-CP2&attempt=" + attempt;
                 script.onload = resolve;
                 script.onerror = () => {script.remove(); reject(Error("download"));};
                 document.body.append(script);
@@ -48,7 +48,7 @@
         await window.start();
       } catch (error) {
         message.textContent = "Não foi possível carregar " + current +
-          ". Encerre o servidor, extraia a correção V15-CP4b na pasta do Atlas substituindo os arquivos do programa, reinicie e pressione Ctrl+F5. Preserve a pasta data/.";
+          ". Encerre o servidor, extraia a correção V16-CP2 na pasta do Atlas substituindo os arquivos do programa, reinicie e pressione Ctrl+F5. Preserve a pasta data/.";
         const retry = document.createElement("button");
         retry.textContent = "Tentar carregar novamente";
         retry.onclick = () => location.reload();

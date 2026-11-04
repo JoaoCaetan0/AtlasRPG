@@ -29,7 +29,7 @@ def db():
 
 def init():
     with closing(db()) as c, c:
-        if c.execute('PRAGMA user_version').fetchone()[0]>12:raise RuntimeError('Banco de versão mais nova; use a atualização correspondente.')
+        if c.execute('PRAGMA user_version').fetchone()[0]>13:raise RuntimeError('Banco de versão mais nova; use a atualização correspondente.')
         c.executescript('''
         CREATE TABLE IF NOT EXISTS users(id TEXT PRIMARY KEY,name TEXT NOT NULL UNIQUE,salt TEXT NOT NULL,password TEXT NOT NULL);
         CREATE TABLE IF NOT EXISTS sessions(token TEXT PRIMARY KEY,user_id TEXT REFERENCES users(id),expires INTEGER);
@@ -40,7 +40,7 @@ def init():
         CREATE TABLE IF NOT EXISTS bans(table_id TEXT REFERENCES tables(id),user_id TEXT REFERENCES users(id),PRIMARY KEY(table_id,user_id));
         CREATE TABLE IF NOT EXISTS maps(table_id TEXT REFERENCES tables(id),legacy_id TEXT,title TEXT,metadata TEXT,visible INTEGER NOT NULL DEFAULT 0,PRIMARY KEY(table_id,legacy_id));
         CREATE TABLE IF NOT EXISTS note_history(table_id TEXT,user_id TEXT,revision INTEGER,body TEXT,editor TEXT,changed INTEGER,PRIMARY KEY(table_id,user_id,revision));
-        PRAGMA user_version=12;
+        PRAGMA user_version=13;
         ''')
         install(c)
 
@@ -70,7 +70,7 @@ class Handler(BaseHTTPRequestHandler):
         try:
             require(valid_request(self.headers,self.server.server_address),403,'Endereço ou origem não autorizado.')
             static={'/':('index.html','text/html; charset=utf-8'),'/style.css':('style.css','text/css'),'/app.js':('app.js','application/javascript'),'/combat.js':('combat.js','application/javascript'),'/session.js':('session.js','application/javascript'),'/admin.js':('admin.js','application/javascript')}
-            for module in ['workspace.js','navigation.js','files.js','participants.js','characters.js','combat/fog.mjs','combat/camera.mjs','combat/condition-icons.mjs','combat/combat-panels.mjs','combat/drawings.mjs','combat/geometry.mjs','combat/renderer.mjs','combat/asset-library.mjs','combat/token-model.mjs']:
+            for module in ['system-profiles.js','workspace.js','navigation.js','files.js','participants.js','characters.js','combat/fog.mjs','combat/camera.mjs','combat/condition-icons.mjs','combat/combat-panels.mjs','combat/drawings.mjs','combat/geometry.mjs','combat/renderer.mjs','combat/asset-library.mjs','combat/token-model.mjs']:
                 static['/'+module]=(module,'application/javascript')
             from token_assets import static_routes
             static.update(static_routes())
@@ -145,11 +145,18 @@ class Handler(BaseHTTPRequestHandler):
             supplied=d.get('host_key','')
             require(isinstance(supplied,str) and expected and hmac.compare_digest(supplied,expected),403,'Informe o código do anfitrião exibido no terminal.')
             return create_campaign(c,ROOT,DATA,user),None
+        if path=='/api/system-presets' and not post:
+            from system_profiles import presets
+            return presets(),None
         if path=='/api/tables' and not post:
             return [dict(x) for x in c.execute('SELECT t.*,m.role FROM tables t JOIN members m ON t.id=m.table_id WHERE m.user_id=?',(user,))],None
         if path=='/api/tables' and post:
             name=d.get('name','').strip();require(1<=len(name)<=120,400,'Informe o nome da mesa.')
             tid=uid();c.execute('INSERT INTO tables VALUES(?,?,?,?)',(tid,name,str(d.get('synopsis',''))[:4000],str(d.get('system',''))[:120]))
+            if 'system_id' in d:
+                from system_profiles import initialize
+                profile=initialize(c,tid,d['system_id'])
+                c.execute('UPDATE tables SET system=? WHERE id=?',(profile['name'],tid))
             c.execute('INSERT INTO members VALUES(?,?,?)',(tid,user,'owner'));return {'id':tid},None
         if path=='/api/join' and post:
             inv=c.execute('SELECT * FROM invites WHERE code=? AND expires>?',(d.get('code','').strip(),time.time())).fetchone()
