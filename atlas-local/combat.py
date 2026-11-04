@@ -133,6 +133,14 @@ def handle(c,data,path,d,user,tid,master,require):
     factor=s['terrain'].get(str(point[0])+','+str(point[1]),1);require(factor>0,400,'Hexágono bloqueado.');cost+=s['grid']['scale']*factor;previous=point
    require(not s['enforce'] or t['spent']+cost<=t['budget']+1e-8,400,'Movimento insuficiente.')
    t['q'],t['r']=previous;t['spent']=round(t['spent']+cost,6)
+  if ep=='/api/combat':
+   ids=d.get('remember_tokens',([d['remember_token']] if d.get('remember_token') else []))
+   require(isinstance(ids,list) and len(ids)<=20 and all(isinstance(x,str) for x in ids) and len(set(ids))==len(ids),400,'Lista de tokens recentes inválida.')
+   for ident in ids:
+    token=next((t for t in s['tokens'] if t['id']==ident),None)
+    require(token and not any(t['id']==token['id'] for t in before['tokens']),400,'Somente novos tokens podem entrar nos recentes.')
+    from recent_tokens import remember
+    remember(c,tid,user,token)
   if ep in ['/api/combat','/api/combat-move']:combat_history.record(c,tid,aid,before,s,user)
   c.execute('INSERT INTO combats VALUES(?,?,?,?) ON CONFLICT(table_id,asset_id) DO UPDATE SET state=excluded.state,revision=excluded.revision',(tid,aid,json.dumps(s),rev+1));return {'revision':rev+1}
  if not master:

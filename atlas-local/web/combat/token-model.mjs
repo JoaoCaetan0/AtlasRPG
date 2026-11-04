@@ -1,10 +1,11 @@
 import { placement } from "./geometry.mjs";
 
 export function nextName(tokens, base) {
+  base=base.slice(0,55);
   const names = new Set(tokens.map((t) => t.name));
   let n = 1;
   while (names.has(`${base} ${n}`)) n++;
-  return `${base} ${n}`;
+  return `${base.slice(0,55)} ${n}`;
 }
 
 // Build everything before mutating scene state: a batch is all-or-nothing.
@@ -15,8 +16,8 @@ export function makeBatch(state, template, options, point, height, uid) {
   if (state.tokens.length + count > 200)
     throw Error("Limite de 200 tokens neste mapa. Reduza a quantidade.");
   const name = String(options.name || template.name).trim();
-  if (!name || name.length > 48)
-    throw Error("Use um nome de até 48 caracteres.");
+  if (!name || name.length > 60)
+    throw Error("Use um nome de até 60 caracteres.");
   const budget = Number(options.budget);
   if (!Number.isFinite(budget) || budget < 0 || budget > 1000)
     throw Error("Movimento deve estar entre 0 e 1000.");
@@ -35,7 +36,7 @@ export function makeBatch(state, template, options, point, height, uid) {
       name: nextName(occupied, name),
       q,
       r,
-      appearance: template.id,
+      appearance: Object.hasOwn(template,"appearance") ? template.appearance : template.id,
       color: template.color,
       budget,
       spent: 0,
@@ -61,6 +62,7 @@ export function filterCatalog(items, query, category, favorites, recent) {
       (!category ||
         (category === "favorites"
           ? favorites.includes(item.id)
+          : category === "custom-recent" ? item.custom === true
           : category === "recent"
             ? recent.includes(item.id)
             : item.category === category)) &&

@@ -16,7 +16,7 @@ class TokenAssets(unittest.TestCase):
     tid=gm.call('tables',{'name':'Assets'})[1]['id']
     player.call('join',{'code':gm.call('invite',{'table_id':tid})[1]['code']})
     with gm.http.open(base+'/tokens/catalog.json') as response:catalog=json.load(response)
-    self.assertEqual(len(catalog),8)
+    self.assertEqual(len(catalog),28)
     for item in catalog:
      with gm.http.open(base+item['image']) as response:
       self.assertEqual(response.headers['Content-Type'],'image/png')

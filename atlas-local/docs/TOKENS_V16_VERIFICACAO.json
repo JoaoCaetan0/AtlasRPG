@@ -1,0 +1,226 @@
+[
+  {
+    "id": "bandido-espada",
+    "size": [
+      1254,
+      1254
+    ],
+    "sha256": "0d82763235326c6a5dabf13a56d78a696a84d4da9a344f3e5e3ba31d81dd39f3"
+  },
+  {
+    "id": "bandido-arco",
+    "size": [
+      1254,
+      1254
+    ],
+    "sha256": "1289a9c828e0c1cd31f0fff7b5e41bd0f91239ba4272f8340ffd55d2bbd0a9c5"
+  },
+  {
+    "id": "goblin",
+    "size": [
+      1254,
+      1254
+    ],
+    "sha256": "55c5fcd17e7d68d60afe9b7c6fa278e67aab91f41670e2e5d312185687dee523"
+  },
+  {
+    "id": "slime",
+    "size": [
+      1254,
+      1254
+    ],
+    "sha256": "c8e7e07dec6c27db6709968bf3acc3e394e4150253e47c77a357fa2ccef9a6b8"
+  },
+  {
+    "id": "lobo",
+    "size": [
+      1254,
+      1254
+    ],
+    "sha256": "42201fa205120b4b3cb412a5460fb342d20f0f2d573d18ab9114f887f705d4c1"
+  },
+  {
+    "id": "urso",
+    "size": [
+      1254,
+      1254
+    ],
+    "sha256": "f5273b0700d5558a38d9f96013e1c42689cc91bc59f016e2eede31a433f67d4d"
+  },
+  {
+    "id": "aliado",
+    "size": [
+      1254,
+      1254
+    ],
+    "sha256": "1ab55bd2550343f0710956cd4059b3436f6383ece232451a769f5a235c245d1a"
+  },
+  {
+    "id": "armadilha",
+    "size": [
+      1254,
+      1254
+    ],
+    "sha256": "a8ac5eea255d1ad76c4697615fadd5ce675c3f97e6823c219a4a24efeb88ab8b"
+  },
+  {
+    "id": "guarda",
+    "size": [
+      1254,
+      1254
+    ],
+    "sha256": "e60bf4a14e1df1ddb6c4ebebe2ca7b1099dc8c7d3e55d556bf8cb9dff9125ae3"
+  },
+  {
+    "id": "cavaleiro",
+    "size": [
+      1254,
+      1254
+    ],
+    "sha256": "638c97809bb77cabcdfc49a358043e5289198e89b3e742eb65a7d542664bdd88"
+  },
+  {
+    "id": "maga",
+    "size": [
+      1254,
+      1254
+    ],
+    "sha256": "4f92cdefb1922e1f4e47ca97318158118b45745075a3a88a7cece9b53831cecc"
+  },
+  {
+    "id": "sacerdote",
+    "size": [
+      1254,
+      1254
+    ],
+    "sha256": "b0d26c1a137268345e3387d34a04c71088dfbe86ea74be3b9c2c271933aaadb2"
+  },
+  {
+    "id": "mercadora",
+    "size": [
+      1254,
+      1254
+    ],
+    "sha256": "30fbe0f42e9aa3007ddba4b96d5c7856767584df1c6f3f266b0966e7e8c14dc3"
+  },
+  {
+    "id": "engenheira",
+    "size": [
+      1254,
+      1254
+    ],
+    "sha256": "60f5c605d8f88c952f2539e239ee340d6b2ce91c76aa3f3157d010989c6732c4"
+  },
+  {
+    "id": "campones",
+    "size": [
+      1254,
+      1254
+    ],
+    "sha256": "d041125473138e8a867c45fac80b77c29ccfba6a69d7ab7c3305b91125d317ee"
+  },
+  {
+    "id": "esqueleto",
+    "size": [
+      1254,
+      1254
+    ],
+    "sha256": "876fc92c6317a7cfbd50e29e1392b4c67b22480f0fbff7df69355a13ab8d25e7"
+  },
+  {
+    "id": "zumbi",
+    "size": [
+      1254,
+      1254
+    ],
+    "sha256": "263e678ffaa2e051351d4459ac66b5e232c6081714d165eacd1f7509a8840285"
+  },
+  {
+    "id": "orc",
+    "size": [
+      1254,
+      1254
+    ],
+    "sha256": "a3faf3809a794522b9612e404935899cd4ef6d0a89a95cd9dea91a6d6a1769b2"
+  },
+  {
+    "id": "cultista",
+    "size": [
+      1254,
+      1254
+    ],
+    "sha256": "a4d4e35bb40de023b75056c284a46bf8201948aecf1aa71198f5600dd2349c64"
+  },
+  {
+    "id": "automato",
+    "size": [
+      1254,
+      1254
+    ],
+    "sha256": "0cfbd286f93751186c8bb16c61054b33a6eed5de54b8082db858dea0771e67c1"
+  },
+  {
+    "id": "aranha",
+    "size": [
+      1254,
+      1254
+    ],
+    "sha256": "2535dd2b1f0b96942cb225ec0cc7570cc3977c31bfde358bbd8f931404a26a0a"
+  },
+  {
+    "id": "javali",
+    "size": [
+      1254,
+      1254
+    ],
+    "sha256": "e25ce3f2ada82ea5d6cbe18275cfb20c2e8825f314348ca72cf826f2dd79f030"
+  },
+  {
+    "id": "corvo",
+    "size": [
+      1254,
+      1254
+    ],
+    "sha256": "aff0c9b161e1089d4528f8360e2efb3ef3b68bf5e36c71e5ed556c666f4e8076"
+  },
+  {
+    "id": "rato",
+    "size": [
+      1254,
+      1254
+    ],
+    "sha256": "2e5a31a252813d895910340875610f73e64744a72f10eb87f76b6a804fd1687c"
+  },
+  {
+    "id": "cobra",
+    "size": [
+      1254,
+      1254
+    ],
+    "sha256": "c26de217015de388f6210037d5fbb01592c985f79457c2f887dadab9cef5cce3"
+  },
+  {
+    "id": "morcego",
+    "size": [
+      1254,
+      1254
+    ],
+    "sha256": "4da78ebd38653a653e2200d107364ef0d474538f5187fe03419f53b78cc3da83"
+  },
+  {
+    "id": "armadilha-runa",
+    "size": [
+      1254,
+      1254
+    ],
+    "sha256": "2c59f3b66846647d90795a007c7e28970d7cfaca1e9f7d70f8c4b8277010efc6"
+  },
+  {
+    "id": "barril-explosivo",
+    "size": [
+      1254,
+      1254
+    ],
+    "sha256": "656991759f4764cd642bb71591fbff4f630fa8b8ac0b72ea2a218420e9e3ee90"
+  }
+]

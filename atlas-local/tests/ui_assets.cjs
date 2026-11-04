@@ -9,7 +9,7 @@ process.env.ATLAS_UI_OUTPUT = output;
 let server, browser;
 (async () => {
   server = require("child_process").spawn("python", [
-    path.join(__dirname, "ui_fixture.py"),
+    path.join(__dirname, "ui_camera_fixture.py"),
   ]);
   await new Promise((ok, no) => {
     server.stdout.once("data", ok);
@@ -28,8 +28,8 @@ let server, browser;
   page.on("pageerror", (e) => errors.push(e.message));
   page.on("dialog", (d) => d.accept());
   await page.goto("http://127.0.0.1:8766");
-  await page.locator("#auth [name=name]").fill("Teste mestre");
-  await page.locator("#auth [name=password]").fill("test-only-12345");
+  await page.locator("#auth [name=name]").fill("Camera");
+  await page.locator("#auth [name=password]").fill("camera-test-123");
   await page.getByRole("button", { name: "Entrar", exact: true }).click();
   await page.getByRole("button", { name: "Abrir mesa", exact: true }).click();
   await page.locator("#battle image").waitFor();
@@ -47,7 +47,7 @@ let server, browser;
       );
     });
   await open();
-  assert.equal(await page.locator("[data-asset]").count(), 8);
+  assert.equal(await page.locator("[data-asset]").count(), 28);
   await page.locator("#asset-search").fill("LÓBO");
   assert.equal(await page.locator("[data-asset]").count(), 1);
   await page.locator("[data-favorite=lobo]").click();
@@ -63,9 +63,7 @@ let server, browser;
     (await saved()).state.tokens.map((t) => t.name),
     ["Lobo 1", "Lobo 2"],
   );
-  await page.locator("[data-tab=history]").click();
-  await page.locator("#combat-undo").click();
-  await page.locator("[data-tab=history]").click();
+  await page.locator("#quick-undo").click();
   await count(0);
   assert.equal((await saved()).state.enabled, false);
   await open();
@@ -133,7 +131,7 @@ let server, browser;
   await page
     .locator("#asset-grid img")
     .evaluateAll((imgs) =>
-      Promise.all(imgs.slice(0, 3).map((img) => img.decode())),
+      Promise.all(imgs.map((img) => img.decode())),
     );
   await page.screenshot({ path: path.join(output, "assets-desktop.png") });
   await page.locator("#drawer-close").click();
@@ -155,8 +153,7 @@ let server, browser;
   // Plain tokens and artwork remain editable with the original combat editor.
   await page.locator("#drawer-close").click();
   await page.setViewportSize({ width: 1440, height: 1000 });
-  await page.evaluate(() => openWorkspacePanel("combat"));
-  await page.getByText("Tokens e condições", { exact: true }).click();
+  await page.evaluate(() => openWorkspacePanel("conditions"));
   state = await saved();
   const ally = state.state.tokens.find((t) => t.appearance === "aliado");
   await page.locator("#token-select").selectOption(ally.id);

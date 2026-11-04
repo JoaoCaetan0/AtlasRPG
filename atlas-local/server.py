@@ -29,7 +29,7 @@ def db():
 
 def init():
     with closing(db()) as c, c:
-        if c.execute('PRAGMA user_version').fetchone()[0]>13:raise RuntimeError('Banco de versão mais nova; use a atualização correspondente.')
+        if c.execute('PRAGMA user_version').fetchone()[0]>14:raise RuntimeError('Banco de versão mais nova; use a atualização correspondente.')
         c.executescript('''
         CREATE TABLE IF NOT EXISTS users(id TEXT PRIMARY KEY,name TEXT NOT NULL UNIQUE,salt TEXT NOT NULL,password TEXT NOT NULL);
         CREATE TABLE IF NOT EXISTS sessions(token TEXT PRIMARY KEY,user_id TEXT REFERENCES users(id),expires INTEGER);
@@ -40,7 +40,7 @@ def init():
         CREATE TABLE IF NOT EXISTS bans(table_id TEXT REFERENCES tables(id),user_id TEXT REFERENCES users(id),PRIMARY KEY(table_id,user_id));
         CREATE TABLE IF NOT EXISTS maps(table_id TEXT REFERENCES tables(id),legacy_id TEXT,title TEXT,metadata TEXT,visible INTEGER NOT NULL DEFAULT 0,PRIMARY KEY(table_id,legacy_id));
         CREATE TABLE IF NOT EXISTS note_history(table_id TEXT,user_id TEXT,revision INTEGER,body TEXT,editor TEXT,changed INTEGER,PRIMARY KEY(table_id,user_id,revision));
-        PRAGMA user_version=13;
+        PRAGMA user_version=14;
         ''')
         install(c)
 

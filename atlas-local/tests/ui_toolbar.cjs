@@ -7,7 +7,7 @@ const {chromium}=require('playwright'),path=require('path'),assert=require('asse
  async function fits(){await p.waitForFunction(()=>{const b=document.querySelector('.combat-board'),v=document.querySelector('#battle').getBoundingClientRect();return b.scrollHeight<=b.clientHeight+1&&b.scrollWidth<=b.clientWidth+1&&v.bottom<=innerHeight;});}
  await fits();
  assert.equal(await p.locator('.workspace-rail [data-tab=combat]').count(),0);
- assert.equal(await p.locator('.battle-tabs button').count(),6);
+ assert.equal(await p.locator('.battle-tabs [data-tab]').count(),6);
  const size=await p.locator('#battle').boundingBox();
  for(const key of ['grid','assets','conditions','initiative','dice']){await p.locator('.battle-tabs [data-tab='+key+']').click();await p.locator('#workspace-drawer').waitFor({state:'visible'});const after=await p.locator('#battle').boundingBox();assert.equal(after.width,size.width);assert.equal(after.height,size.height);await p.locator('#drawer-close').click();}
  await p.locator('#zoom-in').click();assert.equal(await p.locator('#map-zoom').inputValue(),'125');

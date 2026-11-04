@@ -78,5 +78,205 @@
     "budget": 0,
     "hidden": true,
     "image": "/tokens/armadilha.png"
+  },
+  {
+    "id": "guarda",
+    "name": "Guarda",
+    "category": "Aliados",
+    "color": "#459e71",
+    "tags": "Guarda Aliados",
+    "budget": 10,
+    "hidden": false,
+    "image": "/tokens/guarda.png"
+  },
+  {
+    "id": "cavaleiro",
+    "name": "Cavaleiro",
+    "category": "Aliados",
+    "color": "#459e71",
+    "tags": "Cavaleiro Aliados",
+    "budget": 10,
+    "hidden": false,
+    "image": "/tokens/cavaleiro.png"
+  },
+  {
+    "id": "maga",
+    "name": "Maga",
+    "category": "Aliados",
+    "color": "#459e71",
+    "tags": "Maga Aliados",
+    "budget": 10,
+    "hidden": false,
+    "image": "/tokens/maga.png"
+  },
+  {
+    "id": "sacerdote",
+    "name": "Sacerdote",
+    "category": "Aliados",
+    "color": "#459e71",
+    "tags": "Sacerdote Aliados",
+    "budget": 10,
+    "hidden": false,
+    "image": "/tokens/sacerdote.png"
+  },
+  {
+    "id": "mercadora",
+    "name": "Mercadora",
+    "category": "Aliados",
+    "color": "#459e71",
+    "tags": "Mercadora Aliados",
+    "budget": 10,
+    "hidden": false,
+    "image": "/tokens/mercadora.png"
+  },
+  {
+    "id": "engenheira",
+    "name": "Engenheira",
+    "category": "Aliados",
+    "color": "#459e71",
+    "tags": "Engenheira Aliados",
+    "budget": 10,
+    "hidden": false,
+    "image": "/tokens/engenheira.png"
+  },
+  {
+    "id": "campones",
+    "name": "Camponês",
+    "category": "Aliados",
+    "color": "#459e71",
+    "tags": "Camponês Aliados",
+    "budget": 10,
+    "hidden": false,
+    "image": "/tokens/campones.png"
+  },
+  {
+    "id": "esqueleto",
+    "name": "Esqueleto",
+    "category": "Monstros",
+    "color": "#8860ba",
+    "tags": "Esqueleto Monstros",
+    "budget": 10,
+    "hidden": false,
+    "image": "/tokens/esqueleto.png"
+  },
+  {
+    "id": "zumbi",
+    "name": "Zumbi",
+    "category": "Monstros",
+    "color": "#8860ba",
+    "tags": "Zumbi Monstros",
+    "budget": 10,
+    "hidden": false,
+    "image": "/tokens/zumbi.png"
+  },
+  {
+    "id": "orc",
+    "name": "Orc",
+    "category": "Monstros",
+    "color": "#8860ba",
+    "tags": "Orc Monstros",
+    "budget": 10,
+    "hidden": false,
+    "image": "/tokens/orc.png"
+  },
+  {
+    "id": "cultista",
+    "name": "Cultista",
+    "category": "Monstros",
+    "color": "#8860ba",
+    "tags": "Cultista Monstros",
+    "budget": 10,
+    "hidden": false,
+    "image": "/tokens/cultista.png"
+  },
+  {
+    "id": "automato",
+    "name": "Autômato",
+    "category": "Monstros",
+    "color": "#8860ba",
+    "tags": "Autômato Monstros",
+    "budget": 10,
+    "hidden": false,
+    "image": "/tokens/automato.png"
+  },
+  {
+    "id": "aranha",
+    "name": "Aranha gigante",
+    "category": "Animais",
+    "color": "#6c90b9",
+    "tags": "Aranha gigante Animais",
+    "budget": 10,
+    "hidden": false,
+    "image": "/tokens/aranha.png"
+  },
+  {
+    "id": "javali",
+    "name": "Javali",
+    "category": "Animais",
+    "color": "#6c90b9",
+    "tags": "Javali Animais",
+    "budget": 10,
+    "hidden": false,
+    "image": "/tokens/javali.png"
+  },
+  {
+    "id": "corvo",
+    "name": "Corvo",
+    "category": "Animais",
+    "color": "#6c90b9",
+    "tags": "Corvo Animais",
+    "budget": 10,
+    "hidden": false,
+    "image": "/tokens/corvo.png"
+  },
+  {
+    "id": "rato",
+    "name": "Rato gigante",
+    "category": "Animais",
+    "color": "#6c90b9",
+    "tags": "Rato gigante Animais",
+    "budget": 10,
+    "hidden": false,
+    "image": "/tokens/rato.png"
+  },
+  {
+    "id": "cobra",
+    "name": "Cobra",
+    "category": "Animais",
+    "color": "#6c90b9",
+    "tags": "Cobra Animais",
+    "budget": 10,
+    "hidden": false,
+    "image": "/tokens/cobra.png"
+  },
+  {
+    "id": "morcego",
+    "name": "Morcego",
+    "category": "Animais",
+    "color": "#6c90b9",
+    "tags": "Morcego Animais",
+    "budget": 10,
+    "hidden": false,
+    "image": "/tokens/morcego.png"
+  },
+  {
+    "id": "armadilha-runa",
+    "name": "Armadilha rúnica",
+    "category": "Armadilhas",
+    "color": "#cb813a",
+    "tags": "Armadilha rúnica Armadilhas",
+    "budget": 0,
+    "hidden": true,
+    "image": "/tokens/armadilha-runa.png"
+  },
+  {
+    "id": "barril-explosivo",
+    "name": "Barril explosivo",
+    "category": "Armadilhas",
+    "color": "#cb813a",
+    "tags": "Barril explosivo Armadilhas",
+    "budget": 0,
+    "hidden": true,
+    "image": "/tokens/barril-explosivo.png"
   }
 ]

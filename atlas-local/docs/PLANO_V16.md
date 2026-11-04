@@ -116,3 +116,7 @@ Pendências anteriores preservadas: desenhos por jogadores dependem de proprieda
 - W3C — conteúdo em hover/foco: https://www.w3.org/WAI/WCAG21/Understanding/content-on-hover-or-focus.html
 
 Decisões de UX e arquitetura acima são propostas para o Atlas, não afirmações de que todas as plataformas citadas usam os mesmos fluxos. Catálogos de livros não substituem leitura das regras completas.
+
+## Entrega intermediária V16 CP3 — tokens e retorno de mapa
+
+A pedido do usuário, o lote entregue com o rótulo V16 CP3 prioriza 20 novos tokens, histórico dos últimos 30 personalizados e retorno à cena anterior. O refazimento das oito artes existentes foi cancelado. O CP3 previsto na tabela de planejamento (assistente/editor/presets) não deve ser considerado concluído por causa deste número de versão; seus itens seguem pendentes de implementação ou verificação. Estado detalhado desta entrega: ATUALIZACAO_V16_CP3.md.

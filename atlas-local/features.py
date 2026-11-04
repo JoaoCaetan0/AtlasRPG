@@ -19,7 +19,8 @@ def route(c,data,path,d,user,tid,master,require):
  from dice import handle as dice_handle
  from admin import handle as admin_handle
  from system_profiles import handle as profile_handle
- for handler in (dice_handle,admin_handle,profile_handle):
+ from recent_tokens import handle as recent_handle
+ for handler in (dice_handle,admin_handle,profile_handle,recent_handle):
   result=handler(c,path,d,user,tid,master,require)
   if result is not NotImplemented:return result
  result=fog.handle(c,data,path,d,user,tid,master,require)
@@ -31,6 +32,9 @@ def route(c,data,path,d,user,tid,master,require):
  result=handle(c,data,path,d,user,tid,master,require,Binary)
  if result is not NotImplemented:return result
  ep=urlsplit(path).path;q=parse_qs(urlsplit(path).query)
+ from scene_history import remember as remember_scene, read as previous_scene, restore as restore_scene
+ if ep=='/api/scene-previous' and d:
+  require(master);return restore_scene(c,tid,d.get('revision'),require)
  if ep=='/api/assets' and not d:
   target=q.get('user_id',[user])[0];require(master or target==user)
   rows=c.execute('SELECT a.*,p.folder,p.label FROM assets a LEFT JOIN placements p ON p.asset_id=a.id AND p.user_id=? WHERE a.table_id=? ORDER BY a.name',(target,tid)).fetchall()
@@ -76,6 +80,7 @@ def route(c,data,path,d,user,tid,master,require):
   if origin_asset and fog.read(c,tid,origin_asset['digest'])['enabled']:
    fog.cover(c,data,tid,permitted(c,tid,chosen['asset_id'],user,True),require,only_new=True)
   c.execute('UPDATE assets SET public=1 WHERE id=?',(chosen['asset_id'],))
+  remember_scene(c,tid,chosen['asset_id'],dest)
   c.execute('UPDATE scene SET asset_id=?,revision=revision+1 WHERE table_id=?',(chosen['asset_id'],tid))
   c.execute('INSERT INTO scene_context VALUES(?,?,?) ON CONFLICT(table_id) DO UPDATE SET map_id=excluded.map_id,period=excluded.period',(tid,dest,chosen['period']))
   return {'ok':True,'period':chosen['period'],'fallback':chosen['period']!=origin['period']}
@@ -84,7 +89,7 @@ def route(c,data,path,d,user,tid,master,require):
   aid=s['asset_id'] if s and permitted(c,tid,s['asset_id'],user,master) else None
   m=scene_map(c,tid,aid) if master and aid else None
   from scene_variants import options
-  return {'asset_id':aid,'revision':s['revision'] if s else 0,'map_id':m['legacy_id'] if m else None,'period':m['period'] if m else None,'periods':options(c,tid,m['legacy_id'],aid) if m else []}
+  return {'previous':previous_scene(c,tid) if master else None,'asset_id':aid,'revision':s['revision'] if s else 0,'map_id':m['legacy_id'] if m else None,'period':m['period'] if m else None,'periods':options(c,tid,m['legacy_id'],aid) if m else []}
  if ep=='/api/scene' and d:
   require(master);aid=d.get('asset_id')
   if aid:
@@ -94,6 +99,7 @@ def route(c,data,path,d,user,tid,master,require):
   context=None
   if d.get('map_id'):
    context=c.execute('SELECT legacy_id,period FROM map_assets WHERE table_id=? AND legacy_id=? AND asset_id=?',(tid,d['map_id'],aid)).fetchone();require(context,400,'Imagem não pertence ao mapa informado.')
+  remember_scene(c,tid,aid,context['legacy_id'] if context else None)
   c.execute('DELETE FROM scene_context WHERE table_id=?',(tid,))
   if context:c.execute('INSERT INTO scene_context VALUES(?,?,?)',(tid,context['legacy_id'],context['period']))
   c.execute('INSERT INTO scene VALUES(?,?,1) ON CONFLICT(table_id) DO UPDATE SET asset_id=excluded.asset_id,revision=scene.revision+1',(tid,aid));return {'ok':True}

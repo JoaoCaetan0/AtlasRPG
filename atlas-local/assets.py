@@ -24,6 +24,10 @@ def install(c):
  dice_install(c);admin_install(c)
  from system_profiles import install as profiles_install
  profiles_install(c)
+ from recent_tokens import install as recent_install
+ recent_install(c)
+ from scene_history import install as scene_history_install
+ scene_history_install(c)
 def put(c,data,tid,source,body):
  mime=MIMES.get(PurePosixPath(source).suffix.lower())
  if not mime:return None

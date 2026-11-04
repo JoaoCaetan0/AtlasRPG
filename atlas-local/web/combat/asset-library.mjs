@@ -33,7 +33,10 @@ export function mountAssetLibrary({
   onPlace,
   onDrop,
   onClose = () => {},
+  loadCustom = async () => [],
 }) {
+  const basicCatalog=[...catalog];
+  let customRequest=0;
   let chosen = null,
     working = false,
     favorites = [],
@@ -42,10 +45,10 @@ export function mountAssetLibrary({
   try {
     const saved = JSON.parse(localStorage.getItem(preferenceKey) || "{}");
     favorites = Array.isArray(saved.favorites)
-      ? saved.favorites.filter((id) => catalog.some((c) => c.id === id))
+      ? saved.favorites.filter((id) => (catalog.some((c) => c.id === id) || (typeof id === "string" && id.startsWith("recent-"))))
       : [];
     recent = Array.isArray(saved.recent)
-      ? saved.recent.filter((id) => catalog.some((c) => c.id === id))
+      ? saved.recent.filter((id) => (catalog.some((c) => c.id === id) || (typeof id === "string" && id.startsWith("recent-"))))
       : [];
   } catch {}
   const remember = () => {
@@ -56,7 +59,7 @@ export function mountAssetLibrary({
       );
     } catch {}
   };
-  host.innerHTML = `<details id="asset-library" class="asset-library"><summary>Assets ▾</summary><section class="asset-popover" aria-label="Biblioteca de tokens"><div class="row asset-heading"><strong>Biblioteca de tokens</strong><button type="button" id="asset-close" class="secondary" aria-label="Fechar biblioteca">×</button></div><label>Buscar<input id="asset-search" type="search" placeholder="Nome ou tipo de criatura" autocomplete="off"></label><label>Categoria<select id="asset-category"><option value="">Todos os modelos</option><option value="favorites">Favoritos</option><option value="recent">Recentes</option>${[...new Set(catalog.map((c) => c.category))].map((c) => `<option>${esc(c)}</option>`).join("")}</select></label><p id="asset-results" class="muted" aria-live="polite"></p><div id="asset-grid" class="asset-grid"></div><form id="asset-options" hidden><div class="asset-selection"><img id="asset-preview" alt=""><strong id="asset-chosen"></strong></div><label>Quantidade<input name="count" type="number" min="1" max="20" value="1" required></label><label class="check-label"><input name="hidden" type="checkbox"> Oculto para jogadores</label><details class="asset-advanced"><summary>Nome e movimento</summary><label>Nome base<input name="name" maxlength="48" required></label><label>Movimento disponível<input name="budget" type="number" min="0" max="1000" step=".1" required></label><small>Valor inicial genérico. Ajuste à ficha; cada cópia recebe um número.</small></details><p class="asset-note">Inserir ativa o combate. Modelos ocultos aparecem apenas para mestres.</p><div class="asset-actions"><button type="submit" id="asset-place">Posicionar no mapa</button><button type="button" class="secondary" id="asset-insert">Inserir agora</button></div></form><p id="asset-error" class="form-error" role="alert"></p><p class="asset-help">Escolha um modelo ou arraste sua miniatura ao mapa. “Inserir agora” usa a área visível. Favoritos ficam neste navegador.</p></section></details>`;
+  host.innerHTML = `<details id="asset-library" class="asset-library"><summary>Assets ▾</summary><section class="asset-popover" aria-label="Biblioteca de tokens"><div class="row asset-heading"><strong>Biblioteca de tokens</strong><button type="button" id="asset-close" class="secondary" aria-label="Fechar biblioteca">×</button></div><div class="row"><button type="button" class="secondary" id="asset-basic-tab">Coleção básica</button><button type="button" class="secondary" id="asset-custom-tab">Meus recentes · 30</button></div><label>Buscar<input id="asset-search" type="search" placeholder="Nome ou tipo de criatura" autocomplete="off"></label><label>Categoria<select id="asset-category"><option value="">Coleção básica</option><option value="favorites">Favoritos</option><option value="recent">Usados recentemente</option><option value="custom-recent">Personalizados recentes · até 30</option>${[...new Set(catalog.map((c) => c.category))].map((c) => `<option>${esc(c)}</option>`).join("")}</select></label><p id="asset-results" class="muted" aria-live="polite"></p><div id="asset-grid" class="asset-grid"></div><form id="asset-options" hidden><div class="asset-selection"><img id="asset-preview" alt=""><strong id="asset-chosen"></strong></div><label>Quantidade<input name="count" type="number" min="1" max="20" value="1" required></label><label class="check-label"><input name="hidden" type="checkbox"> Oculto para jogadores</label><details class="asset-advanced"><summary>Nome e movimento</summary><label>Nome base<input name="name" maxlength="60" required></label><label>Movimento disponível<input name="budget" type="number" min="0" max="1000" step=".1" required></label><small>Valor inicial genérico. Ajuste à ficha; cada cópia recebe um número.</small></details><p class="asset-note">Inserir ativa o combate. Modelos ocultos aparecem apenas para mestres.</p><div class="asset-actions"><button type="submit" id="asset-place">Posicionar no mapa</button><button type="button" class="secondary" id="asset-insert">Inserir agora</button></div></form><p id="asset-error" class="form-error" role="alert"></p><p class="asset-help">Escolha um modelo ou arraste sua miniatura ao mapa. “Inserir agora” usa a área visível. Os 30 personalizados recentes ficam salvos por mestre e mesa. Cópias começam sem ficha, dono, condições ou movimento gasto. Favoritos ficam neste navegador.</p></section></details>`;
   const $ = (selector) => host.querySelector(selector),
     details = $("#asset-library"),
     form = $("#asset-options"),
@@ -68,6 +71,7 @@ export function mountAssetLibrary({
       details.querySelector("summary").focus();
   }
   details.ontoggle = () => {
+    if(details.open) refreshCustom();
     if (details.open && !matchMedia("(max-width:800px)").matches) {
       const panel = $(".asset-popover");
       panel.style.maxHeight =
@@ -75,6 +79,15 @@ export function mountAssetLibrary({
         "px";
     }
   };
+  async function refreshCustom(){
+    const request=++customRequest;
+    try{const rows=await loadCustom();if(request!==customRequest||!host.isConnected)return;
+      const custom=rows.map(t=>{const initials=esc(t.name.slice(0,2).toUpperCase());const placeholder='data:image/svg+xml,'+encodeURIComponent(`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="48" fill="${t.color}"/><text x="50" y="60" text-anchor="middle" fill="white" font-size="32">${initials}</text></svg>`);return {...t,custom:true,category:'Personalizados',tags:t.name,image:t.appearance?'/tokens/'+t.appearance+'.png':placeholder};});
+      catalog=[...basicCatalog,...custom];render();
+    }catch(e){if(host.isConnected)error.textContent='Recentes: '+e.message;}
+  }
+  $("#asset-basic-tab").onclick=()=>{$("#asset-category").value="";$("#asset-search").value="";render();};
+  $("#asset-custom-tab").onclick=()=>{$("#asset-category").value="custom-recent";$("#asset-search").value="";render();refreshCustom();};
   $("#asset-close").onclick = () => close();
   host.onkeydown = (e) => {
     if (e.key === "Escape") {
@@ -85,7 +98,7 @@ export function mountAssetLibrary({
   };
   function render() {
     const items = filterCatalog(
-      catalog,
+      $("#asset-category").value ? catalog : basicCatalog,
       $("#asset-search").value,
       $("#asset-category").value,
       favorites,

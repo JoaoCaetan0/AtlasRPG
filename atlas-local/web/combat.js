@@ -41,6 +41,10 @@ async function combatView() {
   });
   const scene = await api("scene?table_id=" + active.id);
   if (generation !== tabletopGeneration || currentPane !== "scene") return;
+  if(isMaster() && $('#previous-map')){
+    const back=$('#previous-map');back.disabled=!scene.previous;back.title=scene.previous?'Voltar: '+scene.previous.title:'Nenhum mapa anterior';
+    back.onclick=()=>act(async()=>{back.disabled=true;try{await api('scene-previous',{table_id:active.id,revision:scene.revision});await combatView();}catch(error){if(back.isConnected)back.disabled=!scene.previous;throw error;}});
+  }
   if (!scene.asset_id) {
     $("#pane").innerHTML =
       "<div class=empty><h2>A mesa está pronta</h2><p>Escolha uma imagem em Mapas ou Biblioteca e envie à cena.</p></div>";
@@ -243,7 +247,7 @@ async function combatView() {
       state.enabled = true;
       state.grid.enabled = true;
       selected = batch[0].id;
-    });
+    }, {remember_tokens: (value.template.custom || value.options.name !== value.template.name || +value.options.budget !== +value.template.budget || !!value.options.hidden !== !!value.template.hidden) ? batch.map(t=>t.id) : []});
     pendingAsset = null;
     $(".combat-board").classList.remove("placing-asset");
     $("#asset-cancel").hidden = true;
@@ -257,6 +261,7 @@ async function combatView() {
       catalog,
       preferenceKey: `atlas-assets:${me.id}:${active.id}`,
       onInsert: insertAsset,
+      loadCustom:()=>api("recent-tokens?table_id="+active.id),
       onClose: () => {
         if (currentPanel === "assets") setSidebar(null);
       },
@@ -400,17 +405,18 @@ async function combatView() {
     render();
     key = JSON.stringify(r);
   }
-  async function save() {
+  async function save(extra={}) {
     await api("combat", {
       table_id: active.id,
       asset_id: aid,
       revision: rev,
       state,
+      ...extra,
     });
     key = "";
     await load();
   }
-  async function change(fn) {
+  async function change(fn, extra={}) {
     if (!state || !Number.isInteger(rev)) throw Error("Aguardando o combate carregar. A reconexão é automática.");
     if (busy)
       throw Error(
@@ -420,7 +426,7 @@ async function combatView() {
     updateHistoryControls();
     try {
       fn();
-      await save();
+      await save(extra);
     } catch (e) {
       key = "";
       await load();
@@ -650,7 +656,7 @@ async function combatView() {
     $("#condition-open").onclick = () =>
       conditionEditor($("#condition-edit").value);
   }
-  function form(title, html, callback) {
+  function form(title, html, callback, extra={}) {
     const formRevision = rev;
     const dialog = $("#dialog");
     $("#dialog-title").textContent = title;
@@ -673,7 +679,7 @@ async function combatView() {
           throw Error(
             "O combate mudou enquanto você editava. Feche e reabra este formulário para evitar sobrescrever outra ação.",
           );
-        await change(() => callback(fd));
+        await change(() => callback(fd),extra);
         dialog.close();
       } catch (e) {
         error.textContent = e.message;
@@ -758,6 +764,7 @@ async function combatView() {
         }
         selected = t.id;
       },
+      !id ? {remember_token:t.id} : {},
     );
     const editor = $("#combat-form"), select = editor.elements.character_id;
     function syncLink() {
