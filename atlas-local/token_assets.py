@@ -9,4 +9,6 @@ def static_routes():
     routes = {'/tokens/catalog.json': ('tokens/catalog.json', 'application/json; charset=utf-8')}
     for item in CATALOG:
         routes['/tokens/' + item['id'] + '.png'] = ('tokens/' + item['id'] + '.png', 'image/png')
+        if item.get('thumbnail'):
+            routes[item['thumbnail']] = ('tokens/' + item['id'] + '.thumb.png', 'image/png')
     return routes

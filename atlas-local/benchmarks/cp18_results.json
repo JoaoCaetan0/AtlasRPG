@@ -1,0 +1,32 @@
+{
+  "1": {
+    "cp17": {
+      "median_ms": 20.152,
+      "samples": 12
+    },
+    "current": {
+      "median_ms": 1.525,
+      "samples": 12
+    }
+  },
+  "4": {
+    "cp17": {
+      "median_ms": 41.477,
+      "samples": 12
+    },
+    "current": {
+      "median_ms": 4.411,
+      "samples": 12
+    }
+  },
+  "12": {
+    "cp17": {
+      "median_ms": 100.106,
+      "samples": 12
+    },
+    "current": {
+      "median_ms": 10.059,
+      "samples": 12
+    }
+  }
+}

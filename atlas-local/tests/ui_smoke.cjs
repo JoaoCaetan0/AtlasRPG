@@ -228,6 +228,7 @@ let server, browser;
   await page.locator("[data-character]").click();
   await page.locator("[name=raca]").selectOption("Humano");
   await page.locator("[name=classe]").selectOption("Bárbaro");
+  await page.getByRole("button", {name:"Atributos",exact:true}).click();
   for (const [k, v] of Object.entries({
     CON: 2,
     FOR: 3,
@@ -236,6 +237,7 @@ let server, browser;
     CAR: 1,
   }))
     await page.locator("[name=atributo_" + k + "]").fill(String(v));
+  await page.getByRole("button", {name:"Cálculos",exact:true}).click();
   await page.locator("#auto-stats").check();
   await page.locator("[data-power=musculatura]").check();
   await page.locator("#calc-now").click();
@@ -243,9 +245,8 @@ let server, browser;
     () => document.querySelector("[name=pv_maximo]").value === "23",
   );
   await page.getByRole("button", { name: "Salvar ficha", exact: true }).click();
-  await page.waitForFunction(() =>
-    document.querySelector("#character-status").textContent.startsWith("Salvo"),
-  );
+  await page.locator("[data-character]").first().waitFor();
+  await page.locator("[data-character]").first().click();
   await page.setViewportSize({ width: 390, height: 844 });
   await page.screenshot({
     path: path.join(output, "character-mobile.png"),

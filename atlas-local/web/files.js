@@ -44,34 +44,40 @@ function mapPreferences(){
  return {prefs,save(){try{localStorage.setItem(key,JSON.stringify(prefs));}catch{}}};
 }
 const mapSearchText=value=>String(value||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLocaleLowerCase('pt-BR');
+function mapKind(value){
+ const key=mapSearchText(value).trim();
+ return ({geografico:'regional',geographic:'regional',regional:'regional',encontro:'encounter',encounter:'encounter'})[key]||'unclassified';
+}
 async function mapView() {
+ if(!isMaster())return;
  const maps=await api('maps?table_id='+active.id),{prefs,save}=mapPreferences();
- const kinds={regional:'Regional',encounter:'Encontro',unclassified:'Não classificado'};
+ const kinds={regional:'Geográfico / regional',encounter:'Encontro',unclassified:'Não classificado'};
  $('#workspace-content').innerHTML=`<div class="row"><h2>Mapas</h2>${active.role==='owner'?'<button id="import">Importar catálogo</button>':''}</div>
  <div class="map-filters"><label>Buscar<input id="search" type="search" placeholder="Nome, região ou etiqueta" value="${esc(prefs.query)}"></label>
  <label>Tipo<select id="map-kind"><option value="">Todos os tipos</option>${Object.entries(kinds).map(([k,v])=>`<option value="${k}">${v}</option>`).join('')}</select></label>
  <label>Exibir<select id="map-scope"><option value="">Todos</option><option value="favorites">Favoritos</option><option value="recent">Recentes</option></select></label>
  <button id="map-clear" class="secondary">Limpar filtros</button></div><p id="map-count" role="status"></p><div id="map-list" class="grid"></div>`;
- $('#map-kind').value=prefs.kind;$('#map-scope').value=prefs.scope;
+ $('#map-kind').value=prefs.kind?mapKind(prefs.kind):'';$('#map-scope').value=prefs.scope;
  function remember(id){prefs.recent=[id,...prefs.recent.filter(x=>x!==id)].slice(0,30);save();}
  function render(){
   prefs.query=$('#search').value;prefs.kind=$('#map-kind').value;prefs.scope=$('#map-scope').value;save();
   const words=mapSearchText(prefs.query).trim().split(/\s+/).filter(Boolean);
-  let filtered=maps.filter(m=>{const text=mapSearchText([m.title,m.metadata?.region,...(m.metadata?.tags||[])].join(' '));return words.every(w=>text.includes(w))&&(!prefs.kind||(m.metadata?.kind||'unclassified')===prefs.kind)&&(!prefs.scope||(prefs.scope==='favorites'?prefs.favorites:prefs.recent).includes(m.id));});
+  let filtered=maps.filter(m=>{const text=mapSearchText([m.title,m.metadata?.region,...(m.metadata?.tags||[])].join(' '));return words.every(w=>text.includes(w))&&(!prefs.kind||mapKind(m.metadata?.kind)===prefs.kind)&&(!prefs.scope||(prefs.scope==='favorites'?prefs.favorites:prefs.recent).includes(m.id));});
   if(prefs.scope==='recent')filtered.sort((a,b)=>prefs.recent.indexOf(a.id)-prefs.recent.indexOf(b.id));
   $('#map-count').textContent=filtered.length+' de '+maps.length+' mapas';
   $('#map-list').innerHTML=filtered.map(m=>{
    const favorite=prefs.favorites.includes(m.id),variant=m.images.find(v=>v.asset_id===prefs.versions[m.id])||m.images[0];
-   return `<article class="card"><div class="row"><small>${esc(kinds[m.metadata?.kind]||kinds.unclassified)}</small><button class="secondary map-favorite" data-map-favorite="${esc(m.id)}" aria-pressed="${favorite}" aria-label="${favorite?'Remover dos':'Adicionar aos'} favoritos: ${esc(m.title)}">${favorite?'★':'☆'}</button></div>
-   ${variant?`<img class="thumb" loading="lazy" src="${assetUrl(variant.asset_id)}" alt="${esc(m.title)}">`:'<p>Imagem não vinculada</p>'}<h3>${esc(m.title)}</h3><p>${esc(m.metadata?.region||'')}</p>
+   return `<article class="card"><div class="row"><small>${esc(kinds[mapKind(m.metadata?.kind)]||kinds.unclassified)}</small><button class="secondary map-favorite" data-map-favorite="${esc(m.id)}" aria-pressed="${favorite}" aria-label="${favorite?'Remover dos':'Adicionar aos'} favoritos: ${esc(m.title)}">${favorite?'★':'☆'}</button></div>
+   ${variant?`<img class="thumb" loading="lazy" src="${assetUrl(variant.asset_id)}&display=1" alt="${esc(m.title)}">`:'<p>Imagem não vinculada</p>'}<h3>${esc(m.title)}</h3><p>${esc(m.metadata?.region||'')}</p>
    <div class="map-tags">${(m.metadata?.tags||[]).map(t=>`<span>${esc(t)}</span>`).join('')}</div>
    ${variant?`<label>Horário / versão<select data-version="${esc(m.id)}">${m.images.map(v=>`<option value="${v.asset_id}" ${v.asset_id===variant.asset_id?'selected':''}>${esc(v.period)}</option>`).join('')}</select></label>
-   <div class="row"><button data-open-map="${esc(m.id)}">${isMaster()?'Prévia privada':'Abrir mapa'}</button>${isMaster()?`<button data-send="${esc(m.id)}" class="secondary">Mostrar aos jogadores</button><button data-send-fog="${esc(m.id)}" class="secondary">Mostrar com névoa</button>`:''}</div>`:''}
+   <div class="row"><button data-open-map="${esc(m.id)}">${isMaster()?'Prévia privada':'Abrir mapa'}</button>${isMaster()?`<button data-send="${esc(m.id)}" class="secondary">Mostrar aos jogadores</button><button data-preload-map="${esc(m.id)}" class="secondary" title="Carrega em segundo plano para quem já tem acesso, respeitando a névoa">Preparar mapa</button><small data-preload-status role="status"></small><button data-send-fog="${esc(m.id)}" class="secondary">Mostrar com névoa</button>`:''}</div>`:''}
    ${isMaster()?`<details><summary>Notas do mestre</summary><p style="white-space:pre-wrap">${esc(m.metadata?.notes||'Sem notas')}</p></details>`:''}</article>`;
   }).join('')||'<p class="empty">Nenhum mapa corresponde aos filtros. Use “Limpar filtros” para ver o catálogo.</p>';
   const version=id=>prefs.versions[id]||maps.find(m=>m.id===id).images[0].asset_id;
   document.querySelectorAll('[data-version]').forEach(select=>{prefs.versions[select.dataset.version]=select.value;select.onchange=()=>{prefs.versions[select.dataset.version]=select.value;save();select.closest('article').querySelector('img').src=assetUrl(select.value);};});
   document.querySelectorAll('[data-map-favorite]').forEach(b=>b.onclick=()=>{const id=b.dataset.mapFavorite;prefs.favorites=prefs.favorites.includes(id)?prefs.favorites.filter(x=>x!==id):[...prefs.favorites,id];save();render();document.querySelector('[data-map-favorite="'+id+'"]')?.focus();});
+  document.querySelectorAll('[data-preload-map]').forEach(b=>b.onclick=()=>act(async()=>{b.disabled=true;b.closest('article').querySelector('[data-preload-status]').dataset.assetId=version(b.dataset.preloadMap);try{await api('scene-preload',{table_id:active.id,asset_id:version(b.dataset.preloadMap)});b.closest('article').querySelector('[data-preload-status]').textContent='Preparando para participantes com acesso…';}finally{b.disabled=false;}}));
   document.querySelectorAll('[data-open-map]').forEach(b=>b.onclick=()=>act(async()=>{const id=b.dataset.openMap;remember(id);await navigateMap(id,version(id));}));
   for(const [selector,key,covered] of [['[data-send]','send',false],['[data-send-fog]','sendFog',true]])document.querySelectorAll(selector).forEach(b=>b.onclick=()=>act(async()=>{const id=b.dataset[key];await sendScene(version(id),id,covered);remember(id);}));
  }
@@ -83,7 +89,8 @@ async function fileView() {
   let files = [];
   target = me.id;
   $("#workspace-content").innerHTML =
-    `<h2>Biblioteca e organização pessoal</h2><p>Pastas e títulos pessoais não alteram a biblioteca do mestre.</p><div class="row"><input id="file-search" placeholder="Pesquisar arquivo ou pasta" aria-label="Pesquisar arquivos"><select id="file-owner" aria-label="Coleção do participante">${(isMaster() ? members : [me]).map((m) => `<option value="${m.id}" ${m.id === me.id ? "selected" : ""}>${esc(m.name)}</option>`).join("")}</select></div>${isMaster() ? '<label>Adicionar arquivo (até 10 MiB)<input id="upload" type="file" accept=".png,.jpg,.jpeg,.webp,.pdf,.txt,.md,.mp3,.ogg,.wav"></label>' : ""}<div class="grid" id="file-list"></div>`;
+    documentTabs("files") + `<h2>Biblioteca e organização pessoal</h2><p>Pastas e títulos pessoais não alteram a biblioteca do mestre.</p><div class="row"><input id="file-search" placeholder="Pesquisar arquivo ou pasta" aria-label="Pesquisar arquivos"><select id="file-owner" aria-label="Coleção do participante">${(isMaster() ? members : [me]).map((m) => `<option value="${m.id}" ${m.id === me.id ? "selected" : ""}>${esc(m.name)}</option>`).join("")}</select></div>${isMaster() ? '<label>Adicionar arquivo (até 10 MiB)<input id="upload" type="file" accept=".png,.jpg,.jpeg,.webp,.pdf,.txt,.md,.mp3,.ogg,.wav"></label>' : ""}<div class="grid" id="file-list"></div>`;
+  wireDocumentTabs();
   async function load() {
     target = $("#file-owner").value;
     files = await api("assets?table_id=" + active.id + "&user_id=" + target);

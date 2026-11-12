@@ -1,4 +1,4 @@
-Atlas V16 CP3 — atualização cumulativa do programa e 28 tokens.
+Atlas V16 CP20 — atualização cumulativa do programa e 114 tokens.
 Requer sua instalação existente com mapas e documentos.
 Feche o servidor e faça backup de data/. Mescle atlas-local na instalação, substituindo os arquivos do programa. Preserve data/ e campaign/. Reinicie e use Ctrl+F5 no navegador.
-Detalhes: atlas-local/docs/ATUALIZACAO_V16_CP3.md
+Detalhes: atlas-local/docs/ATUALIZACAO_V16_CP20.md

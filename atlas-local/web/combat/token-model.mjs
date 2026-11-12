@@ -43,6 +43,7 @@ export function makeBatch(state, template, options, point, height, uid) {
       owner: null,
       hidden: Boolean(options.hidden),
       effects: [],
+      vision:{range:null,angle:null,direction:270,...structuredClone(template.vision||{})},
     };
     occupied.push(token);
     result.push(token);
@@ -67,10 +68,25 @@ export function filterCatalog(items, query, category, favorites, recent) {
             ? recent.includes(item.id)
             : item.category === category)) &&
       words.every((word) =>
-        normalize(`${item.name} ${item.tags} ${item.category}`).includes(word),
+        normalize(`${item.name} ${item.tags} ${item.category} ${item.subgroup || ''} ${item.family_name || ''} ${item.variant_name || ''}`).includes(word),
       ),
   );
   if (category === "recent")
     result.sort((a, b) => recent.indexOf(a.id) - recent.indexOf(b.id));
   return result;
+}
+
+// Group only the filtered results; favorites/recent must never reveal extra models.
+export function groupTokenFamilies(items, subgroup = '') {
+  const groups = new Map();
+  for (const item of items) {
+    if (subgroup && (item.subgroup || item.category) !== subgroup) continue;
+    const key = item.custom ? item.id : (item.family || item.id);
+    if (!groups.has(key)) groups.set(key, {
+      id: key, name: item.family_name || item.name,
+      subgroup: item.subgroup || item.category, items: [],
+    });
+    groups.get(key).items.push(item);
+  }
+  return [...groups.values()];
 }

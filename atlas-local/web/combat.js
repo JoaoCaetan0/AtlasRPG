@@ -2,9 +2,18 @@ const uid = () => Date.now().toString(36) + Math.random().toString(36).slice(2);
 let tabletopGeneration = 0;
 let tabletopCamera;
 let tabletopModernPanels;
+let tabletopTokenMenu;
+let stopCombatWatch;
+let tokenRotation;
+let stopRotationPreview;
 async function combatView() {
+  sceneActions.deploy=null;sceneActions.saved=null;
+  tokenRotation?.destroy();
+  stopRotationPreview?.();
+  stopCombatWatch?.();
   tabletopCamera?.destroy();
   tabletopModernPanels?.destroy();
+  tabletopTokenMenu?.destroy();
   clearInterval(mapPoll);
   const generation = ++tabletopGeneration;
   sceneActions = {};
@@ -16,12 +25,13 @@ async function combatView() {
     { createRenderer },
     geometry,
     { mountAssetLibrary, loadTokenCatalog },
-    { makeBatch },
+    { makeBatch, groupTokenFamilies },
     { mountFog },
     { mountCamera },
     { conditionIcon },
     { mountCombatPanels },
     { mountDrawings },
+    { mountTokenMenu },
   ] = await Promise.all([
     import("/combat/renderer.mjs"),
     import("/combat/geometry.mjs"),
@@ -32,14 +42,15 @@ async function combatView() {
     import("/combat/condition-icons.mjs"),
     import("/combat/combat-panels.mjs"),
     import("/combat/drawings.mjs"),
+    import("/combat/token-menu.mjs"),
   ]);
   if (generation !== tabletopGeneration || currentPane !== "scene") return;
-  const catalog = await loadTokenCatalog().catch(() => {
-    notice.textContent =
-      "Miniaturas indisponíveis. Tokens simples continuam disponíveis.";
-    return [];
-  });
-  const scene = await api("scene?table_id=" + active.id);
+  const [baseCatalog,templates,scene]=await Promise.all([
+    loadTokenCatalog().catch(()=>{notice.textContent='Miniaturas indisponíveis. Tokens simples continuam disponíveis.';return [];}),
+    isMaster()?api('token-templates?table_id='+active.id):Promise.resolve([]),
+    api('scene?table_id='+active.id)
+  ]);
+  const catalog=[...baseCatalog,...templates];
   if (generation !== tabletopGeneration || currentPane !== "scene") return;
   if(isMaster() && $('#previous-map')){
     const back=$('#previous-map');back.disabled=!scene.previous;back.title=scene.previous?'Voltar: '+scene.previous.title:'Nenhum mapa anterior';
@@ -48,17 +59,7 @@ async function combatView() {
   if (!scene.asset_id) {
     $("#pane").innerHTML =
       "<div class=empty><h2>A mesa está pronta</h2><p>Escolha uma imagem em Mapas ou Biblioteca e envie à cena.</p></div>";
-    mapPoll = setInterval(
-      () =>
-        act(async () => {
-          const r = await api("scene?table_id=" + active.id);
-          if (r.asset_id && currentPane === "scene") {
-            clearInterval(mapPoll);
-            await combatView();
-          }
-        }),
-      1000,
-    );
+    stopCombatWatch=watchTable($("#pane"),async()=>{const r=await api("scene?table_id="+active.id);if(r.asset_id&&generation===tabletopGeneration)await combatView();},['scene']);
     return;
   }
   const aid = scene.asset_id;
@@ -66,6 +67,7 @@ async function combatView() {
     rev,
     selected = null,
     linkedSheets = {},
+    resourceBars = {},
     mode = "move",
     height = 700,
     busy = false,
@@ -77,8 +79,9 @@ async function combatView() {
     measuring = false,
     measureStart = null,
     loading = false;
+  const remoteAngles=new Map(),lastAngles=new Map();let rotationFrame=null;
   $("#pane").innerHTML =
-    `<div class="tabletop-toolbar row"><strong>Mapa compartilhado</strong><span id="scene-period-host"></span><span id="combat-round"></span><small id="sync-status" role="status">Conectando…</small>${isMaster() ? '<details id="combat-history" class="history-menu"><summary>Histórico ▾</summary><div class="history-popover"><button id="combat-undo" disabled>Desfazer</button><button id="combat-redo" disabled>Refazer</button><p id="history-description" role="status">Carregando histórico…</p><small>Ctrl+Z · Ctrl+Shift+Z ou Ctrl+Y. Apenas ações de combate.</small></div></details><span id="asset-library-host"></span><button id="quick-token" class="secondary">＋ Token simples</button>' : ""}<button id="scene-dice" class="secondary">⚄ Dados</button><button id="combat-toggle" class="secondary" aria-expanded="false" aria-controls="combat-panel">⚔ Combate ▾</button><button id="initiative-toggle" class="secondary">Iniciativa</button><button id="ruler-toggle" class="secondary" aria-pressed="false">Régua</button><button id="map-fit" class="secondary">Ajustar</button><label class="zoom-label">Zoom <input id="map-zoom" type="range" min="100" max="300" step="25" value="100"></label><button id="combat-refresh" class="secondary" aria-label="Recarregar mapa">↻</button>${isMaster() ? '<button id="clear-scene" class="secondary">Retirar cena</button>' : ""}</div><div id="asset-feedback" class="asset-feedback" hidden><span id="asset-status" role="status"></span><button id="asset-cancel" class="secondary" hidden>Cancelar posicionamento</button></div><div class="combat-layout"><div class="map-column"><div class="combat-board"><div id="map-surface"><svg id="battle" viewBox="0 0 1000 700" role="img" tabindex="0" aria-label="Mapa compartilhado com tokens"></svg><div id="scene-accesses"></div></div></div><p id="movement-info"></p><div id="linked-sheet-summary" class="linked-sheet-summary" hidden></div></div><aside id="combat-panel" hidden><div id="combat-mode"></div><details id="initiative-section" open><summary>Ordem dos turnos</summary><div id="turn-actions"></div><div id="turns"></div></details><details><summary>Tokens e condições</summary><div id="token-controls"></div></details>${isMaster() ? '<details open><summary>Grade e movimento</summary><div id="grid-controls"></div></details><details><summary>Catálogo de condições</summary><div id="condition-controls"></div></details>' : ""}</aside></div>`;
+    `<div class="tabletop-toolbar row"><strong>Mapa compartilhado</strong><span id="scene-period-host"></span><span id="combat-round"></span><small id="sync-status" role="status">Conectando…</small>${isMaster() ? '<details id="combat-history" class="history-menu"><summary>Histórico ▾</summary><div class="history-popover"><button id="combat-undo" disabled>Desfazer</button><button id="combat-redo" disabled>Refazer</button><p id="history-description" role="status">Carregando histórico…</p><small>Ctrl+Z · Ctrl+Shift+Z ou Ctrl+Y. Apenas ações de combate.</small></div></details><span id="asset-library-host"></span><button id="quick-token" class="secondary">＋ Token simples</button>' : ""}<button id="scene-dice" class="secondary">⚄ Dados</button><button id="combat-toggle" class="secondary" aria-expanded="false" aria-controls="combat-panel">⚔ Combate ▾</button><button id="initiative-toggle" class="secondary">Iniciativa</button><button id="map-fit" class="secondary">Ajustar</button><label class="zoom-label">Zoom <input id="map-zoom" type="range" min="100" max="300" step="25" value="100"></label><button id="combat-refresh" class="secondary" aria-label="Recarregar mapa">↻</button>${isMaster() ? '<button id="clear-scene" class="secondary">Retirar cena</button>' : ""}</div><div id="asset-feedback" class="asset-feedback" hidden><span id="asset-status" role="status"></span><button id="asset-cancel" class="secondary" hidden>Cancelar posicionamento</button></div><button id="ruler-toggle" class="ruler-float" aria-label="Ativar régua" title="Ativar/desativar régua" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 15 15 3l6 6L9 21zM12 6l3 3M9 9l2 2M6 12l3 3"/></svg></button><div class="combat-layout"><div class="map-column"><div class="combat-board" title="Gire a rodinha para zoom. Segure a rodinha ou o botão direito e arraste para navegar."><div id="map-surface"><svg id="battle" viewBox="0 0 1000 700" role="img" tabindex="0" aria-label="Mapa compartilhado com tokens"></svg><div id="scene-accesses"></div></div></div><p id="movement-info"></p><div id="linked-sheet-summary" class="linked-sheet-summary" hidden></div></div><aside id="combat-panel" hidden><div id="combat-mode"></div><details id="initiative-section" open><summary>Ordem dos turnos</summary><div id="turn-actions"></div><div id="turns"></div></details><details><summary>Tokens e condições</summary><div id="token-controls"></div></details>${isMaster() ? '<details open><summary>Grade e movimento</summary><div id="grid-controls"></div></details><details><summary>Catálogo de condições</summary><div id="condition-controls"></div></details>' : ""}</aside></div>`;
   if (isMaster())
     $("#clear-scene").onclick = () =>
       act(async () => {
@@ -98,12 +101,18 @@ async function combatView() {
   $("#combat-toggle").onclick = () => act(() => openWorkspacePanel("combat"));
   $("#initiative-toggle").onclick = () =>
     act(() => openWorkspacePanel("initiative"));
+  function stopMeasuring(){$("#movement-info").textContent="";measuring=false;measureStart=null;$("#ruler-toggle").setAttribute("aria-pressed","false");$("#ruler-toggle").setAttribute("aria-label","Ativar régua");$("#ruler-layer")?.remove();}
+  $("#battle").addEventListener("stop-drawing",stopMeasuring);
   $("#ruler-toggle").onclick = () => {
+    if(pendingAsset)cancelPlacement();
+    mode="move";
     drawingEditor?.stop();
     fogEditor?.stop();
     measuring = !measuring;
+    if(!measuring)$("#movement-info").textContent="";
     measureStart = null;
     $("#ruler-toggle").setAttribute("aria-pressed", String(measuring));
+    $("#ruler-toggle").setAttribute("aria-label",measuring?"Desativar régua":"Ativar régua");
     $("#ruler-layer")?.remove();
     status(
       measuring
@@ -130,7 +139,7 @@ async function combatView() {
       if(!target || target.period===scene.period)return;
       if(target.linked)return act(()=>switchPeriod(target.period));
       $('#dialog-title').textContent='Vincular horário: '+target.period;
-      $('#dialog-body').innerHTML=`<p>Confira se portas, caminhos e limites ocupam as mesmas posições. Esta vinculação compartilhará tokens, grade, iniciativa e névoa entre as versões.</p><div class="period-comparison"><figure><img src="${assetUrl(aid)}" alt="Horário atual"><figcaption>${esc(scene.period)}</figcaption></figure><figure><img src="${assetUrl(target.asset_id)}" alt="Novo horário"><figcaption>${esc(target.period)}</figcaption></figure></div><p>Se a versão já tiver combate ou névoa independentes, a troca será bloqueada para preservar esses dados.</p><form id="period-link-form"><label><input type="checkbox" required> As imagens têm a mesma planta e enquadramento.</label><div class="row"><button>Vincular e trocar</button><button type="button" id="period-cancel" class="secondary">Cancelar</button></div><p id="period-error" role="alert"></p></form>`;
+      $('#dialog-body').innerHTML=`<p>Confira se portas, caminhos e limites ocupam as mesmas posições. Esta vinculação compartilhará tokens, grade, iniciativa e névoa entre as versões.</p><div class="period-comparison"><figure><img src="${(assetUrl(aid)+"&display=1")}" alt="Horário atual"><figcaption>${esc(scene.period)}</figcaption></figure><figure><img src="${assetUrl(target.asset_id)}" alt="Novo horário"><figcaption>${esc(target.period)}</figcaption></figure></div><p>Se a versão já tiver combate ou névoa independentes, a troca será bloqueada para preservar esses dados.</p><form id="period-link-form"><label><input type="checkbox" required> As imagens têm a mesma planta e enquadramento.</label><div class="row"><button>Vincular e trocar</button><button type="button" id="period-cancel" class="secondary">Cancelar</button></div><p id="period-error" role="alert"></p></form>`;
       $('#dialog').showModal();$('#period-cancel').onclick=()=>$('#dialog').close();
       $('#period-link-form').onsubmit=e=>{e.preventDefault();const button=e.target.querySelector('button');button.disabled=true;act(async()=>{try{await switchPeriod(target.period,true);}catch(error){if($('#period-error'))$('#period-error').textContent=error.message;throw error;}finally{button.disabled=false;}});};
     };
@@ -194,13 +203,27 @@ async function combatView() {
     );
   }
 
-  const renderMap = createRenderer($("#battle"), assetUrl(aid), catalog);
-  fogEditor = mountFog({svg: $("#battle"), host: $("#fog-slot"), master: isMaster(), notify: status,
+  const renderMap = createRenderer($("#battle"), (assetUrl(aid)+"&display=1"), catalog, id=>"/api/token-art?table_id="+active.id+"&id="+encodeURIComponent(id));
+  fogEditor = mountFog({svg: $("#battle"), host: $("#fog-slot"), master: isMaster(), notify: text=>status(text,true),
     send: async command => {
       try { await api("fog", {table_id: active.id,asset_id: aid,...command}); }
       finally { key = ""; await load(); }
     }
   });
+  const visionBox=document.createElement('section');
+  visionBox.className='card vision-controls';
+  visionBox.innerHTML=`<h3>Visão por token</h3>${isMaster()?'<button class="secondary vision-settings">Configurar alcance e cone</button><button class="secondary vision-preview">Prévia da imagem do jogador</button><p><small>Ative a névoa e libere as áreas exploráveis. A visão limita essas áreas para cada jogador.</small></p>':''}<p><small>Gire o token no mapa para mudar a direção da visão. Novos tokens olham para cima.</small></p><p class="vision-info" role="status"></p>`;
+  $('#fog-slot').append(visionBox);
+  if(isMaster())visionBox.querySelector('.vision-preview').onclick=()=>{
+    $('#dialog-title').textContent='Prévia da imagem do jogador';
+    $('#dialog-body').innerHTML=`<label>Jogador<select id="vision-preview-owner"><option value="">Selecione…</option>${members.map(m=>`<option value="${esc(m.id)}">${esc(m.name)}</option>`).join('')}</select></label><p>Imagem filtrada pelo servidor, sem sobrepor tokens. A prévia não altera a cena compartilhada.</p><img id="vision-preview-image" alt="Área visível ao jogador selecionado" style="max-width:100%;max-height:65vh;object-fit:contain" hidden>`;
+    $('#vision-preview-owner').onchange=e=>{const img=$('#vision-preview-image');img.hidden=!e.target.value;if(e.target.value)img.src=(assetUrl(aid)+"&display=1")+'&view_as='+encodeURIComponent(e.target.value)+'&revision='+rev;};
+    $('#dialog').showModal();
+  };
+  if(isMaster())visionBox.querySelector('.vision-settings').onclick=()=>{
+    const v=state.vision||{enabled:false,range:10,angle:160};
+    form('Visão dos jogadores',`<label><input type="checkbox" name="enabled" ${v.enabled?'checked':''}> Limitar visão aos tokens controlados</label><label>Alcance (${esc(state.grid.unit)})<input name="range" type="number" min="0" max="1000" step=".1" value="${v.range}"></label><label>Abertura em graus<input name="angle" type="number" min="1" max="360" value="${v.angle}"></label><label>Faixa cinza além do alcance (${esc(state.grid.unit)})<input name="gradient" type="number" min="0" max="1000" step=".1" value="${v.gradient??3}"></label><label><input name="exploration" type="checkbox" ${v.exploration!==false?'checked':''}> Lembrar áreas já vistas em cinza</label><p>A faixa cinza e a memória mostram apenas o mapa, dentro da área liberada pelo mestre. Tokens e desenhos exigem visão atual. Segure um token com o botão esquerdo e aponte para girá-lo.</p>`,fd=>{state.vision={enabled:fd.has('enabled'),range:+fd.get('range'),angle:+fd.get('angle'),gradient:+fd.get('gradient'),exploration:fd.has('exploration')};});
+  }
   if (isMaster()) $("#quick-token").onclick = () => act(() => tokenEditor());
 
   function visiblePoint() {
@@ -221,9 +244,10 @@ async function combatView() {
     p.y = e.clientY;
     return p.matrixTransform(svg.getScreenCTM().inverse());
   }
-  function status(text) {
-    $("#asset-feedback").hidden = false;
+  function status(text,error=false) {
     $("#asset-status").textContent = text;
+    if(measuring){$("#ruler-toggle").title=text;$("#movement-info").textContent=text;}
+    if(error)showFeedback(text,'error');
   }
   function cancelPlacement() {
     pendingAsset = null;
@@ -232,6 +256,7 @@ async function combatView() {
     status("Posicionamento cancelado.");
   }
   async function insertAsset(value, point = visiblePoint()) {
+    stopMeasuring();
     drawingEditor?.stop();
     if (!state) throw Error("Aguarde o carregamento do mapa.");
     const batch = makeBatch(
@@ -261,11 +286,14 @@ async function combatView() {
       catalog,
       preferenceKey: `atlas-assets:${me.id}:${active.id}`,
       onInsert: insertAsset,
+      onCreate:()=>act(()=>createPortrait(async()=>{await combatView();await openWorkspacePanel("assets");})),
+      customImage:id=>"/api/token-art?table_id="+active.id+"&id="+encodeURIComponent(id),
       loadCustom:()=>api("recent-tokens?table_id="+active.id),
       onClose: () => {
         if (currentPanel === "assets") setSidebar(null);
       },
       onPlace: (value) => {
+        stopMeasuring();drawingEditor?.stop();
         fogEditor.stop();
         pendingAsset = value;
         $(".combat-board").classList.add("placing-asset");
@@ -345,22 +373,6 @@ async function combatView() {
         if (!e.repeat) act(() => historyStep(direction));
       }
     };
-    $(".combat-board").ondragover = (e) => {
-      if (
-        Array.from(e.dataTransfer.types).includes("application/x-atlas-token")
-      ) {
-        e.preventDefault();
-        e.dataTransfer.dropEffect = "copy";
-      }
-    };
-    $(".combat-board").ondrop = (e) => {
-      if (
-        Array.from(e.dataTransfer.types).includes("application/x-atlas-token")
-      ) {
-        e.preventDefault();
-        library.drop(e);
-      }
-    };
     $("#battle").onkeydown = (e) => {
       if (e.key === "Escape" && pendingAsset) {
         e.preventDefault();
@@ -368,16 +380,38 @@ async function combatView() {
       }
     };
   }
+
+  async function deployCharacter(id,point=visiblePoint()){
+    if(!state||busy)throw Error('Aguarde o mapa terminar de atualizar.');
+    busy=true;
+    try{await api('character-deploy',{table_id:active.id,asset_id:aid,revision:rev,character_id:id,point:geometry.placement(state.tokens,state.grid.size,height,point.x,point.y)});key='';await load();status('Personagem inserido no mapa.');}
+    finally{busy=false;}
+  }
+  async function deploySaved(id,point=visiblePoint()){
+    if(!isMaster())return;
+    const templates=await api('saved-tokens?table_id='+active.id),t=templates.find(t=>t.id===id);
+    if(!t)throw Error('Modelo removido. Reabra Tokens salvos.');
+    await insertAsset({template:t,options:{count:1,name:t.name,budget:t.budget,hidden:false}},point);
+  }
+  sceneActions.deploy=deployCharacter;sceneActions.saved=deploySaved;
+  const board=$('.combat-board');
+  const dropTypes=['application/x-atlas-character',...(isMaster()?['application/x-atlas-saved-token','application/x-atlas-token']:[])];
+  board.ondragover=e=>{if(dropTypes.some(type=>Array.from(e.dataTransfer.types).includes(type))){e.preventDefault();e.dataTransfer.dropEffect='copy';board.classList.add('drop-ready');}};
+  board.ondragleave=()=>board.classList.remove('drop-ready');
+  board.ondrop=e=>{board.classList.remove('drop-ready');const type=dropTypes.find(type=>Array.from(e.dataTransfer.types).includes(type));if(!type)return;e.preventDefault();const id=e.dataTransfer.getData(type),point=eventPoint(e);act(()=>type==='application/x-atlas-character'?deployCharacter(id,point):type==='application/x-atlas-saved-token'?deploySaved(id,point):library.drop(e));};
+  $(".tabletop-toolbar").append($("#asset-cancel"));
+  const imageStarted = AtlasPerformance.begin();
   const image = new Image();
   image.onload = () => {
+    AtlasPerformance.end("map:image-ready",imageStarted);
     height = (1000 * image.naturalHeight) / image.naturalWidth;
     camera.setDimensions(image.naturalWidth, image.naturalHeight);
     if (currentPane === "scene" && generation === tabletopGeneration && state)
       draw();
   };
-  image.src = assetUrl(aid);
+  image.src = (assetUrl(aid)+"&display=1");
   async function load(fromPoll = false) {
-    const latest = await api("scene?table_id=" + active.id);
+    const [latest,r] = await Promise.all([api("scene?table_id=" + active.id),api("combat?table_id=" + active.id + "&asset_id=" + aid).catch(e=>({error:e}))]);
     if (currentPane !== "scene" || generation !== tabletopGeneration) return;
     if (latest.asset_id !== aid || latest.map_id !== scene.map_id) {
       clearInterval(mapPoll);
@@ -385,21 +419,26 @@ async function combatView() {
       return combatView();
     }
     scene.revision = latest.revision;
-    const r = await api("combat?table_id=" + active.id + "&asset_id=" + aid);
+    if(r.error)throw r.error;
     if (currentPane !== "scene" || generation !== tabletopGeneration) return;
     if (fromPoll && busy) return;
     if (r.revision < rev || (r.fog && r.fog.revision < fogRevision) || key === JSON.stringify(r)) return;
     if (!r.state || !r.state.grid || !Array.isArray(r.state.tokens) || !r.fog)
       throw Error("Resposta incompleta do servidor. Reinicie o Atlas após atualizar todos os arquivos.");
-    $("#sync-status").textContent = "Sincronizado";
+    $("#sync-status").textContent = "Sincronizado · "+realtimeLabel();
+    for(const id of lastAngles.keys()){const t=state?.tokens.find(t=>t.id===id);if(t)rotateArt(id,t.vision?.direction??270);}
+    remoteAngles.clear();lastAngles.clear();cancelAnimationFrame(rotationFrame);rotationFrame=null;
     state = r.state;
     linkedSheets = r.characters || {};
+    resourceBars = r.resources || {};
     rev = r.revision;
     history = r.history || { undo: null, redo: null };
+    const fogChanged = !fogState || fogState.cells !== r.fog.cells || fogState.dim_cells !== r.fog.dim_cells || fogState.enabled !== r.fog.enabled;
     fogState = r.fog;
-    if (fogState && fogRevision !== fogState.revision) {
+    visionBox.querySelector('.vision-info').textContent = !fogState.enabled ? 'Névoa desativada: mapa livre.' : state.vision?.enabled ? 'Visão individual ativa. Selecione seu token para virar.' : 'Visão individual desativada.';
+    if (fogState && fogChanged) {
       fogRevision = fogState.revision;
-      if (!isMaster()) $("#battle > image").setAttribute("href",assetUrl(aid)+"&fog_revision="+fogRevision);
+      if (!isMaster()) {const target=$("#battle > image");target.setAttribute("href",(assetUrl(aid)+"&display=1")+"&fog_revision="+fogRevision);}
     }
     if (!state.tokens.some((t) => t.id === selected)) selected = null;
     render();
@@ -426,6 +465,7 @@ async function combatView() {
     updateHistoryControls();
     try {
       fn();
+      draw();
       await save(extra);
     } catch (e) {
       key = "";
@@ -445,10 +485,15 @@ async function combatView() {
       : "";
   };
   function draw() {
+    const started=AtlasPerformance.begin();
+    try{return drawMeasured();}finally{AtlasPerformance.end("map:draw",started);}
+  }
+  function drawMeasured() {
     queueMicrotask(()=>{if(generation===tabletopGeneration)modernPanels?.update();});
     const enabled = state.enabled !== false;
     $("#ruler-layer")?.remove();
-    renderMap(state, height, selected);
+    renderMap(state, height, selected, resourceBars);
+    tabletopTokenMenu?.update();
     if (fogState) fogEditor.apply(fogState, height);
     drawingEditor?.apply(height);
     const t = state.tokens.find((t) => t.id === selected);
@@ -487,6 +532,10 @@ async function combatView() {
         `\nRefazer: ${history.redo.label} · ${history.redo.author}`;
   }
   function render() {
+    const started=AtlasPerformance.begin();
+    try{return renderMeasured();}finally{AtlasPerformance.end("map:render",started);}
+  }
+  function renderMeasured() {
     updateHistoryControls();
     $("#combat-toggle").textContent =
       isMaster() && state.enabled === false
@@ -736,7 +785,7 @@ async function combatView() {
     }
     form(
       id ? "Editar token" : "Adicionar token",
-      `${!id && state.enabled === false ? "<p>Ao salvar, o combate será ativado e o token aparecerá no mapa.</p>" : ""}<label>Nome<input name="name" maxlength="60" value="${esc(t.name)}" required></label><label>Ficha vinculada<select name="character_id"><option value="">Sem vínculo</option>${sheets.map(c => `<option value="${c.id}" ${t.character_id === c.id ? "selected" : ""}>${esc(c.name)} · ${esc(members.find(m => m.id === c.user_id)?.name || "Sem participante")}</option>`).join("")}</select></label><p class="token-link-help">Ao vincular, nome e controle seguem a ficha. PV, PD e defesa ficam disponíveis apenas ao responsável e aos mestres. Desvincular preserva a ficha.</p><label>Aparência<select name="appearance"><option value="">Círculo com iniciais</option>${catalog.map((c) => `<option value="${c.id}" ${t.appearance === c.id ? "selected" : ""}>${esc(c.name)}</option>`).join("")}</select></label><label>Cor da base<input name="color" type="color" value="${t.color}"></label><label>Controlado por<select name="owner"><option value="">Mestres</option>${members.map((m) => `<option value="${m.id}" ${t.owner === m.id ? "selected" : ""}>${esc(m.name)}</option>`).join("")}</select></label><label>Movimento<input name="budget" type="number" min="0" max="1000" step=".1" value="${t.budget}"></label><label>Já utilizado<input name="spent" type="number" min="0" step=".1" value="${t.spent}"></label><label><input type="checkbox" name="hidden" ${t.hidden ? "checked" : ""}> Oculto para jogadores</label>`,
+      `${!id && state.enabled === false ? "<p>Ao salvar, o combate será ativado e o token aparecerá no mapa.</p>" : ""}<label>Nome<input name="name" maxlength="60" value="${esc(t.name)}" required></label><label>Ficha vinculada<select name="character_id"><option value="">Sem vínculo</option>${sheets.map(c => `<option value="${c.id}" ${t.character_id === c.id ? "selected" : ""}>${esc(c.name)} · ${esc(members.find(m => m.id === c.user_id)?.name || "Sem participante")}</option>`).join("")}</select></label><p class="token-link-help">Ao vincular, o nome segue a ficha. O controle pode ser atribuído separadamente. PV, PD e defesa ficam disponíveis apenas ao responsável e aos mestres. Desvincular preserva a ficha.</p><label>Aparência<select name="appearance"><option value="">Círculo com iniciais</option>${groupTokenFamilies(catalog).map(g => `<optgroup label="${esc(g.name)}">${g.items.map(c => `<option value="${c.id}" ${t.appearance === c.id ? "selected" : ""}>${esc(c.variant_name || c.name)}</option>`).join("")}</optgroup>`).join("")}</select></label><label>Cor da base<input name="color" type="color" value="${t.color}"></label><label>Controlado por<select name="owner"><option value="">Mestres</option>${members.map((m) => `<option value="${m.id}" ${t.owner === m.id ? "selected" : ""}>${esc(m.name)}</option>`).join("")}</select></label><label>Movimento<input name="budget" type="number" min="0" max="1000" step=".1" value="${t.budget}"></label><details><summary>Visão deste token</summary><label>Alcance (vazio = padrão)<input name="vision_range" type="number" min="0" max="1000" step=".1" value="${t.vision?.range ?? ''}"></label><label>Abertura (vazio = padrão; 360 = círculo)<input name="vision_angle" type="number" min="1" max="360" value="${t.vision?.angle ?? ''}"></label><label>Faixa cinza (vazio = padrão)<input name="vision_gradient" type="number" min="0" max="1000" step=".1" value="${t.vision?.gradient ?? ''}"></label></details><label>Já utilizado<input name="spent" type="number" min="0" step=".1" value="${t.spent}"></label><label><input type="checkbox" name="hidden" ${t.hidden ? "checked" : ""}> Oculto para jogadores</label>`,
       (fd) => {
         Object.assign(t, {
           name: fd.get("name"),
@@ -744,8 +793,10 @@ async function combatView() {
           appearance: fd.get("appearance") || null,
           color: fd.get("color"),
           owner: fd.get("owner") || null,
+          control_override: true,
           budget: +fd.get("budget"),
           spent: +fd.get("spent"),
+          vision: {gradient:fd.get("vision_gradient")===""?null:+fd.get("vision_gradient"),range:fd.get("vision_range")===""?null:+fd.get("vision_range"),angle:fd.get("vision_angle")===""?null:+fd.get("vision_angle"),direction:t.vision?.direction??270},
           hidden: fd.has("hidden"),
         });
         if (!id) {
@@ -770,10 +821,10 @@ async function combatView() {
     function syncLink() {
       const sheet = sheets.find(c => c.id === select.value);
       editor.elements.name.readOnly = !!sheet;
-      editor.elements.owner.disabled = !!sheet;
+      editor.elements.owner.disabled = false;
       if (sheet) {
         editor.elements.name.value = linkedSheets[sheet.id]?.name || sheet.name;
-        editor.elements.owner.value = sheet.user_id;
+        if (!t.control_override) editor.elements.owner.value = sheet.user_id;
       }
     }
     select.onchange = syncLink;
@@ -844,6 +895,69 @@ async function combatView() {
       },
     );
   }
+  async function moveToken(id,point){
+      const moving = state.tokens.find((t) => t.id === id);
+      if(!moving)return;
+      if (!isMaster() && moving.owner !== me.id)
+        throw Error(
+          "Este token é controlado por outro participante. Peça ao mestre para atribuí-lo a você.",
+        );
+      const path = geometry.route([moving.q, moving.r], point);
+      if (!path.length) return;
+      if (busy) return;
+      busy = true;
+      try {
+        const cost=geometry.routeCost(path,state.terrain,state.grid.scale);
+        if(cost!==null){[moving.q,moving.r]=path[path.length-1];moving.spent+=cost;draw();}
+        await api("combat-move", {
+          table_id: active.id,
+          asset_id: aid,
+          revision: rev,
+          token_id: id,
+          path,
+        });
+        key = "";
+        await load();
+      } catch (e) {
+        key = "";
+        await load();
+        throw e;
+      } finally {
+        busy = false;
+        updateHistoryControls();
+      }
+  }
+  const {mountTokenRotation}=await import('/combat/token-rotation.mjs');
+  const rotationFeed=rotationSender(active.id,aid);
+  function rotateArt(id,direction){
+    const node=Array.from($('#battle').querySelectorAll('[data-token]')).find(n=>n.dataset.token===id);
+    const art=node?.querySelector('.token-art'),t=state?.tokens.find(t=>t.id===id);
+    if(art&&t){const [x,y]=geometry.center(t.q,t.r,state.grid.size,height);art.setAttribute('transform',`rotate(${direction+90} ${x} ${y})`);}
+  }
+  function animateRotation(now){
+    rotationFrame=null;
+    for(const [id,a] of remoteAngles){
+      const progress=Math.min(1,(now-a.start)/50),delta=((a.to-a.from+540)%360)-180;
+      const angle=(a.from+delta*progress+360)%360;rotateArt(id,angle);a.current=angle;const last=lastAngles.get(id);if(last)last.value=angle;
+      if(progress===1)remoteAngles.delete(id);
+    }
+    if(remoteAngles.size)rotationFrame=requestAnimationFrame(animateRotation);
+  }
+  function receiveRotation(e){
+    if(generation!==tabletopGeneration||!state)return;
+    for(const p of e.detail){
+      if(p.asset_id!==aid||p.sender===me.id||!state.tokens.some(t=>t.id===p.token_id))continue;
+      const t=state.tokens.find(t=>t.id===p.token_id);
+      remoteAngles.set(p.token_id,{from:lastAngles.get(p.token_id)?.value??t.vision?.direction??270,to:p.direction,current:p.direction,start:performance.now()});
+      lastAngles.set(p.token_id,{value:lastAngles.get(p.token_id)?.value??t.vision?.direction??270,at:performance.now()});
+    }
+    if(!rotationFrame&&remoteAngles.size)rotationFrame=requestAnimationFrame(animateRotation);
+  }
+  const previewExpiry=setInterval(()=>{for(const [id,a] of lastAngles){if(performance.now()-a.at>2000){lastAngles.delete(id);remoteAngles.delete(id);const t=state?.tokens.find(t=>t.id===id);if(t)rotateArt(id,t.vision?.direction??270);}}},500);
+  window.addEventListener('atlas-token-preview',receiveRotation);
+  stopRotationPreview=()=>{clearInterval(previewExpiry);rotationFeed.cancel();window.removeEventListener('atlas-token-preview',receiveRotation);cancelAnimationFrame(rotationFrame);};
+  tokenRotation=mountTokenRotation({previewMove:(id,p)=>{const node=[...$('#battle').querySelectorAll('[data-token]')].find(n=>n.dataset.token===id);if(!node)return;const t=state.tokens.find(t=>t.id===id);if(!p){node.removeAttribute('transform');return;}const [x,y]=geometry.center(t.q,t.r,state.grid.size,height);node.setAttribute('transform',`translate(${p.x-x} ${p.y-y})`);},commitMove:async(id,p)=>{selected=null;await moveToken(id,hex(p.x,p.y));draw();},svg:$('#battle'),get:()=>state,allowed:t=>!busy&&!measuring&&!pendingAsset&&!fogEditor.active&&mode==='move'&&state?.enabled!==false&&(!t||isMaster()||t.owner===me.id),point:eventPoint,center:t=>geometry.center(t.q,t.r,state.grid.size,height),preview:(id,direction)=>{const t=state.tokens.find(t=>t.id===id);if(t){t.vision={range:null,angle:null,...t.vision,direction};selected=id;rotateArt(id,direction);rotationFeed.send(id,direction);}},cancelPreview:async(token_id,direction)=>{await rotationFeed.drain();await api('token-preview',{table_id:active.id,asset_id:aid,token_id,direction}).catch(()=>{});},commit:async(token_id,direction)=>{busy=true;try{await rotationFeed.drain();await api('token-facing',{table_id:active.id,asset_id:aid,revision:rev,token_id,direction});selected=null;key='';await load();}finally{busy=false;}},status});
+  tabletopTokenMenu=mountTokenMenu({svg:$('#battle'),get:()=>({state,selected}),master:isMaster(),user:me.id,members,select:id=>{selected=id;draw();},change,uid,api,refresh:async()=>{key='';await load();},table:active.id,asset:aid,edit:id=>act(()=>tokenEditor(id)),visionPanel:()=>act(()=>openWorkspacePanel('fog'))});
   $("#battle").onclick = (e) =>
     act(async () => {
       if (!state || busy || generation !== tabletopGeneration || fogEditor.active) return;
@@ -887,9 +1001,10 @@ async function combatView() {
       }
       const token = e.target.closest("[data-token]");
       if (token) {
-        selected = token.dataset.token;
-        $("#token-select").value = selected;
+        selected = selected===token.dataset.token ? null : token.dataset.token;
+        $("#token-select").value = selected||"";
         draw();
+        status(selected?"Arraste para mover · segure parado e aponte para girar · Esc limpa a seleção.":"Seleção removida.");
         return;
       }
       const svg = $("#battle"),
@@ -904,35 +1019,11 @@ async function combatView() {
           if (mode === "1") delete state.terrain[k];
           else state.terrain[k] = +mode;
         });
+      if (!e.shiftKey) { selected=null;draw();return; }
       if (!selected) return;
-      const moving = state.tokens.find((t) => t.id === selected);
-      if (!isMaster() && moving.owner !== me.id)
-        throw Error(
-          "Este token é controlado por outro participante. Peça ao mestre para atribuí-lo a você.",
-        );
-      const path = geometry.route([moving.q, moving.r], point);
-      if (!path.length) return;
-      if (busy) return;
-      busy = true;
-      try {
-        await api("combat-move", {
-          table_id: active.id,
-          asset_id: aid,
-          revision: rev,
-          token_id: selected,
-          path,
-        });
-        key = "";
-        await load();
-      } catch (e) {
-        key = "";
-        await load();
-        throw e;
-      } finally {
-        busy = false;
-        updateHistoryControls();
-      }
+      await moveToken(selected,point);
     });
+  $('#battle').addEventListener('keydown',e=>{if(e.key==='Escape'){selected=null;draw();status('Seleção removida.');}});
   $("#combat-refresh").onclick = () =>
     act(async () => {
       key = "";
@@ -956,21 +1047,21 @@ async function combatView() {
   for(const id of ["combat-toggle","initiative-toggle","scene-dice"])$("#"+id).hidden=true;
   modernPanels=mountCombatPanels({get:()=>({state,selected}),change,master:isMaster(),key:"atlas-initiative:"+me.id+":"+active.id,edit:turnEditor,uid});
   tabletopModernPanels=modernPanels;
-  drawingEditor=mountDrawings({svg:$("#battle"),host:$("#drawings-slot"),master:isMaster(),get:()=>state,change,uid,prepare:()=>{fogEditor.stop();measuring=false;pendingAsset=null;mode="move";}});
-  sceneActions.pointer=()=>{drawingEditor?.stop();fogEditor?.stop();measuring=false;measureStart=null;pendingAsset=null;mode="move";$("#ruler-toggle").setAttribute("aria-pressed","false");$("#ruler-layer")?.remove();};
+  drawingEditor=mountDrawings({svg:$("#battle"),host:$("#drawings-slot"),master:isMaster(),get:()=>state,change,uid,prepare:()=>{fogEditor.stop();stopMeasuring();pendingAsset=null;mode="move";}});
+  sceneActions.pointer=()=>{$("#movement-info").textContent="";selected=null;draw();drawingEditor?.stop();fogEditor?.stop();measuring=false;measureStart=null;pendingAsset=null;mode="move";$("#ruler-toggle").setAttribute("aria-pressed","false");$("#ruler-toggle").setAttribute("aria-label","Ativar régua");$("#ruler-layer")?.remove();};
   setSidebar(currentPanel, false);
+  let syncRetry=null;
   async function synchronize() {
     if (
       currentPane !== "scene" ||
-      generation !== tabletopGeneration ||
-      busy ||
-      loading
+      generation !== tabletopGeneration
     )
       return;
+    if(busy||loading||tokenRotation?.active){clearTimeout(syncRetry);syncRetry=setTimeout(synchronize,75);return;}
     loading = true;
     try {
       await load(true);
-      if ($("#sync-status")) $("#sync-status").textContent = "Sincronizado";
+      if ($("#sync-status")) $("#sync-status").textContent = "Sincronizado · "+realtimeLabel();
     } catch (e) {
       if ($("#sync-status"))
         $("#sync-status").textContent = "Reconectando… " + e.message;
@@ -978,6 +1069,7 @@ async function combatView() {
       loading = false;
     }
   }
-  mapPoll = setInterval(synchronize, 1000);
+  stopCombatWatch=watchTable($("#battle"),synchronize,["scene","combat"]);
+  mapPoll = setInterval(synchronize, 10000);
   await synchronize();
 }

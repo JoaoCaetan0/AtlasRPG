@@ -1,0 +1,21 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {mountCamera} from '../web/combat/camera.mjs';
+test('wheel zoom is local, bounded, ignores fields and unregisters on teardown',()=>{
+ const listeners=new Map();let scheduled;
+ globalThis.innerHeight=800;globalThis.window={addEventListener(){},removeEventListener(){}};
+ globalThis.requestAnimationFrame=fn=>(scheduled=fn,1);globalThis.cancelAnimationFrame=()=>{};
+ globalThis.ResizeObserver=class{observe(){}disconnect(){}};
+ const element=()=>({style:{},setAttribute(){},append(){},after(){}});
+ globalThis.document={createElement:element,querySelector:()=>null};
+ const board={isConnected:true,clientWidth:1000,clientHeight:700,scrollLeft:0,scrollTop:0,parentElement:{},style:{},classList:{contains:()=>false,add(){},remove(){}},getBoundingClientRect:()=>({top:0}),addEventListener:(n,f)=>listeners.set(n,f),removeEventListener:n=>listeners.delete(n)};
+ const surface={style:{},getBoundingClientRect(){return {left:0,top:0,width:parseFloat(this.style.width)||1000,height:parseFloat(this.style.height)||700}}};
+ const slider={after(){},closest:()=>({after(){}})},fitButton={};
+ const camera=mountCamera({board,surface,svg:{},slider,fitButton});scheduled();const initial=parseFloat(surface.style.width);
+ let prevented=0;const event=(dy,field=false)=>({target:{closest:()=>field},deltaY:dy,deltaMode:0,clientX:500,clientY:350,preventDefault(){prevented++}});
+ listeners.get('wheel')(event(-100));assert.ok(parseFloat(surface.style.width)>initial);assert.equal(prevented,1);
+ const zoomed=parseFloat(surface.style.width);listeners.get('wheel')(event(100,true));assert.equal(parseFloat(surface.style.width),zoomed);
+ for(let i=0;i<100;i++)listeners.get('wheel')(event(100));assert.equal(Number(slider.value),25);
+ for(let i=0;i<100;i++)listeners.get('wheel')(event(-100));assert.equal(Number(slider.value),400);
+ fitButton.onclick();assert.equal(Number(slider.value),100);camera.destroy();assert.equal(listeners.has('wheel'),false);
+});

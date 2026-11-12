@@ -1,5 +1,6 @@
 const app = document.querySelector("#app"),
   notice = document.querySelector("#notice");
+mountFeedback(notice);
 let me,
   active,
   revision = 0,
@@ -14,7 +15,25 @@ const esc = (s) =>
   );
 // State is plain JSON; works on HTTP LAN where structuredClone may be unavailable.
 const cloneState = (value) => JSON.parse(JSON.stringify(value));
-async function api(path, data) {
+// Opt-in, bounded diagnostics: no request bodies, query parameters or player data.
+const AtlasPerformance=(()=>{
+ let enabled=false,samples=[],since=0;
+ return {
+  start(){samples=[];since=performance.now();enabled=true;},
+  stop(){enabled=false;},
+  begin(){return enabled?performance.now():null;},
+  end(name,start){if(enabled&&start!==null){samples.push({name,ms:Math.round((performance.now()-start)*100)/100});if(samples.length>400)samples.shift();}},
+  report(){return {samples:[...samples],resources:performance.getEntriesByType('resource').filter(r=>r.startTime>=since&&r.name.startsWith(location.origin+'/')).slice(-200).map(r=>({path:new URL(r.name).pathname,ms:r.duration,ttfb:r.responseStart?r.responseStart-r.requestStart:null,transferBytes:r.transferSize,encodedBytes:r.encodedBodySize,server:r.serverTiming?.map(t=>({name:t.name,ms:t.duration}))}))};}
+ };
+})();
+window.AtlasPerformance=AtlasPerformance;
+async function api(path,data){
+ const started=AtlasPerformance.begin();
+ try{return await apiRequest(path,data);}
+ finally{AtlasPerformance.end('api:'+path.split('?')[0],started);}
+}
+async function apiRequest(path, data) {
+  if(data){const pending=socketRequest(path,data);if(pending)return pending;}
   const controller = new AbortController();
   const timeout = data ? null : setTimeout(() => controller.abort(), 15000);
   let r;
@@ -33,11 +52,14 @@ async function api(path, data) {
           }
         : { cache: "no-store", signal: controller.signal },
     );
+  } catch(error) {
+    throw Error(error.name==='AbortError'?'O servidor demorou a responder. Confira a conexão e tente novamente.':data?'Não foi possível confirmar o envio. Verifique a conexão e confira se a alteração foi salva antes de repetir.':'Não foi possível acessar o servidor. Verifique a conexão com o Atlas.');
   } finally {
     clearTimeout(timeout);
   }
-  const v = await r.json();
-  if (!r.ok) throw Error(v.error);
+  let v;
+  try { v=await r.json(); } catch { throw Error(`Resposta inesperada do servidor (HTTP ${r.status}). Reinicie o Atlas se o problema persistir.`); }
+  if (!r.ok) throw Error(v.error||`Ação recusada (HTTP ${r.status}).`);
   return v;
 }
 async function act(fn) {
@@ -45,7 +67,7 @@ async function act(fn) {
   try {
     await fn();
   } catch (e) {
-    notice.textContent = e.message;
+    showFeedback(e.message, "error");
   }
 }
 function auth() {
@@ -69,6 +91,7 @@ async function start() {
   await home();
 }
 async function home() {
+  stopRealtime();
   clearInterval(mapPoll);
   currentPane = "";
   document.body.classList.remove("in-workspace");
@@ -127,13 +150,14 @@ let dirty = false,
   mapPoll = null,
   members = [];
 function canLeave() {
+  if(document.querySelector('.sheet-workspace[aria-busy="true"]')){showFeedback("Aguarde o salvamento da ficha.");return false;}
   if (dirty && !confirm("Há alterações não salvas. Descartar?")) return false;
   dirty = false;
   clearInterval(poll);
   return true;
 }
 window.addEventListener("beforeunload", (e) => {
-  if (dirty) {
+  if (dirty || document.querySelector('.sheet-workspace[aria-busy="true"]')) {
     e.preventDefault();
     e.returnValue = "";
   }

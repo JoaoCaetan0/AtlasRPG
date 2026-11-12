@@ -2,6 +2,7 @@
 import json, math, re
 import combat_history
 import fog
+import token_vision
 import token_characters
 from token_assets import TOKEN_IDS
 from pathlib import Path
@@ -9,12 +10,14 @@ from urllib.parse import urlsplit,parse_qs
 ROOT=Path(__file__).parent
 
 def install(c):
+ import token_resources
+ token_resources.install(c)
  combat_history.install(c)
  c.execute('CREATE TABLE IF NOT EXISTS combats(table_id TEXT,asset_id TEXT,state TEXT,revision INTEGER,PRIMARY KEY(table_id,asset_id))')
  c.execute('CREATE TABLE IF NOT EXISTS navigation(table_id TEXT,map_id TEXT,links TEXT,PRIMARY KEY(table_id,map_id))')
 
 def fresh(c=None,tid=None):
- state={'enabled':False,'grid':{'size':35,'scale':1.5,'unit':'m','enabled':True},'tokens':[],'entries':[],'active':None,'round':1,'terrain':{},'conditions':json.loads((ROOT/'web/conditions.json').read_text(encoding='utf-8')),'enforce':True}
+ state={'vision':dict(token_vision.DEFAULT),'enabled':False,'grid':{'size':35,'scale':1.5,'unit':'m','enabled':True},'tokens':[],'entries':[],'active':None,'round':1,'terrain':{},'conditions':json.loads((ROOT/'web/conditions.json').read_text(encoding='utf-8')),'enforce':True}
  if c is not None:
   from admin import settings
   config,_=settings(c,tid);state.update({k:v for k,v in config.items() if k in ('grid','conditions')});state['grid']={**fresh()['grid'],**state['grid']}
@@ -41,6 +44,8 @@ def compatible(s,c,tid,require):
 def distance(a,b):return (abs(a[0]-b[0])+abs(a[1]-b[1])+abs(a[0]+a[1]-b[0]-b[1]))//2
 
 def validate(s,c,tid,require):
+ from custom_tokens import valid_appearance
+ token_vision.validate(s.get('vision',token_vision.DEFAULT),require)
  import drawings
  drawings.validate(s.get("drawings",[]),require)
  def num(v,lo,hi):return type(v) in (int,float) and math.isfinite(v) and lo<=v<=hi
@@ -62,8 +67,11 @@ def validate(s,c,tid,require):
    require(isinstance(x['effects'],list) and len(x['effects'])<=200,400,'Efeitos inválidos.')
    for e in x['effects']:require(e['id'] in ids and type(e['secret'])==bool and type(e['stage'])==int and 1<=e['stage']<=3,400,'Marcador inválido.')
  for t in tokens:
+  import token_resources
+  token_resources.validate(t,require)
+  token_vision.validate(t.get('vision',{'range':None,'angle':None,'direction':0}),require,True)
   require(type(t.get('dead',False))==bool,400,'Estado Morto inválido.')
-  require(t.get('appearance') is None or (isinstance(t.get('appearance'),str) and t['appearance'] in TOKEN_IDS),400,'Imagem de token inválida. Escolha um modelo da biblioteca.')
+  require(valid_appearance(c,tid,t.get('appearance')),400,'Imagem de token inválida. Escolha um modelo da biblioteca.')
   require(coord([t['q'],t['r']]) and t['owner'] in members|{None} and num(t['budget'],0,1000) and num(t['spent'],0,100000) and re.fullmatch(r'#[0-9a-fA-F]{6}',t['color']),400,'Token inválido.')
  for e in entries:require((e['value'] is None or num(e['value'],-10000,10000)) and e['token'] in tids|{None},400,'Iniciativa inválida.')
  require(type(s.get('skipDead',False))==bool,400,'Opção de turnos inválida.')
@@ -95,14 +103,14 @@ def handle(c,data,path,d,user,tid,master,require):
   available={x[0] for x in c.execute('SELECT legacy_id FROM maps WHERE table_id=?'+('' if master else ' AND visible=1'),(tid,))}
   protected=[]
   if not master:
-   protected=[fog.read(c,tid,r[0]) for r in c.execute('SELECT a.digest FROM map_assets m JOIN assets a ON a.id=m.asset_id WHERE m.table_id=? AND m.legacy_id=?',(tid,mid))]
+   protected=[token_vision.effective(c,data,tid,r,user) for r in c.execute('SELECT a.* FROM map_assets m JOIN assets a ON a.id=m.asset_id WHERE m.table_id=? AND m.legacy_id=?',(tid,mid))]
   result=[]
   for l in links:
    if not all(fog.visible(mask,l['rect'][0]+l['rect'][2]/2,l['rect'][1]+l['rect'][3]/2) for mask in protected):continue
    targets=[x for x in l['targets'] if x in available]
    if targets:result.append({**l,'targets':targets})
   return result
- if ep not in ['/api/combat','/api/combat-move','/api/combat-undo','/api/combat-redo']:return NotImplemented
+ if ep not in ['/api/combat','/api/combat-move','/api/combat-undo','/api/combat-redo','/api/token-facing','/api/character-deploy']:return NotImplemented
  aid=d.get('asset_id') if d else q.get('asset_id',[''])[0]
  asset=permitted(c,tid,aid,user,master);require(asset and asset['mime'].startswith('image/'),404,'Mapa indisponível.')
  from scene_variants import combat_key
@@ -111,25 +119,47 @@ def handle(c,data,path,d,user,tid,master,require):
  linked_characters=token_characters.hydrate(c,tid,s)
  if ep in ['/api/combat-undo','/api/combat-redo']:
   require(master);require(bool(d),405,'Use POST para alterar o histórico.')
- fog_state=fog.read(c,tid,asset['digest'])
+ manual_fog=fog.read(c,tid,asset['digest'])
+ fog_state=manual_fog if master else token_vision.effective(c,data,tid,asset,user,manual_fog)
  height=700
  if fog_state['enabled']:
   width,pixels=fog.dimensions(str(data/'blobs'/asset['digest']));height=1000*pixels/width
  before=json.loads(json.dumps(s)) if d else None
  if d:
-  require(type(d.get('revision'))==int and d['revision']==rev,409,'Combate atualizado por outra pessoa. Recarregue a cena antes de repetir.')
+  require(type(d.get('revision'))==int and (d['revision']==rev or ep=='/api/token-facing' and 0<=d['revision']<=rev),409,'Combate atualizado por outra pessoa. Recarregue a cena antes de repetir.')
   if ep=='/api/combat':require(master);s=compatible(d.get('state'),c,tid,require);validate(s,c,tid,require);token_characters.hydrate(c,tid,s,require)
   elif ep in ['/api/combat-undo','/api/combat-redo']:
    s=combat_history.restore(c,tid,aid,s,ep=='/api/combat-redo',require);token_characters.hydrate(c,tid,s,require);validate(s,c,tid,require)
+  elif ep=='/api/character-deploy':
+   import secrets
+   ch=c.execute('SELECT * FROM characters WHERE table_id=? AND id=?',(tid,d.get('character_id'))).fetchone()
+   require(ch and (master or ch['user_id']==user),403,'Personagem indisponível.')
+   require(master or not any(t.get('character_id')==ch['id'] for t in s['tokens']),409,'Este personagem já está no mapa. Mova o token existente.')
+   scene=c.execute('SELECT asset_id FROM scene WHERE table_id=?',(tid,)).fetchone()
+   require(scene and scene[0]==d.get('asset_id'),409,'O mapa mudou. Solte o personagem na cena atual.')
+   point=d.get('point');require(isinstance(point,list) and len(point)==2 and all(type(v)==int and -500<=v<=500 for v in point),400,'Posição inválida.')
+   width,pixels=fog.dimensions(str(data/'blobs'/asset['digest']));height=1000*pixels/width
+   x=500+s['grid']['size']*math.sqrt(3)*(point[0]+point[1]/2);y=height/2+s['grid']['size']*1.5*point[1]
+   require(0<=x<=1000 and 0<=y<=height,400,'Solte o token dentro do mapa.')
+   require(not any([t['q'],t['r']]==point for t in s['tokens']),409,'Hexágono ocupado. Escolha outro ponto.')
+   require(s['terrain'].get(','.join(map(str,point)),1)>0,400,'Hexágono bloqueado.')
+   if not master:require(fog.token_visible(fog_state,dict(zip(('q','r'),point)),s['grid']['size'],height),403,'Solte o personagem numa área visível.')
+   s['tokens'].append(dict(id=secrets.token_hex(16),name=ch['name'][:60],character_id=ch['id'],appearance=ch['appearance'],vision={'range':None,'angle':None,'direction':270},q=point[0],r=point[1],owner=ch['user_id'],color='#b28b47',budget=9,spent=0,hidden=False,effects=[]))
+   s['enabled']=True;token_characters.hydrate(c,tid,s,require);validate(s,c,tid,require)
+  elif ep=='/api/token-facing':
+   t=next((t for t in s['tokens'] if t['id']==d.get('token_id')),None)
+   require(t and (master or (t['owner']==user and not t['hidden'])))
+   v={**t.get('vision',{'range':None,'angle':None}),'direction':d.get('direction')}
+   token_vision.validate(v,require,True);t['vision']=v
   else:
    require(s.get('enabled',True),400,'O mestre precisa ativar o combate neste mapa.')
    t=next((x for x in s['tokens'] if x['id']==d['token_id']),None);require(t and (master or (t['owner']==user and not t['hidden'])))
-   if not master:require(fog.token_visible(fog_state,t,s['grid']['size'],height),403,'Token fora da área revelada.')
+   if not master:require(fog.token_visible(manual_fog if s.get('vision',{}).get('enabled') else fog_state,t,s['grid']['size'],height),403,'Token fora da área revelada.')
    path=d['path'];require(isinstance(path,list) and 1<=len(path)<=200,400,'Caminho inválido.')
    previous=[t['q'],t['r']];cost=0
    for point in path:
     require(isinstance(point,list) and len(point)==2 and all(type(v)==int and -500<=v<=500 for v in point) and distance(previous,point)==1,400,'Percorra hexágonos vizinhos.')
-    if not master:require(fog.token_visible(fog_state,{'q':point[0],'r':point[1]},s['grid']['size'],height),403,'Destino fora da área revelada.')
+    if not master:require(fog.token_visible(manual_fog if s.get('vision',{}).get('enabled') else fog_state,{'q':point[0],'r':point[1]},s['grid']['size'],height),403,'Destino fora da área revelada.')
     factor=s['terrain'].get(str(point[0])+','+str(point[1]),1);require(factor>0,400,'Hexágono bloqueado.');cost+=s['grid']['scale']*factor;previous=point
    require(not s['enforce'] or t['spent']+cost<=t['budget']+1e-8,400,'Movimento insuficiente.')
    t['q'],t['r']=previous;t['spent']=round(t['spent']+cost,6)
@@ -141,16 +171,18 @@ def handle(c,data,path,d,user,tid,master,require):
     require(token and not any(t['id']==token['id'] for t in before['tokens']),400,'Somente novos tokens podem entrar nos recentes.')
     from recent_tokens import remember
     remember(c,tid,user,token)
-  if ep in ['/api/combat','/api/combat-move']:combat_history.record(c,tid,aid,before,s,user)
+  if ep in ['/api/combat','/api/combat-move','/api/token-facing','/api/character-deploy']:combat_history.record(c,tid,aid,before,s,user)
   c.execute('INSERT INTO combats VALUES(?,?,?,?) ON CONFLICT(table_id,asset_id) DO UPDATE SET state=excluded.state,revision=excluded.revision',(tid,aid,json.dumps(s),rev+1));return {'revision':rev+1}
  if not master:
   import drawings
   s["drawings"]=[d for d in s.get("drawings",[]) if drawings.visible(d,fog_state)]
-  s['tokens']=[t for t in s['tokens'] if not t['hidden'] and fog.token_visible(fog_state,t,s['grid']['size'],height)];visible={t['id'] for t in s['tokens']}
+  s['tokens']=[t for t in s['tokens'] if not t['hidden'] and (fog.token_visible(fog_state,t,s['grid']['size'],height) or (t['owner']==user and fog.token_visible(manual_fog,t,s['grid']['size'],height)))];visible={t['id'] for t in s['tokens']}
   s['entries']=[e for e in s['entries'] if not e['hidden'] and (e['token'] is None or e['token'] in visible)]
   if s['active'] not in {e['id'] for e in s['entries']}:s['active']=None
   for x in s['tokens']+s['entries']:x['effects']=[e for e in x['effects'] if not e['secret']]
   s['terrain']={k:v for k,v in s['terrain'].items() if fog.token_visible(fog_state,dict(zip(('q','r'),map(int,k.split(',')))),s['grid']['size'],height)}
- result={'characters':token_characters.summaries(s,linked_characters,user,master),'state':s,'revision':rev,'fog':fog.public(fog_state,master)}
+ import token_resources
+ bars=token_resources.display(c,tid,aid,s,user,master)
+ result={'resources':bars,'characters':token_characters.summaries(s,linked_characters,user,master),'state':s,'revision':rev,'fog':fog.public(fog_state,master)}
  if master:result['history']=combat_history.metadata(c,tid,aid)
  return result

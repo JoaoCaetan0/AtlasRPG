@@ -28,6 +28,11 @@ def install(c):
  recent_install(c)
  from scene_history import install as scene_history_install
  scene_history_install(c)
+ from npcs import install as npc_install
+ from custom_tokens import install as token_install
+ npc_install(c);token_install(c)
+ from saved_tokens import install as saved_install
+ saved_install(c)
 def put(c,data,tid,source,body):
  mime=MIMES.get(PurePosixPath(source).suffix.lower())
  if not mime:return None

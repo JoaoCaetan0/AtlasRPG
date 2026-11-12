@@ -1,0 +1,31 @@
+{
+  "method": "imagegen integrado; imagens individuais com transparência",
+  "previously_generated": [
+    "golem-pedra",
+    "golem-ferro",
+    "ent",
+    "wyvern"
+  ],
+  "newly_generated": [
+    {
+      "id": "ogro",
+      "name": "Ogro",
+      "prompt": "New individual VTT token asset: burly ogre with wooden club and patched leather clothes. Match a colorful cartoon fantasy token collection: bold dark outlines, clean cel shading, compact chibi proportions, readable silhouette, saturated colors, full subject visible centered with generous safe padding. One creature only, no background scenery, no text, no border, transparent background. Square game icon, not realistic or painterly. All wings, appendages and equipment fully inside canvas."
+    },
+    {
+      "id": "troll",
+      "name": "Troll",
+      "prompt": "New individual VTT token asset: long-armed green troll with big nose, tusks, hunched back and moss on shoulders. Match a colorful cartoon fantasy token collection: bold dark outlines, clean cel shading, compact chibi proportions, readable silhouette, saturated colors, full subject visible centered with generous safe padding. One creature only, no background scenery, no text, no border, transparent background. Square game icon, not realistic or painterly. All wings, appendages and equipment fully inside canvas."
+    },
+    {
+      "id": "grifo",
+      "name": "Grifo",
+      "prompt": "New individual VTT token asset: griffin with golden lion hindquarters, eagle head and forelegs, feathered wings. Match a colorful cartoon fantasy token collection: bold dark outlines, clean cel shading, compact chibi proportions, readable silhouette, saturated colors, full subject visible centered with generous safe padding. One creature only, no background scenery, no text, no border, transparent background. Square game icon, not realistic or painterly. All wings, appendages and equipment fully inside canvas."
+    },
+    {
+      "id": "elemental-fogo",
+      "name": "Elemental de fogo",
+      "prompt": "New individual VTT token asset: living fire elemental with flame arms and blazing orange body, dark coal core. Match a colorful cartoon fantasy token collection: bold dark outlines, clean cel shading, compact chibi proportions, readable silhouette, saturated colors, full subject visible centered with generous safe padding. One creature only, no background scenery, no text, no border, transparent background. Square game icon, not realistic or painterly. All wings, appendages and equipment fully inside canvas."
+    }
+  ]
+}

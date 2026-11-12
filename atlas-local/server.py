@@ -10,6 +10,7 @@ from campaign import create_campaign
 from assets import install, permitted
 from features import route as feature_route, Binary
 from network import bind_address, valid_request
+from request_security import body_size,strict_json,request_limit
 import threading
 from collections import defaultdict,deque
 ATTEMPTS=defaultdict(deque)
@@ -29,6 +30,7 @@ def db():
 
 def init():
     with closing(db()) as c, c:
+        c.execute('PRAGMA journal_mode=WAL')
         if c.execute('PRAGMA user_version').fetchone()[0]>14:raise RuntimeError('Banco de versão mais nova; use a atualização correspondente.')
         c.executescript('''
         CREATE TABLE IF NOT EXISTS users(id TEXT PRIMARY KEY,name TEXT NOT NULL UNIQUE,salt TEXT NOT NULL,password TEXT NOT NULL);
@@ -55,9 +57,18 @@ def require(ok,status=403,message='Sem permissão.'):
     if not ok: raise Failure(status,message)
 
 class Handler(BaseHTTPRequestHandler):
+    server_version='Atlas'
+    sys_version=''
+    def setup(self):
+        super().setup()
+        self.connection.settimeout(15)
+    def end_headers(self):
+        self.send_header('Referrer-Policy','no-referrer')
+        if getattr(self,'route_ms',None) is not None:self.send_header('Server-Timing',f'app;dur={self.route_ms:.2f}')
+        super().end_headers()
     def log_message(self,*args): pass
     def send(self,status,payload,cookie=None):
-        data=json.dumps(payload,ensure_ascii=False).encode()
+        data=json.dumps(payload,ensure_ascii=False,allow_nan=False).encode()
         self.send_response(status)
         self.send_header('Content-Type','application/json; charset=utf-8')
         self.send_header('Cache-Control','no-store')
@@ -67,10 +78,13 @@ class Handler(BaseHTTPRequestHandler):
     def do_GET(self): self.handle_request()
     def do_POST(self): self.handle_request()
     def handle_request(self):
+        self.route_ms=None
+        if urlsplit(self.path).path=='/api/socket':
+            self.protocol_version='HTTP/1.1';self.close_connection=True
         try:
             require(valid_request(self.headers,self.server.server_address),403,'Endereço ou origem não autorizado.')
             static={'/':('index.html','text/html; charset=utf-8'),'/style.css':('style.css','text/css'),'/app.js':('app.js','application/javascript'),'/combat.js':('combat.js','application/javascript'),'/session.js':('session.js','application/javascript'),'/admin.js':('admin.js','application/javascript')}
-            for module in ['system-profiles.js','workspace.js','navigation.js','files.js','participants.js','characters.js','combat/fog.mjs','combat/camera.mjs','combat/condition-icons.mjs','combat/combat-panels.mjs','combat/drawings.mjs','combat/geometry.mjs','combat/renderer.mjs','combat/asset-library.mjs','combat/token-model.mjs']:
+            for module in ['panel-preferences.js','ui-feedback.js','combat/token-rotation.mjs','realtime.js','npcs.js','combat/token-maker.mjs','dice-visuals.js','combat/token-menu.mjs','system-profiles.js','workspace.js','navigation.js','files.js','participants.js','characters.js','combat/fog.mjs','combat/camera.mjs','combat/condition-icons.mjs','combat/combat-panels.mjs','combat/drawings.mjs','combat/geometry.mjs','combat/renderer.mjs','combat/asset-library.mjs','combat/token-model.mjs']:
                 static['/'+module]=(module,'application/javascript')
             from token_assets import static_routes
             static.update(static_routes())
@@ -87,22 +101,55 @@ class Handler(BaseHTTPRequestHandler):
                 # Header obrigatório impede submissões simples cross-origin; sem CORS.
                 require(self.headers.get('X-Atlas-Request')=='1',403,'Requisição inválida.')
                 require(self.headers.get('Content-Type','').startswith('application/json'),415,'Use JSON.')
-                size=int(self.headers.get('Content-Length','0'))
-                require(0<size<=(15*1024**2 if self.path=='/api/upload' else 65536),413,'Requisição grande demais.')
-                data=json.loads(self.rfile.read(size));require(isinstance(data,dict),400,'JSON inválido.')
+                try:size=body_size(self.headers,request_limit(self.path))
+                except OverflowError:
+                    self.close_connection=True
+                    raise Failure(413,'Arquivo ou requisição acima do limite permitido para esta ação.')
+                except ValueError:raise Failure(400,'Cabeçalhos de tamanho inválidos.')
+                raw=self.rfile.read(size);require(len(raw)==size,400,'Requisição incompleta.')
+                try:data=strict_json(raw)
+                except (ValueError,RecursionError):raise Failure(400,'JSON inválido: confira a estrutura e os números enviados.')
+                if self.path in ('/api/login','/api/register'):
+                    with ATTEMPTS_LOCK:
+                        now=time.monotonic()
+                        for ip in list(ATTEMPTS):
+                            if not ATTEMPTS[ip] or ATTEMPTS[ip][-1]<now-60:del ATTEMPTS[ip]
+                        require(self.client_address[0] in ATTEMPTS or len(ATTEMPTS)<4096,429,'Muitas tentativas. Aguarde um minuto.')
+                        bucket=ATTEMPTS[self.client_address[0]]
+                        while bucket and bucket[0]<now-60:bucket.popleft()
+                        require(len(bucket)<30,429,'Muitas tentativas. Aguarde um minuto.');bucket.append(now)
+            route_start=time.perf_counter()
             with closing(db()) as c, c:
-                if self.command=='POST':c.execute('BEGIN IMMEDIATE')
+                if self.command=='POST' and self.path!='/api/token-preview':c.execute('BEGIN IMMEDIATE')
                 result,cookie=self.route(c,data)
+            self.route_ms=(time.perf_counter()-route_start)*1000
+            from realtime import Stream
+            from socket_transport import Socket
+            if self.command=='POST':result=self.after_write(data,result)
+            if isinstance(result,Socket):
+                result.serve(self,db,DATA);return
+            if isinstance(result,Stream):
+                result.serve(self,db,DATA);return
             if isinstance(result,Binary):
+                cacheable=urlsplit(self.path).path=='/api/asset'
+                etag='\"'+hashlib.sha256(result.path if isinstance(result.path,bytes) else (str(result.path)+str(result.path.stat().st_mtime_ns)+str(result.path.stat().st_size)).encode()).hexdigest()+'\"'
+                if cacheable and self.headers.get('If-None-Match')==etag:
+                    self.send_response(304);self.send_header('ETag',etag);self.send_header('Cache-Control','private, no-cache');self.end_headers();return
                 self.send_response(200);self.send_header('Content-Type',result.mime)
+                if cacheable:self.send_header('ETag',etag)
                 self.send_header('Content-Length',str(len(result.path) if isinstance(result.path,bytes) else result.path.stat().st_size))
-                self.send_header('Cache-Control','no-store');self.send_header('X-Content-Type-Options','nosniff')
+                self.send_header('Cache-Control','private, no-cache' if cacheable else 'no-store');self.send_header('X-Content-Type-Options','nosniff')
                 self.send_header('Content-Security-Policy',"sandbox; default-src 'none'")
                 self.end_headers()
                 if isinstance(result.path,bytes):self.wfile.write(result.path)
                 else:
                     with result.path.open('rb') as f:shutil.copyfileobj(f,self.wfile)
             else:self.send(200,result,cookie)
+        except (BrokenPipeError,ConnectionResetError):self.close_connection=True
+        except TimeoutError:
+            self.close_connection=True
+            try:self.send(408,{'error':'Tempo de envio esgotado. Tente novamente.'})
+            except OSError:pass
         except Failure as e:self.send(e.status,{'error':e.message})
         except (ValueError,TypeError,KeyError) as e:
             # No request values, cookies or file paths in the user-facing message.
@@ -112,13 +159,24 @@ class Handler(BaseHTTPRequestHandler):
             self.send(400,{'error':f'Dados incompatíveis nesta operação. Referência: {reference}. Consulte o terminal do Atlas.'})
         except sqlite3.IntegrityError:self.send(409,{'error':'Registro já existe ou referência inválida.'})
         except Exception:self.send(500,{'error':'Falha interna. Nenhuma operação parcial foi confirmada.'})
+    def after_write(self,data,result):
+        from realtime import publish
+        if self.path=='/api/token-preview':
+            from realtime import preview
+            preview(data['table_id'],result['preview']);result={'ok':True}
+        elif self.path=='/api/scene-preload':
+            from realtime import prepare
+            result={'id':prepare(data['table_id'],data['asset_id'])}
+        elif self.path=='/api/scene-preload-ready':
+            from realtime import ready
+            ready(data['table_id'],result['user'],data['ticket']);result={'ok':True}
+        else:
+            from realtime import clear_previews
+            clear_previews(data.get('table_id'));publish(data.get('table_id'),self.path)
+        return result
     def route(self,c,d):
         path=self.path;post=self.command=='POST'
         if path in ['/api/register','/api/login'] and post:
-            with ATTEMPTS_LOCK:
-                bucket=ATTEMPTS[self.client_address[0]];now=time.monotonic()
-                while bucket and bucket[0]<now-60:bucket.popleft()
-                require(len(bucket)<30,429,'Muitas tentativas. Aguarde um minuto.');bucket.append(now)
             require(isinstance(d.get('name'),str),400,'Nome inválido.')
             name=d['name'].strip();pw=d.get('password','')
             require(isinstance(pw,str) and 2<=len(name)<=60 and 10<=len(pw)<=256,400,'Nome: 2–60 caracteres. Senha: 10–256 caracteres.')
@@ -128,6 +186,11 @@ class Handler(BaseHTTPRequestHandler):
             else:
                 row=c.execute('SELECT * FROM users WHERE name=?',(name,)).fetchone()
                 require(row and hmac.compare_digest(row['password'],password(pw,row['salt'])),401,'Nome ou senha incorretos.');user=row['id']
+            previous=SimpleCookie();previous.load(self.headers.get('Cookie',''))
+            if 'atlas' in previous:
+                old_token=hashlib.sha256(previous['atlas'].value.encode()).hexdigest()
+                c.execute('DELETE FROM sessions WHERE token=?',(old_token,))
+            c.execute('DELETE FROM sessions WHERE expires<=?',(int(time.time()),))
             token=secrets.token_urlsafe(32)
             c.execute('INSERT INTO sessions VALUES(?,?,?)',(hashlib.sha256(token.encode()).hexdigest(),user,int(time.time())+43200))
             return {'ok':True},f'atlas={token}; HttpOnly; SameSite=Strict; Path=/; Max-Age=43200'
@@ -144,6 +207,7 @@ class Handler(BaseHTTPRequestHandler):
             expected=key_file.read_text(encoding='utf-8').strip() if key_file.is_file() else ''
             supplied=d.get('host_key','')
             require(isinstance(supplied,str) and expected and hmac.compare_digest(supplied,expected),403,'Informe o código do anfitrião exibido no terminal.')
+            require((ROOT/'campaign'/'manifest.json').is_file(),409,'Acervo do Estigma não encontrado (campaign/manifest.json). Esta atualização contém o sistema e os tokens. Restaure a pasta campaign completa da instalação anterior, ao lado de server.py. Se sua mesa já existe, abra-a na lista de mesas; não é necessário prepará-la novamente. Sem o acervo original, crie uma mesa e importe seus arquivos pela Biblioteca.')
             return create_campaign(c,ROOT,DATA,user),None
         if path=='/api/system-presets' and not post:
             from system_profiles import presets
@@ -167,6 +231,36 @@ class Handler(BaseHTTPRequestHandler):
         tid=d.get('table_id') if post else parse_qs(urlsplit(self.path).query).get('table_id',[''])[0]
         member=c.execute('SELECT role FROM members WHERE table_id=? AND user_id=?',(tid,user)).fetchone()
         require(member);role=member['role'];master=role in ['owner','gm']
+        if urlsplit(path).path=='/api/socket' and not post:
+            require(self.headers.get('Origin')=='http://'+self.headers['Host'],403,'Origem inválida.')
+            try:import websockets
+            except ImportError:raise Failure(503,'Instale as dependências da CP12 para ativar WebSocket.')
+            from socket_transport import Socket
+            return Socket(tid,user,token),None
+        if urlsplit(path).path=='/api/events' and not post:
+            from realtime import Stream
+            return Stream(tid,user,token),None
+        if path=='/api/scene-preload' and post:
+            require(master)
+            asset=permitted(c,tid,d.get('asset_id'),user,master)
+            require(asset and asset['mime'].startswith('image/'),404,'Mapa indisponível.')
+            return {'ok':True},None
+        if path=='/api/scene-preload-ready' and post:
+            from realtime import preload_for
+            prep=preload_for(c,tid,user,master)
+            require(prep and prep['id']==d.get('ticket'),409,'Preparação encerrada.')
+            return {'user':user},None
+        if path=='/api/token-preview' and post:
+            import math
+            angle=d.get('direction')
+            require(type(angle) in (int,float) and math.isfinite(angle) and 0<=angle<360,400,'Direção inválida.')
+            aid=d.get('asset_id');require(isinstance(aid,str),400,'Mapa inválido.')
+            scene=c.execute('SELECT asset_id FROM scene WHERE table_id=?',(tid,)).fetchone()
+            require(scene and scene[0]==aid,409,'A cena mudou.')
+            from realtime import visible_tokens
+            t=visible_tokens(c,DATA,tid,aid,user,master).get(d.get('token_id'))
+            require(t and (master or t['owner']==user))
+            return {'preview':{'asset_id':aid,'token_id':t['id'],'direction':angle,'sender':user}},None
         extra=feature_route(c,DATA,path,d,user,tid,master,require)
         if extra is not NotImplemented:return extra,None
         if path=='/api/import-legacy' and post:

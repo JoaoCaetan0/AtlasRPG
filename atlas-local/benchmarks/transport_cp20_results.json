@@ -1,0 +1,24 @@
+{
+  "environment": "same-host loopback, synthetic small map, fog enabled, 2 authorized clients",
+  "preview_send_ack_and_delivery": {
+    "samples": 30,
+    "median_ms": 20.969,
+    "p95_ms": 24.961,
+    "max_ms": 53.202
+  },
+  "preview_payload_json_bytes": {
+    "min": 133,
+    "max": 135
+  },
+  "connect_initial_state_and_close": {
+    "samples": 5,
+    "median_ms": 3.005,
+    "p95_ms": 3.329,
+    "max_ms": 3.329
+  },
+  "limitations": [
+    "No browser render/decode measured",
+    "No Radmin/network measurement",
+    "No before-after transport speedup asserted"
+  ]
+}

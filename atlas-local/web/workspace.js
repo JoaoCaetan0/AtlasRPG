@@ -3,6 +3,8 @@ let currentPanel = null,
   workspaceView = null,
   sidebarLoading = false,
   sceneActions = {};
+let minimizedPanel = null;
+const panelScroll = new Map();
 const panelNames = {
   scene: "Mapa",
   chat: "Conversa",
@@ -13,11 +15,12 @@ const panelNames = {
   conditions: "Condições",
   initiative: "Iniciativa",
   assets: "Tokens",
-  fog: "Névoa de guerra",
+  fog: "Visão e névoa",
   history: "Desfazer e refazer",
   maps: "Mapas",
-  files: "Biblioteca",
+  files: "Documentos",
   characters: "Personagens",
+  saved: "Tokens salvos",
   notes: "Caderno",
   members: "Participantes",
   admin: "Administração",
@@ -37,6 +40,7 @@ const iconPaths = {
   history: "M3 10a9 9 0 1 1 2 8M3 3v7h7m2-4v6l4 2",
   maps: "M3 5l6-2 6 2 6-2v16l-6 2-6-2-6 2V5zm6-2v16m6-14v16",
   files: "M3 6h7l2 3h9v11H3V6zm0 0V4h7l2 2h8v3",
+  saved: "M4 3h13l3 3v15H4V3zm4 0v6h8V3M8 21v-8h8v8",
   characters: "M8 3h12v18H4V7l4-4zm0 0v4H4m5 3h6m-6 4h6m-6 4h6",
   notes: "M4 3h16v18H4V3zm4 5h8m-8 4h8m-8 4h5",
   members:
@@ -48,14 +52,15 @@ function workspaceIcon(name) {
   return `<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="${iconPaths[name]}"/></svg>`;
 }
 function renderWorkspace(t) {
+  startRealtime(t.id);
   currentPanel = null;
+  minimizedPanel = null;panelScroll.clear();
   workspaceView = null;
   sidebarLoading = false;
   document.body.classList.add("in-workspace");
   const panels = [
     "chat",
-    ...(isMaster() ? ["drawings", "fog"] : []),
-    "maps",
+    ...(isMaster() ? ["drawings", "fog", "maps"] : []),
     "files",
     "characters",
     "notes",
@@ -63,7 +68,10 @@ function renderWorkspace(t) {
     ...(isMaster() ? ["admin"] : []),
   ];
   const topPanels=["combat",...(isMaster()?["grid","assets","conditions"]:[]),"initiative","dice"];
-  app.innerHTML = `<div class="workspace-heading"><button id="back" class="secondary" title="Voltar às mesas">← Mesas</button><h1>${esc(t.name)}</h1><span id="room-synopsis" title="${esc(t.synopsis)}">${esc(t.system)}</span></div><nav class="battle-tabs" aria-label="Ferramentas de combate"><button id="scene-pointer" title="Voltar ao mapa" aria-label="Voltar ao mapa">${workspaceIcon("scene")}</button>${isMaster()?'<button id="previous-map" disabled aria-label="Voltar ao mapa anterior" title="Nenhum mapa anterior">←</button><button id="quick-undo" disabled aria-label="Desfazer">↶</button><button id="quick-redo" disabled aria-label="Refazer">↷</button>':""}${topPanels.map(key=>`<button data-tab="${key}" aria-label="${panelNames[key]}" aria-expanded="false" aria-controls="workspace-drawer">${workspaceIcon(key)}<span>${panelNames[key]}</span></button>`).join("")}</nav><div id="pane"></div><nav class="workspace-rail" aria-label="Ferramentas da mesa">${panels.map((key) => `<button data-tab="${key}" aria-label="${panelNames[key]}" title="${panelNames[key]}" aria-expanded="false" aria-controls="workspace-drawer">${workspaceIcon(key)}<span class="rail-tooltip" aria-hidden="true">${panelNames[key]}</span></button>`).join("")}</nav><aside id="workspace-drawer" hidden aria-labelledby="workspace-title"><div class="drawer-heading"><h2 id="workspace-title"></h2><button id="drawer-close" class="secondary" aria-label="Recolher painel" title="Recolher painel (Esc)">×</button></div><div class="drawer-scroll"><div id="combat-slot" hidden></div><div id="drawings-slot" hidden></div><div id="grid-slot" hidden></div><div id="conditions-slot" hidden></div><div id="initiative-slot" hidden></div><div id="assets-slot" hidden></div><div id="fog-slot" hidden></div><div id="history-slot" hidden></div><div id="chat-slot" hidden></div><div id="dice-slot" hidden></div><div id="workspace-content" hidden></div></div></aside><dialog id="dialog"><div class="row"><h2 id="dialog-title"></h2><button id="close-dialog" class="secondary">Fechar</button></div><div id="dialog-body"></div></dialog>`;
+  app.innerHTML = `<div class="workspace-heading"><button id="back" class="secondary" title="Voltar às mesas">← Mesas</button><h1>${esc(t.name)}</h1><span id="room-synopsis" title="${esc(t.synopsis)}">${esc(t.system)}</span></div><nav class="battle-tabs" aria-label="Ferramentas de combate"><button id="scene-pointer" title="Voltar ao mapa" aria-label="Voltar ao mapa">${workspaceIcon("scene")}</button>${isMaster()?'<button id="previous-map" disabled aria-label="Voltar ao mapa anterior" title="Nenhum mapa anterior">←</button><button id="quick-undo" disabled aria-label="Desfazer">↶</button><button id="quick-redo" disabled aria-label="Refazer">↷</button>':""}${topPanels.map(key=>`<button data-tab="${key}" aria-label="${panelNames[key]}" aria-expanded="false" aria-controls="workspace-drawer">${workspaceIcon(key)}<span>${panelNames[key]}</span></button>`).join("")}</nav><div id="pane"></div><nav class="workspace-rail" aria-label="Ferramentas da mesa">${panels.map((key) => `<button data-tab="${key}" aria-label="${panelNames[key]}" title="${panelNames[key]}" aria-expanded="false" aria-controls="workspace-drawer">${workspaceIcon(key)}<span class="rail-tooltip" aria-hidden="true">${panelNames[key]}</span></button>`).join("")}</nav><button id="drawer-resume" hidden></button><aside id="workspace-drawer" hidden aria-labelledby="workspace-title"><div class="drawer-heading"><h2 id="workspace-title"></h2><button id="drawer-close" class="secondary" aria-label="Minimizar painel" title="Minimizar painel (Esc)">−</button></div><div class="drawer-scroll"><div id="combat-slot" hidden></div><div id="drawings-slot" hidden></div><div id="grid-slot" hidden></div><div id="conditions-slot" hidden></div><div id="initiative-slot" hidden></div><div id="assets-slot" hidden></div><div id="fog-slot" hidden></div><div id="history-slot" hidden></div><div id="chat-slot" hidden></div><div id="dice-slot" hidden></div><div id="workspace-content" hidden></div></div></aside><dialog id="dialog"><div class="row"><h2 id="dialog-title"></h2><button id="close-dialog" class="secondary">Fechar</button></div><div id="dialog-body"></div></dialog>`;
+  mountPanelPreferences($(".workspace-rail"),me.id);
+  $("#drawer-resume").onclick=()=>act(()=>openWorkspacePanel(minimizedPanel));
+  act(()=>chatView($("#chat-slot")));
   $("#scene-pointer").onclick=()=>{if(!sidebarLoading)setSidebar(null); sceneActions.pointer?.();};
   for(const dir of ["undo","redo"]) if($("#quick-"+dir)) $("#quick-"+dir).onclick=()=>$("#combat-"+dir)?.click();
   $("#back").onclick = () =>
@@ -105,10 +113,19 @@ function renderWorkspace(t) {
   );
 }
 function setSidebar(name, focus = true) {
+  if (["fog","maps"].includes(name)&&!isMaster()) return;
   if (!$("#workspace-drawer")) return;
   const previous = currentPanel;
+  if(previous)panelScroll.set(previous,$(".drawer-scroll").scrollTop);
+  if(!name&&previous)minimizedPanel=previous;
+  const resume=$("#drawer-resume");
+  if(resume){resume.hidden=!!name||!minimizedPanel;resume.textContent="↗ "+(panelNames[minimizedPanel]||"");resume.setAttribute("aria-label","Reabrir "+(panelNames[minimizedPanel]||"painel"));}
+
   $("#workspace-drawer").classList.toggle("admin-drawer",name==="admin");
   currentPanel = name;
+  $("#workspace-drawer").classList.toggle("conversation-drawer",name==="chat");
+  $("#workspace-drawer").classList.toggle("dice-drawer",name==="dice");
+  window.dispatchEvent(new CustomEvent("atlas-panel",{detail:name}));
   $("#workspace-drawer").classList.toggle("conditions-drawer",name==="conditions");
   $("#workspace-drawer").classList.toggle("battle-drawer",["combat","grid","assets","conditions","initiative","dice"].includes(name));
   const slot = ["combat", "drawings", "grid", "conditions", "initiative", "assets", "fog", "history", "chat", "dice"].includes(name)
@@ -126,6 +143,7 @@ function setSidebar(name, focus = true) {
   if (name === "assets" && $("#asset-library")) $("#asset-library").open = true;
   if (name === "history" && $("#combat-history"))
     $("#combat-history").open = true;
+  $(".drawer-scroll").scrollTop=panelScroll.get(name)||0;
   if (focus) {
     if (name) $("#drawer-close").focus({ preventScroll: true });
     else
@@ -135,16 +153,18 @@ function setSidebar(name, focus = true) {
   }
 }
 async function openWorkspacePanel(name, toggle = false) {
-  if (sidebarLoading || currentPane !== "scene") return;
+  if (sidebarLoading || currentPane !== "scene" || !name) return;
+  if(name==="saved"){if(!isMaster())return;await openWorkspacePanel("characters");if(currentPanel==="characters"&&canLeave())await savedTokenView();return;}
   if (name === "scene" || (toggle && currentPanel === name)) {
     setSidebar(null);
     return;
   }
-  if (["assets", "drawings", "grid", "conditions", "fog", "history", "admin"].includes(name) && !isMaster()) return;
+  if (["assets", "drawings", "grid", "conditions", "history", "admin", "saved", "fog", "maps"].includes(name) && !isMaster()) return;
   const generic = !["chat", "dice", "combat", "drawings", "grid", "conditions", "initiative", "assets", "fog", "history"].includes(
     name,
   );
-  if (workspaceView && workspaceView !== name && dirty) {
+  if(generic&&workspaceView!==name&&document.querySelector('.sheet-workspace[aria-busy="true"]')){showFeedback("Aguarde o salvamento da ficha.");return;}
+  if (generic && workspaceView && workspaceView !== name && dirty) {
     if (!canLeave()) return;
     $("#workspace-content").replaceChildren();
     workspaceView = null;
@@ -169,6 +189,7 @@ async function openWorkspacePanel(name, toggle = false) {
         maps: mapView,
         files: fileView,
         characters: characterView,
+        saved: savedTokenView,
         notes: noteView,
         members: memberView,
         admin: adminView,

@@ -27,7 +27,7 @@ class Fog(unittest.TestCase):
   code,r=self.gm.call('fog',{**self.args,'revision':self.state()['revision'],'action':action,**kwargs});self.assertEqual(code,200,r);return r
  def image(self,client,aid=None):
   with client.http.open(self.base+'/api/asset?table_id='+self.tid+'&id='+(aid or self.aid)) as r:
-   self.assertEqual(r.headers['Cache-Control'],'no-store');return r.read()
+   self.assertEqual(r.headers['Cache-Control'],'private, no-cache');return r.read()
  def test_protected_pixels_alias_permissions_and_rehide(self):
   self.assertEqual(self.image(self.player),self.original)
   self.do('enable');pixels=Image.open(BytesIO(self.image(self.player)));self.assertEqual(set(pixels.get_flattened_data()),{(8,12,18)})

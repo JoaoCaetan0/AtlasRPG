@@ -14,7 +14,7 @@ def hydrate(c,tid,state,require=None):
    token.pop('character_id',None);token['owner']=None;continue
   ch=rows[cid];fields=json.loads(ch['fields'])
   token['name']=str(fields.get('nome') or ch['name'])[:60]
-  token['owner']=ch['user_id'] if ch['user_id'] in members else None
+  if not token.get('control_override'):token['owner']=ch['user_id'] if ch['user_id'] in members else None
  linked={t['id']:t for t in state['tokens'] if t.get('character_id')}
  for entry in state['entries']:
   if entry['token'] in linked:entry['name']=linked[entry['token']]['name']

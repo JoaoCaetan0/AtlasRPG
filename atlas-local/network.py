@@ -9,6 +9,7 @@ def bind_address(value=None):
  return str(ip)
 
 def valid_request(headers,address):
+ if len(headers.get_all('Host',[]))!=1 or len(headers.get_all('Origin',[]))>1:return False
  host,port=address;allowed={f'{host}:{port}'}
  if host=='127.0.0.1':allowed.add(f'localhost:{port}')
  authority=headers.get('Host','')

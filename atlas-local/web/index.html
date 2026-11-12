@@ -4,7 +4,7 @@
     name="viewport"
     content="width=device-width,initial-scale=1"
   /><title>Atlas • Mesas</title>
-  <link rel="stylesheet" href="/style.css" />
+  <link rel="stylesheet" href="/style.css?v=16-CP20" />
   <header>
     <strong>◈ ATLAS <small> / servidor local</small></strong
     ><span id="identity">Estigma do Caos</span>
@@ -19,13 +19,13 @@
     (async function bootAtlas() {
       const message = document.querySelector("#notice");
       const modules = [
-        ["session.js", "mountDice"], ["system-profiles.js", "mountAdminSections"], ["admin.js", "adminView"],
-        ["files.js", "mapView"], ["participants.js", "memberView"],
+        ["ui-feedback.js", "mountFeedback"], ["dice-visuals.js", "animateDiceTray"], ["session.js", "mountDice"], ["system-profiles.js", "mountAdminSections"], ["admin.js", "adminView"],
+        ["realtime.js", "startRealtime"], ["npcs.js", "npcView"], ["files.js", "mapView"], ["participants.js", "memberView"],
         ["characters.js", "characterView"], ["navigation.js", "navigateMap"],
-        ["combat.js", "combatView"], ["workspace.js", "renderWorkspace"],
+        ["combat.js", "combatView"], ["panel-preferences.js", "mountPanelPreferences"], ["workspace.js", "renderWorkspace"],
         ["app.js", "start"]
       ];
-      message.textContent = "Carregando Atlas V16-CP3…";
+      message.textContent = "Carregando Atlas V16-CP20…";
       let current = "";
       try {
         for (const [file, expected] of modules) {
@@ -34,7 +34,7 @@
             try {
               await new Promise((resolve, reject) => {
                 const script = document.createElement("script");
-                script.src = "/" + file + "?v=16-CP3&attempt=" + attempt;
+                script.src = "/" + file + "?v=16-CP20&attempt=" + attempt;
                 script.onload = resolve;
                 script.onerror = () => {script.remove(); reject(Error("download"));};
                 document.body.append(script);
@@ -48,7 +48,7 @@
         await window.start();
       } catch (error) {
         message.textContent = "Não foi possível carregar " + current +
-          ". Encerre o servidor, extraia a correção V16-CP3 na pasta do Atlas substituindo os arquivos do programa, reinicie e pressione Ctrl+F5. Preserve a pasta data/.";
+          ". Encerre o servidor, extraia a correção V16-CP20 na pasta do Atlas substituindo os arquivos do programa, reinicie e pressione Ctrl+F5. Preserve a pasta data/.";
         const retry = document.createElement("button");
         retry.textContent = "Tentar carregar novamente";
         retry.onclick = () => location.reload();

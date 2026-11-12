@@ -5,8 +5,16 @@ async function openTokenCharacter(id) {
   await characterEditor(id);
 }
 
-async function characterView() {
+function characterSections(selected) {
+ if(!isMaster())return '';
+ return `<nav class="character-sections" aria-label="Coleção de personagens"><button type="button" data-collection="characters" aria-pressed="${selected==='characters'}">Personagens</button><button type="button" data-collection="saved" aria-pressed="${selected==='saved'}">Tokens salvos</button></nav>`;
+}
+function bindCharacterSections() {
+ document.querySelectorAll('[data-collection]').forEach(b=>b.onclick=()=>act(async()=>{if(!canLeave())return;await (b.dataset.collection==='saved'?savedTokenView():characterView());}));
+}
+async function characterView(highlightId) {
   const rows = await api("characters?table_id=" + active.id);
+  const art = isMaster()?await tokenPortraitCatalog():await (await import('/combat/asset-library.mjs')).loadTokenCatalog();
   const profile = (await api("system-profile?table_id="+active.id)).profile;
   let templates = [];
   if (isMaster())
@@ -14,13 +22,18 @@ async function characterView() {
       (a) => a.mime === "application/pdf",
     );
   $("#workspace-content").innerHTML =
-    `<h2>Personagens</h2><p>Fichas individuais. Salve no editor antes de exportar o PDF.</p><div class="grid">${rows.map((r) => `<article class="card"><h3>${esc(r.name)}</h3><button data-character="${r.id}">Abrir ficha</button></article>`).join("")}</div>${isMaster() ? `<form id="new-character" class="card"><h3>Criar personagem</h3><label>Nome<input name="name" required maxlength="120"></label><label>Jogador responsável<select name="user_id">${members.map((m) => `<option value="${m.id}">${esc(m.name)}</option>`).join("")}</select></label><label>Modelo PDF<select name="template_id">${profile.engine === "generic" ? '<option value="">Ficha configurável do Atlas</option>' : ""}${templates.map((t) => `<option value="${t.id}">${esc(t.name)}</option>`).join("")}</select></label><button ${templates.length || profile.engine === "generic" ? "" : "disabled"}>Criar ficha</button><p>Envie modelos preenchíveis pela Biblioteca. A ficha de Estigma acompanha o acervo completo.</p></form>` : ""}`;
+    characterSections("characters") + `<p class="muted">Arraste um personagem para o mapa ou use ＋. Clique no retrato para trocar a imagem.</p><div class="character-roster">${rows.map(r=>{const pic=art.find(a=>a.id===r.appearance);const image=pic?.image||(r.appearance?.startsWith('custom-')?'/api/token-art?table_id='+active.id+'&id='+encodeURIComponent(r.appearance):'');return `<article class="roster-card" draggable="true" data-roster="${esc(r.id)}"><button class="roster-portrait" data-portrait="${esc(r.id)}" title="Alterar imagem de ${esc(r.name)}" aria-label="Alterar imagem de ${esc(r.name)}">${image?`<img src="${esc(image)}" draggable="false" alt="">`:'<span>♟</span>'}<small>✎</small></button><div class="roster-copy"><strong>${esc(r.name)}</strong><button class="roster-sheet" data-character="${r.id}">Abrir ficha</button></div><button class="secondary roster-add" data-deploy="${r.id}" title="Inserir no centro da área visível" aria-label="Inserir ${esc(r.name)} no mapa">＋</button></article>`;}).join('')}</div>${isMaster() ? `<form id="new-character" class="card"><h3>Criar personagem</h3><label>Nome<input name="name" required maxlength="120"></label><label>Jogador responsável<select name="user_id">${members.map((m) => `<option value="${m.id}">${esc(m.name)}</option>`).join("")}</select></label><label>Modelo PDF<select name="template_id">${profile.engine === "generic" ? '<option value="">Ficha configurável do Atlas</option>' : ""}${templates.map((t) => `<option value="${t.id}">${esc(t.name)}</option>`).join("")}</select></label><button ${templates.length || profile.engine === "generic" ? "" : "disabled"}>Criar ficha</button><p>Envie modelos preenchíveis pela Biblioteca. A ficha de Estigma acompanha o acervo completo.</p></form>` : ""}`;
+  bindCharacterSections();
+  if(highlightId){const card=[...document.querySelectorAll("[data-roster]")].find(c=>c.dataset.roster===highlightId);card?.classList.add("roster-updated");card?.querySelector("[data-character]")?.focus({preventScroll:true});card?.scrollIntoView({block:"nearest"});}
   document
     .querySelectorAll("[data-character]")
     .forEach(
       (b) =>
         (b.onclick = () => act(() => characterEditor(b.dataset.character))),
     );
+  document.querySelectorAll('[data-roster]').forEach(card=>{card.ondragstart=e=>{e.dataTransfer.setData('application/x-atlas-character',card.dataset.roster);e.dataTransfer.effectAllowed='copy';};});
+  document.querySelectorAll('[data-deploy]').forEach(b=>b.onclick=()=>act(()=>{if(!sceneActions.deploy)throw Error('Escolha um mapa primeiro.');return sceneActions.deploy(b.dataset.deploy);}));
+  document.querySelectorAll('[data-portrait]').forEach(b=>b.onclick=()=>act(()=>chooseCharacterPortrait(rows.find(c=>c.id===b.dataset.portrait))));
   if (isMaster())
     $("#new-character").onsubmit = (e) => {
       e.preventDefault();
@@ -48,7 +61,8 @@ async function characterEditor(id) {
   if (!values.nome) values.nome = c.name;
   const groups = {
     Identidade: [],
-    "Atributos e recursos": [],
+    Atributos: [],
+    "Recursos e defesa": [],
     Perícias: [],
     "Poderes e magias": [],
     Inventário: [],
@@ -59,8 +73,8 @@ async function characterEditor(id) {
     if (k.startsWith("skill_") || k === "pp") return "Perícias";
     if (/^(item_|efeito_p3_|detalhamento_|moedas)/.test(k)) return "Inventário";
     if (/^(poder_|efeito_|resistencia_)/.test(k)) return "Poderes e magias";
-    if (/^(atributo_|pv_|pd_|def_|cond_)/.test(k))
-      return "Atributos e recursos";
+    if (k.startsWith("atributo_")) return "Atributos";
+    if (/^(pv_|pd_|def_|cond_)/.test(k)) return "Recursos e defesa";
     return "Descrição e anotações";
   }
   c.definitions.forEach((f) => groups[group(f.key)].push(f));
@@ -87,7 +101,7 @@ async function characterEditor(id) {
   const b = c.build || {},
     extras = b.extras || {};
   $("#workspace-content").innerHTML =
-    `<div class="row sheet-heading"><h2>${esc(c.name)}</h2><button class="secondary" id="back-characters">← Personagens</button></div><p>A ficha é salva no servidor. O PDF baixado é uma cópia editável.</p><form id="character-fields">${
+    `<div class="row sheet-heading"><h2>${esc(c.name)}</h2><button class="secondary" id="back-characters">← Personagens</button></div><p class="sheet-caption">Ficha de personagem · PDF editável</p><form id="character-fields">${
       compatible
         ? `<details class="sheet-section" open><summary>Assistente de criação • Estigma do Caos</summary><label><input type="checkbox" id="auto-stats" ${b.auto ? "checked" : ""}> Calcular PV máximo, PD máximo e Defesa natural ao salvar</label><p>Escolha raça e classe, depois informe os cinco atributos da sua Lótus. A distribuição de classe permanece manual: os valores do diagrama ainda precisam de conferência visual. Você pode editar 2 pontos conforme o livro.</p><div id="stat-summary" class="stat-summary"></div><label id="race-skill-label">Perícia racial à escolha<select id="race-skill"></select></label><div id="class-powers">${Object.entries(
             rules.powers,
@@ -236,7 +250,9 @@ async function characterEditor(id) {
   }
   form.onsubmit = (e) => {
     e.preventDefault();
-    act(save);
+    act(()=>runSheetSave(form,async()=>{
+      await save();await characterView(id);showFeedback('Personagem salvo.');
+    }));
   };
   $("#back-characters").onclick = () =>
     act(async () => {
@@ -247,7 +263,7 @@ async function characterEditor(id) {
       }
     });
   $("#export-character").onclick = () =>
-    act(async () => {
+    act(() => runSheetSave(form,async () => {
       await save();
       $("#dialog-title").textContent = c.name;
       $("#dialog-body").replaceChildren();
@@ -256,7 +272,7 @@ async function characterEditor(id) {
       frame.src = "/api/character-pdf?table_id=" + active.id + "&id=" + id;
       $("#dialog-body").append(frame);
       $("#dialog").showModal();
-    });
+    }));
   $("#field-search").oninput = (e) => {
     const q = e.target.value.trim().toLocaleLowerCase();
     form
@@ -303,4 +319,107 @@ async function characterEditor(id) {
       });
     await recalc();
   }
+  mountSheetWorkspace(form);
+}
+
+async function chooseCharacterPortrait(character){
+ const {loadTokenCatalog}=await import('/combat/asset-library.mjs');
+ let art=isMaster()?await tokenPortraitCatalog():await loadTokenCatalog();
+ const tid=active.id;
+ $('#dialog-title').textContent='Token de '+character.name;
+ $('#dialog-body').innerHTML=`<div class="portrait-picker"><label>Buscar imagem<input type="search" class="portrait-search" placeholder="Urso, goblin, guerreiro…"></label><button class="portrait-upload secondary">Criar com imagem</button><p class="muted">Define a imagem das próximas inserções. Tokens já na cena mantêm sua aparência.</p><div class="portrait-options"></div><p class="portrait-status" role="status"></p></div>`;
+ const host=$('.portrait-picker');let busy=false;
+ async function choose(id){if(busy)return;busy=true;try{await api('character-portrait',{table_id:tid,id:character.id,revision:character.revision,appearance:id});$('#dialog').close();if(active?.id===tid)await characterView();}catch(e){host.querySelector('.portrait-status').textContent=e.message;}finally{busy=false;}}
+ const norm=s=>s.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
+ function render(){const q=norm(host.querySelector('input').value);host.querySelector('.portrait-options').innerHTML='<button data-art="" title="Usar iniciais">♟<small>Iniciais</small></button>'+art.filter(a=>norm(a.name+' '+(a.family_name||'')).includes(q)).map(a=>`<button data-art="${esc(a.id)}" title="${esc(a.name)}" aria-pressed="${a.id===character.appearance}"><img src="${esc(a.thumbnail||a.image)}" alt="" loading="lazy"><small>${esc(a.name)}</small></button>`).join('');host.querySelectorAll('[data-art]').forEach(b=>b.onclick=()=>choose(b.dataset.art));}
+ host.querySelector('input').oninput=render;
+ host.querySelector('.portrait-upload').onclick=()=>act(async()=>{
+  const {openTokenMaker}=await import('/combat/token-maker.mjs');
+  openTokenMaker({save:({content})=>api('character-portrait',{table_id:tid,id:character.id,revision:character.revision,content}),onSaved:async()=>{$('#dialog').close();if(active?.id===tid)await characterView();}});
+ });
+ render();$('#dialog').showModal();host.querySelector('input').focus();
+}
+async function savedTokenView(){
+ if(!isMaster())return;
+ const [rows,art]=await Promise.all([api('saved-tokens?table_id='+active.id),tokenPortraitCatalog()]);
+ const host=$('#workspace-content');host.innerHTML=characterSections('saved')+`<p class="muted">Botão direito no token → Salvar token. Arraste um card para reutilizá-lo.</p><button type="button" class="secondary" id="saved-refresh">↻ Atualizar tokens</button><label>Buscar modelo<input id="saved-search" type="search" placeholder="Nome do token"></label><div class="saved-roster character-roster"></div>`;
+ function render(){const q=$('#saved-search').value.toLocaleLowerCase('pt-BR');host.querySelector('.saved-roster').innerHTML=rows.filter(t=>t.name.toLocaleLowerCase('pt-BR').includes(q)).map(t=>{const pic=art.find(a=>a.id===t.appearance);return `<article class="roster-card" draggable="true" data-saved="${esc(t.id)}">${pic?`<img class="roster-image" src="${esc(pic.thumbnail||pic.image)}" alt="" draggable="false">`:'<span class="npc-avatar">♟</span>'}<div class="roster-copy"><strong>${esc(t.name)}</strong><small>Movimento: ${t.budget}</small></div><button class="secondary" data-use="${t.id}" aria-label="Inserir ${esc(t.name)}">＋</button><button class="secondary" data-remove="${t.id}" aria-label="Excluir modelo ${esc(t.name)}">×</button></article>`;}).join('')||'<p class="empty">Nenhum token salvo.</p>';
+ host.querySelectorAll('[data-saved]').forEach(card=>card.ondragstart=e=>{e.dataTransfer.setData('application/x-atlas-saved-token',card.dataset.saved);e.dataTransfer.effectAllowed='copy';});
+ host.querySelectorAll('[data-use]').forEach(b=>b.onclick=()=>act(()=>{if(!sceneActions.saved)throw Error('Escolha um mapa primeiro.');return sceneActions.saved(b.dataset.use);}));
+ host.querySelectorAll('[data-remove]').forEach(b=>b.onclick=()=>act(async()=>{if(!confirm('Remover este modelo salvo? Os tokens na cena serão preservados.'))return;await api('saved-tokens',{table_id:active.id,id:b.dataset.remove,delete:true});rows.splice(rows.findIndex(t=>t.id===b.dataset.remove),1);render();}));
+ }
+ bindCharacterSections();$('#saved-refresh').onclick=()=>act(savedTokenView);$('#saved-search').oninput=render;render();
+}
+
+// One reusable sheet workspace; fields remain in their original form and retain names.
+function mountSheetWorkspace(form) {
+ const host=form.parentElement;
+ const sections=[...form.children].filter(n=>n.classList.contains('sheet-section')&&!n.hidden);
+ if(!sections.length)return;
+ form.classList.add('sheet-workspace');
+ const heading=host.querySelector('h2');
+ if(heading)heading.closest('.row')?.classList.add('sheet-identity-header');
+ const actions=form.querySelector('.sheet-actions');
+ const tools=document.createElement('div');tools.className='sheet-tools';
+ let search=form.querySelector('#field-search');
+ if(!search){const label=document.createElement('label');label.textContent='Buscar campo';search=document.createElement('input');search.type='search';search.id='field-search';search.placeholder='Nome, atributo, equipamento…';label.append(search);tools.append(label);}
+ else tools.append(search.closest('label'));
+ const nav=document.createElement('nav');nav.className='sheet-navigation';nav.setAttribute('aria-label','Seções da ficha');tools.append(nav);
+ const main=document.createElement('div');main.className='sheet-pages';
+ const empty=document.createElement('p');empty.className='empty';empty.textContent='Nenhum campo encontrado.';empty.hidden=true;main.append(empty);
+ const normalized=value=>value.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLocaleLowerCase();
+ const pages=sections.map((section,i)=>{
+  const title=section.querySelector(':scope > summary, :scope > h3');
+  const label=title?.childNodes[0]?.textContent?.trim()||'Habilidades';
+  const button=document.createElement('button');button.type='button';button.textContent=label.replace('Assistente de criação • Estigma do Caos','Cálculos');button.className='sheet-nav-item';
+  const ident='sheet-page-'+i;
+  section.id=section.id||ident;section.classList.add('sheet-page');section.open=true;
+  button.setAttribute('aria-controls',section.id);button.setAttribute('aria-pressed','false');
+  // The outer details is now a page; inner disclosures stay independently usable.
+  if(section.tagName==='DETAILS'&&title){title.addEventListener('click',e=>e.preventDefault());title.tabIndex=-1;}
+  nav.append(button);main.append(section);
+  return {section,button,scroll:0};
+ });
+ form.prepend(tools,main);if(actions)form.append(actions);
+ let selected=pages.findIndex(p=>p.button.textContent==='Identidade');if(selected<0)selected=0;
+ function activate(index,focus=false){
+  pages[selected].scroll=main.scrollTop;selected=index;
+  pages.forEach((p,i)=>{p.section.classList.toggle('sheet-page-visible',i===index);p.button.setAttribute('aria-pressed',String(i===index));});
+  main.scrollTop=pages[index].scroll;
+  if(focus)pages[index].button.focus();
+ }
+ function filter(){
+  const q=normalized(search.value.trim());
+  for(const p of pages){
+   const labels=[...p.section.querySelectorAll('.sheet-field, .compact-grid > label')];
+   for(const field of labels){if(!field.dataset.fieldLabel)field.dataset.fieldLabel=field.firstChild?.textContent||field.textContent;field.hidden=!!q&&!normalized(field.dataset.fieldLabel).includes(q);}
+   p.match=!q||(labels.length?labels.some(f=>!f.hidden):normalized(p.section.textContent).includes(q));
+   p.button.hidden=!p.match;
+  }
+  const first=pages.findIndex(p=>p.match);empty.hidden=first!==-1;
+  if(first===-1){pages.forEach(p=>p.section.classList.remove('sheet-page-visible'));return;}
+  activate(pages[selected].match?selected:first);
+ }
+ pages.forEach((p,i)=>p.button.onclick=()=>activate(i));
+ search.oninput=filter;
+ form.addEventListener('invalid',e=>{const i=pages.findIndex(p=>p.section.contains(e.target));if(i>=0){search.value='';filter();activate(i);for(const d of e.target.closest('.sheet-page').querySelectorAll('details'))d.open=true;}},true);
+ // Preserve existing dirty/recalculation handlers; search is purely local UI.
+ search.addEventListener('input',e=>e.stopPropagation());
+ activate(selected);
+}
+
+// Lock only the submitting sheet; minimize/chat remain available while it saves.
+const pendingSheets=new WeakSet();
+async function runSheetSave(form,work){
+ if(pendingSheets.has(form))return;
+ pendingSheets.add(form);
+ const previousInert=form.inert;
+ const status=form.querySelector('.sheet-actions [role="status"]');
+ const buttons=[...form.querySelectorAll('.sheet-actions button')].map(button=>[button,button.disabled]);
+ form.setAttribute('aria-busy','true');form.inert=true;
+ buttons.forEach(([button])=>button.disabled=true);
+ if(status)status.textContent='Salvando…';
+ try{return await work();}
+ catch(error){if(status)status.textContent=error.message;throw error;}
+ finally{pendingSheets.delete(form);form.inert=previousInert;form.removeAttribute('aria-busy');buttons.forEach(([button,disabled])=>button.disabled=disabled);}
 }

@@ -13,14 +13,28 @@ def scene_map(c,tid,aid):
  return matches[0] if len(matches)==1 else None
 
 def route(c,data,path,d,user,tid,master,require):
+ from saved_tokens import handle as saved_handle
+ result=saved_handle(c,data,path,d,user,tid,master,require)
+ if result is not NotImplemented:return result
+ from custom_tokens import handle as custom_handle
+ result=custom_handle(c,data,path,d,user,tid,master,require)
+ if result is not NotImplemented:return result
+ from vision_memory import handle as memory_handle
+ result=memory_handle(c,data,path,d,user,tid,master,require)
+ if result is not NotImplemented:return result
+ from token_resources import handle as resource_handle
+ result=resource_handle(c,data,path,d,user,tid,master,require)
+ if result is not NotImplemented:return result
  from scene_variants import handle as period_handle
  result=period_handle(c,data,path,d,user,tid,master,require)
  if result is not NotImplemented:return result
+ from dice_favorites import handle as favorite_handle
  from dice import handle as dice_handle
  from admin import handle as admin_handle
  from system_profiles import handle as profile_handle
  from recent_tokens import handle as recent_handle
- for handler in (dice_handle,admin_handle,profile_handle,recent_handle):
+ from npcs import handle as npc_handle
+ for handler in (favorite_handle,dice_handle,admin_handle,profile_handle,recent_handle,npc_handle):
   result=handler(c,path,d,user,tid,master,require)
   if result is not NotImplemented:return result
  result=fog.handle(c,data,path,d,user,tid,master,require)
@@ -41,10 +55,18 @@ def route(c,data,path,d,user,tid,master,require):
   return [{'id':r['id'],'name':r['name'],'mime':r['mime'],'size':r['size'],'public':bool(r['public']),'folder':r['folder'] or '', 'label':r['label'] or '', 'grants':[x[0] for x in c.execute('SELECT user_id FROM grants WHERE asset_id=?',(r['id'],))] if master else []} for r in rows if (master and target==user) or permitted(c,tid,r['id'],target,False)]
  if ep=='/api/asset' and not d:
   r=permitted(c,tid,q.get('id',[''])[0],user,master);require(r,404,'Arquivo indisponível.')
+  viewer=q.get('view_as',[''])[0]
+  if viewer:
+   require(master)
+   require(c.execute('SELECT 1 FROM members WHERE table_id=? AND user_id=?',(tid,viewer)).fetchone(),404,'Jogador ausente.')
+   require(permitted(c,tid,r['id'],viewer,False),404,'Imagem não compartilhada com este jogador.')
   p=data/'blobs'/r['digest'];require(p.is_file(),404,'Arquivo ausente. Reimporte a fonte.')
-  hidden=fog.read(c,tid,r['digest'])
-  if not master and hidden['enabled']:
-   return Binary(fog.masked(str(p),hidden['cells']),'image/png')
+  from token_vision import effective
+  hidden=effective(c,data,tid,r,viewer or user) if viewer or not master else fog.read(c,tid,r['digest'])
+  if (viewer or not master) and hidden['enabled']:
+   return Binary(*fog.vision_raster(str(p),hidden['cells'],hidden.get('dim_cells',fog.COVERED)))
+  if q.get('display',[''])[0]=='1' and r['mime'].startswith('image/'):
+   return Binary(*fog.display_raster(str(p)))
   return Binary(p,r['mime'])
  if ep=='/api/asset-grants' and d:
   require(master);aid=d['id'];require(permitted(c,tid,aid,user,True),404,'Arquivo ausente.')
@@ -55,14 +77,18 @@ def route(c,data,path,d,user,tid,master,require):
   for target in set(users):c.execute('INSERT INTO grants VALUES(?,?)',(aid,target))
   return {'ok':True}
  if ep=='/api/organize' and d:
+  require(permitted(c,tid,d['id'],user,master),404,'Arquivo indisponível nesta mesa.')
   target=d.get('user_id',user);require(master or target==user)
   require(c.execute('SELECT 1 FROM members WHERE table_id=? AND user_id=?',(tid,target)).fetchone(),404,'Participante ausente.')
   require(permitted(c,tid,d['id'],target,False) or (target==user and master),404,'Arquivo indisponível para o participante.')
   folder=d.get('folder','');label=d.get('label','');require(isinstance(folder,str) and isinstance(label,str) and len(folder)<=200 and len(label)<=200,400,'Texto muito longo.')
   c.execute('INSERT INTO placements VALUES(?,?,?,?) ON CONFLICT(asset_id,user_id) DO UPDATE SET folder=excluded.folder,label=excluded.label',(d['id'],target,folder,label));return {'ok':True}
  if ep=='/api/upload' and d:
-  require(master);name=d.get('name','');require(isinstance(name,str) and name==Path(name).name and '\\' not in name and len(name)<200,400,'Nome inválido.')
+  require(master);name=d.get('name','')
   body=base64.b64decode(d['content'],validate=True);require(len(body)<=10*1024**2,413,'Máximo de 10 MiB.')
+  from upload_validation import validate_upload
+  try:validate_upload(name,body)
+  except ValueError as e:require(False,400,str(e))
   aid=put(c,data,tid,'Envios/'+secrets.token_hex(8)+'/'+name,body);require(aid,400,'Formato não permitido.');return {'id':aid}
  if ep=='/api/scene-navigate' and d:
   require(master)

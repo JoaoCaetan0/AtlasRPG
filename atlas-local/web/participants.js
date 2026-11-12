@@ -71,90 +71,36 @@ async function noteView() {
   await load();
 }
 async function chatView(root = $("#chat-slot")) {
-  const $ = (selector) => root.querySelector(selector),
-    tid = active.id;
-  root.innerHTML =
-    '<div class="chat-history-tools row"><button id="older" class="secondary">Anteriores</button><button id="chat-live" class="secondary">Ao vivo</button><span id="chat-status" role="status"></span></div><div id="chat-log" aria-live="polite"></div><form id="chat"><label>Mensagem<textarea name="body" maxlength="4000" required placeholder="Converse com a mesa…"></textarea></label><button>Enviar</button></form>' +
-    (isMaster()
-      ? '<details><summary>Gerenciar conversa</summary><button id="clear-chat" class="danger">Apagar histórico</button></details>'
-      : "");
-  let last = "",
-    first = 0,
-    before = 0,
-    loading = false;
-  async function update() {
-    if (loading || !root.isConnected) return;
-    loading = true;
-    try {
-      const rows = await api(
-        "chat?table_id=" + tid + (before ? "&before=" + before : ""),
-      );
-      if (!root.isConnected) return;
-      const key = JSON.stringify(rows);
-      if (last !== key) {
-        const log = $("#chat-log"),
-          atBottom = log.scrollTop + log.clientHeight >= log.scrollHeight - 40;
-        last = key;
-        first = rows[0]?.id || 0;
-        log.innerHTML =
-          rows
-            .map(
-              (r) =>
-                `<article class="message"><strong>${esc(r.name)}</strong> <small>${new Date(r.created * 1000).toLocaleTimeString("pt-BR")}</small><p>${esc(r.body)}</p></article>`,
-            )
-            .join("") || "<p>Sem mensagens.</p>";
-        if (atBottom && !before) log.scrollTop = log.scrollHeight;
-      }
-      $("#chat-status").textContent = before ? "Histórico" : "Ao vivo";
-    } catch (e) {
-      if (root.isConnected) $("#chat-status").textContent = "Reconectando…";
-    } finally {
-      loading = false;
-    }
-  }
-  $("#chat").onsubmit = (e) => {
-    e.preventDefault();
-    const form = e.target,
-      body = form.elements.body.value,
-      button = form.querySelector("button");
-    if (button.disabled) return;
-    button.disabled = true;
-    act(async () => {
-      try {
-        await api("chat", { table_id: tid, body });
-        if (form.elements.body.value === body) form.reset();
-        before = 0;
-        last = "";
-        await update();
-      } finally {
-        button.disabled = false;
-      }
-    });
-  };
-  $("#older").onclick = () => {
-    if (first) {
-      before = first;
-      update();
-    }
-  };
-  $("#chat-live").onclick = () => {
-    before = 0;
-    update();
-  };
-  if (isMaster())
-    $("#clear-chat").onclick = () =>
-      act(async () => {
-        if (!confirm("Apagar todo o histórico da mesa?")) return;
-        await api("clear-chat", { table_id: tid });
-        before = 0;
-        last = "";
-        await update();
-      });
-  await update();
-  const timer = setInterval(() => {
-    if (!root.isConnected) clearInterval(timer);
-    else if (!before) update();
-  }, 1000);
+ const $=s=>root.querySelector(s),tid=active.id;
+ root.innerHTML=`<div class="chat-history-tools"><button id="older" class="secondary" title="Carregar mensagens anteriores">Anteriores</button><button id="chat-live" class="secondary" hidden>Voltar às recentes</button><span id="chat-status" role="status"></span></div><div id="chat-log" role="log" aria-label="Mensagens da mesa"></div><button id="chat-unread" class="secondary" hidden>Novas mensagens ↓</button><form id="chat"><div class="chat-input-row"><textarea name="body" rows="1" maxlength="4000" required aria-label="Mensagem" placeholder="Mensagem ou /r 1d20"></textarea><button class="chat-send" type="submit" title="Enviar (Enter)" aria-label="Enviar mensagem"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15m-6-6 6 6-6 6"/></svg></button></div><p class="chat-send-status" role="status"></p><details class="chat-options"><summary>Opções</summary><label>Visibilidade dos dados<select name="scope"><option value="public">Mesa</option><option value="gm">Mestres e você</option><option value="self">Somente você</option></select></label><small>Enter envia · Shift+Enter quebra a linha. /r 1d20+3 | Descrição</small>${isMaster()?'<button id="clear-chat" class="danger" type="button">Apagar mensagens</button>':''}</details></form>`;
+ const log=$('#chat-log'),form=$('#chat'),input=form.elements.body,send=$('.chat-send');let first='',before='',loading=false,queued=false,busy=false,last='',seen=null,unread=0,attempt=null,following=true;
+ const badge=document.querySelector('[data-tab="chat"]');let count=badge?.querySelector('.chat-badge');if(badge&&!count){count=document.createElement('span');count.className='chat-badge';count.hidden=true;badge.append(count);}
+ const bottom=()=>log.scrollHeight-log.scrollTop-log.clientHeight<48;
+ function notify(){if(count){count.hidden=!unread;count.textContent=unread>99?'99+':String(unread);badge.setAttribute('aria-label',unread?'Conversa · '+unread+' novas mensagens':'Conversa');}$('#chat-unread').hidden=!unread;}
+ function mark(){if(currentPanel==='chat'&&!before&&bottom()){unread=0;notify();}}
+ const panel=e=>{if(e.detail==='chat')requestAnimationFrame(()=>{if(following&&!before)log.scrollTop=log.scrollHeight;mark();});};window.addEventListener('atlas-panel',panel);log.addEventListener('scroll',()=>{if(currentPanel==='chat'){following=bottom();mark();}});
+ async function update(){if(!root.isConnected)return;if(loading){queued=true;return;}loading=true;
+  try{const page=before;const rows=await api('chat-events?table_id='+tid+(page?'&before='+encodeURIComponent(page):''));if(!root.isConnected)return;if(page!==before){queued=true;return;}
+   const stamp=JSON.stringify(rows),atBottom=currentPanel==='chat'?bottom():following,ids=new Set(rows.map(r=>r.kind+':'+r.id));
+   if(!page){if(seen){const fresh=rows.filter(r=>!seen.has(r.kind+':'+r.id)&&r.user_id!==me.id).length;if(currentPanel!=='chat'||!atBottom)unread+=fresh;}seen=ids;}
+   if(last!==stamp){first=rows[0]?.cursor||'';$('#older').disabled=rows.length<100;
+    const existing=new Map([...log.children].map(n=>[n.dataset.event,n]));const fragment=document.createDocumentFragment();
+    for(const r of rows){const id=r.kind+':'+r.id;let node=existing.get(id);if(!node){const wrapper=document.createElement('div');wrapper.innerHTML=r.kind===1?rollCard(r):`<article class="message ${r.user_id===me.id?'mine':''}"><header><strong>${esc(r.name)}</strong><time>${new Date(r.created*1000).toLocaleTimeString('pt-BR',{hour:'2-digit',minute:'2-digit'})}</time></header><p>${esc(r.body)}</p></article>`;node=wrapper.firstElementChild;node.dataset.event=id;}fragment.append(node);}
+    const scroll=log.scrollTop;log.replaceChildren(fragment);if(!rows.length)log.innerHTML='<p class="empty">Comece a conversa.</p>';if((atBottom||!last)&&!page)log.scrollTop=log.scrollHeight;else log.scrollTop=scroll;last=stamp;
+   }
+   $('#chat-live').hidden=!before;$('#chat-status').textContent=before?'Histórico':'';notify();mark();
+  }catch(e){if(root.isConnected)$('#chat-status').textContent='Reconectando…';}finally{loading=false;if(queued){queued=false;update();}}
+ }
+ input.onkeydown=e=>{if(e.key==='Enter'&&!e.shiftKey&&!e.isComposing){e.preventDefault();if(input.value.trim()&&!busy)form.requestSubmit();}};
+ input.oninput=()=>{input.style.height='auto';input.style.height=Math.min(96,input.scrollHeight)+'px';};
+ log.onclick=e=>{const b=e.target.closest('.reuse-roll');if(b){input.value='/r '+b.dataset.expression+(b.dataset.label?' | '+b.dataset.label:'');form.elements.scope.value=b.dataset.scope;input.focus();input.oninput();}};
+ form.onsubmit=async e=>{e.preventDefault();if(busy||!input.value.trim())return;busy=true;send.disabled=true;const body=input.value,scope=form.elements.scope.value,signature=JSON.stringify([body,scope]);if(!attempt||attempt.signature!==signature)attempt={signature,id:'chat-'+Date.now().toString(36)+'-'+Math.random().toString(36).slice(2)};
+  try{$('.chat-send-status').textContent='';await api('chat',{table_id:tid,body,scope,request_id:attempt.id});attempt=null;if(!root.isConnected)return;if(input.value===body){input.value='';input.oninput();}before='';last='';await update();log.scrollTop=log.scrollHeight;mark();input.focus();}catch(e){if(root.isConnected)$('.chat-send-status').textContent=e.message;}finally{busy=false;send.disabled=false;}
+ };
+ $('#older').onclick=()=>{if(first){before=first;last='';update();}};
+ $('#chat-live').onclick=$('#chat-unread').onclick=()=>{before='';last='';unread=0;notify();update().then(()=>{log.scrollTop=log.scrollHeight;});};
+ if(isMaster())$('#clear-chat').onclick=async()=>{if(!confirm('Apagar as mensagens? As rolagens serão preservadas.'))return;try{await api('clear-chat',{table_id:tid});before='';last='';await update();}catch(e){$('.chat-send-status').textContent=e.message;}};
+ const dispose=watchTable(root,async()=>{if(!before)return update();const rows=await api('chat-events?table_id='+tid);if(!root.isConnected)return;if(!before)return update();const ids=new Set(rows.map(r=>r.kind+':'+r.id));if(seen)unread+=rows.filter(r=>!seen.has(r.kind+':'+r.id)&&r.user_id!==me.id).length;seen=ids;notify();},['chat','rolls']);const observer=new MutationObserver(()=>{if(!root.isConnected){dispose();observer.disconnect();window.removeEventListener('atlas-panel',panel);}});observer.observe(document.body,{childList:true,subtree:true});await update();
 }
 async function memberView() {
   $("#workspace-content").innerHTML =

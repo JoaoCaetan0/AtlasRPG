@@ -47,7 +47,7 @@ let server, browser;
       );
     });
   await open();
-  assert.equal(await page.locator("[data-asset]").count(), 28);
+  assert.equal(await page.locator("[data-asset]").count(), 36);
   await page.locator("#asset-search").fill("LÓBO");
   assert.equal(await page.locator("[data-asset]").count(), 1);
   await page.locator("[data-favorite=lobo]").click();

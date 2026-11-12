@@ -6,6 +6,7 @@ from urllib.parse import urlsplit,parse_qs
 
 def install(c):
  c.execute('CREATE TABLE IF NOT EXISTS characters(id TEXT PRIMARY KEY,table_id TEXT REFERENCES tables(id),user_id TEXT REFERENCES users(id),name TEXT,template_id TEXT REFERENCES assets(id),fields TEXT DEFAULT \'{}\',revision INTEGER DEFAULT 0)')
+ if 'appearance' not in {r[1] for r in c.execute('PRAGMA table_info(characters)')}:c.execute('ALTER TABLE characters ADD COLUMN appearance TEXT')
  if 'build' not in {r[1] for r in c.execute('PRAGMA table_info(characters)')}:c.execute("ALTER TABLE characters ADD COLUMN build TEXT DEFAULT '{}'")
 
 def pdf_api():
@@ -26,7 +27,7 @@ def handle(c,data,path,d,user,tid,master,require,Binary):
  if ep=='/api/character-calculate' and d:
   require(isinstance(d.get('fields'),dict),400,'Campos inválidos.');return calculate(d['fields'],d.get('build',{}))
  if ep=='/api/characters' and not d:
-  rows=c.execute('SELECT id,name,user_id,revision FROM characters WHERE table_id=?'+('' if master else ' AND user_id=?'),(tid,) if master else (tid,user))
+  rows=c.execute('SELECT id,name,user_id,revision,appearance FROM characters WHERE table_id=?'+('' if master else ' AND user_id=?'),(tid,) if master else (tid,user))
   return [dict(r) for r in rows]
  if ep=='/api/characters' and d:
   require(master);target=d.get('user_id');require(c.execute('SELECT 1 FROM members WHERE table_id=? AND user_id=?',(tid,target)).fetchone(),400,'Escolha um participante.')

@@ -1,0 +1,290 @@
+[
+  {
+    "id": "bandido-espada",
+    "sha256": "0d82763235326c6a5dabf13a56d78a696a84d4da9a344f3e5e3ba31d81dd39f3",
+    "size": [
+      1254,
+      1254
+    ]
+  },
+  {
+    "id": "bandido-arco",
+    "sha256": "1289a9c828e0c1cd31f0fff7b5e41bd0f91239ba4272f8340ffd55d2bbd0a9c5",
+    "size": [
+      1254,
+      1254
+    ]
+  },
+  {
+    "id": "goblin",
+    "sha256": "55c5fcd17e7d68d60afe9b7c6fa278e67aab91f41670e2e5d312185687dee523",
+    "size": [
+      1254,
+      1254
+    ]
+  },
+  {
+    "id": "slime",
+    "sha256": "c8e7e07dec6c27db6709968bf3acc3e394e4150253e47c77a357fa2ccef9a6b8",
+    "size": [
+      1254,
+      1254
+    ]
+  },
+  {
+    "id": "lobo",
+    "sha256": "42201fa205120b4b3cb412a5460fb342d20f0f2d573d18ab9114f887f705d4c1",
+    "size": [
+      1254,
+      1254
+    ]
+  },
+  {
+    "id": "urso",
+    "sha256": "f5273b0700d5558a38d9f96013e1c42689cc91bc59f016e2eede31a433f67d4d",
+    "size": [
+      1254,
+      1254
+    ]
+  },
+  {
+    "id": "aliado",
+    "sha256": "1ab55bd2550343f0710956cd4059b3436f6383ece232451a769f5a235c245d1a",
+    "size": [
+      1254,
+      1254
+    ]
+  },
+  {
+    "id": "armadilha",
+    "sha256": "a8ac5eea255d1ad76c4697615fadd5ce675c3f97e6823c219a4a24efeb88ab8b",
+    "size": [
+      1254,
+      1254
+    ]
+  },
+  {
+    "id": "guarda",
+    "sha256": "e60bf4a14e1df1ddb6c4ebebe2ca7b1099dc8c7d3e55d556bf8cb9dff9125ae3",
+    "size": [
+      1254,
+      1254
+    ]
+  },
+  {
+    "id": "cavaleiro",
+    "sha256": "638c97809bb77cabcdfc49a358043e5289198e89b3e742eb65a7d542664bdd88",
+    "size": [
+      1254,
+      1254
+    ]
+  },
+  {
+    "id": "maga",
+    "sha256": "4f92cdefb1922e1f4e47ca97318158118b45745075a3a88a7cece9b53831cecc",
+    "size": [
+      1254,
+      1254
+    ]
+  },
+  {
+    "id": "sacerdote",
+    "sha256": "b0d26c1a137268345e3387d34a04c71088dfbe86ea74be3b9c2c271933aaadb2",
+    "size": [
+      1254,
+      1254
+    ]
+  },
+  {
+    "id": "mercadora",
+    "sha256": "30fbe0f42e9aa3007ddba4b96d5c7856767584df1c6f3f266b0966e7e8c14dc3",
+    "size": [
+      1254,
+      1254
+    ]
+  },
+  {
+    "id": "engenheira",
+    "sha256": "60f5c605d8f88c952f2539e239ee340d6b2ce91c76aa3f3157d010989c6732c4",
+    "size": [
+      1254,
+      1254
+    ]
+  },
+  {
+    "id": "campones",
+    "sha256": "d041125473138e8a867c45fac80b77c29ccfba6a69d7ab7c3305b91125d317ee",
+    "size": [
+      1254,
+      1254
+    ]
+  },
+  {
+    "id": "esqueleto",
+    "sha256": "876fc92c6317a7cfbd50e29e1392b4c67b22480f0fbff7df69355a13ab8d25e7",
+    "size": [
+      1254,
+      1254
+    ]
+  },
+  {
+    "id": "zumbi",
+    "sha256": "263e678ffaa2e051351d4459ac66b5e232c6081714d165eacd1f7509a8840285",
+    "size": [
+      1254,
+      1254
+    ]
+  },
+  {
+    "id": "orc",
+    "sha256": "a3faf3809a794522b9612e404935899cd4ef6d0a89a95cd9dea91a6d6a1769b2",
+    "size": [
+      1254,
+      1254
+    ]
+  },
+  {
+    "id": "cultista",
+    "sha256": "a4d4e35bb40de023b75056c284a46bf8201948aecf1aa71198f5600dd2349c64",
+    "size": [
+      1254,
+      1254
+    ]
+  },
+  {
+    "id": "automato",
+    "sha256": "0cfbd286f93751186c8bb16c61054b33a6eed5de54b8082db858dea0771e67c1",
+    "size": [
+      1254,
+      1254
+    ]
+  },
+  {
+    "id": "aranha",
+    "sha256": "2535dd2b1f0b96942cb225ec0cc7570cc3977c31bfde358bbd8f931404a26a0a",
+    "size": [
+      1254,
+      1254
+    ]
+  },
+  {
+    "id": "javali",
+    "sha256": "e25ce3f2ada82ea5d6cbe18275cfb20c2e8825f314348ca72cf826f2dd79f030",
+    "size": [
+      1254,
+      1254
+    ]
+  },
+  {
+    "id": "corvo",
+    "sha256": "aff0c9b161e1089d4528f8360e2efb3ef3b68bf5e36c71e5ed556c666f4e8076",
+    "size": [
+      1254,
+      1254
+    ]
+  },
+  {
+    "id": "rato",
+    "sha256": "2e5a31a252813d895910340875610f73e64744a72f10eb87f76b6a804fd1687c",
+    "size": [
+      1254,
+      1254
+    ]
+  },
+  {
+    "id": "cobra",
+    "sha256": "c26de217015de388f6210037d5fbb01592c985f79457c2f887dadab9cef5cce3",
+    "size": [
+      1254,
+      1254
+    ]
+  },
+  {
+    "id": "morcego",
+    "sha256": "4da78ebd38653a653e2200d107364ef0d474538f5187fe03419f53b78cc3da83",
+    "size": [
+      1254,
+      1254
+    ]
+  },
+  {
+    "id": "armadilha-runa",
+    "sha256": "2c59f3b66846647d90795a007c7e28970d7cfaca1e9f7d70f8c4b8277010efc6",
+    "size": [
+      1254,
+      1254
+    ]
+  },
+  {
+    "id": "barril-explosivo",
+    "sha256": "656991759f4764cd642bb71591fbff4f630fa8b8ac0b72ea2a218420e9e3ee90",
+    "size": [
+      1254,
+      1254
+    ]
+  },
+  {
+    "id": "golem-pedra",
+    "sha256": "bf9c3e4664332fce9eb3103f31fad06c3ae54b2bcfe1765ed63a386f1676e5f4",
+    "size": [
+      1254,
+      1254
+    ]
+  },
+  {
+    "id": "golem-ferro",
+    "sha256": "cb41048aeb044157bdf182ce3c36812d61fe7b9ae5655bec01e793276b945452",
+    "size": [
+      1254,
+      1254
+    ]
+  },
+  {
+    "id": "ent",
+    "sha256": "a443b07d5b8db352ca842855bec2fc02597398245d420e983a8266d1a6990d04",
+    "size": [
+      1254,
+      1254
+    ]
+  },
+  {
+    "id": "wyvern",
+    "sha256": "4a8d0e526928c2e559b854e3b5682759e3db91613b8033f34d3f2ce18e847eab",
+    "size": [
+      1254,
+      1254
+    ]
+  },
+  {
+    "id": "ogro",
+    "sha256": "e39851dee5b11d6a6489935fba2e5f90cd8dc3100181573b47afada4f027dfe1",
+    "size": [
+      1254,
+      1254
+    ]
+  },
+  {
+    "id": "troll",
+    "sha256": "ddb4920947f7be8f530922ba1072b8e95d92297f81e9848e94754cbfdaac3f29",
+    "size": [
+      1254,
+      1254
+    ]
+  },
+  {
+    "id": "grifo",
+    "sha256": "d577ee4befd453a920a3029bec6d25b29190312823c5880932432d381ed9df15",
+    "size": [
+      1254,
+      1254
+    ]
+  },
+  {
+    "id": "elemental-fogo",
+    "sha256": "37d73b2e675f216c0e60e1d9a66fb80447dc89f2d05d9dc503c50d8fd4e70f42",
+    "size": [
+      1254,
+      1254
+    ]
+  }
+]

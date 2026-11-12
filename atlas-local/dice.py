@@ -144,17 +144,54 @@ def roll(expression,randbelow=None):
  return {'expression':expression,'results':results,'draws':used}
 
 def install(c):
+ from dice_favorites import install as install_favorites
+ install_favorites(c)
  c.execute('CREATE TABLE IF NOT EXISTS dice_rolls(id INTEGER PRIMARY KEY AUTOINCREMENT,table_id TEXT REFERENCES tables(id),user_id TEXT REFERENCES users(id),label TEXT,scope TEXT,payload TEXT,created INTEGER,request_id TEXT,UNIQUE(table_id,user_id,request_id))')
  c.execute('CREATE INDEX IF NOT EXISTS dice_table_history ON dice_rolls(table_id,id)')
 
+def chat_command(body):
+ if not isinstance(body,str):return None
+ match=re.match(r'^\s*/(?:r|roll)(?:\s+|$)(.*)',body,re.I|re.S)
+ if not match:return None
+ expression,sep,label=match[1].partition('|')
+ return {'expression':expression.strip(),'label':label.strip() if sep else ''}
+
+def chat_events(c,tid,user,master,cursor,require):
+ # Stable keyset across messages and rolls, including identical timestamps.
+ args=[tid,tid,user]
+ visibility="r.user_id=? OR r.scope='public'"+(" OR r.scope='gm'" if master else '')
+ sql="""SELECT * FROM (
+ SELECT m.created,0 AS kind,m.id,m.body,u.name,m.user_id,NULL AS label,NULL AS scope,NULL AS payload
+ FROM messages m JOIN users u ON u.id=m.user_id WHERE m.table_id=?
+ UNION ALL
+ SELECT r.created,1 AS kind,r.id,NULL,u.name,r.user_id,r.label,r.scope,r.payload
+ FROM dice_rolls r JOIN users u ON u.id=r.user_id WHERE r.table_id=? AND ("""+visibility+"))"
+ if cursor:
+  require(bool(re.fullmatch(r'\d{1,12}:[01]:\d{1,18}',cursor)),400,'Cursor inválido.')
+  sql+=' WHERE (created,kind,id)<(?,?,?)';args.extend(map(int,cursor.split(':')))
+ rows=c.execute(sql+' ORDER BY created DESC,kind DESC,id DESC LIMIT 100',args).fetchall()
+ result=[]
+ for row in reversed(rows):
+  item=dict(row);item['cursor']=f"{row['created']}:{row['kind']}:{row['id']}"
+  if item['payload']:item['payload']=json.loads(item['payload'])
+  result.append(item)
+ return result
+
 def handle(c,path,d,user,tid,master,require):
  ep=urlsplit(path).path;q=parse_qs(urlsplit(path).query)
+ if ep=='/api/chat-events' and not d:return chat_events(c,tid,user,master,q.get('before',[''])[0],require)
+ if ep=='/api/chat' and d:
+  command=chat_command(d.get('body'))
+  if command is not None:
+   d={**d,**command};ep='/api/roll'
  if ep=='/api/roll' and d:
   label=d.get('label','');scope=d.get('scope','public');rid=d.get('request_id','')
   require(isinstance(label,str) and len(label)<=120 and scope in ['public','gm','self'],400,'Descrição ou visibilidade inválida.')
   require(isinstance(rid,str) and re.fullmatch(r'[a-zA-Z0-9_-]{8,80}',rid),400,'Identificador da rolagem inválido.')
   old=c.execute('SELECT * FROM dice_rolls WHERE table_id=? AND user_id=? AND request_id=?',(tid,user,rid)).fetchone()
-  if old:return {'id':old['id'],'payload':json.loads(old['payload']),'reused':True}
+  if old:
+   require(old['label']==label and old['scope']==scope and json.loads(old['payload'])['expression']==d.get('expression'),409,'Identificador já usado para outra rolagem.')
+   return {'id':old['id'],'payload':json.loads(old['payload']),'reused':True}
   require(c.execute('SELECT count(*) FROM dice_rolls WHERE table_id=? AND user_id=? AND created>?',(tid,user,time.time()-10)).fetchone()[0]<15,429,'Aguarde alguns segundos antes de rolar novamente.')
   try:payload=roll(d.get('expression'))
   except DiceError as e:require(False,400,str(e))

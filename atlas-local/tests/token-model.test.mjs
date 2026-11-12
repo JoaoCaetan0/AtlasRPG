@@ -94,3 +94,26 @@ test("catalog search supports accents, categories, favorites and recent ordering
   );
   assert.deepEqual(filterCatalog(items, "", "Monstros", [], []), []);
 });
+
+import { groupTokenFamilies } from '../web/combat/token-model.mjs';
+test('family variants preserve filtering, custom identity and search by subgroup',()=>{
+ const rows=[
+  {...template,id:'goblin',family:'goblin',family_name:'Goblin',variant_name:'Clava',subgroup:'Goblinoides'},
+  {...template,id:'goblin-v2',family:'goblin',family_name:'Goblin',variant_name:'Escudeiro',subgroup:'Goblinoides'},
+  {...template,id:'hobgoblin',family:'hobgoblin',family_name:'Hobgoblin',subgroup:'Goblinoides'},
+  {...template,id:'recent-1',custom:true,subgroup:'Personalizados'},
+ ];
+ assert.deepEqual(groupTokenFamilies(rows).map(x=>x.items.length),[2,1,1]);
+ assert.equal(groupTokenFamilies(rows,'Goblinoides').length,2);
+ const favorite=filterCatalog(rows,'','favorites',['goblin-v2'],[]);
+ assert.deepEqual(groupTokenFamilies(favorite)[0].items.map(x=>x.id),['goblin-v2']);
+ assert.equal(filterCatalog(rows,'escudeiro','',[],[])[0].id,'goblin-v2');
+ assert.equal(filterCatalog(rows,'goblinoides','',[],[]).length,3);
+ const batch=makeBatch(state,rows[1],{...options,count:1},{x:500,y:300},1000,()=> 'variant');
+ assert.equal(batch[0].appearance,'goblin-v2');
+});
+
+test('new template instances without a saved direction face north and retain range',()=>{
+ const batch=makeBatch(state,{...template,vision:{range:20}}, {...options,count:1},{x:500,y:300},1000,()=> 'north');
+ assert.equal(batch[0].vision.direction,270);assert.equal(batch[0].vision.range,20);
+});

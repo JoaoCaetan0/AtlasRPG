@@ -1,0 +1,8 @@
+CP11 — validação automatizada
+Suíte: 83 testes Python executados, 81 aprovados e 2 ignorados (PDF de referência ausente).
+Rodada adicional: 5 testes de rotação/cache/preparação aprovados, incluindo 1 novo teste de raster.
+Total de testes Python distintos aprovados: 82.
+JavaScript: 14 testes aprovados.
+Sintaxe Python e JavaScript conferida.
+Entrega de prévia no teste local: 65,3 ms na suíte, 63,3 ms na rodada adicional (não é medição de Radmin nem percentil).
+Teste visual Chromium impedido pelo ambiente: socket Operation not permitted.
