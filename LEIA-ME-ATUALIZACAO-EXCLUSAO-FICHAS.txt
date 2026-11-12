@@ -1,0 +1,20 @@
+ATUALIZAÇÃO ATLAS — EXCLUIR FICHAS DE PERSONAGEM
+
+INSTALAÇÃO SIMPLIFICADA
+1. Faça backup da pasta data/ e encerre o servidor Atlas.
+2. Extraia este ZIP na pasta principal da instalação, ao lado da pasta atlas-local/.
+3. Abra ATUALIZAR_ATLAS.bat. O instalador atualiza os dois arquivos do programa e cria um backup automático dos originais.
+4. Reinicie o Atlas e pressione Ctrl+F5 no navegador.
+
+O Windows não executa programas automaticamente ao extrair arquivos ZIP. Por isso, depois da extração, é necessário abrir ATUALIZAR_ATLAS.bat. O instalador não altera data/, campaign/, mapas, documentos ou modelos PDF da Biblioteca.
+
+O QUE MUDA
+- Botão Excluir ficha na lista de personagens, somente para mestres.
+- Confirmação antes da exclusão.
+- Permissão verificada também no servidor; a operação fica limitada à mesa ativa.
+- Tokens que usavam a ficha permanecem no mapa, mas são desvinculados dela.
+- Histórico de desfazer/refazer é ajustado para não recuperar referências à ficha excluída.
+- PDFs exportados em cache daquela ficha são removidos; o modelo PDF original permanece na Biblioteca.
+
+SEGURANÇA
+O instalador primeiro verifica os pontos de atualização. Se encontrar uma versão incompatível ou uma alteração já instalada, ele interrompe a operação sem substituir os arquivos. Antes de gravar, cria um backup de characters.py e web/characters.js em uma pasta datada.

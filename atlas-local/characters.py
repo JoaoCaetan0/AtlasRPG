@@ -21,6 +21,14 @@ def schema(c,data,tid,template):
  if not fields or len(fields)>1000 or any(str(v.get('/FT'))!='/Tx' for v in fields.values()):raise ValueError('Esta versão aceita PDFs com campos de texto preenchíveis. Imagens e outros tipos de campo precisam de adaptação.')
  return reader,[{'key':k,'label':str(v.get('/TU') or k).replace('_',' '),'multiline':bool(int(v.get('/Ff',0))&4096)} for k,v in fields.items()]
 
+def detach_character(state,cid):
+ changed=False
+ if isinstance(state,dict):
+  for token in state.get('tokens',[]):
+   if isinstance(token,dict) and token.get('character_id')==cid:
+    token.pop('character_id',None);token['owner']=None;changed=True
+ return changed
+
 def handle(c,data,path,d,user,tid,master,require,Binary):
  ep=urlsplit(path).path;q=parse_qs(urlsplit(path).query)
  if ep=='/api/character-rules':return catalog()
@@ -42,6 +50,28 @@ def handle(c,data,path,d,user,tid,master,require,Binary):
   c.execute('INSERT INTO characters(id,table_id,user_id,name,template_id) VALUES(?,?,?,?,?)',(cid,tid,target,name.strip(),d['template_id']));
   if profile['engine']=='generic':c.execute('UPDATE characters SET build=? WHERE id=?',(json.dumps({'engine':'pdf-generic'}),cid))
   return {'id':cid}
+ if ep=='/api/character-delete' and d:
+  require(master)
+  cid=d.get('id');require(isinstance(cid,str) and 1<=len(cid)<=128,400,'Ficha inválida.')
+  ch=c.execute('SELECT id FROM characters WHERE id=? AND table_id=?',(cid,tid)).fetchone()
+  require(ch,404,'Ficha não encontrada nesta mesa.')
+  for row in c.execute('SELECT asset_id,state FROM combats WHERE table_id=?',(tid,)).fetchall():
+   state=json.loads(row['state'])
+   if detach_character(state,cid):
+    c.execute('UPDATE combats SET state=?,revision=revision+1 WHERE table_id=? AND asset_id=?',(json.dumps(state,ensure_ascii=False),tid,row['asset_id']))
+  for row in c.execute('SELECT id,before_state,after_state FROM combat_history WHERE table_id=?',(tid,)).fetchall():
+   before=json.loads(row['before_state']);after=json.loads(row['after_state'])
+   changed_before=detach_character(before,cid);changed_after=detach_character(after,cid)
+   if changed_before or changed_after:
+    c.execute('UPDATE combat_history SET before_state=?,after_state=? WHERE id=?',(json.dumps(before,ensure_ascii=False),json.dumps(after,ensure_ascii=False),row['id']))
+  c.execute('DELETE FROM characters WHERE id=? AND table_id=?',(cid,tid))
+  folder=data/'exports'
+  if folder.is_dir():
+   for cached in folder.iterdir():
+    if cached.is_file() and cached.name.startswith(cid+'-') and cached.suffix.lower()=='.pdf':
+     try:cached.unlink()
+     except OSError:pass
+  return {'ok':True,'id':cid}
  if ep in ['/api/character','/api/character-pdf']:
   cid=d.get('id') if d else q.get('id',[''])[0]
   ch=c.execute('SELECT * FROM characters WHERE id=? AND table_id=?',(cid,tid)).fetchone();require(ch and (master or ch['user_id']==user),404,'Personagem indisponível.')
